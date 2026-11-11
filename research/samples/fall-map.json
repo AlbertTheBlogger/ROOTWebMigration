@@ -1,0 +1,488 @@
+{
+  "map_id": "digital-fall-research-v1",
+  "status": "static-extraction-awaiting-visual-and-runtime-crosscheck",
+  "nodes": [
+    {
+      "id": 0,
+      "priority": 1,
+      "suit_code": 1,
+      "building_slots": 1,
+      "node_type": "clearing",
+      "neighbors": [
+        1,
+        12,
+        3,
+        13,
+        4
+      ],
+      "river_neighbors": [],
+      "starting": true,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x0000000181947e4f",
+      "paths": [
+        1,
+        3,
+        4
+      ],
+      "adjacent_forests": [
+        12,
+        13
+      ],
+      "suit": "fox"
+    },
+    {
+      "id": 1,
+      "priority": 5,
+      "suit_code": 0,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        0,
+        12,
+        2
+      ],
+      "river_neighbors": [
+        3
+      ],
+      "starting": false,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x00000001819480a1",
+      "paths": [
+        0,
+        2
+      ],
+      "adjacent_forests": [
+        12
+      ],
+      "suit": "rabbit"
+    },
+    {
+      "id": 2,
+      "priority": 2,
+      "suit_code": 2,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        1,
+        3,
+        7,
+        12,
+        14
+      ],
+      "river_neighbors": [],
+      "starting": true,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x0000000181948308",
+      "paths": [
+        1,
+        3,
+        7
+      ],
+      "adjacent_forests": [
+        12,
+        14
+      ],
+      "suit": "mouse"
+    },
+    {
+      "id": 3,
+      "priority": 10,
+      "suit_code": 0,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        0,
+        2,
+        5,
+        12,
+        13,
+        14
+      ],
+      "river_neighbors": [
+        1,
+        6
+      ],
+      "starting": false,
+      "ruin": true,
+      "edge": false,
+      "source_call_va": "0x00000001819486a5",
+      "paths": [
+        0,
+        2,
+        5
+      ],
+      "adjacent_forests": [
+        12,
+        13,
+        14
+      ],
+      "suit": "rabbit"
+    },
+    {
+      "id": 4,
+      "priority": 9,
+      "suit_code": 2,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        0,
+        5,
+        11,
+        13,
+        15
+      ],
+      "river_neighbors": [],
+      "starting": false,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x000000018194890a",
+      "paths": [
+        0,
+        5,
+        11
+      ],
+      "adjacent_forests": [
+        13,
+        15
+      ],
+      "suit": "mouse"
+    },
+    {
+      "id": 5,
+      "priority": 12,
+      "suit_code": 1,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        3,
+        4,
+        6,
+        11,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "river_neighbors": [],
+      "starting": false,
+      "ruin": true,
+      "edge": false,
+      "source_call_va": "0x0000000181948b97",
+      "paths": [
+        3,
+        4,
+        6,
+        11,
+        9
+      ],
+      "adjacent_forests": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "suit": "fox"
+    },
+    {
+      "id": 6,
+      "priority": 11,
+      "suit_code": 2,
+      "building_slots": 3,
+      "node_type": "clearing",
+      "neighbors": [
+        5,
+        7,
+        8,
+        14,
+        17,
+        18
+      ],
+      "river_neighbors": [
+        3,
+        9
+      ],
+      "starting": false,
+      "ruin": true,
+      "edge": false,
+      "source_call_va": "0x0000000181948cce",
+      "paths": [
+        5,
+        7,
+        8
+      ],
+      "adjacent_forests": [
+        14,
+        17,
+        18
+      ],
+      "suit": "mouse"
+    },
+    {
+      "id": 7,
+      "priority": 6,
+      "suit_code": 1,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        2,
+        6,
+        8,
+        14,
+        18
+      ],
+      "river_neighbors": [],
+      "starting": false,
+      "ruin": true,
+      "edge": true,
+      "source_call_va": "0x0000000181948da2",
+      "paths": [
+        2,
+        6,
+        8
+      ],
+      "adjacent_forests": [
+        14,
+        18
+      ],
+      "suit": "fox"
+    },
+    {
+      "id": 8,
+      "priority": 3,
+      "suit_code": 0,
+      "building_slots": 1,
+      "node_type": "clearing",
+      "neighbors": [
+        6,
+        7,
+        9,
+        17,
+        18
+      ],
+      "river_neighbors": [],
+      "starting": true,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x0000000181948e89",
+      "paths": [
+        6,
+        7,
+        9
+      ],
+      "adjacent_forests": [
+        17,
+        18
+      ],
+      "suit": "rabbit"
+    },
+    {
+      "id": 9,
+      "priority": 7,
+      "suit_code": 2,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        5,
+        8,
+        10,
+        17,
+        16
+      ],
+      "river_neighbors": [
+        6,
+        11
+      ],
+      "starting": false,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x0000000181948fc0",
+      "paths": [
+        5,
+        8,
+        10
+      ],
+      "adjacent_forests": [
+        17,
+        16
+      ],
+      "suit": "mouse"
+    },
+    {
+      "id": 10,
+      "priority": 8,
+      "suit_code": 1,
+      "building_slots": 2,
+      "node_type": "clearing",
+      "neighbors": [
+        9,
+        11,
+        16
+      ],
+      "river_neighbors": [],
+      "starting": false,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x000000018194906c",
+      "paths": [
+        9,
+        11
+      ],
+      "adjacent_forests": [
+        16
+      ],
+      "suit": "fox"
+    },
+    {
+      "id": 11,
+      "priority": 4,
+      "suit_code": 0,
+      "building_slots": 1,
+      "node_type": "clearing",
+      "neighbors": [
+        4,
+        5,
+        10,
+        15,
+        16
+      ],
+      "river_neighbors": [
+        9
+      ],
+      "starting": true,
+      "ruin": false,
+      "edge": true,
+      "source_call_va": "0x000000018194917b",
+      "paths": [
+        4,
+        5,
+        10
+      ],
+      "adjacent_forests": [
+        15,
+        16
+      ],
+      "suit": "rabbit"
+    },
+    {
+      "id": 12,
+      "node_type": "forest",
+      "neighbors": [
+        0,
+        1,
+        2,
+        3,
+        13,
+        14
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x000000018194925e"
+    },
+    {
+      "id": 13,
+      "node_type": "forest",
+      "neighbors": [
+        0,
+        3,
+        4,
+        5,
+        12,
+        14,
+        15
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x000000018194932f"
+    },
+    {
+      "id": 14,
+      "node_type": "forest",
+      "neighbors": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        12,
+        13,
+        17,
+        18
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x000000018194942b"
+    },
+    {
+      "id": 15,
+      "node_type": "forest",
+      "neighbors": [
+        4,
+        5,
+        11,
+        13,
+        16
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x00000001819494d7"
+    },
+    {
+      "id": 16,
+      "node_type": "forest",
+      "neighbors": [
+        5,
+        9,
+        10,
+        11,
+        15,
+        17
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x0000000181949597"
+    },
+    {
+      "id": 17,
+      "node_type": "forest",
+      "neighbors": [
+        5,
+        6,
+        8,
+        9,
+        14,
+        16,
+        18
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x000000018194966b"
+    },
+    {
+      "id": 18,
+      "node_type": "forest",
+      "neighbors": [
+        6,
+        7,
+        8,
+        14,
+        17
+      ],
+      "river_neighbors": [],
+      "source_call_va": "0x0000000181949717"
+    }
+  ],
+  "opposite_corners": {
+    "0": 8,
+    "8": 0,
+    "2": 11,
+    "11": 2
+  },
+  "limits": [
+    "Suit codes were cross-checked against metadata constants; visual/runtime map crosscheck is still pending.",
+    "Coordinates and art were not extracted.",
+    "The bounded scanner is pinned to the recorded binary and constructor layout."
+  ],
+  "suit_evidence": "../baseline/enum-evidence.json",
+  "source_sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "source_method_rva": "0x1947ba0"
+}

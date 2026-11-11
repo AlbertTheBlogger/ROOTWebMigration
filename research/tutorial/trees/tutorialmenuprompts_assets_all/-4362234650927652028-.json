@@ -1,0 +1,19 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4736730884469174557
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 4550347944352628775
+  },
+  "m_Name": "",
+  "resolveOn": 1,
+  "enableBehaviours": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 3267724925940474127
+    }
+  ]
+}

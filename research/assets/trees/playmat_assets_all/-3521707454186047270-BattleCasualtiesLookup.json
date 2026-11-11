@@ -1,0 +1,512 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3551471191982668816
+  },
+  "m_Name": "BattleCasualtiesLookup",
+  "defaultPathRoot": "Assets/Resources_moved/",
+  "folder": "Battle/Casualties",
+  "simplifyNames": 1,
+  "entries": [
+    {
+      "ResourcePath": "P_CasualtyIcon_TradePost_Fox",
+      "Metadata": {
+        "flavors": [
+          "RiverfolkCompany",
+          "Token",
+          "TradePost",
+          "Fox"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_TradePost_Mouse",
+      "Metadata": {
+        "flavors": [
+          "RiverfolkCompany",
+          "Token",
+          "TradePost",
+          "Mouse"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_TradePost_Rabbit",
+      "Metadata": {
+        "flavors": [
+          "RiverfolkCompany",
+          "Token",
+          "TradePost",
+          "Rabbit"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_BaseBunny",
+      "Metadata": {
+        "flavors": [
+          "WoodlandAlliance",
+          "Base",
+          "Rabbit"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_BaseBunny_AutomatedAlliance",
+      "Metadata": {
+        "flavors": [
+          "AutomatedAlliance",
+          "Base",
+          "Rabbit"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_BaseFox",
+      "Metadata": {
+        "flavors": [
+          "WoodlandAlliance",
+          "Base",
+          "Fox"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_BaseFox_AutomatedAlliance",
+      "Metadata": {
+        "flavors": [
+          "AutomatedAlliance",
+          "Base",
+          "Fox"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_BaseMouse",
+      "Metadata": {
+        "flavors": [
+          "WoodlandAlliance",
+          "Base",
+          "Mouse"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_BaseMouse_AutomatedAlliance",
+      "Metadata": {
+        "flavors": [
+          "AutomatedAlliance",
+          "Base",
+          "Mouse"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Citadel",
+      "Metadata": {
+        "flavors": [
+          "UndergroundDuchy",
+          "Building",
+          "Citadel"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Keep",
+      "Metadata": {
+        "flavors": [
+          "MarquiseDeCat",
+          "Token",
+          "Keep"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_KeepMech",
+      "Metadata": {
+        "flavors": [
+          "MechanicalMarquise",
+          "Token",
+          "Keep"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Market",
+      "Metadata": {
+        "flavors": [
+          "UndergroundDuchy",
+          "Building",
+          "Market"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Mob",
+      "Metadata": {
+        "flavors": [
+          "LordOfTheHundreds",
+          "Token",
+          "Mob"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Plot",
+      "Metadata": {
+        "flavors": [
+          "CorvidConspiracy",
+          "Token",
+          "Plot"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Recruiter",
+      "Metadata": {
+        "flavors": [
+          "MarquiseDeCat",
+          "Building",
+          "Recruiter"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_RecruiterMech",
+      "Metadata": {
+        "flavors": [
+          "MechanicalMarquise",
+          "Building",
+          "Recruiter"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Relic_Figure",
+      "Metadata": {
+        "flavors": [
+          "KeepersInIron",
+          "Relic",
+          "Figure"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Relic_Jewelry",
+      "Metadata": {
+        "flavors": [
+          "KeepersInIron",
+          "Relic",
+          "Jewelry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Relic_Tablet",
+      "Metadata": {
+        "flavors": [
+          "KeepersInIron",
+          "Relic",
+          "Tablet"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Roost",
+      "Metadata": {
+        "flavors": [
+          "EyrieDynasties",
+          "Building",
+          "Roost"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_RoostMech",
+      "Metadata": {
+        "flavors": [
+          "EyrieDynasties",
+          "Building",
+          "Roost"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Sawmill",
+      "Metadata": {
+        "flavors": [
+          "MarquiseDeCat",
+          "Building",
+          "Sawmill"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_SawmillMech",
+      "Metadata": {
+        "flavors": [
+          "MechanicalMarquise",
+          "Building",
+          "Sawmill"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Stronghold",
+      "Metadata": {
+        "flavors": [
+          "LordOfTheHundreds",
+          "Building",
+          "Stronghold"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Sympathy",
+      "Metadata": {
+        "flavors": [
+          "WoodlandAlliance",
+          "Token",
+          "Sympathy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Sympathy_AutomatedAlliance",
+      "Metadata": {
+        "flavors": [
+          "AutomatedAlliance",
+          "Token",
+          "Sympathy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Tunnel",
+      "Metadata": {
+        "flavors": [
+          "UndergroundDuchy",
+          "Token",
+          "Tunnel"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Waystation",
+      "Metadata": {
+        "flavors": [
+          "KeepersInIron",
+          "Building",
+          "Waystation"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Wood",
+      "Metadata": {
+        "flavors": [
+          "MarquiseDeCat",
+          "Token",
+          "Wood"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WoodMech",
+      "Metadata": {
+        "flavors": [
+          "MechanicalMarquise",
+          "Token",
+          "Wood"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_Workshop",
+      "Metadata": {
+        "flavors": [
+          "MarquiseDeCat",
+          "Building",
+          "Workshop"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WorkshopMech",
+      "Metadata": {
+        "flavors": [
+          "MechanicalMarquise",
+          "Building",
+          "Workshop"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_FundSelect",
+      "Metadata": {
+        "flavors": [
+          "Fund",
+          "SelectPrompt"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_ItemCasualty",
+      "Metadata": {
+        "flavors": [
+          "Item",
+          "Damage"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_ItemSelect",
+      "Metadata": {
+        "flavors": [
+          "Item",
+          "SelectPrompt"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_LizardGarden",
+      "Metadata": {
+        "flavors": [
+          "LizardCult",
+          "Garden"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_LizardWarrior",
+      "Metadata": {
+        "flavors": [
+          "LizardCult",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarlordHundreds",
+      "Metadata": {
+        "flavors": [
+          "LordOfTheHundreds",
+          "Warlord"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorAlli",
+      "Metadata": {
+        "flavors": [
+          "WoodlandAlliance",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorAutomatedAlliance",
+      "Metadata": {
+        "flavors": [
+          "AutomatedAlliance",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorCorvid",
+      "Metadata": {
+        "flavors": [
+          "CorvidConspiracy",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorDuchy",
+      "Metadata": {
+        "flavors": [
+          "UndergroundDuchy",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorElectricEyrie",
+      "Metadata": {
+        "flavors": [
+          "ElectricEyrie",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorEyrie",
+      "Metadata": {
+        "flavors": [
+          "EyrieDynasties",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorHundreds",
+      "Metadata": {
+        "flavors": [
+          "LordOfTheHundreds",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorKeepers",
+      "Metadata": {
+        "flavors": [
+          "KeepersInIron",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorMarq",
+      "Metadata": {
+        "flavors": [
+          "MarquiseDeCat",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorMech",
+      "Metadata": {
+        "flavors": [
+          "MechanicalMarquise",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorRiv",
+      "Metadata": {
+        "flavors": [
+          "RiverfolkCompany",
+          "Warrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_CasualtyIcon_WarriorVagabot",
+      "Metadata": {
+        "flavors": [
+          "Vagabot",
+          "Warrior"
+        ]
+      }
+    }
+  ]
+}

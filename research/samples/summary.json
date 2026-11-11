@@ -1,0 +1,38 @@
+{
+  "map_checks": {
+    "clearing_count": 12,
+    "forest_count": 7,
+    "suit_counts": {
+      "fox": 4,
+      "rabbit": 4,
+      "mouse": 4
+    },
+    "building_slots": 22,
+    "ruin_clearings": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "starting_clearings": [
+      0,
+      2,
+      8,
+      11
+    ],
+    "path_count": 18,
+    "river_edges": 4,
+    "path_graph_connected": true,
+    "river_adjacency_symmetric": true
+  },
+  "card_samples": 3,
+  "flow_types": 11,
+  "asset_tree_exports": 94,
+  "asset_parse_failures": 15,
+  "localized_languages_exported": [
+    "en_US",
+    "zh_CN"
+  ],
+  "native_selected_methods": 36,
+  "native_disassembly_files": 33
+}

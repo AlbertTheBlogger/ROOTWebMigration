@@ -1,0 +1,4038 @@
+[
+  {
+    "index": 400,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TuberMarauderTutorialGame1SelectionFiltering",
+    "token": "0x2000190",
+    "metadata_offset": 9665624,
+    "fields": [],
+    "methods": [
+      {
+        "index": 1957,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007a6"
+      },
+      {
+        "index": 1958,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007a7"
+      }
+    ]
+  },
+  {
+    "index": 401,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TuberMarauderTutorialGame2SelectionFiltering",
+    "token": "0x2000192",
+    "metadata_offset": 9665712,
+    "fields": [],
+    "methods": [
+      {
+        "index": 1968,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007b1"
+      },
+      {
+        "index": 1969,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007b2"
+      }
+    ]
+  },
+  {
+    "index": 409,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TuberRiverfolkTutorialGame1SelectionFiltering",
+    "token": "0x2000199",
+    "metadata_offset": 9666416,
+    "fields": [],
+    "methods": [
+      {
+        "index": 1985,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007c2"
+      },
+      {
+        "index": 1986,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007c3"
+      }
+    ]
+  },
+  {
+    "index": 411,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TuberRiverfolkTutorialGame2SelectionFiltering",
+    "token": "0x200019b",
+    "metadata_offset": 9666592,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2003,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007d4"
+      },
+      {
+        "index": 2004,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007d5"
+      }
+    ]
+  },
+  {
+    "index": 415,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TuberUnderworldTutorialGame1SelectionFiltering",
+    "token": "0x200019f",
+    "metadata_offset": 9666944,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2035,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007f4"
+      },
+      {
+        "index": 2036,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007f5"
+      }
+    ]
+  },
+  {
+    "index": 416,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TuberUnderworldTutorialGame2SelectionFiltering",
+    "token": "0x20001a1",
+    "metadata_offset": 9667032,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2042,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007fb"
+      },
+      {
+        "index": 2043,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007fc"
+      }
+    ]
+  },
+  {
+    "index": 417,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TutorialGame1SelectionFiltering",
+    "token": "0x20001a2",
+    "metadata_offset": 9667120,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2044,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007fd"
+      },
+      {
+        "index": 2045,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x60007fe"
+      }
+    ]
+  },
+  {
+    "index": 418,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TutorialGame2SelectionFiltering",
+    "token": "0x20001a3",
+    "metadata_offset": 9667208,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2046,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x60007ff"
+      },
+      {
+        "index": 2047,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6000800"
+      }
+    ]
+  },
+  {
+    "index": 419,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TutorialGame3SelectionFiltering",
+    "token": "0x20001a4",
+    "metadata_offset": 9667296,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2048,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6000801"
+      },
+      {
+        "index": 2049,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6000802"
+      }
+    ]
+  },
+  {
+    "index": 420,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TutorialGame4SelectionFiltering",
+    "token": "0x20001a5",
+    "metadata_offset": 9667384,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2050,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6000803"
+      },
+      {
+        "index": 2051,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6000804"
+      }
+    ]
+  },
+  {
+    "index": 421,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.selectionfilters",
+    "name": "TutorialGame5SelectionFiltering",
+    "token": "0x20001a6",
+    "metadata_offset": 9667472,
+    "fields": [],
+    "methods": [
+      {
+        "index": 2052,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6000805"
+      },
+      {
+        "index": 2053,
+        "name": "init",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6000806"
+      }
+    ]
+  },
+  {
+    "index": 1591,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "MoveCounterForObjective",
+    "token": "0x2000637",
+    "metadata_offset": 9770432,
+    "fields": [
+      {
+        "index": 5651,
+        "name": "objectiveID",
+        "type_index": 20893
+      }
+    ],
+    "methods": [
+      {
+        "index": 7361,
+        "name": ".ctor",
+        "parameter_count": 2,
+        "parameters": [
+          "m",
+          "id"
+        ],
+        "token": "0x6001cc2"
+      },
+      {
+        "index": 7362,
+        "name": "execute",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001cc3"
+      }
+    ]
+  },
+  {
+    "index": 1608,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TutorialCampaignEmitter",
+    "token": "0x2000639",
+    "metadata_offset": 9771928,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7371,
+        "name": "MartialLawAction",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "martialLawNode"
+        ],
+        "token": "0x6001ccc"
+      },
+      {
+        "index": 7372,
+        "name": "WarriorSupply",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001ccd"
+      },
+      {
+        "index": 7373,
+        "name": "BaseRemovedAction",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cce"
+      },
+      {
+        "index": 7374,
+        "name": "FiveSupportersAction",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001ccf"
+      },
+      {
+        "index": 7375,
+        "name": "FirstLostSympathy",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cd0"
+      },
+      {
+        "index": 7376,
+        "name": "OutrageSeeHand",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "outrageCause"
+        ],
+        "token": "0x6001cd1"
+      },
+      {
+        "index": 7377,
+        "name": "ActivateExposure",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cd2"
+      },
+      {
+        "index": 7378,
+        "name": "ActivateExposurePart1",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cd3"
+      },
+      {
+        "index": 7379,
+        "name": "ActivateExposurePart2",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cd4"
+      },
+      {
+        "index": 7380,
+        "name": "NoRoostsAction",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cd5"
+      },
+      {
+        "index": 7381,
+        "name": "OnlyLavish",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cd6"
+      },
+      {
+        "index": 7382,
+        "name": "LakeRules",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cd7"
+      },
+      {
+        "index": 7383,
+        "name": "LakeRulesPart1",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cd8"
+      },
+      {
+        "index": 7384,
+        "name": "LakeRulesPart2",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cd9"
+      },
+      {
+        "index": 7385,
+        "name": "MountainRules",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cda"
+      },
+      {
+        "index": 7386,
+        "name": "MountainRulesPart1",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cdb"
+      },
+      {
+        "index": 7387,
+        "name": "MountainRulesPart2",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cdc"
+      },
+      {
+        "index": 7388,
+        "name": "MountainRulesPart3",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cdd"
+      },
+      {
+        "index": 7389,
+        "name": "BuyRiverfolkServices",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cde"
+      },
+      {
+        "index": 7390,
+        "name": "BuyRiverfolkServicesPart1",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001cdf"
+      },
+      {
+        "index": 7391,
+        "name": "BuyRiverfolkServicesPart2",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001ce0"
+      },
+      {
+        "index": 7392,
+        "name": "BuyRiverfolkServicesPart3",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001ce1"
+      },
+      {
+        "index": 7393,
+        "name": "BuyRiverfolkServicesPart4",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001ce2"
+      },
+      {
+        "index": 7394,
+        "name": "BuyRiverfolkServicesPart5",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "player",
+          "faction",
+          "cardImage"
+        ],
+        "token": "0x6001ce3"
+      },
+      {
+        "index": 7395,
+        "name": "FirstLostGarden",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001ce4"
+      },
+      {
+        "index": 7396,
+        "name": "WrapActionInOneTimeSequence",
+        "parameter_count": 4,
+        "parameters": [
+          "tm",
+          "key",
+          "player",
+          "actions"
+        ],
+        "token": "0x6001ce5"
+      },
+      {
+        "index": 7397,
+        "name": "HideDialog",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "indexes"
+        ],
+        "token": "0x6001ce6"
+      },
+      {
+        "index": 7398,
+        "name": "NoItemToCraft",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001ce7"
+      },
+      {
+        "index": 7399,
+        "name": "FirstTimeDiscarding",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "index"
+        ],
+        "token": "0x6001ce8"
+      },
+      {
+        "index": 7400,
+        "name": "GetTutorialCardImage",
+        "parameter_count": 1,
+        "parameters": [
+          "faction"
+        ],
+        "token": "0x6001ce9"
+      },
+      {
+        "index": 7401,
+        "name": "FirstScoredBattleVP",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cea"
+      },
+      {
+        "index": 7402,
+        "name": "FirstRollCappedByWarriors",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001ceb"
+      },
+      {
+        "index": 7403,
+        "name": "FirstDieSwap",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cec"
+      },
+      {
+        "index": 7404,
+        "name": "FirstDefenselessEnemy",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001ced"
+      },
+      {
+        "index": 7405,
+        "name": "MoveToKeepArea",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cee"
+      },
+      {
+        "index": 7406,
+        "name": "VagabondSelect",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "index"
+        ],
+        "token": "0x6001cef"
+      },
+      {
+        "index": 7407,
+        "name": "VagabondDefenseless",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf0"
+      },
+      {
+        "index": 7408,
+        "name": "VagabondItemAcquire",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "item"
+        ],
+        "token": "0x6001cf1"
+      },
+      {
+        "index": 7409,
+        "name": "VagabondAlly",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "faction"
+        ],
+        "token": "0x6001cf2"
+      },
+      {
+        "index": 7410,
+        "name": "VagabondAllyAttack",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf3"
+      },
+      {
+        "index": 7411,
+        "name": "VagabondFirstTimeRevoltDamage",
+        "parameter_count": 3,
+        "parameters": [
+          "tm",
+          "player",
+          "index"
+        ],
+        "token": "0x6001cf4"
+      },
+      {
+        "index": 7412,
+        "name": "VagabondFirstTimeExploreChoice",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf5"
+      },
+      {
+        "index": 7413,
+        "name": "VagabondRepairBrokenItem",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf6"
+      },
+      {
+        "index": 7414,
+        "name": "VagabondSlipWarning",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf7"
+      },
+      {
+        "index": 7415,
+        "name": "TwoVagabondInformation",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf8"
+      },
+      {
+        "index": 7416,
+        "name": "TwoVagabondQuesting",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cf9"
+      },
+      {
+        "index": 7417,
+        "name": "TwoVagabondExploreActs",
+        "parameter_count": 2,
+        "parameters": [
+          "tm",
+          "player"
+        ],
+        "token": "0x6001cfa"
+      }
+    ]
+  },
+  {
+    "index": 1609,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "Objective",
+    "token": "0x200064a",
+    "metadata_offset": 9772016,
+    "fields": [
+      {
+        "index": 5827,
+        "name": "id",
+        "type_index": 20893
+      },
+      {
+        "index": 5828,
+        "name": "locStr",
+        "type_index": 27393
+      },
+      {
+        "index": 5829,
+        "name": "current",
+        "type_index": 20893
+      },
+      {
+        "index": 5830,
+        "name": "max",
+        "type_index": 20893
+      }
+    ],
+    "methods": [
+      {
+        "index": 7545,
+        "name": "ToString",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001d7a"
+      },
+      {
+        "index": 7546,
+        "name": ".ctor",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001d7b"
+      }
+    ]
+  },
+  {
+    "index": 1612,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberMarauderTutorialGame1Script",
+    "token": "0x200064b",
+    "metadata_offset": 9772280,
+    "fields": [
+      {
+        "index": 5831,
+        "name": "SetupFirstClearingID",
+        "type_index": 20911
+      },
+      {
+        "index": 5832,
+        "name": "SetupSecondClearingID",
+        "type_index": 20911
+      },
+      {
+        "index": 5833,
+        "name": "Turn1HintRelicsID",
+        "type_index": 20911
+      },
+      {
+        "index": 5834,
+        "name": "Turn1EncampPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5835,
+        "name": "Turn1FindWaystationDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 5836,
+        "name": "Turn1WaystationFlipHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5837,
+        "name": "Turn1WaystationCTCPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5838,
+        "name": "Turn1WaystationPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5839,
+        "name": "Turn1SecondEncampPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5840,
+        "name": "Turn1SecondWaystationPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5841,
+        "name": "Turn1RecruitPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5842,
+        "name": "Turn1CraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5843,
+        "name": "Turn1CraftClearing0ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5844,
+        "name": "Turn1CraftClearing4ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5845,
+        "name": "Turn1RetinueHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5846,
+        "name": "Turn1RetainerMoveHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5847,
+        "name": "Turn1RetainerBattleDelveHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5848,
+        "name": "Turn1RetainerMoveRecoverHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5849,
+        "name": "Turn1RetinueMoveHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5850,
+        "name": "Turn1MovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5851,
+        "name": "Turn1RetinueBattleDelveHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5852,
+        "name": "Turn1BattleDelvePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5853,
+        "name": "Turn1DelveRelicPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5854,
+        "name": "Turn1ForestHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5855,
+        "name": "Turn1Clearing0HighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5856,
+        "name": "Turn1Clearing4HighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5857,
+        "name": "Turn1Clearing5HighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5858,
+        "name": "Turn1RetinueMoveRecoverHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5859,
+        "name": "Turn1RecoverWaystationHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5860,
+        "name": "Turn1RecoverRelicHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5861,
+        "name": "Turn1NextRelicHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5862,
+        "name": "Turn1MoveRecoverPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5863,
+        "name": "Turn1GatherMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5864,
+        "name": "Turn1GatherMoveRecoverPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5865,
+        "name": "Turn1DrawPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5866,
+        "name": "Turn2EncampPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5867,
+        "name": "Turn2FirstRecruitPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5868,
+        "name": "Turn2SecondRecrutPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5869,
+        "name": "Turn2CraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5870,
+        "name": "Turn2FirstMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5871,
+        "name": "Turn2SecondMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5872,
+        "name": "Turn2DelvePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5873,
+        "name": "Turn2ForestHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5874,
+        "name": "Turn2HintMouse2ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5875,
+        "name": "Turn2HintMouse4ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5876,
+        "name": "Turn2HintMouse6ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5877,
+        "name": "Turn2HintMouse9ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5878,
+        "name": "Turn2RecoverPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5879,
+        "name": "Turn2RetinueMoveRecoverHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5880,
+        "name": "Turn2MoveRecoverPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5881,
+        "name": "Turn2GatherRetinuePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5882,
+        "name": "Turn2DevoutKnightsHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5883,
+        "name": "Turn2EndTurnPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5884,
+        "name": "Turn3DecampPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5885,
+        "name": "Turn3FirstRecruitPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5886,
+        "name": "Turn3SecondRecruitPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5887,
+        "name": "Turn3CraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5888,
+        "name": "Turn3FirstMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5889,
+        "name": "Turn3SecondMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5890,
+        "name": "Turn3FirstDelvePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5891,
+        "name": "Turn3HintRelicID",
+        "type_index": 20911
+      },
+      {
+        "index": 5892,
+        "name": "Turn3SecondDelvePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5893,
+        "name": "Turn3DelveRelicPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5894,
+        "name": "Turn3ForestHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5895,
+        "name": "Turn3MoveRecoverPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5896,
+        "name": "Turn3RecoverRelicHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5897,
+        "name": "Turn3RecoverWaystationHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5898,
+        "name": "Turn3LiveOffTheLandHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5899,
+        "name": "Turn3GatherRetinuePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5900,
+        "name": "Turn4RelicHintID",
+        "type_index": 20911
+      }
+    ],
+    "methods": [
+      {
+        "index": 7547,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001d7c"
+      },
+      {
+        "index": 7548,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001d7d"
+      }
+    ]
+  },
+  {
+    "index": 1615,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberMarauderTutorialGame2Script",
+    "token": "0x200064e",
+    "metadata_offset": 9772544,
+    "fields": [
+      {
+        "index": 5910,
+        "name": "SetupChooseClearingID",
+        "type_index": 20911
+      },
+      {
+        "index": 5911,
+        "name": "SetupHintStrongholdID",
+        "type_index": 20911
+      },
+      {
+        "index": 5912,
+        "name": "SetupStrongholdPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5913,
+        "name": "Turn1FindMoodPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5914,
+        "name": "Turn1ChooseMoodPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5915,
+        "name": "Turn1SkipCraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5916,
+        "name": "Turn1ExpandHudPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5917,
+        "name": "Turn1ExpandHudHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5918,
+        "name": "Turn1CommandTrackHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5919,
+        "name": "Turn1ProwessTrackHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5920,
+        "name": "Turn1CloseHudPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5921,
+        "name": "Turn1CommandBattlePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5922,
+        "name": "Turn1CommandBattleBannerID",
+        "type_index": 20911
+      },
+      {
+        "index": 5923,
+        "name": "Turn1CommandContinuePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5924,
+        "name": "Turn1AdvanceHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5925,
+        "name": "Turn1AdvanceMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5926,
+        "name": "Turn1AdvanceAttackPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5927,
+        "name": "Turn1WrathfullHitPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5928,
+        "name": "Turn1HintRuinID",
+        "type_index": 20911
+      },
+      {
+        "index": 5929,
+        "name": "Turn1IncitePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5930,
+        "name": "Turn1OppressHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5931,
+        "name": "Turn2WorkshopHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5932,
+        "name": "Turn2RuinHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5933,
+        "name": "Turn2SpreadMobPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5934,
+        "name": "Turn2ProwessBannerID",
+        "type_index": 20911
+      },
+      {
+        "index": 5935,
+        "name": "Turn2ChooseMoodPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5936,
+        "name": "Turn2MouseInASackPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5937,
+        "name": "Turn2CraftForPointsBannerID",
+        "type_index": 20911
+      },
+      {
+        "index": 5938,
+        "name": "Turn2CraftForHoardBannerID",
+        "type_index": 20911
+      },
+      {
+        "index": 5939,
+        "name": "Turn2CraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5940,
+        "name": "Turn2BuildPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5941,
+        "name": "Turn2BuildCallToActionID",
+        "type_index": 20911
+      },
+      {
+        "index": 5942,
+        "name": "Turn2BuildBannerID",
+        "type_index": 20911
+      },
+      {
+        "index": 5943,
+        "name": "Turn2BuildDiscardPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5944,
+        "name": "Turn2CommandMovePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5945,
+        "name": "Turn2MoveBannerID",
+        "type_index": 20911
+      },
+      {
+        "index": 5946,
+        "name": "Turn2FirstAdvancePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5947,
+        "name": "Turn2SecondAdvancePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5948,
+        "name": "Turn2EveningPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5949,
+        "name": "Turn2SkipIncitePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5950,
+        "name": "Turn2OppressHint2ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5951,
+        "name": "Turn2OppressHint3ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5952,
+        "name": "Turn2OppressHint5ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5953,
+        "name": "Turn2OppressHint6ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5954,
+        "name": "Turn3MobDiePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5955,
+        "name": "Turn3FindMoodPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5956,
+        "name": "Turn3MoodItemsHintID",
+        "type_index": 20911
+      },
+      {
+        "index": 5957,
+        "name": "Turn3ChooseMoodPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5958,
+        "name": "Turn3CraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5959,
+        "name": "Turn3CraftToHoardID",
+        "type_index": 20911
+      },
+      {
+        "index": 5960,
+        "name": "Turn3ProwessHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 5961,
+        "name": "Turn3DaylightPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5962,
+        "name": "Turn3FirstAdvancePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5963,
+        "name": "Turn3SecondAdvancePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5964,
+        "name": "Turn3WarlordLostPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5965,
+        "name": "Turn3FirstCommandPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5966,
+        "name": "Turn3SecondCommandPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5967,
+        "name": "Turn3IncitePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5968,
+        "name": "Turn3OppressHint2ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5969,
+        "name": "Turn3OppressHint3ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5970,
+        "name": "Turn3OppressHint5ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5971,
+        "name": "Turn3OppressHint6ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5972,
+        "name": "Turn3OppressHint8ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5973,
+        "name": "Turn4MobPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5974,
+        "name": "Turn4AnointPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5975,
+        "name": "Turn4ChooseMoodPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5976,
+        "name": "Turn4SkipCraftPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5977,
+        "name": "Turn4FirstCommandPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5978,
+        "name": "Turn4SecondCommandPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5979,
+        "name": "Turn4FirstAdvancePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5980,
+        "name": "Turn4SecondAdvancePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5981,
+        "name": "Turn4LootPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5982,
+        "name": "Turn4FinishLootPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5983,
+        "name": "Turn4EveningPromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5984,
+        "name": "Turn4SkipIncitePromptID",
+        "type_index": 20911
+      },
+      {
+        "index": 5985,
+        "name": "Turn4OppressHint2ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5986,
+        "name": "Turn4OppressHint3ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5987,
+        "name": "Turn4OppressHint5ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5988,
+        "name": "Turn4OppressHint6ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5989,
+        "name": "Turn4OppressHint8ID",
+        "type_index": 20911
+      },
+      {
+        "index": 5990,
+        "name": "Turn4OppressHint9ID",
+        "type_index": 20911
+      }
+    ],
+    "methods": [
+      {
+        "index": 7568,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001d91"
+      },
+      {
+        "index": 7569,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001d92"
+      }
+    ]
+  },
+  {
+    "index": 1616,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberMechaTutorialScript",
+    "token": "0x2000651",
+    "metadata_offset": 9772632,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7590,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001da7"
+      },
+      {
+        "index": 7591,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001da8"
+      }
+    ]
+  },
+  {
+    "index": 1617,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberPracticeGameScript",
+    "token": "0x2000652",
+    "metadata_offset": 9772720,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7592,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001da9"
+      },
+      {
+        "index": 7593,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001daa"
+      }
+    ]
+  },
+  {
+    "index": 1620,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberRiverfolkTutorialGame1Script",
+    "token": "0x2000653",
+    "metadata_offset": 9772984,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7594,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001dab"
+      },
+      {
+        "index": 7595,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dac"
+      }
+    ]
+  },
+  {
+    "index": 1622,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberRiverfolkTutorialGame2Script",
+    "token": "0x2000656",
+    "metadata_offset": 9773160,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7607,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001db8"
+      },
+      {
+        "index": 7608,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001db9"
+      },
+      {
+        "index": 7609,
+        "name": "OtterSayWithServiceDescription",
+        "parameter_count": 1,
+        "parameters": [
+          "id"
+        ],
+        "token": "0x6001dba"
+      }
+    ]
+  },
+  {
+    "index": 1628,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialAction",
+    "token": "0x2000658",
+    "metadata_offset": 9773688,
+    "fields": [
+      {
+        "index": 6010,
+        "name": "contextualAttributes",
+        "type_index": 8476
+      }
+    ],
+    "methods": [
+      {
+        "index": 7613,
+        "name": "AddImage",
+        "parameter_count": 1,
+        "parameters": [
+          "image"
+        ],
+        "token": "0x6001dbe"
+      },
+      {
+        "index": 7614,
+        "name": "AddIndex",
+        "parameter_count": 1,
+        "parameters": [
+          "index"
+        ],
+        "token": "0x6001dbf"
+      },
+      {
+        "index": 7615,
+        "name": "AddBoardNode",
+        "parameter_count": 2,
+        "parameters": [
+          "match",
+          "index"
+        ],
+        "token": "0x6001dc0"
+      },
+      {
+        "index": 7616,
+        "name": "AddEntity",
+        "parameter_count": 1,
+        "parameters": [
+          "entity"
+        ],
+        "token": "0x6001dc1"
+      },
+      {
+        "index": 7617,
+        "name": "AddEntities",
+        "parameter_count": 1,
+        "parameters": [
+          "entities"
+        ],
+        "token": "0x6001dc2"
+      },
+      {
+        "index": 7618,
+        "name": "AddEntity",
+        "parameter_count": 1,
+        "parameters": [
+          "entityGenerator"
+        ],
+        "token": "0x6001dc3"
+      },
+      {
+        "index": 7619,
+        "name": "AddEntities",
+        "parameter_count": 1,
+        "parameters": [
+          "entityGenerator"
+        ],
+        "token": "0x6001dc4"
+      },
+      {
+        "index": 7620,
+        "name": "AddVFXTag",
+        "parameter_count": 1,
+        "parameters": [
+          "vfxTag"
+        ],
+        "token": "0x6001dc5"
+      },
+      {
+        "index": 7621,
+        "name": "AddDescription",
+        "parameter_count": 1,
+        "parameters": [
+          "str"
+        ],
+        "token": "0x6001dc6"
+      },
+      {
+        "index": 7622,
+        "name": "AddSS1Only",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dc7"
+      },
+      {
+        "index": 7623,
+        "name": "AddSS2Only",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dc8"
+      },
+      {
+        "index": 7624,
+        "name": "AddHandCard",
+        "parameter_count": 2,
+        "parameters": [
+          "archID",
+          "m"
+        ],
+        "token": "0x6001dc9"
+      },
+      {
+        "index": 7625,
+        "name": "MakeSerializableAttributes",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6001dca"
+      },
+      {
+        "index": 7626,
+        "name": ".ctor",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dcb"
+      }
+    ]
+  },
+  {
+    "index": 1629,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialGame1Script",
+    "token": "0x200065e",
+    "metadata_offset": 9773776,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7639,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001dd8"
+      },
+      {
+        "index": 7640,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dd9"
+      }
+    ]
+  },
+  {
+    "index": 1630,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialGame2Script",
+    "token": "0x200065f",
+    "metadata_offset": 9773864,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7641,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001dda"
+      },
+      {
+        "index": 7642,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001ddb"
+      }
+    ]
+  },
+  {
+    "index": 1633,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialGame3Script",
+    "token": "0x2000660",
+    "metadata_offset": 9774128,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7643,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001ddc"
+      },
+      {
+        "index": 7644,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001ddd"
+      },
+      {
+        "index": 7645,
+        "name": "TurmoilBumperActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dde"
+      }
+    ]
+  },
+  {
+    "index": 1634,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialGame4Script",
+    "token": "0x2000663",
+    "metadata_offset": 9774216,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7651,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001de4"
+      },
+      {
+        "index": 7652,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001de5"
+      }
+    ]
+  },
+  {
+    "index": 1635,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialGame5Script",
+    "token": "0x2000664",
+    "metadata_offset": 9774304,
+    "fields": [],
+    "methods": [
+      {
+        "index": 7653,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001de6"
+      },
+      {
+        "index": 7654,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001de7"
+      }
+    ]
+  },
+  {
+    "index": 1655,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberTutorialScript",
+    "token": "0x2000665",
+    "metadata_offset": 9776064,
+    "fields": [
+      {
+        "index": 6024,
+        "name": "tm",
+        "type_index": 28722
+      }
+    ],
+    "methods": [
+      {
+        "index": 7655,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001de8"
+      },
+      {
+        "index": 7656,
+        "name": "BuildDialog",
+        "parameter_count": 5,
+        "parameters": [
+          "id",
+          "text",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001de9"
+      },
+      {
+        "index": 7657,
+        "name": "CatSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001dea"
+      },
+      {
+        "index": 7658,
+        "name": "BirdSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001deb"
+      },
+      {
+        "index": 7659,
+        "name": "WoodlandSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001dec"
+      },
+      {
+        "index": 7660,
+        "name": "VagabondSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001ded"
+      },
+      {
+        "index": 7661,
+        "name": "LizardSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001dee"
+      },
+      {
+        "index": 7662,
+        "name": "OtterSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001def"
+      },
+      {
+        "index": 7663,
+        "name": "MoleSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001df0"
+      },
+      {
+        "index": 7664,
+        "name": "CrowSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001df1"
+      },
+      {
+        "index": 7665,
+        "name": "BadgerSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001df2"
+      },
+      {
+        "index": 7666,
+        "name": "RatSay",
+        "parameter_count": 5,
+        "parameters": [
+          "text",
+          "id",
+          "blocking",
+          "dialogType",
+          "dialogScope"
+        ],
+        "token": "0x6001df3"
+      },
+      {
+        "index": 7667,
+        "name": "IntroDialog",
+        "parameter_count": 1,
+        "parameters": [
+          "text"
+        ],
+        "token": "0x6001df4"
+      },
+      {
+        "index": 7668,
+        "name": "UpdateDialog",
+        "parameter_count": 2,
+        "parameters": [
+          "id",
+          "text"
+        ],
+        "token": "0x6001df5"
+      },
+      {
+        "index": 7669,
+        "name": "WaitForContinue",
+        "parameter_count": 1,
+        "parameters": [
+          "id"
+        ],
+        "token": "0x6001df6"
+      },
+      {
+        "index": 7670,
+        "name": "VisualHighlight",
+        "parameter_count": 2,
+        "parameters": [
+          "id",
+          "identifier"
+        ],
+        "token": "0x6001df7"
+      },
+      {
+        "index": 7671,
+        "name": "TutorialFocus",
+        "parameter_count": 2,
+        "parameters": [
+          "id",
+          "identifier"
+        ],
+        "token": "0x6001df8"
+      },
+      {
+        "index": 7672,
+        "name": "ShowHint",
+        "parameter_count": 2,
+        "parameters": [
+          "id",
+          "flavors"
+        ],
+        "token": "0x6001df9"
+      },
+      {
+        "index": 7673,
+        "name": "CallToAction",
+        "parameter_count": 2,
+        "parameters": [
+          "id",
+          "identifier"
+        ],
+        "token": "0x6001dfa"
+      },
+      {
+        "index": 7674,
+        "name": "HideTutorialAction",
+        "parameter_count": 1,
+        "parameters": [
+          "id"
+        ],
+        "token": "0x6001dfb"
+      },
+      {
+        "index": 7675,
+        "name": "Not",
+        "parameter_count": 1,
+        "parameters": [
+          "predicate"
+        ],
+        "token": "0x6001dfc"
+      },
+      {
+        "index": 7676,
+        "name": "OnTurn",
+        "parameter_count": 1,
+        "parameters": [
+          "turn"
+        ],
+        "token": "0x6001dfd"
+      },
+      {
+        "index": 7677,
+        "name": "AfterTurn",
+        "parameter_count": 1,
+        "parameters": [
+          "turn"
+        ],
+        "token": "0x6001dfe"
+      },
+      {
+        "index": 7678,
+        "name": "RemainingActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001dff"
+      },
+      {
+        "index": 7679,
+        "name": "ActionsLeft",
+        "parameter_count": 1,
+        "parameters": [
+          "amt"
+        ],
+        "token": "0x6001e00"
+      },
+      {
+        "index": 7680,
+        "name": "AtTurnLocation",
+        "parameter_count": 1,
+        "parameters": [
+          "location"
+        ],
+        "token": "0x6001e01"
+      },
+      {
+        "index": 7681,
+        "name": "ObjectiveAt",
+        "parameter_count": 2,
+        "parameters": [
+          "objective",
+          "current"
+        ],
+        "token": "0x6001e02"
+      },
+      {
+        "index": 7682,
+        "name": "ObjectiveAtOrGreater",
+        "parameter_count": 2,
+        "parameters": [
+          "objective",
+          "current"
+        ],
+        "token": "0x6001e03"
+      },
+      {
+        "index": 7683,
+        "name": "ObjectiveCompleted",
+        "parameter_count": 1,
+        "parameters": [
+          "objectives"
+        ],
+        "token": "0x6001e04"
+      },
+      {
+        "index": 7684,
+        "name": "CanOrganizeAtNonBuiltBase",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001e05"
+      },
+      {
+        "index": 7685,
+        "name": "CanTrain",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001e06"
+      },
+      {
+        "index": 7686,
+        "name": "IsInPhase",
+        "parameter_count": 1,
+        "parameters": [
+          "phase"
+        ],
+        "token": "0x6001e07"
+      },
+      {
+        "index": 7687,
+        "name": "NumUnitsAt",
+        "parameter_count": 2,
+        "parameters": [
+          "zone",
+          "amt"
+        ],
+        "token": "0x6001e08"
+      },
+      {
+        "index": 7688,
+        "name": "NumRoostsGreaterThan",
+        "parameter_count": 1,
+        "parameters": [
+          "amt"
+        ],
+        "token": "0x6001e09"
+      },
+      {
+        "index": 7689,
+        "name": "NumBuildingsGreaterThan",
+        "parameter_count": 2,
+        "parameters": [
+          "buildingType",
+          "amt"
+        ],
+        "token": "0x6001e0a"
+      },
+      {
+        "index": 7690,
+        "name": "BadDecreeAssignment",
+        "parameter_count": 2,
+        "parameters": [
+          "decreeType",
+          "suit"
+        ],
+        "token": "0x6001e0b"
+      },
+      {
+        "index": 7691,
+        "name": "DecreeAssignmentFixed",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001e0c"
+      },
+      {
+        "index": 7692,
+        "name": "IsInCombatArea",
+        "parameter_count": 1,
+        "parameters": [
+          "bt"
+        ],
+        "token": "0x6001e0d"
+      },
+      {
+        "index": 7693,
+        "name": "IsInCombatArea",
+        "parameter_count": 1,
+        "parameters": [
+          "suit"
+        ],
+        "token": "0x6001e0e"
+      },
+      {
+        "index": 7694,
+        "name": "evtOnTurn",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "turn"
+        ],
+        "token": "0x6001e0f"
+      },
+      {
+        "index": 7695,
+        "name": "evtAfterTurn",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "turn"
+        ],
+        "token": "0x6001e10"
+      },
+      {
+        "index": 7696,
+        "name": "objectiveCheck",
+        "parameter_count": 2,
+        "parameters": [
+          "objective",
+          "current"
+        ],
+        "token": "0x6001e11"
+      },
+      {
+        "index": 7697,
+        "name": "objectiveComplete",
+        "parameter_count": 1,
+        "parameters": [
+          "objectives"
+        ],
+        "token": "0x6001e12"
+      },
+      {
+        "index": 7698,
+        "name": "objectiveIdComplete",
+        "parameter_count": 1,
+        "parameters": [
+          "objective"
+        ],
+        "token": "0x6001e13"
+      },
+      {
+        "index": 7699,
+        "name": "IsFighting",
+        "parameter_count": 1,
+        "parameters": [
+          "bt"
+        ],
+        "token": "0x6001e14"
+      },
+      {
+        "index": 7700,
+        "name": "InPhase",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "phase"
+        ],
+        "token": "0x6001e15"
+      },
+      {
+        "index": 7701,
+        "name": "UnitsAt",
+        "parameter_count": 3,
+        "parameters": [
+          "evt",
+          "zone",
+          "amt"
+        ],
+        "token": "0x6001e16"
+      },
+      {
+        "index": 7702,
+        "name": "CameraAction",
+        "parameter_count": 4,
+        "parameters": [
+          "evt",
+          "index",
+          "flavor",
+          "recordPosition"
+        ],
+        "token": "0x6001e17"
+      },
+      {
+        "index": 7703,
+        "name": "EmitHintAllEntities",
+        "parameter_count": 4,
+        "parameters": [
+          "parent",
+          "descendentFilter",
+          "baseId",
+          "flavors"
+        ],
+        "token": "0x6001e18"
+      },
+      {
+        "index": 7704,
+        "name": "GenerateShowHintOnEntities",
+        "parameter_count": 4,
+        "parameters": [
+          "parent",
+          "descendentFilter",
+          "id",
+          "flavors"
+        ],
+        "token": "0x6001e19"
+      },
+      {
+        "index": 7705,
+        "name": "<RemainingActions>b__24_0",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6001e1a"
+      },
+      {
+        "index": 7706,
+        "name": "<CanOrganizeAtNonBuiltBase>b__30_0",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6001e1b"
+      },
+      {
+        "index": 7707,
+        "name": "<CanTrain>b__31_0",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6001e1c"
+      },
+      {
+        "index": 7708,
+        "name": "<DecreeAssignmentFixed>b__37_0",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6001e1d"
+      }
+    ]
+  },
+  {
+    "index": 1657,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberUnderworldTutorialGame1Script",
+    "token": "0x2000679",
+    "metadata_offset": 9776240,
+    "fields": [
+      {
+        "index": 6080,
+        "name": "TunnelsSetupHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 6081,
+        "name": "TunnelsOnBoardHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 6082,
+        "name": "BurrowClearingHighlightID",
+        "type_index": 20911
+      },
+      {
+        "index": 6083,
+        "name": "Turn1RecruitDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6084,
+        "name": "Turn1BuildDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6085,
+        "name": "Turn1BuildRevealCostDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6086,
+        "name": "Turn1BuildTypeDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6087,
+        "name": "Turn1CraftDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6088,
+        "name": "Turn2DigClearingDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6089,
+        "name": "Turn2DigDiscardDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6090,
+        "name": "Turn2DigMoveDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6091,
+        "name": "Turn2AttackDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6092,
+        "name": "Turn3MoveAndAttackDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6093,
+        "name": "Turn3SwayMinisterDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6094,
+        "name": "Turn3SwayChooseBrigadierDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6095,
+        "name": "Turn3SwayRevealDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6096,
+        "name": "Turn3SwayVpID",
+        "type_index": 20911
+      },
+      {
+        "index": 6097,
+        "name": "Turn3SwayVpCallID",
+        "type_index": 20911
+      },
+      {
+        "index": 6098,
+        "name": "Turn3SwayVpFocusID",
+        "type_index": 20911
+      },
+      {
+        "index": 6099,
+        "name": "Turn4BuildDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6100,
+        "name": "Turn4DigDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6101,
+        "name": "Turn4BrigadierActivateDialogID",
+        "type_index": 20911
+      },
+      {
+        "index": 6102,
+        "name": "Turn4BrigadierSecondBattleDialogID",
+        "type_index": 20911
+      }
+    ],
+    "methods": [
+      {
+        "index": 7760,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001e51"
+      },
+      {
+        "index": 7761,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001e52"
+      }
+    ]
+  },
+  {
+    "index": 1659,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TuberUnderworldTutorialGame2Script",
+    "token": "0x200067b",
+    "metadata_offset": 9776416,
+    "fields": [
+      {
+        "index": 6106,
+        "name": "CorvidSetupWarriorsID",
+        "type_index": 20911
+      },
+      {
+        "index": 6107,
+        "name": "CorvidTurn1RecruitID",
+        "type_index": 20911
+      },
+      {
+        "index": 6108,
+        "name": "CorvidTurn1PlotID",
+        "type_index": 20911
+      },
+      {
+        "index": 6109,
+        "name": "CorvidTurn1SelectExtortID",
+        "type_index": 20911
+      },
+      {
+        "index": 6110,
+        "name": "CorvidTurn1FirstMoveID",
+        "type_index": 20911
+      },
+      {
+        "index": 6111,
+        "name": "CorvidTurn1SecondMoveID",
+        "type_index": 20911
+      },
+      {
+        "index": 6112,
+        "name": "CorvidTurn2CraftID",
+        "type_index": 20911
+      },
+      {
+        "index": 6113,
+        "name": "CorvidTurn2FlipExtortionID",
+        "type_index": 20911
+      },
+      {
+        "index": 6114,
+        "name": "CorvidTurn2RecruitID",
+        "type_index": 20911
+      },
+      {
+        "index": 6115,
+        "name": "CorvidTurn2FirstMoveID",
+        "type_index": 20911
+      },
+      {
+        "index": 6116,
+        "name": "CorvidTurn2FirstPlotID",
+        "type_index": 20911
+      },
+      {
+        "index": 6117,
+        "name": "CorvidTurn2SecondPlotID",
+        "type_index": 20911
+      },
+      {
+        "index": 6118,
+        "name": "CorvidTurn2ExertID",
+        "type_index": 20911
+      },
+      {
+        "index": 6119,
+        "name": "CorvidTurn2SecondMoveID",
+        "type_index": 20911
+      },
+      {
+        "index": 6120,
+        "name": "CorvidTurn3FlipSnareID",
+        "type_index": 20911
+      },
+      {
+        "index": 6121,
+        "name": "CorvidTurn3FlipRaidID",
+        "type_index": 20911
+      },
+      {
+        "index": 6122,
+        "name": "CorvidTurn3RecruitID",
+        "type_index": 20911
+      },
+      {
+        "index": 6123,
+        "name": "CorvidTurn3PlotID",
+        "type_index": 20911
+      },
+      {
+        "index": 6124,
+        "name": "CorvidTurn3SelectBombID",
+        "type_index": 20911
+      },
+      {
+        "index": 6125,
+        "name": "CorvidTurn3MoveID",
+        "type_index": 20911
+      },
+      {
+        "index": 6126,
+        "name": "CorvidTurn3TrickID",
+        "type_index": 20911
+      },
+      {
+        "index": 6127,
+        "name": "CorvidTurn4RecruitID",
+        "type_index": 20911
+      },
+      {
+        "index": 6128,
+        "name": "CorvidTurn4MoveID",
+        "type_index": 20911
+      },
+      {
+        "index": 6129,
+        "name": "CorvidTurn4FirstBattleID",
+        "type_index": 20911
+      },
+      {
+        "index": 6130,
+        "name": "CorvidTurn4SecondBattleID",
+        "type_index": 20911
+      }
+    ],
+    "methods": [
+      {
+        "index": 7766,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6001e57"
+      },
+      {
+        "index": 7767,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6001e58"
+      },
+      {
+        "index": 7768,
+        "name": "<innerActions>b__26_0",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6001e59"
+      }
+    ]
+  },
+  {
+    "index": 1660,
+    "assembly": "tuber-canis.dll",
+    "namespace": "tuber.canis.data.tutorialScripts",
+    "name": "TutorialConstants",
+    "token": "0x200067d",
+    "metadata_offset": 9776504,
+    "fields": [
+      {
+        "index": 6135,
+        "name": "Dialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6136,
+        "name": "UpdateDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6137,
+        "name": "WaitForContinue",
+        "type_index": 27416
+      },
+      {
+        "index": 6138,
+        "name": "VisualHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6139,
+        "name": "TutorialFocus",
+        "type_index": 27416
+      },
+      {
+        "index": 6140,
+        "name": "HideTutorialAction",
+        "type_index": 27416
+      },
+      {
+        "index": 6141,
+        "name": "CallToAction",
+        "type_index": 27416
+      },
+      {
+        "index": 6142,
+        "name": "ShowHint",
+        "type_index": 27416
+      },
+      {
+        "index": 6143,
+        "name": "DisableClientAction",
+        "type_index": 27416
+      },
+      {
+        "index": 6144,
+        "name": "ClickToContinue",
+        "type_index": 27416
+      },
+      {
+        "index": 6145,
+        "name": "Persistent",
+        "type_index": 27416
+      },
+      {
+        "index": 6146,
+        "name": "Continuable",
+        "type_index": 27416
+      },
+      {
+        "index": 6147,
+        "name": "Goals",
+        "type_index": 27416
+      },
+      {
+        "index": 6148,
+        "name": "BelowReveals",
+        "type_index": 27416
+      },
+      {
+        "index": 6149,
+        "name": "AboveReveals",
+        "type_index": 27416
+      },
+      {
+        "index": 6150,
+        "name": "WarriorsInHud",
+        "type_index": 27416
+      },
+      {
+        "index": 6151,
+        "name": "ActionsCounter",
+        "type_index": 27416
+      },
+      {
+        "index": 6152,
+        "name": "OpponentPortrait",
+        "type_index": 27416
+      },
+      {
+        "index": 6153,
+        "name": "CardDrawInHud",
+        "type_index": 27416
+      },
+      {
+        "index": 6154,
+        "name": "ShopInHud",
+        "type_index": 27416
+      },
+      {
+        "index": 6155,
+        "name": "Bases",
+        "type_index": 27416
+      },
+      {
+        "index": 6156,
+        "name": "Officers",
+        "type_index": 27416
+      },
+      {
+        "index": 6157,
+        "name": "Quests",
+        "type_index": 27416
+      },
+      {
+        "index": 6158,
+        "name": "OutcastInHud",
+        "type_index": 27416
+      },
+      {
+        "index": 6159,
+        "name": "TradePostsInHud",
+        "type_index": 27416
+      },
+      {
+        "index": 6160,
+        "name": "PaymentsFundsAndCommitments",
+        "type_index": 27416
+      },
+      {
+        "index": 6161,
+        "name": "LostSouls",
+        "type_index": 27416
+      },
+      {
+        "index": 6162,
+        "name": "Acolytes",
+        "type_index": 27416
+      },
+      {
+        "index": 6163,
+        "name": "Reveals",
+        "type_index": 27416
+      },
+      {
+        "index": 6164,
+        "name": "HatedOutcast",
+        "type_index": 27416
+      },
+      {
+        "index": 6165,
+        "name": "OpenInfoPanel",
+        "type_index": 27416
+      },
+      {
+        "index": 6166,
+        "name": "ResolveDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6167,
+        "name": "FindBuildDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6168,
+        "name": "OpenStore",
+        "type_index": 27416
+      },
+      {
+        "index": 6169,
+        "name": "OpenOutrageHand",
+        "type_index": 27416
+      },
+      {
+        "index": 6170,
+        "name": "DismissDecreeAssignment",
+        "type_index": 27416
+      },
+      {
+        "index": 6171,
+        "name": "ReshowDecreeAssignment",
+        "type_index": 27416
+      },
+      {
+        "index": 6172,
+        "name": "DayNightCycle",
+        "type_index": 27416
+      },
+      {
+        "index": 6173,
+        "name": "MozEntity",
+        "type_index": 27416
+      },
+      {
+        "index": 6174,
+        "name": "PromptMozEntity",
+        "type_index": 27416
+      },
+      {
+        "index": 6175,
+        "name": "OpenLostSouls",
+        "type_index": 27416
+      },
+      {
+        "index": 6176,
+        "name": "OpenQuestBookAuto",
+        "type_index": 27416
+      },
+      {
+        "index": 6177,
+        "name": "FindWaystationDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6178,
+        "name": "FindMoodDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6179,
+        "name": "UseHundredsBuild",
+        "type_index": 27416
+      },
+      {
+        "index": 6180,
+        "name": "BigXHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6181,
+        "name": "RuleBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6182,
+        "name": "ClearingBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6183,
+        "name": "WoodInHud",
+        "type_index": 27416
+      },
+      {
+        "index": 6184,
+        "name": "rollAdvantage",
+        "type_index": 27416
+      },
+      {
+        "index": 6185,
+        "name": "diceRange",
+        "type_index": 27416
+      },
+      {
+        "index": 6186,
+        "name": "TotalHits",
+        "type_index": 27416
+      },
+      {
+        "index": 6187,
+        "name": "Building",
+        "type_index": 27416
+      },
+      {
+        "index": 6188,
+        "name": "WorkshopOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6189,
+        "name": "SawmillOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6190,
+        "name": "BuildingSlot",
+        "type_index": 27416
+      },
+      {
+        "index": 6191,
+        "name": "Score",
+        "type_index": 27416
+      },
+      {
+        "index": 6192,
+        "name": "ActionPanel",
+        "type_index": 27416
+      },
+      {
+        "index": 6193,
+        "name": "HighlightWorkshop",
+        "type_index": 27416
+      },
+      {
+        "index": 6194,
+        "name": "HighlightSawmill",
+        "type_index": 27416
+      },
+      {
+        "index": 6195,
+        "name": "HighlightRecruiter",
+        "type_index": 27416
+      },
+      {
+        "index": 6196,
+        "name": "RoostOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6197,
+        "name": "TradePostOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6198,
+        "name": "InfoPanelTrack",
+        "type_index": 27416
+      },
+      {
+        "index": 6199,
+        "name": "SupporterArea",
+        "type_index": 27416
+      },
+      {
+        "index": 6200,
+        "name": "SympathyCost",
+        "type_index": 27416
+      },
+      {
+        "index": 6201,
+        "name": "ItemsOnPlayer",
+        "type_index": 27416
+      },
+      {
+        "index": 6202,
+        "name": "BrokenHeart",
+        "type_index": 27416
+      },
+      {
+        "index": 6203,
+        "name": "QuestBook",
+        "type_index": 27416
+      },
+      {
+        "index": 6204,
+        "name": "VagabondActionPanel",
+        "type_index": 27416
+      },
+      {
+        "index": 6205,
+        "name": "ItemPanel",
+        "type_index": 27416
+      },
+      {
+        "index": 6206,
+        "name": "RuinOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6207,
+        "name": "NonSatchelItems",
+        "type_index": 27416
+      },
+      {
+        "index": 6208,
+        "name": "EveningActions",
+        "type_index": 27416
+      },
+      {
+        "index": 6209,
+        "name": "LowerRightSatchelSlot",
+        "type_index": 27416
+      },
+      {
+        "index": 6210,
+        "name": "DecreeHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6211,
+        "name": "WoodlandWarriors",
+        "type_index": 27416
+      },
+      {
+        "index": 6212,
+        "name": "AbilityHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6213,
+        "name": "Defenseless",
+        "type_index": 27416
+      },
+      {
+        "index": 6214,
+        "name": "RecruitDecree",
+        "type_index": 27416
+      },
+      {
+        "index": 6215,
+        "name": "PriorityNumber",
+        "type_index": 27416
+      },
+      {
+        "index": 6216,
+        "name": "RiverfolkFunds",
+        "type_index": 27416
+      },
+      {
+        "index": 6217,
+        "name": "RiverfolkPayments",
+        "type_index": 27416
+      },
+      {
+        "index": 6218,
+        "name": "RiverfolkCommitments",
+        "type_index": 27416
+      },
+      {
+        "index": 6219,
+        "name": "GardenOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6220,
+        "name": "LizardsReveals",
+        "type_index": 27416
+      },
+      {
+        "index": 6221,
+        "name": "RiverfolkFundsPanel",
+        "type_index": 27416
+      },
+      {
+        "index": 6222,
+        "name": "GardenSetup",
+        "type_index": 27416
+      },
+      {
+        "index": 6223,
+        "name": "LostSoulsLabel",
+        "type_index": 27416
+      },
+      {
+        "index": 6224,
+        "name": "HighlightService",
+        "type_index": 27416
+      },
+      {
+        "index": 6225,
+        "name": "ServiceCostLabel",
+        "type_index": 27416
+      },
+      {
+        "index": 6226,
+        "name": "TunnelsSetup",
+        "type_index": 27416
+      },
+      {
+        "index": 6227,
+        "name": "TunnelOnBoard",
+        "type_index": 27416
+      },
+      {
+        "index": 6228,
+        "name": "BurrowClearing",
+        "type_index": 27416
+      },
+      {
+        "index": 6229,
+        "name": "CrownsFocus",
+        "type_index": 27416
+      },
+      {
+        "index": 6230,
+        "name": "ExposureAbility",
+        "type_index": 27416
+      },
+      {
+        "index": 6231,
+        "name": "FerryHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6232,
+        "name": "FerryBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6233,
+        "name": "TowerHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6234,
+        "name": "TowerBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6235,
+        "name": "MountainPassHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6236,
+        "name": "MountainPassBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6237,
+        "name": "ClearingSuit",
+        "type_index": 27416
+      },
+      {
+        "index": 6238,
+        "name": "KeepersWaystationFlip",
+        "type_index": 27416
+      },
+      {
+        "index": 6239,
+        "name": "KeepersRetinueHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6240,
+        "name": "KeepersRetinueColumnHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6241,
+        "name": "KeepersDevoutKnightsHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6242,
+        "name": "KeepersHUDRelicHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6243,
+        "name": "HundredsCommandHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6244,
+        "name": "HundredsProwessHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6245,
+        "name": "HundredsAdvanceHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6246,
+        "name": "HundredsProwessBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6247,
+        "name": "HundredsProwessValueHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6248,
+        "name": "HundredsCraftPointsBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6249,
+        "name": "HundredsCraftHoardBanner",
+        "type_index": 27416
+      },
+      {
+        "index": 6250,
+        "name": "HundredsMoodItemHighlight",
+        "type_index": 27416
+      },
+      {
+        "index": 6251,
+        "name": "OutrageSymbol",
+        "type_index": 27416
+      },
+      {
+        "index": 6252,
+        "name": "IntroDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6253,
+        "name": "CatDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6254,
+        "name": "EyrieDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6255,
+        "name": "WoodlandDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6256,
+        "name": "VagabondDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6257,
+        "name": "LizardDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6258,
+        "name": "RiverfolkDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6259,
+        "name": "DuchyDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6260,
+        "name": "CorvidDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6261,
+        "name": "KeepersDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6262,
+        "name": "HundredsDialog",
+        "type_index": 27416
+      },
+      {
+        "index": 6263,
+        "name": "CloseBuyRiverfolkServices",
+        "type_index": 27416
+      },
+      {
+        "index": 6264,
+        "name": "NoRoosts",
+        "type_index": 27416
+      },
+      {
+        "index": 6265,
+        "name": "MartialLaw",
+        "type_index": 27416
+      },
+      {
+        "index": 6266,
+        "name": "WarriorSupply",
+        "type_index": 27416
+      },
+      {
+        "index": 6267,
+        "name": "BaseRemoved",
+        "type_index": 27416
+      },
+      {
+        "index": 6268,
+        "name": "FiveSupporters",
+        "type_index": 27416
+      },
+      {
+        "index": 6269,
+        "name": "VagabondSelect",
+        "type_index": 27416
+      },
+      {
+        "index": 6270,
+        "name": "VagabondDefenseless",
+        "type_index": 27416
+      },
+      {
+        "index": 6271,
+        "name": "CoinStack",
+        "type_index": 27416
+      },
+      {
+        "index": 6272,
+        "name": "TeaPot",
+        "type_index": 27416
+      },
+      {
+        "index": 6273,
+        "name": "VagabondAlly",
+        "type_index": 27416
+      },
+      {
+        "index": 6274,
+        "name": "VagabondAllyAttack",
+        "type_index": 27416
+      },
+      {
+        "index": 6275,
+        "name": "NoItemToCraft",
+        "type_index": 27416
+      },
+      {
+        "index": 6276,
+        "name": "VagabondFirstTimeDamage",
+        "type_index": 27416
+      },
+      {
+        "index": 6277,
+        "name": "VagabondFirstTimeRevoltDamage",
+        "type_index": 27416
+      },
+      {
+        "index": 6278,
+        "name": "VagabondFirstTimeExploreChoice",
+        "type_index": 27416
+      },
+      {
+        "index": 6279,
+        "name": "VagabondRepairBrokenItem",
+        "type_index": 27416
+      },
+      {
+        "index": 6280,
+        "name": "VagabondSlipWarning",
+        "type_index": 27416
+      },
+      {
+        "index": 6281,
+        "name": "TwoVagabondInformation",
+        "type_index": 27416
+      },
+      {
+        "index": 6282,
+        "name": "FirstTimeDiscarding",
+        "type_index": 27416
+      },
+      {
+        "index": 6283,
+        "name": "FirstLostSympathy",
+        "type_index": 27416
+      },
+      {
+        "index": 6284,
+        "name": "FirstScoredBattleVP",
+        "type_index": 27416
+      },
+      {
+        "index": 6285,
+        "name": "FirstRollCappedByWarriors",
+        "type_index": 27416
+      },
+      {
+        "index": 6286,
+        "name": "FirstDieSwap",
+        "type_index": 27416
+      },
+      {
+        "index": 6287,
+        "name": "FirstDefenselessEnemy",
+        "type_index": 27416
+      },
+      {
+        "index": 6288,
+        "name": "MoveToKeep",
+        "type_index": 27416
+      },
+      {
+        "index": 6289,
+        "name": "BuyFirstRiverfolkService",
+        "type_index": 27416
+      },
+      {
+        "index": 6290,
+        "name": "FirstLostGarden",
+        "type_index": 27416
+      },
+      {
+        "index": 6291,
+        "name": "FirstMountainMap",
+        "type_index": 27416
+      },
+      {
+        "index": 6292,
+        "name": "FirstLakeMap",
+        "type_index": 27416
+      },
+      {
+        "index": 6293,
+        "name": "FirstExposureAbility",
+        "type_index": 27416
+      },
+      {
+        "index": 6294,
+        "name": "HundredsOnlyLavish",
+        "type_index": 27416
+      }
+    ],
+    "methods": []
+  },
+  {
+    "index": 13561,
+    "assembly": "Canis.dll",
+    "namespace": "Canis.tutorialScripts",
+    "name": "TutorialAction",
+    "token": "0x2000023",
+    "metadata_offset": 10823792,
+    "fields": [],
+    "methods": [
+      {
+        "index": 79998,
+        "name": ".ctor",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x6000106"
+      },
+      {
+        "index": 79999,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "serializableAttributes"
+        ],
+        "token": "0x6000107"
+      },
+      {
+        "index": 80000,
+        "name": "MakeSerializableAttributes",
+        "parameter_count": 1,
+        "parameters": [
+          "context"
+        ],
+        "token": "0x6000108"
+      }
+    ]
+  },
+  {
+    "index": 13562,
+    "assembly": "Canis.dll",
+    "namespace": "Canis.tutorialScripts",
+    "name": "TutorialScript",
+    "token": "0x2000024",
+    "metadata_offset": 10823880,
+    "fields": [
+      {
+        "index": 53359,
+        "name": "match",
+        "type_index": 22107
+      },
+      {
+        "index": 53360,
+        "name": "counter",
+        "type_index": 20893
+      }
+    ],
+    "methods": [
+      {
+        "index": 80001,
+        "name": ".ctor",
+        "parameter_count": 1,
+        "parameters": [
+          "m"
+        ],
+        "token": "0x6000109"
+      },
+      {
+        "index": 80002,
+        "name": "innerActions",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x600010a"
+      },
+      {
+        "index": 80003,
+        "name": "GetAction",
+        "parameter_count": 0,
+        "parameters": [],
+        "token": "0x600010b"
+      },
+      {
+        "index": 80004,
+        "name": "When",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "action"
+        ],
+        "token": "0x600010c"
+      },
+      {
+        "index": 80005,
+        "name": "When",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "actions"
+        ],
+        "token": "0x600010d"
+      },
+      {
+        "index": 80006,
+        "name": "When",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "actions"
+        ],
+        "token": "0x600010e"
+      },
+      {
+        "index": 80007,
+        "name": "When",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "actions"
+        ],
+        "token": "0x600010f"
+      },
+      {
+        "index": 80008,
+        "name": "WhenAndReload",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "actions"
+        ],
+        "token": "0x6000110"
+      },
+      {
+        "index": 80009,
+        "name": "When",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "actions"
+        ],
+        "token": "0x6000111"
+      },
+      {
+        "index": 80010,
+        "name": "WhenAndReload",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "actions"
+        ],
+        "token": "0x6000112"
+      },
+      {
+        "index": 80011,
+        "name": "WhenAndReload",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "actions"
+        ],
+        "token": "0x6000113"
+      },
+      {
+        "index": 80012,
+        "name": "WhenOnce",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "action"
+        ],
+        "token": "0x6000114"
+      },
+      {
+        "index": 80013,
+        "name": "WhenOnce",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "actions"
+        ],
+        "token": "0x6000115"
+      },
+      {
+        "index": 80014,
+        "name": "WhenOnce",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "actions"
+        ],
+        "token": "0x6000116"
+      },
+      {
+        "index": 80015,
+        "name": "WhenOnceAction",
+        "parameter_count": 2,
+        "parameters": [
+          "str",
+          "actions"
+        ],
+        "token": "0x6000117"
+      },
+      {
+        "index": 80016,
+        "name": "WhenOnceAction",
+        "parameter_count": 2,
+        "parameters": [
+          "evt",
+          "actions"
+        ],
+        "token": "0x6000118"
+      },
+      {
+        "index": 80017,
+        "name": "<When>b__6_0",
+        "parameter_count": 1,
+        "parameters": [
+          "a"
+        ],
+        "token": "0x6000119"
+      },
+      {
+        "index": 80018,
+        "name": "<When>b__8_0",
+        "parameter_count": 1,
+        "parameters": [
+          "a"
+        ],
+        "token": "0x600011a"
+      },
+      {
+        "index": 80019,
+        "name": "<WhenAndReload>b__9_0",
+        "parameter_count": 1,
+        "parameters": [
+          "a"
+        ],
+        "token": "0x600011b"
+      },
+      {
+        "index": 80020,
+        "name": "<WhenOnce>b__14_0",
+        "parameter_count": 1,
+        "parameters": [
+          "a"
+        ],
+        "token": "0x600011c"
+      },
+      {
+        "index": 80021,
+        "name": "<WhenOnce>b__15_0",
+        "parameter_count": 1,
+        "parameters": [
+          "a"
+        ],
+        "token": "0x600011d"
+      }
+    ]
+  }
+]

@@ -1,0 +1,743 @@
+{
+  "method": "Static extraction of original Unity bundles, IL2CPP metadata and localized text. Original executable was not played.",
+  "localizationSha256": "1e44deb8394a2d916f8f6b5a2e6cc2b6e61ba923de0b68e1a526f25e68e9eef3",
+  "entryCount": 184,
+  "entries": {
+    "tutorial1.turn1.preintro": {
+      "text": "欢迎来到《茂林源记》，在这个游戏里，四个各有特色的阵营将展开战斗与冒险，力图控制这片广阔的森林。",
+      "line": 2672
+    },
+    "tutorial1.turn1.intro": {
+      "text": "这关里，你将扮演富有野心的<color=#CC6633>猫咪贵族</color>。早在他们拥有如今强大的军事和工业之前，<color=#CC6633>贵族</color>就带着一小群战士和几栋简陋的建筑来到了这片森林。",
+      "line": 2673
+    },
+    "tutorial1.turn1.movelesson": {
+      "text": "将一个 <sprite name=\"marquise\"><color=#CC6633>士兵</color> 移动到临近的领地来扩大你的统治。",
+      "line": 2674
+    },
+    "tutorial1.turn1.suits": {
+      "text": "每个领地都用一个图标表示了它的类型，这代表了这块领地上的动物居民种类：老鼠<sprite name=\"ClearingMouse\">，狐狸<sprite name=\"ClearingFox\">，和兔子<sprite name=\"ClearingRabbit\">",
+      "line": 2675
+    },
+    "tutorial1.turn1.control": {
+      "text": "好的！因为你在这个领地拥有最多的配件，因此获得了这里的统治权。",
+      "line": 2676
+    },
+    "tutorial1.turn1.movelesson.2": {
+      "text": "当你使用“行军”时，你可以移动2次。现在再移动一次。",
+      "line": 2677
+    },
+    "tutorial1.turn1.endofturn": {
+      "text": "结束自己的回合并休息。我们后面还要花精力建造呢。",
+      "line": 2678
+    },
+    "tutorial1.turn2.wood": {
+      "text": "在你的回合开始时，你的 <sprite name=\"CatSawmill\"><color=#CC6633>锯木厂</color> 生产1点<sprite name=\"Wood\"><color=#CC6633>木材</color> <sprite name=\"Wood\"><color=#CC6633>木材</color> 可以用来建造建筑。",
+      "line": 2679
+    },
+    "tutorial1.turn2.build": {
+      "text": "让我们建造一个<sprite name=\"CatRecruiter\"><color=#CC6633>征兵所</color> 来招募更多<sprite name=\"marquise\"><color=#CC6633>士兵</color> 到丛林中来。 现在点击建造键。",
+      "line": 2680
+    },
+    "tutorial1.turn2.recruiter": {
+      "text": "这个领地简直完美。支付1个<sprite name=\"Wood\"><color=#CC6633>木材</color> 来建造 <sprite name=\"CatRecruiter\"><color=#CC6633>征兵所</color>。",
+      "line": 2681
+    },
+    "tutorial1.turn2.daylight": {
+      "text": "使用招募行动，在你的每个<sprite name=\"CatRecruiter\"><color=#CC6633>征兵所</color>上各放置一个<sprite name=\"marquise\"><color=#CC6633>士兵</color>。",
+      "line": 2682
+    },
+    "tutorial1.turn2.goal": {
+      "text": "我听到远处拍动翅膀的声音。在空中之敌<color=#336699>飞鹰王朝</color>到达之前，迅速行动以建立你对森林的控制。",
+      "line": 2683
+    },
+    "tutorial1.goal.clearings": {
+      "text": "控制五个领地({0}/{1})",
+      "line": 2684
+    },
+    "tutorial1.turn2.endofturn": {
+      "text": "在执行三个行动后，<color=#CC6633>贵族</color>的一天就结束了。",
+      "line": 2685
+    },
+    "tutorial1.EyrieAppear": {
+      "text": "正如我担心的一样，一个<sprite name=\"eyrie\"><color=#336699>飞鹰士兵</color>占领了附近的一个领地。他们对外人可不友好。",
+      "line": 2686
+    },
+    "tutorial1.goal.movewarriorstoeyrie": {
+      "text": "将你的<sprite name=\"marquise\"><color=#CC6633>士兵</color>移动到由<sprite name=\"eyrie\"><color=#336699>飞鹰王朝</color> 占领的领地来挑战他们。",
+      "line": 2687
+    },
+    "tutorial1.firstbattle.intro": {
+      "text": "我们的<sprite name=\"marquise\"><color=#CC6633>士兵</color>必将战胜这些恶鸟。选择战斗来击退他们。",
+      "line": 2688
+    },
+    "tutorial1.goal.defeatalleyrie": {
+      "text": "击败所有<sprite name=\"eyrie\"><color=#336699>飞鹰士兵</color>",
+      "line": 2689
+    },
+    "tutorial1.roostintroduction": {
+      "text": "<color=#336699>飞鹰王朝</color>建造了一个<sprite name=\"Roost\"><color=#336699>鸟巢</color>，能招募更多士兵。你必须在他们的部队壮大前攻击并消灭它！",
+      "line": 2690
+    },
+    "tutorial1.goal.destroy2roosts": {
+      "text": "消灭<sprite name=\"Roost\"><color=#336699>鸟巢</color> ",
+      "line": 2691
+    },
+    "tutorial1.roostbattle": {
+      "text": "战斗中你的攻击首先会消灭敌人的<sprite name=\"eyrie\"><color=#336699>士兵</color>如果还有剩余的点数，则会消灭<sprite name=\"Roost\"><color=#336699>鸟巢</color>。",
+      "line": 2692
+    },
+    "tutorial1.destroyroost": {
+      "text": "漂亮！你消灭了<sprite name=\"Roost\"><color=#336699>鸟巢</color>。森林是我们的了……暂时如此。",
+      "line": 2693
+    },
+    "tutorial2.faction.info": {
+      "text": "入侵的<color=#CC6633>猫咪贵族</color> 想要开采森林，用大量的资源补充经济和战争机器。猫咪贵族的胜利 <style=\"vptext\"> 分数 </style> 来自在森林中建造建筑。 <br><br>一般的游戏中，第一个获得  <style=\"vpnumdd\">30</style> 的玩家获胜！在这一关里，让我们看看你能不能拿到 <style=\"vpnumddteen\">12</style> 。",
+      "line": 2694
+    },
+    "tutorial2.setup.keep": {
+      "text": "当你使用<color=#CC6633>猫咪贵族</color>开局时, 将你的 <sprite name=\"KeepToken\"><color=#CC6633>城堡</color>放在地图上任意一个角落的领地中。",
+      "line": 2695
+    },
+    "tutorial2.setup.keep2": {
+      "text": "<sprite name=\"KeepToken\"> <color=#CC6633>城堡</color>是你王国的基石。敌人不能在你<sprite name=\"KeepToken\"><color=#CC6633>城堡</color>的领地里建造或放置部件，但可以移动到该领地中。",
+      "line": 2696
+    },
+    "tutorial2.setup.keep3": {
+      "text": "现在，放置你的<sprite name=\"KeepToken\"><color=#CC6633>城堡</color>。",
+      "line": 2697
+    },
+    "tutorial2.setup.warriors": {
+      "text": "<color=#CC6633>猫咪贵族</color>的军队远超其他派别。开始时，你在每一个领地里各有一个<sprite name=\"marquise\"><color=#CC6633>士兵</color>，除了你<sprite name=\"KeepToken\"><color=#CC6633>城堡</color>对面的角落。那个领地属于<color=#336699>飞鹰王朝</color>。",
+      "line": 2698
+    },
+    "tutorial2.setup.buildings": {
+      "text": "最后，你必须把每样建筑各一个放置在<sprite name=\"KeepToken\"><color=#CC6633>城堡</color>所在领地或相邻领地中。",
+      "line": 2699
+    },
+    "tutorial2.setup.eyrie": {
+      "text": "<color=#336699>飞鹰王朝</color>趁机在空的领地建造了一个<sprite name=\"Roost\"><color=#336699>鸟巢</color>，防卫森严。",
+      "line": 2700
+    },
+    "tutorial2.turn1.workshops": {
+      "text": "在白天开始时, 你可以启动<sprite name=\"CatWorkshop\"><color=#CC6633>工坊</color>，从手中锻造手牌。",
+      "line": 2701
+    },
+    "tutorial2.turn1.craftcost.a": {
+      "text": "每个<sprite name=\"CatWorkshop\"><color=#CC6633>工坊</color>会根据其所属领地类别来支付锻造费用。举个例子，如果你在<sprite name=\"foxicon\">领地里有两个<sprite name=\"CatWorkshop\"><color=#CC6633>工坊</color>，你可以锻造武器商这张牌。",
+      "line": 2702
+    },
+    "tutorial2.turn1.craftcost": {
+      "text": "如果你在<sprite name=\"mouseicon\">领地有一个<sprite name=\"CatWorkshop\"><color=#CC6633>工坊</color>，就能锻造走私路线。它需要一个<sprite name=\"mouseicon\">类型的卡牌。",
+      "line": 2703
+    },
+    "tutorial2.turn1.suit": {
+      "text": "制作一张卡片的费用显示在其配件下面的木板上。",
+      "line": 2704
+    },
+    "tutorial2.turn1.victorypoints": {
+      "text": "锻造走私路线会奖励你胜利 <style=\"vptext\"> 分 </style> ！你离 <style=\"vpnumddteen\">12</style> 的目标更近了一步。",
+      "line": 2705
+    },
+    "tutorial2.goal.15VP": {
+      "text": "获得 <style=\"vpnumddteen\">12</style> 。 ({0}/{1})",
+      "line": 2706
+    },
+    "tutorial2.turn1.moz": {
+      "text": "你可以通过将鼠标放在牌上来查看牌的内容。现在查看一下武器商。",
+      "line": 2707
+    },
+    "tutorial2.turn1.moz.gamepad": {
+      "text": "You may review the text of cards in your hand by holding your finger on them or pressing <sprite name=\"Switch_Action4\"> Review Arms Trader now.",
+      "line": 2708
+    },
+    "tutorial2.turn1.moz.gamepad.switch": {
+      "text": "You may review the text of cards in your hand by holding your finger on them or pressing <sprite name=\"Switch_Action3\"> Review Arms Trader now.",
+      "line": 2709
+    },
+    "tutorial2.turn1.moz.touch": {
+      "text": "你可以通过将手指放在牌上来查看牌的内容。现在查看一下武器商。",
+      "line": 2710
+    },
+    "tutorial2.turn1.actions": {
+      "text": "锻造后，<color=#CC6633>猫咪贵族</color>可以进行<color=#CC6633>3个行动</color>.",
+      "line": 2711
+    },
+    "tutorial2.turn1.build": {
+      "text": "<color=#CC6633>猫咪贵族</color>建造时同样会获得胜利 <style=\"vptextWide\"> 分数 </style> 。",
+      "line": 2712
+    },
+    "tutorial2.turn1.buildslot": {
+      "text": "你只能于由你控制且有建筑空位的领地上建造<color=#CC6633>建筑</color>。",
+      "line": 2713
+    },
+    "tutorial2.turn1.recruit": {
+      "text": "现在有2个<sprite name=\"CatRecruiter\"><color=#CC6633>征兵所</color>你在一次招募行动中可以招募2个<sprite name=\"marquise\"><color=#CC6633>士兵</color>。",
+      "line": 2714
+    },
+    "tutorial2.turn1.workshopinfo": {
+      "text": "<sprite name=\"CatWorkshop\"><color=#CC6633>工坊</color>允许你锻造手牌。",
+      "line": 2715
+    },
+    "tutorial2.turn1.sawmillinfo": {
+      "text": "<sprite name=\"CatSawmill\"><color=#CC6633>锯木厂</color>生产木材来帮助你建造更多的建筑物。",
+      "line": 2716
+    },
+    "tutorial2.turn1.recruitinfo": {
+      "text": "如你所见，<sprite name=\"CatRecruiter\"><color=#CC6633>征兵所</color>能帮助招募士兵。让我们建立一个征兵所来加强防御。",
+      "line": 2717
+    },
+    "tutorial2.turn1.move": {
+      "text": "把你的<sprite name=\"marquise\"><color=#CC6633>士兵</color>移动到前线来对抗<color=#336699>飞鹰王朝</color>。",
+      "line": 2718
+    },
+    "tutorial2.turn1.move2": {
+      "text": "你使用一次行军行动后可以移动任意数量的<sprite name=\"marquise\"><color=#CC6633>士兵</color>。这次让我们移动2个。",
+      "line": 2719
+    },
+    "tutorial2.turn1.move3": {
+      "text": "记住，当你选择行军后，你可以移动2次。用第二次继续逼近<color=#336699>鸟巢</color>。",
+      "line": 2720
+    },
+    "tutorial2.turn1.move4": {
+      "text": "移动2个<sprite name=\"marquise\"><color=#CC6633>士兵</color>。",
+      "line": 2721
+    },
+    "tutorial2.turn1.controlmove": {
+      "text": "移动时，你必须事先控制离开或进入的领地。这样在没有大量军队的情况下深入敌军领土会变得非常困难。",
+      "line": 2722
+    },
+    "tutorial2.turn1.evening": {
+      "text": "夜晚时，你抽取1张牌。如果你在地图上有更多的<sprite name=\"CatRecruiter\"><color=#CC6633>征兵所</color>就可以抽取额外的牌。",
+      "line": 2723
+    },
+    "tutorial2.aiturn1.Birdsong": {
+      "text": "<color=#CC6633>猫咪贵族</color>就是个暴发户！<color=#336699>飞鹰王朝</color>的血脉定会重新掌管树林。",
+      "line": 2724
+    },
+    "tutorial2.aiturn1.factions": {
+      "text": "<color=#336699>飞鹰王朝</color>需要按照<color=#336699>法令</color>安排自己的行动。在这个游戏中，每个阵营都有自己独特的能力和行动方式。",
+      "line": 2725
+    },
+    "tutorial2.aiturn1.factions2": {
+      "text": "<color=#336699>飞鹰王朝</color>可能现在看起来还不怎么样，但他们不断增长的<color=#336699>法令</color>将允许他们采取越来越多的行动，只要他们的领袖还在掌权。",
+      "line": 2726
+    },
+    "tutorial2.aiturn1.battle": {
+      "text": "他们发现了我们的防守弱点。准备战斗!",
+      "line": 2727
+    },
+    "tutorial2.aiturn1.fieldhospital": {
+      "text": "我们也许会输掉战斗，但只要你的 <sprite name=\"KeepToken\"><color=#CC6633>城堡</color>还在，我们便能用<sprite name=\"FieldHospital\"><color=#CC6633>战地医院</color>治疗倒下的士兵。",
+      "line": 2728
+    },
+    "tutorial2.turn2.fhdiscard": {
+      "text": "弃掉一张和战败士兵所在领地同类别的牌，将它们移回<sprite name=\"KeepToken\"><color=#CC6633>城堡</color>。",
+      "line": 2729
+    },
+    "tutorial2.turn2.refrence": {
+      "text": "你可以点击头像查看该阵营的独特能力，比如<sprite name=\"FieldHospital\"><color=#CC6633>战地医院</color>。",
+      "line": 2730
+    },
+    "tutorial2.turn2.refrence.gamepad": {
+      "text": "You can review special abilities unique to your faction like <sprite name=\"FieldHospital\"><color=#CC6633>Field Hospitals</color> by pressing the <sprite name=\"Switch_LeftBumper\"> button.",
+      "line": 2731
+    },
+    "tutorial2.playerturn2.action1": {
+      "text": "暂时不要急着复仇。再建两个建筑来持续获得胜利 <style=\"vptextWide\"> 分数 </style> 。",
+      "line": 2732
+    },
+    "tutorial2.playerturn2.goal": {
+      "text": "建造2个建筑({0}/{1})",
+      "line": 2733
+    },
+    "tutorial2.playerturn2.build": {
+      "text": "选择并建造另一个建筑。",
+      "line": 2734
+    },
+    "tutorial2.overwork1": {
+      "text": "建造需要用到更多<sprite name=\"Wood\"><color=#CC6633>木材</color>。让我们用<color=#CC6633>加班</color>来让<sprite name=\"CatSawmill\"><color=#CC6633>锯木厂</color>制造更多<sprite name=\"Wood\">。",
+      "line": 2735
+    },
+    "tutorial2.overwork2": {
+      "text": "要<color=#CC6633>加班</color>时，你必须弃掉一张和你的一个<sprite name=\"CatSawmill\"><color=#CC6633>锯木厂</color>所在领地相同类型的牌，然后获得一个<sprite name=\"Wood\"><color=#CC6633>木材</color>。<sprite name=\"birdicon\">类型的牌视作万能牌，可以用作任意一个类别。",
+      "line": 2736
+    },
+    "tutorial2.connectedclearings": {
+      "text": "非常好。你已经有了足够的<sprite name=\"Wood\"><color=#CC6633>木材</color>来建造另一个建筑。你可以花费地图上任意与希望建造的领地相连的<sprite name=\"Wood\">，建造所在的领地需要与你控制的领地相连。",
+      "line": 2737
+    },
+    "tutorial2.playerturn2.build2": {
+      "text": "建造第二个建筑以完成目标。",
+      "line": 2738
+    },
+    "tutorial2.turn2.prebuildingincrease": {
+      "text": "点击你的头像以获得更多建筑信息。",
+      "line": 2739
+    },
+    "tutorial2.buildingincrease": {
+      "text": "随着某个特定类别的建筑数量增多，它的建造费用和所奖励的 <style=\"vptextWide\"> 分数 </style> 也增多。",
+      "line": 2740
+    },
+    "tutorial2.playerturn2.action4": {
+      "text": "你没有行动点数了。弃掉一张<sprite name=\"birdicon\">牌，你可以额外行动一次。",
+      "line": 2741
+    },
+    "tutorial2.playerturn2.action5": {
+      "text": "你这回合好像还没有招募。我们最后一个行动就来招募吧。",
+      "line": 2742
+    },
+    "tutorial2.aiturn2.recruit": {
+      "text": "每天都会有更多<sprite name=\"eyrie\"><color=#336699>士兵</color>到来。 <color=#336699>飞鹰王朝</color>会用他们来粉碎你可怜的军队!",
+      "line": 2743
+    },
+    "tutorial2.aiturn2.battle": {
+      "text": "<color=#336699>这群鸟</color>中计了！你可以打出<sprite name=\"foxicon\">奇袭！牌。用这张牌消灭两个进攻者。",
+      "line": 2744
+    },
+    "tutorial2.aiturn2.ambush": {
+      "text": "埋伏？这些猫比我想象的要聪明！",
+      "line": 2745
+    },
+    "tutorial2.playerturn3.sendoff": {
+      "text": "通过摧毁<sprite name=\"Roost\"><color=#336699>鸟巢</color>、建造建筑、锻造奖励 <style=\"vptextWide\"> 分数 </style> 的道具来持续获得胜利分数，击败<color=#336699>飞鹰王朝</color>。",
+      "line": 2746
+    },
+    "tutorial2.craftingcost.label": {
+      "text": "锻造费用",
+      "line": 2749
+    },
+    "tutorial2.suit.label": {
+      "text": "类型",
+      "line": 2750
+    },
+    "tutorial2.victorypoints": {
+      "text": "胜利分数",
+      "line": 2752
+    },
+    "tutorial3.goal.1": {
+      "text": "拥有3个<sprite name=\"Roost\"><color=#336699>鸟巢</color> ({0}/{1})",
+      "line": 2756
+    },
+    "tutorial3.opening.1": {
+      "text": "骄傲的<color=#336699>飞鹰王朝</color>希望夺回他们曾经伟大的高贵与荣耀，并从猫咪贵族手中夺回森林。他们每回合通过在森林中建造和保护鸟巢来获得分数。",
+      "line": 2757
+    },
+    "tutorial3.opening.2": {
+      "text": "你一开始有1个<sprite name=\"Roost\"> <color=#336699>鸟巢</color>和6个<sprite name=\"eyrie\"><color=#336699>士兵</color>.",
+      "line": 2758
+    },
+    "tutorial3.opening.roosts.info": {
+      "text": "<sprite name=\"Roost\"><color=#336699>鸟巢</color>是飞鹰王朝唯一的建筑类别。每回合都可以利用他们锻造手牌、招募士兵，以及获得 <style=\"vptextWide\"> 分数 </style> 。",
+      "line": 2759
+    },
+    "tutorial3.opening.3": {
+      "text": "嘎嘎！我们需要一个能扩张我们鸟类帝国的领袖！现在让我们选择<color=#336699>制裁者</color>，因为他让我们从第一轮就可以开始<color=#336699>建造</color>。",
+      "line": 2760
+    },
+    "tutorial3.opening.4": {
+      "text": "<color=#336699>飞鹰王朝</color>必须遵循<color=#336699>法令</color>来行动！法令每一列都与一个不同行动相关联。",
+      "line": 2761
+    },
+    "tutorial3.opening.5": {
+      "text": "你的领袖决定了<color=#336699>法令</color>上的初始行动：目前是<sprite name=\"EyrieMove\"><color=#336699>移动</color>和<sprite name=\"EyrieBuild\"> <color=#336699>建造</color>.",
+      "line": 2762
+    },
+    "tutorial3.Birdsong.1": {
+      "text": "你的领袖决定了<color=#336699>法令</color>上的初始行动：现在就是<sprite name=\"EyrieMove\"> <color=#336699>移动</color>和<sprite name=\"EyrieBuild\"> <color=#336699>建造</color>.",
+      "line": 2763
+    },
+    "tutorial3.Birdsong.2": {
+      "text": "随着<color=#336699>法令</color>增长，你每回合可以做越来越多的事。",
+      "line": 2764
+    },
+    "tutorial3.Birdsong.2.b": {
+      "text": "当你分配<color=#336699>法令</color>的行动卡牌时，只有卡牌的类型起作用。如果你想要使用牌本身的效果，必须要留到锻造阶段。",
+      "line": 2765
+    },
+    "tutorial3.craft.0": {
+      "text": "清晨时，你可以用<sprite name=\"Roost\"><color=#336699>鸟巢</color>锻造手牌。每个<color=#336699>鸟巢</color>按照其领地类型支付费用，和<color=#CC6633>猫咪贵族的工坊</color>类似。",
+      "line": 2766
+    },
+    "tutorial3.craft.1": {
+      "text": "你在<sprite name=\"ClearingMouse\">领地的<sprite name=\"Roost\"><color=#336699>鸟巢</color>可以锻造陷阱挖掘。这张牌会在你遭到攻击时起作用。",
+      "line": 2767
+    },
+    "tutorial3.recruit.1": {
+      "text": "在白天时，你的<color=#336699>法令</color>从左到右结算。从<sprite name=\"Roost\"><color=#336699>鸟巢</color>招募一个和你<color=#336699>法令</color>要求的类型一致<sprite name=\"eyrie\"><color=#336699>战士</color>。",
+      "line": 2768
+    },
+    "tutorial3.move.1": {
+      "text": "被分配到<sprite name=\"birdicon\">的<color=#336699>法令</color>可以被用到任意领地。 移动3个 <color=#336699><sprite name=\"eyrie\">士兵</color>到<sprite name=\"ClearingFox\">下面的领地。",
+      "line": 2769
+    },
+    "tutorial3.battle.1": {
+      "text": "我们跳过了<sprite name=\"EyrieBattle\"> <color=#336699>战斗</color>行动，因为你的<color=#336699>法令</color>在战斗一栏并没有牌。",
+      "line": 2770
+    },
+    "tutorial3.build.1": {
+      "text": "最后，我们<sprite name=\"EyrieBuild\"> <color=#336699>建造</color>第二个<sprite name=\"Roost\"> <color=#336699>鸟巢</color>。",
+      "line": 2771
+    },
+    "tutorial3.score.2": {
+      "text": "在夜晚开始时，你根据<sprite name=\"Roost\"> <color=#336699>鸟巢</color>获得胜利分数。点击你的头像查看更多细节。",
+      "line": 2772
+    },
+    "tutorial3.score.2.gamepad": {
+      "text": "在夜晚开始时，你会因为拥有的<sprite name=\"Roost\"> <color=#336699>鸟巢</color>而获得胜利分数。点击<sprite name=\"Switch_LeftBumper\">查看更多信息。",
+      "line": 2773
+    },
+    "tutorial3.score.1": {
+      "text": "<color=#336699>鸟巢条</color>展示了我们夺回森林的进度。我们的<sprite name=\"Roost\"><color=#336699>鸟巢</color>越多，你每回合获得的 <style=\"vptextWide\"> 分数 </style> 越多！",
+      "line": 2774
+    },
+    "tutorial3.aiturn.1": {
+      "text": "这些鸟还想着能重新夺回森林？我们根本看不见！",
+      "line": 2775
+    },
+    "tutorial3.turntwo.decree.1": {
+      "text": "新的一天，<color=#336699>法令</color>也要增加新机会了！让我们在<color=#336699>招募</color>栏加一张牌，这样我们每回合能获得更多士兵。",
+      "line": 2776
+    },
+    "tutorial3.turntwo.decree.2": {
+      "text": "每回合，你可以在<color=#336699>法令</color>上添加第二张牌。将一张<sprite name=\"mouseicon\">牌加到<sprite name=\"EyrieBattle\">战斗栏，这样我们就能和<sprite name=\"mouseicon\">领地上的<color=#CC6633>猫咪贵族</color>战斗了。",
+      "line": 2777
+    },
+    "tutorial3.turntwo.craft.1": {
+      "text": "本回合什么也铸造不了。没关系！你<color=#336699>重武轻商</color>的传统限制了你在铸造物品时只能获得 <sprite name=\"1VP\"> 。交易，和许多其他事情一样，配不上你的身份和地位。",
+      "line": 2778
+    },
+    "tutorial3.turntwo.fight": {
+      "text": "是时候用飞行的力量教训一下那些小猫了！",
+      "line": 2779
+    },
+    "tutorial3.turntwo.move": {
+      "text": "将三个<sprite name=\"eyrie\"><color=#336699>士兵</color>移到你对手<color=#CC6633>征兵所</color>所在的<sprite name=\"ClearingMouse\">领地来开始战斗。",
+      "line": 2780
+    },
+    "tutorial3.turntwo.ai.fowl": {
+      "text": "空气中弥漫着家禽的味道？飞鹰王朝一定在靠近！",
+      "line": 2781
+    },
+    "tutorial3.turntwo.battle": {
+      "text": "该战斗了。让那些住在尘土的家伙在空中士兵面前颤抖吧。",
+      "line": 2782
+    },
+    "tutorial3.turntwo.control.2": {
+      "text": "光荣的一战！我们必须在一块领地上放置一个<sprite name=\"Roost\"><color=#336699>鸟巢</color>来占领它。士兵和建筑确定领地的归属。但平局的时候永远算<color=#336699>飞鹰王朝</color>赢。",
+      "line": 2783
+    },
+    "tutorial3.turntwo.goal.1": {
+      "text": "这些<sprite name=\"Roost\"><color=#336699>鸟巢</color>造的真不错！摧毁敌方建筑、锻造手牌、持续控制<sprite name=\"Roost\"><color=#336699>鸟巢</color>来获得 <style=\"vpnumddteen\">15</style> 以完成此关。",
+      "line": 2784
+    },
+    "tutorial3.goal.2": {
+      "text": "获得 <style=\"vpnumddteen\">10</style> ({0}/{1})",
+      "line": 2785
+    },
+    "tutorial3.turmoilReminder": {
+      "text": "不要贪多嚼不烂。记住，如果你不能按照<color=#336699>法令</color>完成指定行动，民众会陷入<color=#336699>动乱</color>。",
+      "line": 2786
+    },
+    "tutorial3.extraCardDraw": {
+      "text": "夜晚期间，你每有三个<sprite name=\"Roost\"><color=#336699>鸟巢</color>，就额外抽取一张牌<sprite name=\"DrawCard\">。",
+      "line": 2787
+    },
+    "tutorial3.Turmoil.1": {
+      "text": "啊！我们没能完成<color=#336699>法令</color>上的全部行动，陷入了<color=#336699>动乱</color>！",
+      "line": 2788
+    },
+    "tutorial3.Turmoil.2": {
+      "text": "<color=#336699>动乱</color>期间，你弃掉<color=#336699>法令</color>上的所有牌，然后每弃掉一张<sprite name=\"birdicon\">牌，失去 <sprite name=\"1VP\"> 。然后选择一个新的领袖，再度过夜晚。",
+      "line": 2789
+    },
+    "tutorial3.Turmoil.3": {
+      "text": "想避免<color=#336699>动乱</color>就要小心摆放<color=#336699>法令</color>上的牌。试着匹配你想去互动的领地的类型。",
+      "line": 2790
+    },
+    "tutorial3.Turmoil.4": {
+      "text": "<color=#336699>动乱</color>期间，<sprite name=\"birdicon\">牌会导致你失去 <style=\"vptextWide\"> 分数 </style> ，但它们也提供了灵活性，有助于防止这种情况发生。",
+      "line": 2791
+    },
+    "tutorial3.turn4.hint.1": {
+      "text": "如果你不知道什么卡牌类型符合<color=#336699>法令</color>,你可以最小化并查看地图。",
+      "line": 2792
+    },
+    "tutorial3.turn4.hint.2": {
+      "text": "当你对场上局势有了更好的了解，你可以重新开展<color=#336699>法令</color>，分配卡牌。",
+      "line": 2793
+    },
+    "tutorial3.badDecree.recruit": {
+      "text": "将[SUITNAME]添加到招募行动会导致动乱，因为你在[SUITNAME]类型的领地没有鸟巢。点击法令上的取消键撤销。",
+      "line": 2795
+    },
+    "tutorial3.badDecree.move": {
+      "text": "将[SUITNAME]添加到移动行动会导致动乱，因为你在[SUITNAME]类型的领地没有士兵。如果想要撤销，点击法令上的取消键。",
+      "line": 2796
+    },
+    "tutorial3.badDecree.battle": {
+      "text": "将[SUITNAME]添加到战斗行动会导致动乱，除非你本回合将士兵移动到一个敌人的[SUITNAME]类型领地。如果想要撤销，点击法令上的取消键。",
+      "line": 2797
+    },
+    "tutorial3.badDecree.build": {
+      "text": "将[SUITNAME]添加到建造行动会导致动乱，除非你本回合控制了一个带有空位的[SUITNAME]类型领地。如果想要撤销，点击法令上的取消键。",
+      "line": 2798
+    },
+    "tutorial4.opening.1": {
+      "text": "<color=#008D3F>森林联盟</color>希望将森林里的生物联合起来，反抗他们的压迫者。他们通过在整个林地中传播民意而获得成功。",
+      "line": 2799
+    },
+    "tutorial4.opening.2": {
+      "text": "作为弱者，我们一开始没有任何<sprite name=\"AlliWarrior\"><color=#008D3F>士兵</color>或建筑。相反，我们从三个<color=#008D3F>支持者</color>开始，他们可以为我们传播<sprite name=\"Sympathy\"><color=#008D3F>民意</color>。",
+      "line": 2800
+    },
+    "tutorial4.sympathy.goal": {
+      "text": "传播 <sprite name=\"Sympathy\"><color=#008D3F>民意</color>五次 ({0}/{1})",
+      "line": 2801
+    },
+    "tutorial4.sympathy.0": {
+      "text": "每次我们传播<sprite name=\"Sympathy\"><color=#008D3F>民意</color>到一个领地都需要消耗一个<color=#008D3F>支持者</color>。",
+      "line": 2802
+    },
+    "tutorial4.sympathy.1": {
+      "text": "消耗一个<sprite name=\"SupporterFox\"><color=#008D3F>支持者</color>在<sprite name=\"ClearingFox\">下面的领地传递<sprite name=\"Sympathy\"><color=#008D3F>民意</color>。",
+      "line": 2803
+    },
+    "tutorial4.sympathy.2": {
+      "text": "我们可以在一回合多次传播<sprite name=\"Sympathy\"><color=#008D3F>民意</color>，只要我们有足够多的<color=#008D3F>支持者</color>，并且我们只能从有民意的领地开始传播。",
+      "line": 2804
+    },
+    "tutorial4.sympathy.3": {
+      "text": "选择第二个领地来传播 <sprite name=\"Sympathy\"><color=#008D3F>民意</color>。",
+      "line": 2805
+    },
+    "tutorial4.sympathy.4": {
+      "text": "干得漂亮。传播第二个<sprite name=\"Sympathy\"><color=#008D3F>民意</color>可以得到<sprite name=\"1VP\">。",
+      "line": 2806
+    },
+    "tutorial4.sympathy.4b": {
+      "text": "点击你的头像来了解更多关于<sprite name=\"Sympathy\"><color=#008D3F>民意</color>的得分。",
+      "line": 2807
+    },
+    "tutorial4.sympathy.4b.gamepad": {
+      "text": "Press <sprite name=\"Switch_LeftBumper\"> to learn more about scoring <sprite name=\"Sympathy\"><color=#008D3F>sympathy</color>.",
+      "line": 2808
+    },
+    "tutorial4.sympathy.5": {
+      "text": "随着<color=#008D3F>民意条</color>越来越高，获得<sprite name=\"Sympathy\"><color=#008D3F>民意</color>也需要更多的<color=#008D3F>支持者</color>，同时也会获得更多  <style=\"vptextWide\"> 分数 </style> 。",
+      "line": 2809
+    },
+    "tutorial4.craft.1": {
+      "text": "在白天开始时，<sprite name=\"Sympathy\"><color=#008D3F>民意</color>可以根据其领地类型来支付锻造费用，就和<color=#336699>飞鹰王朝的鸟巢</color>以及<color=#CC6633>猫咪贵族的工坊</color>类似。开始锻造吧！",
+      "line": 2810
+    },
+    "tutorial4.mobilize.1": {
+      "text": "使用<color=#008D3F>动员</color>来把我们手中剩余的牌变为<color=#008D3F>支持者</color>。你不能有多于5个<color=#008D3F>支持者</color>，除非你建造一个<color=#008D3F>基地</color>。",
+      "line": 2811
+    },
+    "tutorial4.endturn1": {
+      "text": "革命的星星之火已经点燃。但现在，是时候休息了。",
+      "line": 2812
+    },
+    "tutorial4.aiturn1.1": {
+      "text": "别理会这些森林里的乌合之众的胡说八道！<color=#CC6633>猫咪贵族</color>才是合法的统治者！",
+      "line": 2813
+    },
+    "tutorial4.turn2.revolt.1": {
+      "text": "建立支持只是开始。现在是时候<color=#008D3F>起义</color>了！",
+      "line": 2814
+    },
+    "tutorial4.turn2.revolt.2": {
+      "text": "选择下面的领地。我们得消耗2个和该领地类型相同的<color=#008D3F>支持者</color>来进行<color=#008D3F>起义</color>。",
+      "line": 2815
+    },
+    "tutorial4.turn2.revolt.3": {
+      "text": "<color=#008D3F>起义</color>会消灭该领地所有敌方单位、指示物、建筑。然后你建立一个<color=#008D3F>基地</color>，同时拥有等同于该类型民意数量的士兵！",
+      "line": 2816
+    },
+    "tutorial4.turn2.revolt.4": {
+      "text": "在森林里我们只能有3个<color=#008D3F>基地</color> (<sprite name=\"BaseMouse\"><sprite name=\"BaseFox\"><sprite name=\"BaseRabbit\">)每个类型各一个<sprite name=\"ClearingMouse\"><sprite name=\"ClearingFox\"><sprite name=\"ClearingRabbit\">.",
+      "line": 2817
+    },
+    "tutorial4.turn2.revolt.5": {
+      "text": "啊，看来一名<sprite name=\"Officer\"><color=#008D3F>官员</color>来到了我们的新<color=#008D3F>基地</color>。他会指导我们晚上的军事行动。",
+      "line": 2818
+    },
+    "tutorial4.turn2.evening.1": {
+      "text": "现在，你会根据你的<sprite name=\"Officer\"><color=#008D3F>官员</color>数量来进行一系列夜晚军事行动。",
+      "line": 2819
+    },
+    "tutorial4.turn2.evening.2": {
+      "text": "用一个军事行动<color=#008D3F>招募</color>一个<sprite name=\"AlliWarrior\"><color=#008D3F>士兵</color>.",
+      "line": 2820
+    },
+    "tutorial4.AIturn2.1": {
+      "text": "是时候肃清煽动者了！",
+      "line": 2821
+    },
+    "tutorial4.AIturn2.2": {
+      "text": "当任意一个对手将其士兵移动到带有<color=#008D3F>民意</color>的领地，或消灭<sprite name=\"Sympathy\"><color=#008D3F>民意</color>指示物时，就会出现<sprite name=\"Outrage\"><color=#008D3F>民愤</color>。民愤迫使你的对手把一张相同类型的手牌加入到<color=#008D3F>支持者</color>中。",
+      "line": 2822
+    },
+    "tutorial4.AIturn2.3": {
+      "text": "我们被算计了！",
+      "line": 2823
+    },
+    "tutorial4.AIturn2.4": {
+      "text": "你被攻击了！幸好，<color=#008D3F>森林联盟</color>是<sprite name=\"Guerilla\"><color=#008D3F>游击战</color>行家。防御时，你仍会获得点数较大的骰子，如同你是攻击方时那样。",
+      "line": 2824
+    },
+    "tutorial4.turn3.goal.1": {
+      "text": "传播<sprite name=\"Sympathy\"><color=#008D3F>民意</color>、锻造卡牌、移除敌人建筑来获得 <style=\"vpnumddteen\">15</style> 并完成此关。",
+      "line": 2825
+    },
+    "tutorial4.organize.goal": {
+      "text": "使用<sprite name=\"Organize\"><color=#008D3F>组织</color>行动来牺牲一个<sprite name=\"AlliWarrior\"><color=#008D3F>士兵</color>以获得<sprite name=\"Sympathy\"><color=#008D3F>民意</color>.",
+      "line": 2826
+    },
+    "tutorial4.law.1": {
+      "text": "在敌人士兵数量大于等于三个的地方传播<sprite name=\"Sympathy\"><color=#008D3F>民意</color>需要额外花费一个 <color=#008D3F>支持者</color>。最好向更便宜的地方传播，除非你真的想对付某个敌人。",
+      "line": 2827
+    },
+    "tutorial4.supply.1": {
+      "text": "<sprite name=\"AlliWarrior\"><color=#008D3F>士兵</color>/<sprite name=\"Officer\"><color=#008D3F>官员</color>的共享供应已经没有了。你可以使用<sprite name=\"Organize\"><color=#008D3F>组织</color>行动，牺牲一个<sprite name=\"AlliWarrior\"><color=#008D3F>士兵</color>换成<sprite name=\"Sympathy\"><color=#008D3F>民意</color>来腾出空间。",
+      "line": 2828
+    },
+    "tutorial4.baseremoved1": {
+      "text": "当你的<color=#008D3F>基地</color>被摧毁时，你失去所有相同类型的<color=#008D3F>支持者</color>。然后如果地图上没有<color=#008D3F>基地</color>，并且丢弃<color=#008D3F>支持者</color>直到只剩下5个。",
+      "line": 2829
+    },
+    "tutorial4.fivesupporters": {
+      "text": "你需要建造一个<color=#008D3F>基地</color>，来获得5个以上的<color=#008D3F>支持者</color>.",
+      "line": 2830
+    },
+    "tutorial4.organize.training": {
+      "text": "你有一个全新的白天行动，<color=#008D3F>训练</color>。弃掉一张和某<color=#008D3F>基地</color>类别一样的牌来训练一名<sprite name=\"Officer\"><color=#008D3F>官员</color>，这样你才能在夜晚拥有更多行动。",
+      "line": 2831
+    },
+    "tutorial4.organize.training.supply": {
+      "text": "官员和士兵共享同一种供给。注意，当供给耗尽时，你将无法招募任何一种单位。",
+      "line": 2832
+    },
+    "tutorial4.goal.1": {
+      "text": "获得 <style=\"vpnumddteen\">15</style> ({0}/{1})",
+      "line": 2833
+    },
+    "tutorial4.goal.2": {
+      "text": "使用<sprite name=\"Organize\"><color=#008D3F>组织</color>行动",
+      "line": 2834
+    },
+    "tutorial5.intro": {
+      "text": "老谋深算的<color=#4E6F89>神秘游侠</color>希望在这正酝酿的冲突中获得名声——或者恶名。他通过完成森林生物的任务，帮助和伤害其他阵营来获得分数。",
+      "line": 2835
+    },
+    "tutorial5.goal.1": {
+      "text": "在1回合内 <sprite name=\"heart\"> <color=#4E6F89>帮助</color><color=#008D3F>森林联盟</color>2次。",
+      "line": 2885
+    },
+    "tutorial5.goal.2": {
+      "text": "探索一个<sprite name=\"Ruins\"><color=#4E6F89>遗迹</color>",
+      "line": 2886
+    },
+    "tutorial5.goal.3": {
+      "text": "完成一个<sprite name=\"Quest\"><color=#4E6F89>任务</color>",
+      "line": 2887
+    },
+    "tutorial5.goal.4": {
+      "text": "获得 <style=\"vpnumddteen\">15</style> ({0}/{1})",
+      "line": 2888
+    },
+    "tutorial.title.tutorial01": {
+      "text": "贵族崛起",
+      "line": 2893
+    },
+    "tutorial.description.tutorial01": {
+      "text": "学习《茂林源记》的基础规则",
+      "line": 2894
+    },
+    "tutorial.title.tutorial02": {
+      "text": "林中征战",
+      "line": 2895
+    },
+    "tutorial.description.tutorial02": {
+      "text": "学习操作猫咪贵族",
+      "line": 2896
+    },
+    "tutorial.title.tutorial03": {
+      "text": "天下同羽",
+      "line": 2897
+    },
+    "tutorial.description.tutorial03": {
+      "text": "学习操作飞鹰王朝",
+      "line": 2898
+    },
+    "tutorial.title.tutorial04": {
+      "text": "团结起来",
+      "line": 2899
+    },
+    "tutorial.description.tutorial04": {
+      "text": "学习操作森林联盟",
+      "line": 2900
+    },
+    "tutorial.title.tutorial05": {
+      "text": "孤独旅者",
+      "line": 2901
+    },
+    "tutorial.description.tutorial05": {
+      "text": "学习操作神秘游侠",
+      "line": 2902
+    },
+    "tutorial3.turnthree.turmoil.1.b": {
+      "text": "我预感动乱即将来临，但是无论如何你都要向<color=#336699>法令</color>添加行动。现在添加吧，不用太担心到底放在哪儿。",
+      "line": 2918
+    },
+    "tutorial3.turnthree.turmoil.1.cats": {
+      "text": "上回合这些恶毒的<color=#CC6633>猫咪贵族</color>摧毁了你的<sprite name=\"ClearingFox\">领地中唯一的一个<sprite name=\"Roost\"><color=#336699>鸟巢</color>，你现在没有 <sprite name=\"ClearingFox\">领地可以招募了。",
+      "line": 2919
+    },
+    "tutorial3.aiturnthree.use.sappers": {
+      "text": "选择你锻造的陷阱挖掘，来消灭一个额外的敌方士兵。",
+      "line": 2920
+    },
+    "tutorial3.turnfour.goal.1": {
+      "text": "看来你已经准备好接手下面的局面了。消灭敌方建筑、锻造手牌、建筑并保护<sprite name=\"Roost\"><color=#336699>鸟巢</color>，获得 <style=\"vpnumddteen\">10</style> 来完成此关。",
+      "line": 2921
+    },
+    "tutorial4.turn2.craftOrMobilize": {
+      "text": "你可以锻造或用手牌发动<color=#008D3F>动员</color>。任由你选择。",
+      "line": 2925
+    },
+    "tutorial2.turn1.evening2": {
+      "text": "让我们回顾一下你回合的几个阶段。",
+      "line": 2926
+    },
+    "tutorial2.turn1.evening2.gamepad": {
+      "text": "To review the turn phases press <sprite name=\"Switch_LeftBumper\"> followed by <sprite name=\"Switch_RightStickButton\">.",
+      "line": 2927
+    },
+    "tutorial1.turn2.daylight2": {
+      "text": "派出士兵来占领更多领地。",
+      "line": 2928
+    },
+    "tutorial1.firstbattle.dice.revamp": {
+      "text": "战斗中，会掷两个包含数字0-3的骰子，来决定伤害点数。攻击者有优势。他们会拿数字高的骰子，防御者拿数字低的那个。",
+      "line": 2929
+    },
+    "tutorial1.firstbattle.remove.revamp": {
+      "text": "每有一点伤害，敌人就要从地图上移除一个物件，从士兵开始移除。你的总伤害点数会相加并展示在下方。",
+      "line": 2931
+    },
+    "tutorial3.move.1.trunk": {
+      "text": "<color=#336699>法令</color>中添加的飞鸟<sprite name=\"birdicon\">类型的卡牌，可以在任意一个领地行动。",
+      "line": 2937
+    },
+    "tutorial3.move.1.b.trunk": {
+      "text": "把3个<color=#336699><sprite name=\"eyrie\">士兵</color>移动到下面的<sprite name=\"ClearingFox\">领地。3个士兵允许你在战斗中打出骰子可能掷出的最大伤害。",
+      "line": 2938
+    },
+    "tutorial2.ftt.encouragement": {
+      "text": "干得不错，你摧毁了<sprite name=\"Roost\"><color=#336699>鸟巢</color>。持续攻击鸟巢，并且放置建筑以达到本关的 <style=\"vptextWide\"> 分数 </style> 目标。",
+      "line": 2939
+    }
+  }
+}

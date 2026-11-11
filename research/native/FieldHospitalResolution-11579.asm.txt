@@ -1,0 +1,54 @@
+0000000181669770  mov      qword ptr [rsp + 8], rbx
+0000000181669775  mov      qword ptr [rsp + 0x10], rbp
+000000018166977a  mov      qword ptr [rsp + 0x18], rsi
+000000018166977f  push     rdi
+0000000181669780  sub      rsp, 0x20
+0000000181669784  cmp      byte ptr [rip + 0x161ecd8], 0
+000000018166978b  mov      rsi, r9
+000000018166978e  mov      rbx, r8
+0000000181669791  mov      rbp, rdx
+0000000181669794  mov      rdi, rcx
+0000000181669797  jne      0x1816697ac
+0000000181669799  lea      rcx, [rip + 0x146a290]
+00000001816697a0  call     0x1820df9b0
+00000001816697a5  mov      byte ptr [rip + 0x161ecb7], 1
+00000001816697ac  test     rbx, rbx
+00000001816697af  jne      0x1816697b5
+00000001816697b1  xor      edx, edx
+00000001816697b3  jmp      0x1816697ee
+00000001816697b5  mov      rdx, qword ptr [rip + 0x146a274]
+00000001816697bc  mov      r8, qword ptr [rbx]
+00000001816697bf  movzx    eax, byte ptr [rdx + 0x130]
+00000001816697c6  cmp      byte ptr [r8 + 0x130], al
+00000001816697cd  jb       0x1816697e4
+00000001816697cf  movzx    ecx, al
+00000001816697d2  mov      rax, qword ptr [r8 + 0xc8]
+00000001816697d9  cmp      qword ptr [rax + rcx*8 - 8], rdx
+00000001816697de  jne      0x1816697e4
+00000001816697e0  mov      al, 1
+00000001816697e2  jmp      0x1816697e6
+00000001816697e4  xor      al, al
+00000001816697e6  xor      edx, edx
+00000001816697e8  test     al, al
+00000001816697ea  cmovne   rdx, rbx
+00000001816697ee  xor      r8d, r8d
+00000001816697f1  mov      rcx, rdi
+00000001816697f4  call     0x1806a7f00 ; EndOfGameScoring..ctor, PlayerTurnPhase..ctor, SetupAdvancedPlayers..ctor
+00000001816697f9  lea      rcx, [rdi + 0x30]
+00000001816697fd  mov      qword ptr [rdi + 0x30], rbp
+0000000181669801  mov      rdx, rbp
+0000000181669804  call     0x1820decd0
+0000000181669809  lea      rcx, [rdi + 0x40]
+000000018166980d  mov      qword ptr [rdi + 0x40], rsi
+0000000181669811  mov      rdx, rsi
+0000000181669814  call     0x1820decd0
+0000000181669819  movzx    eax, byte ptr [rsp + 0x50]
+000000018166981e  mov      rbx, qword ptr [rsp + 0x30]
+0000000181669823  mov      rbp, qword ptr [rsp + 0x38]
+0000000181669828  mov      rsi, qword ptr [rsp + 0x40]
+000000018166982d  mov      byte ptr [rdi + 0x38], al
+0000000181669830  movzx    eax, byte ptr [rsp + 0x58]
+0000000181669835  mov      byte ptr [rdi + 0x48], al
+0000000181669838  add      rsp, 0x20
+000000018166983c  pop      rdi
+000000018166983d  ret      

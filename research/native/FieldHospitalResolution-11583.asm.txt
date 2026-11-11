@@ -1,0 +1,40 @@
+0000000181669260  mov      qword ptr [rsp + 8], rbx
+0000000181669265  mov      qword ptr [rsp + 0x10], rbp
+000000018166926a  mov      qword ptr [rsp + 0x18], rsi
+000000018166926f  mov      qword ptr [rsp + 0x20], rdi
+0000000181669274  push     r14
+0000000181669276  sub      rsp, 0x20
+000000018166927a  cmp      byte ptr [rip + 0x161f1e6], 0
+0000000181669281  mov      r14, rcx
+0000000181669284  jne      0x181669299
+0000000181669286  lea      rcx, [rip + 0x1452f13]
+000000018166928d  call     0x1820df9b0
+0000000181669292  mov      byte ptr [rip + 0x161f1ce], 1
+0000000181669299  mov      rdi, qword ptr [r14 + 0x40]
+000000018166929d  mov      rbp, qword ptr [r14 + 0x30]
+00000001816692a1  mov      rbx, qword ptr [r14 + 0x28]
+00000001816692a5  mov      rcx, qword ptr [rip + 0x1452ef4]
+00000001816692ac  movzx    r14d, byte ptr [r14 + 0x48]
+00000001816692b1  call     0x1820dfb80
+00000001816692b6  xor      r8d, r8d
+00000001816692b9  mov      rdx, rbx
+00000001816692bc  mov      rcx, rax
+00000001816692bf  mov      rsi, rax
+00000001816692c2  call     0x1806a7f00 ; EndOfGameScoring..ctor, PlayerTurnPhase..ctor, SetupAdvancedPlayers..ctor
+00000001816692c7  lea      rcx, [rsi + 0x30]
+00000001816692cb  mov      qword ptr [rsi + 0x30], rdi
+00000001816692cf  mov      rdx, rdi
+00000001816692d2  call     0x1820decd0
+00000001816692d7  lea      rcx, [rsi + 0x38]
+00000001816692db  mov      qword ptr [rsi + 0x38], rbp
+00000001816692df  mov      rdx, rbp
+00000001816692e2  call     0x1820decd0
+00000001816692e7  mov      rbx, qword ptr [rsp + 0x30]
+00000001816692ec  mov      rax, rsi
+00000001816692ef  mov      rbp, qword ptr [rsp + 0x38]
+00000001816692f4  mov      rdi, qword ptr [rsp + 0x48]
+00000001816692f9  mov      byte ptr [rsi + 0x40], r14b
+00000001816692fd  mov      rsi, qword ptr [rsp + 0x40]
+0000000181669302  add      rsp, 0x20
+0000000181669306  pop      r14
+0000000181669308  ret      

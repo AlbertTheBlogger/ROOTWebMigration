@@ -1,0 +1,16 @@
+0000000181417010  mov      qword ptr [rsp + 8], rbx
+0000000181417015  push     rdi
+0000000181417016  sub      rsp, 0x20
+000000018141701a  mov      rax, r8
+000000018141701d  mov      rdi, rdx
+0000000181417020  mov      rdx, rax
+0000000181417023  xor      r8d, r8d
+0000000181417026  mov      rbx, rcx
+0000000181417029  call     0x1800d5c00
+000000018141702e  lea      rcx, [rbx + 0x28]
+0000000181417032  mov      qword ptr [rbx + 0x28], rdi
+0000000181417036  mov      rdx, rdi
+0000000181417039  mov      rbx, qword ptr [rsp + 0x30]
+000000018141703e  add      rsp, 0x20
+0000000181417042  pop      rdi
+0000000181417043  jmp      0x1820decd0

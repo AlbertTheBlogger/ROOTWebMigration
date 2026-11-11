@@ -1,0 +1,6 @@
+0000000181669750  sub      rsp, 0x38
+0000000181669754  mov      qword ptr [rsp + 0x28], 0
+000000018166975d  mov      byte ptr [rsp + 0x20], 0
+0000000181669762  call     0x1816695f0 ; FieldHospitalResolution..ctor
+0000000181669767  add      rsp, 0x38
+000000018166976b  ret      

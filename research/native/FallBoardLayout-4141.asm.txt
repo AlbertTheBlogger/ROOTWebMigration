@@ -1,0 +1,1672 @@
+0000000181947ba0  mov      qword ptr [rsp + 0x18], rbx
+0000000181947ba5  mov      qword ptr [rsp + 0x20], rbp
+0000000181947baa  push     rdi
+0000000181947bab  sub      rsp, 0x40
+0000000181947baf  cmp      byte ptr [rip + 0x1341ef6], 0
+0000000181947bb6  mov      rbp, rcx
+0000000181947bb9  jne      0x181947c2e
+0000000181947bbb  lea      rcx, [rip + 0x115ddd6]
+0000000181947bc2  call     0x1820df9b0
+0000000181947bc7  lea      rcx, [rip + 0x115dc62]
+0000000181947bce  call     0x1820df9b0
+0000000181947bd3  lea      rcx, [rip + 0x118c85e]
+0000000181947bda  call     0x1820df9b0
+0000000181947bdf  lea      rcx, [rip + 0x11a802a]
+0000000181947be6  call     0x1820df9b0
+0000000181947beb  lea      rcx, [rip + 0x1156756]
+0000000181947bf2  call     0x1820df9b0
+0000000181947bf7  lea      rcx, [rip + 0x11a7dea]
+0000000181947bfe  call     0x1820df9b0
+0000000181947c03  lea      rcx, [rip + 0x115668e]
+0000000181947c0a  call     0x1820df9b0
+0000000181947c0f  lea      rcx, [rip + 0x1170c52]
+0000000181947c16  call     0x1820df9b0
+0000000181947c1b  lea      rcx, [rip + 0x11789fe]
+0000000181947c22  call     0x1820df9b0
+0000000181947c27  mov      byte ptr [rip + 0x1341e7e], 1
+0000000181947c2e  mov      qword ptr [rsp + 0x50], rsi
+0000000181947c33  xor      edx, edx
+0000000181947c35  mov      rcx, rbp
+0000000181947c38  mov      qword ptr [rsp + 0x58], r14
+0000000181947c3d  call     0x180001be0 ; ConditionalCardValuation..ctor, EyrieRestoreRoostUndo..ctor, EyrieReturnToDecreeUndo..ctor
+0000000181947c42  mov      rcx, qword ptr [rip + 0x11789d7]
+0000000181947c49  call     0x1820dfb80
+0000000181947c4e  mov      rdx, qword ptr [rip + 0x1156643]
+0000000181947c55  mov      rcx, rax
+0000000181947c58  mov      rdi, rax
+0000000181947c5b  call     0x180a1f500
+0000000181947c60  mov      rcx, qword ptr [rip + 0x1170c01]
+0000000181947c67  call     0x1820dfb80
+0000000181947c6c  mov      rdx, qword ptr [rip + 0x11a7d75]
+0000000181947c73  mov      rcx, rax
+0000000181947c76  mov      rbx, rax
+0000000181947c79  call     0x180a1f500
+0000000181947c7e  test     rbx, rbx
+0000000181947c81  je       0x1819498c0
+0000000181947c87  mov      rax, qword ptr [rip + 0x11a7f82]
+0000000181947c8e  inc      dword ptr [rbx + 0x1c]
+0000000181947c91  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947c95  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947c99  test     rdx, rdx
+0000000181947c9c  je       0x1819498c0
+0000000181947ca2  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947ca5  jb       0x181947cc5
+0000000181947ca7  mov      rax, qword ptr [rax + 0x20]
+0000000181947cab  mov      edx, 1
+0000000181947cb0  mov      rcx, rbx
+0000000181947cb3  mov      r8, qword ptr [rax + 0xc0]
+0000000181947cba  mov      r8, qword ptr [r8 + 0x70]
+0000000181947cbe  call     0x180aaf4d0
+0000000181947cc3  jmp      0x181947cdc
+0000000181947cc5  lea      eax, [rcx + 1]
+0000000181947cc8  mov      dword ptr [rbx + 0x18], eax
+0000000181947ccb  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947cce  jae      0x1819498c6
+0000000181947cd4  mov      dword ptr [rdx + rcx*4 + 0x20], 1
+0000000181947cdc  mov      r8, qword ptr [rip + 0x11a7f2d]
+0000000181947ce3  inc      dword ptr [rbx + 0x1c]
+0000000181947ce6  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947cea  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947cee  test     rdx, rdx
+0000000181947cf1  je       0x1819498c0
+0000000181947cf7  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947cfa  jb       0x181947d1a
+0000000181947cfc  mov      rax, qword ptr [r8 + 0x20]
+0000000181947d00  mov      edx, 0xc
+0000000181947d05  mov      rcx, rbx
+0000000181947d08  mov      r8, qword ptr [rax + 0xc0]
+0000000181947d0f  mov      r8, qword ptr [r8 + 0x70]
+0000000181947d13  call     0x180aaf4d0
+0000000181947d18  jmp      0x181947d31
+0000000181947d1a  lea      eax, [rcx + 1]
+0000000181947d1d  mov      dword ptr [rbx + 0x18], eax
+0000000181947d20  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947d23  jae      0x1819498c6
+0000000181947d29  mov      dword ptr [rdx + rcx*4 + 0x20], 0xc
+0000000181947d31  mov      r8, qword ptr [rip + 0x11a7ed8]
+0000000181947d38  inc      dword ptr [rbx + 0x1c]
+0000000181947d3b  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947d3f  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947d43  test     rdx, rdx
+0000000181947d46  je       0x1819498c0
+0000000181947d4c  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947d4f  jb       0x181947d6f
+0000000181947d51  mov      rax, qword ptr [r8 + 0x20]
+0000000181947d55  mov      edx, 3
+0000000181947d5a  mov      rcx, rbx
+0000000181947d5d  mov      r8, qword ptr [rax + 0xc0]
+0000000181947d64  mov      r8, qword ptr [r8 + 0x70]
+0000000181947d68  call     0x180aaf4d0
+0000000181947d6d  jmp      0x181947d86
+0000000181947d6f  lea      eax, [rcx + 1]
+0000000181947d72  mov      dword ptr [rbx + 0x18], eax
+0000000181947d75  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947d78  jae      0x1819498c6
+0000000181947d7e  mov      dword ptr [rdx + rcx*4 + 0x20], 3
+0000000181947d86  mov      r8, qword ptr [rip + 0x11a7e83]
+0000000181947d8d  inc      dword ptr [rbx + 0x1c]
+0000000181947d90  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947d94  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947d98  test     rdx, rdx
+0000000181947d9b  je       0x1819498c0
+0000000181947da1  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947da4  jb       0x181947dc4
+0000000181947da6  mov      rax, qword ptr [r8 + 0x20]
+0000000181947daa  mov      edx, 0xd
+0000000181947daf  mov      rcx, rbx
+0000000181947db2  mov      r8, qword ptr [rax + 0xc0]
+0000000181947db9  mov      r8, qword ptr [r8 + 0x70]
+0000000181947dbd  call     0x180aaf4d0
+0000000181947dc2  jmp      0x181947ddb
+0000000181947dc4  lea      eax, [rcx + 1]
+0000000181947dc7  mov      dword ptr [rbx + 0x18], eax
+0000000181947dca  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947dcd  jae      0x1819498c6
+0000000181947dd3  mov      dword ptr [rdx + rcx*4 + 0x20], 0xd
+0000000181947ddb  mov      r8, qword ptr [rip + 0x11a7e2e]
+0000000181947de2  inc      dword ptr [rbx + 0x1c]
+0000000181947de5  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947de9  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947ded  test     rdx, rdx
+0000000181947df0  je       0x1819498c0
+0000000181947df6  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947df9  jb       0x181947e19
+0000000181947dfb  mov      rax, qword ptr [r8 + 0x20]
+0000000181947dff  mov      edx, 4
+0000000181947e04  mov      rcx, rbx
+0000000181947e07  mov      r8, qword ptr [rax + 0xc0]
+0000000181947e0e  mov      r8, qword ptr [r8 + 0x70]
+0000000181947e12  call     0x180aaf4d0
+0000000181947e17  jmp      0x181947e30
+0000000181947e19  lea      eax, [rcx + 1]
+0000000181947e1c  mov      dword ptr [rbx + 0x18], eax
+0000000181947e1f  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947e22  jae      0x1819498c6
+0000000181947e28  mov      dword ptr [rdx + rcx*4 + 0x20], 4
+0000000181947e30  mov      edx, 1
+0000000181947e35  xor      r14d, r14d
+0000000181947e38  mov      qword ptr [rsp + 0x30], r14
+0000000181947e3d  xor      ecx, ecx
+0000000181947e3f  mov      qword ptr [rsp + 0x28], r14
+0000000181947e44  mov      r9d, edx
+0000000181947e47  mov      r8d, edx
+0000000181947e4a  mov      qword ptr [rsp + 0x20], rbx
+0000000181947e4f  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181947e54  test     rax, rax
+0000000181947e57  je       0x1819498c0
+0000000181947e5d  xor      edx, edx
+0000000181947e5f  mov      rcx, rax
+0000000181947e62  call     0x18197acd0 ; TuberBoardNodeLayout.WithIsStartingLocation
+0000000181947e67  test     rax, rax
+0000000181947e6a  je       0x1819498c0
+0000000181947e70  xor      edx, edx
+0000000181947e72  mov      rcx, rax
+0000000181947e75  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181947e7a  mov      r9, rax
+0000000181947e7d  test     rdi, rdi
+0000000181947e80  je       0x1819498c0
+0000000181947e86  mov      rax, qword ptr [rip + 0x11564bb]
+0000000181947e8d  inc      dword ptr [rdi + 0x1c]
+0000000181947e90  mov      rcx, qword ptr [rdi + 0x10]
+0000000181947e94  movsxd   rdx, dword ptr [rdi + 0x18]
+0000000181947e98  test     rcx, rcx
+0000000181947e9b  je       0x1819498c0
+0000000181947ea1  cmp      edx, dword ptr [rcx + 0x18]
+0000000181947ea4  jb       0x181947ec2
+0000000181947ea6  mov      rax, qword ptr [rax + 0x20]
+0000000181947eaa  mov      rdx, r9
+0000000181947ead  mov      rcx, rdi
+0000000181947eb0  mov      r8, qword ptr [rax + 0xc0]
+0000000181947eb7  mov      r8, qword ptr [r8 + 0x70]
+0000000181947ebb  call     0x180abf790
+0000000181947ec0  jmp      0x181947ee6
+0000000181947ec2  lea      eax, [rdx + 1]
+0000000181947ec5  mov      dword ptr [rdi + 0x18], eax
+0000000181947ec8  cmp      edx, dword ptr [rcx + 0x18]
+0000000181947ecb  jae      0x1819498c6
+0000000181947ed1  mov      qword ptr [rcx + rdx*8 + 0x20], r9
+0000000181947ed6  lea      rcx, [rcx + rdx*8]
+0000000181947eda  add      rcx, 0x20
+0000000181947ede  mov      rdx, r9
+0000000181947ee1  call     0x1820decd0
+0000000181947ee6  mov      rcx, qword ptr [rip + 0x117097b]
+0000000181947eed  call     0x1820dfb80
+0000000181947ef2  mov      rdx, qword ptr [rip + 0x11a7aef]
+0000000181947ef9  mov      rcx, rax
+0000000181947efc  mov      rbx, rax
+0000000181947eff  call     0x180a1f500
+0000000181947f04  test     rbx, rbx
+0000000181947f07  je       0x1819498c0
+0000000181947f0d  mov      rax, qword ptr [rip + 0x11a7cfc]
+0000000181947f14  inc      dword ptr [rbx + 0x1c]
+0000000181947f17  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947f1b  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947f1f  test     rdx, rdx
+0000000181947f22  je       0x1819498c0
+0000000181947f28  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947f2b  jb       0x181947f48
+0000000181947f2d  mov      rax, qword ptr [rax + 0x20]
+0000000181947f31  xor      edx, edx
+0000000181947f33  mov      rcx, rbx
+0000000181947f36  mov      r8, qword ptr [rax + 0xc0]
+0000000181947f3d  mov      r8, qword ptr [r8 + 0x70]
+0000000181947f41  call     0x180aaf4d0
+0000000181947f46  jmp      0x181947f5c
+0000000181947f48  lea      eax, [rcx + 1]
+0000000181947f4b  mov      dword ptr [rbx + 0x18], eax
+0000000181947f4e  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947f51  jae      0x1819498c6
+0000000181947f57  mov      dword ptr [rdx + rcx*4 + 0x20], r14d
+0000000181947f5c  mov      r8, qword ptr [rip + 0x11a7cad]
+0000000181947f63  inc      dword ptr [rbx + 0x1c]
+0000000181947f66  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947f6a  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947f6e  test     rdx, rdx
+0000000181947f71  je       0x1819498c0
+0000000181947f77  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947f7a  jb       0x181947f9a
+0000000181947f7c  mov      rax, qword ptr [r8 + 0x20]
+0000000181947f80  mov      edx, 0xc
+0000000181947f85  mov      rcx, rbx
+0000000181947f88  mov      r8, qword ptr [rax + 0xc0]
+0000000181947f8f  mov      r8, qword ptr [r8 + 0x70]
+0000000181947f93  call     0x180aaf4d0
+0000000181947f98  jmp      0x181947fb1
+0000000181947f9a  lea      eax, [rcx + 1]
+0000000181947f9d  mov      dword ptr [rbx + 0x18], eax
+0000000181947fa0  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947fa3  jae      0x1819498c6
+0000000181947fa9  mov      dword ptr [rdx + rcx*4 + 0x20], 0xc
+0000000181947fb1  mov      r8, qword ptr [rip + 0x11a7c58]
+0000000181947fb8  inc      dword ptr [rbx + 0x1c]
+0000000181947fbb  mov      rdx, qword ptr [rbx + 0x10]
+0000000181947fbf  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181947fc3  test     rdx, rdx
+0000000181947fc6  je       0x1819498c0
+0000000181947fcc  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947fcf  jb       0x181947fef
+0000000181947fd1  mov      rax, qword ptr [r8 + 0x20]
+0000000181947fd5  mov      edx, 2
+0000000181947fda  mov      rcx, rbx
+0000000181947fdd  mov      r8, qword ptr [rax + 0xc0]
+0000000181947fe4  mov      r8, qword ptr [r8 + 0x70]
+0000000181947fe8  call     0x180aaf4d0
+0000000181947fed  jmp      0x181948006
+0000000181947fef  lea      eax, [rcx + 1]
+0000000181947ff2  mov      dword ptr [rbx + 0x18], eax
+0000000181947ff5  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181947ff8  jae      0x1819498c6
+0000000181947ffe  mov      dword ptr [rdx + rcx*4 + 0x20], 2
+0000000181948006  mov      rcx, qword ptr [rip + 0x117085b]
+000000018194800d  call     0x1820dfb80
+0000000181948012  mov      rdx, qword ptr [rip + 0x11a79cf]
+0000000181948019  mov      rcx, rax
+000000018194801c  mov      rsi, rax
+000000018194801f  call     0x180a1f500
+0000000181948024  test     rsi, rsi
+0000000181948027  je       0x1819498c0
+000000018194802d  mov      rax, qword ptr [rip + 0x11a7bdc]
+0000000181948034  inc      dword ptr [rsi + 0x1c]
+0000000181948037  mov      rdx, qword ptr [rsi + 0x10]
+000000018194803b  movsxd   rcx, dword ptr [rsi + 0x18]
+000000018194803f  test     rdx, rdx
+0000000181948042  je       0x1819498c0
+0000000181948048  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194804b  jb       0x18194806b
+000000018194804d  mov      rax, qword ptr [rax + 0x20]
+0000000181948051  mov      edx, 3
+0000000181948056  mov      rcx, rsi
+0000000181948059  mov      r8, qword ptr [rax + 0xc0]
+0000000181948060  mov      r8, qword ptr [r8 + 0x70]
+0000000181948064  call     0x180aaf4d0
+0000000181948069  jmp      0x181948082
+000000018194806b  lea      eax, [rcx + 1]
+000000018194806e  mov      dword ptr [rsi + 0x18], eax
+0000000181948071  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948074  jae      0x1819498c6
+000000018194807a  mov      dword ptr [rdx + rcx*4 + 0x20], 3
+0000000181948082  mov      r9d, 2
+0000000181948088  mov      qword ptr [rsp + 0x30], r14
+000000018194808d  mov      qword ptr [rsp + 0x28], rsi
+0000000181948092  xor      r8d, r8d
+0000000181948095  mov      qword ptr [rsp + 0x20], rbx
+000000018194809a  lea      edx, [r9 + 3]
+000000018194809e  lea      ecx, [rdx - 4]
+00000001819480a1  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+00000001819480a6  test     rax, rax
+00000001819480a9  je       0x1819498c0
+00000001819480af  xor      edx, edx
+00000001819480b1  mov      rcx, rax
+00000001819480b4  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+00000001819480b9  mov      rcx, qword ptr [rdi + 0x10]
+00000001819480bd  mov      r9, rax
+00000001819480c0  mov      rax, qword ptr [rip + 0x1156281]
+00000001819480c7  inc      dword ptr [rdi + 0x1c]
+00000001819480ca  movsxd   rdx, dword ptr [rdi + 0x18]
+00000001819480ce  test     rcx, rcx
+00000001819480d1  je       0x1819498c0
+00000001819480d7  cmp      edx, dword ptr [rcx + 0x18]
+00000001819480da  jb       0x1819480f8
+00000001819480dc  mov      rax, qword ptr [rax + 0x20]
+00000001819480e0  mov      rdx, r9
+00000001819480e3  mov      rcx, rdi
+00000001819480e6  mov      r8, qword ptr [rax + 0xc0]
+00000001819480ed  mov      r8, qword ptr [r8 + 0x70]
+00000001819480f1  call     0x180abf790
+00000001819480f6  jmp      0x18194811c
+00000001819480f8  lea      eax, [rdx + 1]
+00000001819480fb  mov      dword ptr [rdi + 0x18], eax
+00000001819480fe  cmp      edx, dword ptr [rcx + 0x18]
+0000000181948101  jae      0x1819498c6
+0000000181948107  mov      qword ptr [rcx + rdx*8 + 0x20], r9
+000000018194810c  lea      rcx, [rcx + rdx*8]
+0000000181948110  add      rcx, 0x20
+0000000181948114  mov      rdx, r9
+0000000181948117  call     0x1820decd0
+000000018194811c  mov      rcx, qword ptr [rip + 0x1170745]
+0000000181948123  call     0x1820dfb80
+0000000181948128  mov      rdx, qword ptr [rip + 0x11a78b9]
+000000018194812f  mov      rcx, rax
+0000000181948132  mov      rbx, rax
+0000000181948135  call     0x180a1f500
+000000018194813a  test     rbx, rbx
+000000018194813d  je       0x1819498c0
+0000000181948143  mov      rax, qword ptr [rip + 0x11a7ac6]
+000000018194814a  inc      dword ptr [rbx + 0x1c]
+000000018194814d  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948151  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948155  test     rdx, rdx
+0000000181948158  je       0x1819498c0
+000000018194815e  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948161  jb       0x181948181
+0000000181948163  mov      rax, qword ptr [rax + 0x20]
+0000000181948167  mov      edx, 1
+000000018194816c  mov      rcx, rbx
+000000018194816f  mov      r8, qword ptr [rax + 0xc0]
+0000000181948176  mov      r8, qword ptr [r8 + 0x70]
+000000018194817a  call     0x180aaf4d0
+000000018194817f  jmp      0x181948198
+0000000181948181  lea      eax, [rcx + 1]
+0000000181948184  mov      dword ptr [rbx + 0x18], eax
+0000000181948187  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194818a  jae      0x1819498c6
+0000000181948190  mov      dword ptr [rdx + rcx*4 + 0x20], 1
+0000000181948198  mov      r8, qword ptr [rip + 0x11a7a71]
+000000018194819f  inc      dword ptr [rbx + 0x1c]
+00000001819481a2  mov      rdx, qword ptr [rbx + 0x10]
+00000001819481a6  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819481aa  test     rdx, rdx
+00000001819481ad  je       0x1819498c0
+00000001819481b3  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819481b6  jb       0x1819481d6
+00000001819481b8  mov      rax, qword ptr [r8 + 0x20]
+00000001819481bc  mov      edx, 3
+00000001819481c1  mov      rcx, rbx
+00000001819481c4  mov      r8, qword ptr [rax + 0xc0]
+00000001819481cb  mov      r8, qword ptr [r8 + 0x70]
+00000001819481cf  call     0x180aaf4d0
+00000001819481d4  jmp      0x1819481ed
+00000001819481d6  lea      eax, [rcx + 1]
+00000001819481d9  mov      dword ptr [rbx + 0x18], eax
+00000001819481dc  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819481df  jae      0x1819498c6
+00000001819481e5  mov      dword ptr [rdx + rcx*4 + 0x20], 3
+00000001819481ed  mov      r8, qword ptr [rip + 0x11a7a1c]
+00000001819481f4  inc      dword ptr [rbx + 0x1c]
+00000001819481f7  mov      rdx, qword ptr [rbx + 0x10]
+00000001819481fb  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819481ff  test     rdx, rdx
+0000000181948202  je       0x1819498c0
+0000000181948208  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194820b  jb       0x18194822b
+000000018194820d  mov      rax, qword ptr [r8 + 0x20]
+0000000181948211  mov      edx, 7
+0000000181948216  mov      rcx, rbx
+0000000181948219  mov      r8, qword ptr [rax + 0xc0]
+0000000181948220  mov      r8, qword ptr [r8 + 0x70]
+0000000181948224  call     0x180aaf4d0
+0000000181948229  jmp      0x181948242
+000000018194822b  lea      eax, [rcx + 1]
+000000018194822e  mov      dword ptr [rbx + 0x18], eax
+0000000181948231  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948234  jae      0x1819498c6
+000000018194823a  mov      dword ptr [rdx + rcx*4 + 0x20], 7
+0000000181948242  mov      r8, qword ptr [rip + 0x11a79c7]
+0000000181948249  inc      dword ptr [rbx + 0x1c]
+000000018194824c  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948250  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948254  test     rdx, rdx
+0000000181948257  je       0x1819498c0
+000000018194825d  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948260  jb       0x181948280
+0000000181948262  mov      rax, qword ptr [r8 + 0x20]
+0000000181948266  mov      edx, 0xc
+000000018194826b  mov      rcx, rbx
+000000018194826e  mov      r8, qword ptr [rax + 0xc0]
+0000000181948275  mov      r8, qword ptr [r8 + 0x70]
+0000000181948279  call     0x180aaf4d0
+000000018194827e  jmp      0x181948297
+0000000181948280  lea      eax, [rcx + 1]
+0000000181948283  mov      dword ptr [rbx + 0x18], eax
+0000000181948286  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948289  jae      0x1819498c6
+000000018194828f  mov      dword ptr [rdx + rcx*4 + 0x20], 0xc
+0000000181948297  mov      r8, qword ptr [rip + 0x11a7972]
+000000018194829e  inc      dword ptr [rbx + 0x1c]
+00000001819482a1  mov      rdx, qword ptr [rbx + 0x10]
+00000001819482a5  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819482a9  test     rdx, rdx
+00000001819482ac  je       0x1819498c0
+00000001819482b2  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819482b5  jb       0x1819482d5
+00000001819482b7  mov      rax, qword ptr [r8 + 0x20]
+00000001819482bb  mov      edx, 0xe
+00000001819482c0  mov      rcx, rbx
+00000001819482c3  mov      r8, qword ptr [rax + 0xc0]
+00000001819482ca  mov      r8, qword ptr [r8 + 0x70]
+00000001819482ce  call     0x180aaf4d0
+00000001819482d3  jmp      0x1819482ec
+00000001819482d5  lea      eax, [rcx + 1]
+00000001819482d8  mov      dword ptr [rbx + 0x18], eax
+00000001819482db  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819482de  jae      0x1819498c6
+00000001819482e4  mov      dword ptr [rdx + rcx*4 + 0x20], 0xe
+00000001819482ec  mov      edx, 2
+00000001819482f1  mov      qword ptr [rsp + 0x30], r14
+00000001819482f6  mov      ecx, edx
+00000001819482f8  mov      qword ptr [rsp + 0x28], r14
+00000001819482fd  mov      r9d, edx
+0000000181948300  mov      qword ptr [rsp + 0x20], rbx
+0000000181948305  mov      r8d, edx
+0000000181948308  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+000000018194830d  test     rax, rax
+0000000181948310  je       0x1819498c0
+0000000181948316  xor      edx, edx
+0000000181948318  mov      rcx, rax
+000000018194831b  call     0x18197acd0 ; TuberBoardNodeLayout.WithIsStartingLocation
+0000000181948320  test     rax, rax
+0000000181948323  je       0x1819498c0
+0000000181948329  xor      edx, edx
+000000018194832b  mov      rcx, rax
+000000018194832e  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181948333  mov      rcx, qword ptr [rdi + 0x10]
+0000000181948337  mov      r9, rax
+000000018194833a  mov      rax, qword ptr [rip + 0x1156007]
+0000000181948341  inc      dword ptr [rdi + 0x1c]
+0000000181948344  movsxd   rdx, dword ptr [rdi + 0x18]
+0000000181948348  test     rcx, rcx
+000000018194834b  je       0x1819498c0
+0000000181948351  cmp      edx, dword ptr [rcx + 0x18]
+0000000181948354  jb       0x181948372
+0000000181948356  mov      rax, qword ptr [rax + 0x20]
+000000018194835a  mov      rdx, r9
+000000018194835d  mov      rcx, rdi
+0000000181948360  mov      r8, qword ptr [rax + 0xc0]
+0000000181948367  mov      r8, qword ptr [r8 + 0x70]
+000000018194836b  call     0x180abf790
+0000000181948370  jmp      0x181948396
+0000000181948372  lea      eax, [rdx + 1]
+0000000181948375  mov      dword ptr [rdi + 0x18], eax
+0000000181948378  cmp      edx, dword ptr [rcx + 0x18]
+000000018194837b  jae      0x1819498c6
+0000000181948381  mov      qword ptr [rcx + rdx*8 + 0x20], r9
+0000000181948386  lea      rcx, [rcx + rdx*8]
+000000018194838a  add      rcx, 0x20
+000000018194838e  mov      rdx, r9
+0000000181948391  call     0x1820decd0
+0000000181948396  mov      rcx, qword ptr [rip + 0x11704cb]
+000000018194839d  call     0x1820dfb80
+00000001819483a2  mov      rdx, qword ptr [rip + 0x11a763f]
+00000001819483a9  mov      rcx, rax
+00000001819483ac  mov      rbx, rax
+00000001819483af  call     0x180a1f500
+00000001819483b4  test     rbx, rbx
+00000001819483b7  je       0x1819498c0
+00000001819483bd  mov      rax, qword ptr [rip + 0x11a784c]
+00000001819483c4  inc      dword ptr [rbx + 0x1c]
+00000001819483c7  mov      rdx, qword ptr [rbx + 0x10]
+00000001819483cb  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819483cf  test     rdx, rdx
+00000001819483d2  je       0x1819498c0
+00000001819483d8  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819483db  jb       0x1819483f8
+00000001819483dd  mov      rax, qword ptr [rax + 0x20]
+00000001819483e1  xor      edx, edx
+00000001819483e3  mov      rcx, rbx
+00000001819483e6  mov      r8, qword ptr [rax + 0xc0]
+00000001819483ed  mov      r8, qword ptr [r8 + 0x70]
+00000001819483f1  call     0x180aaf4d0
+00000001819483f6  jmp      0x18194840c
+00000001819483f8  lea      eax, [rcx + 1]
+00000001819483fb  mov      dword ptr [rbx + 0x18], eax
+00000001819483fe  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948401  jae      0x1819498c6
+0000000181948407  mov      dword ptr [rdx + rcx*4 + 0x20], r14d
+000000018194840c  mov      r8, qword ptr [rip + 0x11a77fd]
+0000000181948413  inc      dword ptr [rbx + 0x1c]
+0000000181948416  mov      rdx, qword ptr [rbx + 0x10]
+000000018194841a  movsxd   rcx, dword ptr [rbx + 0x18]
+000000018194841e  test     rdx, rdx
+0000000181948421  je       0x1819498c0
+0000000181948427  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194842a  jb       0x18194844a
+000000018194842c  mov      rax, qword ptr [r8 + 0x20]
+0000000181948430  mov      edx, 2
+0000000181948435  mov      rcx, rbx
+0000000181948438  mov      r8, qword ptr [rax + 0xc0]
+000000018194843f  mov      r8, qword ptr [r8 + 0x70]
+0000000181948443  call     0x180aaf4d0
+0000000181948448  jmp      0x181948461
+000000018194844a  lea      eax, [rcx + 1]
+000000018194844d  mov      dword ptr [rbx + 0x18], eax
+0000000181948450  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948453  jae      0x1819498c6
+0000000181948459  mov      dword ptr [rdx + rcx*4 + 0x20], 2
+0000000181948461  mov      r8, qword ptr [rip + 0x11a77a8]
+0000000181948468  inc      dword ptr [rbx + 0x1c]
+000000018194846b  mov      rdx, qword ptr [rbx + 0x10]
+000000018194846f  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948473  test     rdx, rdx
+0000000181948476  je       0x1819498c0
+000000018194847c  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194847f  jb       0x18194849f
+0000000181948481  mov      rax, qword ptr [r8 + 0x20]
+0000000181948485  mov      edx, 5
+000000018194848a  mov      rcx, rbx
+000000018194848d  mov      r8, qword ptr [rax + 0xc0]
+0000000181948494  mov      r8, qword ptr [r8 + 0x70]
+0000000181948498  call     0x180aaf4d0
+000000018194849d  jmp      0x1819484b6
+000000018194849f  lea      eax, [rcx + 1]
+00000001819484a2  mov      dword ptr [rbx + 0x18], eax
+00000001819484a5  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819484a8  jae      0x1819498c6
+00000001819484ae  mov      dword ptr [rdx + rcx*4 + 0x20], 5
+00000001819484b6  mov      r8, qword ptr [rip + 0x11a7753]
+00000001819484bd  inc      dword ptr [rbx + 0x1c]
+00000001819484c0  mov      rdx, qword ptr [rbx + 0x10]
+00000001819484c4  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819484c8  test     rdx, rdx
+00000001819484cb  je       0x1819498c0
+00000001819484d1  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819484d4  jb       0x1819484f4
+00000001819484d6  mov      rax, qword ptr [r8 + 0x20]
+00000001819484da  mov      edx, 0xc
+00000001819484df  mov      rcx, rbx
+00000001819484e2  mov      r8, qword ptr [rax + 0xc0]
+00000001819484e9  mov      r8, qword ptr [r8 + 0x70]
+00000001819484ed  call     0x180aaf4d0
+00000001819484f2  jmp      0x18194850b
+00000001819484f4  lea      eax, [rcx + 1]
+00000001819484f7  mov      dword ptr [rbx + 0x18], eax
+00000001819484fa  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819484fd  jae      0x1819498c6
+0000000181948503  mov      dword ptr [rdx + rcx*4 + 0x20], 0xc
+000000018194850b  mov      r8, qword ptr [rip + 0x11a76fe]
+0000000181948512  inc      dword ptr [rbx + 0x1c]
+0000000181948515  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948519  movsxd   rcx, dword ptr [rbx + 0x18]
+000000018194851d  test     rdx, rdx
+0000000181948520  je       0x1819498c0
+0000000181948526  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948529  jb       0x181948549
+000000018194852b  mov      rax, qword ptr [r8 + 0x20]
+000000018194852f  mov      edx, 0xd
+0000000181948534  mov      rcx, rbx
+0000000181948537  mov      r8, qword ptr [rax + 0xc0]
+000000018194853e  mov      r8, qword ptr [r8 + 0x70]
+0000000181948542  call     0x180aaf4d0
+0000000181948547  jmp      0x181948560
+0000000181948549  lea      eax, [rcx + 1]
+000000018194854c  mov      dword ptr [rbx + 0x18], eax
+000000018194854f  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948552  jae      0x1819498c6
+0000000181948558  mov      dword ptr [rdx + rcx*4 + 0x20], 0xd
+0000000181948560  mov      r8, qword ptr [rip + 0x11a76a9]
+0000000181948567  inc      dword ptr [rbx + 0x1c]
+000000018194856a  mov      rdx, qword ptr [rbx + 0x10]
+000000018194856e  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948572  test     rdx, rdx
+0000000181948575  je       0x1819498c0
+000000018194857b  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194857e  jb       0x18194859e
+0000000181948580  mov      rax, qword ptr [r8 + 0x20]
+0000000181948584  mov      edx, 0xe
+0000000181948589  mov      rcx, rbx
+000000018194858c  mov      r8, qword ptr [rax + 0xc0]
+0000000181948593  mov      r8, qword ptr [r8 + 0x70]
+0000000181948597  call     0x180aaf4d0
+000000018194859c  jmp      0x1819485b5
+000000018194859e  lea      eax, [rcx + 1]
+00000001819485a1  mov      dword ptr [rbx + 0x18], eax
+00000001819485a4  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819485a7  jae      0x1819498c6
+00000001819485ad  mov      dword ptr [rdx + rcx*4 + 0x20], 0xe
+00000001819485b5  mov      rcx, qword ptr [rip + 0x11702ac]
+00000001819485bc  call     0x1820dfb80
+00000001819485c1  mov      rdx, qword ptr [rip + 0x11a7420]
+00000001819485c8  mov      rcx, rax
+00000001819485cb  mov      rsi, rax
+00000001819485ce  call     0x180a1f500
+00000001819485d3  test     rsi, rsi
+00000001819485d6  je       0x1819498c0
+00000001819485dc  mov      rax, qword ptr [rip + 0x11a762d]
+00000001819485e3  inc      dword ptr [rsi + 0x1c]
+00000001819485e6  mov      rdx, qword ptr [rsi + 0x10]
+00000001819485ea  movsxd   rcx, dword ptr [rsi + 0x18]
+00000001819485ee  test     rdx, rdx
+00000001819485f1  je       0x1819498c0
+00000001819485f7  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819485fa  jb       0x18194861a
+00000001819485fc  mov      rax, qword ptr [rax + 0x20]
+0000000181948600  mov      edx, 1
+0000000181948605  mov      rcx, rsi
+0000000181948608  mov      r8, qword ptr [rax + 0xc0]
+000000018194860f  mov      r8, qword ptr [r8 + 0x70]
+0000000181948613  call     0x180aaf4d0
+0000000181948618  jmp      0x181948631
+000000018194861a  lea      eax, [rcx + 1]
+000000018194861d  mov      dword ptr [rsi + 0x18], eax
+0000000181948620  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948623  jae      0x1819498c6
+0000000181948629  mov      dword ptr [rdx + rcx*4 + 0x20], 1
+0000000181948631  mov      r8, qword ptr [rip + 0x11a75d8]
+0000000181948638  inc      dword ptr [rsi + 0x1c]
+000000018194863b  mov      rdx, qword ptr [rsi + 0x10]
+000000018194863f  movsxd   rcx, dword ptr [rsi + 0x18]
+0000000181948643  test     rdx, rdx
+0000000181948646  je       0x1819498c0
+000000018194864c  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194864f  jb       0x18194866f
+0000000181948651  mov      rax, qword ptr [r8 + 0x20]
+0000000181948655  mov      edx, 6
+000000018194865a  mov      rcx, rsi
+000000018194865d  mov      r8, qword ptr [rax + 0xc0]
+0000000181948664  mov      r8, qword ptr [r8 + 0x70]
+0000000181948668  call     0x180aaf4d0
+000000018194866d  jmp      0x181948686
+000000018194866f  lea      eax, [rcx + 1]
+0000000181948672  mov      dword ptr [rsi + 0x18], eax
+0000000181948675  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948678  jae      0x1819498c6
+000000018194867e  mov      dword ptr [rdx + rcx*4 + 0x20], 6
+0000000181948686  mov      r9d, 2
+000000018194868c  mov      qword ptr [rsp + 0x30], r14
+0000000181948691  mov      qword ptr [rsp + 0x28], rsi
+0000000181948696  xor      r8d, r8d
+0000000181948699  mov      qword ptr [rsp + 0x20], rbx
+000000018194869e  lea      edx, [r9 + 8]
+00000001819486a2  lea      ecx, [rdx - 7]
+00000001819486a5  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+00000001819486aa  test     rax, rax
+00000001819486ad  je       0x1819498c0
+00000001819486b3  xor      edx, edx
+00000001819486b5  mov      rcx, rax
+00000001819486b8  call     0x18197acc0 ; TuberBoardNodeLayout.WithIsRuinLocation
+00000001819486bd  mov      rcx, qword ptr [rdi + 0x10]
+00000001819486c1  mov      r9, rax
+00000001819486c4  mov      rax, qword ptr [rip + 0x1155c7d]
+00000001819486cb  inc      dword ptr [rdi + 0x1c]
+00000001819486ce  movsxd   rdx, dword ptr [rdi + 0x18]
+00000001819486d2  test     rcx, rcx
+00000001819486d5  je       0x1819498c0
+00000001819486db  cmp      edx, dword ptr [rcx + 0x18]
+00000001819486de  jb       0x1819486fc
+00000001819486e0  mov      rax, qword ptr [rax + 0x20]
+00000001819486e4  mov      rdx, r9
+00000001819486e7  mov      rcx, rdi
+00000001819486ea  mov      r8, qword ptr [rax + 0xc0]
+00000001819486f1  mov      r8, qword ptr [r8 + 0x70]
+00000001819486f5  call     0x180abf790
+00000001819486fa  jmp      0x181948720
+00000001819486fc  lea      eax, [rdx + 1]
+00000001819486ff  mov      dword ptr [rdi + 0x18], eax
+0000000181948702  cmp      edx, dword ptr [rcx + 0x18]
+0000000181948705  jae      0x1819498c6
+000000018194870b  mov      qword ptr [rcx + rdx*8 + 0x20], r9
+0000000181948710  lea      rcx, [rcx + rdx*8]
+0000000181948714  add      rcx, 0x20
+0000000181948718  mov      rdx, r9
+000000018194871b  call     0x1820decd0
+0000000181948720  mov      rcx, qword ptr [rip + 0x1170141]
+0000000181948727  call     0x1820dfb80
+000000018194872c  mov      rdx, qword ptr [rip + 0x11a72b5]
+0000000181948733  mov      rcx, rax
+0000000181948736  mov      rbx, rax
+0000000181948739  call     0x180a1f500
+000000018194873e  test     rbx, rbx
+0000000181948741  je       0x1819498c0
+0000000181948747  mov      rax, qword ptr [rip + 0x11a74c2]
+000000018194874e  inc      dword ptr [rbx + 0x1c]
+0000000181948751  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948755  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948759  test     rdx, rdx
+000000018194875c  je       0x1819498c0
+0000000181948762  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948765  jb       0x181948782
+0000000181948767  mov      rax, qword ptr [rax + 0x20]
+000000018194876b  xor      edx, edx
+000000018194876d  mov      rcx, rbx
+0000000181948770  mov      r8, qword ptr [rax + 0xc0]
+0000000181948777  mov      r8, qword ptr [r8 + 0x70]
+000000018194877b  call     0x180aaf4d0
+0000000181948780  jmp      0x181948796
+0000000181948782  lea      eax, [rcx + 1]
+0000000181948785  mov      dword ptr [rbx + 0x18], eax
+0000000181948788  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194878b  jae      0x1819498c6
+0000000181948791  mov      dword ptr [rdx + rcx*4 + 0x20], r14d
+0000000181948796  mov      r8, qword ptr [rip + 0x11a7473]
+000000018194879d  inc      dword ptr [rbx + 0x1c]
+00000001819487a0  mov      rdx, qword ptr [rbx + 0x10]
+00000001819487a4  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819487a8  test     rdx, rdx
+00000001819487ab  je       0x1819498c0
+00000001819487b1  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819487b4  jb       0x1819487d4
+00000001819487b6  mov      rax, qword ptr [r8 + 0x20]
+00000001819487ba  mov      edx, 5
+00000001819487bf  mov      rcx, rbx
+00000001819487c2  mov      r8, qword ptr [rax + 0xc0]
+00000001819487c9  mov      r8, qword ptr [r8 + 0x70]
+00000001819487cd  call     0x180aaf4d0
+00000001819487d2  jmp      0x1819487eb
+00000001819487d4  lea      eax, [rcx + 1]
+00000001819487d7  mov      dword ptr [rbx + 0x18], eax
+00000001819487da  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819487dd  jae      0x1819498c6
+00000001819487e3  mov      dword ptr [rdx + rcx*4 + 0x20], 5
+00000001819487eb  mov      r8, qword ptr [rip + 0x11a741e]
+00000001819487f2  inc      dword ptr [rbx + 0x1c]
+00000001819487f5  mov      rdx, qword ptr [rbx + 0x10]
+00000001819487f9  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819487fd  test     rdx, rdx
+0000000181948800  je       0x1819498c0
+0000000181948806  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948809  jb       0x181948829
+000000018194880b  mov      rax, qword ptr [r8 + 0x20]
+000000018194880f  mov      edx, 0xb
+0000000181948814  mov      rcx, rbx
+0000000181948817  mov      r8, qword ptr [rax + 0xc0]
+000000018194881e  mov      r8, qword ptr [r8 + 0x70]
+0000000181948822  call     0x180aaf4d0
+0000000181948827  jmp      0x181948840
+0000000181948829  lea      eax, [rcx + 1]
+000000018194882c  mov      dword ptr [rbx + 0x18], eax
+000000018194882f  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948832  jae      0x1819498c6
+0000000181948838  mov      dword ptr [rdx + rcx*4 + 0x20], 0xb
+0000000181948840  mov      r8, qword ptr [rip + 0x11a73c9]
+0000000181948847  inc      dword ptr [rbx + 0x1c]
+000000018194884a  mov      rdx, qword ptr [rbx + 0x10]
+000000018194884e  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948852  test     rdx, rdx
+0000000181948855  je       0x1819498c0
+000000018194885b  cmp      ecx, dword ptr [rdx + 0x18]
+000000018194885e  jb       0x18194887e
+0000000181948860  mov      rax, qword ptr [r8 + 0x20]
+0000000181948864  mov      edx, 0xd
+0000000181948869  mov      rcx, rbx
+000000018194886c  mov      r8, qword ptr [rax + 0xc0]
+0000000181948873  mov      r8, qword ptr [r8 + 0x70]
+0000000181948877  call     0x180aaf4d0
+000000018194887c  jmp      0x181948895
+000000018194887e  lea      eax, [rcx + 1]
+0000000181948881  mov      dword ptr [rbx + 0x18], eax
+0000000181948884  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948887  jae      0x1819498c6
+000000018194888d  mov      dword ptr [rdx + rcx*4 + 0x20], 0xd
+0000000181948895  mov      r8, qword ptr [rip + 0x11a7374]
+000000018194889c  inc      dword ptr [rbx + 0x1c]
+000000018194889f  mov      rdx, qword ptr [rbx + 0x10]
+00000001819488a3  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819488a7  test     rdx, rdx
+00000001819488aa  je       0x1819498c0
+00000001819488b0  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819488b3  jb       0x1819488d3
+00000001819488b5  mov      rax, qword ptr [r8 + 0x20]
+00000001819488b9  mov      edx, 0xf
+00000001819488be  mov      rcx, rbx
+00000001819488c1  mov      r8, qword ptr [rax + 0xc0]
+00000001819488c8  mov      r8, qword ptr [r8 + 0x70]
+00000001819488cc  call     0x180aaf4d0
+00000001819488d1  jmp      0x1819488ea
+00000001819488d3  lea      eax, [rcx + 1]
+00000001819488d6  mov      dword ptr [rbx + 0x18], eax
+00000001819488d9  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819488dc  jae      0x1819498c6
+00000001819488e2  mov      dword ptr [rdx + rcx*4 + 0x20], 0xf
+00000001819488ea  mov      edx, 9
+00000001819488ef  mov      qword ptr [rsp + 0x30], r14
+00000001819488f4  mov      r9d, 2
+00000001819488fa  mov      qword ptr [rsp + 0x28], r14
+00000001819488ff  mov      r8d, r9d
+0000000181948902  mov      qword ptr [rsp + 0x20], rbx
+0000000181948907  lea      ecx, [rdx - 5]
+000000018194890a  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+000000018194890f  test     rax, rax
+0000000181948912  je       0x1819498c0
+0000000181948918  xor      edx, edx
+000000018194891a  mov      rcx, rax
+000000018194891d  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181948922  mov      rcx, qword ptr [rdi + 0x10]
+0000000181948926  mov      r9, rax
+0000000181948929  mov      rax, qword ptr [rip + 0x1155a18]
+0000000181948930  inc      dword ptr [rdi + 0x1c]
+0000000181948933  movsxd   rdx, dword ptr [rdi + 0x18]
+0000000181948937  test     rcx, rcx
+000000018194893a  je       0x1819498c0
+0000000181948940  cmp      edx, dword ptr [rcx + 0x18]
+0000000181948943  jb       0x181948961
+0000000181948945  mov      rax, qword ptr [rax + 0x20]
+0000000181948949  mov      rdx, r9
+000000018194894c  mov      rcx, rdi
+000000018194894f  mov      r8, qword ptr [rax + 0xc0]
+0000000181948956  mov      r8, qword ptr [r8 + 0x70]
+000000018194895a  call     0x180abf790
+000000018194895f  jmp      0x181948985
+0000000181948961  lea      eax, [rdx + 1]
+0000000181948964  mov      dword ptr [rdi + 0x18], eax
+0000000181948967  cmp      edx, dword ptr [rcx + 0x18]
+000000018194896a  jae      0x1819498c6
+0000000181948970  mov      qword ptr [rcx + rdx*8 + 0x20], r9
+0000000181948975  lea      rcx, [rcx + rdx*8]
+0000000181948979  add      rcx, 0x20
+000000018194897d  mov      rdx, r9
+0000000181948980  call     0x1820decd0
+0000000181948985  mov      rcx, qword ptr [rip + 0x116fedc]
+000000018194898c  call     0x1820dfb80
+0000000181948991  mov      rdx, qword ptr [rip + 0x11a7050]
+0000000181948998  mov      rcx, rax
+000000018194899b  mov      rbx, rax
+000000018194899e  call     0x180a1f500
+00000001819489a3  test     rbx, rbx
+00000001819489a6  je       0x1819498c0
+00000001819489ac  mov      rax, qword ptr [rip + 0x11a725d]
+00000001819489b3  inc      dword ptr [rbx + 0x1c]
+00000001819489b6  mov      rdx, qword ptr [rbx + 0x10]
+00000001819489ba  movsxd   rcx, dword ptr [rbx + 0x18]
+00000001819489be  test     rdx, rdx
+00000001819489c1  je       0x1819498c0
+00000001819489c7  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819489ca  jb       0x1819489ea
+00000001819489cc  mov      rax, qword ptr [rax + 0x20]
+00000001819489d0  mov      edx, 3
+00000001819489d5  mov      rcx, rbx
+00000001819489d8  mov      r8, qword ptr [rax + 0xc0]
+00000001819489df  mov      r8, qword ptr [r8 + 0x70]
+00000001819489e3  call     0x180aaf4d0
+00000001819489e8  jmp      0x181948a01
+00000001819489ea  lea      eax, [rcx + 1]
+00000001819489ed  mov      dword ptr [rbx + 0x18], eax
+00000001819489f0  cmp      ecx, dword ptr [rdx + 0x18]
+00000001819489f3  jae      0x1819498c6
+00000001819489f9  mov      dword ptr [rdx + rcx*4 + 0x20], 3
+0000000181948a01  mov      r8, qword ptr [rip + 0x11a7208]
+0000000181948a08  inc      dword ptr [rbx + 0x1c]
+0000000181948a0b  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948a0f  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948a13  test     rdx, rdx
+0000000181948a16  je       0x1819498c0
+0000000181948a1c  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948a1f  jb       0x181948a3f
+0000000181948a21  mov      rax, qword ptr [r8 + 0x20]
+0000000181948a25  mov      edx, 4
+0000000181948a2a  mov      rcx, rbx
+0000000181948a2d  mov      r8, qword ptr [rax + 0xc0]
+0000000181948a34  mov      r8, qword ptr [r8 + 0x70]
+0000000181948a38  call     0x180aaf4d0
+0000000181948a3d  jmp      0x181948a56
+0000000181948a3f  lea      eax, [rcx + 1]
+0000000181948a42  mov      dword ptr [rbx + 0x18], eax
+0000000181948a45  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948a48  jae      0x1819498c6
+0000000181948a4e  mov      dword ptr [rdx + rcx*4 + 0x20], 4
+0000000181948a56  mov      r8, qword ptr [rip + 0x11a71b3]
+0000000181948a5d  inc      dword ptr [rbx + 0x1c]
+0000000181948a60  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948a64  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948a68  test     rdx, rdx
+0000000181948a6b  je       0x1819498c0
+0000000181948a71  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948a74  jb       0x181948a94
+0000000181948a76  mov      rax, qword ptr [r8 + 0x20]
+0000000181948a7a  mov      edx, 6
+0000000181948a7f  mov      rcx, rbx
+0000000181948a82  mov      r8, qword ptr [rax + 0xc0]
+0000000181948a89  mov      r8, qword ptr [r8 + 0x70]
+0000000181948a8d  call     0x180aaf4d0
+0000000181948a92  jmp      0x181948aab
+0000000181948a94  lea      eax, [rcx + 1]
+0000000181948a97  mov      dword ptr [rbx + 0x18], eax
+0000000181948a9a  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948a9d  jae      0x1819498c6
+0000000181948aa3  mov      dword ptr [rdx + rcx*4 + 0x20], 6
+0000000181948aab  mov      r8, qword ptr [rip + 0x11a715e]
+0000000181948ab2  inc      dword ptr [rbx + 0x1c]
+0000000181948ab5  mov      rdx, qword ptr [rbx + 0x10]
+0000000181948ab9  movsxd   rcx, dword ptr [rbx + 0x18]
+0000000181948abd  test     rdx, rdx
+0000000181948ac0  je       0x1819498c0
+0000000181948ac6  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948ac9  jb       0x181948ae9
+0000000181948acb  mov      rax, qword ptr [r8 + 0x20]
+0000000181948acf  mov      edx, 0xb
+0000000181948ad4  mov      rcx, rbx
+0000000181948ad7  mov      r8, qword ptr [rax + 0xc0]
+0000000181948ade  mov      r8, qword ptr [r8 + 0x70]
+0000000181948ae2  call     0x180aaf4d0
+0000000181948ae7  jmp      0x181948b00
+0000000181948ae9  lea      eax, [rcx + 1]
+0000000181948aec  mov      dword ptr [rbx + 0x18], eax
+0000000181948aef  cmp      ecx, dword ptr [rdx + 0x18]
+0000000181948af2  jae      0x1819498c6
+0000000181948af8  mov      dword ptr [rdx + rcx*4 + 0x20], 0xb
+0000000181948b00  mov      r8, qword ptr [rip + 0x11a7109]
+0000000181948b07  mov      edx, 9
+0000000181948b0c  mov      rcx, rbx
+0000000181948b0f  call     0x181f37d70
+0000000181948b14  mov      r8, qword ptr [rip + 0x11a70f5]
+0000000181948b1b  mov      edx, 0xd
+0000000181948b20  mov      rcx, rbx
+0000000181948b23  call     0x181f37d70
+0000000181948b28  mov      r8, qword ptr [rip + 0x11a70e1]
+0000000181948b2f  mov      edx, 0xe
+0000000181948b34  mov      rcx, rbx
+0000000181948b37  call     0x181f37d70
+0000000181948b3c  mov      r8, qword ptr [rip + 0x11a70cd]
+0000000181948b43  mov      edx, 0xf
+0000000181948b48  mov      rcx, rbx
+0000000181948b4b  call     0x181f37d70
+0000000181948b50  mov      r8, qword ptr [rip + 0x11a70b9]
+0000000181948b57  mov      edx, 0x10
+0000000181948b5c  mov      rcx, rbx
+0000000181948b5f  call     0x181f37d70
+0000000181948b64  mov      r8, qword ptr [rip + 0x11a70a5]
+0000000181948b6b  mov      edx, 0x11
+0000000181948b70  mov      rcx, rbx
+0000000181948b73  call     0x181f37d70
+0000000181948b78  mov      edx, 0xc
+0000000181948b7d  mov      qword ptr [rsp + 0x30], r14
+0000000181948b82  mov      qword ptr [rsp + 0x28], r14
+0000000181948b87  mov      qword ptr [rsp + 0x20], rbx
+0000000181948b8c  lea      ecx, [rdx - 7]
+0000000181948b8f  lea      r9d, [rdx - 0xa]
+0000000181948b93  lea      r8d, [rdx - 0xb]
+0000000181948b97  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181948b9c  test     rax, rax
+0000000181948b9f  je       0x1819498c0
+0000000181948ba5  xor      edx, edx
+0000000181948ba7  mov      rcx, rax
+0000000181948baa  call     0x18197acc0 ; TuberBoardNodeLayout.WithIsRuinLocation
+0000000181948baf  mov      r8, qword ptr [rip + 0x1155792]
+0000000181948bb6  mov      rdx, rax
+0000000181948bb9  mov      rcx, rdi
+0000000181948bbc  call     0x181f356a0
+0000000181948bc1  mov      rcx, qword ptr [rip + 0x116fca0]
+0000000181948bc8  call     0x1820dfb80
+0000000181948bcd  mov      rdx, qword ptr [rip + 0x11a6e14]
+0000000181948bd4  mov      rcx, rax
+0000000181948bd7  mov      rbx, rax
+0000000181948bda  call     0x180a1f500
+0000000181948bdf  test     rbx, rbx
+0000000181948be2  je       0x1819498c0
+0000000181948be8  mov      r8, qword ptr [rip + 0x11a7021]
+0000000181948bef  mov      edx, 5
+0000000181948bf4  mov      rcx, rbx
+0000000181948bf7  call     0x181f37d70
+0000000181948bfc  mov      r8, qword ptr [rip + 0x11a700d]
+0000000181948c03  mov      edx, 7
+0000000181948c08  mov      rcx, rbx
+0000000181948c0b  call     0x181f37d70
+0000000181948c10  mov      r8, qword ptr [rip + 0x11a6ff9]
+0000000181948c17  mov      edx, 8
+0000000181948c1c  mov      rcx, rbx
+0000000181948c1f  call     0x181f37d70
+0000000181948c24  mov      r8, qword ptr [rip + 0x11a6fe5]
+0000000181948c2b  mov      edx, 0xe
+0000000181948c30  mov      rcx, rbx
+0000000181948c33  call     0x181f37d70
+0000000181948c38  mov      r8, qword ptr [rip + 0x11a6fd1]
+0000000181948c3f  mov      edx, 0x11
+0000000181948c44  mov      rcx, rbx
+0000000181948c47  call     0x181f37d70
+0000000181948c4c  mov      r8, qword ptr [rip + 0x11a6fbd]
+0000000181948c53  mov      edx, 0x12
+0000000181948c58  mov      rcx, rbx
+0000000181948c5b  call     0x181f37d70
+0000000181948c60  mov      rcx, qword ptr [rip + 0x116fc01]
+0000000181948c67  call     0x1820dfb80
+0000000181948c6c  mov      rdx, qword ptr [rip + 0x11a6d75]
+0000000181948c73  mov      rcx, rax
+0000000181948c76  mov      rsi, rax
+0000000181948c79  call     0x180a1f500
+0000000181948c7e  test     rsi, rsi
+0000000181948c81  je       0x1819498c0
+0000000181948c87  mov      r8, qword ptr [rip + 0x11a6f82]
+0000000181948c8e  mov      edx, 3
+0000000181948c93  mov      rcx, rsi
+0000000181948c96  call     0x181f37d70
+0000000181948c9b  mov      r8, qword ptr [rip + 0x11a6f6e]
+0000000181948ca2  mov      edx, 9
+0000000181948ca7  mov      rcx, rsi
+0000000181948caa  call     0x181f37d70
+0000000181948caf  mov      edx, 0xb
+0000000181948cb4  mov      qword ptr [rsp + 0x30], r14
+0000000181948cb9  mov      qword ptr [rsp + 0x28], rsi
+0000000181948cbe  mov      qword ptr [rsp + 0x20], rbx
+0000000181948cc3  lea      ecx, [rdx - 5]
+0000000181948cc6  lea      r9d, [rdx - 8]
+0000000181948cca  lea      r8d, [rdx - 9]
+0000000181948cce  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181948cd3  test     rax, rax
+0000000181948cd6  je       0x1819498c0
+0000000181948cdc  xor      edx, edx
+0000000181948cde  mov      rcx, rax
+0000000181948ce1  call     0x18197acc0 ; TuberBoardNodeLayout.WithIsRuinLocation
+0000000181948ce6  mov      r8, qword ptr [rip + 0x115565b]
+0000000181948ced  mov      rdx, rax
+0000000181948cf0  mov      rcx, rdi
+0000000181948cf3  call     0x181f356a0
+0000000181948cf8  mov      rcx, qword ptr [rip + 0x116fb69]
+0000000181948cff  call     0x1820dfb80
+0000000181948d04  mov      rdx, qword ptr [rip + 0x11a6cdd]
+0000000181948d0b  mov      rcx, rax
+0000000181948d0e  mov      rbx, rax
+0000000181948d11  call     0x180a1f500
+0000000181948d16  test     rbx, rbx
+0000000181948d19  je       0x1819498c0
+0000000181948d1f  mov      r8, qword ptr [rip + 0x11a6eea]
+0000000181948d26  mov      edx, 2
+0000000181948d2b  mov      rcx, rbx
+0000000181948d2e  call     0x181f37d70
+0000000181948d33  mov      r8, qword ptr [rip + 0x11a6ed6]
+0000000181948d3a  mov      edx, 6
+0000000181948d3f  mov      rcx, rbx
+0000000181948d42  call     0x181f37d70
+0000000181948d47  mov      r8, qword ptr [rip + 0x11a6ec2]
+0000000181948d4e  mov      edx, 8
+0000000181948d53  mov      rcx, rbx
+0000000181948d56  call     0x181f37d70
+0000000181948d5b  mov      r8, qword ptr [rip + 0x11a6eae]
+0000000181948d62  mov      edx, 0xe
+0000000181948d67  mov      rcx, rbx
+0000000181948d6a  call     0x181f37d70
+0000000181948d6f  mov      r8, qword ptr [rip + 0x11a6e9a]
+0000000181948d76  mov      edx, 0x12
+0000000181948d7b  mov      rcx, rbx
+0000000181948d7e  call     0x181f37d70
+0000000181948d83  mov      edx, 6
+0000000181948d88  mov      qword ptr [rsp + 0x30], r14
+0000000181948d8d  mov      qword ptr [rsp + 0x28], r14
+0000000181948d92  mov      qword ptr [rsp + 0x20], rbx
+0000000181948d97  lea      ecx, [rdx + 1]
+0000000181948d9a  lea      r9d, [rdx - 4]
+0000000181948d9e  lea      r8d, [rdx - 5]
+0000000181948da2  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181948da7  test     rax, rax
+0000000181948daa  je       0x1819498c0
+0000000181948db0  xor      edx, edx
+0000000181948db2  mov      rcx, rax
+0000000181948db5  call     0x18197acc0 ; TuberBoardNodeLayout.WithIsRuinLocation
+0000000181948dba  test     rax, rax
+0000000181948dbd  je       0x1819498c0
+0000000181948dc3  xor      edx, edx
+0000000181948dc5  mov      rcx, rax
+0000000181948dc8  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181948dcd  mov      r8, qword ptr [rip + 0x1155574]
+0000000181948dd4  mov      rdx, rax
+0000000181948dd7  mov      rcx, rdi
+0000000181948dda  call     0x181f356a0
+0000000181948ddf  mov      rcx, qword ptr [rip + 0x116fa82]
+0000000181948de6  call     0x1820dfb80
+0000000181948deb  mov      rdx, qword ptr [rip + 0x11a6bf6]
+0000000181948df2  mov      rcx, rax
+0000000181948df5  mov      rbx, rax
+0000000181948df8  call     0x180a1f500
+0000000181948dfd  test     rbx, rbx
+0000000181948e00  je       0x1819498c0
+0000000181948e06  mov      r8, qword ptr [rip + 0x11a6e03]
+0000000181948e0d  mov      edx, 6
+0000000181948e12  mov      rcx, rbx
+0000000181948e15  call     0x181f37d70
+0000000181948e1a  mov      r8, qword ptr [rip + 0x11a6def]
+0000000181948e21  mov      edx, 7
+0000000181948e26  mov      rcx, rbx
+0000000181948e29  call     0x181f37d70
+0000000181948e2e  mov      r8, qword ptr [rip + 0x11a6ddb]
+0000000181948e35  mov      edx, 9
+0000000181948e3a  mov      rcx, rbx
+0000000181948e3d  call     0x181f37d70
+0000000181948e42  mov      r8, qword ptr [rip + 0x11a6dc7]
+0000000181948e49  mov      edx, 0x11
+0000000181948e4e  mov      rcx, rbx
+0000000181948e51  call     0x181f37d70
+0000000181948e56  mov      r8, qword ptr [rip + 0x11a6db3]
+0000000181948e5d  mov      edx, 0x12
+0000000181948e62  mov      rcx, rbx
+0000000181948e65  call     0x181f37d70
+0000000181948e6a  mov      r9d, 1
+0000000181948e70  mov      qword ptr [rsp + 0x30], r14
+0000000181948e75  mov      qword ptr [rsp + 0x28], r14
+0000000181948e7a  xor      r8d, r8d
+0000000181948e7d  mov      qword ptr [rsp + 0x20], rbx
+0000000181948e82  lea      edx, [r9 + 2]
+0000000181948e86  lea      ecx, [rdx + 5]
+0000000181948e89  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181948e8e  test     rax, rax
+0000000181948e91  je       0x1819498c0
+0000000181948e97  xor      edx, edx
+0000000181948e99  mov      rcx, rax
+0000000181948e9c  call     0x18197acd0 ; TuberBoardNodeLayout.WithIsStartingLocation
+0000000181948ea1  test     rax, rax
+0000000181948ea4  je       0x1819498c0
+0000000181948eaa  xor      edx, edx
+0000000181948eac  mov      rcx, rax
+0000000181948eaf  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181948eb4  mov      r8, qword ptr [rip + 0x115548d]
+0000000181948ebb  mov      rdx, rax
+0000000181948ebe  mov      rcx, rdi
+0000000181948ec1  call     0x181f356a0
+0000000181948ec6  mov      rcx, qword ptr [rip + 0x116f99b]
+0000000181948ecd  call     0x1820dfb80
+0000000181948ed2  mov      rdx, qword ptr [rip + 0x11a6b0f]
+0000000181948ed9  mov      rcx, rax
+0000000181948edc  mov      rbx, rax
+0000000181948edf  call     0x180a1f500
+0000000181948ee4  test     rbx, rbx
+0000000181948ee7  je       0x1819498c0
+0000000181948eed  mov      r8, qword ptr [rip + 0x11a6d1c]
+0000000181948ef4  mov      edx, 5
+0000000181948ef9  mov      rcx, rbx
+0000000181948efc  call     0x181f37d70
+0000000181948f01  mov      r8, qword ptr [rip + 0x11a6d08]
+0000000181948f08  mov      edx, 8
+0000000181948f0d  mov      rcx, rbx
+0000000181948f10  call     0x181f37d70
+0000000181948f15  mov      r8, qword ptr [rip + 0x11a6cf4]
+0000000181948f1c  mov      edx, 0xa
+0000000181948f21  mov      rcx, rbx
+0000000181948f24  call     0x181f37d70
+0000000181948f29  mov      r8, qword ptr [rip + 0x11a6ce0]
+0000000181948f30  mov      edx, 0x11
+0000000181948f35  mov      rcx, rbx
+0000000181948f38  call     0x181f37d70
+0000000181948f3d  mov      r8, qword ptr [rip + 0x11a6ccc]
+0000000181948f44  mov      edx, 0x10
+0000000181948f49  mov      rcx, rbx
+0000000181948f4c  call     0x181f37d70
+0000000181948f51  mov      rcx, qword ptr [rip + 0x116f910]
+0000000181948f58  call     0x1820dfb80
+0000000181948f5d  mov      rdx, qword ptr [rip + 0x11a6a84]
+0000000181948f64  mov      rcx, rax
+0000000181948f67  mov      rsi, rax
+0000000181948f6a  call     0x180a1f500
+0000000181948f6f  test     rsi, rsi
+0000000181948f72  je       0x1819498c0
+0000000181948f78  mov      r8, qword ptr [rip + 0x11a6c91]
+0000000181948f7f  mov      edx, 6
+0000000181948f84  mov      rcx, rsi
+0000000181948f87  call     0x181f37d70
+0000000181948f8c  mov      r8, qword ptr [rip + 0x11a6c7d]
+0000000181948f93  mov      edx, 0xb
+0000000181948f98  mov      rcx, rsi
+0000000181948f9b  call     0x181f37d70
+0000000181948fa0  mov      edx, 7
+0000000181948fa5  mov      qword ptr [rsp + 0x30], r14
+0000000181948faa  mov      r9d, 2
+0000000181948fb0  mov      qword ptr [rsp + 0x28], rsi
+0000000181948fb5  mov      r8d, r9d
+0000000181948fb8  mov      qword ptr [rsp + 0x20], rbx
+0000000181948fbd  lea      ecx, [rdx + 2]
+0000000181948fc0  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181948fc5  test     rax, rax
+0000000181948fc8  je       0x1819498c0
+0000000181948fce  xor      edx, edx
+0000000181948fd0  mov      rcx, rax
+0000000181948fd3  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181948fd8  mov      r8, qword ptr [rip + 0x1155369]
+0000000181948fdf  mov      rdx, rax
+0000000181948fe2  mov      rcx, rdi
+0000000181948fe5  call     0x181f356a0
+0000000181948fea  mov      rcx, qword ptr [rip + 0x116f877]
+0000000181948ff1  call     0x1820dfb80
+0000000181948ff6  mov      rdx, qword ptr [rip + 0x11a69eb]
+0000000181948ffd  mov      rcx, rax
+0000000181949000  mov      rbx, rax
+0000000181949003  call     0x180a1f500
+0000000181949008  test     rbx, rbx
+000000018194900b  je       0x1819498c0
+0000000181949011  mov      r8, qword ptr [rip + 0x11a6bf8]
+0000000181949018  mov      edx, 9
+000000018194901d  mov      rcx, rbx
+0000000181949020  call     0x181f37d70
+0000000181949025  mov      r8, qword ptr [rip + 0x11a6be4]
+000000018194902c  mov      edx, 0xb
+0000000181949031  mov      rcx, rbx
+0000000181949034  call     0x181f37d70
+0000000181949039  mov      r8, qword ptr [rip + 0x11a6bd0]
+0000000181949040  mov      edx, 0x10
+0000000181949045  mov      rcx, rbx
+0000000181949048  call     0x181f37d70
+000000018194904d  mov      edx, 8
+0000000181949052  mov      qword ptr [rsp + 0x30], r14
+0000000181949057  mov      qword ptr [rsp + 0x28], r14
+000000018194905c  mov      qword ptr [rsp + 0x20], rbx
+0000000181949061  lea      ecx, [rdx + 2]
+0000000181949064  lea      r9d, [rdx - 6]
+0000000181949068  lea      r8d, [rdx - 7]
+000000018194906c  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181949071  test     rax, rax
+0000000181949074  je       0x1819498c0
+000000018194907a  xor      edx, edx
+000000018194907c  mov      rcx, rax
+000000018194907f  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+0000000181949084  mov      r8, qword ptr [rip + 0x11552bd]
+000000018194908b  mov      rdx, rax
+000000018194908e  mov      rcx, rdi
+0000000181949091  call     0x181f356a0
+0000000181949096  mov      rcx, qword ptr [rip + 0x116f7cb]
+000000018194909d  call     0x1820dfb80
+00000001819490a2  mov      rdx, qword ptr [rip + 0x11a693f]
+00000001819490a9  mov      rcx, rax
+00000001819490ac  mov      rbx, rax
+00000001819490af  call     0x180a1f500
+00000001819490b4  test     rbx, rbx
+00000001819490b7  je       0x1819498c0
+00000001819490bd  mov      r8, qword ptr [rip + 0x11a6b4c]
+00000001819490c4  mov      edx, 4
+00000001819490c9  mov      rcx, rbx
+00000001819490cc  call     0x181f37d70
+00000001819490d1  mov      r8, qword ptr [rip + 0x11a6b38]
+00000001819490d8  mov      edx, 5
+00000001819490dd  mov      rcx, rbx
+00000001819490e0  call     0x181f37d70
+00000001819490e5  mov      r8, qword ptr [rip + 0x11a6b24]
+00000001819490ec  mov      edx, 0xa
+00000001819490f1  mov      rcx, rbx
+00000001819490f4  call     0x181f37d70
+00000001819490f9  mov      r8, qword ptr [rip + 0x11a6b10]
+0000000181949100  mov      edx, 0xf
+0000000181949105  mov      rcx, rbx
+0000000181949108  call     0x181f37d70
+000000018194910d  mov      r8, qword ptr [rip + 0x11a6afc]
+0000000181949114  mov      edx, 0x10
+0000000181949119  mov      rcx, rbx
+000000018194911c  call     0x181f37d70
+0000000181949121  mov      rcx, qword ptr [rip + 0x116f740]
+0000000181949128  call     0x1820dfb80
+000000018194912d  mov      rdx, qword ptr [rip + 0x11a68b4]
+0000000181949134  mov      rcx, rax
+0000000181949137  mov      rsi, rax
+000000018194913a  call     0x180a1f500
+000000018194913f  test     rsi, rsi
+0000000181949142  je       0x1819498c0
+0000000181949148  mov      r8, qword ptr [rip + 0x11a6ac1]
+000000018194914f  mov      edx, 9
+0000000181949154  mov      rcx, rsi
+0000000181949157  call     0x181f37d70
+000000018194915c  mov      r9d, 1
+0000000181949162  mov      qword ptr [rsp + 0x30], r14
+0000000181949167  mov      qword ptr [rsp + 0x28], rsi
+000000018194916c  xor      r8d, r8d
+000000018194916f  mov      qword ptr [rsp + 0x20], rbx
+0000000181949174  lea      edx, [r9 + 3]
+0000000181949178  lea      ecx, [rdx + 7]
+000000018194917b  call     0x18197a760 ; TuberBoardNodeLayout.ClearingNode
+0000000181949180  test     rax, rax
+0000000181949183  je       0x1819498c0
+0000000181949189  xor      edx, edx
+000000018194918b  mov      rcx, rax
+000000018194918e  call     0x18197acd0 ; TuberBoardNodeLayout.WithIsStartingLocation
+0000000181949193  test     rax, rax
+0000000181949196  je       0x1819498c0
+000000018194919c  xor      edx, edx
+000000018194919e  mov      rcx, rax
+00000001819491a1  call     0x18197acb0 ; TuberBoardNodeLayout.WithIsEdgeLocation
+00000001819491a6  mov      r8, qword ptr [rip + 0x115519b]
+00000001819491ad  mov      rdx, rax
+00000001819491b0  mov      rcx, rdi
+00000001819491b3  call     0x181f356a0
+00000001819491b8  mov      rcx, qword ptr [rip + 0x116f6a9]
+00000001819491bf  call     0x1820dfb80
+00000001819491c4  mov      rdx, qword ptr [rip + 0x11a681d]
+00000001819491cb  mov      rcx, rax
+00000001819491ce  mov      rbx, rax
+00000001819491d1  call     0x180a1f500
+00000001819491d6  test     rbx, rbx
+00000001819491d9  je       0x1819498c0
+00000001819491df  mov      r8, qword ptr [rip + 0x11a6a2a]
+00000001819491e6  xor      edx, edx
+00000001819491e8  mov      rcx, rbx
+00000001819491eb  call     0x181f37d70
+00000001819491f0  mov      r8, qword ptr [rip + 0x11a6a19]
+00000001819491f7  mov      edx, 1
+00000001819491fc  mov      rcx, rbx
+00000001819491ff  call     0x181f37d70
+0000000181949204  mov      r8, qword ptr [rip + 0x11a6a05]
+000000018194920b  mov      edx, 2
+0000000181949210  mov      rcx, rbx
+0000000181949213  call     0x181f37d70
+0000000181949218  mov      r8, qword ptr [rip + 0x11a69f1]
+000000018194921f  mov      edx, 3
+0000000181949224  mov      rcx, rbx
+0000000181949227  call     0x181f37d70
+000000018194922c  mov      r8, qword ptr [rip + 0x11a69dd]
+0000000181949233  mov      edx, 0xd
+0000000181949238  mov      rcx, rbx
+000000018194923b  call     0x181f37d70
+0000000181949240  mov      r8, qword ptr [rip + 0x11a69c9]
+0000000181949247  mov      edx, 0xe
+000000018194924c  mov      rcx, rbx
+000000018194924f  call     0x181f37d70
+0000000181949254  xor      r8d, r8d
+0000000181949257  mov      rdx, rbx
+000000018194925a  lea      ecx, [r8 + 0xc]
+000000018194925e  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+0000000181949263  mov      r8, qword ptr [rip + 0x11550de]
+000000018194926a  mov      rdx, rax
+000000018194926d  mov      rcx, rdi
+0000000181949270  call     0x181f356a0
+0000000181949275  mov      rcx, qword ptr [rip + 0x116f5ec]
+000000018194927c  call     0x1820dfb80
+0000000181949281  mov      rdx, qword ptr [rip + 0x11a6760]
+0000000181949288  mov      rcx, rax
+000000018194928b  mov      rbx, rax
+000000018194928e  call     0x180a1f500
+0000000181949293  test     rbx, rbx
+0000000181949296  je       0x1819498c0
+000000018194929c  mov      r8, qword ptr [rip + 0x11a696d]
+00000001819492a3  xor      edx, edx
+00000001819492a5  mov      rcx, rbx
+00000001819492a8  call     0x181f37d70
+00000001819492ad  mov      r8, qword ptr [rip + 0x11a695c]
+00000001819492b4  mov      edx, 3
+00000001819492b9  mov      rcx, rbx
+00000001819492bc  call     0x181f37d70
+00000001819492c1  mov      r8, qword ptr [rip + 0x11a6948]
+00000001819492c8  mov      edx, 4
+00000001819492cd  mov      rcx, rbx
+00000001819492d0  call     0x181f37d70
+00000001819492d5  mov      r8, qword ptr [rip + 0x11a6934]
+00000001819492dc  mov      edx, 5
+00000001819492e1  mov      rcx, rbx
+00000001819492e4  call     0x181f37d70
+00000001819492e9  mov      r8, qword ptr [rip + 0x11a6920]
+00000001819492f0  mov      edx, 0xc
+00000001819492f5  mov      rcx, rbx
+00000001819492f8  call     0x181f37d70
+00000001819492fd  mov      r8, qword ptr [rip + 0x11a690c]
+0000000181949304  mov      edx, 0xe
+0000000181949309  mov      rcx, rbx
+000000018194930c  call     0x181f37d70
+0000000181949311  mov      r8, qword ptr [rip + 0x11a68f8]
+0000000181949318  mov      edx, 0xf
+000000018194931d  mov      rcx, rbx
+0000000181949320  call     0x181f37d70
+0000000181949325  xor      r8d, r8d
+0000000181949328  mov      rdx, rbx
+000000018194932b  lea      ecx, [r8 + 0xd]
+000000018194932f  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+0000000181949334  mov      r8, qword ptr [rip + 0x115500d]
+000000018194933b  mov      rdx, rax
+000000018194933e  mov      rcx, rdi
+0000000181949341  call     0x181f356a0
+0000000181949346  mov      rcx, qword ptr [rip + 0x116f51b]
+000000018194934d  call     0x1820dfb80
+0000000181949352  mov      rdx, qword ptr [rip + 0x11a668f]
+0000000181949359  mov      rcx, rax
+000000018194935c  mov      rbx, rax
+000000018194935f  call     0x180a1f500
+0000000181949364  test     rbx, rbx
+0000000181949367  je       0x1819498c0
+000000018194936d  mov      r8, qword ptr [rip + 0x11a689c]
+0000000181949374  mov      edx, 2
+0000000181949379  mov      rcx, rbx
+000000018194937c  call     0x181f37d70
+0000000181949381  mov      r8, qword ptr [rip + 0x11a6888]
+0000000181949388  mov      edx, 3
+000000018194938d  mov      rcx, rbx
+0000000181949390  call     0x181f37d70
+0000000181949395  mov      r8, qword ptr [rip + 0x11a6874]
+000000018194939c  mov      edx, 5
+00000001819493a1  mov      rcx, rbx
+00000001819493a4  call     0x181f37d70
+00000001819493a9  mov      r8, qword ptr [rip + 0x11a6860]
+00000001819493b0  mov      edx, 6
+00000001819493b5  mov      rcx, rbx
+00000001819493b8  call     0x181f37d70
+00000001819493bd  mov      r8, qword ptr [rip + 0x11a684c]
+00000001819493c4  mov      edx, 7
+00000001819493c9  mov      rcx, rbx
+00000001819493cc  call     0x181f37d70
+00000001819493d1  mov      r8, qword ptr [rip + 0x11a6838]
+00000001819493d8  mov      edx, 0xc
+00000001819493dd  mov      rcx, rbx
+00000001819493e0  call     0x181f37d70
+00000001819493e5  mov      r8, qword ptr [rip + 0x11a6824]
+00000001819493ec  mov      edx, 0xd
+00000001819493f1  mov      rcx, rbx
+00000001819493f4  call     0x181f37d70
+00000001819493f9  mov      r8, qword ptr [rip + 0x11a6810]
+0000000181949400  mov      edx, 0x11
+0000000181949405  mov      rcx, rbx
+0000000181949408  call     0x181f37d70
+000000018194940d  mov      r8, qword ptr [rip + 0x11a67fc]
+0000000181949414  mov      edx, 0x12
+0000000181949419  mov      rcx, rbx
+000000018194941c  call     0x181f37d70
+0000000181949421  xor      r8d, r8d
+0000000181949424  mov      rdx, rbx
+0000000181949427  lea      ecx, [r8 + 0xe]
+000000018194942b  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+0000000181949430  mov      r8, qword ptr [rip + 0x1154f11]
+0000000181949437  mov      rdx, rax
+000000018194943a  mov      rcx, rdi
+000000018194943d  call     0x181f356a0
+0000000181949442  mov      rcx, qword ptr [rip + 0x116f41f]
+0000000181949449  call     0x1820dfb80
+000000018194944e  mov      rdx, qword ptr [rip + 0x11a6593]
+0000000181949455  mov      rcx, rax
+0000000181949458  mov      rbx, rax
+000000018194945b  call     0x180a1f500
+0000000181949460  test     rbx, rbx
+0000000181949463  je       0x1819498c0
+0000000181949469  mov      r8, qword ptr [rip + 0x11a67a0]
+0000000181949470  mov      edx, 4
+0000000181949475  mov      rcx, rbx
+0000000181949478  call     0x181f37d70
+000000018194947d  mov      r8, qword ptr [rip + 0x11a678c]
+0000000181949484  mov      edx, 5
+0000000181949489  mov      rcx, rbx
+000000018194948c  call     0x181f37d70
+0000000181949491  mov      r8, qword ptr [rip + 0x11a6778]
+0000000181949498  mov      edx, 0xb
+000000018194949d  mov      rcx, rbx
+00000001819494a0  call     0x181f37d70
+00000001819494a5  mov      r8, qword ptr [rip + 0x11a6764]
+00000001819494ac  mov      edx, 0xd
+00000001819494b1  mov      rcx, rbx
+00000001819494b4  call     0x181f37d70
+00000001819494b9  mov      r8, qword ptr [rip + 0x11a6750]
+00000001819494c0  mov      edx, 0x10
+00000001819494c5  mov      rcx, rbx
+00000001819494c8  call     0x181f37d70
+00000001819494cd  xor      r8d, r8d
+00000001819494d0  mov      rdx, rbx
+00000001819494d3  lea      ecx, [r8 + 0xf]
+00000001819494d7  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+00000001819494dc  mov      r8, qword ptr [rip + 0x1154e65]
+00000001819494e3  mov      rdx, rax
+00000001819494e6  mov      rcx, rdi
+00000001819494e9  call     0x181f356a0
+00000001819494ee  mov      rcx, qword ptr [rip + 0x116f373]
+00000001819494f5  call     0x1820dfb80
+00000001819494fa  mov      rdx, qword ptr [rip + 0x11a64e7]
+0000000181949501  mov      rcx, rax
+0000000181949504  mov      rbx, rax
+0000000181949507  call     0x180a1f500
+000000018194950c  test     rbx, rbx
+000000018194950f  je       0x1819498c0
+0000000181949515  mov      r8, qword ptr [rip + 0x11a66f4]
+000000018194951c  mov      edx, 5
+0000000181949521  mov      rcx, rbx
+0000000181949524  call     0x181f37d70
+0000000181949529  mov      r8, qword ptr [rip + 0x11a66e0]
+0000000181949530  mov      edx, 9
+0000000181949535  mov      rcx, rbx
+0000000181949538  call     0x181f37d70
+000000018194953d  mov      r8, qword ptr [rip + 0x11a66cc]
+0000000181949544  mov      edx, 0xa
+0000000181949549  mov      rcx, rbx
+000000018194954c  call     0x181f37d70
+0000000181949551  mov      r8, qword ptr [rip + 0x11a66b8]
+0000000181949558  mov      edx, 0xb
+000000018194955d  mov      rcx, rbx
+0000000181949560  call     0x181f37d70
+0000000181949565  mov      r8, qword ptr [rip + 0x11a66a4]
+000000018194956c  mov      edx, 0xf
+0000000181949571  mov      rcx, rbx
+0000000181949574  call     0x181f37d70
+0000000181949579  mov      r8, qword ptr [rip + 0x11a6690]
+0000000181949580  mov      edx, 0x11
+0000000181949585  mov      rcx, rbx
+0000000181949588  call     0x181f37d70
+000000018194958d  xor      r8d, r8d
+0000000181949590  mov      rdx, rbx
+0000000181949593  lea      ecx, [r8 + 0x10]
+0000000181949597  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+000000018194959c  mov      r8, qword ptr [rip + 0x1154da5]
+00000001819495a3  mov      rdx, rax
+00000001819495a6  mov      rcx, rdi
+00000001819495a9  call     0x181f356a0
+00000001819495ae  mov      rcx, qword ptr [rip + 0x116f2b3]
+00000001819495b5  call     0x1820dfb80
+00000001819495ba  mov      rdx, qword ptr [rip + 0x11a6427]
+00000001819495c1  mov      rcx, rax
+00000001819495c4  mov      rbx, rax
+00000001819495c7  call     0x180a1f500
+00000001819495cc  test     rbx, rbx
+00000001819495cf  je       0x1819498c0
+00000001819495d5  mov      r8, qword ptr [rip + 0x11a6634]
+00000001819495dc  mov      edx, 5
+00000001819495e1  mov      rcx, rbx
+00000001819495e4  call     0x181f37d70
+00000001819495e9  mov      r8, qword ptr [rip + 0x11a6620]
+00000001819495f0  mov      edx, 6
+00000001819495f5  mov      rcx, rbx
+00000001819495f8  call     0x181f37d70
+00000001819495fd  mov      r8, qword ptr [rip + 0x11a660c]
+0000000181949604  mov      edx, 8
+0000000181949609  mov      rcx, rbx
+000000018194960c  call     0x181f37d70
+0000000181949611  mov      r8, qword ptr [rip + 0x11a65f8]
+0000000181949618  mov      edx, 9
+000000018194961d  mov      rcx, rbx
+0000000181949620  call     0x181f37d70
+0000000181949625  mov      r8, qword ptr [rip + 0x11a65e4]
+000000018194962c  mov      edx, 0xe
+0000000181949631  mov      rcx, rbx
+0000000181949634  call     0x181f37d70
+0000000181949639  mov      r8, qword ptr [rip + 0x11a65d0]
+0000000181949640  mov      edx, 0x10
+0000000181949645  mov      rcx, rbx
+0000000181949648  call     0x181f37d70
+000000018194964d  mov      r8, qword ptr [rip + 0x11a65bc]
+0000000181949654  mov      edx, 0x12
+0000000181949659  mov      rcx, rbx
+000000018194965c  call     0x181f37d70
+0000000181949661  xor      r8d, r8d
+0000000181949664  mov      rdx, rbx
+0000000181949667  lea      ecx, [r8 + 0x11]
+000000018194966b  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+0000000181949670  mov      r8, qword ptr [rip + 0x1154cd1]
+0000000181949677  mov      rdx, rax
+000000018194967a  mov      rcx, rdi
+000000018194967d  call     0x181f356a0
+0000000181949682  mov      rcx, qword ptr [rip + 0x116f1df]
+0000000181949689  call     0x1820dfb80
+000000018194968e  mov      rdx, qword ptr [rip + 0x11a6353]
+0000000181949695  mov      rcx, rax
+0000000181949698  mov      rbx, rax
+000000018194969b  call     0x180a1f500
+00000001819496a0  test     rbx, rbx
+00000001819496a3  je       0x1819498c0
+00000001819496a9  mov      r8, qword ptr [rip + 0x11a6560]
+00000001819496b0  mov      edx, 6
+00000001819496b5  mov      rcx, rbx
+00000001819496b8  call     0x181f37d70
+00000001819496bd  mov      r8, qword ptr [rip + 0x11a654c]
+00000001819496c4  mov      edx, 7
+00000001819496c9  mov      rcx, rbx
+00000001819496cc  call     0x181f37d70
+00000001819496d1  mov      r8, qword ptr [rip + 0x11a6538]
+00000001819496d8  mov      edx, 8
+00000001819496dd  mov      rcx, rbx
+00000001819496e0  call     0x181f37d70
+00000001819496e5  mov      r8, qword ptr [rip + 0x11a6524]
+00000001819496ec  mov      edx, 0xe
+00000001819496f1  mov      rcx, rbx
+00000001819496f4  call     0x181f37d70
+00000001819496f9  mov      r8, qword ptr [rip + 0x11a6510]
+0000000181949700  mov      edx, 0x11
+0000000181949705  mov      rcx, rbx
+0000000181949708  call     0x181f37d70
+000000018194970d  xor      r8d, r8d
+0000000181949710  mov      rdx, rbx
+0000000181949713  lea      ecx, [r8 + 0x12]
+0000000181949717  call     0x18197a970 ; TuberBoardNodeLayout.ForestNode
+000000018194971c  mov      r8, qword ptr [rip + 0x1154c25]
+0000000181949723  mov      rdx, rax
+0000000181949726  mov      rcx, rdi
+0000000181949729  call     0x181f356a0
+000000018194972e  lea      rcx, [rbp + 0x10]
+0000000181949732  mov      qword ptr [rbp + 0x10], rdi
+0000000181949736  mov      rdx, rdi
+0000000181949739  call     0x1820decd0
+000000018194973e  mov      rcx, qword ptr [rip + 0x118acf3]
+0000000181949745  call     0x1820dfb80
+000000018194974a  mov      rdx, qword ptr [rip + 0x115c0df]
+0000000181949751  mov      rcx, rax
+0000000181949754  mov      rbx, rax
+0000000181949757  call     0x18076b650
+000000018194975c  test     rbx, rbx
+000000018194975f  je       0x1819498c0
+0000000181949765  mov      r9, qword ptr [rip + 0x115c22c]
+000000018194976c  xor      edx, edx
+000000018194976e  mov      rcx, rbx
+0000000181949771  lea      r8d, [rdx + 8]
+0000000181949775  call     0x18076da20
+000000018194977a  mov      r9, qword ptr [rip + 0x115c217]
+0000000181949781  xor      r8d, r8d
+0000000181949784  mov      rcx, rbx
+0000000181949787  lea      edx, [r8 + 8]
+000000018194978b  call     0x18076da20
+0000000181949790  mov      r9, qword ptr [rip + 0x115c201]
+0000000181949797  mov      edx, 2
+000000018194979c  mov      rcx, rbx
+000000018194979f  lea      r8d, [rdx + 9]
+00000001819497a3  call     0x18076da20
+00000001819497a8  mov      r9, qword ptr [rip + 0x115c1e9]
+00000001819497af  mov      edx, 0xb
+00000001819497b4  mov      rcx, rbx
+00000001819497b7  lea      r8d, [rdx - 9]
+00000001819497bb  call     0x18076da20
+00000001819497c0  lea      rcx, [rbp + 0x18]
+00000001819497c4  mov      qword ptr [rbp + 0x18], rbx
+00000001819497c8  mov      rdx, rbx
+00000001819497cb  call     0x1820decd0
+00000001819497d0  mov      rcx, qword ptr [rip + 0x116f091]
+00000001819497d7  call     0x1820dfb80
+00000001819497dc  mov      rdx, qword ptr [rip + 0x11a6205]
+00000001819497e3  mov      rcx, rax
+00000001819497e6  mov      rbx, rax
+00000001819497e9  call     0x180a1f500
+00000001819497ee  test     rbx, rbx
+00000001819497f1  je       0x1819498c0
+00000001819497f7  mov      r8, qword ptr [rip + 0x11a6412]
+00000001819497fe  mov      edx, 1
+0000000181949803  mov      rcx, rbx
+0000000181949806  call     0x181f37d70
+000000018194980b  mov      r8, qword ptr [rip + 0x11a63fe]
+0000000181949812  mov      edx, 3
+0000000181949817  mov      rcx, rbx
+000000018194981a  call     0x181f37d70
+000000018194981f  mov      r8, qword ptr [rip + 0x11a63ea]
+0000000181949826  mov      edx, 4
+000000018194982b  mov      rcx, rbx
+000000018194982e  call     0x181f37d70
+0000000181949833  mov      r8, qword ptr [rip + 0x11a63d6]
+000000018194983a  mov      edx, 5
+000000018194983f  mov      rcx, rbx
+0000000181949842  call     0x181f37d70
+0000000181949847  mov      r8, qword ptr [rip + 0x11a63c2]
+000000018194984e  mov      edx, 6
+0000000181949853  mov      rcx, rbx
+0000000181949856  call     0x181f37d70
+000000018194985b  mov      r8, qword ptr [rip + 0x11a63ae]
+0000000181949862  mov      edx, 7
+0000000181949867  mov      rcx, rbx
+000000018194986a  call     0x181f37d70
+000000018194986f  mov      r8, qword ptr [rip + 0x11a639a]
+0000000181949876  mov      edx, 9
+000000018194987b  mov      rcx, rbx
+000000018194987e  call     0x181f37d70
+0000000181949883  mov      r8, qword ptr [rip + 0x11a6386]
+000000018194988a  mov      edx, 0xa
+000000018194988f  mov      rcx, rbx
+0000000181949892  call     0x181f37d70
+0000000181949897  lea      rcx, [rbp + 0x20]
+000000018194989b  mov      qword ptr [rbp + 0x20], rbx
+000000018194989f  mov      rdx, rbx
+00000001819498a2  mov      r14, qword ptr [rsp + 0x58]
+00000001819498a7  mov      rsi, qword ptr [rsp + 0x50]
+00000001819498ac  mov      rbx, qword ptr [rsp + 0x60]
+00000001819498b1  mov      rbp, qword ptr [rsp + 0x68]
+00000001819498b6  add      rsp, 0x40
+00000001819498ba  pop      rdi
+00000001819498bb  jmp      0x1820decd0
+00000001819498c0  call     0x1820dfbd0
+00000001819498c5  int3     
+00000001819498c6  call     0x1820dfbc0
+00000001819498cb  int3     

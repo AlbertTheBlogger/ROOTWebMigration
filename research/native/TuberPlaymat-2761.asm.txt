@@ -1,0 +1,28 @@
+000000018191bae0  push     rdi
+000000018191bae2  sub      rsp, 0x20
+000000018191bae6  cmp      byte ptr [rip + 0x136dcf9], 0
+000000018191baed  mov      rdi, rdx
+000000018191baf0  jne      0x18191bb71
+000000018191baf2  lea      rcx, [rip + 0x11a9d2f]
+000000018191baf9  call     0x1820df9b0
+000000018191bafe  lea      rcx, [rip + 0x11dc04b]
+000000018191bb05  call     0x1820df9b0
+000000018191bb0a  lea      rcx, [rip + 0x11a3f57]
+000000018191bb11  call     0x1820df9b0
+000000018191bb16  lea      rcx, [rip + 0x1185dbb] ; TutorialR01
+000000018191bb1d  call     0x1820df9b0
+000000018191bb22  lea      rcx, [rip + 0x11a8377] ; WinterCampaign4
+000000018191bb29  call     0x1820df9b0
+000000018191bb2e  lea      rcx, [rip + 0x11836fb] ; Tutorial03
+000000018191bb35  call     0x1820df9b0
+000000018191bb3a  lea      rcx, [rip + 0x1183857] ; Tutorial05
+000000018191bb41  call     0x1820df9b0
+000000018191bb46  lea      rcx, [rip + 0x118362b] ; Tutorial02
+000000018191bb4d  call     0x1820df9b0
+000000018191bb52  lea      rcx, [rip + 0x11a83ff] ; WinterCampaign5
+000000018191bb59  call     0x1820df9b0
+000000018191bb5e  lea      rcx, [rip + 0x118377b] ; Tutorial04
+000000018191bb65  call     0x1820df9b0
+000000018191bb6a  mov      byte ptr [rip + 0x136dc75], 1
+000000018191bb71  test     rdi, rdi
+000000018191bb74  je       0x18191be50

@@ -1,0 +1,717 @@
+{
+  "status": "static-structure-not-runtime-sequence",
+  "types": [
+    {
+      "index": 2422,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "name": "DeferredFieldHospitalChoice",
+      "token": "0x2000973",
+      "metadata_offset": 9843560,
+      "fields": [],
+      "methods": [
+        {
+          "index": 11542,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x6002d17"
+        },
+        {
+          "index": 11543,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6002d18"
+        },
+        {
+          "index": 11544,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6002d19"
+        }
+      ]
+    },
+    {
+      "index": 2426,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "name": "FieldHospitalAtKeepChoice",
+      "token": "0x2000979",
+      "metadata_offset": 9843912,
+      "fields": [],
+      "methods": [
+        {
+          "index": 11563,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x6002d2c"
+        },
+        {
+          "index": 11564,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6002d2d"
+        },
+        {
+          "index": 11565,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6002d2e"
+        }
+      ]
+    },
+    {
+      "index": 2432,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "name": "FieldHospitalResolution",
+      "token": "0x200097c",
+      "metadata_offset": 9844440,
+      "fields": [
+        {
+          "index": 9573,
+          "name": "warriorDestinationCount",
+          "type_index": 3866
+        },
+        {
+          "index": 9574,
+          "name": "freeFieldHospital",
+          "type_index": 15093
+        },
+        {
+          "index": 9575,
+          "name": "clearingID",
+          "type_index": 17822
+        },
+        {
+          "index": 9576,
+          "name": "completionPassBack",
+          "type_index": 15093
+        },
+        {
+          "index": 9577,
+          "name": "ChoseUndo",
+          "type_index": 15088
+        }
+      ],
+      "methods": [
+        {
+          "index": 11577,
+          "name": ".ctor",
+          "parameter_count": 3,
+          "parameters": [
+            "count",
+            "m",
+            "clearingID"
+          ],
+          "token": "0x6002d3a"
+        },
+        {
+          "index": 11578,
+          "name": ".ctor",
+          "parameter_count": 4,
+          "parameters": [
+            "count",
+            "m",
+            "clearingID",
+            "freeFH"
+          ],
+          "token": "0x6002d3b"
+        },
+        {
+          "index": 11579,
+          "name": ".ctor",
+          "parameter_count": 5,
+          "parameters": [
+            "warriorDestinationCount",
+            "m",
+            "clearingID",
+            "freeFH",
+            "completionPassBack"
+          ],
+          "token": "0x6002d3c"
+        },
+        {
+          "index": 11580,
+          "name": "RemoveClearingElement",
+          "parameter_count": 4,
+          "parameters": [
+            "mp",
+            "clearingID",
+            "warriorDestinationCount",
+            "match"
+          ],
+          "token": "0x6002d3d"
+        },
+        {
+          "index": 11581,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6002d3e"
+        },
+        {
+          "index": 11582,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6002d3f"
+        },
+        {
+          "index": 11583,
+          "name": "OnSkip",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6002d40"
+        }
+      ]
+    },
+    {
+      "index": 2518,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "name": "RemoveChosenWood",
+      "token": "0x20009d5",
+      "metadata_offset": 9852008,
+      "fields": [
+        {
+          "index": 9893,
+          "name": "amountToBuild",
+          "type_index": 20898
+        },
+        {
+          "index": 9894,
+          "name": "RemovedWoodClearings",
+          "type_index": 8682
+        }
+      ],
+      "methods": [
+        {
+          "index": 11997,
+          "name": ".ctor",
+          "parameter_count": 2,
+          "parameters": [
+            "m",
+            "amt"
+          ],
+          "token": "0x6002ede"
+        },
+        {
+          "index": 11998,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6002edf"
+        },
+        {
+          "index": 11999,
+          "name": "<execute>b__3_0",
+          "parameter_count": 1,
+          "parameters": [
+            "_"
+          ],
+          "token": "0x6002ee0"
+        }
+      ]
+    },
+    {
+      "index": 2521,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "name": "RemoveWoodForBuilding",
+      "token": "0x20009d8",
+      "metadata_offset": 9852272,
+      "fields": [
+        {
+          "index": 9904,
+          "name": "chosenNode",
+          "type_index": 28615
+        },
+        {
+          "index": 9905,
+          "name": "bt",
+          "type_index": 15173
+        },
+        {
+          "index": 9906,
+          "name": "RemovedWoodClearings",
+          "type_index": 8682
+        }
+      ],
+      "methods": [
+        {
+          "index": 12011,
+          "name": ".ctor",
+          "parameter_count": 3,
+          "parameters": [
+            "chosenNode",
+            "bt",
+            "m"
+          ],
+          "token": "0x6002eec"
+        },
+        {
+          "index": 12012,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6002eed"
+        }
+      ]
+    },
+    {
+      "index": 3102,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "name": "Battle",
+      "token": "0x2000c1b",
+      "metadata_offset": 9903400,
+      "fields": [
+        {
+          "index": 12049,
+          "name": "payBattleCost",
+          "type_index": 15084
+        },
+        {
+          "index": 12050,
+          "name": "reportLog",
+          "type_index": 15093
+        },
+        {
+          "index": 12051,
+          "name": "battleStarted",
+          "type_index": 15084
+        },
+        {
+          "index": 12052,
+          "name": "runAttackerInterrupts",
+          "type_index": 15084
+        },
+        {
+          "index": 12053,
+          "name": "runDefenderInterrupts",
+          "type_index": 15084
+        },
+        {
+          "index": 12054,
+          "name": "battleClearingOverride",
+          "type_index": 28613
+        },
+        {
+          "index": 12055,
+          "name": "attackerOverride",
+          "type_index": 28782
+        },
+        {
+          "index": 12056,
+          "name": "defendingPieceOverride",
+          "type_index": 28656
+        },
+        {
+          "index": 12057,
+          "name": "combatInstigator",
+          "type_index": 28782
+        },
+        {
+          "index": 12058,
+          "name": "battleResolutionFactory",
+          "type_index": 14903
+        }
+      ],
+      "methods": [
+        {
+          "index": 14920,
+          "name": ".ctor",
+          "parameter_count": 3,
+          "parameters": [
+            "m",
+            "payBattleCost",
+            "reportLog"
+          ],
+          "token": "0x6003a49"
+        },
+        {
+          "index": 14921,
+          "name": ".ctor",
+          "parameter_count": 7,
+          "parameters": [
+            "m",
+            "attackerOverride",
+            "defendingPieceOverride",
+            "combatInstigator",
+            "battleResolutionFactory",
+            "payBattleCost",
+            "reportLog"
+          ],
+          "token": "0x6003a4a"
+        },
+        {
+          "index": 14922,
+          "name": "CanRollDice",
+          "parameter_count": 4,
+          "parameters": [
+            "attacker",
+            "pieceAttacked",
+            "defender",
+            "battleClearing"
+          ],
+          "token": "0x6003a4b"
+        },
+        {
+          "index": 14923,
+          "name": "RunStartBattleSequence",
+          "parameter_count": 3,
+          "parameters": [
+            "attacker",
+            "currentCombatInfo",
+            "setPhase"
+          ],
+          "token": "0x6003a4c"
+        },
+        {
+          "index": 14924,
+          "name": "LogBattleAnalytics",
+          "parameter_count": 1,
+          "parameters": [
+            "tm"
+          ],
+          "token": "0x6003a4d"
+        },
+        {
+          "index": 14925,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6003a4e"
+        },
+        {
+          "index": 14926,
+          "name": "HandleReturningAction",
+          "parameter_count": 1,
+          "parameters": [
+            "returningAction"
+          ],
+          "token": "0x6003a4f"
+        },
+        {
+          "index": 14927,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003a50"
+        },
+        {
+          "index": 14928,
+          "name": "Deserialize",
+          "parameter_count": 2,
+          "parameters": [
+            "match",
+            "serialized"
+          ],
+          "token": "0x6003a51"
+        }
+      ]
+    },
+    {
+      "index": 3117,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "name": "ChooseAmbushCards",
+      "token": "0x2000c2b",
+      "metadata_offset": 9904720,
+      "fields": [
+        {
+          "index": 12131,
+          "name": "battleResolutionFactory",
+          "type_index": 14902
+        }
+      ],
+      "methods": [
+        {
+          "index": 15009,
+          "name": ".ctor",
+          "parameter_count": 2,
+          "parameters": [
+            "battleResolutionFactory",
+            "m"
+          ],
+          "token": "0x6003aa2"
+        },
+        {
+          "index": 15010,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6003aa3"
+        },
+        {
+          "index": 15011,
+          "name": "GetValidAmbushCardsForPlayer",
+          "parameter_count": 2,
+          "parameters": [
+            "player",
+            "nodeToBattleIn"
+          ],
+          "token": "0x6003aa4"
+        },
+        {
+          "index": 15012,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003aa5"
+        }
+      ]
+    },
+    {
+      "index": 3140,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "name": "StandardBattleResolution",
+      "token": "0x2000c45",
+      "metadata_offset": 9906744,
+      "fields": [],
+      "methods": [
+        {
+          "index": 15136,
+          "name": "RunAttackDamage",
+          "parameter_count": 4,
+          "parameters": [
+            "defenderRoll",
+            "attacker",
+            "defender",
+            "nodeToBattleIn"
+          ],
+          "token": "0x6003b21"
+        },
+        {
+          "index": 15137,
+          "name": "RunDefenderDamage",
+          "parameter_count": 4,
+          "parameters": [
+            "attackerRoll",
+            "attacker",
+            "defender",
+            "nodeToBattleIn"
+          ],
+          "token": "0x6003b22"
+        },
+        {
+          "index": 15138,
+          "name": ".ctor",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6003b23"
+        }
+      ]
+    },
+    {
+      "index": 3143,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "name": "PerformBattle",
+      "token": "0x2000c46",
+      "metadata_offset": 9907008,
+      "fields": [
+        {
+          "index": 12256,
+          "name": "runAttackDamage",
+          "type_index": 13781
+        },
+        {
+          "index": 12257,
+          "name": "runDefenderDamage",
+          "type_index": 13781
+        },
+        {
+          "index": 12258,
+          "name": "resolution",
+          "type_index": 19766
+        }
+      ],
+      "methods": [
+        {
+          "index": 15139,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x6003b24"
+        },
+        {
+          "index": 15140,
+          "name": ".ctor",
+          "parameter_count": 2,
+          "parameters": [
+            "m",
+            "resolution"
+          ],
+          "token": "0x6003b25"
+        },
+        {
+          "index": 15141,
+          "name": ".ctor",
+          "parameter_count": 3,
+          "parameters": [
+            "runAttackDamage",
+            "runDefenderDamage",
+            "m"
+          ],
+          "token": "0x6003b26"
+        },
+        {
+          "index": 15142,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6003b27"
+        },
+        {
+          "index": 15143,
+          "name": "HandleReturningAction",
+          "parameter_count": 1,
+          "parameters": [
+            "returningAction"
+          ],
+          "token": "0x6003b28"
+        },
+        {
+          "index": 15144,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003b29"
+        },
+        {
+          "index": 15145,
+          "name": "Deserialize",
+          "parameter_count": 2,
+          "parameters": [
+            "match",
+            "serialized"
+          ],
+          "token": "0x6003b2a"
+        }
+      ]
+    },
+    {
+      "index": 3161,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "name": "SetAttackerAmbushCard",
+      "token": "0x2000c59",
+      "metadata_offset": 9908592,
+      "fields": [],
+      "methods": [
+        {
+          "index": 15239,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x6003b88"
+        },
+        {
+          "index": 15240,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6003b89"
+        },
+        {
+          "index": 15241,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003b8a"
+        },
+        {
+          "index": 15242,
+          "name": "OnSkip",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003b8b"
+        }
+      ]
+    },
+    {
+      "index": 3171,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "name": "SetDefenderAmbushCard",
+      "token": "0x2000c63",
+      "metadata_offset": 9909472,
+      "fields": [],
+      "methods": [
+        {
+          "index": 15286,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x6003bb7"
+        },
+        {
+          "index": 15287,
+          "name": "execute",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6003bb8"
+        },
+        {
+          "index": 15288,
+          "name": "MakeSerializedAction",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003bb9"
+        },
+        {
+          "index": 15289,
+          "name": "OnSkip",
+          "parameter_count": 1,
+          "parameters": [
+            "match"
+          ],
+          "token": "0x6003bba"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Names and fields locate research targets but do not establish the complete execution order.",
+    "Iterator/state-machine MoveNext bodies require separate analysis.",
+    "No original game behavior was executed or observed in this round."
+  ]
+}

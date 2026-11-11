@@ -1,0 +1,41 @@
+0000000181755be0  mov      qword ptr [rsp + 8], rbx
+0000000181755be5  mov      qword ptr [rsp + 0x10], rsi
+0000000181755bea  push     rdi
+0000000181755beb  sub      rsp, 0x20
+0000000181755bef  cmp      byte ptr [rip + 0x1532ef8], 0
+0000000181755bf6  mov      rsi, rdx
+0000000181755bf9  mov      rdi, rcx
+0000000181755bfc  jne      0x181755c11
+0000000181755bfe  lea      rcx, [rip + 0x1352dfb]
+0000000181755c05  call     0x1820df9b0
+0000000181755c0a  mov      byte ptr [rip + 0x1532edd], 1
+0000000181755c11  mov      rcx, qword ptr [rip + 0x1352de8]
+0000000181755c18  call     0x1820dfb80
+0000000181755c1d  xor      edx, edx
+0000000181755c1f  mov      rcx, rax
+0000000181755c22  mov      rbx, rax
+0000000181755c25  call     0x180001be0 ; ConditionalCardValuation..ctor, EyrieRestoreRoostUndo..ctor, EyrieReturnToDecreeUndo..ctor
+0000000181755c2a  mov      rcx, qword ptr [rdi + 0x28]
+0000000181755c2e  test     rcx, rcx
+0000000181755c31  je       0x181755c4c
+0000000181755c33  mov      r8, qword ptr [rcx]
+0000000181755c36  mov      rdx, rsi
+0000000181755c39  mov      r9, qword ptr [r8 + 0x188]
+0000000181755c40  mov      r8, qword ptr [r8 + 0x190]
+0000000181755c47  call     r9
+0000000181755c4a  jmp      0x181755c4e
+0000000181755c4c  xor      eax, eax
+0000000181755c4e  test     rbx, rbx
+0000000181755c51  je       0x181755c76
+0000000181755c53  lea      rcx, [rbx + 0x20]
+0000000181755c57  mov      qword ptr [rbx + 0x20], rax
+0000000181755c5b  mov      rdx, rax
+0000000181755c5e  call     0x1820decd0
+0000000181755c63  mov      rsi, qword ptr [rsp + 0x38]
+0000000181755c68  mov      rax, rbx
+0000000181755c6b  mov      rbx, qword ptr [rsp + 0x30]
+0000000181755c70  add      rsp, 0x20
+0000000181755c74  pop      rdi
+0000000181755c75  ret      
+0000000181755c76  call     0x1820dfbd0
+0000000181755c7b  int3     

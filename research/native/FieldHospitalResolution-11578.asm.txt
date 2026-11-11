@@ -1,0 +1,79 @@
+00000001816695f0  mov      qword ptr [rsp + 8], rbx
+00000001816695f5  mov      qword ptr [rsp + 0x10], rbp
+00000001816695fa  mov      qword ptr [rsp + 0x18], rsi
+00000001816695ff  mov      qword ptr [rsp + 0x20], rdi
+0000000181669604  push     r14
+0000000181669606  sub      rsp, 0x40
+000000018166960a  cmp      byte ptr [rip + 0x161ee51], 0
+0000000181669611  mov      rsi, r9
+0000000181669614  mov      rdi, r8
+0000000181669617  mov      ebp, edx
+0000000181669619  mov      r14, rcx
+000000018166961c  jne      0x181669655
+000000018166961e  lea      rcx, [rip + 0x142f08b]
+0000000181669625  call     0x1820df9b0
+000000018166962a  lea      rcx, [rip + 0x142efcf]
+0000000181669631  call     0x1820df9b0
+0000000181669636  lea      rcx, [rip + 0x1467b03]
+000000018166963d  call     0x1820df9b0
+0000000181669642  lea      rcx, [rip + 0x146a3e7]
+0000000181669649  call     0x1820df9b0
+000000018166964e  mov      byte ptr [rip + 0x161ee0d], 1
+0000000181669655  mov      rcx, qword ptr [rip + 0x1467ae4]
+000000018166965c  call     0x1820dfb80
+0000000181669661  mov      rdx, qword ptr [rip + 0x142ef98]
+0000000181669668  mov      rcx, rax
+000000018166966b  mov      rbx, rax
+000000018166966e  call     0x1807b3d30
+0000000181669673  test     rdi, rdi
+0000000181669676  je       0x181669748
+000000018166967c  mov      rdx, qword ptr [rip + 0x146a3ad]
+0000000181669683  mov      rax, qword ptr [rdi]
+0000000181669686  movzx    ecx, byte ptr [rdx + 0x130]
+000000018166968d  cmp      byte ptr [rax + 0x130], cl
+0000000181669693  jb       0x181669748
+0000000181669699  mov      rax, qword ptr [rax + 0xc8]
+00000001816696a0  movzx    ecx, cl
+00000001816696a3  cmp      qword ptr [rax + rcx*8 - 8], rdx
+00000001816696a8  jne      0x181669748
+00000001816696ae  movzx    ecx, byte ptr [rdx + 0x130]
+00000001816696b5  mov      rax, qword ptr [rdi]
+00000001816696b8  mov      rax, qword ptr [rax + 0xc8]
+00000001816696bf  cmp      qword ptr [rax + rcx*8 - 8], rdx
+00000001816696c4  sete     al
+00000001816696c7  xor      ecx, ecx
+00000001816696c9  test     al, al
+00000001816696cb  cmovne   rcx, rdi
+00000001816696cf  xor      r8d, r8d
+00000001816696d2  xor      edx, edx
+00000001816696d4  call     0x18168bd50 ; TuberMatch.GetPlayerForFaction
+00000001816696d9  test     rax, rax
+00000001816696dc  je       0x181669748
+00000001816696de  mov      rdx, qword ptr [rax + 0xc8]
+00000001816696e5  test     rdx, rdx
+00000001816696e8  je       0x181669748
+00000001816696ea  test     rbx, rbx
+00000001816696ed  je       0x181669748
+00000001816696ef  mov      r9, qword ptr [rip + 0x142efba]
+00000001816696f6  mov      r8d, ebp
+00000001816696f9  mov      rdx, qword ptr [rdx + 0x50]
+00000001816696fd  mov      rcx, rbx
+0000000181669700  call     0x1807e3cc0
+0000000181669705  movzx    eax, byte ptr [rsp + 0x70]
+000000018166970a  mov      r9, rsi
+000000018166970d  mov      qword ptr [rsp + 0x30], 0
+0000000181669716  mov      r8, rdi
+0000000181669719  mov      byte ptr [rsp + 0x28], 0
+000000018166971e  mov      rdx, rbx
+0000000181669721  mov      rcx, r14
+0000000181669724  mov      byte ptr [rsp + 0x20], al
+0000000181669728  call     0x181669770 ; FieldHospitalResolution..ctor
+000000018166972d  mov      rbx, qword ptr [rsp + 0x50]
+0000000181669732  mov      rbp, qword ptr [rsp + 0x58]
+0000000181669737  mov      rsi, qword ptr [rsp + 0x60]
+000000018166973c  mov      rdi, qword ptr [rsp + 0x68]
+0000000181669741  add      rsp, 0x40
+0000000181669745  pop      r14
+0000000181669747  ret      
+0000000181669748  call     0x1820dfbd0
+000000018166974d  int3     

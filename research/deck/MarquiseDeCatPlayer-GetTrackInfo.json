@@ -1,0 +1,6401 @@
+{
+  "type": "MarquiseDeCatPlayer",
+  "method": "GetTrackInfo",
+  "start": "0x18193fb10",
+  "window_end": "0x1819406c0",
+  "runtime_region_end": "0x1819406be",
+  "boundary": "next mapped method address; inspect control flow before interpreting",
+  "source_sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "instructions": [
+    {
+      "va": "0x18193fb10",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsp + 0x10], rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb15",
+      "mnemonic": "push",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb16",
+      "mnemonic": "sub",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb1a",
+      "mnemonic": "cmp",
+      "operands": "byte ptr [rip + 0x1349e88], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb21",
+      "mnemonic": "mov",
+      "operands": "ebx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb23",
+      "mnemonic": "mov",
+      "operands": "rdi, rcx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb26",
+      "mnemonic": "jne",
+      "operands": "0x18193fb5f",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb28",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x1187699]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb2f",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb34",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11a5ea5]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb3b",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb40",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x1190e19]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb47",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb4c",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x1172c85]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Campaign25"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb53",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb58",
+      "mnemonic": "mov",
+      "operands": "byte ptr [rip + 0x1349e4a], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb5f",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsp + 0x30], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb64",
+      "mnemonic": "test",
+      "operands": "ebx, ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb66",
+      "mnemonic": "je",
+      "operands": "0x181940047",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb6c",
+      "mnemonic": "sub",
+      "operands": "ebx, 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb6f",
+      "mnemonic": "je",
+      "operands": "0x18193fdf4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb75",
+      "mnemonic": "cmp",
+      "operands": "ebx, 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb78",
+      "mnemonic": "je",
+      "operands": "0x18193fb95",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb7a",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1187647]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb81",
+      "mnemonic": "mov",
+      "operands": "rsi, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb86",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb8b",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb8f",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb90",
+      "mnemonic": "jmp",
+      "operands": "0x180012f20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb95",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11a5e44]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fb9c",
+      "mnemonic": "mov",
+      "operands": "edx, 6",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fba1",
+      "mnemonic": "call",
+      "operands": "0x1820ded50",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fba6",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190db3]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbad",
+      "mnemonic": "mov",
+      "operands": "rdi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbb0",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbb5",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbb7",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbba",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbbd",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fbc2",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbc5",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbcb",
+      "mnemonic": "xor",
+      "operands": "ebx, ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbcd",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbd1",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbd4",
+      "mnemonic": "test",
+      "operands": "rdi, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbd7",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbdd",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbe0",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbe3",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbe7",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbec",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbef",
+      "mnemonic": "je",
+      "operands": "0x181940538",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbf5",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbf8",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fbfe",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x20]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc02",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x20], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc06",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc09",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc0e",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190d4b]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc15",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc1a",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc1c",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc1f",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc22",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fc27",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc2a",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc30",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc37",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc3a",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc42",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc45",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc49",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc4e",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc51",
+      "mnemonic": "je",
+      "operands": "0x181940548",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc57",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc5b",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc61",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x28]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc65",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x28], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc69",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc6c",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc71",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190ce8]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc78",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc7d",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc7f",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc82",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc85",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fc8a",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc8d",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc93",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc9a",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fc9d",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x14], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fca4",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcab",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcae",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcb2",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcb7",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcba",
+      "mnemonic": "je",
+      "operands": "0x181940558",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcc0",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcc4",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcca",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcce",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x30], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcd2",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcd5",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcda",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190c7f]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fce1",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fce6",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fce8",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fceb",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcee",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fcf3",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcf6",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fcfc",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd03",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd06",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd0e",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd11",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd15",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd1a",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd1d",
+      "mnemonic": "je",
+      "operands": "0x181940568",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd23",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd27",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd2d",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd31",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x38], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd35",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd38",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd3d",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190c1c]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd44",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd49",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd4b",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd4e",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd51",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fd56",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd59",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd5f",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd66",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd69",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x14], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd70",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd77",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd7a",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd7e",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd83",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd86",
+      "mnemonic": "je",
+      "operands": "0x181940578",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd8c",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd90",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd96",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd9a",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x40], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fd9e",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fda1",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fda6",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190bb3]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdad",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdb2",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdb4",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdb7",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdba",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fdbf",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdc2",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdc8",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdcf",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdd2",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdda",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fddd",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fde1",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fde6",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fde9",
+      "mnemonic": "je",
+      "operands": "0x181940588",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdef",
+      "mnemonic": "jmp",
+      "operands": "0x181940505",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdf4",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11a5be5]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fdfb",
+      "mnemonic": "mov",
+      "operands": "edx, 6",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe00",
+      "mnemonic": "call",
+      "operands": "0x1820ded50",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe05",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190b54]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe0c",
+      "mnemonic": "mov",
+      "operands": "rdi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe0f",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe14",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe16",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe19",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe1c",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fe21",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe24",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe2a",
+      "mnemonic": "xor",
+      "operands": "ebx, ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe2c",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe30",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe33",
+      "mnemonic": "test",
+      "operands": "rdi, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe36",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe3c",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe3f",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe42",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe46",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe4b",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe4e",
+      "mnemonic": "je",
+      "operands": "0x181940598",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe54",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe57",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe5d",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x20]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe61",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x20], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe65",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe68",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe6d",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190aec]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe74",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe79",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe7b",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe7e",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe81",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fe86",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe89",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe8f",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe96",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fe99",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fea1",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fea4",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fea8",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fead",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193feb0",
+      "mnemonic": "je",
+      "operands": "0x1819405a8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193feb6",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193feba",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fec0",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x28]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fec4",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x28], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fec8",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fecb",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fed0",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190a89]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193fed7",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fedc",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fede",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fee1",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fee4",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193fee9",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193feec",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fef2",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fef9",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fefc",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff04",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff07",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff0b",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff10",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff13",
+      "mnemonic": "je",
+      "operands": "0x1819405b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff19",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff1d",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff23",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff27",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x30], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff2b",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff2e",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff33",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190a26]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff3a",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff3f",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff41",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff44",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff47",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193ff4c",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff4f",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff55",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff5c",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff5f",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff67",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff6a",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff6e",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff73",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff76",
+      "mnemonic": "je",
+      "operands": "0x1819405c8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff7c",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff80",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff86",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff8a",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x38], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff8e",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff91",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff96",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11909c3]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18193ff9d",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffa2",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffa4",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffa7",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffaa",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18193ffaf",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffb2",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffb8",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffbf",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffc2",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffca",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffcd",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffd1",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffd6",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffd9",
+      "mnemonic": "je",
+      "operands": "0x1819405d8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffdf",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffe3",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffe9",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193ffed",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x40], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fff1",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fff4",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18193fff9",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190960]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x181940000",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940005",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940007",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194000a",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194000d",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x181940012",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940015",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194001b",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940022",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940025",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 5",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194002d",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940030",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940034",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940039",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194003c",
+      "mnemonic": "je",
+      "operands": "0x1819405e8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940042",
+      "mnemonic": "jmp",
+      "operands": "0x181940505",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940047",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940049",
+      "mnemonic": "mov",
+      "operands": "rcx, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194004c",
+      "mnemonic": "call",
+      "operands": "0x1818df910",
+      "references": [],
+      "calls": [
+        "TuberPlayerEntity.get_TuberMatch"
+      ]
+    },
+    {
+      "va": "0x181940051",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940054",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194005a",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194005c",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194005f",
+      "mnemonic": "call",
+      "operands": "0x181693aa0",
+      "references": [],
+      "calls": [
+        "TuberMatch.get_TuberMatchInitData"
+      ]
+    },
+    {
+      "va": "0x181940064",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940067",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194006d",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x1172764]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Campaign25"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x181940074",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940077",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rax + 0x58]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194007b",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940080",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11a5959]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940087",
+      "mnemonic": "mov",
+      "operands": "edx, 6",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194008c",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194008e",
+      "mnemonic": "jne",
+      "operands": "0x1819402db",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940094",
+      "mnemonic": "call",
+      "operands": "0x1820ded50",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940099",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11908c0]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x1819400a0",
+      "mnemonic": "mov",
+      "operands": "rdi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400a3",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400a8",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400aa",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400ad",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400b0",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x1819400b5",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400b8",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400be",
+      "mnemonic": "xor",
+      "operands": "ebx, ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400c0",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400c4",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400c7",
+      "mnemonic": "test",
+      "operands": "rdi, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400ca",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400d0",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400d3",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400d6",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400da",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400df",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400e2",
+      "mnemonic": "je",
+      "operands": "0x1819405f8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400e8",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400eb",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400f1",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x20]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400f5",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x20], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400f9",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819400fc",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940101",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190858]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x181940108",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194010d",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194010f",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940112",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940115",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18194011a",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194011d",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940123",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194012a",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194012d",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940135",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940138",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194013c",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940141",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940144",
+      "mnemonic": "je",
+      "operands": "0x181940608",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194014a",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194014e",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940154",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x28]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940158",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x28], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194015c",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194015f",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940164",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11907f5]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18194016b",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940170",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940172",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940175",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940178",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18194017d",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940180",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940186",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194018d",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940190",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940198",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194019b",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194019f",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401a4",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401a7",
+      "mnemonic": "je",
+      "operands": "0x181940618",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401ad",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401b1",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401b7",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401bb",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x30], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401bf",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401c2",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401c7",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190792]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x1819401ce",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401d3",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401d5",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401d8",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401db",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x1819401e0",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401e3",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401e9",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401f0",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401f3",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401fb",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819401fe",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940202",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940207",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194020a",
+      "mnemonic": "je",
+      "operands": "0x181940628",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940210",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940214",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194021a",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194021e",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x38], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940222",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940225",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194022a",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x119072f]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x181940231",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940236",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940238",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194023b",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194023e",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x181940243",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940246",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194024c",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940253",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940256",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194025e",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940261",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940265",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194026a",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194026d",
+      "mnemonic": "je",
+      "operands": "0x181940638",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940273",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940277",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194027d",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940281",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x40], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940285",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940288",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194028d",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11906cc]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x181940294",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940299",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194029b",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194029e",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402a1",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x1819402a6",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402a9",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402af",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x10], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402b6",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402b9",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x14], 5",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402c1",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402c4",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402c8",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402cd",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402d0",
+      "mnemonic": "je",
+      "operands": "0x181940648",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402d6",
+      "mnemonic": "jmp",
+      "operands": "0x181940505",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402db",
+      "mnemonic": "call",
+      "operands": "0x1820ded50",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402e0",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190679]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x1819402e7",
+      "mnemonic": "mov",
+      "operands": "rdi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402ea",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402ef",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402f1",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402f4",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402f7",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x1819402fc",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819402ff",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940305",
+      "mnemonic": "xor",
+      "operands": "ebx, ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940307",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194030b",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194030e",
+      "mnemonic": "test",
+      "operands": "rdi, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940311",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940317",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194031a",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194031d",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940321",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940326",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940329",
+      "mnemonic": "je",
+      "operands": "0x181940658",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194032f",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940332",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940338",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x20]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194033c",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x20], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940340",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940343",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940348",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190611]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18194034f",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940354",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940356",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940359",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194035c",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x181940361",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940364",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194036a",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940372",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940375",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940378",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194037b",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194037f",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940384",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940387",
+      "mnemonic": "je",
+      "operands": "0x181940668",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194038d",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940391",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940397",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x28]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194039b",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x28], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194039f",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403a2",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403a7",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11905b2]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x1819403ae",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403b3",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403b5",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403b8",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403bb",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x1819403c0",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403c3",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403c9",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403d1",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403d4",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403d7",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403da",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403de",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403e3",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403e6",
+      "mnemonic": "je",
+      "operands": "0x181940678",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403ec",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 2",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403f0",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403f6",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403fa",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x30], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819403fe",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940401",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940406",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190553]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18194040d",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940412",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940414",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940417",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194041a",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18194041f",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940422",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940428",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940430",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940433",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940436",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940439",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194043d",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940442",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940445",
+      "mnemonic": "je",
+      "operands": "0x181940688",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194044b",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194044f",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940455",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940459",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x38], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194045d",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940460",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940465",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x11904f4]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18194046c",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940471",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940473",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940476",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940479",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x18194047e",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940481",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940487",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], 3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194048f",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940492",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940495",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940498",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194049c",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404a1",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404a4",
+      "mnemonic": "je",
+      "operands": "0x181940698",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404aa",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404ae",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404b4",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404b8",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x40], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404bc",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404bf",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404c4",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rip + 0x1190495]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "TrackPositionInfo",
+          "type_index": 1539
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x1819404cb",
+      "mnemonic": "call",
+      "operands": "0x1820dfb80",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404d0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404d2",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404d5",
+      "mnemonic": "mov",
+      "operands": "rsi, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404d8",
+      "mnemonic": "call",
+      "operands": "0x180001be0",
+      "references": [],
+      "calls": [
+        "ConditionalCardValuation..ctor",
+        "EyrieRestoreRoostUndo..ctor",
+        "EyrieReturnToDecreeUndo..ctor",
+        "EyrieUndoBuild..ctor",
+        "EyrieUndoMove..ctor",
+        "EyrieUndoRecruit..ctor",
+        "MarquiseFieldHospitalUndo..ctor",
+        "MarquiseSetupBuildingUndo..ctor",
+        "MarquiseUndoKeepAction..ctor",
+        "TuberUndoAction..ctor",
+        "UndoDiscardItems..ctor",
+        "VagabondBirdsongUndoRefresh..ctor",
+        "WoodlandUndoRevolt..ctor",
+        "WoodlandUndoSpreadSympathy..ctor",
+        "PlayerMatchInitDataPacker..ctor",
+        "PackerUtils..ctor",
+        "TuberMatchModel..ctor",
+        "GameResultsEntry..ctor",
+        "TuberBoardLayout..ctor",
+        "AmongCorvidPlot..ctor",
+        "AmongDuchyBuildings..ctor",
+        "AmongHundredsStrongholds..ctor",
+        "AmongHundredsWarlord..ctor",
+        "AmongKeepersRelics..ctor",
+        "Intervention..ctor",
+        "AdvancedSetupFactionOption..ctor",
+        "PlayerInitData..ctor",
+        "QuestInfo..ctor",
+        "TrackPositionInfo..ctor",
+        "TuberMatchTypes..ctor",
+        "DominanceCoalitionWinCondition..ctor",
+        "IWinCondition..ctor",
+        "ScoreWinCondition..ctor",
+        "ClockworkConfig..ctor",
+        "RuinItemLocations..ctor",
+        "ScoreForBuilding..ctor",
+        "SpecialClearing..ctor",
+        "StartingBuilding..ctor",
+        "StartingToken..ctor",
+        "GamePhases..ctor",
+        "Objective..ctor",
+        "LogGenerator..ctor",
+        "DefaultLogGenerator..ctor",
+        "ResolutionStateData..ctor",
+        "BattleResolutionFactory..ctor",
+        "SerializedBattleResolutionFactory..ctor",
+        "StandardBattleResolutionFactory..ctor",
+        "SerializedStandardBattleResolutionFactory..ctor",
+        "StandardBattleResolution..ctor"
+      ]
+    },
+    {
+      "va": "0x1819404dd",
+      "mnemonic": "test",
+      "operands": "rsi, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404e0",
+      "mnemonic": "je",
+      "operands": "0x181940532",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404e2",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsi + 0x10], 4",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404ea",
+      "mnemonic": "mov",
+      "operands": "rcx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404ed",
+      "mnemonic": "mov",
+      "operands": "dword ptr [rsi + 0x18], ebx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404f0",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdi]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404f3",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rdx + 0x40]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404f7",
+      "mnemonic": "call",
+      "operands": "0x1820decf0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404fc",
+      "mnemonic": "test",
+      "operands": "rax, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819404ff",
+      "mnemonic": "je",
+      "operands": "0x1819406a8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940505",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0x18], 5",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940509",
+      "mnemonic": "jbe",
+      "operands": "0x1819406b8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194050f",
+      "mnemonic": "lea",
+      "operands": "rcx, [rdi + 0x48]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940513",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rdi + 0x48], rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940517",
+      "mnemonic": "mov",
+      "operands": "rdx, rsi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194051a",
+      "mnemonic": "call",
+      "operands": "0x1820decd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194051f",
+      "mnemonic": "mov",
+      "operands": "rsi, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940524",
+      "mnemonic": "mov",
+      "operands": "rax, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940527",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194052c",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940530",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940531",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940532",
+      "mnemonic": "call",
+      "operands": "0x1820dfbd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940537",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940538",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194053d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940540",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940542",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940547",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940548",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194054d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940550",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940552",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940557",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940558",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194055d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940560",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940562",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940567",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940568",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194056d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940570",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940572",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940577",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940578",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194057d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940580",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940582",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940587",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940588",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194058d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940590",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940592",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940597",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940598",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194059d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405a0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405a2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405a7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405a8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405ad",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405b0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405b2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405b7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405b8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405bd",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405c0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405c2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405c7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405c8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405cd",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405d0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405d2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405d7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405d8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405dd",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405e0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405e2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405e7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405e8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405ed",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405f0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405f2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405f7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405f8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819405fd",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940600",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940602",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940607",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940608",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194060d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940610",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940612",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940617",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940618",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194061d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940620",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940622",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940627",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940628",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194062d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940630",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940632",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940637",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940638",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194063d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940640",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940642",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940647",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940648",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194064d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940650",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940652",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940657",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940658",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194065d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940660",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940662",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940667",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940668",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194066d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940670",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940672",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940677",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940678",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194067d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940680",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940682",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940687",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940688",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194068d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940690",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940692",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940697",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x181940698",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18194069d",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406a0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406a2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406a7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406a8",
+      "mnemonic": "call",
+      "operands": "0x1820df700",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406ad",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406b0",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406b2",
+      "mnemonic": "call",
+      "operands": "0x1820dfb90",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406b7",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406b8",
+      "mnemonic": "call",
+      "operands": "0x1820dfbc0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406bd",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406be",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x1819406bf",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    }
+  ]
+}

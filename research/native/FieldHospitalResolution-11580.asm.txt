@@ -1,0 +1,52 @@
+0000000181669310  mov      qword ptr [rsp + 0x10], rbx
+0000000181669315  mov      qword ptr [rsp + 0x18], rbp
+000000018166931a  mov      qword ptr [rsp + 0x20], rsi
+000000018166931f  push     rdi
+0000000181669320  sub      rsp, 0x20
+0000000181669324  cmp      byte ptr [rip + 0x161f139], 0
+000000018166932b  mov      rbx, r8
+000000018166932e  mov      rdi, rdx
+0000000181669331  mov      rbp, rcx
+0000000181669334  jne      0x1816693c5
+000000018166933a  lea      rcx, [rip + 0x14802f7]
+0000000181669341  call     0x1820df9b0
+0000000181669346  lea      rcx, [rip + 0x148b21b]
+000000018166934d  call     0x1820df9b0
+0000000181669352  lea      rcx, [rip + 0x148d547]
+0000000181669359  call     0x1820df9b0
+000000018166935e  lea      rcx, [rip + 0x14852d3]
+0000000181669365  call     0x1820df9b0
+000000018166936a  lea      rcx, [rip + 0x148509f]
+0000000181669371  call     0x1820df9b0
+0000000181669376  lea      rcx, [rip + 0x1485203]
+000000018166937d  call     0x1820df9b0
+0000000181669382  lea      rcx, [rip + 0x143af6f]
+0000000181669389  call     0x1820df9b0
+000000018166938e  lea      rcx, [rip + 0x143b01b]
+0000000181669395  call     0x1820df9b0
+000000018166939a  lea      rcx, [rip + 0x143b227]
+00000001816693a1  call     0x1820df9b0
+00000001816693a6  lea      rcx, [rip + 0x14539b3]
+00000001816693ad  call     0x1820df9b0
+00000001816693b2  lea      rcx, [rip + 0x14538ef]
+00000001816693b9  call     0x1820df9b0
+00000001816693be  mov      byte ptr [rip + 0x161f09f], 1
+00000001816693c5  mov      rcx, qword ptr [rip + 0x1453994]
+00000001816693cc  call     0x1820dfb80
+00000001816693d1  xor      edx, edx
+00000001816693d3  mov      rcx, rax
+00000001816693d6  mov      rsi, rax
+00000001816693d9  call     0x180001c20 ; TuberMatch.FinishReconnect, TuberHirelingEntity.Initialize, TuberPlayerEntity.postAllPlayersInitialized
+00000001816693de  test     rsi, rsi
+00000001816693e1  je       0x1816695e6
+00000001816693e7  lea      rcx, [rsi + 0x10]
+00000001816693eb  mov      qword ptr [rsi + 0x10], rdi
+00000001816693ef  mov      rdx, rdi
+00000001816693f2  call     0x1820decd0
+00000001816693f7  lea      rcx, [rsi + 0x18]
+00000001816693fb  mov      qword ptr [rsi + 0x18], rbx
+00000001816693ff  mov      rdx, rbx
+0000000181669402  call     0x1820decd0
+0000000181669407  test     rbp, rbp
+000000018166940a  je       0x1816695e6
+0000000181669410  xor      edx, edx

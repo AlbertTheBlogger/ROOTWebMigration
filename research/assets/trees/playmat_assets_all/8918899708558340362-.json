@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1411110011880553044
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7704913397815434644
+  },
+  "m_Name": "",
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": -1785352417388000215
+  },
+  "mapColorPairs": [
+    {
+      "Map": 0,
+      "animationController": {
+        "m_FileID": 1,
+        "m_PathID": 6452497333958182794
+      }
+    },
+    {
+      "Map": 1,
+      "animationController": {
+        "m_FileID": 1,
+        "m_PathID": 9010130648691991120
+      }
+    },
+    {
+      "Map": 2,
+      "animationController": {
+        "m_FileID": 1,
+        "m_PathID": 6452497333958182794
+      }
+    },
+    {
+      "Map": 3,
+      "animationController": {
+        "m_FileID": 1,
+        "m_PathID": 6452497333958182794
+      }
+    }
+  ]
+}

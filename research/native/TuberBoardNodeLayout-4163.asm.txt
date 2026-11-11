@@ -1,0 +1,42 @@
+000000018197a760  mov      qword ptr [rsp + 8], rbx
+000000018197a765  mov      qword ptr [rsp + 0x10], rbp
+000000018197a76a  mov      qword ptr [rsp + 0x18], rsi
+000000018197a76f  mov      qword ptr [rsp + 0x20], rdi
+000000018197a774  push     r14
+000000018197a776  sub      rsp, 0x20
+000000018197a77a  cmp      byte ptr [rip + 0x130f336], 0
+000000018197a781  mov      edi, r9d
+000000018197a784  mov      esi, r8d
+000000018197a787  mov      ebp, edx
+000000018197a789  mov      r14d, ecx
+000000018197a78c  jne      0x18197a7a1
+000000018197a78e  lea      rcx, [rip + 0x11580a3]
+000000018197a795  call     0x1820df9b0
+000000018197a79a  mov      byte ptr [rip + 0x130f316], 1
+000000018197a7a1  mov      rcx, qword ptr [rip + 0x1158090]
+000000018197a7a8  call     0x1820dfb80
+000000018197a7ad  xor      edx, edx
+000000018197a7af  mov      rcx, rax
+000000018197a7b2  mov      rbx, rax
+000000018197a7b5  call     0x180001c20 ; TuberMatch.FinishReconnect, TuberHirelingEntity.Initialize, TuberPlayerEntity.postAllPlayersInitialized
+000000018197a7ba  mov      rdx, qword ptr [rsp + 0x50]
+000000018197a7bf  lea      rcx, [rbx + 0x28]
+000000018197a7c3  mov      qword ptr [rbx + 0x28], rdx
+000000018197a7c7  mov      dword ptr [rbx + 0x10], r14d
+000000018197a7cb  mov      dword ptr [rbx + 0x14], ebp
+000000018197a7ce  mov      dword ptr [rbx + 0x18], esi
+000000018197a7d1  mov      dword ptr [rbx + 0x1c], 1
+000000018197a7d8  mov      dword ptr [rbx + 0x24], edi
+000000018197a7db  call     0x1820decd0
+000000018197a7e0  mov      rdx, qword ptr [rsp + 0x58]
+000000018197a7e5  lea      rcx, [rbx + 0x30]
+000000018197a7e9  mov      qword ptr [rbx + 0x30], rdx
+000000018197a7ed  call     0x1820decd0
+000000018197a7f2  mov      rbp, qword ptr [rsp + 0x38]
+000000018197a7f7  mov      rax, rbx
+000000018197a7fa  mov      rbx, qword ptr [rsp + 0x30]
+000000018197a7ff  mov      rsi, qword ptr [rsp + 0x40]
+000000018197a804  mov      rdi, qword ptr [rsp + 0x48]
+000000018197a809  add      rsp, 0x20
+000000018197a80d  pop      r14
+000000018197a80f  ret      

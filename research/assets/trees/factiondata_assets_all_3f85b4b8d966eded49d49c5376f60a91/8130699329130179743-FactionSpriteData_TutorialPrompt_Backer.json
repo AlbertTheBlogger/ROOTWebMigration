@@ -1,0 +1,92 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8423559073598086310
+  },
+  "m_Name": "FactionSpriteData_TutorialPrompt_Backer",
+  "factionSprites": [
+    {
+      "faction": 0,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 2874748673681257507
+      }
+    },
+    {
+      "faction": 1,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 5140566310321253023
+      }
+    },
+    {
+      "faction": 2,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 5783467194864207842
+      }
+    },
+    {
+      "faction": 3,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 2030642729983245959
+      }
+    },
+    {
+      "faction": 5,
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 265554677898225280
+      }
+    },
+    {
+      "faction": 6,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 1581965195838467652
+      }
+    },
+    {
+      "faction": 7,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 4895716309205028712
+      }
+    },
+    {
+      "faction": 9,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": -5721825930735836542
+      }
+    },
+    {
+      "faction": 8,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": -726174517273786718
+      }
+    },
+    {
+      "faction": 14,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 1085181666459609092
+      }
+    },
+    {
+      "faction": 15,
+      "sprite": {
+        "m_FileID": 20,
+        "m_PathID": 4210073275429108801
+      }
+    }
+  ],
+  "factionCosmeticSprites": []
+}

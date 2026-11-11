@@ -1,0 +1,191 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3551471191982668816
+  },
+  "m_Name": "CardMozViewsLookup",
+  "defaultPathRoot": "Assets/Resources_moved/",
+  "folder": "MozviewCardPrefabs",
+  "simplifyNames": 1,
+  "entries": [
+    {
+      "ResourcePath": "DeckCardOneTime Moz",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Favor",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "!PnPOpponent",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTime Moz",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "!PnPOpponent",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardAmbush Moz",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Ambush",
+          "!PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardDominance Moz",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Dominance",
+          "!PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistent Moz",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "!PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableCardUI_Moz",
+      "Metadata": {
+        "flavors": [
+          "DecreePile",
+          "Introduced",
+          "Card",
+          "!TransformableCard",
+          "!PnPOpponent",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DuchyMinisterCard Moz",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Minister",
+          "UndergroundDuchy",
+          "TransformableCard",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "EyrieVizierCard Moz",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Vizier",
+          "EyrieDynasties",
+          "TransformableCard",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondIDCard Moz",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Vagabond",
+          "TransformableCard",
+          "Identity",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "QuestCard Moz",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "Quest",
+          "Vagabond",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableCardUI_Moz",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "Card",
+          "!TransformableCard",
+          "!PnPOpponent",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FaithfulRetainerCard Moz",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Faithful Retainer",
+          "TransformableCard",
+          "Moz"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsMoodCard Moz",
+      "Metadata": {
+        "flavors": [
+          "LordOfTheHundreds",
+          "TransformableCard",
+          "Mood",
+          "Moz"
+        ]
+      }
+    }
+  ]
+}

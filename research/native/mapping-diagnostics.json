@@ -1,0 +1,65 @@
+{
+  "image_base": "0x180000000",
+  "expected_max_token": 21022,
+  "name_positions": [
+    41540840
+  ],
+  "references": [
+    {
+      "raw": 41540704,
+      "count": 21049,
+      "pointers": "0x182c129d0"
+    }
+  ],
+  "sections": [
+    {
+      "name": "il2cpp",
+      "rva": 4096,
+      "virtual_size": 32707068,
+      "raw_size": 32707072,
+      "raw": 1024
+    },
+    {
+      "name": ".text",
+      "rva": 32714752,
+      "virtual_size": 2770860,
+      "raw_size": 2770944,
+      "raw": 32708096
+    },
+    {
+      "name": ".rdata",
+      "rva": 35487744,
+      "virtual_size": 8583656,
+      "raw_size": 8583680,
+      "raw": 35479040
+    },
+    {
+      "name": ".data",
+      "rva": 44072960,
+      "virtual_size": 5439924,
+      "raw_size": 2588672,
+      "raw": 44062720
+    },
+    {
+      "name": ".pdata",
+      "rva": 49516544,
+      "virtual_size": 1695360,
+      "raw_size": 1695744,
+      "raw": 46651392
+    },
+    {
+      "name": "_RDATA",
+      "rva": 51212288,
+      "virtual_size": 348,
+      "raw_size": 512,
+      "raw": 48347136
+    },
+    {
+      "name": ".reloc",
+      "rva": 51216384,
+      "virtual_size": 790084,
+      "raw_size": 790528,
+      "raw": 48347648
+    }
+  ]
+}

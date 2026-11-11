@@ -1,0 +1,772 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3551471191982668816
+  },
+  "m_Name": "CardSubviewsLookup",
+  "defaultPathRoot": "Assets/Resources_moved/",
+  "folder": "SubviewCardPrefabs",
+  "simplifyNames": 1,
+  "entries": [
+    {
+      "ResourcePath": "DeckCardOneTimeCraftHundredsHoard",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "CraftCard",
+          "!DecreePile",
+          "ToHoard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeCraftHundredsPoints",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "CraftCard",
+          "!DecreePile",
+          "ForPoints"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Favor",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "PnPOpponent",
+          "!DecreePile",
+          "!CraftCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "PnPOpponent",
+          "!DecreePile",
+          "!CraftCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistentUIOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "PnPOpponent",
+          "UI",
+          "CardPile",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!DecreePile",
+          "!CraftCard",
+          "!PersistentArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_CoffinMakersOpp_NoPile",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "Introduced",
+          "Persistent",
+          "67bab35e-d908-4894-b4e6-854f40d10d25",
+          "!PnPOpponent",
+          "Card",
+          "Rabbit",
+          "CardPile",
+          "UI",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardDominance",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Dominance",
+          "!PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!PresentPlayedDominance",
+          "!PresentPlayedCoalition",
+          "!Available"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardDominanceDecree",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Dominance",
+          "DecreePile",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!PresentPlayedDominance",
+          "!PresentPlayedCoalition",
+          "!Available"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardDominanceOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Dominance",
+          "PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!PresentPlayedDominance",
+          "!PresentPlayedCoalition",
+          "!Available"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTime",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Favor",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "!PnPOpponent",
+          "!DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTime",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "!PnPOpponent",
+          "!DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeCraft",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Favor",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "CraftCard",
+          "!DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeCraft",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "CraftCard",
+          "!DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_CoffinMakersOpp",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "Introduced",
+          "Persistent",
+          "67bab35e-d908-4894-b4e6-854f40d10d25",
+          "!PnPOpponent",
+          "Card",
+          "Rabbit",
+          "CardPile",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeDecree",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Favor",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardOneTimeDecree",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "OneTime",
+          "!Persistent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!CraftPresentItem",
+          "DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistentOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!DecreePile",
+          "!CraftCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistentUI",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "UI",
+          "CardPile",
+          "!PnPOpponent",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!PersistentArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CraftPresent_AsItem_Rip",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "Card",
+          "OneTime",
+          "CraftPresentItem",
+          "!Hidden",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "ForPoints"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "AvailableDominanceCard",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "Available",
+          "Introduced",
+          "Dominance",
+          "!Hidden",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardAmbushOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Ambush",
+          "PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea",
+          "!DecreePile"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CraftPresent_AsItem",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "Card",
+          "OneTime",
+          "CraftPresentItem",
+          "!Hidden",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_CoffinMakers_NoPile",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent",
+          "PlayerInfo",
+          "UI",
+          "67bab35e-d908-4894-b4e6-854f40d10d25"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_HundredsTemperamental",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent",
+          "PlayerInfo",
+          "UI",
+          "79ebbf1e-b434-4d35-85b9-48db0bf16323"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardAmbush",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Ambush",
+          "!PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardAmbushDecree",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Ambush",
+          "DecreePile",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistantCraft",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "CraftCard",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistent",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "!PnPOpponent",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardPersistentDecree",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "TransformableCard",
+          "Persistent",
+          "DecreePile",
+          "!UI",
+          "!SupporterPile",
+          "!PersistentsArea"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent",
+          "PlayerInfo",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_CoffinMakers",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent",
+          "UI",
+          "67bab35e-d908-4894-b4e6-854f40d10d25"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "EyrieVizierCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Vizier",
+          "EyrieDynasties",
+          "TransformableCard",
+          "DecreePile",
+          "!UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MinisterOppHUD",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Minister",
+          "UndergroundDuchy",
+          "TransformableCard",
+          "SwayedMinisters",
+          "Opponent"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_CoffinMakers",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent",
+          "67bab35e-d908-4894-b4e6-854f40d10d25"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard_HundredsTemperamental",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent",
+          "79ebbf1e-b434-4d35-85b9-48db0bf16323"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_EyrieLeaderPresent",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Leader",
+          "EyrieDynasties",
+          "TransformableCard",
+          "PresentLeader"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_Minister",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Minister",
+          "UndergroundDuchy",
+          "TransformableCard",
+          "SwayedMinisters"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "QuestCardIcon",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "Quest",
+          "Vagabond",
+          "VagabondUITiny"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "QuestCardPlayerInfo",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "Quest",
+          "Vagabond",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ActiveDominanceCard",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Dominance"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CraftedPersistentCard",
+      "Metadata": {
+        "flavors": [
+          "TransformableCard",
+          "PersistentsArea",
+          "Introduced",
+          "Persistent"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DecreeIconCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "DecreePile",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DuchyMinisterCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Minister",
+          "UndergroundDuchy",
+          "TransformableCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FaithfulRetainerCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Faithful Retainer",
+          "TransformableCard",
+          "!UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_EyrieLeaderCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Leader",
+          "EyrieDynasties",
+          "TransformableCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MobilizePresent_AsSupporter",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "SupporterIcon",
+          "Card",
+          "TransformableCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SympathyPresent_AsSupporter",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "SymSupporterIcon",
+          "Card",
+          "TransformableCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondIDCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "Vagabond",
+          "TransformableCard",
+          "Identity"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "QuestCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "Quest",
+          "Vagabond"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SupporterCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "SupporterPile",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DecreeIconCard",
+      "Metadata": {
+        "flavors": [
+          "Card",
+          "TransformableCard",
+          "DecreeSuitIcon"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsMoodCard",
+      "Metadata": {
+        "flavors": [
+          "LordOfTheHundreds",
+          "TransformableCard",
+          "Mood"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DeckCardUnintroduced",
+      "Metadata": {
+        "flavors": [
+          "Unintroduced",
+          "TransformableCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "PresentPlayedDominanceCard",
+      "Metadata": {
+        "flavors": [
+          "PresentPlayedDominance"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "PresentPlayedDominanceCard Coalition",
+      "Metadata": {
+        "flavors": [
+          "PresentPlayedCoalition"
+        ]
+      }
+    }
+  ]
+}

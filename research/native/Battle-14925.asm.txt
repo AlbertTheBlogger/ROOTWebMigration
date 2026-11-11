@@ -1,0 +1,28 @@
+0000000181755a60  mov      qword ptr [rsp + 8], rbx
+0000000181755a65  push     rdi
+0000000181755a66  sub      rsp, 0x20
+0000000181755a6a  cmp      byte ptr [rip + 0x153305c], 0
+0000000181755a71  mov      rdi, rcx
+0000000181755a74  jne      0x181755a89
+0000000181755a76  lea      rcx, [rip + 0x13adf93]
+0000000181755a7d  call     0x1820df9b0
+0000000181755a82  mov      byte ptr [rip + 0x1533044], 1
+0000000181755a89  mov      rcx, qword ptr [rip + 0x13adf80]
+0000000181755a90  call     0x1820dfb80
+0000000181755a95  xor      edx, edx
+0000000181755a97  mov      rcx, rax
+0000000181755a9a  mov      rbx, rax
+0000000181755a9d  call     0x180001c20 ; TuberMatch.FinishReconnect, TuberHirelingEntity.Initialize, TuberPlayerEntity.postAllPlayersInitialized
+0000000181755aa2  xor      ecx, ecx
+0000000181755aa4  mov      dword ptr [rbx + 0x10], 0xfffffffe
+0000000181755aab  call     0x180e575b0
+0000000181755ab0  lea      rcx, [rbx + 0x28]
+0000000181755ab4  mov      dword ptr [rbx + 0x20], eax
+0000000181755ab7  mov      rdx, rdi
+0000000181755aba  mov      qword ptr [rbx + 0x28], rdi
+0000000181755abe  call     0x1820decd0
+0000000181755ac3  mov      rax, rbx
+0000000181755ac6  mov      rbx, qword ptr [rsp + 0x30]
+0000000181755acb  add      rsp, 0x20
+0000000181755acf  pop      rdi
+0000000181755ad0  ret      

@@ -1,0 +1,21 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 708750419844053627
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 8992057535457455970
+  },
+  "m_Name": "",
+  "iconPrefab": {
+    "m_FileID": 0,
+    "m_PathID": -6463239210922152514
+  },
+  "showOutsideStrategicView": 1,
+  "showInStrategicView": 1,
+  "sortOrder": 1,
+  "doScale": 1,
+  "maxScale": 1.0
+}

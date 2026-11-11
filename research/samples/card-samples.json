@@ -1,0 +1,214 @@
+[
+  {
+    "type": "AnvilFox",
+    "category": "item_crafting",
+    "metadata_type_index": 1181,
+    "metadata_token": "0x200049e",
+    "suit_from_type_name": "fox",
+    "copy_count": 1,
+    "crafting_cost": [
+      "fox"
+    ],
+    "status": "static-deck-count-and-supported-recipe-confirmed-runtime-pending",
+    "localization": {
+      "en_US": {
+        "source": "../assets/localization/en_US.txt",
+        "sha256": "0a21ad9d11a8b9049024b2eec0b93d254b2006c4d03e7ba72cb4fac05af214de",
+        "entries": {
+          "root.cardname.anvil": {
+            "value": "Anvil",
+            "line": 2507
+          },
+          "root.cardtext.anvil": {
+            "value": "<size=200%><sprite name=\"hammer\">, <sprite name=\"2VP\"></size> ",
+            "line": 2536
+          }
+        }
+      },
+      "zh_CN": {
+        "source": "../assets/localization/zh_CN.txt",
+        "sha256": "1e44deb8394a2d916f8f6b5a2e6cc2b6e61ba923de0b68e1a526f25e68e9eef3",
+        "entries": {
+          "root.cardname.anvil": {
+            "value": "铁砧",
+            "line": 2498
+          },
+          "root.cardtext.anvil": {
+            "value": "<size=200%><sprite name=\"hammer\">, <sprite name=\"2VP\"></size> ",
+            "line": 2527
+          }
+        }
+      }
+    },
+    "native_methods": [
+      {
+        "type": "AnvilFox",
+        "namespace": "tuber.canis.archetypes.CardArchetypes",
+        "method": ".ctor",
+        "token": "0x60018bf",
+        "va": "0x1814a8450",
+        "rva": "0x14a8450",
+        "raw": 21657680,
+        "bytes": 1566,
+        "disassembly": "AnvilFox-6334.asm.txt"
+      },
+      {
+        "type": "AnvilFox",
+        "namespace": "tuber.canis.archetypes.CardArchetypes",
+        "method": ".cctor",
+        "token": "0x60018c0",
+        "va": "0x1814a83c0",
+        "rva": "0x14a83c0",
+        "raw": 21657536,
+        "bytes": 135,
+        "disassembly": "AnvilFox-6335.asm.txt"
+      }
+    ],
+    "numeric_evidence": "../deck/card-catalog.json",
+    "crafting_applicable": true,
+    "item_from_text": "hammer",
+    "points_from_text": 2
+  },
+  {
+    "type": "AmbushFox",
+    "category": "ambush",
+    "metadata_type_index": 1178,
+    "metadata_token": "0x200049b",
+    "suit_from_type_name": "fox",
+    "copy_count": 1,
+    "crafting_cost": null,
+    "status": "static-deck-count-and-supported-recipe-confirmed-runtime-pending",
+    "localization": {
+      "en_US": {
+        "source": "../assets/localization/en_US.txt",
+        "sha256": "0a21ad9d11a8b9049024b2eec0b93d254b2006c4d03e7ba72cb4fac05af214de",
+        "entries": {
+          "root.cardname.ambush": {
+            "value": "Ambush!",
+            "line": 2525
+          },
+          "root.cardtext.ambush.fox": {
+            "value": "You may ambush in a fox clearing.",
+            "line": 2555
+          },
+          "root.cardtext.ambush.startofbattle": {
+            "value": "At start of battle, defender may play to deal two immediate hits. Cancel if attacker plays matching ambush.",
+            "line": 2558
+          }
+        }
+      },
+      "zh_CN": {
+        "source": "../assets/localization/zh_CN.txt",
+        "sha256": "1e44deb8394a2d916f8f6b5a2e6cc2b6e61ba923de0b68e1a526f25e68e9eef3",
+        "entries": {
+          "root.cardname.ambush": {
+            "value": "奇袭！",
+            "line": 2516
+          },
+          "root.cardtext.ambush.fox": {
+            "value": "你可以在狐狸领地发动奇袭。",
+            "line": 2546
+          },
+          "root.cardtext.ambush.startofbattle": {
+            "value": "防守方可在战斗开始时打出本牌，立即对攻击方造成2点命中。攻击方可以打出一张与战斗领地类型相同的奇袭牌来抵消。",
+            "line": 2549
+          }
+        }
+      }
+    },
+    "native_methods": [
+      {
+        "type": "AmbushFox",
+        "namespace": "tuber.canis.archetypes.CardArchetypes",
+        "method": ".ctor",
+        "token": "0x60018b9",
+        "va": "0x1814a7790",
+        "rva": "0x14a7790",
+        "raw": 21654416,
+        "bytes": 943,
+        "disassembly": "AmbushFox-6328.asm.txt"
+      },
+      {
+        "type": "AmbushFox",
+        "namespace": "tuber.canis.archetypes.CardArchetypes",
+        "method": ".cctor",
+        "token": "0x60018ba",
+        "va": "0x1814a7700",
+        "rva": "0x14a7700",
+        "raw": 21654272,
+        "bytes": 135,
+        "disassembly": "AmbushFox-6329.asm.txt"
+      }
+    ],
+    "numeric_evidence": "../deck/card-catalog.json",
+    "crafting_applicable": false
+  },
+  {
+    "type": "ArmorersBird",
+    "category": "persistent_battle_effect",
+    "metadata_type_index": 1182,
+    "metadata_token": "0x200049f",
+    "suit_from_type_name": "bird",
+    "copy_count": 2,
+    "crafting_cost": [
+      "fox"
+    ],
+    "status": "static-deck-count-and-supported-recipe-confirmed-runtime-pending",
+    "localization": {
+      "en_US": {
+        "source": "../assets/localization/en_US.txt",
+        "sha256": "0a21ad9d11a8b9049024b2eec0b93d254b2006c4d03e7ba72cb4fac05af214de",
+        "entries": {
+          "root.cardname.armorers": {
+            "value": "Armorers",
+            "line": 2501
+          },
+          "root.cardtext.armorers": {
+            "value": "In battle, may discard this to ignore all rolled hits taken.",
+            "line": 2532
+          }
+        }
+      },
+      "zh_CN": {
+        "source": "../assets/localization/zh_CN.txt",
+        "sha256": "1e44deb8394a2d916f8f6b5a2e6cc2b6e61ba923de0b68e1a526f25e68e9eef3",
+        "entries": {
+          "root.cardname.armorers": {
+            "value": "铠甲兵",
+            "line": 2492
+          },
+          "root.cardtext.armorers": {
+            "value": "战斗时，可以丢弃本牌，你无需承受本次战斗中，由对方骰子造成的命中点数。",
+            "line": 2523
+          }
+        }
+      }
+    },
+    "native_methods": [
+      {
+        "type": "ArmorersBird",
+        "namespace": "tuber.canis.archetypes.CardArchetypes",
+        "method": ".ctor",
+        "token": "0x60018c1",
+        "va": "0x1814a8b00",
+        "rva": "0x14a8b00",
+        "raw": 21659392,
+        "bytes": 1500,
+        "disassembly": "ArmorersBird-6336.asm.txt"
+      },
+      {
+        "type": "ArmorersBird",
+        "namespace": "tuber.canis.archetypes.CardArchetypes",
+        "method": ".cctor",
+        "token": "0x60018c2",
+        "va": "0x1814a8a70",
+        "rva": "0x14a8a70",
+        "raw": 21659248,
+        "bytes": 135,
+        "disassembly": "ArmorersBird-6337.asm.txt"
+      }
+    ],
+    "numeric_evidence": "../deck/card-catalog.json",
+    "crafting_applicable": true
+  }
+]

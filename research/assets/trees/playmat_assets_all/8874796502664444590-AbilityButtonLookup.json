@@ -1,0 +1,799 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3551471191982668816
+  },
+  "m_Name": "AbilityButtonLookup",
+  "defaultPathRoot": "Assets/Resources_moved/",
+  "folder": "AbilityButtonPrefabs",
+  "simplifyNames": 1,
+  "entries": [
+    {
+      "ResourcePath": "P_ui_SecondVagabondDayLaborButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "VagabondSpecial",
+          "3d08f53b-9a23-48b1-bc1e-68fd555ac78b"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondGlideButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "VagabondSpecial",
+          "6d1cd000-6ca9-4936-9a51-37821e517a69"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondHideoutButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "VagabondSpecial",
+          "d6c905fb-3d97-4b73-839b-408d1cda1fe6"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondInstigateButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "VagabondSpecial",
+          "db0cb48e-1cbd-4667-80fa-85d66f296118"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondScorchedEarthButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "VagabondSpecial",
+          "497f8f5f-be1b-4c7d-887b-6adf70edebdf"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondStealButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "VagabondSpecial",
+          "7377444f-e045-4c77-869e-377b75d2e128"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondDayLaborButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "VagabondSpecial",
+          "3d08f53b-9a23-48b1-bc1e-68fd555ac78b"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondGlideButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "VagabondSpecial",
+          "6d1cd000-6ca9-4936-9a51-37821e517a69"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondHideoutButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "VagabondSpecial",
+          "d6c905fb-3d97-4b73-839b-408d1cda1fe6"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondInstigateButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "VagabondSpecial",
+          "db0cb48e-1cbd-4667-80fa-85d66f296118"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondScorchedEarthButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "VagabondSpecial",
+          "497f8f5f-be1b-4c7d-887b-6adf70edebdf"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondStealButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "VagabondSpecial",
+          "7377444f-e045-4c77-869e-377b75d2e128"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "a3c64eaf-8a29-48f0-bfd3-c2dfcfaf742a"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceCraftButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "35820b25-8d37-485d-95a7-dc1e491b438c"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceMobilizeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "3749e444-41ce-416f-b833-f9e7c4f60332"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "9da388ae-dcc2-411b-b802-6da03a720c5e"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceOrganizeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "58fd70a7-a8c0-4ff7-b92b-bd23c50dd008"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceRecruitButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "8bbdd5f8-e451-4556-aa4c-91e88dbdae2e"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceRevoltButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "a244ff6f-d613-418b-8609-6d23d2bc3105"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceSpreadSympathyButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "0d730c70-e44d-4903-9be6-70be13b08805"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_AllianceTrainButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "WoodlandAlliance",
+          "1c52ddd9-5246-4894-9ba4-71b5daf611de"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CorvidBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "CorvidConspiracy",
+          "cfcf78fd-fbf0-4f0b-a13c-b3b70c77ac3a"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CorvidExertButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "CorvidConspiracy",
+          "35df1788-b513-4f63-ad02-da47c8e45265"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CorvidExposureButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "CorvidConspiracyOpponent",
+          "033558ed-5751-4f81-9b36-5eaf3b47e79a"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CorvidMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "CorvidConspiracy",
+          "d96e1c63-4960-4fad-af91-c4f625e4d218"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CorvidPlotButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "CorvidConspiracy",
+          "5ff5b03b-c5a8-4c43-b39d-e2edd5255493"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_CorvidTrickButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "CorvidConspiracy",
+          "319237be-0293-4669-be84-ba2701925ff1"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_DuchyBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "bf0f04d7-3f6d-4877-857f-417d21b7a86c",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_DuchyBuildButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "4bd33a5f-52a8-4ba8-95e1-13cc2b82fef6",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_DuchyDigButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "1bee3585-9c8d-4a6a-a7d3-7aa00e65ec3b",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_DuchyMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "b28e17c7-89dd-432e-9949-0d9adb29bc9a",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_DuchyRecruitButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "f865db71-4ee8-4e3b-b7b7-673cdcb0bf8f",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_EyrieCraftButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "EyrieDynasties",
+          "35820b25-8d37-485d-95a7-dc1e491b438c"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_HundredsBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "1b916f8f-5225-494d-a108-97383cf0b99c",
+          "LordOfTheHundreds"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_HundredsBuildButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "bd624f80-cc5e-4cfe-8ebf-8a15fb78a21a",
+          "LordOfTheHundreds"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_HundredsCraftForPointsButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LordOfTheHundreds",
+          "c644a540-c788-4a8b-8d35-2aba44daf010"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_HundredsCraftToHoardButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LordOfTheHundreds",
+          "7e3141b2-dbe0-46ff-80af-b0a1478187ed"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_HundredsMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "733c819a-b703-4416-8212-1fa13bbe84e1",
+          "LordOfTheHundreds"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardBuildButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "f263f8c6-0054-4b32-8783-af0e35836d79"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardConvertButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "865de63d-a6bf-40fe-acd2-fe8edbde4ec9"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardCrusadeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "452448f2-d906-481a-a882-25abbf06e8bf"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardMoveAndBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "54f71427-a9a2-4242-9a43-33c4bb6d91d7"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardRecruitButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "740b5646-260e-4463-b45c-98542b3488c9"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardSacrificeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "73b83017-8e64-4b7d-92a1-99aa47fa74b9"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardSanctifyButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "1928e5c9-37be-4f97-b527-b11cf4768da6"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_LizardScoreButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "LizardCult",
+          "1380b7a9-446b-4046-829c-f88cd9abee2e"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "a3c64eaf-8a29-48f0-bfd3-c2dfcfaf742a",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseBirdButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "765b65c7-83df-49f9-8f26-b3a699ec9686",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseBuildButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "6f05f4a3-7d0e-412e-b272-f0543934f427",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseCraftButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "MarquiseDeCat",
+          "35820b25-8d37-485d-95a7-dc1e491b438c"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseMarchButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "2e5ac526-b11d-460b-9a6f-cbe9fcff3a33",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseOverworkButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "9e2ee625-9376-43a9-9d7a-923166a77337",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_MarquiseRecruitButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "4d2d4ec7-6dd3-49d7-b339-ab60ce1ef60e",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkBattleButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "985fc7f9-e3d5-4634-b1f2-b8ce024a43f5"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkCraftButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "ad73dd7c-b3bc-4f92-982f-967a485d92d8"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkDrawButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "93e26866-1865-4875-8766-82bbf13c0e3a"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkEstablishTradePostButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "a8aa32ec-557e-4bba-ac88-4989a15eebe4"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkExportButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "50b778a1-2dc6-440d-975d-0c8db52abd8e"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "616b238b-abad-4125-98ea-b84438a27b16"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RiverfolkRecruitButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "RiverfolkCompany",
+          "1aa83c65-667f-4a04-b93b-2e7ac943de10"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondAidButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "38a24aa6-9b73-4986-80f2-91ad1dd60768"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondAttackButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "c637744a-42b0-4ad4-b82b-2352b150d7cf"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondCraftButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "35820b25-8d37-485d-95a7-dc1e491b438c"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondExploreButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "5d5df33b-d6d4-4676-8218-faf4eaa282fa"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "fc7e212c-0a07-4b79-860c-93f14b7679a9"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondQuestButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "319b3261-f246-4720-b28a-aa43bbea50f6"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondRepairButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "20d258f1-a45d-4f62-ab2d-7efa2d6b5313"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SecondVagabondStrikeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "SecondVagabond",
+          "d0f62d6b-135f-45bc-9164-0299dd06aeb6"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_TrailblazeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "d9f91775-c200-4230-9ca1-0996ad27c9f8",
+          "ClosedPass"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondAidButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "38a24aa6-9b73-4986-80f2-91ad1dd60768"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondAttackButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "c637744a-42b0-4ad4-b82b-2352b150d7cf"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondCraftButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "35820b25-8d37-485d-95a7-dc1e491b438c"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondExploreButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "5d5df33b-d6d4-4676-8218-faf4eaa282fa"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondMoveButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "fc7e212c-0a07-4b79-860c-93f14b7679a9"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondQuestButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "319b3261-f246-4720-b28a-aa43bbea50f6"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondRepairButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "20d258f1-a45d-4f62-ab2d-7efa2d6b5313"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_VagabondStrikeButton",
+      "Metadata": {
+        "flavors": [
+          "Ability",
+          "Vagabond",
+          "d0f62d6b-135f-45bc-9164-0299dd06aeb6"
+        ]
+      }
+    }
+  ]
+}

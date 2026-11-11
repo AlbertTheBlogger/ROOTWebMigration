@@ -1,0 +1,22 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 943378303319973216
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -7646509600764003950
+  },
+  "m_Name": "",
+  "logging": 0,
+  "initStrategy": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "OnPositionRemoved": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

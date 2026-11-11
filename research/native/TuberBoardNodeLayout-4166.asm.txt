@@ -1,0 +1,85 @@
+000000018197a810  mov      qword ptr [rsp + 8], rbx
+000000018197a815  mov      qword ptr [rsp + 0x10], rbp
+000000018197a81a  mov      qword ptr [rsp + 0x18], rsi
+000000018197a81f  push     rdi
+000000018197a820  sub      rsp, 0x20
+000000018197a824  cmp      byte ptr [rip + 0x130f28f], 0
+000000018197a82b  movzx    ebp, r9b
+000000018197a82f  mov      rsi, r8
+000000018197a832  mov      rdi, rdx
+000000018197a835  mov      rbx, rcx
+000000018197a838  jne      0x18197a865
+000000018197a83a  lea      rcx, [rip + 0x114618f]
+000000018197a841  call     0x1820df9b0
+000000018197a846  lea      rcx, [rip + 0x114b70b]
+000000018197a84d  call     0x1820df9b0
+000000018197a852  lea      rcx, [rip + 0x117fd57]
+000000018197a859  call     0x1820df9b0
+000000018197a85e  mov      byte ptr [rip + 0x130f255], 1
+000000018197a865  test     bpl, bpl
+000000018197a868  je       0x18197a88a
+000000018197a86a  cmp      qword ptr [rbx + 0x30], 0
+000000018197a86f  je       0x18197a88a
+000000018197a871  mov      r8, qword ptr [rip + 0x114b6e0]
+000000018197a878  mov      rdx, qword ptr [rbx + 0x30]
+000000018197a87c  mov      rcx, qword ptr [rbx + 0x28]
+000000018197a880  call     0x1802e0420
+000000018197a885  mov      rbp, rax
+000000018197a888  jmp      0x18197a88e
+000000018197a88a  mov      rbp, qword ptr [rbx + 0x28]
+000000018197a88e  test     rdi, rdi
+000000018197a891  je       0x18197a95c
+000000018197a897  xor      edx, edx
+000000018197a899  mov      rcx, rdi
+000000018197a89c  call     0x181693b10 ; TuberMatch.get_TuberPlaymat
+000000018197a8a1  test     rax, rax
+000000018197a8a4  je       0x18197a95c
+000000018197a8aa  mov      rcx, qword ptr [rax + 0x78]
+000000018197a8ae  test     rcx, rcx
+000000018197a8b1  je       0x18197a95c
+000000018197a8b7  xor      r8d, r8d
+000000018197a8ba  mov      rdx, rbp
+000000018197a8bd  call     0x1818d0620 ; TuberBoard.NodesAtIndices
+000000018197a8c2  mov      rdx, qword ptr [rip + 0x117fce7]
+000000018197a8c9  mov      rcx, rax
+000000018197a8cc  call     0x1802fbbe0
+000000018197a8d1  test     rsi, rsi
+000000018197a8d4  je       0x18197a95c
+000000018197a8da  xor      r8d, r8d
+000000018197a8dd  mov      rdx, rax
+000000018197a8e0  mov      rcx, rsi
+000000018197a8e3  call     0x1818ccae0 ; TuberBoardNode.WithNeighbors
+000000018197a8e8  cmp      qword ptr [rbx + 0x30], 0
+000000018197a8ed  je       0x18197a944
+000000018197a8ef  mov      rdx, qword ptr [rip + 0x11460da]
+000000018197a8f6  mov      rcx, qword ptr [rbx + 0x30]
+000000018197a8fa  call     0x1802d63b0
+000000018197a8ff  test     al, al
+000000018197a901  je       0x18197a944
+000000018197a903  xor      edx, edx
+000000018197a905  mov      rcx, rdi
+000000018197a908  call     0x181693b10 ; TuberMatch.get_TuberPlaymat
+000000018197a90d  test     rax, rax
+000000018197a910  je       0x18197a95c
+000000018197a912  mov      rcx, qword ptr [rax + 0x78]
+000000018197a916  test     rcx, rcx
+000000018197a919  je       0x18197a95c
+000000018197a91b  mov      rdx, qword ptr [rbx + 0x30]
+000000018197a91f  xor      r8d, r8d
+000000018197a922  call     0x1818d0620 ; TuberBoard.NodesAtIndices
+000000018197a927  mov      rdx, qword ptr [rip + 0x117fc82]
+000000018197a92e  mov      rcx, rax
+000000018197a931  call     0x1802fbbe0
+000000018197a936  xor      r8d, r8d
+000000018197a939  mov      rdx, rax
+000000018197a93c  mov      rcx, rsi
+000000018197a93f  call     0x1818cced0 ; TuberBoardNode.WithRiverNeighbors
+000000018197a944  mov      rbx, qword ptr [rsp + 0x30]
+000000018197a949  mov      rax, rsi
+000000018197a94c  mov      rsi, qword ptr [rsp + 0x40]
+000000018197a951  mov      rbp, qword ptr [rsp + 0x38]
+000000018197a956  add      rsp, 0x20
+000000018197a95a  pop      rdi
+000000018197a95b  ret      
+000000018197a95c  call     0x1820dfbd0
+000000018197a961  int3     

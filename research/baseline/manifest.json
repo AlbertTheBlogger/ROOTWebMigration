@@ -1,0 +1,30 @@
+{
+  "source_directory": "D:\\Albert Lee\\you_gotta_play\\games\\ROOT\\Root.The.Marauder.Expansion-GoldBerg",
+  "read_only": true,
+  "python": "3.12.1",
+  "tool": "tools/research_baseline.py",
+  "input_hashes": {
+    "Root_Data/StreamingAssets/aa/catalog.json": "3d48486f83599e3e59054176e21dcda2b35e836e601b36f7cefa2ac790acc81d",
+    "Root_Data/StreamingAssets/aa/settings.json": "505f51cbe15932fc5c242ac44fbfc464f0c61996c9231583dddab3086bf339dd",
+    "Root_Data/StreamingAssets/aa/AddressablesLink/link.xml": "878577e27e4daa9b754fe88b884a9c0d57eba87608a3fa1fb9166cfb1fb50621",
+    "Root_Data/il2cpp_data/Metadata/global-metadata.dat": "8a503fad4a10dbb24f74dcf40e7dbd3f4e9971622f3a3479f75a6bafa3d9a008",
+    "GameAssembly.dll": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9"
+  },
+  "source_executed": false,
+  "results": {
+    "image_count": 99,
+    "type_count": 17547,
+    "method_count": 98462,
+    "field_count": 66250,
+    "candidate_types": 2803,
+    "linked_types": 1052,
+    "topic_counts": {
+      "battle": 133,
+      "map": 59,
+      "card": 220,
+      "cat": 109,
+      "bird": 104,
+      "expansion": 429
+    }
+  }
+}

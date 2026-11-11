@@ -1,0 +1,20 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 3494484426634254475
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 3792400239863272930
+  },
+  "m_Name": "",
+  "openAnimation": {
+    "m_FileID": 0,
+    "m_PathID": -6004657665176431826
+  },
+  "closeAnimation": {
+    "m_FileID": 0,
+    "m_PathID": -1189523950266341055
+  }
+}

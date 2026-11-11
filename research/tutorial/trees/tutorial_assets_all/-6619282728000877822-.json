@@ -1,0 +1,56 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -4169441582997007290
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7699101208630634273
+  },
+  "m_Name": "",
+  "initialSelectionPriority": [],
+  "inputActions": [
+    {
+      "InputId": "Cancel",
+      "AdditionalInputIds": [],
+      "Action": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_TargetAssemblyTypeName": "",
+              "m_MethodName": "CancelInvoke",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      },
+      "PriorityNum": 100,
+      "inputModuleType": "Gamepad"
+    }
+  ],
+  "suppressGlobalInput": 0,
+  "layer": 19,
+  "contextCameraTag": "MainCamera",
+  "OnContextCreated": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

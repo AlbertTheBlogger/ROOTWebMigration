@@ -1,0 +1,605 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "basics",
+      "title": "基础操作",
+      "faction": "cat",
+      "summary": "认识地图、控制权、行军、战斗和分数。",
+      "steps": [
+        {
+          "id": "overview",
+          "title": "先看懂一张地图",
+          "text": "中间是秋季地图，左侧是玩家与公共物品，右侧是自己的信息和日志。领地外侧的圆形图标表示花色，小阵营图标表示控制者。点击玩家卡可看公开详情，点击手牌可看完整牌面。",
+          "goal": "read",
+          "actions": [],
+          "scene": "overview",
+          "result": "",
+          "sourceKeys": [
+            "tutorial1.turn1.suits",
+            "tutorial1.turn1.control"
+          ]
+        },
+        {
+          "id": "move",
+          "title": "把士兵送到相邻领地",
+          "text": "选择移动，起点选秋林0，终点选秋林3，再填写数量并确认。至少控制起点或终点才能移动。点选只是在准备，确认才会执行。",
+          "goal": "action",
+          "actions": [
+            "move"
+          ],
+          "scene": "basic-move",
+          "result": "你通过真实移动获得了新领地的控制。猫咪一次行军还可以再移动一次。",
+          "sourceKeys": [
+            "tutorial1.turn1.movelesson"
+          ]
+        },
+        {
+          "id": "march",
+          "title": "完成同一次行军的第二次移动",
+          "text": "从秋林3移动到提示的相邻空地。第二次移动不会再花费一个猫咪行动。也可以在正式对局中选择结束行军。",
+          "goal": "action",
+          "actions": [
+            "move"
+          ],
+          "scene": "basic-march",
+          "result": "两次移动组成一次行军。注意行动次数和移动次数的区别。",
+          "sourceKeys": [
+            "tutorial1.turn1.movelesson.2"
+          ]
+        },
+        {
+          "id": "battle",
+          "title": "观察士兵上限与建筑损失",
+          "text": "在秋林3发起战斗。这个练习的骰子固定为3/3，方便观察计算。士兵先承受伤害，剩余命中再移除建筑。无人防守会使攻击方多造成1点命中。",
+          "goal": "action",
+          "actions": [
+            "battle"
+          ],
+          "scene": "basic-battle",
+          "result": "查看日志中的骰子、战力上限和最终命中。摧毁敌方建筑或标记可以得分。",
+          "sourceKeys": [
+            "tutorial1.roostbattle"
+          ]
+        },
+        {
+          "id": "defenseless",
+          "title": "再打一次无人防守的鸟巢",
+          "text": "这次秋林3只有敌方鸟巢，没有防守士兵。你只有一名攻击士兵，练习骰子仍固定为3/3。发起战斗后，查看骰子命中上限和无人防守的额外命中。",
+          "goal": "action",
+          "actions": [
+            "battle"
+          ],
+          "scene": "basic-defenseless",
+          "result": "骰子部分最多造成1点命中，额外命中不受士兵数量限制。防守方没有士兵时，无法用骰子造成伤害。",
+          "sourceKeys": [
+            "tutorial1.roostintroduction",
+            "tutorial1.roostbattle"
+          ]
+        },
+        {
+          "id": "basic-finish",
+          "title": "把操作与结果连起来",
+          "text": "移动依赖道路和控制权，建造依赖空位，战斗依赖士兵与命中计算。正式对局通常先到30分获胜。接下来学习四个阵营各自如何得分。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial1.destroyroost"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cats",
+      "title": "猫咪贵族",
+      "faction": "cat",
+      "summary": "完成开局，体验木材、锻造、建造、招募与野战医院。",
+      "steps": [
+        {
+          "id": "cat-setup",
+          "title": "建立城堡和初始工业",
+          "text": "在高亮角落选择城堡，再依次放置锯木厂、工坊、征兵所。建筑必须位于城堡或相邻领地。每次点选后，在地块旁确认。",
+          "goal": "setup",
+          "actions": [
+            "choice"
+          ],
+          "scene": "cat-setup",
+          "result": "城堡限制敌方放置，三类建筑分别承担木材生产、锻造和招募。",
+          "sourceKeys": [
+            "tutorial2.setup.keep",
+            "tutorial2.setup.buildings"
+          ]
+        },
+        {
+          "id": "cat-wood",
+          "title": "清晨生产木材",
+          "text": "本节已摆好锯木厂。点击秋林1生产一枚木材。木材是建造费用，必须由你控制的领地连通到建造地点。",
+          "goal": "action",
+          "actions": [
+            "wood"
+          ],
+          "scene": "cat-wood",
+          "result": "生产木材后会进入白天的锻造阶段。",
+          "sourceKeys": [
+            "tutorial1.turn2.wood"
+          ]
+        },
+        {
+          "id": "cat-craft",
+          "title": "用工坊锻造手牌",
+          "text": "这张手牌需要一个兔子锻造点，秋林1的工坊正好提供。选择锻造并确认。卡牌花色与锻造费用是两种信息，要分别查看。",
+          "goal": "action",
+          "actions": [
+            "craft"
+          ],
+          "scene": "cat-craft",
+          "result": "锻造消耗本回合可用的锻造点，拿取公共物品并按牌面得分。",
+          "sourceKeys": [
+            "tutorial2.turn1.craftcost.a",
+            "tutorial2.turn1.suit"
+          ]
+        },
+        {
+          "id": "cat-build",
+          "title": "把木材变成建筑和分数",
+          "text": "选择建造，把建筑类型切换为工坊，在秋林1确认。这里有控制权、建筑空位和可用木材。",
+          "goal": "action",
+          "actions": [
+            "build"
+          ],
+          "scene": "cat-build",
+          "result": "建筑越造越多，后续费用和分数会变化。失去木材运输通路会影响扩张。",
+          "sourceKeys": [
+            "tutorial2.turn1.buildslot",
+            "tutorial2.turn2.prebuildingincrease"
+          ]
+        },
+        {
+          "id": "cat-recruit",
+          "title": "同时使用多个征兵所",
+          "text": "本节有两座征兵所。选择招募，按面板列出的两个领地各放一名士兵，再确认。一个招募行动会同时使用可用的征兵所。",
+          "goal": "action",
+          "actions": [
+            "recruit"
+          ],
+          "scene": "cat-recruit",
+          "result": "招募有士兵供应限制，同一回合通常只能招募一次。",
+          "sourceKeys": [
+            "tutorial1.turn2.daylight"
+          ]
+        },
+        {
+          "id": "cat-extra",
+          "title": "用飞鸟牌争取额外行动",
+          "text": "本节的三个行动已经用完，但你还有一张飞鸟牌。使用额外行动并支付这张牌。",
+          "goal": "action",
+          "actions": [
+            "extra"
+          ],
+          "scene": "cat-extra",
+          "result": "飞鸟牌既灵活又稀缺，额外行动也有机会成本。",
+          "sourceKeys": [
+            "tutorial2.turn1.actions"
+          ]
+        },
+        {
+          "id": "cat-hospital",
+          "title": "在防守后使用野战医院",
+          "text": "飞鹰正在攻击秋林3。先处理防守选择，然后在野战医院中支付匹配花色的手牌，将损失士兵救回城堡。练习骰子固定为3/3。",
+          "goal": "hospital",
+          "actions": [
+            "choice"
+          ],
+          "scene": "cat-hospital",
+          "result": "野战医院支付的是手牌，救回地点是城堡所在领地。",
+          "sourceKeys": [
+            "tutorial2.turn2.fhdiscard"
+          ]
+        },
+        {
+          "id": "cat-finish",
+          "title": "形成贵族的发展循环",
+          "text": "清晨生产木材，白天先锻造再使用三个行动，靠控制领地和木材通路持续建造。夜晚抽牌补充选择。军队负责保护工业和运输。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial2.faction.info"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eyrie",
+      "title": "飞鹰王朝",
+      "faction": "bird",
+      "summary": "把法令变成行动，体验鸟巢收益与动乱。",
+      "steps": [
+        {
+          "id": "bird-leader",
+          "title": "选择制裁者作为初始领袖",
+          "text": "本章先使用制裁者。选择他的领袖牌并确认，查看移动和建造列中的大臣。领袖决定初始法令，也有独特能力。",
+          "goal": "leader",
+          "actions": [
+            "choice"
+          ],
+          "scene": "bird-setup",
+          "result": "法令里的飞鸟可以匹配任意花色，给扩张留下空间。",
+          "sourceKeys": [
+            "tutorial3.opening.3",
+            "tutorial3.opening.5"
+          ]
+        },
+        {
+          "id": "bird-add",
+          "title": "添加一张能执行的招募法令",
+          "text": "你在兔子领地秋林1有鸟巢。把兔子手牌加入招募列，确认后继续。可以先最小化操作面板，查看地图，再展开填写。",
+          "goal": "action",
+          "actions": [
+            "decree-add"
+          ],
+          "scene": "bird-cycle",
+          "result": "加入法令只使用卡牌花色，不会发动这张牌的锻造效果。",
+          "sourceKeys": [
+            "tutorial3.Birdsong.2.b",
+            "tutorial3.turn4.hint.1"
+          ]
+        },
+        {
+          "id": "bird-execute",
+          "title": "依次完成法令",
+          "text": "开始执行法令，结束本节空的锻造阶段。先在秋林1招募，再从秋林1移动到秋林0，最后在秋林0建造鸟巢。注意当前待执行列。",
+          "goal": "two-roosts",
+          "actions": [
+            "decree-ready",
+            "craft-done",
+            "recruit",
+            "move",
+            "build"
+          ],
+          "scene": null,
+          "result": "你按招募、移动、战斗、建造的顺序完成了法令。空列会跳过。",
+          "sourceKeys": [
+            "tutorial3.recruit.1",
+            "tutorial3.move.1",
+            "tutorial3.build.1"
+          ]
+        },
+        {
+          "id": "bird-score",
+          "title": "进入夜晚查看鸟巢得分",
+          "text": "结束法令阶段。两座鸟巢会在夜晚带来分数，更多鸟巢会提高后续收益和抽牌能力。",
+          "goal": "action",
+          "actions": [
+            "end"
+          ],
+          "scene": null,
+          "result": "飞鹰主要依靠每个夜晚的鸟巢收入得分。",
+          "sourceKeys": [
+            "tutorial3.score.2",
+            "tutorial3.score.1"
+          ]
+        },
+        {
+          "id": "bird-turmoil",
+          "title": "亲眼看一次无法完成的法令",
+          "text": "本节招募列有一张狐狸牌，但地图上没有狐狸鸟巢。结束锻造，观察动乱及日志指出的失败法令。",
+          "goal": "turmoil",
+          "actions": [
+            "craft-done"
+          ],
+          "scene": "bird-turmoil",
+          "result": "法令有行动承诺。无法完整执行时会动乱，并按飞鸟牌失分。",
+          "sourceKeys": [
+            "tutorial3.turnthree.turmoil.1.cats",
+            "tutorial3.Turmoil.2"
+          ]
+        },
+        {
+          "id": "bird-recover",
+          "title": "更换领袖重新开始",
+          "text": "选择一位仍可用的新领袖。旧法令会被清理，新领袖带来新的大臣，随后度过夜晚。",
+          "goal": "action",
+          "actions": [
+            "leader"
+          ],
+          "scene": null,
+          "result": "安排法令时要同时考虑当前地图与未来回合。飞鸟增加灵活性，也增加动乱时的失分。",
+          "sourceKeys": [
+            "tutorial3.Turmoil.3",
+            "tutorial3.Turmoil.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alliance",
+      "title": "森林联盟",
+      "faction": "alliance",
+      "summary": "用支持者传播民意，起义建基地，再组织军事行动。",
+      "steps": [
+        {
+          "id": "wa-first",
+          "title": "用支持者传播第一枚民意",
+          "text": "你暂时没有军队。选择传播民意，在秋林0放置第一枚标记，自动支付匹配的支持者。支持者与手牌放在不同区域。",
+          "goal": "action",
+          "actions": [
+            "spread"
+          ],
+          "scene": "wa-spread",
+          "result": "第一枚民意不一定得分，后续分数和费用由民意条决定。",
+          "sourceKeys": [
+            "tutorial4.opening.2",
+            "tutorial4.sympathy.1"
+          ]
+        },
+        {
+          "id": "wa-wild",
+          "title": "沿相邻领地继续传播",
+          "text": "在相邻的秋林1传播民意。本节剩余支持者是飞鸟牌，它可以作为兔子牌支付。留意地块旁显示的实际支付花色。",
+          "goal": "action",
+          "actions": [
+            "spread"
+          ],
+          "scene": "wa-next",
+          "result": "有至少三名同一敌方士兵的领地会增加一张支持者费用，这就是戒严。",
+          "sourceKeys": [
+            "tutorial4.sympathy.2",
+            "tutorial4.law.1"
+          ]
+        },
+        {
+          "id": "wa-mobilize",
+          "title": "把两张手牌动员为支持者",
+          "text": "使用动员两次。手牌变成支持者后，便能用于之后的起义或传播。没有基地时，支持者上限为五张。",
+          "goal": "twice",
+          "actions": [
+            "mobilize"
+          ],
+          "scene": "wa-mobilize",
+          "result": "公开日志只写动员数量，其他玩家看不到你的支持者内容。",
+          "sourceKeys": [
+            "tutorial4.mobilize.1"
+          ]
+        },
+        {
+          "id": "wa-revolt",
+          "title": "花费两张支持者发动起义",
+          "text": "在有民意的秋林0发动起义，支付两张狐狸或飞鸟支持者。观察敌方棋子被移除、基地建立、士兵与长官出现。",
+          "goal": "action",
+          "actions": [
+            "revolt"
+          ],
+          "scene": "wa-revolt",
+          "result": "基地每种花色只能有一座，起义产生的士兵数量取决于该花色民意。",
+          "sourceKeys": [
+            "tutorial4.turn2.revolt.2",
+            "tutorial4.turn2.revolt.3"
+          ]
+        },
+        {
+          "id": "wa-train",
+          "title": "训练第二名长官",
+          "text": "完成起义阶段和传播阶段，进入白天。用一张匹配基地花色的手牌训练长官。这里的士兵和长官共享十个供应。",
+          "goal": "two-officers",
+          "actions": [
+            "revolt-done",
+            "spread-done",
+            "train"
+          ],
+          "scene": null,
+          "result": "长官数量决定夜晚可进行多少次军事行动。",
+          "sourceKeys": [
+            "tutorial4.organize.training",
+            "tutorial4.organize.training.supply"
+          ]
+        },
+        {
+          "id": "wa-organize",
+          "title": "移动后组织一枚民意",
+          "text": "结束白天，进入夜晚。先从秋林0移动一名士兵到秋林1，再在那里组织，把这名士兵收回供应并放置民意。",
+          "goal": "organized",
+          "actions": [
+            "end",
+            "move",
+            "organize"
+          ],
+          "scene": null,
+          "result": "移动和组织分别花一次军事行动。士兵回到供应，可以留给未来招募或训练。",
+          "sourceKeys": [
+            "tutorial4.turn2.evening.1",
+            "tutorial4.organize.goal"
+          ]
+        },
+        {
+          "id": "wa-recruit",
+          "title": "在基地招募士兵",
+          "text": "这个夜晚练习保留一名长官和一座基地。在秋林0招募一名士兵，观察军事行动次数减少。",
+          "goal": "action",
+          "actions": [
+            "recruit"
+          ],
+          "scene": "wa-recruit",
+          "result": "联盟不能随处招募，基地和供应都很重要。",
+          "sourceKeys": [
+            "tutorial4.turn2.evening.2"
+          ]
+        },
+        {
+          "id": "wa-outrage",
+          "title": "读懂一次民愤补偿",
+          "text": "本节已让猫咪进入民意领地。它没有匹配手牌，联盟会从牌堆获得补偿。本节特意安排没有基地且已有五张支持者，查看日志如何说明补偿牌因上限被弃置。",
+          "goal": "read",
+          "actions": [],
+          "scene": "wa-outrage",
+          "result": "",
+          "sourceKeys": [
+            "tutorial4.fivesupporters"
+          ]
+        },
+        {
+          "id": "wa-base-loss",
+          "title": "观察基地被摧毁的后果",
+          "text": "飞鹰正在攻击只有基地的秋林0。处理防守选择后查看支持者和长官。该花色及飞鸟支持者会弃置，长官失去一半并向上取整。练习骰子固定为3/3。",
+          "goal": "base-lost",
+          "actions": [
+            "choice"
+          ],
+          "scene": "wa-base-loss",
+          "result": "基地也是支持者容量和军事行动的支点，需要保护。",
+          "sourceKeys": [
+            "tutorial4.baseremoved1"
+          ]
+        },
+        {
+          "id": "wa-finish",
+          "title": "把联盟的两种资源连起来",
+          "text": "清晨用支持者传播或起义，白天锻造、动员和训练，夜晚由长官指挥移动、招募、战斗与组织。传播民意是主要得分来源。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial4.goal.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vagabond",
+      "title": "神秘游侠",
+      "faction": "vagabond",
+      "summary": "管理物品状态，练习潜行、探索、援助、任务与角色能力。",
+      "steps": [
+        {
+          "id": "vg-character",
+          "title": "以盗贼开始练习",
+          "text": "本章使用盗贼，先确认角色牌，再选择起始森林。盗贼能偷窃手牌。普通对局还可选工匠（拿取匹配弃牌）或猎人（修复物品并结束白天），三种特殊能力都需要火把。",
+          "goal": "setup",
+          "actions": [
+            "choice"
+          ],
+          "scene": "vg-setup",
+          "result": "游侠只有一个棋子，物品承担行动能力，不能像其他阵营那样建造和招募。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ]
+        },
+        {
+          "id": "vg-refresh",
+          "title": "恢复耗竭物品",
+          "text": "查看物品的可用、耗竭和损坏状态。先恢复本节耗竭的靴子和火把。茶壶会增加清晨可恢复的数量，损坏物品还需要修复。",
+          "goal": "refreshed",
+          "actions": [
+            "refresh"
+          ],
+          "scene": "vg-refresh",
+          "result": "恢复与修复处理的是不同状态。做动作前要检查所需物品。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ]
+        },
+        {
+          "id": "vg-slip",
+          "title": "清晨免费潜行",
+          "text": "完成恢复，然后从森林12潜行到秋林0。潜行不消耗靴子，普通白天移动会消耗靴子。游侠自身移动不受领地控制限制。",
+          "goal": "slipped",
+          "actions": [
+            "refresh-done",
+            "slip"
+          ],
+          "scene": null,
+          "result": "潜行是清晨的机会，结束后进入白天。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ]
+        },
+        {
+          "id": "vg-explore",
+          "title": "用火把探索遗迹",
+          "text": "在当前领地探索遗迹。消耗火把，取得预置的遗迹物品并得分，同时腾出一个建筑空位。",
+          "goal": "action",
+          "actions": [
+            "explore"
+          ],
+          "scene": "vg-explore",
+          "result": "探索会扩展你的物品组合，让之后能做的事更多。",
+          "sourceKeys": [
+            "tutorial5.goal.2"
+          ]
+        },
+        {
+          "id": "vg-aid",
+          "title": "同一回合援助联盟两次",
+          "text": "用匹配领地的手牌援助森林联盟两次，每次再耗竭一件可用物品。选项中也可以拿取对方已有的锻造物品。留意手牌和关系变化。",
+          "goal": "twice",
+          "actions": [
+            "aid"
+          ],
+          "scene": "vg-aid",
+          "result": "关系提升有本回合援助次数要求，盟友和敌对关系会影响后续得分与互动。",
+          "sourceKeys": [
+            "tutorial5.goal.1"
+          ]
+        },
+        {
+          "id": "vg-quest",
+          "title": "为任务支付两件物品",
+          "text": "查看公开任务，在秋林0完成当前可做的任务。需要耗竭两件指定物品，再选择抽牌或得分。可以先点击任务牌查看要求。",
+          "goal": "action",
+          "actions": [
+            "quest"
+          ],
+          "scene": "vg-quest",
+          "result": "任务按花色累计，重复完成同花色任务时要比较得分和补牌的价值。",
+          "sourceKeys": [
+            "tutorial5.goal.3"
+          ]
+        },
+        {
+          "id": "vg-steal",
+          "title": "使用盗贼的偷窃",
+          "text": "在当前领地对猫咪使用偷窃，消耗火把，随机拿取它的一张手牌。对手手牌内容事先仍然保密。",
+          "goal": "action",
+          "actions": [
+            "special"
+          ],
+          "scene": "vg-steal",
+          "result": "角色能力也占用物品资源，火把还要用于探索，不能同时无限使用。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ]
+        },
+        {
+          "id": "vg-rest",
+          "title": "在森林里过夜",
+          "text": "本节游侠位于森林，部分物品损坏或耗竭。结束白天，在夜晚观察森林休整恢复物品，再抽牌。",
+          "goal": "rested",
+          "actions": [
+            "end"
+          ],
+          "scene": "vg-rest",
+          "result": "进入森林休整能恢复行动能力，但也暂时离开了任务和其他阵营。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ]
+        },
+        {
+          "id": "vg-finish",
+          "title": "为下一回合保留物品",
+          "text": "把潜行、探索、援助、任务和特殊能力串起来。背包影响容量，茶壶影响恢复，钱币影响夜晚抽牌，剑影响战斗。正式对局里按照可用物品规划行动。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial5.goal.4"
+          ]
+        }
+      ]
+    }
+  ]
+}

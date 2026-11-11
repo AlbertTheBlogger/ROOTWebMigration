@@ -1,0 +1,78 @@
+0x181964670 push     rdi   
+0x181964672 sub      rsp, 0x20   
+0x181964676 cmp      byte ptr [rip + 0x13253f5], 0   
+0x18196467d mov      rdi, rcx   
+0x181964680 jne      0x1819646b9   
+0x181964682 lea      rcx, [rip + 0x1162b3f]   
+0x181964689 call     0x1820df9b0   
+0x18196468e lea      rcx, [rip + 0x1179703]   
+0x181964695 call     0x1820df9b0   
+0x18196469a lea      rcx, [rip + 0x1197797]   
+0x1819646a1 call     0x1820df9b0   
+0x1819646a6 lea      rcx, [rip + 0x116ddf3]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1819646ad call     0x1820df9b0   
+0x1819646b2 mov      byte ptr [rip + 0x13253b9], 1   
+0x1819646b9 mov      rax, qword ptr [rdi + 0xd0]   
+0x1819646c0 mov      qword ptr [rsp + 0x30], rbx   
+0x1819646c5 test     rax, rax   
+0x1819646c8 je       0x18196477b   
+0x1819646ce mov      rbx, qword ptr [rax + 0x48]   
+0x1819646d2 test     rbx, rbx   
+0x1819646d5 je       0x18196477b   
+0x1819646db mov      ebx, dword ptr [rbx + 0x18]   
+0x1819646de mov      qword ptr [rsp + 0x38], rsi   
+0x1819646e3 mov      rsi, rax   
+0x1819646e6 mov      rax, qword ptr [rip + 0x116ddb3]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1819646ed cmp      dword ptr [rax + 0xe0], 0   
+0x1819646f4 jne      0x181964705   
+0x1819646f6 mov      rcx, rax   
+0x1819646f9 call     0x1820dfc70   
+0x1819646fe mov      rax, qword ptr [rip + 0x116dd9b]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181964705 mov      rax, qword ptr [rax + 0xb8]   
+0x18196470c mov      rcx, qword ptr [rip + 0x1162ab5]   
+0x181964713 mov      rdi, qword ptr [rax + 0x128]   
+0x18196471a call     0x181f3b320   
+0x18196471f mov      r9, qword ptr [rip + 0x1197712]   
+0x181964726 mov      r8, rax   
+0x181964729 mov      rdx, rdi   
+0x18196472c mov      rcx, rsi   
+0x18196472f call     0x18032ac80   
+0x181964734 mov      rsi, qword ptr [rsp + 0x38]   
+0x181964739 mov      rcx, rax   
+0x18196473c test     ebx, ebx   
+0x18196473e jle      0x18196476e   
+0x181964740 test     rax, rax   
+0x181964743 je       0x18196477b   
+0x181964745 cmp      ebx, dword ptr [rax + 0x18]   
+0x181964748 jg       0x18196476e   
+0x18196474a mov      eax, dword ptr [rax + 0x18]   
+0x18196474d sub      eax, ebx   
+0x18196474f cmp      eax, dword ptr [rcx + 0x18]   
+0x181964752 jae      0x181964781   
+0x181964754 cdqe        
+0x181964756 mov      rax, qword ptr [rcx + rax*8 + 0x20]   
+0x18196475b test     rax, rax   
+0x18196475e je       0x18196477b   
+0x181964760 mov      eax, dword ptr [rax + 0x14]   
+0x181964763 mov      rbx, qword ptr [rsp + 0x30]   
+0x181964768 add      rsp, 0x20   
+0x18196476c pop      rdi   
+0x18196476d ret         
+0x18196476e mov      rbx, qword ptr [rsp + 0x30]   
+0x181964773 xor      eax, eax   
+0x181964775 add      rsp, 0x20   
+0x181964779 pop      rdi   
+0x18196477a ret         
+0x18196477b call     0x1820dfbd0   
+0x181964780 int3        
+0x181964781 call     0x1820dfbc0   
+0x181964786 int3        
+0x181964787 int3        
+0x181964788 int3        
+0x181964789 int3        
+0x18196478a int3        
+0x18196478b int3        
+0x18196478c int3        
+0x18196478d int3        
+0x18196478e int3        
+0x18196478f int3        

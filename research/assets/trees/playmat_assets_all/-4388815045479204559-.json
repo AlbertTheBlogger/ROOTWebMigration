@@ -1,0 +1,18 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 918462259361937869
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 3945820374313880023
+  },
+  "m_Name": "",
+  "tooltipPrefab": {
+    "m_FileID": 2,
+    "m_PathID": 1634594655616790120
+  },
+  "localizationKey": "none",
+  "WarnIfEmpty": 1
+}

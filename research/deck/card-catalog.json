@@ -1,0 +1,642 @@
+{
+  "source_sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "deck_field": "StandardDecks.DrawDeck",
+  "total": 50,
+  "cards": [
+    {
+      "type": "FavoroftheFoxesFox",
+      "name": "狐之援助",
+      "suit": "fox",
+      "count": 1,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814b58f0"
+    },
+    {
+      "type": "FavoroftheMiceMouse",
+      "name": "鼠之援助",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814b5e30"
+    },
+    {
+      "type": "FavoroftheRabbitsRabbit",
+      "name": "兔之援助",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814b6370"
+    },
+    {
+      "type": "AVisittoFriendsRabbit",
+      "name": "拜访好友",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814a6df6",
+        "array_write_vas": [],
+        "points_va": "0x1814a6f5d"
+      },
+      "item": "boot",
+      "constructor_va": "0x1814a6ac0"
+    },
+    {
+      "type": "BakeSaleRabbit",
+      "name": "售卖蛋糕",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "evidence": {
+        "cost_attribute_va": "0x1814aa226",
+        "array_write_vas": [],
+        "points_va": "0x1814aa38d"
+      },
+      "item": "coin",
+      "constructor_va": "0x1814a9ef0"
+    },
+    {
+      "type": "TravelGearMouse",
+      "name": "旅行装备",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814c8cd7",
+        "array_write_vas": [],
+        "points_va": "0x1814c8e3e"
+      },
+      "item": "boot",
+      "constructor_va": "0x1814c89a0"
+    },
+    {
+      "type": "SmugglersTrailRabbit",
+      "name": "走私路线",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814c49a6",
+        "array_write_vas": [
+          "0x1814c49cb"
+        ],
+        "points_va": "0x1814c4b0d"
+      },
+      "item": "bag",
+      "constructor_va": "0x1814c4640"
+    },
+    {
+      "type": "RootTeaRabbit",
+      "name": "草根茶",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814c1cc6",
+        "array_write_vas": [
+          "0x1814c1ceb"
+        ],
+        "points_va": "0x1814c1e46"
+      },
+      "item": "tea",
+      "constructor_va": "0x1814c1960"
+    },
+    {
+      "type": "InvestmentsMouse",
+      "name": "投资",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "evidence": {
+        "cost_attribute_va": "0x1814b9127",
+        "array_write_vas": [],
+        "points_va": "0x1814b928e"
+      },
+      "item": "coin",
+      "constructor_va": "0x1814b8df0"
+    },
+    {
+      "type": "BirdyBindleBird",
+      "name": "飞鹰行囊",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814aaf67",
+        "array_write_vas": [
+          "0x1814aaf8c"
+        ],
+        "points_va": "0x1814ab0ce"
+      },
+      "item": "bag",
+      "constructor_va": "0x1814aac00"
+    },
+    {
+      "type": "RootTeaMouse",
+      "name": "草根茶",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814c1577",
+        "array_write_vas": [
+          "0x1814c159c"
+        ],
+        "points_va": "0x1814c16f7"
+      },
+      "item": "tea",
+      "constructor_va": "0x1814c1210"
+    },
+    {
+      "type": "SwordMouse",
+      "name": "长剑",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814c6e37",
+        "array_write_vas": [
+          "0x1814c6e5c",
+          "0x1814c6e6d"
+        ],
+        "points_va": "0x1814c6fc8"
+      },
+      "item": "sword",
+      "constructor_va": "0x1814c6b00"
+    },
+    {
+      "type": "WoodlandRunnersBird",
+      "name": "林地跑者",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814ce007",
+        "array_write_vas": [],
+        "points_va": "0x1814ce16e"
+      },
+      "item": "boot",
+      "constructor_va": "0x1814cdcd0"
+    },
+    {
+      "type": "TravelGearFox",
+      "name": "旅行装备",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814c8637",
+        "array_write_vas": [],
+        "points_va": "0x1814c879e"
+      },
+      "item": "boot",
+      "constructor_va": "0x1814c8300"
+    },
+    {
+      "type": "AnvilFox",
+      "name": "铁砧",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814a8787",
+        "array_write_vas": [
+          "0x1814a87ac"
+        ],
+        "points_va": "0x1814a8907"
+      },
+      "item": "hammer",
+      "constructor_va": "0x1814a8450"
+    },
+    {
+      "type": "GentlyUsedKnapsackFox",
+      "name": "半新小袋",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814b8357",
+        "array_write_vas": [
+          "0x1814b837c"
+        ],
+        "points_va": "0x1814b84be"
+      },
+      "item": "bag",
+      "constructor_va": "0x1814b7ff0"
+    },
+    {
+      "type": "MouseinaSackMouse",
+      "name": "老鼠口袋",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814bd7a7",
+        "array_write_vas": [
+          "0x1814bd7cc"
+        ],
+        "points_va": "0x1814bd90e"
+      },
+      "item": "bag",
+      "constructor_va": "0x1814bd440"
+    },
+    {
+      "type": "CrossbowBird",
+      "name": "十字弩",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814b15c7",
+        "array_write_vas": [
+          "0x1814b15ec"
+        ],
+        "points_va": "0x1814b1747"
+      },
+      "item": "crossbow",
+      "constructor_va": "0x1814b1290"
+    },
+    {
+      "type": "ProtectionRacketFox",
+      "name": "保护费",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "evidence": {
+        "cost_attribute_va": "0x1814bf177",
+        "array_write_vas": [],
+        "points_va": "0x1814bf2de"
+      },
+      "item": "coin",
+      "constructor_va": "0x1814bee40"
+    },
+    {
+      "type": "ArmsTraderBird",
+      "name": "武器商",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814a94a7",
+        "array_write_vas": [
+          "0x1814a94cc",
+          "0x1814a94dd"
+        ],
+        "points_va": "0x1814a9638"
+      },
+      "item": "sword",
+      "constructor_va": "0x1814a9170"
+    },
+    {
+      "type": "CrossbowMouse",
+      "name": "十字弩",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 1,
+      "evidence": {
+        "cost_attribute_va": "0x1814b1c77",
+        "array_write_vas": [
+          "0x1814b1c9c"
+        ],
+        "points_va": "0x1814b1df7"
+      },
+      "item": "crossbow",
+      "constructor_va": "0x1814b1940"
+    },
+    {
+      "type": "FoxfolkSteelFox",
+      "name": "狐族钢剑",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814b7c67",
+        "array_write_vas": [
+          "0x1814b7c8c",
+          "0x1814b7c9d"
+        ],
+        "points_va": "0x1814b7df8"
+      },
+      "item": "sword",
+      "constructor_va": "0x1814b7930"
+    },
+    {
+      "type": "RootTeaFox",
+      "name": "草根茶",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "evidence": {
+        "cost_attribute_va": "0x1814c0e27",
+        "array_write_vas": [
+          "0x1814c0e4c"
+        ],
+        "points_va": "0x1814c0fa7"
+      },
+      "item": "tea",
+      "constructor_va": "0x1814c0ac0"
+    },
+    {
+      "type": "ScoutingPartyMouse",
+      "name": "侦查团",
+      "suit": "mouse",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814c3720"
+    },
+    {
+      "type": "CobblerRabbit",
+      "name": "补鞋匠",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814ae800"
+    },
+    {
+      "type": "CommandWarrenRabbit",
+      "name": "指挥所",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814afa80"
+    },
+    {
+      "type": "BetterBurrowBankRabbit",
+      "name": "好利银行",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814aa590"
+    },
+    {
+      "type": "TaxCollectorFox",
+      "name": "征税官",
+      "suit": "fox",
+      "count": 3,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814c71c0"
+    },
+    {
+      "type": "CodebreakersMouse",
+      "name": "密码破译",
+      "suit": "mouse",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814aee40"
+    },
+    {
+      "type": "RoyalClaimBird",
+      "name": "加冕",
+      "suit": "wild",
+      "count": 1,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814c2460"
+    },
+    {
+      "type": "StandandDeliverFox",
+      "name": "拦路抢劫",
+      "suit": "fox",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814c5730"
+    },
+    {
+      "type": "SappersBird",
+      "name": "陷阱挖掘",
+      "suit": "wild",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814c30c0"
+    },
+    {
+      "type": "ArmorersBird",
+      "name": "铠甲兵",
+      "suit": "wild",
+      "count": 2,
+      "kind": "armorers",
+      "cost": [
+        "fox"
+      ],
+      "constructor_va": "0x1814a8b00"
+    },
+    {
+      "type": "BrutalTacticsBird",
+      "name": "野蛮战术",
+      "suit": "wild",
+      "count": 2,
+      "kind": "unimplemented",
+      "cost": null,
+      "constructor_va": "0x1814abcf0"
+    },
+    {
+      "type": "AmbushRabbit",
+      "name": "奇袭！",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null,
+      "constructor_va": "0x1814a8010"
+    },
+    {
+      "type": "AmbushBird",
+      "name": "奇袭！",
+      "suit": "wild",
+      "count": 2,
+      "kind": "ambush",
+      "cost": null,
+      "constructor_va": "0x1814a7350"
+    },
+    {
+      "type": "AmbushFox",
+      "name": "奇袭！",
+      "suit": "fox",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null,
+      "constructor_va": "0x1814a7790"
+    },
+    {
+      "type": "AmbushMouse",
+      "name": "奇袭！",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null,
+      "constructor_va": "0x1814a7bd0"
+    }
+  ],
+  "item_supply": {
+    "bag": 2,
+    "boot": 2,
+    "crossbow": 1,
+    "hammer": 1,
+    "sword": 2,
+    "tea": 2,
+    "coin": 2
+  },
+  "supply_evidence": [
+    {
+      "item": "bag",
+      "enum": 0,
+      "call_va": "0x181920840"
+    },
+    {
+      "item": "bag",
+      "enum": 0,
+      "call_va": "0x18192084d"
+    },
+    {
+      "item": "boot",
+      "enum": 1,
+      "call_va": "0x18192085c"
+    },
+    {
+      "item": "boot",
+      "enum": 1,
+      "call_va": "0x18192086b"
+    },
+    {
+      "item": "crossbow",
+      "enum": 2,
+      "call_va": "0x18192087a"
+    },
+    {
+      "item": "hammer",
+      "enum": 3,
+      "call_va": "0x181920889"
+    },
+    {
+      "item": "sword",
+      "enum": 4,
+      "call_va": "0x181920898"
+    },
+    {
+      "item": "sword",
+      "enum": 4,
+      "call_va": "0x1819208a7"
+    },
+    {
+      "item": "tea",
+      "enum": 5,
+      "call_va": "0x1819208b6"
+    },
+    {
+      "item": "tea",
+      "enum": 5,
+      "call_va": "0x1819208c5"
+    },
+    {
+      "item": "coin",
+      "enum": 7,
+      "call_va": "0x1819208d4"
+    },
+    {
+      "item": "coin",
+      "enum": 7,
+      "call_va": "0x1819208e3"
+    }
+  ],
+  "limits": [
+    "DominanceCards is a separate original static list, not merged into this DrawDeck export.",
+    "Unimplemented effects are marked explicitly.",
+    "Armorers cost independently checked in its constructor; suit labels also checked against type suffixes."
+  ]
+}

@@ -1,0 +1,87 @@
+0000000181755700  mov      qword ptr [rsp + 0x10], rbx
+0000000181755705  mov      qword ptr [rsp + 0x18], rbp
+000000018175570a  push     rdi
+000000018175570b  sub      rsp, 0x20
+000000018175570f  cmp      byte ptr [rip + 0x15333b9], 0
+0000000181755716  mov      rbp, rdx
+0000000181755719  mov      rdi, rcx
+000000018175571c  jne      0x181755731
+000000018175571e  lea      rcx, [rip + 0x13529b3]
+0000000181755725  call     0x1820df9b0
+000000018175572a  mov      byte ptr [rip + 0x153339e], 1
+0000000181755731  mov      rcx, qword ptr [rip + 0x13529a0]
+0000000181755738  mov      qword ptr [rsp + 0x30], rsi
+000000018175573d  call     0x1820dfb80
+0000000181755742  xor      edx, edx
+0000000181755744  mov      rcx, rax
+0000000181755747  mov      rbx, rax
+000000018175574a  call     0x180001be0 ; ConditionalCardValuation..ctor, EyrieRestoreRoostUndo..ctor, EyrieReturnToDecreeUndo..ctor
+000000018175574f  test     rbx, rbx
+0000000181755752  je       0x18175583e
+0000000181755758  movzx    ecx, byte ptr [rdi + 0x28]
+000000018175575c  xor      esi, esi
+000000018175575e  mov      byte ptr [rbx + 0x20], cl
+0000000181755761  movzx    ecx, byte ptr [rdi + 0x29]
+0000000181755765  mov      byte ptr [rbx + 0x21], cl
+0000000181755768  movzx    ecx, byte ptr [rdi + 0x2a]
+000000018175576c  mov      byte ptr [rbx + 0x22], cl
+000000018175576f  mov      rdx, qword ptr [rdi + 0x38]
+0000000181755773  test     rdx, rdx
+0000000181755776  je       0x18175577e
+0000000181755778  mov      rdx, qword ptr [rdx + 0x50]
+000000018175577c  jmp      0x181755781
+000000018175577e  mov      rdx, rsi
+0000000181755781  lea      rcx, [rbx + 0x28]
+0000000181755785  mov      qword ptr [rbx + 0x28], rdx
+0000000181755789  call     0x1820decd0
+000000018175578e  mov      rdx, qword ptr [rdi + 0x40]
+0000000181755792  test     rdx, rdx
+0000000181755795  je       0x18175579d
+0000000181755797  mov      rdx, qword ptr [rdx + 0x50]
+000000018175579b  jmp      0x1817557a0
+000000018175579d  mov      rdx, rsi
+00000001817557a0  lea      rcx, [rbx + 0x30]
+00000001817557a4  mov      qword ptr [rbx + 0x30], rdx
+00000001817557a8  call     0x1820decd0
+00000001817557ad  mov      rdx, qword ptr [rdi + 0x48]
+00000001817557b1  test     rdx, rdx
+00000001817557b4  je       0x1817557bc
+00000001817557b6  mov      rdx, qword ptr [rdx + 0x50]
+00000001817557ba  jmp      0x1817557bf
+00000001817557bc  mov      rdx, rsi
+00000001817557bf  lea      rcx, [rbx + 0x38]
+00000001817557c3  mov      qword ptr [rbx + 0x38], rdx
+00000001817557c7  call     0x1820decd0
+00000001817557cc  movzx    eax, byte ptr [rdi + 0x2b]
+00000001817557d0  mov      byte ptr [rbx + 0x40], al
+00000001817557d3  movzx    eax, byte ptr [rdi + 0x2c]
+00000001817557d7  mov      byte ptr [rbx + 0x41], al
+00000001817557da  mov      rcx, qword ptr [rdi + 0x50]
+00000001817557de  test     rcx, rcx
+00000001817557e1  je       0x18175583e
+00000001817557e3  mov      r8, qword ptr [rcx]
+00000001817557e6  mov      rdx, rbp
+00000001817557e9  mov      rax, qword ptr [r8 + 0x188]
+00000001817557f0  mov      r8, qword ptr [r8 + 0x190]
+00000001817557f7  call     rax
+00000001817557f9  lea      rcx, [rbx + 0x48]
+00000001817557fd  mov      qword ptr [rbx + 0x48], rax
+0000000181755801  mov      rdx, rax
+0000000181755804  call     0x1820decd0
+0000000181755809  mov      rax, qword ptr [rdi + 0x30]
+000000018175580d  test     rax, rax
+0000000181755810  je       0x181755816
+0000000181755812  mov      rsi, qword ptr [rax + 0x50]
+0000000181755816  lea      rcx, [rbx + 0x50]
+000000018175581a  mov      qword ptr [rbx + 0x50], rsi
+000000018175581e  mov      rdx, rsi
+0000000181755821  call     0x1820decd0
+0000000181755826  mov      rsi, qword ptr [rsp + 0x30]
+000000018175582b  mov      rax, rbx
+000000018175582e  mov      rbx, qword ptr [rsp + 0x38]
+0000000181755833  mov      rbp, qword ptr [rsp + 0x40]
+0000000181755838  add      rsp, 0x20
+000000018175583c  pop      rdi
+000000018175583d  ret      
+000000018175583e  call     0x1820dfbd0
+0000000181755843  int3     

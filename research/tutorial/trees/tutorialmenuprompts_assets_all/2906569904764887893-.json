@@ -1,0 +1,17 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -2740288347750128783
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 9165481456145500156
+  },
+  "m_Name": "",
+  "sounds": [
+    "modalopen",
+    "modalclose"
+  ],
+  "conditionallySkipMatchStartAudio": 1
+}

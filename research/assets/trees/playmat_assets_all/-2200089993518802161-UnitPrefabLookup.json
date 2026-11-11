@@ -1,0 +1,2363 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3551471191982668816
+  },
+  "m_Name": "UnitPrefabLookup",
+  "defaultPathRoot": "Assets/Resources_moved/",
+  "folder": "UnitPrefabs",
+  "simplifyNames": 1,
+  "entries": [
+    {
+      "ResourcePath": "BirdWarrior_Emigre_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "EyrieDynasties",
+          "!Fund",
+          "Boat",
+          "Cosmetic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BirdWarrior_Emigre_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "EyrieDynasties",
+          "!Fund",
+          "Ferry",
+          "Cosmetic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CatWarrior_Boat_MustacheSkin",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MarquiseDeCat",
+          "!Fund",
+          "Boat",
+          "Cosmetic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CatWarrior_Ferry_MustacheSkin",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MarquiseDeCat",
+          "!Fund",
+          "Ferry",
+          "Cosmetic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "AllianceWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "WoodlandAlliance",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "AllianceWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "WoodlandAlliance",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BirdWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "EyrieDynasties",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BirdWarrior_Emigre",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "EyrieDynasties",
+          "!Fund",
+          "Cosmetic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BirdWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "EyrieDynasties",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingBaseInfoUI",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Base",
+          "WoodlandAlliance",
+          "UI",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingKeepersWaystation_Figure_BackJ",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "!UI",
+          "Figure",
+          "BackJewelry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingKeepersWaystation_Figure_BackT",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "!UI",
+          "Figure",
+          "BackTablet"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingKeepersWaystation_Jewelry_BackF",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "!UI",
+          "Jewelry",
+          "BackFigure"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingKeepersWaystation_Jewelry_BackT",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "!UI",
+          "Jewelry",
+          "BackTablet"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingKeepersWaystation_Tablet_BackF",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "!UI",
+          "Tablet",
+          "BackFigure"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingKeepersWaystation_Tablet_BackJ",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "!UI",
+          "Tablet",
+          "BackJewelry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CatWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MarquiseDeCat",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CatWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MarquiseDeCat",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CatWarrior_MustacheSkin",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MarquiseDeCat",
+          "!Fund",
+          "Cosmetic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CorvidWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "CorvidConspiracy",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CorvidWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "CorvidConspiracy",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DuchyWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "UndergroundDuchy",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DuchyWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "UndergroundDuchy",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "LordOfTheHundreds",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "LordOfTheHundreds",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "KeepersWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "KeepersInIron",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "KeepersWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "KeepersInIron",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "LizardWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "LizardCult",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "LizardWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "LizardCult",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "RiverfolkWarrior_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "RiverfolkCompany",
+          "!Fund",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "RiverfolkWarrior_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "RiverfolkCompany",
+          "!Fund",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Adventurer_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Adventurer",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Adventurer_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Adventurer",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Arbiter_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Arbiter",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Arbiter_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Arbiter",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Harrier_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Harrier",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Harrier_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Harrier",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Ranger_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Ranger",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Ranger_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Ranger",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Ronin_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Ronin",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Ronin_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Ronin",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Scoundrel_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Scoundrel",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Scoundrel_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Scoundrel",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Thief_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Thief",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Thief_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Thief",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Tinker_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Tinker",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Tinker_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Tinker",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Vagrant_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Vagrant",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Vagrant_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Vagrant",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableCardUI",
+      "Metadata": {
+        "flavors": [
+          "DecreePile",
+          "Introduced",
+          "Card",
+          "!TransformableCard",
+          "!PnPOpponent"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableCardUIOpp",
+      "Metadata": {
+        "flavors": [
+          "DecreePile",
+          "Introduced",
+          "Card",
+          "!TransformableCard",
+          "PnPOpponent"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Adventurer_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Adventurer",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Adventurer_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Adventurer",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Arbiter_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Arbiter",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Arbiter_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Arbiter",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Harrier_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Harrier",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Harrier_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Harrier",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Ranger_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Ranger",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Ranger_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Ranger",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Ronin_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Ronin",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Ronin_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Ronin",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Scoundrel_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Scoundrel",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Scoundrel_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Scoundrel",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Thief_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Thief",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Thief_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Thief",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Tinker_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Tinker",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Tinker_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Tinker",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Vagrant_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Vagrant",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Vagrant_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Vagrant",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "Vagabot_Ranger",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabot",
+          "VagabotRanger",
+          "!Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "Vagabot_Tinker",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabot",
+          "VagabotTinker",
+          "!Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabotPawn",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabot",
+          "VagabotThief",
+          "!Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "AllianceWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "WoodlandAlliance",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BirdWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "EyrieDynasties",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingBaseUI",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Base",
+          "WoodlandAlliance",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingBaseUI_AutoAlli",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Base",
+          "AutomatedAlliance",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingPrefabCitadel",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Citadel",
+          "UndergroundDuchy",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingPrefabMarket",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Market",
+          "UndergroundDuchy",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingPrefabRecruiter",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Recruiter",
+          "MarquiseDeCat",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingPrefabSawmill",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Sawmill",
+          "MarquiseDeCat",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingPrefabWorkshop",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Workshop",
+          "MarquiseDeCat",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRelicFigure",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "!UI",
+          "Figure",
+          "Single"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRelicJewelry",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "!UI",
+          "Jewelry",
+          "Single"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRelicTablet",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "!UI",
+          "Tablet",
+          "Single"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CatWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MarquiseDeCat",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "CorvidWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "CorvidConspiracy",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "DuchyWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "UndergroundDuchy",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "LordOfTheHundreds",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "KeepersWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "KeepersInIron",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "LizardWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "LizardCult",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "MechBirdWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "ElectricEyrie",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "MechCatWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "MechanicalMarquise",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "MechFoxWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "AutomatedAlliance",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_BuildingBaseInfoPrompt",
+      "Metadata": {
+        "flavors": [
+          "Building",
+          "Base",
+          "UI",
+          "PlayerInformationPrompt"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_AllianceWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "WoodlandAlliance",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_AutoAllianceWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "AutomatedAlliance",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_CorvidConspiracyWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "CorvidConspiracy",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_DuchyWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "UndergroundDuchy",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_ElectricEyrieWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "ElectricEyrie",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_EyrieWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "EyrieDynasties",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_HundredsWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "LordOfTheHundreds",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_KeepersWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "KeepersInIron",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_LizardCultWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "LizardCult",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_MarquiseWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "MarquiseDeCat",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_MechMarquiseWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "MechanicalMarquise",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_RiverfolkWarriorStack",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "RiverfolkCompany",
+          "StackedView",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "RiverfolkWarrior",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Warrior",
+          "RiverfolkCompany",
+          "!Fund"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Adventurer",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Adventurer"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Arbiter",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Arbiter"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Harrier",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Harrier"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Ranger",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Ranger"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Ronin",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Ronin"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Scoundrel",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Scoundrel"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Thief",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Thief"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Tinker",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Tinker"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "SecondVagabondPawn_Vagrant",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "SecondVagabond",
+          "Vagrant"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ServiceHandCard",
+      "Metadata": {
+        "flavors": [
+          "TransformableService",
+          "Service",
+          "UI",
+          "HandCard"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ServiceMercenaries",
+      "Metadata": {
+        "flavors": [
+          "TransformableService",
+          "Service",
+          "UI",
+          "Mercenaries"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ServiceRiverboats",
+      "Metadata": {
+        "flavors": [
+          "TransformableService",
+          "Service",
+          "UI",
+          "Riverboats"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenKeep",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableKeep",
+          "MarquiseDeCat",
+          "!Hidden"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenKeepHidden",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableKeep",
+          "MarquiseDeCat",
+          "Hidden"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenKeepHidden",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableKeep",
+          "MechanicalMarquise",
+          "Hidden"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenMechKeep",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableKeep",
+          "MechanicalMarquise",
+          "!Hidden"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenTradePost_Fox",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableTradePost",
+          "RiverfolkCompany",
+          "Fox"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenTradePost_Mouse",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableTradePost",
+          "RiverfolkCompany",
+          "Mouse"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenTradePost_Rabbit",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TransformableTradePost",
+          "RiverfolkCompany",
+          "Rabbit"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableCardUI",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "Card",
+          "!TransformableCard",
+          "!PnPOpponent"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableCardUIOpp",
+      "Metadata": {
+        "flavors": [
+          "Introduced",
+          "Card",
+          "!TransformableCard",
+          "PnPOpponent"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Adventurer",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Adventurer"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Arbiter",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Arbiter"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Harrier",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Harrier"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Ranger",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Ranger"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Ronin",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Ronin"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Scoundrel",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Scoundrel"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Thief",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Thief"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Tinker",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Tinker"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "VagabondPawn_Vagrant",
+      "Metadata": {
+        "flavors": [
+          "TransformablePawn",
+          "Pawn",
+          "Vagabond",
+          "Vagrant"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "AutoAlli_BuildingBase",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Base",
+          "AutomatedAlliance"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingBase",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Base",
+          "WoodlandAlliance"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingCitadel",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Citadel",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingHundredsStronghold",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Stronghold",
+          "LordOfTheHundreds"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingMarket",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Market",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingMechRecruiter",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Recruiter",
+          "MechanicalMarquise"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingMechSawmill",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Sawmill",
+          "MechanicalMarquise"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingMechWorkshop",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Workshop",
+          "MechanicalMarquise"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingPrefabWaystation",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Waystation",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRecruiter",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Recruiter",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRoost",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Roost",
+          "EyrieDynasties"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRoost_ElectricEyrie",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Roost",
+          "ElectricEyrie"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingSawmill",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Sawmill",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingWorkshop",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Workshop",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Alliance",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "WoodlandAlliance"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Corvid",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "CorvidConspiracy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Duchy",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "UndergroundDuchy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Eyrie",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "EyrieDynasties"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Hundreds",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "LordOfTheHundreds"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Keepers",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "KeepersInIron"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_LizardCult",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "LizardCult"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Marquise",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "MarquiseDeCat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "FundUI_Riverfolk",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarrior",
+          "Fund",
+          "RiverfolkCompany"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarlord_Boat",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarlord",
+          "Warlord",
+          "Boat"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarlord_Ferry",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarlord",
+          "Warlord",
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ItemUI Large",
+      "Metadata": {
+        "flavors": [
+          "TransformableItem",
+          "Item",
+          "LargeItem"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ItemUIKabbage",
+      "Metadata": {
+        "flavors": [
+          "TransformableItem",
+          "Item",
+          "Kabbage"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ItemUIVagabot",
+      "Metadata": {
+        "flavors": [
+          "TransformableItem",
+          "Item",
+          "Vagabot"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "MoveRelicFigure",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "KeepersMoveRelics",
+          "Figure"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "MoveRelicJewelry",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "KeepersMoveRelics",
+          "Jewelry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "MoveRelicTablet",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "KeepersMoveRelics",
+          "Tablet"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_LizardGarden",
+      "Metadata": {
+        "flavors": [
+          "TransformableBuilding",
+          "Garden",
+          "LizardCult"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerAlliance",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "WoodlandAlliance",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerAutoAlliance",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "AutomatedAlliance",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerCorvid",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "CorvidConspiracy",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerDuchy",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "UndergroundDuchy",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerElectricEyrie",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "ElectricEyrie",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerEyrie",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "EyrieDynasties",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerHundreds",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "LordOfTheHundreds",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerKeepers",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "KeepersInIron",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerLizard",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "LizardCult",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerMarquise",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "MarquiseDeCat",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerMechanicalMarquise",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "MechanicalMarquise",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_RelationshipMarkerRiverfolk",
+      "Metadata": {
+        "flavors": [
+          "RelationshipMarker",
+          "RiverfolkCompany",
+          "PlayerInfo"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_KeepersRelicStack",
+      "Metadata": {
+        "flavors": [
+          "Relic",
+          "StackedView",
+          "!TransformableRelic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_unit_WoodStack",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "Wood",
+          "StackedView"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "PersonalityTraitUIKabbage",
+      "Metadata": {
+        "flavors": [
+          "TransformableItem",
+          "PersonalityTrait",
+          "Kabbage"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "Service",
+      "Metadata": {
+        "flavors": [
+          "TransformableService",
+          "Service",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenMob",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "LordOfTheHundreds",
+          "Mob"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenPlot",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "CorvidConspiracy",
+          "Plot"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenSympathy",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "WoodlandAlliance",
+          "Sympathy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenSympathy_AutoAlli",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "AutomatedAlliance",
+          "Sympathy"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableItemVagabot",
+      "Metadata": {
+        "flavors": [
+          "Item",
+          "!TransformableItem",
+          "Vagabot"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableKeep",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "Keep",
+          "!TransformableKeep"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformablePawn",
+      "Metadata": {
+        "flavors": [
+          "Pawn",
+          "!TransformablePawn",
+          "!StackedView"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformablePersonalityTrait",
+      "Metadata": {
+        "flavors": [
+          "PersonalityTrait",
+          "!TransformableItem",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableTradePost",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "TradePost",
+          "!TransformableTradePost"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRelic",
+      "Metadata": {
+        "flavors": [
+          "TransformableRelic",
+          "!UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "GardenTrack",
+      "Metadata": {
+        "flavors": [
+          "GardenTrack",
+          "!TransformableBuilding"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarlord",
+      "Metadata": {
+        "flavors": [
+          "TransformableWarlord",
+          "Warlord"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "HundredsWarlordMoveToggle",
+      "Metadata": {
+        "flavors": [
+          "Warlord",
+          "HundredsMoveWarlord"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "ItemUI",
+      "Metadata": {
+        "flavors": [
+          "TransformableItem",
+          "Item"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_PlotView",
+      "Metadata": {
+        "flavors": [
+          "Plot",
+          "UI"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "PersonalityTraitUI",
+      "Metadata": {
+        "flavors": [
+          "TransformableItem",
+          "PersonalityTrait"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "QuestCardDrawReward",
+      "Metadata": {
+        "flavors": [
+          "QuestOption",
+          "Draw2"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "QuestCardGainVPReward",
+      "Metadata": {
+        "flavors": [
+          "QuestOption",
+          "GainVP"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenTunnel",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "Tunnel"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TokenWood",
+      "Metadata": {
+        "flavors": [
+          "Token",
+          "Wood"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableBuilding",
+      "Metadata": {
+        "flavors": [
+          "Building",
+          "!TransformableBuilding"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableItem",
+      "Metadata": {
+        "flavors": [
+          "Item",
+          "!TransformableItem"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableRelic",
+      "Metadata": {
+        "flavors": [
+          "Relic",
+          "!TransformableRelic"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableService",
+      "Metadata": {
+        "flavors": [
+          "Service",
+          "!TransformableService"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableWarlord",
+      "Metadata": {
+        "flavors": [
+          "Warlord",
+          "!TransformableWarlord"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "TransformableWarrior",
+      "Metadata": {
+        "flavors": [
+          "Warrior",
+          "!TransformableWarrior"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "BuildingRuin",
+      "Metadata": {
+        "flavors": [
+          "Ruin"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "Ferry",
+      "Metadata": {
+        "flavors": [
+          "Ferry"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_env_MountainTower",
+      "Metadata": {
+        "flavors": [
+          "Tower"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_OutcastSuitView",
+      "Metadata": {
+        "flavors": [
+          "Outcast"
+        ]
+      }
+    },
+    {
+      "ResourcePath": "P_ui_SuitView",
+      "Metadata": {
+        "flavors": [
+          "Suit"
+        ]
+      }
+    }
+  ]
+}

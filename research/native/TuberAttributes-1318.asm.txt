@@ -1,0 +1,3557 @@
+0000000181682f30  push     rbx
+0000000181682f32  sub      rsp, 0x20
+0000000181682f36  cmp      byte ptr [rip + 0x1605595], 0
+0000000181682f3d  jne      0x18168369a
+0000000181682f43  lea      rcx, [rip + 0x14637ce]
+0000000181682f4a  call     0x1820df9b0
+0000000181682f4f  lea      rcx, [rip + 0x14655da]
+0000000181682f56  call     0x1820df9b0
+0000000181682f5b  lea      rcx, [rip + 0x146500e]
+0000000181682f62  call     0x1820df9b0
+0000000181682f67  lea      rcx, [rip + 0x146777a]
+0000000181682f6e  call     0x1820df9b0
+0000000181682f73  lea      rcx, [rip + 0x146334e]
+0000000181682f7a  call     0x1820df9b0
+0000000181682f7f  lea      rcx, [rip + 0x1466572]
+0000000181682f86  call     0x1820df9b0
+0000000181682f8b  lea      rcx, [rip + 0x146605e]
+0000000181682f92  call     0x1820df9b0
+0000000181682f97  lea      rcx, [rip + 0x14631ba]
+0000000181682f9e  call     0x1820df9b0
+0000000181682fa3  lea      rcx, [rip + 0x1463e9e]
+0000000181682faa  call     0x1820df9b0
+0000000181682faf  lea      rcx, [rip + 0x14686e2]
+0000000181682fb6  call     0x1820df9b0
+0000000181682fbb  lea      rcx, [rip + 0x1465066]
+0000000181682fc2  call     0x1820df9b0
+0000000181682fc7  lea      rcx, [rip + 0x146301a]
+0000000181682fce  call     0x1820df9b0
+0000000181682fd3  lea      rcx, [rip + 0x1463f26]
+0000000181682fda  call     0x1820df9b0
+0000000181682fdf  lea      rcx, [rip + 0x1468542]
+0000000181682fe6  call     0x1820df9b0
+0000000181682feb  lea      rcx, [rip + 0x1468a3e]
+0000000181682ff2  call     0x1820df9b0
+0000000181682ff7  lea      rcx, [rip + 0x1467f82]
+0000000181682ffe  call     0x1820df9b0
+0000000181683003  lea      rcx, [rip + 0x1467126]
+000000018168300a  call     0x1820df9b0
+000000018168300f  lea      rcx, [rip + 0x1466932]
+0000000181683016  call     0x1820df9b0
+000000018168301b  lea      rcx, [rip + 0x1466646]
+0000000181683022  call     0x1820df9b0
+0000000181683027  lea      rcx, [rip + 0x1467c7a]
+000000018168302e  call     0x1820df9b0
+0000000181683033  lea      rcx, [rip + 0x1465216]
+000000018168303a  call     0x1820df9b0
+000000018168303f  lea      rcx, [rip + 0x146537a]
+0000000181683046  call     0x1820df9b0
+000000018168304b  lea      rcx, [rip + 0x14681fe]
+0000000181683052  call     0x1820df9b0
+0000000181683057  lea      rcx, [rip + 0x1463c7a]
+000000018168305e  call     0x1820df9b0
+0000000181683063  lea      rcx, [rip + 0x14642e6]
+000000018168306a  call     0x1820df9b0
+000000018168306f  lea      rcx, [rip + 0x1465402]
+0000000181683076  call     0x1820df9b0
+000000018168307b  lea      rcx, [rip + 0x14663be]
+0000000181683082  call     0x1820df9b0
+0000000181683087  lea      rcx, [rip + 0x14638b2]
+000000018168308e  call     0x1820df9b0
+0000000181683093  lea      rcx, [rip + 0x14635c6]
+000000018168309a  call     0x1820df9b0
+000000018168309f  lea      rcx, [rip + 0x1463392]
+00000001816830a6  call     0x1820df9b0
+00000001816830ab  lea      rcx, [rip + 0x14648fe]
+00000001816830b2  call     0x1820df9b0
+00000001816830b7  lea      rcx, [rip + 0x14680e2]
+00000001816830be  call     0x1820df9b0
+00000001816830c3  lea      rcx, [rip + 0x146551e]
+00000001816830ca  call     0x1820df9b0
+00000001816830cf  lea      rcx, [rip + 0x1464c72]
+00000001816830d6  call     0x1820df9b0
+00000001816830db  lea      rcx, [rip + 0x1465c2e]
+00000001816830e2  call     0x1820df9b0
+00000001816830e7  lea      rcx, [rip + 0x1467b02]
+00000001816830ee  call     0x1820df9b0
+00000001816830f3  lea      rcx, [rip + 0x1468656]
+00000001816830fa  call     0x1820df9b0
+00000001816830ff  lea      rcx, [rip + 0x14669b2]
+0000000181683106  call     0x1820df9b0
+000000018168310b  lea      rcx, [rip + 0x146718e]
+0000000181683112  call     0x1820df9b0
+0000000181683117  lea      rcx, [rip + 0x1466ea2]
+000000018168311e  call     0x1820df9b0
+0000000181683123  lea      rcx, [rip + 0x14670be]
+000000018168312a  call     0x1820df9b0
+000000018168312f  lea      rcx, [rip + 0x1468842]
+0000000181683136  call     0x1820df9b0
+000000018168313b  lea      rcx, [rip + 0x1467d8e]
+0000000181683142  call     0x1820df9b0
+0000000181683147  lea      rcx, [rip + 0x1463ad2]
+000000018168314e  call     0x1820df9b0
+0000000181683153  lea      rcx, [rip + 0x1466dae]
+000000018168315a  call     0x1820df9b0
+000000018168315f  lea      rcx, [rip + 0x1463892]
+0000000181683166  call     0x1820df9b0
+000000018168316b  lea      rcx, [rip + 0x14655e6]
+0000000181683172  call     0x1820df9b0
+0000000181683177  lea      rcx, [rip + 0x146609a]
+000000018168317e  call     0x1820df9b0
+0000000181683183  lea      rcx, [rip + 0x1463c06]
+000000018168318a  call     0x1820df9b0
+000000018168318f  lea      rcx, [rip + 0x1465ac2]
+0000000181683196  call     0x1820df9b0
+000000018168319b  lea      rcx, [rip + 0x1464266]
+00000001816831a2  call     0x1820df9b0
+00000001816831a7  lea      rcx, [rip + 0x1467262]
+00000001816831ae  call     0x1820df9b0
+00000001816831b3  lea      rcx, [rip + 0x1467ba6]
+00000001816831ba  call     0x1820df9b0
+00000001816831bf  lea      rcx, [rip + 0x146683a]
+00000001816831c6  call     0x1820df9b0
+00000001816831cb  lea      rcx, [rip + 0x1465cae]
+00000001816831d2  call     0x1820df9b0
+00000001816831d7  lea      rcx, [rip + 0x1465bea]
+00000001816831de  call     0x1820df9b0
+00000001816831e3  lea      rcx, [rip + 0x1465f76]
+00000001816831ea  call     0x1820df9b0
+00000001816831ef  lea      rcx, [rip + 0x1466ba2]
+00000001816831f6  call     0x1820df9b0
+00000001816831fb  lea      rcx, [rip + 0x1466ade]
+0000000181683202  call     0x1820df9b0
+0000000181683207  lea      rcx, [rip + 0x146408a]
+000000018168320e  call     0x1820df9b0
+0000000181683213  lea      rcx, [rip + 0x1465986]
+000000018168321a  call     0x1820df9b0
+000000018168321f  lea      rcx, [rip + 0x1465d12]
+0000000181683226  call     0x1820df9b0
+000000018168322b  lea      rcx, [rip + 0x14649a6]
+0000000181683232  call     0x1820df9b0
+0000000181683237  lea      rcx, [rip + 0x1465682]
+000000018168323e  call     0x1820df9b0
+0000000181683243  lea      rcx, [rip + 0x146589e]
+000000018168324a  call     0x1820df9b0
+000000018168324f  lea      rcx, [rip + 0x1463e1a]
+0000000181683256  call     0x1820df9b0
+000000018168325b  lea      rcx, [rip + 0x1462e3e]
+0000000181683262  call     0x1820df9b0
+0000000181683267  lea      rcx, [rip + 0x14643ba]
+000000018168326e  call     0x1820df9b0
+0000000181683273  lea      rcx, [rip + 0x146655e]
+000000018168327a  call     0x1820df9b0
+000000018168327f  lea      rcx, [rip + 0x14677fa]
+0000000181683286  call     0x1820df9b0
+000000018168328b  lea      rcx, [rip + 0x14681de]
+0000000181683292  call     0x1820df9b0
+0000000181683297  lea      rcx, [rip + 0x1468342]
+000000018168329e  call     0x1820df9b0
+00000001816832a3  lea      rcx, [rip + 0x1466ba6]
+00000001816832aa  call     0x1820df9b0
+00000001816832af  lea      rcx, [rip + 0x146601a]
+00000001816832b6  call     0x1820df9b0
+00000001816832bb  lea      rcx, [rip + 0x146350e]
+00000001816832c2  call     0x1820df9b0
+00000001816832c7  lea      rcx, [rip + 0x1463e5a]
+00000001816832ce  call     0x1820df9b0
+00000001816832d3  lea      rcx, [rip + 0x14674c6]
+00000001816832da  call     0x1820df9b0
+00000001816832df  lea      rcx, [rip + 0x14425a2]
+00000001816832e6  call     0x1820df9b0
+00000001816832eb  lea      rcx, [rip + 0x1441fd6]
+00000001816832f2  call     0x1820df9b0
+00000001816832f7  lea      rcx, [rip + 0x1441ac2]
+00000001816832fe  call     0x1820df9b0
+0000000181683303  lea      rcx, [rip + 0x143e35e]
+000000018168330a  call     0x1820df9b0
+000000018168330f  lea      rcx, [rip + 0x1441882]
+0000000181683316  call     0x1820df9b0
+000000018168331b  lea      rcx, [rip + 0x143fc6e]
+0000000181683322  call     0x1820df9b0
+0000000181683327  lea      rcx, [rip + 0x14411f2]
+000000018168332e  call     0x1820df9b0
+0000000181683333  lea      rcx, [rip + 0x143f246]
+000000018168333a  call     0x1820df9b0
+000000018168333f  lea      rcx, [rip + 0x14409f2]
+0000000181683346  call     0x1820df9b0
+000000018168334b  lea      rcx, [rip + 0x143fdae]
+0000000181683352  call     0x1820df9b0
+0000000181683357  lea      rcx, [rip + 0x14420da]
+000000018168335e  call     0x1820df9b0
+0000000181683363  lea      rcx, [rip + 0x143f43e]
+000000018168336a  call     0x1820df9b0
+000000018168336f  lea      rcx, [rip + 0x14413d2]
+0000000181683376  call     0x1820df9b0
+000000018168337b  lea      rcx, [rip + 0x143ec3e]
+0000000181683382  call     0x1820df9b0
+0000000181683387  lea      rcx, [rip + 0x1441ba2]
+000000018168338e  call     0x1820df9b0
+0000000181683393  lea      rcx, [rip + 0x1440a56]
+000000018168339a  call     0x1820df9b0
+000000018168339f  lea      rcx, [rip + 0x1441db2]
+00000001816833a6  call     0x1820df9b0
+00000001816833ab  lea      rcx, [rip + 0x1441cee]
+00000001816833b2  call     0x1820df9b0
+00000001816833b7  lea      rcx, [rip + 0x143e6fa]
+00000001816833be  call     0x1820df9b0
+00000001816833c3  lea      rcx, [rip + 0x1440b96]
+00000001816833ca  call     0x1820df9b0
+00000001816833cf  lea      rcx, [rip + 0x143ee12]
+00000001816833d6  call     0x1820df9b0
+00000001816833db  lea      rcx, [rip + 0x14407e6]
+00000001816833e2  call     0x1820df9b0
+00000001816833e7  lea      rcx, [rip + 0x1440d9a]
+00000001816833ee  call     0x1820df9b0
+00000001816833f3  lea      rcx, [rip + 0x1442266]
+00000001816833fa  call     0x1820df9b0
+00000001816833ff  lea      rcx, [rip + 0x1440092]
+0000000181683406  call     0x1820df9b0
+000000018168340b  lea      rcx, [rip + 0x14420de]
+0000000181683412  call     0x1820df9b0
+0000000181683417  lea      rcx, [rip + 0x143e80a]
+000000018168341e  call     0x1820df9b0
+0000000181683423  lea      rcx, [rip + 0x144148e]
+000000018168342a  call     0x1820df9b0
+000000018168342f  lea      rcx, [rip + 0x143efda]
+0000000181683436  call     0x1820df9b0
+000000018168343b  lea      rcx, [rip + 0x1440f6e]
+0000000181683442  call     0x1820df9b0
+0000000181683447  lea      rcx, [rip + 0x143ea02]
+000000018168344e  call     0x1820df9b0
+0000000181683453  lea      rcx, [rip + 0x143e436]
+000000018168345a  call     0x1820df9b0
+000000018168345f  lea      rcx, [rip + 0x143f6da]
+0000000181683466  call     0x1820df9b0
+000000018168346b  lea      rcx, [rip + 0x14405e6]
+0000000181683472  call     0x1820df9b0
+0000000181683477  lea      rcx, [rip + 0x1440242]
+000000018168347e  call     0x1820df9b0
+0000000181683483  lea      rcx, [rip + 0x1440686]
+000000018168348a  call     0x1820df9b0
+000000018168348f  lea      rcx, [rip + 0x143ec9a]
+0000000181683496  call     0x1820df9b0
+000000018168349b  lea      rcx, [rip + 0x1440c2e]
+00000001816834a2  call     0x1820df9b0
+00000001816834a7  lea      rcx, [rip + 0x144043a]
+00000001816834ae  call     0x1820df9b0
+00000001816834b3  lea      rcx, [rip + 0x143ff26]
+00000001816834ba  call     0x1820df9b0
+00000001816834bf  lea      rcx, [rip + 0x14409e2]
+00000001816834c6  call     0x1820df9b0
+00000001816834cb  lea      rcx, [rip + 0x1441b16]
+00000001816834d2  call     0x1820df9b0
+00000001816834d7  lea      rcx, [rip + 0x1440d62]
+00000001816834de  call     0x1820df9b0
+00000001816834e3  lea      rcx, [rip + 0x14415f6]
+00000001816834ea  call     0x1820df9b0
+00000001816834ef  lea      rcx, [rip + 0x143e67a]
+00000001816834f6  call     0x1820df9b0
+00000001816834fb  lea      rcx, [rip + 0x143ed9e]
+0000000181683502  call     0x1820df9b0
+0000000181683507  lea      rcx, [rip + 0x1440f5a]
+000000018168350e  call     0x1820df9b0
+0000000181683513  lea      rcx, [rip + 0x14410be]
+000000018168351a  call     0x1820df9b0
+000000018168351f  lea      rcx, [rip + 0x143fc92]
+0000000181683526  call     0x1820df9b0
+000000018168352b  lea      rcx, [rip + 0x14400d6]
+0000000181683532  call     0x1820df9b0
+0000000181683537  lea      rcx, [rip + 0x143fd32]
+000000018168353e  call     0x1820df9b0
+0000000181683543  lea      rcx, [rip + 0x14402e6]
+000000018168354a  call     0x1820df9b0
+000000018168354f  lea      rcx, [rip + 0x14412aa]
+0000000181683556  call     0x1820df9b0
+000000018168355b  lea      rcx, [rip + 0x1441e1e]
+0000000181683562  call     0x1820df9b0
+0000000181683567  lea      rcx, [rip + 0x143f7fa]
+000000018168356e  call     0x1820df9b0
+0000000181683573  lea      rcx, [rip + 0x143e81e]
+000000018168357a  call     0x1820df9b0
+000000018168357f  lea      rcx, [rip + 0x14401f2]
+0000000181683586  call     0x1820df9b0
+000000018168358b  lea      rcx, [rip + 0x144223e]
+0000000181683592  call     0x1820df9b0
+0000000181683597  lea      rcx, [rip + 0x14410f2]
+000000018168359e  call     0x1820df9b0
+00000001816835a3  lea      rcx, [rip + 0x143edae]
+00000001816835aa  call     0x1820df9b0
+00000001816835af  lea      rcx, [rip + 0x1441ff2]
+00000001816835b6  call     0x1820df9b0
+00000001816835bb  lea      rcx, [rip + 0x143fd66]
+00000001816835c2  call     0x1820df9b0
+00000001816835c7  lea      rcx, [rip + 0x1440a4a]
+00000001816835ce  call     0x1820df9b0
+00000001816835d3  lea      rcx, [rip + 0x143f846]
+00000001816835da  call     0x1820df9b0
+00000001816835df  lea      rcx, [rip + 0x143f10a]
+00000001816835e6  call     0x1820df9b0
+00000001816835eb  lea      rcx, [rip + 0x143e12e]
+00000001816835f2  call     0x1820df9b0
+00000001816835f7  lea      rcx, [rip + 0x143e34a]
+00000001816835fe  call     0x1820df9b0
+0000000181683603  lea      rcx, [rip + 0x144141e]
+000000018168360a  call     0x1820df9b0
+000000018168360f  lea      rcx, [rip + 0x1441bfa]
+0000000181683616  call     0x1820df9b0
+000000018168361b  lea      rcx, [rip + 0x144065e]
+0000000181683622  call     0x1820df9b0
+0000000181683627  lea      rcx, [rip + 0x143fa1a]
+000000018168362e  call     0x1820df9b0
+0000000181683633  lea      rcx, [rip + 0x143effe]
+000000018168363a  call     0x1820df9b0
+000000018168363f  lea      rcx, [rip + 0x14420d2]
+0000000181683646  call     0x1820df9b0
+000000018168364b  lea      rcx, [rip + 0x144034e]
+0000000181683652  call     0x1820df9b0
+0000000181683657  lea      rcx, [rip + 0x143ea1a]
+000000018168365e  call     0x1820df9b0
+0000000181683663  lea      rcx, [rip + 0x143e16e]
+000000018168366a  call     0x1820df9b0
+000000018168366f  lea      rcx, [rip + 0x143feda]
+0000000181683676  call     0x1820df9b0
+000000018168367b  lea      rcx, [rip + 0x144ee1e]
+0000000181683682  call     0x1820df9b0
+0000000181683687  lea      rcx, [rip + 0x1423f8a]
+000000018168368e  call     0x1820df9b0
+0000000181683693  mov      byte ptr [rip + 0x1604e38], 1
+000000018168369a  mov      rcx, qword ptr [rip + 0x14402ff]
+00000001816836a1  call     0x1820dfb80
+00000001816836a6  mov      r8, qword ptr [rip + 0x14657d3]
+00000001816836ad  mov      edx, 0x7a120
+00000001816836b2  mov      rcx, rax
+00000001816836b5  mov      rbx, rax
+00000001816836b8  call     0x18000a450
+00000001816836bd  mov      rcx, qword ptr [rip + 0x144eddc]
+00000001816836c4  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816836cb  mov      qword ptr [rdx], rbx
+00000001816836ce  mov      rdx, rbx
+00000001816836d1  mov      rcx, qword ptr [rip + 0x144edc8]
+00000001816836d8  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816836df  call     0x1820decd0
+00000001816836e4  mov      rcx, qword ptr [rip + 0x144092d]
+00000001816836eb  call     0x1820dfb80
+00000001816836f0  mov      r8, qword ptr [rip + 0x14660e1]
+00000001816836f7  mov      edx, 0x7a121
+00000001816836fc  mov      rcx, rax
+00000001816836ff  mov      rbx, rax
+0000000181683702  call     0x18000a450
+0000000181683707  mov      rcx, qword ptr [rip + 0x144ed92]
+000000018168370e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683715  mov      qword ptr [rdx + 8], rbx
+0000000181683719  mov      rdx, rbx
+000000018168371c  mov      rcx, qword ptr [rip + 0x144ed7d]
+0000000181683723  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168372a  add      rcx, 8
+000000018168372e  call     0x1820decd0
+0000000181683733  mov      rcx, qword ptr [rip + 0x143fe16]
+000000018168373a  call     0x1820dfb80
+000000018168373f  mov      r8, qword ptr [rip + 0x146517a]
+0000000181683746  mov      edx, 0x7a122
+000000018168374b  mov      rcx, rax
+000000018168374e  mov      rbx, rax
+0000000181683751  call     0x18000a450
+0000000181683756  mov      rcx, qword ptr [rip + 0x144ed43]
+000000018168375d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683764  mov      qword ptr [rdx + 0x10], rbx
+0000000181683768  mov      rdx, rbx
+000000018168376b  mov      rcx, qword ptr [rip + 0x144ed2e]
+0000000181683772  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683779  add      rcx, 0x10
+000000018168377d  call     0x1820decd0
+0000000181683782  mov      rcx, qword ptr [rip + 0x143fdc7]
+0000000181683789  call     0x1820dfb80
+000000018168378e  mov      r8, qword ptr [rip + 0x146512b]
+0000000181683795  mov      edx, 0x7a123
+000000018168379a  mov      rcx, rax
+000000018168379d  mov      rbx, rax
+00000001816837a0  call     0x18000a450
+00000001816837a5  mov      rcx, qword ptr [rip + 0x144ecf4]
+00000001816837ac  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816837b3  mov      qword ptr [rdx + 0x18], rbx
+00000001816837b7  mov      rdx, rbx
+00000001816837ba  mov      rcx, qword ptr [rip + 0x144ecdf]
+00000001816837c1  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816837c8  add      rcx, 0x18
+00000001816837cc  call     0x1820decd0
+00000001816837d1  mov      rcx, qword ptr [rip + 0x143f870]
+00000001816837d8  call     0x1820dfb80
+00000001816837dd  mov      r8, qword ptr [rip + 0x1464844]
+00000001816837e4  mov      edx, 0x7a124
+00000001816837e9  mov      rcx, rax
+00000001816837ec  mov      rbx, rax
+00000001816837ef  call     0x18000a450
+00000001816837f4  mov      rcx, qword ptr [rip + 0x144eca5]
+00000001816837fb  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683802  mov      qword ptr [rdx + 0x20], rbx
+0000000181683806  mov      rdx, rbx
+0000000181683809  mov      rcx, qword ptr [rip + 0x144ec90]
+0000000181683810  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683817  add      rcx, 0x20
+000000018168381b  call     0x1820decd0
+0000000181683820  mov      rcx, qword ptr [rip + 0x143fe99]
+0000000181683827  call     0x1820dfb80
+000000018168382c  mov      r8, qword ptr [rip + 0x146536d]
+0000000181683833  mov      edx, 0x7a125
+0000000181683838  mov      rcx, rax
+000000018168383b  mov      rbx, rax
+000000018168383e  call     0x18000a450
+0000000181683843  mov      rcx, qword ptr [rip + 0x144ec56]
+000000018168384a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683851  mov      qword ptr [rdx + 0x28], rbx
+0000000181683855  mov      rdx, rbx
+0000000181683858  mov      rcx, qword ptr [rip + 0x144ec41]
+000000018168385f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683866  add      rcx, 0x28
+000000018168386a  call     0x1820decd0
+000000018168386f  mov      rcx, qword ptr [rip + 0x143fd92]
+0000000181683876  call     0x1820dfb80
+000000018168387b  mov      r8, qword ptr [rip + 0x1465266]
+0000000181683882  mov      edx, 0x7a19c
+0000000181683887  mov      rcx, rax
+000000018168388a  mov      rbx, rax
+000000018168388d  call     0x18000a450
+0000000181683892  mov      rcx, qword ptr [rip + 0x144ec07]
+0000000181683899  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816838a0  mov      qword ptr [rdx + 0x30], rbx
+00000001816838a4  mov      rdx, rbx
+00000001816838a7  mov      rcx, qword ptr [rip + 0x144ebf2]
+00000001816838ae  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816838b5  add      rcx, 0x30
+00000001816838b9  call     0x1820decd0
+00000001816838be  mov      rcx, qword ptr [rip + 0x1440ba3]
+00000001816838c5  call     0x1820dfb80
+00000001816838ca  mov      r8, qword ptr [rip + 0x14664c7]
+00000001816838d1  mov      edx, 0x7a126
+00000001816838d6  mov      rcx, rax
+00000001816838d9  mov      rbx, rax
+00000001816838dc  call     0x18000a450
+00000001816838e1  mov      rcx, qword ptr [rip + 0x144ebb8]
+00000001816838e8  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816838ef  mov      qword ptr [rdx + 0x38], rbx
+00000001816838f3  mov      rdx, rbx
+00000001816838f6  mov      rcx, qword ptr [rip + 0x144eba3]
+00000001816838fd  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683904  add      rcx, 0x38
+0000000181683908  call     0x1820decd0
+000000018168390d  mov      rcx, qword ptr [rip + 0x14402b4]
+0000000181683914  call     0x1820dfb80
+0000000181683919  mov      r8, qword ptr [rip + 0x1465840]
+0000000181683920  mov      edx, 0x7a127
+0000000181683925  mov      rcx, rax
+0000000181683928  mov      rbx, rax
+000000018168392b  call     0x18000a450
+0000000181683930  mov      rcx, qword ptr [rip + 0x144eb69]
+0000000181683937  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168393e  mov      qword ptr [rdx + 0x40], rbx
+0000000181683942  mov      rdx, rbx
+0000000181683945  mov      rcx, qword ptr [rip + 0x144eb54]
+000000018168394c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683953  add      rcx, 0x40
+0000000181683957  call     0x1820decd0
+000000018168395c  mov      rcx, qword ptr [rip + 0x143f79d]
+0000000181683963  call     0x1820dfb80
+0000000181683968  mov      r8, qword ptr [rip + 0x14648e1]
+000000018168396f  mov      edx, 0x7a128
+0000000181683974  mov      rcx, rax
+0000000181683977  mov      rbx, rax
+000000018168397a  call     0x18000a450
+000000018168397f  mov      rcx, qword ptr [rip + 0x144eb1a]
+0000000181683986  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168398d  mov      qword ptr [rdx + 0x48], rbx
+0000000181683991  mov      rdx, rbx
+0000000181683994  mov      rcx, qword ptr [rip + 0x144eb05]
+000000018168399b  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816839a2  add      rcx, 0x48
+00000001816839a6  call     0x1820decd0
+00000001816839ab  mov      rcx, qword ptr [rip + 0x14402ce]
+00000001816839b2  call     0x1820dfb80
+00000001816839b7  mov      r8, qword ptr [rip + 0x146585a]
+00000001816839be  mov      edx, 0x7a129
+00000001816839c3  mov      rcx, rax
+00000001816839c6  mov      rbx, rax
+00000001816839c9  call     0x18000a450
+00000001816839ce  mov      rcx, qword ptr [rip + 0x144eacb]
+00000001816839d5  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816839dc  mov      qword ptr [rdx + 0x50], rbx
+00000001816839e0  mov      rcx, qword ptr [rip + 0x144eab9]
+00000001816839e7  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816839ee  add      rcx, 0x50
+00000001816839f2  mov      rdx, rbx
+00000001816839f5  call     0x1820decd0
+00000001816839fa  mov      rcx, qword ptr [rip + 0x1440787]
+0000000181683a01  call     0x1820dfb80
+0000000181683a06  mov      r8, qword ptr [rip + 0x1465ff3]
+0000000181683a0d  mov      edx, 0x7a12a
+0000000181683a12  mov      rcx, rax
+0000000181683a15  mov      rbx, rax
+0000000181683a18  call     0x18000a450
+0000000181683a1d  mov      rcx, qword ptr [rip + 0x144ea7c]
+0000000181683a24  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683a2b  mov      qword ptr [rdx + 0x58], rbx
+0000000181683a2f  mov      rdx, rbx
+0000000181683a32  mov      rcx, qword ptr [rip + 0x144ea67]
+0000000181683a39  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683a40  add      rcx, 0x58
+0000000181683a44  call     0x1820decd0
+0000000181683a49  mov      rcx, qword ptr [rip + 0x143f990]
+0000000181683a50  call     0x1820dfb80
+0000000181683a55  mov      r8, qword ptr [rip + 0x1464b8c]
+0000000181683a5c  mov      edx, 0x7a12b
+0000000181683a61  mov      rcx, rax
+0000000181683a64  mov      rbx, rax
+0000000181683a67  call     0x18000a450
+0000000181683a6c  mov      rcx, qword ptr [rip + 0x144ea2d]
+0000000181683a73  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683a7a  mov      qword ptr [rdx + 0x60], rbx
+0000000181683a7e  mov      rdx, rbx
+0000000181683a81  mov      rcx, qword ptr [rip + 0x144ea18]
+0000000181683a88  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683a8f  add      rcx, 0x60
+0000000181683a93  call     0x1820decd0
+0000000181683a98  mov      rcx, qword ptr [rip + 0x1440911]
+0000000181683a9f  call     0x1820dfb80
+0000000181683aa4  mov      r8, qword ptr [rip + 0x1466235]
+0000000181683aab  mov      edx, 0x7a12c
+0000000181683ab0  mov      rcx, rax
+0000000181683ab3  mov      rbx, rax
+0000000181683ab6  call     0x18000a450
+0000000181683abb  mov      rcx, qword ptr [rip + 0x144e9de]
+0000000181683ac2  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683ac9  mov      qword ptr [rdx + 0x68], rbx
+0000000181683acd  mov      rdx, rbx
+0000000181683ad0  mov      rcx, qword ptr [rip + 0x144e9c9]
+0000000181683ad7  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683ade  add      rcx, 0x68
+0000000181683ae2  call     0x1820decd0
+0000000181683ae7  mov      rcx, qword ptr [rip + 0x1440f3a]
+0000000181683aee  call     0x1820dfb80
+0000000181683af3  mov      r8, qword ptr [rip + 0x1466916]
+0000000181683afa  mov      edx, 0x7a12d
+0000000181683aff  mov      rcx, rax
+0000000181683b02  mov      rbx, rax
+0000000181683b05  call     0x18000a450
+0000000181683b0a  mov      rcx, qword ptr [rip + 0x144e98f]
+0000000181683b11  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683b18  mov      qword ptr [rdx + 0x70], rbx
+0000000181683b1c  mov      rdx, rbx
+0000000181683b1f  mov      rcx, qword ptr [rip + 0x144e97a]
+0000000181683b26  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683b2d  add      rcx, 0x70
+0000000181683b31  call     0x1820decd0
+0000000181683b36  mov      rcx, qword ptr [rip + 0x1440b53]
+0000000181683b3d  call     0x1820dfb80
+0000000181683b42  mov      r8, qword ptr [rip + 0x1466477]
+0000000181683b49  mov      edx, 0x7a12e
+0000000181683b4e  mov      rcx, rax
+0000000181683b51  mov      rbx, rax
+0000000181683b54  call     0x18000a450
+0000000181683b59  mov      rcx, qword ptr [rip + 0x144e940]
+0000000181683b60  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683b67  mov      qword ptr [rdx + 0x78], rbx
+0000000181683b6b  mov      rdx, rbx
+0000000181683b6e  mov      rcx, qword ptr [rip + 0x144e92b]
+0000000181683b75  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683b7c  add      rcx, 0x78
+0000000181683b80  call     0x1820decd0
+0000000181683b85  mov      rcx, qword ptr [rip + 0x143f404]
+0000000181683b8c  call     0x1820dfb80
+0000000181683b91  mov      r8, qword ptr [rip + 0x14643d8]
+0000000181683b98  mov      rbx, rax
+0000000181683b9b  mov      edx, 0x7a12f
+0000000181683ba0  mov      rcx, rax
+0000000181683ba3  call     0x18000a450
+0000000181683ba8  mov      rcx, qword ptr [rip + 0x144e8f1]
+0000000181683baf  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683bb6  mov      qword ptr [rdx + 0x80], rbx
+0000000181683bbd  mov      rdx, rbx
+0000000181683bc0  mov      rcx, qword ptr [rip + 0x144e8d9]
+0000000181683bc7  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683bce  sub      rcx, -0x80
+0000000181683bd2  call     0x1820decd0
+0000000181683bd7  mov      rcx, qword ptr [rip + 0x1440f02]
+0000000181683bde  call     0x1820dfb80
+0000000181683be3  mov      r8, qword ptr [rip + 0x1466afe]
+0000000181683bea  mov      edx, 0x7a130
+0000000181683bef  mov      rcx, rax
+0000000181683bf2  mov      rbx, rax
+0000000181683bf5  call     0x18000a450
+0000000181683bfa  mov      rcx, qword ptr [rip + 0x144e89f]
+0000000181683c01  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683c08  mov      qword ptr [rdx + 0x88], rbx
+0000000181683c0f  mov      rdx, rbx
+0000000181683c12  mov      rcx, qword ptr [rip + 0x144e887]
+0000000181683c19  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683c20  add      rcx, 0x88
+0000000181683c27  call     0x1820decd0
+0000000181683c2c  mov      rcx, qword ptr [rip + 0x143f91d]
+0000000181683c33  call     0x1820dfb80
+0000000181683c38  mov      r8, qword ptr [rip + 0x1464c81]
+0000000181683c3f  mov      edx, 0x7a131
+0000000181683c44  mov      rcx, rax
+0000000181683c47  mov      rbx, rax
+0000000181683c4a  call     0x18000a450
+0000000181683c4f  mov      rcx, qword ptr [rip + 0x144e84a]
+0000000181683c56  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683c5d  mov      qword ptr [rdx + 0x90], rbx
+0000000181683c64  mov      rdx, rbx
+0000000181683c67  mov      rcx, qword ptr [rip + 0x144e832]
+0000000181683c6e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683c75  add      rcx, 0x90
+0000000181683c7c  call     0x1820decd0
+0000000181683c81  mov      rcx, qword ptr [rip + 0x143f5e8]
+0000000181683c88  call     0x1820dfb80
+0000000181683c8d  mov      r8, qword ptr [rip + 0x14647e4]
+0000000181683c94  mov      edx, 0x7a132
+0000000181683c99  mov      rcx, rax
+0000000181683c9c  mov      rbx, rax
+0000000181683c9f  call     0x18000a450
+0000000181683ca4  mov      rcx, qword ptr [rip + 0x144e7f5]
+0000000181683cab  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683cb2  mov      qword ptr [rdx + 0x98], rbx
+0000000181683cb9  mov      rdx, rbx
+0000000181683cbc  mov      rcx, qword ptr [rip + 0x144e7dd]
+0000000181683cc3  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683cca  add      rcx, 0x98
+0000000181683cd1  call     0x1820decd0
+0000000181683cd6  mov      rcx, qword ptr [rip + 0x143f873]
+0000000181683cdd  call     0x1820dfb80
+0000000181683ce2  mov      r8, qword ptr [rip + 0x1464bd7]
+0000000181683ce9  mov      edx, 0x7a133
+0000000181683cee  mov      rcx, rax
+0000000181683cf1  mov      rbx, rax
+0000000181683cf4  call     0x18000a450
+0000000181683cf9  mov      rcx, qword ptr [rip + 0x144e7a0]
+0000000181683d00  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683d07  mov      qword ptr [rdx + 0xa0], rbx
+0000000181683d0e  mov      rdx, rbx
+0000000181683d11  mov      rcx, qword ptr [rip + 0x144e788]
+0000000181683d18  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683d1f  add      rcx, 0xa0
+0000000181683d26  call     0x1820decd0
+0000000181683d2b  mov      rcx, qword ptr [rip + 0x144108e]
+0000000181683d32  call     0x1820dfb80
+0000000181683d37  mov      r8, qword ptr [rip + 0x1466d42]
+0000000181683d3e  mov      edx, 0x7a134
+0000000181683d43  mov      rcx, rax
+0000000181683d46  mov      rbx, rax
+0000000181683d49  call     0x18000a450
+0000000181683d4e  mov      rcx, qword ptr [rip + 0x144e74b]
+0000000181683d55  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683d5c  mov      qword ptr [rdx + 0xa8], rbx
+0000000181683d63  mov      rcx, qword ptr [rip + 0x144e736]
+0000000181683d6a  mov      rdx, rbx
+0000000181683d6d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683d74  add      rcx, 0xa8
+0000000181683d7b  call     0x1820decd0
+0000000181683d80  mov      rcx, qword ptr [rip + 0x143e519]
+0000000181683d87  call     0x1820dfb80
+0000000181683d8c  mov      r8, qword ptr [rip + 0x146316d]
+0000000181683d93  mov      edx, 0x7a135
+0000000181683d98  mov      rcx, rax
+0000000181683d9b  mov      rbx, rax
+0000000181683d9e  call     0x18000a450
+0000000181683da3  mov      rcx, qword ptr [rip + 0x144e6f6]
+0000000181683daa  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683db1  mov      qword ptr [rdx + 0xb0], rbx
+0000000181683db8  mov      rdx, rbx
+0000000181683dbb  mov      rcx, qword ptr [rip + 0x144e6de]
+0000000181683dc2  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683dc9  add      rcx, 0xb0
+0000000181683dd0  call     0x1820decd0
+0000000181683dd5  mov      rcx, qword ptr [rip + 0x14415a4]
+0000000181683ddc  call     0x1820dfb80
+0000000181683de1  mov      r8, qword ptr [rip + 0x1467468]
+0000000181683de8  mov      edx, 0x7a136
+0000000181683ded  mov      rcx, rax
+0000000181683df0  mov      rbx, rax
+0000000181683df3  call     0x18000a450
+0000000181683df8  mov      rcx, qword ptr [rip + 0x144e6a1]
+0000000181683dff  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683e06  mov      qword ptr [rdx + 0xb8], rbx
+0000000181683e0d  mov      rdx, rbx
+0000000181683e10  mov      rcx, qword ptr [rip + 0x144e689]
+0000000181683e17  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683e1e  add      rcx, 0xb8
+0000000181683e25  call     0x1820decd0
+0000000181683e2a  mov      rcx, qword ptr [rip + 0x1441327]
+0000000181683e31  call     0x1820dfb80
+0000000181683e36  mov      r8, qword ptr [rip + 0x1467093]
+0000000181683e3d  mov      edx, 0x7a137
+0000000181683e42  mov      rcx, rax
+0000000181683e45  mov      rbx, rax
+0000000181683e48  call     0x18000a450
+0000000181683e4d  mov      rcx, qword ptr [rip + 0x144e64c]
+0000000181683e54  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683e5b  mov      qword ptr [rdx + 0xc0], rbx
+0000000181683e62  mov      rdx, rbx
+0000000181683e65  mov      rcx, qword ptr [rip + 0x144e634]
+0000000181683e6c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683e73  add      rcx, 0xc0
+0000000181683e7a  call     0x1820decd0
+0000000181683e7f  mov      rcx, qword ptr [rip + 0x143e6fa]
+0000000181683e86  call     0x1820dfb80
+0000000181683e8b  mov      r8, qword ptr [rip + 0x1463406]
+0000000181683e92  mov      edx, 0x7a138
+0000000181683e97  mov      rcx, rax
+0000000181683e9a  mov      rbx, rax
+0000000181683e9d  call     0x18000a450
+0000000181683ea2  mov      rcx, qword ptr [rip + 0x144e5f7]
+0000000181683ea9  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683eb0  mov      qword ptr [rdx + 0xc8], rbx
+0000000181683eb7  mov      rdx, rbx
+0000000181683eba  mov      rcx, qword ptr [rip + 0x144e5df]
+0000000181683ec1  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683ec8  add      rcx, 0xc8
+0000000181683ecf  call     0x1820decd0
+0000000181683ed4  mov      rcx, qword ptr [rip + 0x14411c5]
+0000000181683edb  call     0x1820dfb80
+0000000181683ee0  mov      r8, qword ptr [rip + 0x1466e79]
+0000000181683ee7  mov      edx, 0x7a139
+0000000181683eec  mov      rcx, rax
+0000000181683eef  mov      rbx, rax
+0000000181683ef2  call     0x18000a450
+0000000181683ef7  mov      rcx, qword ptr [rip + 0x144e5a2]
+0000000181683efe  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683f05  mov      qword ptr [rdx + 0xd0], rbx
+0000000181683f0c  mov      rdx, rbx
+0000000181683f0f  mov      rcx, qword ptr [rip + 0x144e58a]
+0000000181683f16  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683f1d  add      rcx, 0xd0
+0000000181683f24  call     0x1820decd0
+0000000181683f29  mov      rcx, qword ptr [rip + 0x14417e8]
+0000000181683f30  call     0x1820dfb80
+0000000181683f35  mov      r8, qword ptr [rip + 0x1467814]
+0000000181683f3c  mov      edx, 0x2724
+0000000181683f41  mov      rcx, rax
+0000000181683f44  mov      rbx, rax
+0000000181683f47  call     0x18000a450
+0000000181683f4c  mov      rcx, qword ptr [rip + 0x144e54d]
+0000000181683f53  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683f5a  mov      qword ptr [rdx + 0xd8], rbx
+0000000181683f61  mov      rdx, rbx
+0000000181683f64  mov      rcx, qword ptr [rip + 0x144e535]
+0000000181683f6b  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683f72  add      rcx, 0xd8
+0000000181683f79  call     0x1820decd0
+0000000181683f7e  mov      rcx, qword ptr [rip + 0x1440fab]
+0000000181683f85  call     0x1820dfb80
+0000000181683f8a  mov      r8, qword ptr [rip + 0x1466c5f]
+0000000181683f91  mov      edx, 0x7a13a
+0000000181683f96  mov      rcx, rax
+0000000181683f99  mov      rbx, rax
+0000000181683f9c  call     0x18000a450
+0000000181683fa1  mov      rcx, qword ptr [rip + 0x144e4f8]
+0000000181683fa8  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181683faf  mov      qword ptr [rdx + 0xe0], rbx
+0000000181683fb6  mov      rdx, rbx
+0000000181683fb9  mov      rcx, qword ptr [rip + 0x144e4e0]
+0000000181683fc0  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181683fc7  add      rcx, 0xe0
+0000000181683fce  call     0x1820decd0
+0000000181683fd3  mov      rcx, qword ptr [rip + 0x143f576]
+0000000181683fda  call     0x1820dfb80
+0000000181683fdf  mov      r8, qword ptr [rip + 0x14648da]
+0000000181683fe6  mov      edx, 0x7a13b
+0000000181683feb  mov      rcx, rax
+0000000181683fee  mov      rbx, rax
+0000000181683ff1  call     0x18000a450
+0000000181683ff6  mov      rcx, qword ptr [rip + 0x144e4a3]
+0000000181683ffd  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684004  mov      qword ptr [rdx + 0xe8], rbx
+000000018168400b  mov      rdx, rbx
+000000018168400e  mov      rcx, qword ptr [rip + 0x144e48b]
+0000000181684015  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168401c  add      rcx, 0xe8
+0000000181684023  call     0x1820decd0
+0000000181684028  mov      rcx, qword ptr [rip + 0x1441579]
+000000018168402f  call     0x1820dfb80
+0000000181684034  mov      r8, qword ptr [rip + 0x14675a5]
+000000018168403b  mov      edx, 0x7a13c
+0000000181684040  mov      rcx, rax
+0000000181684043  mov      rbx, rax
+0000000181684046  call     0x18000a450
+000000018168404b  mov      rcx, qword ptr [rip + 0x144e44e]
+0000000181684052  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684059  mov      qword ptr [rdx + 0xf0], rbx
+0000000181684060  mov      rdx, rbx
+0000000181684063  mov      rcx, qword ptr [rip + 0x144e436]
+000000018168406a  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684071  add      rcx, 0xf0
+0000000181684078  call     0x1820decd0
+000000018168407d  mov      rcx, qword ptr [rip + 0x143ff94]
+0000000181684084  call     0x1820dfb80
+0000000181684089  mov      r8, qword ptr [rip + 0x1465748]
+0000000181684090  mov      edx, 0x7a13d
+0000000181684095  mov      rcx, rax
+0000000181684098  mov      rbx, rax
+000000018168409b  call     0x18000a450
+00000001816840a0  mov      rcx, qword ptr [rip + 0x144e3f9]
+00000001816840a7  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816840ae  mov      qword ptr [rdx + 0xf8], rbx
+00000001816840b5  mov      rdx, rbx
+00000001816840b8  mov      rcx, qword ptr [rip + 0x144e3e1]
+00000001816840bf  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816840c6  add      rcx, 0xf8
+00000001816840cd  call     0x1820decd0
+00000001816840d2  mov      rcx, qword ptr [rip + 0x143f307]
+00000001816840d9  call     0x1820dfb80
+00000001816840de  mov      r8, qword ptr [rip + 0x1464503]
+00000001816840e5  mov      edx, 0x7a13e
+00000001816840ea  mov      rcx, rax
+00000001816840ed  mov      rbx, rax
+00000001816840f0  call     0x18000a450
+00000001816840f5  mov      rcx, qword ptr [rip + 0x144e3a4]
+00000001816840fc  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684103  mov      qword ptr [rdx + 0x100], rbx
+000000018168410a  mov      rdx, rbx
+000000018168410d  mov      rcx, qword ptr [rip + 0x144e38c]
+0000000181684114  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168411b  add      rcx, 0x100
+0000000181684122  call     0x1820decd0
+0000000181684127  mov      rcx, qword ptr [rip + 0x143ef1a]
+000000018168412e  call     0x1820dfb80
+0000000181684133  mov      r8, qword ptr [rip + 0x1463eee]
+000000018168413a  mov      edx, 0x7a13f
+000000018168413f  mov      rcx, rax
+0000000181684142  mov      rbx, rax
+0000000181684145  call     0x18000a450
+000000018168414a  mov      rcx, qword ptr [rip + 0x144e34f]
+0000000181684151  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684158  mov      qword ptr [rdx + 0x108], rbx
+000000018168415f  mov      rdx, rbx
+0000000181684162  mov      rcx, qword ptr [rip + 0x144e337]
+0000000181684169  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684170  add      rcx, 0x108
+0000000181684177  call     0x1820decd0
+000000018168417c  mov      rcx, qword ptr [rip + 0x144136d]
+0000000181684183  call     0x1820dfb80
+0000000181684188  mov      r8, qword ptr [rip + 0x1467399]
+000000018168418f  mov      edx, 0x7a140
+0000000181684194  mov      rcx, rax
+0000000181684197  mov      rbx, rax
+000000018168419a  call     0x18000a450
+000000018168419f  mov      rcx, qword ptr [rip + 0x144e2fa]
+00000001816841a6  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816841ad  mov      qword ptr [rdx + 0x110], rbx
+00000001816841b4  mov      rdx, rbx
+00000001816841b7  mov      rcx, qword ptr [rip + 0x144e2e2]
+00000001816841be  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816841c5  add      rcx, 0x110
+00000001816841cc  call     0x1820decd0
+00000001816841d1  mov      rcx, qword ptr [rip + 0x143f378]
+00000001816841d8  call     0x1820dfb80
+00000001816841dd  mov      r8, qword ptr [rip + 0x14646dc]
+00000001816841e4  mov      edx, 0x7a141
+00000001816841e9  mov      rcx, rax
+00000001816841ec  mov      rbx, rax
+00000001816841ef  call     0x18000a450
+00000001816841f4  mov      rcx, qword ptr [rip + 0x144e2a5]
+00000001816841fb  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684202  mov      qword ptr [rdx + 0x118], rbx
+0000000181684209  mov      rdx, rbx
+000000018168420c  mov      rcx, qword ptr [rip + 0x144e28d]
+0000000181684213  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168421a  add      rcx, 0x118
+0000000181684221  call     0x1820decd0
+0000000181684226  mov      rcx, qword ptr [rip + 0x143e4c3]
+000000018168422d  call     0x1820dfb80
+0000000181684232  mov      r8, qword ptr [rip + 0x14631cf]
+0000000181684239  mov      edx, 0x7a142
+000000018168423e  mov      rcx, rax
+0000000181684241  mov      rbx, rax
+0000000181684244  call     0x18000a450
+0000000181684249  mov      rcx, qword ptr [rip + 0x144e250]
+0000000181684250  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684257  mov      qword ptr [rdx + 0x120], rbx
+000000018168425e  mov      rdx, rbx
+0000000181684261  mov      rcx, qword ptr [rip + 0x144e238]
+0000000181684268  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168426f  add      rcx, 0x120
+0000000181684276  call     0x1820decd0
+000000018168427b  mov      rcx, qword ptr [rip + 0x1440916]
+0000000181684282  call     0x1820dfb80
+0000000181684287  mov      r8, qword ptr [rip + 0x1466512]
+000000018168428e  mov      edx, 0x7a143
+0000000181684293  mov      rcx, rax
+0000000181684296  mov      rbx, rax
+0000000181684299  call     0x18000a450
+000000018168429e  mov      rcx, qword ptr [rip + 0x144e1fb]
+00000001816842a5  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816842ac  mov      qword ptr [rdx + 0x128], rbx
+00000001816842b3  mov      rcx, qword ptr [rip + 0x144e1e6]
+00000001816842ba  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816842c1  add      rcx, 0x128
+00000001816842c8  mov      rdx, rbx
+00000001816842cb  call     0x1820decd0
+00000001816842d0  mov      rcx, qword ptr [rip + 0x143d449]
+00000001816842d7  call     0x1820dfb80
+00000001816842dc  mov      r8, qword ptr [rip + 0x1461dbd]
+00000001816842e3  mov      edx, 0x7a144
+00000001816842e8  mov      rcx, rax
+00000001816842eb  mov      rbx, rax
+00000001816842ee  call     0x18000a450
+00000001816842f3  mov      rcx, qword ptr [rip + 0x144e1a6]
+00000001816842fa  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684301  mov      qword ptr [rdx + 0x130], rbx
+0000000181684308  mov      rdx, rbx
+000000018168430b  mov      rcx, qword ptr [rip + 0x144e18e]
+0000000181684312  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684319  add      rcx, 0x130
+0000000181684320  call     0x1820decd0
+0000000181684325  mov      rcx, qword ptr [rip + 0x143f224]
+000000018168432c  call     0x1820dfb80
+0000000181684331  mov      r8, qword ptr [rip + 0x1464588]
+0000000181684338  mov      edx, 0x7a145
+000000018168433d  mov      rcx, rax
+0000000181684340  mov      rbx, rax
+0000000181684343  call     0x18000a450
+0000000181684348  mov      rcx, qword ptr [rip + 0x144e151]
+000000018168434f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684356  mov      qword ptr [rdx + 0x138], rbx
+000000018168435d  mov      rdx, rbx
+0000000181684360  mov      rcx, qword ptr [rip + 0x144e139]
+0000000181684367  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168436e  add      rcx, 0x138
+0000000181684375  call     0x1820decd0
+000000018168437a  mov      rcx, qword ptr [rip + 0x143f1cf]
+0000000181684381  call     0x1820dfb80
+0000000181684386  mov      r8, qword ptr [rip + 0x1464533]
+000000018168438d  mov      edx, 0x7a146
+0000000181684392  mov      rcx, rax
+0000000181684395  mov      rbx, rax
+0000000181684398  call     0x18000a450
+000000018168439d  mov      rcx, qword ptr [rip + 0x144e0fc]
+00000001816843a4  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816843ab  mov      qword ptr [rdx + 0x140], rbx
+00000001816843b2  mov      rdx, rbx
+00000001816843b5  mov      rcx, qword ptr [rip + 0x144e0e4]
+00000001816843bc  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816843c3  add      rcx, 0x140
+00000001816843ca  call     0x1820decd0
+00000001816843cf  mov      rcx, qword ptr [rip + 0x1440e3a]
+00000001816843d6  call     0x1820dfb80
+00000001816843db  mov      r8, qword ptr [rip + 0x1466b9e]
+00000001816843e2  mov      edx, 0x7a147
+00000001816843e7  mov      rcx, rax
+00000001816843ea  mov      rbx, rax
+00000001816843ed  call     0x18000a450
+00000001816843f2  mov      rcx, qword ptr [rip + 0x144e0a7]
+00000001816843f9  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684400  mov      qword ptr [rdx + 0x148], rbx
+0000000181684407  mov      rdx, rbx
+000000018168440a  mov      rcx, qword ptr [rip + 0x144e08f]
+0000000181684411  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684418  add      rcx, 0x148
+000000018168441f  call     0x1820decd0
+0000000181684424  mov      rcx, qword ptr [rip + 0x1440995]
+000000018168442b  call     0x1820dfb80
+0000000181684430  mov      r8, qword ptr [rip + 0x1466649]
+0000000181684437  mov      edx, 0x7a148
+000000018168443c  mov      rcx, rax
+000000018168443f  mov      rbx, rax
+0000000181684442  call     0x18000a450
+0000000181684447  mov      rcx, qword ptr [rip + 0x144e052]
+000000018168444e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684455  mov      qword ptr [rdx + 0x150], rbx
+000000018168445c  mov      rdx, rbx
+000000018168445f  mov      rcx, qword ptr [rip + 0x144e03a]
+0000000181684466  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168446d  add      rcx, 0x150
+0000000181684474  call     0x1820decd0
+0000000181684479  mov      rcx, qword ptr [rip + 0x143ebc8]
+0000000181684480  call     0x1820dfb80
+0000000181684485  mov      r8, qword ptr [rip + 0x1463b9c]
+000000018168448c  mov      rbx, rax
+000000018168448f  mov      edx, 0x7a149
+0000000181684494  mov      rcx, rax
+0000000181684497  call     0x18000a450
+000000018168449c  mov      rcx, qword ptr [rip + 0x144dffd]
+00000001816844a3  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816844aa  mov      qword ptr [rdx + 0x158], rbx
+00000001816844b1  mov      rdx, rbx
+00000001816844b4  mov      rcx, qword ptr [rip + 0x144dfe5]
+00000001816844bb  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816844c2  add      rcx, 0x158
+00000001816844c9  call     0x1820decd0
+00000001816844ce  mov      rcx, qword ptr [rip + 0x143f07b]
+00000001816844d5  call     0x1820dfb80
+00000001816844da  mov      r8, qword ptr [rip + 0x14643df]
+00000001816844e1  mov      edx, 0x7a14a
+00000001816844e6  mov      rcx, rax
+00000001816844e9  mov      rbx, rax
+00000001816844ec  call     0x18000a450
+00000001816844f1  mov      rcx, qword ptr [rip + 0x144dfa8]
+00000001816844f8  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816844ff  mov      qword ptr [rdx + 0x160], rbx
+0000000181684506  mov      rdx, rbx
+0000000181684509  mov      rcx, qword ptr [rip + 0x144df90]
+0000000181684510  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684517  add      rcx, 0x160
+000000018168451e  call     0x1820decd0
+0000000181684523  mov      rcx, qword ptr [rip + 0x143eb1e]
+000000018168452a  call     0x1820dfb80
+000000018168452f  mov      r8, qword ptr [rip + 0x1463af2]
+0000000181684536  mov      edx, 0x7a14b
+000000018168453b  mov      rcx, rax
+000000018168453e  mov      rbx, rax
+0000000181684541  call     0x18000a450
+0000000181684546  mov      rcx, qword ptr [rip + 0x144df53]
+000000018168454d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684554  mov      qword ptr [rdx + 0x168], rbx
+000000018168455b  mov      rdx, rbx
+000000018168455e  mov      rcx, qword ptr [rip + 0x144df3b]
+0000000181684565  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168456c  add      rcx, 0x168
+0000000181684573  call     0x1820decd0
+0000000181684578  mov      rcx, qword ptr [rip + 0x143eac9]
+000000018168457f  call     0x1820dfb80
+0000000181684584  mov      r8, qword ptr [rip + 0x1463a9d]
+000000018168458b  mov      edx, 0x7a14c
+0000000181684590  mov      rcx, rax
+0000000181684593  mov      rbx, rax
+0000000181684596  call     0x18000a450
+000000018168459b  mov      rcx, qword ptr [rip + 0x144defe]
+00000001816845a2  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816845a9  mov      qword ptr [rdx + 0x170], rbx
+00000001816845b0  mov      rdx, rbx
+00000001816845b3  mov      rcx, qword ptr [rip + 0x144dee6]
+00000001816845ba  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816845c1  add      rcx, 0x170
+00000001816845c8  call     0x1820decd0
+00000001816845cd  mov      rcx, qword ptr [rip + 0x143d204]
+00000001816845d4  call     0x1820dfb80
+00000001816845d9  mov      r8, qword ptr [rip + 0x1461b78]
+00000001816845e0  mov      edx, 0x7a14d
+00000001816845e5  mov      rcx, rax
+00000001816845e8  mov      rbx, rax
+00000001816845eb  call     0x18000a450
+00000001816845f0  mov      rcx, qword ptr [rip + 0x144dea9]
+00000001816845f7  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816845fe  mov      qword ptr [rdx + 0x178], rbx
+0000000181684605  mov      rdx, rbx
+0000000181684608  mov      rcx, qword ptr [rip + 0x144de91]
+000000018168460f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684616  add      rcx, 0x178
+000000018168461d  call     0x1820decd0
+0000000181684622  mov      rcx, qword ptr [rip + 0x143d48f]
+0000000181684629  call     0x1820dfb80
+000000018168462e  mov      r8, qword ptr [rip + 0x146202b]
+0000000181684635  mov      edx, 0x7a14e
+000000018168463a  mov      rcx, rax
+000000018168463d  mov      rbx, rax
+0000000181684640  call     0x18000a450
+0000000181684645  mov      rcx, qword ptr [rip + 0x144de54]
+000000018168464c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684653  mov      qword ptr [rdx + 0x180], rbx
+000000018168465a  mov      rcx, qword ptr [rip + 0x144de3f]
+0000000181684661  mov      rdx, rbx
+0000000181684664  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168466b  add      rcx, 0x180
+0000000181684672  call     0x1820decd0
+0000000181684677  mov      rcx, qword ptr [rip + 0x143ed62]
+000000018168467e  call     0x1820dfb80
+0000000181684683  mov      r8, qword ptr [rip + 0x1463f5e]
+000000018168468a  mov      edx, 0x7a14f
+000000018168468f  mov      rcx, rax
+0000000181684692  mov      rbx, rax
+0000000181684695  call     0x18000a450
+000000018168469a  mov      rcx, qword ptr [rip + 0x144ddff]
+00000001816846a1  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816846a8  mov      qword ptr [rdx + 0x188], rbx
+00000001816846af  mov      rdx, rbx
+00000001816846b2  mov      rcx, qword ptr [rip + 0x144dde7]
+00000001816846b9  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816846c0  add      rcx, 0x188
+00000001816846c7  call     0x1820decd0
+00000001816846cc  mov      rcx, qword ptr [rip + 0x143d105]
+00000001816846d3  call     0x1820dfb80
+00000001816846d8  mov      r8, qword ptr [rip + 0x1461a79]
+00000001816846df  mov      edx, 0x7a151
+00000001816846e4  mov      rcx, rax
+00000001816846e7  mov      rbx, rax
+00000001816846ea  call     0x18000a450
+00000001816846ef  mov      rcx, qword ptr [rip + 0x144ddaa]
+00000001816846f6  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816846fd  mov      qword ptr [rdx + 0x190], rbx
+0000000181684704  mov      rdx, rbx
+0000000181684707  mov      rcx, qword ptr [rip + 0x144dd92]
+000000018168470e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684715  add      rcx, 0x190
+000000018168471c  call     0x1820decd0
+0000000181684721  mov      rcx, qword ptr [rip + 0x143db78]
+0000000181684728  call     0x1820dfb80
+000000018168472d  mov      r8, qword ptr [rip + 0x14627cc]
+0000000181684734  mov      edx, 0x7a152
+0000000181684739  mov      rcx, rax
+000000018168473c  mov      rbx, rax
+000000018168473f  call     0x18000a450
+0000000181684744  mov      rcx, qword ptr [rip + 0x144dd55]
+000000018168474b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684752  mov      qword ptr [rdx + 0x198], rbx
+0000000181684759  mov      rdx, rbx
+000000018168475c  mov      rcx, qword ptr [rip + 0x144dd3d]
+0000000181684763  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168476a  add      rcx, 0x198
+0000000181684771  call     0x1820decd0
+0000000181684776  mov      rcx, qword ptr [rip + 0x143ffcb]
+000000018168477d  call     0x1820dfb80
+0000000181684782  mov      r8, qword ptr [rip + 0x14659a7]
+0000000181684789  mov      edx, 0x7a153
+000000018168478e  mov      rcx, rax
+0000000181684791  mov      rbx, rax
+0000000181684794  call     0x18000a450
+0000000181684799  mov      rcx, qword ptr [rip + 0x144dd00]
+00000001816847a0  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816847a7  mov      qword ptr [rdx + 0x1a0], rbx
+00000001816847ae  mov      rdx, rbx
+00000001816847b1  mov      rcx, qword ptr [rip + 0x144dce8]
+00000001816847b8  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816847bf  add      rcx, 0x1a0
+00000001816847c6  call     0x1820decd0
+00000001816847cb  mov      rcx, qword ptr [rip + 0x143fe06]
+00000001816847d2  call     0x1820dfb80
+00000001816847d7  mov      r8, qword ptr [rip + 0x146572a]
+00000001816847de  mov      edx, 0x7a154
+00000001816847e3  mov      rcx, rax
+00000001816847e6  mov      rbx, rax
+00000001816847e9  call     0x18000a450
+00000001816847ee  mov      rcx, qword ptr [rip + 0x144dcab]
+00000001816847f5  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816847fc  mov      qword ptr [rdx + 0x1a8], rbx
+0000000181684803  mov      rdx, rbx
+0000000181684806  mov      rcx, qword ptr [rip + 0x144dc93]
+000000018168480d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684814  add      rcx, 0x1a8
+000000018168481b  call     0x1820decd0
+0000000181684820  mov      rcx, qword ptr [rip + 0x143e821]
+0000000181684827  call     0x1820dfb80
+000000018168482c  mov      r8, qword ptr [rip + 0x14637f5]
+0000000181684833  mov      edx, 0x7a155
+0000000181684838  mov      rcx, rax
+000000018168483b  mov      rbx, rax
+000000018168483e  call     0x18000a450
+0000000181684843  mov      rcx, qword ptr [rip + 0x144dc56]
+000000018168484a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684851  mov      qword ptr [rdx + 0x1b0], rbx
+0000000181684858  mov      rdx, rbx
+000000018168485b  mov      rcx, qword ptr [rip + 0x144dc3e]
+0000000181684862  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684869  add      rcx, 0x1b0
+0000000181684870  call     0x1820decd0
+0000000181684875  mov      rcx, qword ptr [rip + 0x143e4ec]
+000000018168487c  call     0x1820dfb80
+0000000181684881  mov      r8, qword ptr [rip + 0x1463350]
+0000000181684888  mov      edx, 0x7a156
+000000018168488d  mov      rcx, rax
+0000000181684890  mov      rbx, rax
+0000000181684893  call     0x18000a450
+0000000181684898  mov      rcx, qword ptr [rip + 0x144dc01]
+000000018168489f  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816848a6  mov      qword ptr [rdx + 0x1b8], rbx
+00000001816848ad  mov      rdx, rbx
+00000001816848b0  mov      rcx, qword ptr [rip + 0x144dbe9]
+00000001816848b7  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816848be  add      rcx, 0x1b8
+00000001816848c5  call     0x1820decd0
+00000001816848ca  mov      rcx, qword ptr [rip + 0x143ec7f]
+00000001816848d1  call     0x1820dfb80
+00000001816848d6  mov      r8, qword ptr [rip + 0x1463fe3]
+00000001816848dd  mov      edx, 0x7a157
+00000001816848e2  mov      rcx, rax
+00000001816848e5  mov      rbx, rax
+00000001816848e8  call     0x18000a450
+00000001816848ed  mov      rcx, qword ptr [rip + 0x144dbac]
+00000001816848f4  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816848fb  mov      qword ptr [rdx + 0x1c0], rbx
+0000000181684902  mov      rdx, rbx
+0000000181684905  mov      rcx, qword ptr [rip + 0x144db94]
+000000018168490c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684913  add      rcx, 0x1c0
+000000018168491a  call     0x1820decd0
+000000018168491f  mov      rcx, qword ptr [rip + 0x143e442]
+0000000181684926  call     0x1820dfb80
+000000018168492b  mov      r8, qword ptr [rip + 0x14632a6]
+0000000181684932  mov      edx, 0x7a158
+0000000181684937  mov      rcx, rax
+000000018168493a  mov      rbx, rax
+000000018168493d  call     0x18000a450
+0000000181684942  mov      rcx, qword ptr [rip + 0x144db57]
+0000000181684949  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684950  mov      qword ptr [rdx + 0x1c8], rbx
+0000000181684957  mov      rdx, rbx
+000000018168495a  mov      rcx, qword ptr [rip + 0x144db3f]
+0000000181684961  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684968  add      rcx, 0x1c8
+000000018168496f  call     0x1820decd0
+0000000181684974  mov      rcx, qword ptr [rip + 0x143e6cd]
+000000018168497b  call     0x1820dfb80
+0000000181684980  mov      r8, qword ptr [rip + 0x14636a1]
+0000000181684987  mov      edx, 0x7a159
+000000018168498c  mov      rcx, rax
+000000018168498f  mov      rbx, rax
+0000000181684992  call     0x18000a450
+0000000181684997  mov      rcx, qword ptr [rip + 0x144db02]
+000000018168499e  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816849a5  mov      qword ptr [rdx + 0x1d0], rbx
+00000001816849ac  mov      rdx, rbx
+00000001816849af  mov      rcx, qword ptr [rip + 0x144daea]
+00000001816849b6  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816849bd  add      rcx, 0x1d0
+00000001816849c4  call     0x1820decd0
+00000001816849c9  mov      rcx, qword ptr [rip + 0x143eb80]
+00000001816849d0  call     0x1820dfb80
+00000001816849d5  mov      r8, qword ptr [rip + 0x1463ee4]
+00000001816849dc  mov      edx, 0x7a15a
+00000001816849e1  mov      rcx, rax
+00000001816849e4  mov      rbx, rax
+00000001816849e7  call     0x18000a450
+00000001816849ec  mov      rcx, qword ptr [rip + 0x144daad]
+00000001816849f3  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816849fa  mov      qword ptr [rdx + 0x1d8], rbx
+0000000181684a01  mov      rdx, rbx
+0000000181684a04  mov      rcx, qword ptr [rip + 0x144da95]
+0000000181684a0b  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684a12  add      rcx, 0x1d8
+0000000181684a19  call     0x1820decd0
+0000000181684a1e  mov      rcx, qword ptr [rip + 0x143e623]
+0000000181684a25  call     0x1820dfb80
+0000000181684a2a  mov      r8, qword ptr [rip + 0x14635f7]
+0000000181684a31  mov      edx, 0x7a15b
+0000000181684a36  mov      rcx, rax
+0000000181684a39  mov      rbx, rax
+0000000181684a3c  call     0x18000a450
+0000000181684a41  mov      rcx, qword ptr [rip + 0x144da58]
+0000000181684a48  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684a4f  mov      qword ptr [rdx + 0x1e0], rbx
+0000000181684a56  mov      rdx, rbx
+0000000181684a59  mov      rcx, qword ptr [rip + 0x144da40]
+0000000181684a60  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684a67  add      rcx, 0x1e0
+0000000181684a6e  call     0x1820decd0
+0000000181684a73  mov      rcx, qword ptr [rip + 0x143e2ee]
+0000000181684a7a  call     0x1820dfb80
+0000000181684a7f  mov      r8, qword ptr [rip + 0x1463152]
+0000000181684a86  mov      edx, 0x7a15c
+0000000181684a8b  mov      rcx, rax
+0000000181684a8e  mov      rbx, rax
+0000000181684a91  call     0x18000a450
+0000000181684a96  mov      rcx, qword ptr [rip + 0x144da03]
+0000000181684a9d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684aa4  mov      qword ptr [rdx + 0x1e8], rbx
+0000000181684aab  mov      rdx, rbx
+0000000181684aae  mov      rcx, qword ptr [rip + 0x144d9eb]
+0000000181684ab5  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684abc  add      rcx, 0x1e8
+0000000181684ac3  call     0x1820decd0
+0000000181684ac8  mov      rcx, qword ptr [rip + 0x143ea81]
+0000000181684acf  call     0x1820dfb80
+0000000181684ad4  mov      r8, qword ptr [rip + 0x1463de5]
+0000000181684adb  mov      edx, 0x7a15d
+0000000181684ae0  mov      rcx, rax
+0000000181684ae3  mov      rbx, rax
+0000000181684ae6  call     0x18000a450
+0000000181684aeb  mov      rcx, qword ptr [rip + 0x144d9ae]
+0000000181684af2  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684af9  mov      qword ptr [rdx + 0x1f0], rbx
+0000000181684b00  mov      rdx, rbx
+0000000181684b03  mov      rcx, qword ptr [rip + 0x144d996]
+0000000181684b0a  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684b11  add      rcx, 0x1f0
+0000000181684b18  call     0x1820decd0
+0000000181684b1d  mov      rcx, qword ptr [rip + 0x1440914]
+0000000181684b24  call     0x1820dfb80
+0000000181684b29  mov      r8, qword ptr [rip + 0x1466940]
+0000000181684b30  mov      edx, 0x7a15e
+0000000181684b35  mov      rcx, rax
+0000000181684b38  mov      rbx, rax
+0000000181684b3b  call     0x18000a450
+0000000181684b40  mov      rcx, qword ptr [rip + 0x144d959]
+0000000181684b47  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684b4e  mov      qword ptr [rdx + 0x1f8], rbx
+0000000181684b55  mov      rdx, rbx
+0000000181684b58  mov      rcx, qword ptr [rip + 0x144d941]
+0000000181684b5f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684b66  add      rcx, 0x1f8
+0000000181684b6d  call     0x1820decd0
+0000000181684b72  mov      rcx, qword ptr [rip + 0x1440b9f]
+0000000181684b79  call     0x1820dfb80
+0000000181684b7e  mov      r8, qword ptr [rip + 0x1466bcb]
+0000000181684b85  mov      edx, 0x7a15f
+0000000181684b8a  mov      rcx, rax
+0000000181684b8d  mov      rbx, rax
+0000000181684b90  call     0x18000a450
+0000000181684b95  mov      rcx, qword ptr [rip + 0x144d904]
+0000000181684b9c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684ba3  mov      qword ptr [rdx + 0x200], rbx
+0000000181684baa  mov      rcx, qword ptr [rip + 0x144d8ef]
+0000000181684bb1  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684bb8  add      rcx, 0x200
+0000000181684bbf  mov      rdx, rbx
+0000000181684bc2  call     0x1820decd0
+0000000181684bc7  mov      rcx, qword ptr [rip + 0x143e47a]
+0000000181684bce  call     0x1820dfb80
+0000000181684bd3  mov      r8, qword ptr [rip + 0x146344e]
+0000000181684bda  mov      edx, 0x7a160
+0000000181684bdf  mov      rcx, rax
+0000000181684be2  mov      rbx, rax
+0000000181684be5  call     0x18000a450
+0000000181684bea  mov      rcx, qword ptr [rip + 0x144d8af]
+0000000181684bf1  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684bf8  mov      qword ptr [rdx + 0x208], rbx
+0000000181684bff  mov      rdx, rbx
+0000000181684c02  mov      rcx, qword ptr [rip + 0x144d897]
+0000000181684c09  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684c10  add      rcx, 0x208
+0000000181684c17  call     0x1820decd0
+0000000181684c1c  mov      rcx, qword ptr [rip + 0x143e425]
+0000000181684c23  call     0x1820dfb80
+0000000181684c28  mov      r8, qword ptr [rip + 0x14633f9]
+0000000181684c2f  mov      edx, 0x7a161
+0000000181684c34  mov      rcx, rax
+0000000181684c37  mov      rbx, rax
+0000000181684c3a  call     0x18000a450
+0000000181684c3f  mov      rcx, qword ptr [rip + 0x144d85a]
+0000000181684c46  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684c4d  mov      qword ptr [rdx + 0x210], rbx
+0000000181684c54  mov      rdx, rbx
+0000000181684c57  mov      rcx, qword ptr [rip + 0x144d842]
+0000000181684c5e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684c65  add      rcx, 0x210
+0000000181684c6c  call     0x1820decd0
+0000000181684c71  mov      rcx, qword ptr [rip + 0x143e8d8]
+0000000181684c78  call     0x1820dfb80
+0000000181684c7d  mov      r8, qword ptr [rip + 0x1463c3c]
+0000000181684c84  mov      edx, 0x7a162
+0000000181684c89  mov      rcx, rax
+0000000181684c8c  mov      rbx, rax
+0000000181684c8f  call     0x18000a450
+0000000181684c94  mov      rcx, qword ptr [rip + 0x144d805]
+0000000181684c9b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684ca2  mov      qword ptr [rdx + 0x218], rbx
+0000000181684ca9  mov      rdx, rbx
+0000000181684cac  mov      rcx, qword ptr [rip + 0x144d7ed]
+0000000181684cb3  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684cba  add      rcx, 0x218
+0000000181684cc1  call     0x1820decd0
+0000000181684cc6  mov      rcx, qword ptr [rip + 0x143e37b]
+0000000181684ccd  call     0x1820dfb80
+0000000181684cd2  mov      r8, qword ptr [rip + 0x146334f]
+0000000181684cd9  mov      edx, 0x7a163
+0000000181684cde  mov      rcx, rax
+0000000181684ce1  mov      rbx, rax
+0000000181684ce4  call     0x18000a450
+0000000181684ce9  mov      rcx, qword ptr [rip + 0x144d7b0]
+0000000181684cf0  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684cf7  mov      qword ptr [rdx + 0x220], rbx
+0000000181684cfe  mov      rdx, rbx
+0000000181684d01  mov      rcx, qword ptr [rip + 0x144d798]
+0000000181684d08  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684d0f  add      rcx, 0x220
+0000000181684d16  call     0x1820decd0
+0000000181684d1b  mov      rcx, qword ptr [rip + 0x143e326]
+0000000181684d22  call     0x1820dfb80
+0000000181684d27  mov      r8, qword ptr [rip + 0x14632fa]
+0000000181684d2e  mov      edx, 0x7a165
+0000000181684d33  mov      rcx, rax
+0000000181684d36  mov      rbx, rax
+0000000181684d39  call     0x18000a450
+0000000181684d3e  mov      rcx, qword ptr [rip + 0x144d75b]
+0000000181684d45  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684d4c  mov      qword ptr [rdx + 0x228], rbx
+0000000181684d53  mov      rdx, rbx
+0000000181684d56  mov      rcx, qword ptr [rip + 0x144d743]
+0000000181684d5d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684d64  add      rcx, 0x228
+0000000181684d6b  call     0x1820decd0
+0000000181684d70  mov      rcx, qword ptr [rip + 0x143e2d1]
+0000000181684d77  call     0x1820dfb80
+0000000181684d7c  mov      r8, qword ptr [rip + 0x14632a5]
+0000000181684d83  mov      rbx, rax
+0000000181684d86  mov      edx, 0x7a166
+0000000181684d8b  mov      rcx, rax
+0000000181684d8e  call     0x18000a450
+0000000181684d93  mov      rcx, qword ptr [rip + 0x144d706]
+0000000181684d9a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684da1  mov      qword ptr [rdx + 0x230], rbx
+0000000181684da8  mov      rdx, rbx
+0000000181684dab  mov      rcx, qword ptr [rip + 0x144d6ee]
+0000000181684db2  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684db9  add      rcx, 0x230
+0000000181684dc0  call     0x1820decd0
+0000000181684dc5  mov      rcx, qword ptr [rip + 0x1440444]
+0000000181684dcc  call     0x1820dfb80
+0000000181684dd1  mov      r8, qword ptr [rip + 0x14661a8]
+0000000181684dd8  mov      edx, 0x7a167
+0000000181684ddd  mov      rcx, rax
+0000000181684de0  mov      rbx, rax
+0000000181684de3  call     0x18000a450
+0000000181684de8  mov      rcx, qword ptr [rip + 0x144d6b1]
+0000000181684def  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684df6  mov      qword ptr [rdx + 0x238], rbx
+0000000181684dfd  mov      rdx, rbx
+0000000181684e00  mov      rcx, qword ptr [rip + 0x144d699]
+0000000181684e07  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684e0e  add      rcx, 0x238
+0000000181684e15  call     0x1820decd0
+0000000181684e1a  mov      rcx, qword ptr [rip + 0x143e227]
+0000000181684e21  call     0x1820dfb80
+0000000181684e26  mov      r8, qword ptr [rip + 0x14631fb]
+0000000181684e2d  mov      edx, 0x7a168
+0000000181684e32  mov      rcx, rax
+0000000181684e35  mov      rbx, rax
+0000000181684e38  call     0x18000a450
+0000000181684e3d  mov      rcx, qword ptr [rip + 0x144d65c]
+0000000181684e44  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684e4b  mov      qword ptr [rdx + 0x240], rbx
+0000000181684e52  mov      rdx, rbx
+0000000181684e55  mov      rcx, qword ptr [rip + 0x144d644]
+0000000181684e5c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684e63  add      rcx, 0x240
+0000000181684e6a  call     0x1820decd0
+0000000181684e6f  mov      rcx, qword ptr [rip + 0x143d932]
+0000000181684e76  call     0x1820dfb80
+0000000181684e7b  mov      r8, qword ptr [rip + 0x14627a6]
+0000000181684e82  mov      edx, 0x7a169
+0000000181684e87  mov      rcx, rax
+0000000181684e8a  mov      rbx, rax
+0000000181684e8d  call     0x18000a450
+0000000181684e92  mov      rcx, qword ptr [rip + 0x144d607]
+0000000181684e99  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684ea0  mov      qword ptr [rdx + 0x248], rbx
+0000000181684ea7  mov      rdx, rbx
+0000000181684eaa  mov      rcx, qword ptr [rip + 0x144d5ef]
+0000000181684eb1  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684eb8  add      rcx, 0x248
+0000000181684ebf  call     0x1820decd0
+0000000181684ec4  mov      rcx, qword ptr [rip + 0x143e17d]
+0000000181684ecb  call     0x1820dfb80
+0000000181684ed0  mov      r8, qword ptr [rip + 0x1463151]
+0000000181684ed7  mov      edx, 0x7a16a
+0000000181684edc  mov      rcx, rax
+0000000181684edf  mov      rbx, rax
+0000000181684ee2  call     0x18000a450
+0000000181684ee7  mov      rcx, qword ptr [rip + 0x144d5b2]
+0000000181684eee  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684ef5  mov      qword ptr [rdx + 0x250], rbx
+0000000181684efc  mov      rdx, rbx
+0000000181684eff  mov      rcx, qword ptr [rip + 0x144d59a]
+0000000181684f06  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684f0d  add      rcx, 0x250
+0000000181684f14  call     0x1820decd0
+0000000181684f19  mov      rcx, qword ptr [rip + 0x143e630]
+0000000181684f20  call     0x1820dfb80
+0000000181684f25  mov      r8, qword ptr [rip + 0x1463994]
+0000000181684f2c  mov      edx, 0x7a16b
+0000000181684f31  mov      rcx, rax
+0000000181684f34  mov      rbx, rax
+0000000181684f37  call     0x18000a450
+0000000181684f3c  mov      rcx, qword ptr [rip + 0x144d55d]
+0000000181684f43  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684f4a  mov      qword ptr [rdx + 0x258], rbx
+0000000181684f51  mov      rcx, qword ptr [rip + 0x144d548]
+0000000181684f58  mov      rdx, rbx
+0000000181684f5b  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684f62  add      rcx, 0x258
+0000000181684f69  call     0x1820decd0
+0000000181684f6e  mov      rcx, qword ptr [rip + 0x144029b]
+0000000181684f75  call     0x1820dfb80
+0000000181684f7a  mov      r8, qword ptr [rip + 0x1465fff]
+0000000181684f81  mov      edx, 0x7a16c
+0000000181684f86  mov      rcx, rax
+0000000181684f89  mov      rbx, rax
+0000000181684f8c  call     0x18000a450
+0000000181684f91  mov      rcx, qword ptr [rip + 0x144d508]
+0000000181684f98  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684f9f  mov      qword ptr [rdx + 0x260], rbx
+0000000181684fa6  mov      rdx, rbx
+0000000181684fa9  mov      rcx, qword ptr [rip + 0x144d4f0]
+0000000181684fb0  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181684fb7  add      rcx, 0x260
+0000000181684fbe  call     0x1820decd0
+0000000181684fc3  mov      rcx, qword ptr [rip + 0x143f49e]
+0000000181684fca  call     0x1820dfb80
+0000000181684fcf  mov      r8, qword ptr [rip + 0x1464dc2]
+0000000181684fd6  mov      edx, 0x7a16d
+0000000181684fdb  mov      rcx, rax
+0000000181684fde  mov      rbx, rax
+0000000181684fe1  call     0x18000a450
+0000000181684fe6  mov      rcx, qword ptr [rip + 0x144d4b3]
+0000000181684fed  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181684ff4  mov      qword ptr [rdx + 0x268], rbx
+0000000181684ffb  mov      rdx, rbx
+0000000181684ffe  mov      rcx, qword ptr [rip + 0x144d49b]
+0000000181685005  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168500c  add      rcx, 0x268
+0000000181685013  call     0x1820decd0
+0000000181685018  mov      rcx, qword ptr [rip + 0x143d6d1]
+000000018168501f  call     0x1820dfb80
+0000000181685024  mov      r8, qword ptr [rip + 0x14623dd]
+000000018168502b  mov      edx, 0x7a16e
+0000000181685030  mov      rcx, rax
+0000000181685033  mov      rbx, rax
+0000000181685036  call     0x18000a450
+000000018168503b  mov      rcx, qword ptr [rip + 0x144d45e]
+0000000181685042  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685049  mov      qword ptr [rdx + 0x270], rbx
+0000000181685050  mov      rdx, rbx
+0000000181685053  mov      rcx, qword ptr [rip + 0x144d446]
+000000018168505a  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685061  add      rcx, 0x270
+0000000181685068  call     0x1820decd0
+000000018168506d  mov      rcx, qword ptr [rip + 0x143dfd4]
+0000000181685074  call     0x1820dfb80
+0000000181685079  mov      r8, qword ptr [rip + 0x1462fa8]
+0000000181685080  mov      edx, 0x7a170
+0000000181685085  mov      rcx, rax
+0000000181685088  mov      rbx, rax
+000000018168508b  call     0x18000a450
+0000000181685090  mov      rcx, qword ptr [rip + 0x144d409]
+0000000181685097  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168509e  mov      qword ptr [rdx + 0x278], rbx
+00000001816850a5  mov      rdx, rbx
+00000001816850a8  mov      rcx, qword ptr [rip + 0x144d3f1]
+00000001816850af  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816850b6  add      rcx, 0x278
+00000001816850bd  call     0x1820decd0
+00000001816850c2  mov      rcx, qword ptr [rip + 0x143df7f]
+00000001816850c9  call     0x1820dfb80
+00000001816850ce  mov      r8, qword ptr [rip + 0x1462f53]
+00000001816850d5  mov      edx, 0x7a171
+00000001816850da  mov      rcx, rax
+00000001816850dd  mov      rbx, rax
+00000001816850e0  call     0x18000a450
+00000001816850e5  mov      rcx, qword ptr [rip + 0x144d3b4]
+00000001816850ec  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816850f3  mov      qword ptr [rdx + 0x280], rbx
+00000001816850fa  mov      rdx, rbx
+00000001816850fd  mov      rcx, qword ptr [rip + 0x144d39c]
+0000000181685104  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168510b  add      rcx, 0x280
+0000000181685112  call     0x1820decd0
+0000000181685117  mov      rcx, qword ptr [rip + 0x143dc4a]
+000000018168511e  call     0x1820dfb80
+0000000181685123  mov      r8, qword ptr [rip + 0x1462aae]
+000000018168512a  mov      edx, 0x7a172
+000000018168512f  mov      rcx, rax
+0000000181685132  mov      rbx, rax
+0000000181685135  call     0x18000a450
+000000018168513a  mov      rcx, qword ptr [rip + 0x144d35f]
+0000000181685141  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685148  mov      qword ptr [rdx + 0x288], rbx
+000000018168514f  mov      rdx, rbx
+0000000181685152  mov      rcx, qword ptr [rip + 0x144d347]
+0000000181685159  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685160  add      rcx, 0x288
+0000000181685167  call     0x1820decd0
+000000018168516c  mov      rcx, qword ptr [rip + 0x143c9fd]
+0000000181685173  call     0x1820dfb80
+0000000181685178  mov      r8, qword ptr [rip + 0x1461599]
+000000018168517f  mov      edx, 0x7a173
+0000000181685184  mov      rcx, rax
+0000000181685187  mov      rbx, rax
+000000018168518a  call     0x18000a450
+000000018168518f  mov      rcx, qword ptr [rip + 0x144d30a]
+0000000181685196  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168519d  mov      qword ptr [rdx + 0x290], rbx
+00000001816851a4  mov      rdx, rbx
+00000001816851a7  mov      rcx, qword ptr [rip + 0x144d2f2]
+00000001816851ae  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816851b5  add      rcx, 0x290
+00000001816851bc  call     0x1820decd0
+00000001816851c1  mov      rcx, qword ptr [rip + 0x143de80]
+00000001816851c8  call     0x1820dfb80
+00000001816851cd  mov      r8, qword ptr [rip + 0x1462e54]
+00000001816851d4  mov      edx, 0x7a174
+00000001816851d9  mov      rcx, rax
+00000001816851dc  mov      rbx, rax
+00000001816851df  call     0x18000a450
+00000001816851e4  mov      rcx, qword ptr [rip + 0x144d2b5]
+00000001816851eb  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816851f2  mov      qword ptr [rdx + 0x298], rbx
+00000001816851f9  mov      rdx, rbx
+00000001816851fc  mov      rcx, qword ptr [rip + 0x144d29d]
+0000000181685203  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168520a  add      rcx, 0x298
+0000000181685211  call     0x1820decd0
+0000000181685216  mov      rcx, qword ptr [rip + 0x143cfcb]
+000000018168521d  call     0x1820dfb80
+0000000181685222  mov      r8, qword ptr [rip + 0x1461c1f]
+0000000181685229  mov      edx, 0x7a175
+000000018168522e  mov      rcx, rax
+0000000181685231  mov      rbx, rax
+0000000181685234  call     0x18000a450
+0000000181685239  mov      rcx, qword ptr [rip + 0x144d260]
+0000000181685240  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685247  mov      qword ptr [rdx + 0x2a0], rbx
+000000018168524e  mov      rdx, rbx
+0000000181685251  mov      rcx, qword ptr [rip + 0x144d248]
+0000000181685258  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168525f  add      rcx, 0x2a0
+0000000181685266  call     0x1820decd0
+000000018168526b  mov      rcx, qword ptr [rip + 0x143ddd6]
+0000000181685272  call     0x1820dfb80
+0000000181685277  mov      r8, qword ptr [rip + 0x1462daa]
+000000018168527e  mov      edx, 0x7a176
+0000000181685283  mov      rcx, rax
+0000000181685286  mov      rbx, rax
+0000000181685289  call     0x18000a450
+000000018168528e  mov      rcx, qword ptr [rip + 0x144d20b]
+0000000181685295  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168529c  mov      qword ptr [rdx + 0x2a8], rbx
+00000001816852a3  mov      rdx, rbx
+00000001816852a6  mov      rcx, qword ptr [rip + 0x144d1f3]
+00000001816852ad  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816852b4  add      rcx, 0x2a8
+00000001816852bb  call     0x1820decd0
+00000001816852c0  mov      rcx, qword ptr [rip + 0x143dd81]
+00000001816852c7  call     0x1820dfb80
+00000001816852cc  mov      r8, qword ptr [rip + 0x1462d55]
+00000001816852d3  mov      edx, 0x7a177
+00000001816852d8  mov      rcx, rax
+00000001816852db  mov      rbx, rax
+00000001816852de  call     0x18000a450
+00000001816852e3  mov      rcx, qword ptr [rip + 0x144d1b6]
+00000001816852ea  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816852f1  mov      qword ptr [rdx + 0x2b0], rbx
+00000001816852f8  mov      rdx, rbx
+00000001816852fb  mov      rcx, qword ptr [rip + 0x144d19e]
+0000000181685302  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685309  add      rcx, 0x2b0
+0000000181685310  call     0x1820decd0
+0000000181685315  mov      rcx, qword ptr [rip + 0x143e7f4]
+000000018168531c  call     0x1820dfb80
+0000000181685321  mov      r8, qword ptr [rip + 0x1463cc8]
+0000000181685328  mov      edx, 0x7a178
+000000018168532d  mov      rcx, rax
+0000000181685330  mov      rbx, rax
+0000000181685333  call     0x18000a450
+0000000181685338  mov      rcx, qword ptr [rip + 0x144d161]
+000000018168533f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685346  mov      qword ptr [rdx + 0x2b8], rbx
+000000018168534d  mov      rdx, rbx
+0000000181685350  mov      rcx, qword ptr [rip + 0x144d149]
+0000000181685357  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168535e  add      rcx, 0x2b8
+0000000181685365  call     0x1820decd0
+000000018168536a  mov      rcx, qword ptr [rip + 0x143c51f]
+0000000181685371  call     0x1820dfb80
+0000000181685376  mov      r8, qword ptr [rip + 0x1460f4b]
+000000018168537d  mov      edx, 0x7a179
+0000000181685382  mov      rcx, rax
+0000000181685385  mov      rbx, rax
+0000000181685388  call     0x18000a450
+000000018168538d  mov      rcx, qword ptr [rip + 0x144d10c]
+0000000181685394  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168539b  mov      qword ptr [rdx + 0x2c0], rbx
+00000001816853a2  mov      rdx, rbx
+00000001816853a5  mov      rcx, qword ptr [rip + 0x144d0f4]
+00000001816853ac  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816853b3  add      rcx, 0x2c0
+00000001816853ba  call     0x1820decd0
+00000001816853bf  mov      rcx, qword ptr [rip + 0x143d32a]
+00000001816853c6  call     0x1820dfb80
+00000001816853cb  mov      r8, qword ptr [rip + 0x1462036]
+00000001816853d2  mov      edx, 0x7a17a
+00000001816853d7  mov      rcx, rax
+00000001816853da  mov      rbx, rax
+00000001816853dd  call     0x18000a450
+00000001816853e2  mov      rcx, qword ptr [rip + 0x144d0b7]
+00000001816853e9  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816853f0  mov      qword ptr [rdx + 0x2c8], rbx
+00000001816853f7  mov      rdx, rbx
+00000001816853fa  mov      rcx, qword ptr [rip + 0x144d09f]
+0000000181685401  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685408  add      rcx, 0x2c8
+000000018168540f  call     0x1820decd0
+0000000181685414  mov      rcx, qword ptr [rip + 0x143dc2d]
+000000018168541b  call     0x1820dfb80
+0000000181685420  mov      r8, qword ptr [rip + 0x1462c01]
+0000000181685427  mov      edx, 0x7a17b
+000000018168542c  mov      rcx, rax
+000000018168542f  mov      rbx, rax
+0000000181685432  call     0x18000a450
+0000000181685437  mov      rcx, qword ptr [rip + 0x144d062]
+000000018168543e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685445  mov      qword ptr [rdx + 0x2d0], rbx
+000000018168544c  mov      rdx, rbx
+000000018168544f  mov      rcx, qword ptr [rip + 0x144d04a]
+0000000181685456  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168545d  add      rcx, 0x2d0
+0000000181685464  call     0x1820decd0
+0000000181685469  mov      rcx, qword ptr [rip + 0x143edd0]
+0000000181685470  call     0x1820dfb80
+0000000181685475  mov      r8, qword ptr [rip + 0x146463c]
+000000018168547c  mov      edx, 0x7a17c
+0000000181685481  mov      rcx, rax
+0000000181685484  mov      rbx, rax
+0000000181685487  call     0x18000a450
+000000018168548c  mov      rcx, qword ptr [rip + 0x144d00d]
+0000000181685493  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168549a  mov      qword ptr [rdx + 0x2d8], rbx
+00000001816854a1  mov      rcx, qword ptr [rip + 0x144cff8]
+00000001816854a8  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816854af  add      rcx, 0x2d8
+00000001816854b6  mov      rdx, rbx
+00000001816854b9  call     0x1820decd0
+00000001816854be  mov      rcx, qword ptr [rip + 0x143ff73]
+00000001816854c5  call     0x1820dfb80
+00000001816854ca  mov      r8, qword ptr [rip + 0x1465f9f]
+00000001816854d1  mov      edx, 0x7a17d
+00000001816854d6  mov      rcx, rax
+00000001816854d9  mov      rbx, rax
+00000001816854dc  call     0x18000a450
+00000001816854e1  mov      rcx, qword ptr [rip + 0x144cfb8]
+00000001816854e8  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816854ef  mov      qword ptr [rdx + 0x2e0], rbx
+00000001816854f6  mov      rdx, rbx
+00000001816854f9  mov      rcx, qword ptr [rip + 0x144cfa0]
+0000000181685500  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685507  add      rcx, 0x2e0
+000000018168550e  call     0x1820decd0
+0000000181685513  mov      rcx, qword ptr [rip + 0x143ea46]
+000000018168551a  call     0x1820dfb80
+000000018168551f  mov      r8, qword ptr [rip + 0x1464142]
+0000000181685526  mov      edx, 0x7a17e
+000000018168552b  mov      rcx, rax
+000000018168552e  mov      rbx, rax
+0000000181685531  call     0x18000a450
+0000000181685536  mov      rcx, qword ptr [rip + 0x144cf63]
+000000018168553d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685544  mov      qword ptr [rdx + 0x2e8], rbx
+000000018168554b  mov      rdx, rbx
+000000018168554e  mov      rcx, qword ptr [rip + 0x144cf4b]
+0000000181685555  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168555c  add      rcx, 0x2e8
+0000000181685563  call     0x1820decd0
+0000000181685568  mov      rcx, qword ptr [rip + 0x143dad9]
+000000018168556f  call     0x1820dfb80
+0000000181685574  mov      r8, qword ptr [rip + 0x1462aad]
+000000018168557b  mov      edx, 0x7a17f
+0000000181685580  mov      rcx, rax
+0000000181685583  mov      rbx, rax
+0000000181685586  call     0x18000a450
+000000018168558b  mov      rcx, qword ptr [rip + 0x144cf0e]
+0000000181685592  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685599  mov      qword ptr [rdx + 0x2f0], rbx
+00000001816855a0  mov      rdx, rbx
+00000001816855a3  mov      rcx, qword ptr [rip + 0x144cef6]
+00000001816855aa  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816855b1  add      rcx, 0x2f0
+00000001816855b8  call     0x1820decd0
+00000001816855bd  mov      rcx, qword ptr [rip + 0x143df8c]
+00000001816855c4  call     0x1820dfb80
+00000001816855c9  mov      r8, qword ptr [rip + 0x14632f0]
+00000001816855d0  mov      edx, 0x7a180
+00000001816855d5  mov      rcx, rax
+00000001816855d8  mov      rbx, rax
+00000001816855db  call     0x18000a450
+00000001816855e0  mov      rcx, qword ptr [rip + 0x144ceb9]
+00000001816855e7  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816855ee  mov      qword ptr [rdx + 0x2f8], rbx
+00000001816855f5  mov      rdx, rbx
+00000001816855f8  mov      rcx, qword ptr [rip + 0x144cea1]
+00000001816855ff  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685606  add      rcx, 0x2f8
+000000018168560d  call     0x1820decd0
+0000000181685612  mov      rcx, qword ptr [rip + 0x143cd3f]
+0000000181685619  call     0x1820dfb80
+000000018168561e  mov      r8, qword ptr [rip + 0x1461a4b]
+0000000181685625  mov      edx, 0x7a181
+000000018168562a  mov      rcx, rax
+000000018168562d  mov      rbx, rax
+0000000181685630  call     0x18000a450
+0000000181685635  mov      rcx, qword ptr [rip + 0x144ce64]
+000000018168563c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685643  mov      qword ptr [rdx + 0x300], rbx
+000000018168564a  mov      rdx, rbx
+000000018168564d  mov      rcx, qword ptr [rip + 0x144ce4c]
+0000000181685654  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168565b  add      rcx, 0x300
+0000000181685662  call     0x1820decd0
+0000000181685667  mov      rcx, qword ptr [rip + 0x143fc5a]
+000000018168566e  call     0x1820dfb80
+0000000181685673  mov      r8, qword ptr [rip + 0x1465b26]
+000000018168567a  mov      rbx, rax
+000000018168567d  mov      edx, 0x7a182
+0000000181685682  mov      rcx, rax
+0000000181685685  call     0x18000a450
+000000018168568a  mov      rcx, qword ptr [rip + 0x144ce0f]
+0000000181685691  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685698  mov      qword ptr [rdx + 0x308], rbx
+000000018168569f  mov      rdx, rbx
+00000001816856a2  mov      rcx, qword ptr [rip + 0x144cdf7]
+00000001816856a9  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816856b0  add      rcx, 0x308
+00000001816856b7  call     0x1820decd0
+00000001816856bc  mov      rcx, qword ptr [rip + 0x143d985]
+00000001816856c3  call     0x1820dfb80
+00000001816856c8  mov      r8, qword ptr [rip + 0x1462959]
+00000001816856cf  mov      edx, 0x7a183
+00000001816856d4  mov      rcx, rax
+00000001816856d7  mov      rbx, rax
+00000001816856da  call     0x18000a450
+00000001816856df  mov      rcx, qword ptr [rip + 0x144cdba]
+00000001816856e6  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816856ed  mov      qword ptr [rdx + 0x310], rbx
+00000001816856f4  mov      rdx, rbx
+00000001816856f7  mov      rcx, qword ptr [rip + 0x144cda2]
+00000001816856fe  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685705  add      rcx, 0x310
+000000018168570c  call     0x1820decd0
+0000000181685711  mov      rcx, qword ptr [rip + 0x143d930]
+0000000181685718  call     0x1820dfb80
+000000018168571d  mov      r8, qword ptr [rip + 0x1462904]
+0000000181685724  mov      edx, 0x7a184
+0000000181685729  mov      rcx, rax
+000000018168572c  mov      rbx, rax
+000000018168572f  call     0x18000a450
+0000000181685734  mov      rcx, qword ptr [rip + 0x144cd65]
+000000018168573b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685742  mov      qword ptr [rdx + 0x318], rbx
+0000000181685749  mov      rdx, rbx
+000000018168574c  mov      rcx, qword ptr [rip + 0x144cd4d]
+0000000181685753  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168575a  add      rcx, 0x318
+0000000181685761  call     0x1820decd0
+0000000181685766  mov      rcx, qword ptr [rip + 0x143faa3]
+000000018168576d  call     0x1820dfb80
+0000000181685772  mov      r8, qword ptr [rip + 0x1465807]
+0000000181685779  mov      edx, 0x7a185
+000000018168577e  mov      rcx, rax
+0000000181685781  mov      rbx, rax
+0000000181685784  call     0x18000a450
+0000000181685789  mov      rcx, qword ptr [rip + 0x144cd10]
+0000000181685790  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685797  mov      qword ptr [rdx + 0x320], rbx
+000000018168579e  mov      rdx, rbx
+00000001816857a1  mov      rcx, qword ptr [rip + 0x144ccf8]
+00000001816857a8  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816857af  add      rcx, 0x320
+00000001816857b6  call     0x1820decd0
+00000001816857bb  mov      rcx, qword ptr [rip + 0x143f5fe]
+00000001816857c2  call     0x1820dfb80
+00000001816857c7  mov      r8, qword ptr [rip + 0x14652b2]
+00000001816857ce  mov      edx, 0x7a186
+00000001816857d3  mov      rcx, rax
+00000001816857d6  mov      rbx, rax
+00000001816857d9  call     0x18000a450
+00000001816857de  mov      rcx, qword ptr [rip + 0x144ccbb]
+00000001816857e5  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816857ec  mov      qword ptr [rdx + 0x328], rbx
+00000001816857f3  mov      rdx, rbx
+00000001816857f6  mov      rcx, qword ptr [rip + 0x144cca3]
+00000001816857fd  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685804  add      rcx, 0x328
+000000018168580b  call     0x1820decd0
+0000000181685810  mov      rcx, qword ptr [rip + 0x143df61]
+0000000181685817  call     0x1820dfb80
+000000018168581c  mov      r8, qword ptr [rip + 0x1463435]
+0000000181685823  mov      edx, 0x7a187
+0000000181685828  mov      rcx, rax
+000000018168582b  mov      rbx, rax
+000000018168582e  call     0x18000a450
+0000000181685833  mov      rcx, qword ptr [rip + 0x144cc66]
+000000018168583a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685841  mov      qword ptr [rdx + 0x330], rbx
+0000000181685848  mov      rcx, qword ptr [rip + 0x144cc51]
+000000018168584f  mov      rdx, rbx
+0000000181685852  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685859  add      rcx, 0x330
+0000000181685860  call     0x1820decd0
+0000000181685865  mov      rcx, qword ptr [rip + 0x143d7dc]
+000000018168586c  call     0x1820dfb80
+0000000181685871  mov      r8, qword ptr [rip + 0x14627b0]
+0000000181685878  mov      edx, 0x7a188
+000000018168587d  mov      rcx, rax
+0000000181685880  mov      rbx, rax
+0000000181685883  call     0x18000a450
+0000000181685888  mov      rcx, qword ptr [rip + 0x144cc11]
+000000018168588f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685896  mov      qword ptr [rdx + 0x338], rbx
+000000018168589d  mov      rdx, rbx
+00000001816858a0  mov      rcx, qword ptr [rip + 0x144cbf9]
+00000001816858a7  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816858ae  add      rcx, 0x338
+00000001816858b5  call     0x1820decd0
+00000001816858ba  mov      rcx, qword ptr [rip + 0x143d787]
+00000001816858c1  call     0x1820dfb80
+00000001816858c6  mov      r8, qword ptr [rip + 0x146275b]
+00000001816858cd  mov      edx, 0x7a189
+00000001816858d2  mov      rcx, rax
+00000001816858d5  mov      rbx, rax
+00000001816858d8  call     0x18000a450
+00000001816858dd  mov      rcx, qword ptr [rip + 0x144cbbc]
+00000001816858e4  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816858eb  mov      qword ptr [rdx + 0x340], rbx
+00000001816858f2  mov      rdx, rbx
+00000001816858f5  mov      rcx, qword ptr [rip + 0x144cba4]
+00000001816858fc  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685903  add      rcx, 0x340
+000000018168590a  call     0x1820decd0
+000000018168590f  mov      rcx, qword ptr [rip + 0x143d50a]
+0000000181685916  call     0x1820dfb80
+000000018168591b  mov      r8, qword ptr [rip + 0x1462426]
+0000000181685922  mov      edx, 0x7a18a
+0000000181685927  mov      rcx, rax
+000000018168592a  mov      rbx, rax
+000000018168592d  call     0x18000a450
+0000000181685932  mov      rcx, qword ptr [rip + 0x144cb67]
+0000000181685939  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685940  mov      qword ptr [rdx + 0x348], rbx
+0000000181685947  mov      rdx, rbx
+000000018168594a  mov      rcx, qword ptr [rip + 0x144cb4f]
+0000000181685951  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685958  add      rcx, 0x348
+000000018168595f  call     0x1820decd0
+0000000181685964  mov      rcx, qword ptr [rip + 0x143cd85]
+000000018168596b  call     0x1820dfb80
+0000000181685970  mov      r8, qword ptr [rip + 0x1461a91]
+0000000181685977  mov      edx, 0x7a18b
+000000018168597c  mov      rcx, rax
+000000018168597f  mov      rbx, rax
+0000000181685982  call     0x18000a450
+0000000181685987  mov      rcx, qword ptr [rip + 0x144cb12]
+000000018168598e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685995  mov      qword ptr [rdx + 0x350], rbx
+000000018168599c  mov      rdx, rbx
+000000018168599f  mov      rcx, qword ptr [rip + 0x144cafa]
+00000001816859a6  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816859ad  add      rcx, 0x350
+00000001816859b4  call     0x1820decd0
+00000001816859b9  mov      rcx, qword ptr [rip + 0x143d688]
+00000001816859c0  call     0x1820dfb80
+00000001816859c5  mov      r8, qword ptr [rip + 0x146265c]
+00000001816859cc  mov      edx, 0x7a18c
+00000001816859d1  mov      rcx, rax
+00000001816859d4  mov      rbx, rax
+00000001816859d7  call     0x18000a450
+00000001816859dc  mov      rcx, qword ptr [rip + 0x144cabd]
+00000001816859e3  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816859ea  mov      qword ptr [rdx + 0x358], rbx
+00000001816859f1  mov      rdx, rbx
+00000001816859f4  mov      rcx, qword ptr [rip + 0x144caa5]
+00000001816859fb  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685a02  add      rcx, 0x358
+0000000181685a09  call     0x1820decd0
+0000000181685a0e  mov      rcx, qword ptr [rip + 0x143d633]
+0000000181685a15  call     0x1820dfb80
+0000000181685a1a  mov      r8, qword ptr [rip + 0x1462607]
+0000000181685a21  mov      edx, 0x7a18d
+0000000181685a26  mov      rcx, rax
+0000000181685a29  mov      rbx, rax
+0000000181685a2c  call     0x18000a450
+0000000181685a31  mov      rcx, qword ptr [rip + 0x144ca68]
+0000000181685a38  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685a3f  mov      qword ptr [rdx + 0x360], rbx
+0000000181685a46  mov      rdx, rbx
+0000000181685a49  mov      rcx, qword ptr [rip + 0x144ca50]
+0000000181685a50  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685a57  add      rcx, 0x360
+0000000181685a5e  call     0x1820decd0
+0000000181685a63  mov      rcx, qword ptr [rip + 0x143dae6]
+0000000181685a6a  call     0x1820dfb80
+0000000181685a6f  mov      r8, qword ptr [rip + 0x1462e4a]
+0000000181685a76  mov      edx, 0x7a18e
+0000000181685a7b  mov      rcx, rax
+0000000181685a7e  mov      rbx, rax
+0000000181685a81  call     0x18000a450
+0000000181685a86  mov      rcx, qword ptr [rip + 0x144ca13]
+0000000181685a8d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685a94  mov      qword ptr [rdx + 0x368], rbx
+0000000181685a9b  mov      rdx, rbx
+0000000181685a9e  mov      rcx, qword ptr [rip + 0x144c9fb]
+0000000181685aa5  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685aac  add      rcx, 0x368
+0000000181685ab3  call     0x1820decd0
+0000000181685ab8  mov      rcx, qword ptr [rip + 0x143fd11]
+0000000181685abf  call     0x1820dfb80
+0000000181685ac4  mov      r8, qword ptr [rip + 0x1465ead]
+0000000181685acb  mov      edx, 0x7a18f
+0000000181685ad0  mov      rcx, rax
+0000000181685ad3  mov      rbx, rax
+0000000181685ad6  call     0x18000a450
+0000000181685adb  mov      rcx, qword ptr [rip + 0x144c9be]
+0000000181685ae2  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685ae9  mov      qword ptr [rdx + 0x370], rbx
+0000000181685af0  mov      rdx, rbx
+0000000181685af3  mov      rcx, qword ptr [rip + 0x144c9a6]
+0000000181685afa  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685b01  add      rcx, 0x370
+0000000181685b08  call     0x1820decd0
+0000000181685b0d  mov      rcx, qword ptr [rip + 0x143f2ac]
+0000000181685b14  call     0x1820dfb80
+0000000181685b19  mov      r8, qword ptr [rip + 0x1464f60]
+0000000181685b20  mov      edx, 0x7a190
+0000000181685b25  mov      rcx, rax
+0000000181685b28  mov      rbx, rax
+0000000181685b2b  call     0x18000a450
+0000000181685b30  mov      rcx, qword ptr [rip + 0x144c969]
+0000000181685b37  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685b3e  mov      qword ptr [rdx + 0x378], rbx
+0000000181685b45  mov      rdx, rbx
+0000000181685b48  mov      rcx, qword ptr [rip + 0x144c951]
+0000000181685b4f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685b56  add      rcx, 0x378
+0000000181685b5d  call     0x1820decd0
+0000000181685b62  mov      rcx, qword ptr [rip + 0x143d7bf]
+0000000181685b69  call     0x1820dfb80
+0000000181685b6e  mov      r8, qword ptr [rip + 0x14629bb]
+0000000181685b75  mov      edx, 0x7a191
+0000000181685b7a  mov      rcx, rax
+0000000181685b7d  mov      rbx, rax
+0000000181685b80  call     0x18000a450
+0000000181685b85  mov      rcx, qword ptr [rip + 0x144c914]
+0000000181685b8c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685b93  mov      qword ptr [rdx + 0x380], rbx
+0000000181685b9a  mov      rdx, rbx
+0000000181685b9d  mov      rcx, qword ptr [rip + 0x144c8fc]
+0000000181685ba4  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685bab  add      rcx, 0x380
+0000000181685bb2  call     0x1820decd0
+0000000181685bb7  mov      rcx, qword ptr [rip + 0x143d48a]
+0000000181685bbe  call     0x1820dfb80
+0000000181685bc3  mov      r8, qword ptr [rip + 0x146245e]
+0000000181685bca  mov      edx, 0x7a192
+0000000181685bcf  mov      rcx, rax
+0000000181685bd2  mov      rbx, rax
+0000000181685bd5  call     0x18000a450
+0000000181685bda  mov      rcx, qword ptr [rip + 0x144c8bf]
+0000000181685be1  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685be8  mov      qword ptr [rdx + 0x388], rbx
+0000000181685bef  mov      rdx, rbx
+0000000181685bf2  mov      rcx, qword ptr [rip + 0x144c8a7]
+0000000181685bf9  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685c00  add      rcx, 0x388
+0000000181685c07  call     0x1820decd0
+0000000181685c0c  mov      rcx, qword ptr [rip + 0x143d93d]
+0000000181685c13  call     0x1820dfb80
+0000000181685c18  mov      r8, qword ptr [rip + 0x1462ca1]
+0000000181685c1f  mov      edx, 0x7a193
+0000000181685c24  mov      rcx, rax
+0000000181685c27  mov      rbx, rax
+0000000181685c2a  call     0x18000a450
+0000000181685c2f  mov      rcx, qword ptr [rip + 0x144c86a]
+0000000181685c36  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685c3d  mov      qword ptr [rdx + 0x390], rbx
+0000000181685c44  mov      rdx, rbx
+0000000181685c47  mov      rcx, qword ptr [rip + 0x144c852]
+0000000181685c4e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685c55  add      rcx, 0x390
+0000000181685c5c  call     0x1820decd0
+0000000181685c61  mov      rcx, qword ptr [rip + 0x143c410]
+0000000181685c68  call     0x1820dfb80
+0000000181685c6d  mov      r8, qword ptr [rip + 0x1461064]
+0000000181685c74  mov      edx, 0x7a194
+0000000181685c79  mov      rcx, rax
+0000000181685c7c  mov      rbx, rax
+0000000181685c7f  call     0x18000a450
+0000000181685c84  mov      rcx, qword ptr [rip + 0x144c815]
+0000000181685c8b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685c92  mov      qword ptr [rdx + 0x398], rbx
+0000000181685c99  mov      rdx, rbx
+0000000181685c9c  mov      rcx, qword ptr [rip + 0x144c7fd]
+0000000181685ca3  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685caa  add      rcx, 0x398
+0000000181685cb1  call     0x1820decd0
+0000000181685cb6  mov      rcx, qword ptr [rip + 0x143f553]
+0000000181685cbd  call     0x1820dfb80
+0000000181685cc2  mov      r8, qword ptr [rip + 0x14652b7]
+0000000181685cc9  mov      edx, 0x7a195
+0000000181685cce  mov      rcx, rax
+0000000181685cd1  mov      rbx, rax
+0000000181685cd4  call     0x18000a450
+0000000181685cd9  mov      rcx, qword ptr [rip + 0x144c7c0]
+0000000181685ce0  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685ce7  mov      qword ptr [rdx + 0x3a0], rbx
+0000000181685cee  mov      rdx, rbx
+0000000181685cf1  mov      rcx, qword ptr [rip + 0x144c7a8]
+0000000181685cf8  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685cff  add      rcx, 0x3a0
+0000000181685d06  call     0x1820decd0
+0000000181685d0b  mov      rcx, qword ptr [rip + 0x143f4fe]
+0000000181685d12  call     0x1820dfb80
+0000000181685d17  mov      r8, qword ptr [rip + 0x1465262]
+0000000181685d1e  mov      edx, 0x7a196
+0000000181685d23  mov      rcx, rax
+0000000181685d26  mov      rbx, rax
+0000000181685d29  call     0x18000a450
+0000000181685d2e  mov      rcx, qword ptr [rip + 0x144c76b]
+0000000181685d35  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685d3c  mov      qword ptr [rdx + 0x3a8], rbx
+0000000181685d43  mov      rdx, rbx
+0000000181685d46  mov      rcx, qword ptr [rip + 0x144c753]
+0000000181685d4d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685d54  add      rcx, 0x3a8
+0000000181685d5b  call     0x1820decd0
+0000000181685d60  mov      rcx, qword ptr [rip + 0x143f789]
+0000000181685d67  call     0x1820dfb80
+0000000181685d6c  mov      r8, qword ptr [rip + 0x14657b5]
+0000000181685d73  mov      edx, 0x7a197
+0000000181685d78  mov      rcx, rax
+0000000181685d7b  mov      rbx, rax
+0000000181685d7e  call     0x18000a450
+0000000181685d83  mov      rcx, qword ptr [rip + 0x144c716]
+0000000181685d8a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685d91  mov      qword ptr [rdx + 0x3b0], rbx
+0000000181685d98  mov      rcx, qword ptr [rip + 0x144c701]
+0000000181685d9f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685da6  add      rcx, 0x3b0
+0000000181685dad  mov      rdx, rbx
+0000000181685db0  call     0x1820decd0
+0000000181685db5  mov      rcx, qword ptr [rip + 0x143f454]
+0000000181685dbc  call     0x1820dfb80
+0000000181685dc1  mov      r8, qword ptr [rip + 0x14651b8]
+0000000181685dc8  mov      edx, 0x7a198
+0000000181685dcd  mov      rcx, rax
+0000000181685dd0  mov      rbx, rax
+0000000181685dd3  call     0x18000a450
+0000000181685dd8  mov      rcx, qword ptr [rip + 0x144c6c1]
+0000000181685ddf  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685de6  mov      qword ptr [rdx + 0x3b8], rbx
+0000000181685ded  mov      rdx, rbx
+0000000181685df0  mov      rcx, qword ptr [rip + 0x144c6a9]
+0000000181685df7  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685dfe  add      rcx, 0x3b8
+0000000181685e05  call     0x1820decd0
+0000000181685e0a  mov      rcx, qword ptr [rip + 0x143c8df]
+0000000181685e11  call     0x1820dfb80
+0000000181685e16  mov      r8, qword ptr [rip + 0x14615eb]
+0000000181685e1d  mov      edx, 0x7a199
+0000000181685e22  mov      rcx, rax
+0000000181685e25  mov      rbx, rax
+0000000181685e28  call     0x18000a450
+0000000181685e2d  mov      rcx, qword ptr [rip + 0x144c66c]
+0000000181685e34  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685e3b  mov      qword ptr [rdx + 0x3c0], rbx
+0000000181685e42  mov      rdx, rbx
+0000000181685e45  mov      rcx, qword ptr [rip + 0x144c654]
+0000000181685e4c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685e53  add      rcx, 0x3c0
+0000000181685e5a  call     0x1820decd0
+0000000181685e5f  mov      rcx, qword ptr [rip + 0x143f8b2]
+0000000181685e66  call     0x1820dfb80
+0000000181685e6b  mov      r8, qword ptr [rip + 0x14658de]
+0000000181685e72  mov      edx, 0x7a19a
+0000000181685e77  mov      rcx, rax
+0000000181685e7a  mov      rbx, rax
+0000000181685e7d  call     0x18000a450
+0000000181685e82  mov      rcx, qword ptr [rip + 0x144c617]
+0000000181685e89  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685e90  mov      qword ptr [rdx + 0x3c8], rbx
+0000000181685e97  mov      rdx, rbx
+0000000181685e9a  mov      rcx, qword ptr [rip + 0x144c5ff]
+0000000181685ea1  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685ea8  add      rcx, 0x3c8
+0000000181685eaf  call     0x1820decd0
+0000000181685eb4  mov      rcx, qword ptr [rip + 0x143bf95]
+0000000181685ebb  call     0x1820dfb80
+0000000181685ec0  mov      r8, qword ptr [rip + 0x1460b31]
+0000000181685ec7  mov      edx, 0x7a19b
+0000000181685ecc  mov      rcx, rax
+0000000181685ecf  mov      rbx, rax
+0000000181685ed2  call     0x18000a450
+0000000181685ed7  mov      rcx, qword ptr [rip + 0x144c5c2]
+0000000181685ede  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685ee5  mov      qword ptr [rdx + 0x3d0], rbx
+0000000181685eec  mov      rdx, rbx
+0000000181685eef  mov      rcx, qword ptr [rip + 0x144c5aa]
+0000000181685ef6  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685efd  add      rcx, 0x3d0
+0000000181685f04  call     0x1820decd0
+0000000181685f09  mov      rcx, qword ptr [rip + 0x143db48]
+0000000181685f10  call     0x1820dfb80
+0000000181685f15  mov      r8, qword ptr [rip + 0x146301c]
+0000000181685f1c  mov      edx, 0x7a19d
+0000000181685f21  mov      rcx, rax
+0000000181685f24  mov      rbx, rax
+0000000181685f27  call     0x18000a450
+0000000181685f2c  mov      rcx, qword ptr [rip + 0x144c56d]
+0000000181685f33  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685f3a  mov      qword ptr [rdx + 0x3d8], rbx
+0000000181685f41  mov      rdx, rbx
+0000000181685f44  mov      rcx, qword ptr [rip + 0x144c555]
+0000000181685f4b  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685f52  add      rcx, 0x3d8
+0000000181685f59  call     0x1820decd0
+0000000181685f5e  mov      rcx, qword ptr [rip + 0x143c78b]
+0000000181685f65  call     0x1820dfb80
+0000000181685f6a  mov      r8, qword ptr [rip + 0x1461497]
+0000000181685f71  mov      rbx, rax
+0000000181685f74  mov      edx, 0x7a19e
+0000000181685f79  mov      rcx, rax
+0000000181685f7c  call     0x18000a450
+0000000181685f81  mov      rcx, qword ptr [rip + 0x144c518]
+0000000181685f88  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685f8f  mov      qword ptr [rdx + 0x3e0], rbx
+0000000181685f96  mov      rdx, rbx
+0000000181685f99  mov      rcx, qword ptr [rip + 0x144c500]
+0000000181685fa0  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685fa7  add      rcx, 0x3e0
+0000000181685fae  call     0x1820decd0
+0000000181685fb3  mov      rcx, qword ptr [rip + 0x143ce66]
+0000000181685fba  call     0x1820dfb80
+0000000181685fbf  mov      r8, qword ptr [rip + 0x1461d82]
+0000000181685fc6  mov      edx, 0x7a19f
+0000000181685fcb  mov      rcx, rax
+0000000181685fce  mov      rbx, rax
+0000000181685fd1  call     0x18000a450
+0000000181685fd6  mov      rcx, qword ptr [rip + 0x144c4c3]
+0000000181685fdd  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181685fe4  mov      qword ptr [rdx + 0x3e8], rbx
+0000000181685feb  mov      rdx, rbx
+0000000181685fee  mov      rcx, qword ptr [rip + 0x144c4ab]
+0000000181685ff5  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181685ffc  add      rcx, 0x3e8
+0000000181686003  call     0x1820decd0
+0000000181686008  mov      rcx, qword ptr [rip + 0x143bfb1]
+000000018168600f  call     0x1820dfb80
+0000000181686014  mov      r8, qword ptr [rip + 0x1460c05]
+000000018168601b  mov      edx, 0x7a1a0
+0000000181686020  mov      rcx, rax
+0000000181686023  mov      rbx, rax
+0000000181686026  call     0x18000a450
+000000018168602b  mov      rcx, qword ptr [rip + 0x144c46e]
+0000000181686032  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686039  mov      qword ptr [rdx + 0x3f0], rbx
+0000000181686040  mov      rdx, rbx
+0000000181686043  mov      rcx, qword ptr [rip + 0x144c456]
+000000018168604a  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686051  add      rcx, 0x3f0
+0000000181686058  call     0x1820decd0
+000000018168605d  mov      rcx, qword ptr [rip + 0x143c68c]
+0000000181686064  call     0x1820dfb80
+0000000181686069  mov      r8, qword ptr [rip + 0x1461398]
+0000000181686070  mov      edx, 0x7a1a1
+0000000181686075  mov      rcx, rax
+0000000181686078  mov      rbx, rax
+000000018168607b  call     0x18000a450
+0000000181686080  mov      rcx, qword ptr [rip + 0x144c419]
+0000000181686087  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168608e  mov      qword ptr [rdx + 0x3f8], rbx
+0000000181686095  mov      rdx, rbx
+0000000181686098  mov      rcx, qword ptr [rip + 0x144c401]
+000000018168609f  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816860a6  add      rcx, 0x3f8
+00000001816860ad  call     0x1820decd0
+00000001816860b2  mov      rcx, qword ptr [rip + 0x143c637]
+00000001816860b9  call     0x1820dfb80
+00000001816860be  mov      r8, qword ptr [rip + 0x1461343]
+00000001816860c5  mov      edx, 0x7a1a2
+00000001816860ca  mov      rcx, rax
+00000001816860cd  mov      rbx, rax
+00000001816860d0  call     0x18000a450
+00000001816860d5  mov      rcx, qword ptr [rip + 0x144c3c4]
+00000001816860dc  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816860e3  mov      qword ptr [rdx + 0x400], rbx
+00000001816860ea  mov      rdx, rbx
+00000001816860ed  mov      rcx, qword ptr [rip + 0x144c3ac]
+00000001816860f4  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816860fb  add      rcx, 0x400
+0000000181686102  call     0x1820decd0
+0000000181686107  mov      rcx, qword ptr [rip + 0x143d442]
+000000018168610e  call     0x1820dfb80
+0000000181686113  mov      r8, qword ptr [rip + 0x14627a6]
+000000018168611a  mov      edx, 0x7a1a3
+000000018168611f  mov      rcx, rax
+0000000181686122  mov      rbx, rax
+0000000181686125  call     0x18000a450
+000000018168612a  mov      rcx, qword ptr [rip + 0x144c36f]
+0000000181686131  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686138  mov      qword ptr [rdx + 0x408], rbx
+000000018168613f  mov      rcx, qword ptr [rip + 0x144c35a]
+0000000181686146  mov      rdx, rbx
+0000000181686149  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686150  add      rcx, 0x408
+0000000181686157  call     0x1820decd0
+000000018168615c  mov      rcx, qword ptr [rip + 0x143dd45]
+0000000181686163  call     0x1820dfb80
+0000000181686168  mov      r8, qword ptr [rip + 0x1463389]
+000000018168616f  mov      edx, 0x7a1a4
+0000000181686174  mov      rcx, rax
+0000000181686177  mov      rbx, rax
+000000018168617a  call     0x18000a450
+000000018168617f  mov      rcx, qword ptr [rip + 0x144c31a]
+0000000181686186  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168618d  mov      qword ptr [rdx + 0x410], rbx
+0000000181686194  mov      rdx, rbx
+0000000181686197  mov      rcx, qword ptr [rip + 0x144c302]
+000000018168619e  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816861a5  add      rcx, 0x410
+00000001816861ac  call     0x1820decd0
+00000001816861b1  mov      rcx, qword ptr [rip + 0x143c988]
+00000001816861b8  call     0x1820dfb80
+00000001816861bd  mov      r8, qword ptr [rip + 0x14617ec]
+00000001816861c4  mov      edx, 0x7a1a5
+00000001816861c9  mov      rcx, rax
+00000001816861cc  mov      rbx, rax
+00000001816861cf  call     0x18000a450
+00000001816861d4  mov      rcx, qword ptr [rip + 0x144c2c5]
+00000001816861db  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816861e2  mov      qword ptr [rdx + 0x418], rbx
+00000001816861e9  mov      rdx, rbx
+00000001816861ec  mov      rcx, qword ptr [rip + 0x144c2ad]
+00000001816861f3  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816861fa  add      rcx, 0x418
+0000000181686201  call     0x1820decd0
+0000000181686206  mov      rcx, qword ptr [rip + 0x143f453]
+000000018168620d  call     0x1820dfb80
+0000000181686212  mov      r8, qword ptr [rip + 0x146547f]
+0000000181686219  mov      edx, 0x7a1a6
+000000018168621e  mov      rcx, rax
+0000000181686221  mov      rbx, rax
+0000000181686224  call     0x18000a450
+0000000181686229  mov      rcx, qword ptr [rip + 0x144c270]
+0000000181686230  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686237  mov      qword ptr [rdx + 0x420], rbx
+000000018168623e  mov      rdx, rbx
+0000000181686241  mov      rcx, qword ptr [rip + 0x144c258]
+0000000181686248  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168624f  add      rcx, 0x420
+0000000181686256  call     0x1820decd0
+000000018168625b  mov      rcx, qword ptr [rip + 0x143c48e]
+0000000181686262  call     0x1820dfb80
+0000000181686267  mov      r8, qword ptr [rip + 0x146119a]
+000000018168626e  mov      edx, 0x7a1a7
+0000000181686273  mov      rcx, rax
+0000000181686276  mov      rbx, rax
+0000000181686279  call     0x18000a450
+000000018168627e  mov      rcx, qword ptr [rip + 0x144c21b]
+0000000181686285  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168628c  mov      qword ptr [rdx + 0x428], rbx
+0000000181686293  mov      rdx, rbx
+0000000181686296  mov      rcx, qword ptr [rip + 0x144c203]
+000000018168629d  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816862a4  add      rcx, 0x428
+00000001816862ab  call     0x1820decd0
+00000001816862b0  mov      rcx, qword ptr [rip + 0x143bae1]
+00000001816862b7  call     0x1820dfb80
+00000001816862bc  mov      r8, qword ptr [rip + 0x146067d]
+00000001816862c3  mov      edx, 0x7a1a8
+00000001816862c8  mov      rcx, rax
+00000001816862cb  mov      rbx, rax
+00000001816862ce  call     0x18000a450
+00000001816862d3  mov      rcx, qword ptr [rip + 0x144c1c6]
+00000001816862da  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816862e1  mov      qword ptr [rdx + 0x430], rbx
+00000001816862e8  mov      rdx, rbx
+00000001816862eb  mov      rcx, qword ptr [rip + 0x144c1ae]
+00000001816862f2  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816862f9  add      rcx, 0x430
+0000000181686300  call     0x1820decd0
+0000000181686305  mov      rcx, qword ptr [rip + 0x143bcb4]
+000000018168630c  call     0x1820dfb80
+0000000181686311  mov      r8, qword ptr [rip + 0x1460908]
+0000000181686318  mov      edx, 0x7a1a9
+000000018168631d  mov      rcx, rax
+0000000181686320  mov      rbx, rax
+0000000181686323  call     0x18000a450
+0000000181686328  mov      rcx, qword ptr [rip + 0x144c171]
+000000018168632f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686336  mov      qword ptr [rdx + 0x438], rbx
+000000018168633d  mov      rdx, rbx
+0000000181686340  mov      rcx, qword ptr [rip + 0x144c159]
+0000000181686347  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168634e  add      rcx, 0x438
+0000000181686355  call     0x1820decd0
+000000018168635a  mov      rcx, qword ptr [rip + 0x143baef]
+0000000181686361  call     0x1820dfb80
+0000000181686366  mov      r8, qword ptr [rip + 0x146068b]
+000000018168636d  mov      edx, 0x7a1aa
+0000000181686372  mov      rcx, rax
+0000000181686375  mov      rbx, rax
+0000000181686378  call     0x18000a450
+000000018168637d  mov      rcx, qword ptr [rip + 0x144c11c]
+0000000181686384  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168638b  mov      qword ptr [rdx + 0x440], rbx
+0000000181686392  mov      rdx, rbx
+0000000181686395  mov      rcx, qword ptr [rip + 0x144c104]
+000000018168639c  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816863a3  add      rcx, 0x440
+00000001816863aa  call     0x1820decd0
+00000001816863af  mov      rcx, qword ptr [rip + 0x143ba9a]
+00000001816863b6  call     0x1820dfb80
+00000001816863bb  mov      r8, qword ptr [rip + 0x1460636]
+00000001816863c2  mov      edx, 0x7a1ab
+00000001816863c7  mov      rcx, rax
+00000001816863ca  mov      rbx, rax
+00000001816863cd  call     0x18000a450
+00000001816863d2  mov      rcx, qword ptr [rip + 0x144c0c7]
+00000001816863d9  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816863e0  mov      qword ptr [rdx + 0x448], rbx
+00000001816863e7  mov      rdx, rbx
+00000001816863ea  mov      rcx, qword ptr [rip + 0x144c0af]
+00000001816863f1  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816863f8  add      rcx, 0x448
+00000001816863ff  call     0x1820decd0
+0000000181686404  mov      rcx, qword ptr [rip + 0x143d145]
+000000018168640b  call     0x1820dfb80
+0000000181686410  mov      r8, qword ptr [rip + 0x14624a9]
+0000000181686417  mov      edx, 0x7a1ac
+000000018168641c  mov      rcx, rax
+000000018168641f  mov      rbx, rax
+0000000181686422  call     0x18000a450
+0000000181686427  mov      rcx, qword ptr [rip + 0x144c072]
+000000018168642e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686435  mov      qword ptr [rdx + 0x450], rbx
+000000018168643c  mov      rdx, rbx
+000000018168643f  mov      rcx, qword ptr [rip + 0x144c05a]
+0000000181686446  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168644d  add      rcx, 0x450
+0000000181686454  call     0x1820decd0
+0000000181686459  mov      rcx, qword ptr [rip + 0x143c290]
+0000000181686460  call     0x1820dfb80
+0000000181686465  mov      r8, qword ptr [rip + 0x1460f9c]
+000000018168646c  mov      edx, 0x7a1ad
+0000000181686471  mov      rcx, rax
+0000000181686474  mov      rbx, rax
+0000000181686477  call     0x18000a450
+000000018168647c  mov      rcx, qword ptr [rip + 0x144c01d]
+0000000181686483  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168648a  mov      qword ptr [rdx + 0x458], rbx
+0000000181686491  mov      rdx, rbx
+0000000181686494  mov      rcx, qword ptr [rip + 0x144c005]
+000000018168649b  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816864a2  add      rcx, 0x458
+00000001816864a9  call     0x1820decd0
+00000001816864ae  mov      rcx, qword ptr [rip + 0x143d09b]
+00000001816864b5  call     0x1820dfb80
+00000001816864ba  mov      r8, qword ptr [rip + 0x14623ff]
+00000001816864c1  mov      edx, 0x7a1ae
+00000001816864c6  mov      rcx, rax
+00000001816864c9  mov      rbx, rax
+00000001816864cc  call     0x18000a450
+00000001816864d1  mov      rcx, qword ptr [rip + 0x144bfc8]
+00000001816864d8  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816864df  mov      qword ptr [rdx + 0x460], rbx
+00000001816864e6  mov      rdx, rbx
+00000001816864e9  mov      rcx, qword ptr [rip + 0x144bfb0]
+00000001816864f0  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816864f7  add      rcx, 0x460
+00000001816864fe  call     0x1820decd0
+0000000181686503  mov      rcx, qword ptr [rip + 0x143cb3e]
+000000018168650a  call     0x1820dfb80
+000000018168650f  mov      r8, qword ptr [rip + 0x1461b12]
+0000000181686516  mov      edx, 0x7a1af
+000000018168651b  mov      rcx, rax
+000000018168651e  mov      rbx, rax
+0000000181686521  call     0x18000a450
+0000000181686526  mov      rcx, qword ptr [rip + 0x144bf73]
+000000018168652d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686534  mov      qword ptr [rdx + 0x468], rbx
+000000018168653b  mov      rdx, rbx
+000000018168653e  mov      rcx, qword ptr [rip + 0x144bf5b]
+0000000181686545  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168654c  add      rcx, 0x468
+0000000181686553  call     0x1820decd0
+0000000181686558  mov      rcx, qword ptr [rip + 0x143f1b9]
+000000018168655f  call     0x1820dfb80
+0000000181686564  mov      r8, qword ptr [rip + 0x14651e5]
+000000018168656b  mov      edx, 0x7a1b0
+0000000181686570  mov      rcx, rax
+0000000181686573  mov      rbx, rax
+0000000181686576  call     0x18000a450
+000000018168657b  mov      rcx, qword ptr [rip + 0x144bf1e]
+0000000181686582  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686589  mov      qword ptr [rdx + 0x470], rbx
+0000000181686590  mov      rdx, rbx
+0000000181686593  mov      rcx, qword ptr [rip + 0x144bf06]
+000000018168659a  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816865a1  add      rcx, 0x470
+00000001816865a8  call     0x1820decd0
+00000001816865ad  mov      rcx, qword ptr [rip + 0x143b394]
+00000001816865b4  call     0x1820dfb80
+00000001816865b9  mov      r8, qword ptr [rip + 0x145fe78]
+00000001816865c0  mov      edx, 0x7a1b1
+00000001816865c5  mov      rcx, rax
+00000001816865c8  mov      rbx, rax
+00000001816865cb  call     0x18000a450
+00000001816865d0  mov      rcx, qword ptr [rip + 0x144bec9]
+00000001816865d7  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816865de  mov      qword ptr [rdx + 0x478], rbx
+00000001816865e5  mov      rdx, rbx
+00000001816865e8  mov      rcx, qword ptr [rip + 0x144beb1]
+00000001816865ef  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816865f6  add      rcx, 0x478
+00000001816865fd  call     0x1820decd0
+0000000181686602  mov      rcx, qword ptr [rip + 0x143ca3f]
+0000000181686609  call     0x1820dfb80
+000000018168660e  mov      r8, qword ptr [rip + 0x1461a13]
+0000000181686615  mov      edx, 0x7a1b2
+000000018168661a  mov      rcx, rax
+000000018168661d  mov      rbx, rax
+0000000181686620  call     0x18000a450
+0000000181686625  mov      rcx, qword ptr [rip + 0x144be74]
+000000018168662c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686633  mov      qword ptr [rdx + 0x480], rbx
+000000018168663a  mov      rdx, rbx
+000000018168663d  mov      rcx, qword ptr [rip + 0x144be5c]
+0000000181686644  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168664b  add      rcx, 0x480
+0000000181686652  call     0x1820decd0
+0000000181686657  mov      rcx, qword ptr [rip + 0x143c9ea]
+000000018168665e  call     0x1820dfb80
+0000000181686663  mov      r8, qword ptr [rip + 0x14619be]
+000000018168666a  mov      edx, 0x7a1b3
+000000018168666f  mov      rcx, rax
+0000000181686672  mov      rbx, rax
+0000000181686675  call     0x18000a450
+000000018168667a  mov      rcx, qword ptr [rip + 0x144be1f]
+0000000181686681  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686688  mov      qword ptr [rdx + 0x488], rbx
+000000018168668f  mov      rcx, qword ptr [rip + 0x144be0a]
+0000000181686696  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168669d  add      rcx, 0x488
+00000001816866a4  mov      rdx, rbx
+00000001816866a7  call     0x1820decd0
+00000001816866ac  mov      rcx, qword ptr [rip + 0x143b575]
+00000001816866b3  call     0x1820dfb80
+00000001816866b8  mov      r8, qword ptr [rip + 0x1460111]
+00000001816866bf  mov      edx, 0x7a1b5
+00000001816866c4  mov      rcx, rax
+00000001816866c7  mov      rbx, rax
+00000001816866ca  call     0x18000a450
+00000001816866cf  mov      rcx, qword ptr [rip + 0x144bdca]
+00000001816866d6  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816866dd  mov      qword ptr [rdx + 0x490], rbx
+00000001816866e4  mov      rdx, rbx
+00000001816866e7  mov      rcx, qword ptr [rip + 0x144bdb2]
+00000001816866ee  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816866f5  add      rcx, 0x490
+00000001816866fc  call     0x1820decd0
+0000000181686701  mov      rcx, qword ptr [rip + 0x143bfe8]
+0000000181686708  call     0x1820dfb80
+000000018168670d  mov      r8, qword ptr [rip + 0x1460cf4]
+0000000181686714  mov      edx, 0x7a1b6
+0000000181686719  mov      rcx, rax
+000000018168671c  mov      rbx, rax
+000000018168671f  call     0x18000a450
+0000000181686724  mov      rcx, qword ptr [rip + 0x144bd75]
+000000018168672b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686732  mov      qword ptr [rdx + 0x498], rbx
+0000000181686739  mov      rdx, rbx
+000000018168673c  mov      rcx, qword ptr [rip + 0x144bd5d]
+0000000181686743  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168674a  add      rcx, 0x498
+0000000181686751  call     0x1820decd0
+0000000181686756  mov      rcx, qword ptr [rip + 0x143efbb]
+000000018168675d  call     0x1820dfb80
+0000000181686762  mov      r8, qword ptr [rip + 0x1464fe7]
+0000000181686769  mov      edx, 0x7a1b7
+000000018168676e  mov      rcx, rax
+0000000181686771  mov      rbx, rax
+0000000181686774  call     0x18000a450
+0000000181686779  mov      rcx, qword ptr [rip + 0x144bd20]
+0000000181686780  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686787  mov      qword ptr [rdx + 0x4a0], rbx
+000000018168678e  mov      rdx, rbx
+0000000181686791  mov      rcx, qword ptr [rip + 0x144bd08]
+0000000181686798  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168679f  add      rcx, 0x4a0
+00000001816867a6  call     0x1820decd0
+00000001816867ab  mov      rcx, qword ptr [rip + 0x143f0d6]
+00000001816867b2  call     0x1820dfb80
+00000001816867b7  mov      r8, qword ptr [rip + 0x1465272]
+00000001816867be  mov      edx, 0x7a1b8
+00000001816867c3  mov      rcx, rax
+00000001816867c6  mov      rbx, rax
+00000001816867c9  call     0x18000a450
+00000001816867ce  mov      rcx, qword ptr [rip + 0x144bccb]
+00000001816867d5  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816867dc  mov      qword ptr [rdx + 0x4a8], rbx
+00000001816867e3  mov      rdx, rbx
+00000001816867e6  mov      rcx, qword ptr [rip + 0x144bcb3]
+00000001816867ed  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816867f4  add      rcx, 0x4a8
+00000001816867fb  call     0x1820decd0
+0000000181686800  mov      rcx, qword ptr [rip + 0x143ea09]
+0000000181686807  call     0x1820dfb80
+000000018168680c  mov      r8, qword ptr [rip + 0x146476d]
+0000000181686813  mov      edx, 0x7a1b9
+0000000181686818  mov      rcx, rax
+000000018168681b  mov      rbx, rax
+000000018168681e  call     0x18000a450
+0000000181686823  mov      rcx, qword ptr [rip + 0x144bc76]
+000000018168682a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686831  mov      qword ptr [rdx + 0x4b0], rbx
+0000000181686838  mov      rdx, rbx
+000000018168683b  mov      rcx, qword ptr [rip + 0x144bc5e]
+0000000181686842  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686849  add      rcx, 0x4b0
+0000000181686850  call     0x1820decd0
+0000000181686855  mov      rcx, qword ptr [rip + 0x143be94]
+000000018168685c  call     0x1820dfb80
+0000000181686861  mov      r8, qword ptr [rip + 0x1460ba0]
+0000000181686868  mov      rbx, rax
+000000018168686b  mov      edx, 0x7a1ba
+0000000181686870  mov      rcx, rax
+0000000181686873  call     0x18000a450
+0000000181686878  mov      rcx, qword ptr [rip + 0x144bc21]
+000000018168687f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686886  mov      qword ptr [rdx + 0x4b8], rbx
+000000018168688d  mov      rdx, rbx
+0000000181686890  mov      rcx, qword ptr [rip + 0x144bc09]
+0000000181686897  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168689e  add      rcx, 0x4b8
+00000001816868a5  call     0x1820decd0
+00000001816868aa  mov      rcx, qword ptr [rip + 0x143c797]
+00000001816868b1  call     0x1820dfb80
+00000001816868b6  mov      r8, qword ptr [rip + 0x146176b]
+00000001816868bd  mov      edx, 0x7a1bb
+00000001816868c2  mov      rcx, rax
+00000001816868c5  mov      rbx, rax
+00000001816868c8  call     0x18000a450
+00000001816868cd  mov      rcx, qword ptr [rip + 0x144bbcc]
+00000001816868d4  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816868db  mov      qword ptr [rdx + 0x4c0], rbx
+00000001816868e2  mov      rdx, rbx
+00000001816868e5  mov      rcx, qword ptr [rip + 0x144bbb4]
+00000001816868ec  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816868f3  add      rcx, 0x4c0
+00000001816868fa  call     0x1820decd0
+00000001816868ff  mov      rcx, qword ptr [rip + 0x143ad62]
+0000000181686906  call     0x1820dfb80
+000000018168690b  mov      r8, qword ptr [rip + 0x145f6d6]
+0000000181686912  mov      edx, 0x7a1bc
+0000000181686917  mov      rcx, rax
+000000018168691a  mov      rbx, rax
+000000018168691d  call     0x18000a450
+0000000181686922  mov      rcx, qword ptr [rip + 0x144bb77]
+0000000181686929  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686930  mov      qword ptr [rdx + 0x4c8], rbx
+0000000181686937  mov      rdx, rbx
+000000018168693a  mov      rcx, qword ptr [rip + 0x144bb5f]
+0000000181686941  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686948  add      rcx, 0x4c8
+000000018168694f  call     0x1820decd0
+0000000181686954  mov      rcx, qword ptr [rip + 0x143c6ed]
+000000018168695b  call     0x1820dfb80
+0000000181686960  mov      r8, qword ptr [rip + 0x14616c1]
+0000000181686967  mov      edx, 0x7a1bd
+000000018168696c  mov      rcx, rax
+000000018168696f  mov      rbx, rax
+0000000181686972  call     0x18000a450
+0000000181686977  mov      rcx, qword ptr [rip + 0x144bb22]
+000000018168697e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686985  mov      qword ptr [rdx + 0x4d0], rbx
+000000018168698c  mov      rdx, rbx
+000000018168698f  mov      rcx, qword ptr [rip + 0x144bb0a]
+0000000181686996  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168699d  add      rcx, 0x4d0
+00000001816869a4  call     0x1820decd0
+00000001816869a9  mov      rcx, qword ptr [rip + 0x143c698]
+00000001816869b0  call     0x1820dfb80
+00000001816869b5  mov      r8, qword ptr [rip + 0x146166c]
+00000001816869bc  mov      edx, 0x7a1be
+00000001816869c1  mov      rcx, rax
+00000001816869c4  mov      rbx, rax
+00000001816869c7  call     0x18000a450
+00000001816869cc  mov      rcx, qword ptr [rip + 0x144bacd]
+00000001816869d3  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816869da  mov      qword ptr [rdx + 0x4d8], rbx
+00000001816869e1  mov      rdx, rbx
+00000001816869e4  mov      rcx, qword ptr [rip + 0x144bab5]
+00000001816869eb  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816869f2  add      rcx, 0x4d8
+00000001816869f9  call     0x1820decd0
+00000001816869fe  mov      rcx, qword ptr [rip + 0x143e80b]
+0000000181686a05  call     0x1820dfb80
+0000000181686a0a  mov      r8, qword ptr [rip + 0x146456f]
+0000000181686a11  mov      edx, 0x7a1bf
+0000000181686a16  mov      rcx, rax
+0000000181686a19  mov      rbx, rax
+0000000181686a1c  call     0x18000a450
+0000000181686a21  mov      rcx, qword ptr [rip + 0x144ba78]
+0000000181686a28  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686a2f  mov      qword ptr [rdx + 0x4e0], rbx
+0000000181686a36  mov      rcx, qword ptr [rip + 0x144ba63]
+0000000181686a3d  mov      rdx, rbx
+0000000181686a40  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686a47  add      rcx, 0x4e0
+0000000181686a4e  call     0x1820decd0
+0000000181686a53  mov      rcx, qword ptr [rip + 0x143c5ee]
+0000000181686a5a  call     0x1820dfb80
+0000000181686a5f  mov      r8, qword ptr [rip + 0x14615c2]
+0000000181686a66  mov      edx, 0x7a1c0
+0000000181686a6b  mov      rcx, rax
+0000000181686a6e  mov      rbx, rax
+0000000181686a71  call     0x18000a450
+0000000181686a76  mov      rcx, qword ptr [rip + 0x144ba23]
+0000000181686a7d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686a84  mov      qword ptr [rdx + 0x4e8], rbx
+0000000181686a8b  mov      rdx, rbx
+0000000181686a8e  mov      rcx, qword ptr [rip + 0x144ba0b]
+0000000181686a95  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686a9c  add      rcx, 0x4e8
+0000000181686aa3  call     0x1820decd0
+0000000181686aa8  mov      rcx, qword ptr [rip + 0x143da71]
+0000000181686aaf  call     0x1820dfb80
+0000000181686ab4  mov      r8, qword ptr [rip + 0x1463395]
+0000000181686abb  mov      edx, 0x7a1c1
+0000000181686ac0  mov      rcx, rax
+0000000181686ac3  mov      rbx, rax
+0000000181686ac6  call     0x18000a450
+0000000181686acb  mov      rcx, qword ptr [rip + 0x144b9ce]
+0000000181686ad2  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686ad9  mov      qword ptr [rdx + 0x4f0], rbx
+0000000181686ae0  mov      rdx, rbx
+0000000181686ae3  mov      rcx, qword ptr [rip + 0x144b9b6]
+0000000181686aea  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686af1  add      rcx, 0x4f0
+0000000181686af8  call     0x1820decd0
+0000000181686afd  mov      rcx, qword ptr [rip + 0x143ec14]
+0000000181686b04  call     0x1820dfb80
+0000000181686b09  mov      r8, qword ptr [rip + 0x1464c40]
+0000000181686b10  mov      edx, 0x7a1c2
+0000000181686b15  mov      rcx, rax
+0000000181686b18  mov      rbx, rax
+0000000181686b1b  call     0x18000a450
+0000000181686b20  mov      rcx, qword ptr [rip + 0x144b979]
+0000000181686b27  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686b2e  mov      qword ptr [rdx + 0x4f8], rbx
+0000000181686b35  mov      rdx, rbx
+0000000181686b38  mov      rcx, qword ptr [rip + 0x144b961]
+0000000181686b3f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686b46  add      rcx, 0x4f8
+0000000181686b4d  call     0x1820decd0
+0000000181686b52  mov      rcx, qword ptr [rip + 0x143badf]
+0000000181686b59  call     0x1820dfb80
+0000000181686b5e  mov      r8, qword ptr [rip + 0x14607eb]
+0000000181686b65  mov      edx, 0x7a1c3
+0000000181686b6a  mov      rcx, rax
+0000000181686b6d  mov      rbx, rax
+0000000181686b70  call     0x18000a450
+0000000181686b75  mov      rcx, qword ptr [rip + 0x144b924]
+0000000181686b7c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686b83  mov      qword ptr [rdx + 0x500], rbx
+0000000181686b8a  mov      rdx, rbx
+0000000181686b8d  mov      rcx, qword ptr [rip + 0x144b90c]
+0000000181686b94  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686b9b  add      rcx, 0x500
+0000000181686ba2  call     0x1820decd0
+0000000181686ba7  mov      rcx, qword ptr [rip + 0x143d18a]
+0000000181686bae  call     0x1820dfb80
+0000000181686bb3  mov      r8, qword ptr [rip + 0x1462716]
+0000000181686bba  mov      edx, 0x7a1c4
+0000000181686bbf  mov      rcx, rax
+0000000181686bc2  mov      rbx, rax
+0000000181686bc5  call     0x18000a450
+0000000181686bca  mov      rcx, qword ptr [rip + 0x144b8cf]
+0000000181686bd1  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686bd8  mov      qword ptr [rdx + 0x508], rbx
+0000000181686bdf  mov      rdx, rbx
+0000000181686be2  mov      rcx, qword ptr [rip + 0x144b8b7]
+0000000181686be9  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686bf0  add      rcx, 0x508
+0000000181686bf7  call     0x1820decd0
+0000000181686bfc  mov      rcx, qword ptr [rip + 0x143c445]
+0000000181686c03  call     0x1820dfb80
+0000000181686c08  mov      r8, qword ptr [rip + 0x1461419]
+0000000181686c0f  mov      edx, 0x7a1c5
+0000000181686c14  mov      rcx, rax
+0000000181686c17  mov      rbx, rax
+0000000181686c1a  call     0x18000a450
+0000000181686c1f  mov      rcx, qword ptr [rip + 0x144b87a]
+0000000181686c26  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686c2d  mov      qword ptr [rdx + 0x510], rbx
+0000000181686c34  mov      rdx, rbx
+0000000181686c37  mov      rcx, qword ptr [rip + 0x144b862]
+0000000181686c3e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686c45  add      rcx, 0x510
+0000000181686c4c  call     0x1820decd0
+0000000181686c51  mov      rcx, qword ptr [rip + 0x143cc90]
+0000000181686c58  call     0x1820dfb80
+0000000181686c5d  mov      r8, qword ptr [rip + 0x1462164]
+0000000181686c64  mov      edx, 0x7a1c6
+0000000181686c69  mov      rcx, rax
+0000000181686c6c  mov      rbx, rax
+0000000181686c6f  call     0x18000a450
+0000000181686c74  mov      rcx, qword ptr [rip + 0x144b825]
+0000000181686c7b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686c82  mov      qword ptr [rdx + 0x518], rbx
+0000000181686c89  mov      rdx, rbx
+0000000181686c8c  mov      rcx, qword ptr [rip + 0x144b80d]
+0000000181686c93  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686c9a  add      rcx, 0x518
+0000000181686ca1  call     0x1820decd0
+0000000181686ca6  mov      rcx, qword ptr [rip + 0x143c39b]
+0000000181686cad  call     0x1820dfb80
+0000000181686cb2  mov      r8, qword ptr [rip + 0x146136f]
+0000000181686cb9  mov      edx, 0x7a1c7
+0000000181686cbe  mov      rcx, rax
+0000000181686cc1  mov      rbx, rax
+0000000181686cc4  call     0x18000a450
+0000000181686cc9  mov      rcx, qword ptr [rip + 0x144b7d0]
+0000000181686cd0  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686cd7  mov      qword ptr [rdx + 0x520], rbx
+0000000181686cde  mov      rdx, rbx
+0000000181686ce1  mov      rcx, qword ptr [rip + 0x144b7b8]
+0000000181686ce8  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686cef  add      rcx, 0x520
+0000000181686cf6  call     0x1820decd0
+0000000181686cfb  mov      rcx, qword ptr [rip + 0x143d3ce]
+0000000181686d02  call     0x1820dfb80
+0000000181686d07  mov      r8, qword ptr [rip + 0x1462c3a]
+0000000181686d0e  mov      edx, 0x7a1c8
+0000000181686d13  mov      rcx, rax
+0000000181686d16  mov      rbx, rax
+0000000181686d19  call     0x18000a450
+0000000181686d1e  mov      rcx, qword ptr [rip + 0x144b77b]
+0000000181686d25  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686d2c  mov      qword ptr [rdx + 0x528], rbx
+0000000181686d33  mov      rdx, rbx
+0000000181686d36  mov      rcx, qword ptr [rip + 0x144b763]
+0000000181686d3d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686d44  add      rcx, 0x528
+0000000181686d4b  call     0x1820decd0
+0000000181686d50  mov      rcx, qword ptr [rip + 0x143c7f9]
+0000000181686d57  call     0x1820dfb80
+0000000181686d5c  mov      r8, qword ptr [rip + 0x1461b5d]
+0000000181686d63  mov      edx, 0x7a1c9
+0000000181686d68  mov      rcx, rax
+0000000181686d6b  mov      rbx, rax
+0000000181686d6e  call     0x18000a450
+0000000181686d73  mov      rcx, qword ptr [rip + 0x144b726]
+0000000181686d7a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686d81  mov      qword ptr [rdx + 0x530], rbx
+0000000181686d88  mov      rdx, rbx
+0000000181686d8b  mov      rcx, qword ptr [rip + 0x144b70e]
+0000000181686d92  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686d99  add      rcx, 0x530
+0000000181686da0  call     0x1820decd0
+0000000181686da5  mov      rcx, qword ptr [rip + 0x143c7a4]
+0000000181686dac  call     0x1820dfb80
+0000000181686db1  mov      r8, qword ptr [rip + 0x1461b08]
+0000000181686db8  mov      edx, 0x7a1ca
+0000000181686dbd  mov      rcx, rax
+0000000181686dc0  mov      rbx, rax
+0000000181686dc3  call     0x18000a450
+0000000181686dc8  mov      rcx, qword ptr [rip + 0x144b6d1]
+0000000181686dcf  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686dd6  mov      qword ptr [rdx + 0x538], rbx
+0000000181686ddd  mov      rdx, rbx
+0000000181686de0  mov      rcx, qword ptr [rip + 0x144b6b9]
+0000000181686de7  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686dee  add      rcx, 0x538
+0000000181686df5  call     0x1820decd0
+0000000181686dfa  mov      rcx, qword ptr [rip + 0x143b8ef]
+0000000181686e01  call     0x1820dfb80
+0000000181686e06  mov      r8, qword ptr [rip + 0x14605fb]
+0000000181686e0d  mov      edx, 0x7a1cb
+0000000181686e12  mov      rcx, rax
+0000000181686e15  mov      rbx, rax
+0000000181686e18  call     0x18000a450
+0000000181686e1d  mov      rcx, qword ptr [rip + 0x144b67c]
+0000000181686e24  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686e2b  mov      qword ptr [rdx + 0x540], rbx
+0000000181686e32  mov      rdx, rbx
+0000000181686e35  mov      rcx, qword ptr [rip + 0x144b664]
+0000000181686e3c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686e43  add      rcx, 0x540
+0000000181686e4a  call     0x1820decd0
+0000000181686e4f  mov      rcx, qword ptr [rip + 0x143e24a]
+0000000181686e56  call     0x1820dfb80
+0000000181686e5b  mov      r8, qword ptr [rip + 0x1463efe]
+0000000181686e62  mov      edx, 0x7a1cc
+0000000181686e67  mov      rcx, rax
+0000000181686e6a  mov      rbx, rax
+0000000181686e6d  call     0x18000a450
+0000000181686e72  mov      rcx, qword ptr [rip + 0x144b627]
+0000000181686e79  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686e80  mov      qword ptr [rdx + 0x548], rbx
+0000000181686e87  mov      rdx, rbx
+0000000181686e8a  mov      rcx, qword ptr [rip + 0x144b60f]
+0000000181686e91  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686e98  add      rcx, 0x548
+0000000181686e9f  call     0x1820decd0
+0000000181686ea4  mov      rcx, qword ptr [rip + 0x143c19d]
+0000000181686eab  call     0x1820dfb80
+0000000181686eb0  mov      r8, qword ptr [rip + 0x1461171]
+0000000181686eb7  mov      edx, 0x7a1d4
+0000000181686ebc  mov      rcx, rax
+0000000181686ebf  mov      rbx, rax
+0000000181686ec2  call     0x18000a450
+0000000181686ec7  mov      rcx, qword ptr [rip + 0x144b5d2]
+0000000181686ece  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686ed5  mov      qword ptr [rdx + 0x550], rbx
+0000000181686edc  mov      rdx, rbx
+0000000181686edf  mov      rcx, qword ptr [rip + 0x144b5ba]
+0000000181686ee6  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686eed  add      rcx, 0x550
+0000000181686ef4  call     0x1820decd0
+0000000181686ef9  mov      rcx, qword ptr [rip + 0x143d568]
+0000000181686f00  call     0x1820dfb80
+0000000181686f05  mov      r8, qword ptr [rip + 0x1462e8c]
+0000000181686f0c  mov      edx, 0x7a1d5
+0000000181686f11  mov      rcx, rax
+0000000181686f14  mov      rbx, rax
+0000000181686f17  call     0x18000a450
+0000000181686f1c  mov      rcx, qword ptr [rip + 0x144b57d]
+0000000181686f23  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686f2a  mov      qword ptr [rdx + 0x558], rbx
+0000000181686f31  mov      rdx, rbx
+0000000181686f34  mov      rcx, qword ptr [rip + 0x144b565]
+0000000181686f3b  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686f42  add      rcx, 0x558
+0000000181686f49  call     0x1820decd0
+0000000181686f4e  mov      rcx, qword ptr [rip + 0x143c0f3]
+0000000181686f55  call     0x1820dfb80
+0000000181686f5a  mov      r8, qword ptr [rip + 0x14610c7]
+0000000181686f61  mov      edx, 0x7a1d6
+0000000181686f66  mov      rcx, rax
+0000000181686f69  mov      rbx, rax
+0000000181686f6c  call     0x18000a450
+0000000181686f71  mov      rcx, qword ptr [rip + 0x144b528]
+0000000181686f78  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686f7f  mov      qword ptr [rdx + 0x560], rbx
+0000000181686f86  mov      rcx, qword ptr [rip + 0x144b513]
+0000000181686f8d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686f94  add      rcx, 0x560
+0000000181686f9b  mov      rdx, rbx
+0000000181686f9e  call     0x1820decd0
+0000000181686fa3  mov      rcx, qword ptr [rip + 0x143b466]
+0000000181686faa  call     0x1820dfb80
+0000000181686faf  mov      r8, qword ptr [rip + 0x1460172]
+0000000181686fb6  mov      edx, 0x7a1d7
+0000000181686fbb  mov      rcx, rax
+0000000181686fbe  mov      rbx, rax
+0000000181686fc1  call     0x18000a450
+0000000181686fc6  mov      rcx, qword ptr [rip + 0x144b4d3]
+0000000181686fcd  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181686fd4  mov      qword ptr [rdx + 0x568], rbx
+0000000181686fdb  mov      rdx, rbx
+0000000181686fde  mov      rcx, qword ptr [rip + 0x144b4bb]
+0000000181686fe5  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181686fec  add      rcx, 0x568
+0000000181686ff3  call     0x1820decd0
+0000000181686ff8  mov      rcx, qword ptr [rip + 0x143c049]
+0000000181686fff  call     0x1820dfb80
+0000000181687004  mov      r8, qword ptr [rip + 0x146101d]
+000000018168700b  mov      edx, 0x7a1d8
+0000000181687010  mov      rcx, rax
+0000000181687013  mov      rbx, rax
+0000000181687016  call     0x18000a450
+000000018168701b  mov      rcx, qword ptr [rip + 0x144b47e]
+0000000181687022  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687029  mov      qword ptr [rdx + 0x570], rbx
+0000000181687030  mov      rdx, rbx
+0000000181687033  mov      rcx, qword ptr [rip + 0x144b466]
+000000018168703a  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687041  add      rcx, 0x570
+0000000181687048  call     0x1820decd0
+000000018168704d  mov      rcx, qword ptr [rip + 0x143c7dc]
+0000000181687054  call     0x1820dfb80
+0000000181687059  mov      r8, qword ptr [rip + 0x1461cb0]
+0000000181687060  mov      edx, 0x7a1dd
+0000000181687065  mov      rcx, rax
+0000000181687068  mov      rbx, rax
+000000018168706b  call     0x18000a450
+0000000181687070  mov      rcx, qword ptr [rip + 0x144b429]
+0000000181687077  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168707e  mov      qword ptr [rdx + 0x578], rbx
+0000000181687085  mov      rdx, rbx
+0000000181687088  mov      rcx, qword ptr [rip + 0x144b411]
+000000018168708f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687096  add      rcx, 0x578
+000000018168709d  call     0x1820decd0
+00000001816870a2  mov      rcx, qword ptr [rip + 0x143bf9f]
+00000001816870a9  call     0x1820dfb80
+00000001816870ae  mov      r8, qword ptr [rip + 0x1460f73]
+00000001816870b5  mov      edx, 0x7a1de
+00000001816870ba  mov      rcx, rax
+00000001816870bd  mov      rbx, rax
+00000001816870c0  call     0x18000a450
+00000001816870c5  mov      rcx, qword ptr [rip + 0x144b3d4]
+00000001816870cc  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816870d3  mov      qword ptr [rdx + 0x580], rbx
+00000001816870da  mov      rdx, rbx
+00000001816870dd  mov      rcx, qword ptr [rip + 0x144b3bc]
+00000001816870e4  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816870eb  add      rcx, 0x580
+00000001816870f2  call     0x1820decd0
+00000001816870f7  mov      rcx, qword ptr [rip + 0x143bf4a]
+00000001816870fe  call     0x1820dfb80
+0000000181687103  mov      r8, qword ptr [rip + 0x1460f1e]
+000000018168710a  mov      edx, 0x7a1df
+000000018168710f  mov      rcx, rax
+0000000181687112  mov      rbx, rax
+0000000181687115  call     0x18000a450
+000000018168711a  mov      rcx, qword ptr [rip + 0x144b37f]
+0000000181687121  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687128  mov      qword ptr [rdx + 0x588], rbx
+000000018168712f  mov      rdx, rbx
+0000000181687132  mov      rcx, qword ptr [rip + 0x144b367]
+0000000181687139  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687140  add      rcx, 0x588
+0000000181687147  call     0x1820decd0
+000000018168714c  mov      rcx, qword ptr [rip + 0x143bef5]
+0000000181687153  call     0x1820dfb80
+0000000181687158  mov      r8, qword ptr [rip + 0x1460ec9]
+000000018168715f  mov      rbx, rax
+0000000181687162  mov      edx, 0x7a1e0
+0000000181687167  mov      rcx, rax
+000000018168716a  call     0x18000a450
+000000018168716f  mov      rcx, qword ptr [rip + 0x144b32a]
+0000000181687176  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168717d  mov      qword ptr [rdx + 0x590], rbx
+0000000181687184  mov      rdx, rbx
+0000000181687187  mov      rcx, qword ptr [rip + 0x144b312]
+000000018168718e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687195  add      rcx, 0x590
+000000018168719c  call     0x1820decd0
+00000001816871a1  mov      rcx, qword ptr [rip + 0x143c3a8]
+00000001816871a8  call     0x1820dfb80
+00000001816871ad  mov      r8, qword ptr [rip + 0x146170c]
+00000001816871b4  mov      edx, 0x7a1d9
+00000001816871b9  mov      rcx, rax
+00000001816871bc  mov      rbx, rax
+00000001816871bf  call     0x18000a450
+00000001816871c4  mov      rcx, qword ptr [rip + 0x144b2d5]
+00000001816871cb  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816871d2  mov      qword ptr [rdx + 0x598], rbx
+00000001816871d9  mov      rdx, rbx
+00000001816871dc  mov      rcx, qword ptr [rip + 0x144b2bd]
+00000001816871e3  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816871ea  add      rcx, 0x598
+00000001816871f1  call     0x1820decd0
+00000001816871f6  mov      rcx, qword ptr [rip + 0x143c353]
+00000001816871fd  call     0x1820dfb80
+0000000181687202  mov      r8, qword ptr [rip + 0x14616b7]
+0000000181687209  mov      edx, 0x7a1da
+000000018168720e  mov      rcx, rax
+0000000181687211  mov      rbx, rax
+0000000181687214  call     0x18000a450
+0000000181687219  mov      rcx, qword ptr [rip + 0x144b280]
+0000000181687220  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687227  mov      qword ptr [rdx + 0x5a0], rbx
+000000018168722e  mov      rdx, rbx
+0000000181687231  mov      rcx, qword ptr [rip + 0x144b268]
+0000000181687238  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168723f  add      rcx, 0x5a0
+0000000181687246  call     0x1820decd0
+000000018168724b  mov      rcx, qword ptr [rip + 0x143bdf6]
+0000000181687252  call     0x1820dfb80
+0000000181687257  mov      r8, qword ptr [rip + 0x1460dca]
+000000018168725e  mov      edx, 0x7a1db
+0000000181687263  mov      rcx, rax
+0000000181687266  mov      rbx, rax
+0000000181687269  call     0x18000a450
+000000018168726e  mov      rcx, qword ptr [rip + 0x144b22b]
+0000000181687275  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168727c  mov      qword ptr [rdx + 0x5a8], rbx
+0000000181687283  mov      rdx, rbx
+0000000181687286  mov      rcx, qword ptr [rip + 0x144b213]
+000000018168728d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687294  add      rcx, 0x5a8
+000000018168729b  call     0x1820decd0
+00000001816872a0  mov      rcx, qword ptr [rip + 0x143c2a9]
+00000001816872a7  call     0x1820dfb80
+00000001816872ac  mov      r8, qword ptr [rip + 0x146160d]
+00000001816872b3  mov      edx, 0x7a1dc
+00000001816872b8  mov      rcx, rax
+00000001816872bb  mov      rbx, rax
+00000001816872be  call     0x18000a450
+00000001816872c3  mov      rcx, qword ptr [rip + 0x144b1d6]
+00000001816872ca  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816872d1  mov      qword ptr [rdx + 0x5b0], rbx
+00000001816872d8  mov      rdx, rbx
+00000001816872db  mov      rcx, qword ptr [rip + 0x144b1be]
+00000001816872e2  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816872e9  add      rcx, 0x5b0
+00000001816872f0  call     0x1820decd0
+00000001816872f5  mov      rcx, qword ptr [rip + 0x143d5bc]
+00000001816872fc  call     0x1820dfb80
+0000000181687301  mov      r8, qword ptr [rip + 0x1462f98]
+0000000181687308  mov      edx, 0x7a1e1
+000000018168730d  mov      rcx, rax
+0000000181687310  mov      rbx, rax
+0000000181687313  call     0x18000a450
+0000000181687318  mov      rcx, qword ptr [rip + 0x144b181]
+000000018168731f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687326  mov      qword ptr [rdx + 0x5b8], rbx
+000000018168732d  mov      rcx, qword ptr [rip + 0x144b16c]
+0000000181687334  mov      rdx, rbx
+0000000181687337  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168733e  add      rcx, 0x5b8
+0000000181687345  call     0x1820decd0
+000000018168734a  mov      rcx, qword ptr [rip + 0x143d4af]
+0000000181687351  call     0x1820dfb80
+0000000181687356  mov      r8, qword ptr [rip + 0x1462e8b]
+000000018168735d  mov      edx, 0x7a1e2
+0000000181687362  mov      rcx, rax
+0000000181687365  mov      rbx, rax
+0000000181687368  call     0x18000a450
+000000018168736d  mov      rcx, qword ptr [rip + 0x144b12c]
+0000000181687374  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168737b  mov      qword ptr [rdx + 0x5c0], rbx
+0000000181687382  mov      rdx, rbx
+0000000181687385  mov      rcx, qword ptr [rip + 0x144b114]
+000000018168738c  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687393  add      rcx, 0x5c0
+000000018168739a  call     0x1820decd0
+000000018168739f  mov      rcx, qword ptr [rip + 0x143ca4a]
+00000001816873a6  call     0x1820dfb80
+00000001816873ab  mov      r8, qword ptr [rip + 0x146208e]
+00000001816873b2  mov      edx, 0x7a1e3
+00000001816873b7  mov      rcx, rax
+00000001816873ba  mov      rbx, rax
+00000001816873bd  call     0x18000a450
+00000001816873c2  mov      rcx, qword ptr [rip + 0x144b0d7]
+00000001816873c9  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816873d0  mov      qword ptr [rdx + 0x5c8], rbx
+00000001816873d7  mov      rdx, rbx
+00000001816873da  mov      rcx, qword ptr [rip + 0x144b0bf]
+00000001816873e1  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816873e8  add      rcx, 0x5c8
+00000001816873ef  call     0x1820decd0
+00000001816873f4  mov      rcx, qword ptr [rip + 0x143bc4d]
+00000001816873fb  call     0x1820dfb80
+0000000181687400  mov      r8, qword ptr [rip + 0x1460c21]
+0000000181687407  mov      edx, 0x7a1e4
+000000018168740c  mov      rcx, rax
+000000018168740f  mov      rbx, rax
+0000000181687412  call     0x18000a450
+0000000181687417  mov      rcx, qword ptr [rip + 0x144b082]
+000000018168741e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687425  mov      qword ptr [rdx + 0x5d0], rbx
+000000018168742c  mov      rdx, rbx
+000000018168742f  mov      rcx, qword ptr [rip + 0x144b06a]
+0000000181687436  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168743d  add      rcx, 0x5d0
+0000000181687444  call     0x1820decd0
+0000000181687449  mov      rcx, qword ptr [rip + 0x143bbf8]
+0000000181687450  call     0x1820dfb80
+0000000181687455  mov      r8, qword ptr [rip + 0x1460bcc]
+000000018168745c  mov      edx, 0x7a1e5
+0000000181687461  mov      rcx, rax
+0000000181687464  mov      rbx, rax
+0000000181687467  call     0x18000a450
+000000018168746c  mov      rcx, qword ptr [rip + 0x144b02d]
+0000000181687473  mov      rdx, qword ptr [rcx + 0xb8]
+000000018168747a  mov      qword ptr [rdx + 0x5d8], rbx
+0000000181687481  mov      rdx, rbx
+0000000181687484  mov      rcx, qword ptr [rip + 0x144b015]
+000000018168748b  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687492  add      rcx, 0x5d8
+0000000181687499  call     0x1820decd0
+000000018168749e  mov      rcx, qword ptr [rip + 0x143bba3]
+00000001816874a5  call     0x1820dfb80
+00000001816874aa  mov      r8, qword ptr [rip + 0x1460b77]
+00000001816874b1  mov      edx, 0x7a1e6
+00000001816874b6  mov      rcx, rax
+00000001816874b9  mov      rbx, rax
+00000001816874bc  call     0x18000a450
+00000001816874c1  mov      rcx, qword ptr [rip + 0x144afd8]
+00000001816874c8  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816874cf  mov      qword ptr [rdx + 0x5e0], rbx
+00000001816874d6  mov      rdx, rbx
+00000001816874d9  mov      rcx, qword ptr [rip + 0x144afc0]
+00000001816874e0  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816874e7  add      rcx, 0x5e0
+00000001816874ee  call     0x1820decd0
+00000001816874f3  mov      rcx, qword ptr [rip + 0x143b1f6]
+00000001816874fa  call     0x1820dfb80
+00000001816874ff  mov      r8, qword ptr [rip + 0x145ff02]
+0000000181687506  mov      edx, 0x7a1e7
+000000018168750b  mov      rcx, rax
+000000018168750e  mov      rbx, rax
+0000000181687511  call     0x18000a450
+0000000181687516  mov      rcx, qword ptr [rip + 0x144af83]
+000000018168751d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687524  mov      qword ptr [rdx + 0x5e8], rbx
+000000018168752b  mov      rdx, rbx
+000000018168752e  mov      rcx, qword ptr [rip + 0x144af6b]
+0000000181687535  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168753c  add      rcx, 0x5e8
+0000000181687543  call     0x1820decd0
+0000000181687548  mov      rcx, qword ptr [rip + 0x143d871]
+000000018168754f  call     0x1820dfb80
+0000000181687554  mov      r8, qword ptr [rip + 0x1463525]
+000000018168755b  mov      edx, 0x7a1e8
+0000000181687560  mov      rcx, rax
+0000000181687563  mov      rbx, rax
+0000000181687566  call     0x18000a450
+000000018168756b  mov      rcx, qword ptr [rip + 0x144af2e]
+0000000181687572  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687579  mov      qword ptr [rdx + 0x5f0], rbx
+0000000181687580  mov      rdx, rbx
+0000000181687583  mov      rcx, qword ptr [rip + 0x144af16]
+000000018168758a  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687591  add      rcx, 0x5f0
+0000000181687598  call     0x1820decd0
+000000018168759d  mov      rcx, qword ptr [rip + 0x143a234]
+00000001816875a4  call     0x1820dfb80
+00000001816875a9  mov      r8, qword ptr [rip + 0x145eba8]
+00000001816875b0  mov      edx, 0x7a1e9
+00000001816875b5  mov      rcx, rax
+00000001816875b8  mov      rbx, rax
+00000001816875bb  call     0x18000a450
+00000001816875c0  mov      rcx, qword ptr [rip + 0x144aed9]
+00000001816875c7  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816875ce  mov      qword ptr [rdx + 0x5f8], rbx
+00000001816875d5  mov      rdx, rbx
+00000001816875d8  mov      rcx, qword ptr [rip + 0x144aec1]
+00000001816875df  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816875e6  add      rcx, 0x5f8
+00000001816875ed  call     0x1820decd0
+00000001816875f2  mov      rcx, qword ptr [rip + 0x143b0f7]
+00000001816875f9  call     0x1820dfb80
+00000001816875fe  mov      r8, qword ptr [rip + 0x145fe03]
+0000000181687605  mov      edx, 0x7a1ea
+000000018168760a  mov      rcx, rax
+000000018168760d  mov      rbx, rax
+0000000181687610  call     0x18000a450
+0000000181687615  mov      rcx, qword ptr [rip + 0x144ae84]
+000000018168761c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687623  mov      qword ptr [rdx + 0x600], rbx
+000000018168762a  mov      rdx, rbx
+000000018168762d  mov      rcx, qword ptr [rip + 0x144ae6c]
+0000000181687634  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168763b  add      rcx, 0x600
+0000000181687642  call     0x1820decd0
+0000000181687647  mov      rcx, qword ptr [rip + 0x143bf02]
+000000018168764e  call     0x1820dfb80
+0000000181687653  mov      r8, qword ptr [rip + 0x1461266]
+000000018168765a  mov      edx, 0x7a1eb
+000000018168765f  mov      rcx, rax
+0000000181687662  mov      rbx, rax
+0000000181687665  call     0x18000a450
+000000018168766a  mov      rcx, qword ptr [rip + 0x144ae2f]
+0000000181687671  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687678  mov      qword ptr [rdx + 0x608], rbx
+000000018168767f  mov      rdx, rbx
+0000000181687682  mov      rcx, qword ptr [rip + 0x144ae17]
+0000000181687689  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687690  add      rcx, 0x608
+0000000181687697  call     0x1820decd0
+000000018168769c  mov      rcx, qword ptr [rip + 0x143db6d]
+00000001816876a3  call     0x1820dfb80
+00000001816876a8  mov      r8, qword ptr [rip + 0x14638d1]
+00000001816876af  mov      edx, 0x7a1ec
+00000001816876b4  mov      rcx, rax
+00000001816876b7  mov      rbx, rax
+00000001816876ba  call     0x18000a450
+00000001816876bf  mov      rcx, qword ptr [rip + 0x144adda]
+00000001816876c6  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816876cd  mov      qword ptr [rdx + 0x610], rbx
+00000001816876d4  mov      rdx, rbx
+00000001816876d7  mov      rcx, qword ptr [rip + 0x144adc2]
+00000001816876de  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816876e5  add      rcx, 0x610
+00000001816876ec  call     0x1820decd0
+00000001816876f1  mov      rcx, qword ptr [rip + 0x143bac0]
+00000001816876f8  call     0x1820dfb80
+00000001816876fd  mov      r8, qword ptr [rip + 0x1460cbc]
+0000000181687704  mov      edx, 0x7a1ed
+0000000181687709  mov      rcx, rax
+000000018168770c  mov      rbx, rax
+000000018168770f  call     0x18000a450
+0000000181687714  mov      rcx, qword ptr [rip + 0x144ad85]
+000000018168771b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687722  mov      qword ptr [rdx + 0x618], rbx
+0000000181687729  mov      rdx, rbx
+000000018168772c  mov      rcx, qword ptr [rip + 0x144ad6d]
+0000000181687733  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168773a  add      rcx, 0x618
+0000000181687741  call     0x1820decd0
+0000000181687746  mov      rcx, qword ptr [rip + 0x143b8fb]
+000000018168774d  call     0x1820dfb80
+0000000181687752  mov      r8, qword ptr [rip + 0x14608cf]
+0000000181687759  mov      edx, 0x7a1ee
+000000018168775e  mov      rcx, rax
+0000000181687761  mov      rbx, rax
+0000000181687764  call     0x18000a450
+0000000181687769  mov      rcx, qword ptr [rip + 0x144ad30]
+0000000181687770  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687777  mov      qword ptr [rdx + 0x620], rbx
+000000018168777e  mov      rdx, rbx
+0000000181687781  mov      rcx, qword ptr [rip + 0x144ad18]
+0000000181687788  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168778f  add      rcx, 0x620
+0000000181687796  call     0x1820decd0
+000000018168779b  mov      rcx, qword ptr [rip + 0x143bdae]
+00000001816877a2  call     0x1820dfb80
+00000001816877a7  mov      r8, qword ptr [rip + 0x1461112]
+00000001816877ae  mov      edx, 0x7a1ef
+00000001816877b3  mov      rcx, rax
+00000001816877b6  mov      rbx, rax
+00000001816877b9  call     0x18000a450
+00000001816877be  mov      rcx, qword ptr [rip + 0x144acdb]
+00000001816877c5  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816877cc  mov      qword ptr [rdx + 0x628], rbx
+00000001816877d3  mov      rdx, rbx
+00000001816877d6  mov      rcx, qword ptr [rip + 0x144acc3]
+00000001816877dd  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816877e4  add      rcx, 0x628
+00000001816877eb  call     0x1820decd0
+00000001816877f0  mov      rcx, qword ptr [rip + 0x143b851]
+00000001816877f7  call     0x1820dfb80
+00000001816877fc  mov      r8, qword ptr [rip + 0x1460825]
+0000000181687803  mov      edx, 0x7a1f0
+0000000181687808  mov      rcx, rax
+000000018168780b  mov      rbx, rax
+000000018168780e  call     0x18000a450
+0000000181687813  mov      rcx, qword ptr [rip + 0x144ac86]
+000000018168781a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687821  mov      qword ptr [rdx + 0x630], rbx
+0000000181687828  mov      rdx, rbx
+000000018168782b  mov      rcx, qword ptr [rip + 0x144ac6e]
+0000000181687832  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687839  add      rcx, 0x630
+0000000181687840  call     0x1820decd0
+0000000181687845  mov      rcx, qword ptr [rip + 0x143c7cc]
+000000018168784c  call     0x1820dfb80
+0000000181687851  mov      r8, qword ptr [rip + 0x1461f80]
+0000000181687858  mov      edx, 0x7a1f1
+000000018168785d  mov      rcx, rax
+0000000181687860  mov      rbx, rax
+0000000181687863  call     0x18000a450
+0000000181687868  mov      rcx, qword ptr [rip + 0x144ac31]
+000000018168786f  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687876  mov      qword ptr [rdx + 0x638], rbx
+000000018168787d  mov      rcx, qword ptr [rip + 0x144ac1c]
+0000000181687884  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168788b  add      rcx, 0x638
+0000000181687892  mov      rdx, rbx
+0000000181687895  call     0x1820decd0
+000000018168789a  mov      rcx, qword ptr [rip + 0x143bcaf]
+00000001816878a1  call     0x1820dfb80
+00000001816878a6  mov      r8, qword ptr [rip + 0x1461013]
+00000001816878ad  mov      edx, 0x7a1f2
+00000001816878b2  mov      rcx, rax
+00000001816878b5  mov      rbx, rax
+00000001816878b8  call     0x18000a450
+00000001816878bd  mov      rcx, qword ptr [rip + 0x144abdc]
+00000001816878c4  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816878cb  mov      qword ptr [rdx + 0x640], rbx
+00000001816878d2  mov      rdx, rbx
+00000001816878d5  mov      rcx, qword ptr [rip + 0x144abc4]
+00000001816878dc  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816878e3  add      rcx, 0x640
+00000001816878ea  call     0x1820decd0
+00000001816878ef  mov      rcx, qword ptr [rip + 0x143bc5a]
+00000001816878f6  call     0x1820dfb80
+00000001816878fb  mov      r8, qword ptr [rip + 0x1460fbe]
+0000000181687902  mov      edx, 0x7a1f3
+0000000181687907  mov      rcx, rax
+000000018168790a  mov      rbx, rax
+000000018168790d  call     0x18000a450
+0000000181687912  mov      rcx, qword ptr [rip + 0x144ab87]
+0000000181687919  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687920  mov      qword ptr [rdx + 0x648], rbx
+0000000181687927  mov      rdx, rbx
+000000018168792a  mov      rcx, qword ptr [rip + 0x144ab6f]
+0000000181687931  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687938  add      rcx, 0x648
+000000018168793f  call     0x1820decd0
+0000000181687944  mov      rcx, qword ptr [rip + 0x143bc05]
+000000018168794b  call     0x1820dfb80
+0000000181687950  mov      r8, qword ptr [rip + 0x1460f69]
+0000000181687957  mov      edx, 0x7a1f4
+000000018168795c  mov      rcx, rax
+000000018168795f  mov      rbx, rax
+0000000181687962  call     0x18000a450
+0000000181687967  mov      rcx, qword ptr [rip + 0x144ab32]
+000000018168796e  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687975  mov      qword ptr [rdx + 0x650], rbx
+000000018168797c  mov      rdx, rbx
+000000018168797f  mov      rcx, qword ptr [rip + 0x144ab1a]
+0000000181687986  mov      rcx, qword ptr [rcx + 0xb8]
+000000018168798d  add      rcx, 0x650
+0000000181687994  call     0x1820decd0
+0000000181687999  mov      rcx, qword ptr [rip + 0x143bbb0]
+00000001816879a0  call     0x1820dfb80
+00000001816879a5  mov      r8, qword ptr [rip + 0x1460f14]
+00000001816879ac  mov      edx, 0x7a1f5
+00000001816879b1  mov      rcx, rax
+00000001816879b4  mov      rbx, rax
+00000001816879b7  call     0x18000a450
+00000001816879bc  mov      rcx, qword ptr [rip + 0x144aadd]
+00000001816879c3  mov      rdx, qword ptr [rcx + 0xb8]
+00000001816879ca  mov      qword ptr [rdx + 0x658], rbx
+00000001816879d1  mov      rdx, rbx
+00000001816879d4  mov      rcx, qword ptr [rip + 0x144aac5]
+00000001816879db  mov      rcx, qword ptr [rcx + 0xb8]
+00000001816879e2  add      rcx, 0x658
+00000001816879e9  call     0x1820decd0
+00000001816879ee  mov      rcx, qword ptr [rip + 0x143acfb]
+00000001816879f5  call     0x1820dfb80
+00000001816879fa  mov      r8, qword ptr [rip + 0x145fa07]
+0000000181687a01  mov      edx, 0x7a1f6
+0000000181687a06  mov      rcx, rax
+0000000181687a09  mov      rbx, rax
+0000000181687a0c  call     0x18000a450
+0000000181687a11  mov      rcx, qword ptr [rip + 0x144aa88]
+0000000181687a18  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687a1f  mov      qword ptr [rdx + 0x660], rbx
+0000000181687a26  mov      rdx, rbx
+0000000181687a29  mov      rcx, qword ptr [rip + 0x144aa70]
+0000000181687a30  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687a37  add      rcx, 0x660
+0000000181687a3e  call     0x1820decd0
+0000000181687a43  mov      rcx, qword ptr [rip + 0x143ba4e]
+0000000181687a4a  call     0x1820dfb80
+0000000181687a4f  mov      r8, qword ptr [rip + 0x1460d02]
+0000000181687a56  mov      rbx, rax
+0000000181687a59  mov      edx, 0x7a1f7
+0000000181687a5e  mov      rcx, rax
+0000000181687a61  call     0x18000a450
+0000000181687a66  mov      rcx, qword ptr [rip + 0x144aa33]
+0000000181687a6d  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687a74  mov      qword ptr [rdx + 0x668], rbx
+0000000181687a7b  mov      rdx, rbx
+0000000181687a7e  mov      rcx, qword ptr [rip + 0x144aa1b]
+0000000181687a85  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687a8c  add      rcx, 0x668
+0000000181687a93  call     0x1820decd0
+0000000181687a98  mov      rcx, qword ptr [rip + 0x143d771]
+0000000181687a9f  call     0x1820dfb80
+0000000181687aa4  mov      r8, qword ptr [rip + 0x14634d5]
+0000000181687aab  mov      edx, 0x7a1f8
+0000000181687ab0  mov      rcx, rax
+0000000181687ab3  mov      rbx, rax
+0000000181687ab6  call     0x18000a450
+0000000181687abb  mov      rcx, qword ptr [rip + 0x144a9de]
+0000000181687ac2  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687ac9  mov      qword ptr [rdx + 0x670], rbx
+0000000181687ad0  mov      rdx, rbx
+0000000181687ad3  mov      rcx, qword ptr [rip + 0x144a9c6]
+0000000181687ada  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687ae1  add      rcx, 0x670
+0000000181687ae8  call     0x1820decd0
+0000000181687aed  mov      rcx, qword ptr [rip + 0x143c524]
+0000000181687af4  call     0x1820dfb80
+0000000181687af9  mov      r8, qword ptr [rip + 0x1461cd8]
+0000000181687b00  mov      edx, 0x7a1f9
+0000000181687b05  mov      rcx, rax
+0000000181687b08  mov      rbx, rax
+0000000181687b0b  call     0x18000a450
+0000000181687b10  mov      rcx, qword ptr [rip + 0x144a989]
+0000000181687b17  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687b1e  mov      qword ptr [rdx + 0x678], rbx
+0000000181687b25  mov      rdx, rbx
+0000000181687b28  mov      rcx, qword ptr [rip + 0x144a971]
+0000000181687b2f  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687b36  add      rcx, 0x678
+0000000181687b3d  call     0x1820decd0
+0000000181687b42  mov      rcx, qword ptr [rip + 0x143a5e7]
+0000000181687b49  call     0x1820dfb80
+0000000181687b4e  mov      r8, qword ptr [rip + 0x145f23b]
+0000000181687b55  mov      edx, 0x7a1fa
+0000000181687b5a  mov      rcx, rax
+0000000181687b5d  mov      rbx, rax
+0000000181687b60  call     0x18000a450
+0000000181687b65  mov      rcx, qword ptr [rip + 0x144a934]
+0000000181687b6c  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687b73  mov      qword ptr [rdx + 0x680], rbx
+0000000181687b7a  mov      rdx, rbx
+0000000181687b7d  mov      rcx, qword ptr [rip + 0x144a91c]
+0000000181687b84  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687b8b  add      rcx, 0x680
+0000000181687b92  call     0x1820decd0
+0000000181687b97  mov      rcx, qword ptr [rip + 0x143b9b2]
+0000000181687b9e  call     0x1820dfb80
+0000000181687ba3  mov      r8, qword ptr [rip + 0x1460d16]
+0000000181687baa  mov      edx, 0x7a1fb
+0000000181687baf  mov      rcx, rax
+0000000181687bb2  mov      rbx, rax
+0000000181687bb5  call     0x18000a450
+0000000181687bba  mov      rcx, qword ptr [rip + 0x144a8df]
+0000000181687bc1  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687bc8  mov      qword ptr [rdx + 0x688], rbx
+0000000181687bcf  mov      rdx, rbx
+0000000181687bd2  mov      rcx, qword ptr [rip + 0x144a8c7]
+0000000181687bd9  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687be0  add      rcx, 0x688
+0000000181687be7  call     0x1820decd0
+0000000181687bec  mov      rcx, qword ptr [rip + 0x143d3f5]
+0000000181687bf3  call     0x1820dfb80
+0000000181687bf8  mov      r8, qword ptr [rip + 0x14630a9]
+0000000181687bff  mov      edx, 0x7a1fc
+0000000181687c04  mov      rcx, rax
+0000000181687c07  mov      rbx, rax
+0000000181687c0a  call     0x18000a450
+0000000181687c0f  mov      rcx, qword ptr [rip + 0x144a88a]
+0000000181687c16  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687c1d  mov      qword ptr [rdx + 0x690], rbx
+0000000181687c24  mov      rcx, qword ptr [rip + 0x144a875]
+0000000181687c2b  mov      rdx, rbx
+0000000181687c2e  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687c35  add      rcx, 0x690
+0000000181687c3c  call     0x1820decd0
+0000000181687c41  mov      rcx, qword ptr [rip + 0x143b908]
+0000000181687c48  call     0x1820dfb80
+0000000181687c4d  mov      r8, qword ptr [rip + 0x1460c6c]
+0000000181687c54  mov      edx, 0x7a1fd
+0000000181687c59  mov      rcx, rax
+0000000181687c5c  mov      rbx, rax
+0000000181687c5f  call     0x18000a450
+0000000181687c64  mov      rcx, qword ptr [rip + 0x144a835]
+0000000181687c6b  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687c72  mov      qword ptr [rdx + 0x698], rbx
+0000000181687c79  mov      rdx, rbx
+0000000181687c7c  mov      rcx, qword ptr [rip + 0x144a81d]
+0000000181687c83  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687c8a  add      rcx, 0x698
+0000000181687c91  call     0x1820decd0
+0000000181687c96  mov      rcx, qword ptr [rip + 0x143aa53]
+0000000181687c9d  call     0x1820dfb80
+0000000181687ca2  mov      r8, qword ptr [rip + 0x145f75f]
+0000000181687ca9  mov      edx, 0x7a1fe
+0000000181687cae  mov      rcx, rax
+0000000181687cb1  mov      rbx, rax
+0000000181687cb4  call     0x18000a450
+0000000181687cb9  mov      rcx, qword ptr [rip + 0x144a7e0]
+0000000181687cc0  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687cc7  mov      qword ptr [rdx + 0x6a0], rbx
+0000000181687cce  mov      rdx, rbx
+0000000181687cd1  mov      rcx, qword ptr [rip + 0x144a7c8]
+0000000181687cd8  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687cdf  add      rcx, 0x6a0
+0000000181687ce6  call     0x1820decd0
+0000000181687ceb  mov      rcx, qword ptr [rip + 0x143da26]
+0000000181687cf2  call     0x1820dfb80
+0000000181687cf7  mov      r8, qword ptr [rip + 0x1463a52]
+0000000181687cfe  mov      edx, 0x294b
+0000000181687d03  mov      rcx, rax
+0000000181687d06  mov      rbx, rax
+0000000181687d09  call     0x18000a450
+0000000181687d0e  mov      rcx, qword ptr [rip + 0x144a78b]
+0000000181687d15  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687d1c  mov      qword ptr [rdx + 0x6a8], rbx
+0000000181687d23  mov      rdx, rbx
+0000000181687d26  mov      rcx, qword ptr [rip + 0x144a773]
+0000000181687d2d  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687d34  add      rcx, 0x6a8
+0000000181687d3b  call     0x1820decd0
+0000000181687d40  mov      rcx, qword ptr [rip + 0x143d9d1]
+0000000181687d47  call     0x1820dfb80
+0000000181687d4c  mov      r8, qword ptr [rip + 0x14639fd]
+0000000181687d53  mov      edx, 0x294c
+0000000181687d58  mov      rcx, rax
+0000000181687d5b  mov      rbx, rax
+0000000181687d5e  call     0x18000a450
+0000000181687d63  mov      rcx, qword ptr [rip + 0x144a736]
+0000000181687d6a  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687d71  mov      qword ptr [rdx + 0x6b0], rbx
+0000000181687d78  mov      rdx, rbx
+0000000181687d7b  mov      rcx, qword ptr [rip + 0x144a71e]
+0000000181687d82  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687d89  add      rcx, 0x6b0
+0000000181687d90  call     0x1820decd0
+0000000181687d95  mov      rcx, qword ptr [rip + 0x141f87c]
+0000000181687d9c  call     0x1820dfb80
+0000000181687da1  xor      edx, edx
+0000000181687da3  mov      rcx, rax
+0000000181687da6  mov      rbx, rax
+0000000181687da9  call     0x1816a3e20
+0000000181687dae  mov      rcx, qword ptr [rip + 0x144a6eb]
+0000000181687db5  mov      rdx, qword ptr [rcx + 0xb8]
+0000000181687dbc  mov      qword ptr [rdx + 0x6b8], rbx
+0000000181687dc3  mov      rdx, rbx
+0000000181687dc6  mov      rcx, qword ptr [rip + 0x144a6d3]
+0000000181687dcd  mov      rcx, qword ptr [rcx + 0xb8]
+0000000181687dd4  add      rcx, 0x6b8
+0000000181687ddb  add      rsp, 0x20
+0000000181687ddf  pop      rbx
+0000000181687de0  jmp      0x1820decd0

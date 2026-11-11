@@ -1,0 +1,27 @@
+00000001814a83c0  push     rbx
+00000001814a83c2  sub      rsp, 0x20
+00000001814a83c6  cmp      byte ptr [rip + 0x17df6de], 0
+00000001814a83cd  jne      0x1814a83fa
+00000001814a83cf  lea      rcx, [rip + 0x1648e72]
+00000001814a83d6  call     0x1820df9b0
+00000001814a83db  lea      rcx, [rip + 0x1649cc6]
+00000001814a83e2  call     0x1820df9b0
+00000001814a83e7  lea      rcx, [rip + 0x1645452]
+00000001814a83ee  call     0x1820df9b0
+00000001814a83f3  mov      byte ptr [rip + 0x17df6b1], 1
+00000001814a83fa  mov      rcx, qword ptr [rip + 0x1649ca7]
+00000001814a8401  call     0x1820dfb80
+00000001814a8406  mov      rdx, qword ptr [rip + 0x1645433]
+00000001814a840d  xor      r8d, r8d
+00000001814a8410  mov      rcx, rax
+00000001814a8413  mov      rbx, rax
+00000001814a8416  call     0x181ec05a0
+00000001814a841b  mov      rcx, qword ptr [rip + 0x1648e26]
+00000001814a8422  mov      rdx, qword ptr [rcx + 0xb8]
+00000001814a8429  mov      qword ptr [rdx], rbx
+00000001814a842c  mov      rdx, rbx
+00000001814a842f  mov      rcx, qword ptr [rip + 0x1648e12]
+00000001814a8436  mov      rcx, qword ptr [rcx + 0xb8]
+00000001814a843d  add      rsp, 0x20
+00000001814a8441  pop      rbx
+00000001814a8442  jmp      0x1820decd0

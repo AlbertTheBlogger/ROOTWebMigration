@@ -1,0 +1,19 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 8570423808443918685
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 3314279941495292898
+  },
+  "m_Name": "",
+  "positionStartBlend": 0.0,
+  "positionEndBlend": 1.0,
+  "rotationStartBlend": 0.0,
+  "rotationEndBlend": 1.0,
+  "scaleStartBlend": 0.0,
+  "scaleEndBlend": 1.0,
+  "executionOrder": 128
+}

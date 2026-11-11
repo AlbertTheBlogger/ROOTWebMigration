@@ -1,0 +1,127 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8423559073598086310
+  },
+  "m_Name": "FactionSpriteData_FactionHead",
+  "factionSprites": [
+    {
+      "faction": 0,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -2751334053767884488
+      }
+    },
+    {
+      "faction": 1,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -3672313634441713630
+      }
+    },
+    {
+      "faction": 2,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -7978658378247811936
+      }
+    },
+    {
+      "faction": 3,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -5535311335644308776
+      }
+    },
+    {
+      "faction": 5,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -5535311335644308776
+      }
+    },
+    {
+      "faction": 6,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": 1192462192290996071
+      }
+    },
+    {
+      "faction": 7,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": 1408282483572589397
+      }
+    },
+    {
+      "faction": 9,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -1343400085693791312
+      }
+    },
+    {
+      "faction": 8,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": 6224245234341277108
+      }
+    },
+    {
+      "faction": 14,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -2311586950256524938
+      }
+    },
+    {
+      "faction": 15,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": 7399871084853205778
+      }
+    },
+    {
+      "faction": 4,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -576330712264072458
+      }
+    },
+    {
+      "faction": 10,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -1009180322016047377
+      }
+    },
+    {
+      "faction": 11,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": 8339427737002147151
+      }
+    },
+    {
+      "faction": 12,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -1719412820353357717
+      }
+    },
+    {
+      "faction": 13,
+      "sprite": {
+        "m_FileID": 1,
+        "m_PathID": -5962554456700191997
+      }
+    }
+  ],
+  "factionCosmeticSprites": []
+}

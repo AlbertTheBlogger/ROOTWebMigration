@@ -1,0 +1,42 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 918462259361937869
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 1900377569003909117
+  },
+  "m_Name": "",
+  "kabbageAnchors": [
+    {
+      "fxName": "Explore",
+      "kabbageAnchor": {
+        "m_FileID": 0,
+        "m_PathID": 3926983689998976865
+      }
+    },
+    {
+      "fxName": "TutorialDoinker",
+      "kabbageAnchor": {
+        "m_FileID": 0,
+        "m_PathID": 24466471483692734
+      }
+    }
+  ],
+  "fxAnimators": [
+    {
+      "fxName": "Explore",
+      "fxAnimators": [
+        {
+          "triggerName": "Explore",
+          "fxAnimator": {
+            "m_FileID": 0,
+            "m_PathID": 5705505890195175689
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2117954887268088224
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 383799059510781845
+  },
+  "m_Name": "",
+  "touchSuffix": ".touch",
+  "mouseKeySuffix": ".mouse",
+  "gamepadSuffix": ".gamepad",
+  "switchGamepadSuffix": ".gamepad.switch"
+}

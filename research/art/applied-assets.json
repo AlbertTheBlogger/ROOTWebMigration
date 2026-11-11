@@ -1,0 +1,342 @@
+{
+  "/assets/original/cards_assets_all/T_crd_fox_favorofthefoxes-7696262584671412637.webp": {
+    "name": "T_crd_fox_favorofthefoxes",
+    "sha256": "4169ba1ef24408ef565e19ff1b41d9b52cfd114f68838f77db8190285c0676ad"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_favorofthemice--3242265846526581517.webp": {
+    "name": "T_crd_mouse_favorofthemice",
+    "sha256": "6e00aad5e1a766d6e1a935fc6f2ee7495d6e9760129d9bcd2a55fd0d12255d1f"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_favoroftherabbits--7355958149234627695.webp": {
+    "name": "T_crd_bunny_favoroftherabbits",
+    "sha256": "5fab1b234af58aad03eff117d48614cce309607e0602820c214e80cc3669b49c"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_avisittofriends--711722563911872423.webp": {
+    "name": "T_crd_bunny_avisittofriends",
+    "sha256": "123fe79e6cc252ccb57acd87b9b85f7a2d9690e602ad03def0f14987fa060716"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_bakesale-7638628711528321898.webp": {
+    "name": "T_crd_bunny_bakesale",
+    "sha256": "f36e373610fa459783e50be91a9b7a747e0473eb7dd7135d0fecf623cbc34573"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_travelgear--4653276865117454534.webp": {
+    "name": "T_crd_mouse_travelgear",
+    "sha256": "92e9b98583c19a38e21abdcf97b8362e200e3bd0dcc8d946a2b3f51c9348beac"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_smugglerstrail--3914084557741465486.webp": {
+    "name": "T_crd_bunny_smugglerstrail",
+    "sha256": "39c49b66964b13161dc87ab78962d35df59c37f4864c90129686c8f49c6b56f6"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_roottea-2557994446527927426.webp": {
+    "name": "T_crd_bunny_roottea",
+    "sha256": "e8d4432901d52d4e18e6cf151fb5854563f1b77ba36a4731aff4f27dfff3efd5"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_investments-2157189289002225429.webp": {
+    "name": "T_crd_mouse_investments",
+    "sha256": "c70d41f71727d7ba489e76f13d6c8f2a52e3700d17fb0b0194e1ea69ab86f066"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_birdybindle--2408144736673347757.webp": {
+    "name": "T_crd_bird_birdybindle",
+    "sha256": "b559962c059235682c871af4cbd0c23d41afbe01a51daf579740e4d188cd4e2a"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_roottea-5843238295354499498.webp": {
+    "name": "T_crd_mouse_roottea",
+    "sha256": "52419aa392ed9b6f7090752d2924f37f4cd64f1ce0d03e5f4b3aa0822b8e6353"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_sword-470800843222527067.webp": {
+    "name": "T_crd_mouse_sword",
+    "sha256": "0d3c0c01ef81067022a9b74bd234a1120d1a1335859f67e2a03e81b993b40ac8"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_woodlandrunners--8625684546494281490.webp": {
+    "name": "T_crd_bird_woodlandrunners",
+    "sha256": "da5ea9c7ee5394b2b1c18a4563fec1356e534ec6a81e663de07aa66e64cf01cc"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_travelgear--6540386899183443077.webp": {
+    "name": "T_crd_fox_travelgear",
+    "sha256": "1a0ecb25517690095a09de397e6087d85609d6ce58652799df351054eec4df26"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_anvil-4170058663817171158.webp": {
+    "name": "T_crd_fox_anvil",
+    "sha256": "34f6e67b74951cb011e44ff8cd14e5c9cae411e40b99706458f712e0dd71c152"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_gentlyusedknapsack-1820424561155764025.webp": {
+    "name": "T_crd_fox_gentlyusedknapsack",
+    "sha256": "4cd79789a97a84b220c687466a34f80977b85d5c1408866601e02efc8b9b6860"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_mouseinasack--6570927633713301495.webp": {
+    "name": "T_crd_mouse_mouseinasack",
+    "sha256": "23210c35f9bd31d0c62940e2cad27ba8dd127cbd82367fb89d282e03ea400574"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_crossbow-5850023958568274524.webp": {
+    "name": "T_crd_bird_crossbow",
+    "sha256": "b1034f19d41716f85ee73554995a4ba93709c21a8bcb9cccbec6aa29f410c7fa"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_protectionracket-1884250226644483250.webp": {
+    "name": "T_crd_fox_protectionracket",
+    "sha256": "b9650941e86f51a0ca16ffc7417df972b995fa55228885be253f8802152daeef"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_armstrader-3911669970754922875.webp": {
+    "name": "T_crd_bird_armstrader",
+    "sha256": "94ad1d6207f8ad99c090954a441fcd4b665235e2613516bcd762302d4334659d"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_crossbow-7562719300919112257.webp": {
+    "name": "T_crd_mouse_crossbow",
+    "sha256": "72a9fea0a8694db11d47278328b633d8add5f19532890f2680187e4515c2391a"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_foxfolksteel-6523073728467684087.webp": {
+    "name": "T_crd_fox_foxfolksteel",
+    "sha256": "0c351732b8cb297945f6bcd3a087ee2b9fbe8685fa57c0623bbdcbc95072386c"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_roottea-6199195706215876134.webp": {
+    "name": "T_crd_fox_roottea",
+    "sha256": "28610e45949398fcf6c2d1a0c85452dfdaf40bc68e6a219f53d11fcacce0b49e"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_scoutingparty--2433341253006227969.webp": {
+    "name": "T_crd_mouse_scoutingparty",
+    "sha256": "38abf8d9061372162dcb310475b4acdafef6baa181b883abbda2e8dfb3c21180"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_cobbler-8832791981894611330.webp": {
+    "name": "T_crd_bunny_cobbler",
+    "sha256": "2f0056d6f8376881729f2dfa456d82ffa6577608977aa912f5f403c00e3dc49f"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_commandwarren--7229282057876119308.webp": {
+    "name": "T_crd_bunny_commandwarren",
+    "sha256": "a533bf832719866b5ebc138d7aecda6022ca5ff67d9e715003c5ed44b67d0aa0"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_betterburrowbank-3432993538330225371.webp": {
+    "name": "T_crd_bunny_betterburrowbank",
+    "sha256": "2eab25ba337f463630f2c0c880a8367ed33477ab96df0087bb5e37e10107602d"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_taxcollector--640079579055229588.webp": {
+    "name": "T_crd_fox_taxcollector",
+    "sha256": "8549b371f04c075dfd939edd14df23798b6d84ca3b60dcef4dea5b4d7bc8c6bb"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_codebreakers--1485736016364870786.webp": {
+    "name": "T_crd_mouse_codebreakers",
+    "sha256": "664a27f71b6116b827e38393720fb4878f1943de065b66aa66285aad37e23004"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_royalclaim-1989112855745909436.webp": {
+    "name": "T_crd_bird_royalclaim",
+    "sha256": "c806f68a99c210ec1a4a7f8547c31c7ec6f68b85761449486ccc8a44544fb05d"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_standanddeliver-6117997961384008583.webp": {
+    "name": "T_crd_fox_standanddeliver",
+    "sha256": "a48e48bfc2aac3c4225be22a495eee3baa9c4bf56d120948ac05c88c7708746e"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_sappers--5652915952167428609.webp": {
+    "name": "T_crd_bird_sappers",
+    "sha256": "b06b11bb120ee42e7b083f69516f81f58380b75264d88fa819803cecc8def79d"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_armorers-1988342309494935255.webp": {
+    "name": "T_crd_bird_armorers",
+    "sha256": "0ce5960ebdbdb9abb89818f004c056df9c5d32ba767b604396e1739195e37c63"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_brutaltactics--7550228027685790556.webp": {
+    "name": "T_crd_bird_brutaltactics",
+    "sha256": "6a63c32e90b0ed9a88a5a6463892debe6645505665ccf0e9a5a7f3176e592381"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_ambush--4092092003495250767.webp": {
+    "name": "T_crd_bunny_ambush",
+    "sha256": "10f850acf4740964a90988e5d2443023f392a0b44cec61e8b1be4260a363016b"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_ambush-5972410070725376199.webp": {
+    "name": "T_crd_bird_ambush",
+    "sha256": "2798b661744ab15de7195693e7049fb7f5cd41951762ca328c0f0c8e754e2f3b"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_ambush--4341965107330222545.webp": {
+    "name": "T_crd_fox_ambush",
+    "sha256": "974f7a637d13b924a88ae85808d23acca819f7e7c3a95ecbeb38f5bc149a991d"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_ambush-8985733370354917822.webp": {
+    "name": "T_crd_mouse_ambush",
+    "sha256": "e57b545c56da4659496e20b78428ad618e5e634f10eaf757f1d17f4ac3a5ad63"
+  },
+  "/assets/original/cards_assets_all/T_crd_EyrieLeader_Despot--7309470995286429501.webp": {
+    "name": "T_crd_EyrieLeader_Despot",
+    "sha256": "42fe4bf93dc7df8785385fdc5c26b78a9fadb285d6302ec9415a68d52542e49e"
+  },
+  "/assets/original/cards_assets_all/T_crd_EyrieLeader_Commander--3406313669329535346.webp": {
+    "name": "T_crd_EyrieLeader_Commander",
+    "sha256": "dfafdf6d5f6f309d7a74dd22e220b7e31da9a0b83dc97e13a2e2222e27706fb3"
+  },
+  "/assets/original/cards_assets_all/T_crd_EyrieLeader_Charismatic--8504066473054333768.webp": {
+    "name": "T_crd_EyrieLeader_Charismatic",
+    "sha256": "6ca93f66835dc2d5922b3d8bde844d0610e68f044b1d519cd9ef07d8d03316c6"
+  },
+  "/assets/original/cards_assets_all/T_crd_EyrieLeader_builder--3004661381583128462.webp": {
+    "name": "T_crd_EyrieLeader_builder",
+    "sha256": "fbe08a993f3ca4f60c7974610548470e2403368b18e36f8c4e67f806362d23d8"
+  },
+  "/assets/original/marquise_assets_all/Avatar_MarquiseDeCat--466157958804350764.webp": {
+    "name": "Avatar_MarquiseDeCat",
+    "sha256": "1ff87e88e9bfe5ed4d9c1453e328a639df8abd2c63b6d1d16be36df763ded4cb"
+  },
+  "/assets/original/eyrie_assets_all/Avatar_EyrieDynasties_Despot--718154712742468074.webp": {
+    "name": "Avatar_EyrieDynasties_Despot",
+    "sha256": "46dbb04cb3d6792993028af4869e6dda78a171bbe6b19454b9a89205db7ca612"
+  },
+  "/assets/original/alliance_assets_all/Avatar_WoodlandAlliance-3054629790786736104.webp": {
+    "name": "Avatar_WoodlandAlliance",
+    "sha256": "d8450a254130440977d7f68ab34129c6b74af9fc7851df627d4ca2daebdc2184"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Vaga_Head--5535311335644308776.webp": {
+    "name": "S_icon_Vaga_Head",
+    "sha256": "36cbfab3924ce87259eb5cce6ad9303dfa7544c0cd00f400557aa397408f5e2c"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_Sack--1257791002250951522.webp": {
+    "name": "S_crd_iconLarge_Sack",
+    "sha256": "3f17a5054588606b03694fdc16e5eb5c407f7581ab3dce53b060d281e728d533"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_Boot--8014753342253614679.webp": {
+    "name": "S_crd_iconLarge_Boot",
+    "sha256": "a3fd39314cdd6121bb7a8b4ad659feeca8f6be977a8df84698bc3051d48cd9e9"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_Crossbow--4349718593188368312.webp": {
+    "name": "S_crd_iconLarge_Crossbow",
+    "sha256": "3603c3d75f6c2d19e7e143d8d09b89a85e98670f10c8a542a9db7394b639477b"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_Hammer-4859698362535079691.webp": {
+    "name": "S_crd_iconLarge_Hammer",
+    "sha256": "c23b561be98e3bc3324b32eba9fab6548dbc028063d9ccf12674baac0ec539b7"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_Sword-4045595243651050979.webp": {
+    "name": "S_crd_iconLarge_Sword",
+    "sha256": "6ad9e4d92c45ee09bc80674b712e1bf1bf0c279e8e54cd8a550697a9c39a89e6"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_TeaPot-6038878736433167975.webp": {
+    "name": "S_crd_iconLarge_TeaPot",
+    "sha256": "f3e0d38af07091ffc7601f241aab0ff34e8552c416ab8b67e816002b53fe014b"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_GoldStack-1253766033305027126.webp": {
+    "name": "S_crd_iconLarge_GoldStack",
+    "sha256": "0648046d4d1474282b2ae8cef99f5a9651da08fe966f15cc528cf1791940b4f3"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Drawer_MarquiseWarrior--5837914548808560161.webp": {
+    "name": "S_icon_Drawer_MarquiseWarrior",
+    "sha256": "bd5c596ba280a4af74317823f8f1d4b66cb5d5a7533f651274bacc1436042e24"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Drawer_EyrieWarrior-2644266430775587943.webp": {
+    "name": "S_icon_Drawer_EyrieWarrior",
+    "sha256": "7de42fea21fdc35acc9c6464a3821cc2d2ff60d3db5dde50577c74040fb60162"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Sawmill-5258612999641841284.webp": {
+    "name": "S_icon_Sawmill",
+    "sha256": "18bb7c5540bca88702f9b47b3a7d98efcc90743dc812dbe65e18ed9efb13b306"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Workshop-5302894779454173423.webp": {
+    "name": "S_icon_Workshop",
+    "sha256": "5fc8fa4703815abed80116d53e8f24206e6b4d6be03a198a7952230029d0b119"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Recruiter--5302944652082961402.webp": {
+    "name": "S_icon_Recruiter",
+    "sha256": "9a2a877b6fa576f00548fe75e1cc1bce9c9f15063ea7e6f44313796e1e5a378e"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Keep-7883067840790858121.webp": {
+    "name": "S_icon_Keep",
+    "sha256": "fb6b66c9beb8c9d3d692cf319af0ef47a1562c3788c8d7f7507d0e03b8264021"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Roost-4066108500425001067.webp": {
+    "name": "S_icon_Roost",
+    "sha256": "38613d3b9d7255ce7c6fbc1d6a9e83a3d0d7c508a9594b13046f2f0e405c43e7"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_Wood-5654872393175241247.webp": {
+    "name": "S_icon_Marq_Wood",
+    "sha256": "be3447b54e94822ebaf53fb13777da0eb1f7d1b80527743a6402447efbd8fc9d"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Ruin--2958837082460047092.webp": {
+    "name": "S_icon_Ruin",
+    "sha256": "10283adb6321437f39eccfcf9a698e3472b70487649c2c6d8828e84578ab9472"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/T_icon_ClearingIndFox--6716184848535519007.webp": {
+    "name": "T_icon_ClearingIndFox",
+    "sha256": "3260361b418b33429d20153f40827c37b07721f39e03650cfe2e978ca5c30035"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/T_icon_ClearingIndRabbit--3168631628066192735.webp": {
+    "name": "T_icon_ClearingIndRabbit",
+    "sha256": "e7c124eee0e8b9a09ccc8ad44f9c20c7f9028d5c425d61430b316e835850fa18"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/T_icon_ClearingIndMouse-549846321502176588.webp": {
+    "name": "T_icon_ClearingIndMouse",
+    "sha256": "40ba003fc14968a51bd4196cfb2718deedf1448ced91227d34125a757d5bfab5"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_HeadCount--2041494168984117354.webp": {
+    "name": "S_icon_Marq_HeadCount",
+    "sha256": "c4a7e37570cecb5514c21149cb614506e858dbc88dc804ba0a15222f965b1826"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Eyrie_WarriorCount--1142459001686082706.webp": {
+    "name": "S_icon_Eyrie_WarriorCount",
+    "sha256": "8a91fa4ee4c3885f2c7ceec2945a1550c88876a10d9af950b9a8eb3e5d002ce0"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_HeadCount--5644971584482754250.webp": {
+    "name": "S_icon_Alli_HeadCount",
+    "sha256": "29fd1987b1126ce6a0d01098a9f70ae5159dbf53ab1774865f9912a258da815e"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Head--3084156120547819873.webp": {
+    "name": "S_icon_Alli_Head",
+    "sha256": "a473381401034061dd51431aca692ea62e8ea809cbf7bca9354d31b4212a491c"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Sympathy-5964523114129938645.webp": {
+    "name": "S_icon_Alli_Sympathy",
+    "sha256": "c6b5b1e5c120f8427810c1f7e01cf6c699103f1abedeb2bd87deafeaa9905447"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseFox--2003128051301950270.webp": {
+    "name": "S_icon_Alli_BaseFox",
+    "sha256": "79ab9c539883ea7857d1938ee1057e25245bc33e62e2f7b416a7b4d32b882300"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseMouse-5357773812519511716.webp": {
+    "name": "S_icon_Alli_BaseMouse",
+    "sha256": "28867cb204adedb4d357649052e954edd06b36ed332bcfbe149925fcf1636cf9"
+  },
+  "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseBunny--2365105621515189540.webp": {
+    "name": "S_icon_Alli_BaseBunny",
+    "sha256": "5631e799828575929666287ba03192d94f4ed7e51b230972e165a9fdbe20ed0a"
+  },
+  "/assets/original/cards_assets_all/S_crd_iconLarge_Torch-1430332100504370266.webp": {
+    "name": "S_crd_iconLarge_Torch",
+    "sha256": "2469e9582b94378fcca1ab8de384b6f17f1cbe123949e6ca67b02556d781fabc"
+  },
+  "/assets/original/cards_assets_all/T_crd_Vagabond_Thief-5063728786957744978.webp": {
+    "name": "T_crd_Vagabond_Thief",
+    "sha256": "08b100913756d7e0f33fe047b5a763e737380b0d867bbf628a970547d264515a"
+  },
+  "/assets/original/cards_assets_all/T_crd_Vagabond_Tinker-7499823033130179257.webp": {
+    "name": "T_crd_Vagabond_Tinker",
+    "sha256": "b37b036f3301fc4b4239dd91e0fa96b0a63febb19316f1793d59c5cedb2c2a10"
+  },
+  "/assets/original/cards_assets_all/T_crd_Vagabond_Ranger-2779412416632133861.webp": {
+    "name": "T_crd_Vagabond_Ranger",
+    "sha256": "82b4a8e96c41128c6e5eaa10c20ad052ed51bbc0de67a63e266ae4dd5eb7fa79"
+  },
+  "/assets/original/cards_assets_all/T_crd_fox_dominance--5431207895972671487.webp": {
+    "name": "T_crd_fox_dominance",
+    "sha256": "d097c1c51f49e3ed36cdf178306c3e86c6903dd27ada473e989469a891f232d7"
+  },
+  "/assets/original/cards_assets_all/T_crd_mouse_dominance--3237490250163346618.webp": {
+    "name": "T_crd_mouse_dominance",
+    "sha256": "8a9bf23897d0743444ccb5e18f246aed463c3ade7d1ba7d204259c777d7d8c7c"
+  },
+  "/assets/original/cards_assets_all/T_crd_bunny_dominance--2105302814743707490.webp": {
+    "name": "T_crd_bunny_dominance",
+    "sha256": "2943c7b0958f64e19fb77b2c3714b20ef344ba711f3d1c14fb1161e8be479796"
+  },
+  "/assets/original/cards_assets_all/T_crd_bird_dominance--2142001317059855988.webp": {
+    "name": "T_crd_bird_dominance",
+    "sha256": "3edc5d00ec99fb8c4a606dea043639290a3de2efc3ad1c7e0d19c47df06bfe54"
+  },
+  "/assets/original/frontend_assets_all/S_ill_Header_Registration-6562587341017648257.webp": {
+    "name": "S_ill_Header_Registration",
+    "sha256": "eb3aface9c98aabb973b0d228cdefbdbcf8b15125fe427928891feda328f6ea2"
+  },
+  "/assets/original/marquise_assets_all/S_ill_MarquiseDeCat--1006048085914686748.webp": {
+    "name": "S_ill_MarquiseDeCat",
+    "sha256": "e2dfb77c3a23f393dc125f845d0c410b33f653d1d68591824b4aa7683a781a38"
+  },
+  "/assets/original/eyrie_assets_all/S_ill_Eyrie--7891714037732847448.webp": {
+    "name": "S_ill_Eyrie",
+    "sha256": "a6af16b72a3ae3f09780bc9c637537c1313ca4c266006fc519d0aa7b9936f3fb"
+  },
+  "/assets/original/frontend_assets_all/S_ui_RulesAutumnMap--6204769766121856409.webp": {
+    "name": "S_ui_RulesAutumnMap",
+    "sha256": "f0722b7a137866e7cb9e1acbbf1e03b9abd77a59b0738a4866e00bc48828e825"
+  }
+}

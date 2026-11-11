@@ -1,0 +1,46 @@
+0000000181755850  mov      qword ptr [rsp + 8], rbx
+0000000181755855  mov      qword ptr [rsp + 0x10], rbp
+000000018175585a  mov      qword ptr [rsp + 0x18], rsi
+000000018175585f  mov      qword ptr [rsp + 0x20], rdi
+0000000181755864  push     r14
+0000000181755866  sub      rsp, 0x20
+000000018175586a  cmp      byte ptr [rip + 0x153325a], 0
+0000000181755871  movzx    r14d, r9b
+0000000181755875  mov      rdi, r8
+0000000181755878  mov      rsi, rdx
+000000018175587b  mov      rbp, rcx
+000000018175587e  jne      0x181755893
+0000000181755880  lea      rcx, [rip + 0x13ae0d9]
+0000000181755887  call     0x1820df9b0
+000000018175588c  mov      byte ptr [rip + 0x1533238], 1
+0000000181755893  mov      rcx, qword ptr [rip + 0x13ae0c6]
+000000018175589a  call     0x1820dfb80
+000000018175589f  xor      edx, edx
+00000001817558a1  mov      rcx, rax
+00000001817558a4  mov      rbx, rax
+00000001817558a7  call     0x180001c20 ; TuberMatch.FinishReconnect, TuberHirelingEntity.Initialize, TuberPlayerEntity.postAllPlayersInitialized
+00000001817558ac  xor      ecx, ecx
+00000001817558ae  mov      dword ptr [rbx + 0x10], 0xfffffffe
+00000001817558b5  call     0x180e575b0
+00000001817558ba  lea      rcx, [rbx + 0x28]
+00000001817558be  mov      dword ptr [rbx + 0x20], eax
+00000001817558c1  mov      rdx, rbp
+00000001817558c4  mov      qword ptr [rbx + 0x28], rbp
+00000001817558c8  call     0x1820decd0
+00000001817558cd  lea      rcx, [rbx + 0x38]
+00000001817558d1  mov      qword ptr [rbx + 0x38], rsi
+00000001817558d5  mov      rdx, rsi
+00000001817558d8  call     0x1820decd0
+00000001817558dd  lea      rcx, [rbx + 0x48]
+00000001817558e1  mov      qword ptr [rbx + 0x48], rdi
+00000001817558e5  mov      rdx, rdi
+00000001817558e8  call     0x1820decd0
+00000001817558ed  mov      rbp, qword ptr [rsp + 0x38]
+00000001817558f2  mov      rax, rbx
+00000001817558f5  mov      rsi, qword ptr [rsp + 0x40]
+00000001817558fa  mov      rdi, qword ptr [rsp + 0x48]
+00000001817558ff  mov      byte ptr [rbx + 0x51], r14b
+0000000181755903  mov      rbx, qword ptr [rsp + 0x30]
+0000000181755908  add      rsp, 0x20
+000000018175590c  pop      r14
+000000018175590e  ret      

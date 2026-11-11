@@ -1,0 +1,21 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 943378303319973216
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2645701494090761018
+  },
+  "m_Name": "",
+  "hintAnimator": {
+    "m_FileID": 0,
+    "m_PathID": 7807423116191104346
+  },
+  "hintLinkedCollider": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "useReferencedEntityID": 0
+}

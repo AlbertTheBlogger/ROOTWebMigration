@@ -1,0 +1,1626 @@
+{
+  "type": "TuberPlaymat",
+  "method": "GetDeck",
+  "start": "0x18191bae0",
+  "window_end": "0x18191be60",
+  "runtime_region_end": "0x18191bb7a",
+  "boundary": "next mapped method address; inspect control flow before interpreting",
+  "source_sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "instructions": [
+    {
+      "va": "0x18191bae0",
+      "mnemonic": "push",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bae2",
+      "mnemonic": "sub",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bae6",
+      "mnemonic": "cmp",
+      "operands": "byte ptr [rip + 0x136dcf9], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191baed",
+      "mnemonic": "mov",
+      "operands": "rdi, rdx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191baf0",
+      "mnemonic": "jne",
+      "operands": "0x18191bb71",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191baf2",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11a9d2f]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191baf9",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bafe",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11dc04b]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb05",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb0a",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11a3f57]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb11",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb16",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x1185dbb]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "TutorialR01"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb1d",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb22",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11a8377]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "WinterCampaign4"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb29",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb2e",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11836fb]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial03"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb35",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb3a",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x1183857]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial05"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb41",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb46",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x118362b]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial02"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb4d",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb52",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x11a83ff]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "WinterCampaign5"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb59",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb5e",
+      "mnemonic": "lea",
+      "operands": "rcx, [rip + 0x118377b]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial04"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb65",
+      "mnemonic": "call",
+      "operands": "0x1820df9b0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb6a",
+      "mnemonic": "mov",
+      "operands": "byte ptr [rip + 0x136dc75], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb71",
+      "mnemonic": "test",
+      "operands": "rdi, rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb74",
+      "mnemonic": "je",
+      "operands": "0x18191be50",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb7a",
+      "mnemonic": "mov",
+      "operands": "qword ptr [rsp + 0x30], rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb7f",
+      "mnemonic": "xor",
+      "operands": "edx, edx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb81",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rdi + 0x58]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb85",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb88",
+      "mnemonic": "call",
+      "operands": "0x180e28a30",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb8d",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xd5a9aa08",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb92",
+      "mnemonic": "jbe",
+      "operands": "0x18191bcfb",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb98",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xdad21ecc",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bb9d",
+      "mnemonic": "jbe",
+      "operands": "0x18191bc53",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bba3",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xdba9b37a",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bba8",
+      "mnemonic": "jne",
+      "operands": "0x18191bbf9",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbaa",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x118367f]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial03"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbb1",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbb4",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbb7",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbbc",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbbe",
+      "mnemonic": "je",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbc4",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3e9d]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbcb",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbd2",
+      "mnemonic": "jne",
+      "operands": "0x18191bbe3",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbd4",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbd7",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbdc",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3e85]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbe3",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbea",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbef",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0x18]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbf3",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbf7",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbf8",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbf9",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xdca9b50d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bbfe",
+      "mnemonic": "jne",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc04",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x118356d]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial02"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc0b",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc0e",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc11",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc16",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc18",
+      "mnemonic": "je",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc1e",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3e43]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc25",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc2c",
+      "mnemonic": "jne",
+      "operands": "0x18191bc3d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc2e",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc31",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc36",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3e2b]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc3d",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc44",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc49",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0x10]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc4d",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc51",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc52",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc53",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xd6a9ab9b",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc58",
+      "mnemonic": "jne",
+      "operands": "0x18191bca9",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc5a",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x118367f]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial04"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc61",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc64",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc67",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc6c",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc6e",
+      "mnemonic": "je",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc74",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3ded]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc7b",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc82",
+      "mnemonic": "jne",
+      "operands": "0x18191bc93",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc84",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc87",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc8c",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3dd5]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc93",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc9a",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bc9f",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0x20]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bca3",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bca7",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bca8",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bca9",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xdad21ecc",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcae",
+      "mnemonic": "jne",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcb0",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x1185c21]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "TutorialR01"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcb7",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcba",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcbd",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcc2",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcc4",
+      "mnemonic": "je",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcc6",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3d9b]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bccd",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcd4",
+      "mnemonic": "jne",
+      "operands": "0x18191bce5",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcd6",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcd9",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcde",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3d83]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bce5",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcec",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcf1",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcf5",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcf9",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcfa",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bcfb",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xb4a69d8e",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd00",
+      "mnemonic": "jne",
+      "operands": "0x18191bd59",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd02",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x11a8197]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "WinterCampaign4"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd09",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd0c",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd0f",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd14",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd16",
+      "mnemonic": "jne",
+      "operands": "0x18191bd76",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd18",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdi + 0xe4], 1",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd1f",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3d42]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd26",
+      "mnemonic": "je",
+      "operands": "0x18191be22",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd2c",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd33",
+      "mnemonic": "jne",
+      "operands": "0x18191bd44",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd35",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd38",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd3d",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3d24]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd44",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd4b",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd50",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd53",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd57",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd58",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd59",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xb5a69f21",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd5e",
+      "mnemonic": "jne",
+      "operands": "0x18191bdc8",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd60",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x11a81f1]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "WinterCampaign5"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd67",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd6a",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd6d",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd72",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd74",
+      "mnemonic": "je",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd76",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x11a3ceb]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd7d",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rdx + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd84",
+      "mnemonic": "jne",
+      "operands": "0x18191bd95",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd86",
+      "mnemonic": "mov",
+      "operands": "rcx, rdx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd89",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd8e",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x11a3cd3]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd95",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rdx + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bd9c",
+      "mnemonic": "mov",
+      "operands": "r8, qword ptr [rip + 0x11a9a85]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bda3",
+      "mnemonic": "mov",
+      "operands": "rcx, qword ptr [rax + 0x38]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bda7",
+      "mnemonic": "mov",
+      "operands": "rdx, rcx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdaa",
+      "mnemonic": "call",
+      "operands": "0x1802e0820",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdaf",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x11dbd9a]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdb6",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdb9",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdbe",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdc2",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdc3",
+      "mnemonic": "jmp",
+      "operands": "0x1802fbbe0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdc8",
+      "mnemonic": "cmp",
+      "operands": "eax, 0xd5a9aa08",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdcd",
+      "mnemonic": "jne",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdd3",
+      "mnemonic": "mov",
+      "operands": "rdx, qword ptr [rip + 0x11835be]",
+      "references": [
+        {
+          "kind": "literal",
+          "value": "Tutorial05"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdda",
+      "mnemonic": "xor",
+      "operands": "r8d, r8d",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bddd",
+      "mnemonic": "mov",
+      "operands": "rcx, rbx",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bde0",
+      "mnemonic": "call",
+      "operands": "0x180eb93e0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bde5",
+      "mnemonic": "test",
+      "operands": "al, al",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bde7",
+      "mnemonic": "je",
+      "operands": "0x18191bd18",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bded",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3c74]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdf4",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdfb",
+      "mnemonic": "jne",
+      "operands": "0x18191be0c",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191bdfd",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be00",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be05",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3c5c]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191be0c",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be13",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be18",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0x28]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be1c",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be20",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be21",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be22",
+      "mnemonic": "cmp",
+      "operands": "dword ptr [rax + 0xe0], 0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be29",
+      "mnemonic": "jne",
+      "operands": "0x18191be3a",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be2b",
+      "mnemonic": "mov",
+      "operands": "rcx, rax",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be2e",
+      "mnemonic": "call",
+      "operands": "0x1820dfc70",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be33",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rip + 0x11a3c2e]",
+      "references": [
+        {
+          "kind": "type",
+          "name": "StandardDecks",
+          "type_index": 1538
+        }
+      ],
+      "calls": []
+    },
+    {
+      "va": "0x18191be3a",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 0xb8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be41",
+      "mnemonic": "mov",
+      "operands": "rbx, qword ptr [rsp + 0x30]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be46",
+      "mnemonic": "mov",
+      "operands": "rax, qword ptr [rax + 8]",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be4a",
+      "mnemonic": "add",
+      "operands": "rsp, 0x20",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be4e",
+      "mnemonic": "pop",
+      "operands": "rdi",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be4f",
+      "mnemonic": "ret",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be50",
+      "mnemonic": "call",
+      "operands": "0x1820dfbd0",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be55",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be56",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be57",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be58",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be59",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be5a",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be5b",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be5c",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be5d",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be5e",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    },
+    {
+      "va": "0x18191be5f",
+      "mnemonic": "int3",
+      "operands": "",
+      "references": [],
+      "calls": []
+    }
+  ]
+}

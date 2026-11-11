@@ -1,0 +1,35 @@
+00000001817559d0  mov      qword ptr [rsp + 8], rbx
+00000001817559d5  mov      qword ptr [rsp + 0x10], rsi
+00000001817559da  push     rdi
+00000001817559db  sub      rsp, 0x20
+00000001817559df  mov      rbx, r8
+00000001817559e2  mov      rdi, r9
+00000001817559e5  xor      r8d, r8d
+00000001817559e8  mov      rsi, rcx
+00000001817559eb  call     0x1800d5c00
+00000001817559f0  movzx    eax, byte ptr [rsp + 0x60]
+00000001817559f5  lea      rcx, [rsi + 0x38]
+00000001817559f9  mov      byte ptr [rsi + 0x28], al
+00000001817559fc  mov      rdx, rbx
+00000001817559ff  movzx    eax, byte ptr [rsp + 0x68]
+0000000181755a04  mov      byte ptr [rsi + 0x29], al
+0000000181755a07  mov      qword ptr [rsi + 0x38], rbx
+0000000181755a0b  call     0x1820decd0
+0000000181755a10  lea      rcx, [rsi + 0x40]
+0000000181755a14  mov      qword ptr [rsi + 0x40], rdi
+0000000181755a18  mov      rdx, rdi
+0000000181755a1b  call     0x1820decd0
+0000000181755a20  mov      rdx, qword ptr [rsp + 0x50]
+0000000181755a25  lea      rcx, [rsi + 0x48]
+0000000181755a29  mov      qword ptr [rsi + 0x48], rdx
+0000000181755a2d  call     0x1820decd0
+0000000181755a32  mov      rdx, qword ptr [rsp + 0x58]
+0000000181755a37  lea      rcx, [rsi + 0x50]
+0000000181755a3b  mov      qword ptr [rsi + 0x50], rdx
+0000000181755a3f  call     0x1820decd0
+0000000181755a44  mov      rbx, qword ptr [rsp + 0x30]
+0000000181755a49  mov      byte ptr [rsi + 0x2a], 0
+0000000181755a4d  mov      rsi, qword ptr [rsp + 0x38]
+0000000181755a52  add      rsp, 0x20
+0000000181755a56  pop      rdi
+0000000181755a57  ret      

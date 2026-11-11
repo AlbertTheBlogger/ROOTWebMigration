@@ -1,0 +1,33 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 454869228525152829
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 2547509757007336061
+  },
+  "m_Name": "",
+  "AllowSelectionWhenNoninteractable": 0,
+  "SourceSelectionCenter": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "NavigateLeft": {
+    "TargetSelectables": [],
+    "FallbackToAutomaticSearchBehaviour": 1
+  },
+  "NavigateRight": {
+    "TargetSelectables": [],
+    "FallbackToAutomaticSearchBehaviour": 1
+  },
+  "NavigateUp": {
+    "TargetSelectables": [],
+    "FallbackToAutomaticSearchBehaviour": 1
+  },
+  "NavigateDown": {
+    "TargetSelectables": [],
+    "FallbackToAutomaticSearchBehaviour": 1
+  }
+}

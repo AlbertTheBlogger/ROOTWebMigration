@@ -1,0 +1,452 @@
+{
+  "source_sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "deck_field": "StandardDecks.DrawDeck",
+  "total": 50,
+  "item_supply": {
+    "bag": 2,
+    "boot": 2,
+    "crossbow": 1,
+    "hammer": 1,
+    "sword": 2,
+    "tea": 2,
+    "coin": 2
+  },
+  "cards": [
+    {
+      "type": "FavoroftheFoxesFox",
+      "name": "狐之援助",
+      "suit": "fox",
+      "count": 1,
+      "kind": "favor",
+      "cost": [
+        "fox",
+        "fox",
+        "fox"
+      ]
+    },
+    {
+      "type": "FavoroftheMiceMouse",
+      "name": "鼠之援助",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "favor",
+      "cost": [
+        "mouse",
+        "mouse",
+        "mouse"
+      ]
+    },
+    {
+      "type": "FavoroftheRabbitsRabbit",
+      "name": "兔之援助",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "favor",
+      "cost": [
+        "rabbit",
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "AVisittoFriendsRabbit",
+      "name": "拜访好友",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "BakeSaleRabbit",
+      "name": "售卖蛋糕",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "item": "coin"
+    },
+    {
+      "type": "TravelGearMouse",
+      "name": "旅行装备",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "SmugglersTrailRabbit",
+      "name": "走私路线",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "RootTeaRabbit",
+      "name": "草根茶",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "item": "tea"
+    },
+    {
+      "type": "InvestmentsMouse",
+      "name": "投资",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "item": "coin"
+    },
+    {
+      "type": "BirdyBindleBird",
+      "name": "飞鹰行囊",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "RootTeaMouse",
+      "name": "草根茶",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "item": "tea"
+    },
+    {
+      "type": "SwordMouse",
+      "name": "长剑",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "item": "sword"
+    },
+    {
+      "type": "WoodlandRunnersBird",
+      "name": "林地跑者",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "TravelGearFox",
+      "name": "旅行装备",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "AnvilFox",
+      "name": "铁砧",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 2,
+      "item": "hammer"
+    },
+    {
+      "type": "GentlyUsedKnapsackFox",
+      "name": "半新小袋",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "MouseinaSackMouse",
+      "name": "老鼠口袋",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "CrossbowBird",
+      "name": "十字弩",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 1,
+      "item": "crossbow"
+    },
+    {
+      "type": "ProtectionRacketFox",
+      "name": "保护费",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "item": "coin"
+    },
+    {
+      "type": "ArmsTraderBird",
+      "name": "武器商",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "item": "sword"
+    },
+    {
+      "type": "CrossbowMouse",
+      "name": "十字弩",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 1,
+      "item": "crossbow"
+    },
+    {
+      "type": "FoxfolkSteelFox",
+      "name": "狐族钢剑",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "item": "sword"
+    },
+    {
+      "type": "RootTeaFox",
+      "name": "草根茶",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "item": "tea"
+    },
+    {
+      "type": "ScoutingPartyMouse",
+      "name": "侦查团",
+      "suit": "mouse",
+      "count": 2,
+      "kind": "scouting",
+      "cost": [
+        "mouse",
+        "mouse"
+      ]
+    },
+    {
+      "type": "CobblerRabbit",
+      "name": "补鞋匠",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "cobbler",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "CommandWarrenRabbit",
+      "name": "指挥所",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "commandwarren",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "BetterBurrowBankRabbit",
+      "name": "好利银行",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "bank",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "TaxCollectorFox",
+      "name": "征税官",
+      "suit": "fox",
+      "count": 3,
+      "kind": "tax",
+      "cost": [
+        "rabbit",
+        "fox",
+        "mouse"
+      ]
+    },
+    {
+      "type": "CodebreakersMouse",
+      "name": "密码破译",
+      "suit": "mouse",
+      "count": 2,
+      "kind": "codebreakers",
+      "cost": [
+        "mouse"
+      ]
+    },
+    {
+      "type": "RoyalClaimBird",
+      "name": "加冕",
+      "suit": "wild",
+      "count": 1,
+      "kind": "royalclaim",
+      "cost": [
+        "wild",
+        "wild",
+        "wild",
+        "wild"
+      ]
+    },
+    {
+      "type": "StandandDeliverFox",
+      "name": "拦路抢劫",
+      "suit": "fox",
+      "count": 2,
+      "kind": "standdeliver",
+      "cost": [
+        "mouse",
+        "mouse",
+        "mouse"
+      ]
+    },
+    {
+      "type": "SappersBird",
+      "name": "陷阱挖掘",
+      "suit": "wild",
+      "count": 2,
+      "kind": "sappers",
+      "cost": [
+        "mouse"
+      ]
+    },
+    {
+      "type": "ArmorersBird",
+      "name": "铠甲兵",
+      "suit": "wild",
+      "count": 2,
+      "kind": "armorers",
+      "cost": [
+        "fox"
+      ]
+    },
+    {
+      "type": "BrutalTacticsBird",
+      "name": "野蛮战术",
+      "suit": "wild",
+      "count": 2,
+      "kind": "brutal",
+      "cost": [
+        "fox",
+        "fox"
+      ]
+    },
+    {
+      "type": "AmbushRabbit",
+      "name": "奇袭！",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null
+    },
+    {
+      "type": "AmbushBird",
+      "name": "奇袭！",
+      "suit": "wild",
+      "count": 2,
+      "kind": "ambush",
+      "cost": null
+    },
+    {
+      "type": "AmbushFox",
+      "name": "奇袭！",
+      "suit": "fox",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null
+    },
+    {
+      "type": "AmbushMouse",
+      "name": "奇袭！",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null
+    }
+  ]
+}

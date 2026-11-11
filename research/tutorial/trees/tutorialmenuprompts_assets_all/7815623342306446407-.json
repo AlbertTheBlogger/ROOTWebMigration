@@ -1,0 +1,17 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -2738989472179812819
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 3755419930824559182
+  },
+  "m_Name": "",
+  "limitToInputModuleType": "Gamepad",
+  "scrollDurationSecs": 0.20000000298023224,
+  "autoCenterWhenSelected": 1,
+  "thisIsScrollTarget": 0,
+  "requireOnScreen": 0
+}

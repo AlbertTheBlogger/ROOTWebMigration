@@ -1,0 +1,148 @@
+000000018197aa40  mov      qword ptr [rsp + 8], rbx
+000000018197aa45  mov      qword ptr [rsp + 0x10], rbp
+000000018197aa4a  mov      qword ptr [rsp + 0x18], rsi
+000000018197aa4f  mov      qword ptr [rsp + 0x20], rdi
+000000018197aa54  push     r14
+000000018197aa56  sub      rsp, 0x30
+000000018197aa5a  cmp      byte ptr [rip + 0x130f058], 0
+000000018197aa61  mov      rbx, r8
+000000018197aa64  mov      r14, rdx
+000000018197aa67  mov      rsi, rcx
+000000018197aa6a  jne      0x18197aad3
+000000018197aa6c  lea      rcx, [rip + 0x1124bd5]
+000000018197aa73  call     0x1820df9b0
+000000018197aa78  lea      rcx, [rip + 0x1151281]
+000000018197aa7f  call     0x1820df9b0
+000000018197aa84  lea      rcx, [rip + 0x115149d]
+000000018197aa8b  call     0x1820df9b0
+000000018197aa90  lea      rcx, [rip + 0x1150471]
+000000018197aa97  call     0x1820df9b0
+000000018197aa9c  lea      rcx, [rip + 0x1157cdd]
+000000018197aaa3  call     0x1820df9b0
+000000018197aaa8  lea      rcx, [rip + 0x114aa69]
+000000018197aaaf  call     0x1820df9b0
+000000018197aab4  lea      rcx, [rip + 0x112d315]
+000000018197aabb  call     0x1820df9b0
+000000018197aac0  lea      rcx, [rip + 0x112f219]
+000000018197aac7  call     0x1820df9b0
+000000018197aacc  mov      byte ptr [rip + 0x130efe6], 1
+000000018197aad3  lea      rcx, [rsi + 0x10]
+000000018197aad7  xor      edx, edx
+000000018197aad9  call     0x18105a250
+000000018197aade  mov      rcx, qword ptr [rip + 0x112f1fb]
+000000018197aae5  xor      r8d, r8d
+000000018197aae8  mov      rdx, rax
+000000018197aaeb  call     0x180eb7200
+000000018197aaf0  mov      rcx, qword ptr [rip + 0x1157c89]
+000000018197aaf7  mov      rdi, rax
+000000018197aafa  call     0x1820dfb80
+000000018197aaff  mov      r9, rdi
+000000018197ab02  mov      qword ptr [rsp + 0x20], 0
+000000018197ab0b  xor      r8d, r8d
+000000018197ab0e  mov      rdx, r14
+000000018197ab11  mov      rcx, rax
+000000018197ab14  mov      rbp, rax
+000000018197ab17  call     0x1818cd200 ; TuberBoardNode..ctor
+000000018197ab1c  test     rbp, rbp
+000000018197ab1f  je       0x18197aca9
+000000018197ab25  mov      edx, dword ptr [rsi + 0x10]
+000000018197ab28  xor      r8d, r8d
+000000018197ab2b  mov      rcx, rbp
+000000018197ab2e  call     0x1818cc7e0 ; TuberBoardNode.WithIndex
+000000018197ab33  mov      edx, dword ptr [rsi + 0x1c]
+000000018197ab36  xor      r8d, r8d
+000000018197ab39  mov      rcx, rbp
+000000018197ab3c  call     0x1818ccc90 ; TuberBoardNode.WithNodeType
+000000018197ab41  cmp      byte ptr [rsi + 0x20], 0
+000000018197ab45  je       0x18197ab54
+000000018197ab47  xor      r8d, r8d
+000000018197ab4a  mov      dl, 1
+000000018197ab4c  mov      rcx, rbp
+000000018197ab4f  call     0x1818cca20 ; TuberBoardNode.WithIsStartingLocation
+000000018197ab54  cmp      byte ptr [rsi + 0x21], 0
+000000018197ab58  je       0x18197ab67
+000000018197ab5a  xor      r8d, r8d
+000000018197ab5d  mov      dl, 1
+000000018197ab5f  mov      rcx, rbp
+000000018197ab62  call     0x1818cc960 ; TuberBoardNode.WithIsRuinLocation
+000000018197ab67  cmp      byte ptr [rsi + 0x22], 0
+000000018197ab6b  je       0x18197ab7a
+000000018197ab6d  xor      r8d, r8d
+000000018197ab70  mov      dl, 1
+000000018197ab72  mov      rcx, rbp
+000000018197ab75  call     0x1818cc8a0 ; TuberBoardNode.WithIsEdgeLocation
+000000018197ab7a  cmp      dword ptr [rsi + 0x18], 4
+000000018197ab7e  je       0x18197ab9a
+000000018197ab80  test     bl, bl
+000000018197ab82  je       0x18197ab8a
+000000018197ab84  shr      rbx, 0x20
+000000018197ab88  jmp      0x18197ab8d
+000000018197ab8a  mov      ebx, dword ptr [rsi + 0x18]
+000000018197ab8d  xor      r8d, r8d
+000000018197ab90  mov      edx, ebx
+000000018197ab92  mov      rcx, rbp
+000000018197ab95  call     0x1818cd080 ; TuberBoardNode.WithSuit
+000000018197ab9a  cmp      dword ptr [rsi + 0x24], 0
+000000018197ab9e  jle      0x18197abae
+000000018197aba0  mov      edx, dword ptr [rsi + 0x24]
+000000018197aba3  xor      r8d, r8d
+000000018197aba6  mov      rcx, rbp
+000000018197aba9  call     0x1818cc720 ; TuberBoardNode.WithBuildableSpots
+000000018197abae  cmp      dword ptr [rsi + 0x14], 1
+000000018197abb2  jl       0x18197ac8b
+000000018197abb8  test     r14, r14
+000000018197abbb  je       0x18197aca9
+000000018197abc1  mov      rcx, qword ptr [rip + 0x112d208]
+000000018197abc8  mov      r14, qword ptr [r14 + 0x120]
+000000018197abcf  cmp      dword ptr [rcx + 0xe0], 0
+000000018197abd6  jne      0x18197abe4
+000000018197abd8  call     0x1820dfc70
+000000018197abdd  mov      rcx, qword ptr [rip + 0x112d1ec]
+000000018197abe4  mov      rax, qword ptr [rcx + 0xb8]
+000000018197abeb  mov      rdi, qword ptr [rax + 8]
+000000018197abef  test     rdi, rdi
+000000018197abf2  jne      0x18197ac62
+000000018197abf4  cmp      dword ptr [rcx + 0xe0], edi
+000000018197abfa  jne      0x18197ac08
+000000018197abfc  call     0x1820dfc70
+000000018197ac01  mov      rcx, qword ptr [rip + 0x112d1c8]
+000000018197ac08  mov      rax, qword ptr [rcx + 0xb8]
+000000018197ac0f  mov      rcx, qword ptr [rip + 0x11502f2]
+000000018197ac16  mov      rbx, qword ptr [rax]
+000000018197ac19  call     0x1820dfb80
+000000018197ac1e  mov      r8, qword ptr [rip + 0x114a8f3]
+000000018197ac25  xor      r9d, r9d
+000000018197ac28  mov      rdx, rbx
+000000018197ac2b  mov      rcx, rax
+000000018197ac2e  mov      rdi, rax
+000000018197ac31  call     0x1801512f0
+000000018197ac36  mov      rax, qword ptr [rip + 0x112d193]
+000000018197ac3d  mov      rdx, rdi
+000000018197ac40  mov      rcx, qword ptr [rax + 0xb8]
+000000018197ac47  mov      qword ptr [rcx + 8], rdi
+000000018197ac4b  mov      rax, qword ptr [rip + 0x112d17e]
+000000018197ac52  mov      rcx, qword ptr [rax + 0xb8]
+000000018197ac59  add      rcx, 8
+000000018197ac5d  call     0x1820decd0
+000000018197ac62  test     r14, r14
+000000018197ac65  je       0x18197aca9
+000000018197ac67  mov      r8, qword ptr [rip + 0x11249da]
+000000018197ac6e  mov      rdx, rdi
+000000018197ac71  mov      rcx, r14
+000000018197ac74  call     0x180ab10e0
+000000018197ac79  test     al, al
+000000018197ac7b  je       0x18197ac8b
+000000018197ac7d  mov      edx, dword ptr [rsi + 0x14]
+000000018197ac80  xor      r8d, r8d
+000000018197ac83  mov      rcx, rbp
+000000018197ac86  call     0x1818cce10 ; TuberBoardNode.WithPriorityMarker
+000000018197ac8b  mov      rbx, qword ptr [rsp + 0x40]
+000000018197ac90  mov      rax, rbp
+000000018197ac93  mov      rbp, qword ptr [rsp + 0x48]
+000000018197ac98  mov      rsi, qword ptr [rsp + 0x50]
+000000018197ac9d  mov      rdi, qword ptr [rsp + 0x58]
+000000018197aca2  add      rsp, 0x30
+000000018197aca6  pop      r14
+000000018197aca8  ret      
+000000018197aca9  call     0x1820dfbd0
+000000018197acae  int3     

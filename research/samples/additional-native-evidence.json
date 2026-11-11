@@ -1,0 +1,18 @@
+[
+  {
+    "type": "TuberAttributes",
+    "method": ".cctor",
+    "va": "0x181682f30",
+    "bytes": 20149,
+    "file": "TuberAttributes-1318.asm.txt",
+    "boundary": "PE runtime-function region; cold blocks may lie outside this range"
+  },
+  {
+    "type": "TuberPlaymat",
+    "method": "GetDeck",
+    "va": "0x18191bae0",
+    "bytes": 154,
+    "file": "TuberPlaymat-2761.asm.txt",
+    "boundary": "PE runtime-function region; cold blocks may lie outside this range"
+  }
+]

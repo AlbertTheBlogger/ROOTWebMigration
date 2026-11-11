@@ -1,0 +1,703 @@
+0x1819204c0 mov      qword ptr [rsp + 8], rcx   
+0x1819204c5 push     rbx   
+0x1819204c6 push     rsi   
+0x1819204c7 push     rdi   
+0x1819204c8 push     r12   
+0x1819204ca push     r13   
+0x1819204cc push     r14   
+0x1819204ce push     r15   
+0x1819204d0 sub      rsp, 0xa0   
+0x1819204d7 mov      r14, rcx   
+0x1819204da cmp      byte ptr [rip + 0x13692ff], 0   
+0x1819204e1 jne      0x1819206ce   
+0x1819204e7 lea      rcx, [rip + 0x11b1ab2]   
+0x1819204ee call     0x1820df9b0   
+0x1819204f3 lea      rcx, [rip + 0x118840e]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x1819204fa call     0x1820df9b0   
+0x1819204ff lea      rcx, [rip + 0x119faba]   
+0x181920506 call     0x1820df9b0   
+0x18192050b lea      rcx, [rip + 0x11a5316]   
+0x181920512 call     0x1820df9b0   
+0x181920517 lea      rcx, [rip + 0x11a9dca]   
+0x18192051e call     0x1820df9b0   
+0x181920523 lea      rcx, [rip + 0x11d7626]   
+0x18192052a call     0x1820df9b0   
+0x18192052f lea      rcx, [rip + 0x11dcc02]   
+0x181920536 call     0x1820df9b0   
+0x18192053b lea      rcx, [rip + 0x11deb96]   
+0x181920542 call     0x1820df9b0   
+0x181920547 lea      rcx, [rip + 0x11b919a]   
+0x18192054e call     0x1820df9b0   
+0x181920553 lea      rcx, [rip + 0x11b9246]   
+0x18192055a call     0x1820df9b0   
+0x18192055f lea      rcx, [rip + 0x11b92f2]   
+0x181920566 call     0x1820df9b0   
+0x18192056b lea      rcx, [rip + 0x11e8666]   
+0x181920572 call     0x1820df9b0   
+0x181920577 lea      rcx, [rip + 0x11d785a]   
+0x18192057e call     0x1820df9b0   
+0x181920583 lea      rcx, [rip + 0x11ea27e]   
+0x18192058a call     0x1820df9b0   
+0x18192058f lea      rcx, [rip + 0x11a64b2]   
+0x181920596 call     0x1820df9b0   
+0x18192059b lea      rcx, [rip + 0x1183a2e]   
+0x1819205a2 call     0x1820df9b0   
+0x1819205a7 lea      rcx, [rip + 0x1189402]   
+0x1819205ae call     0x1820df9b0   
+0x1819205b3 lea      rcx, [rip + 0x11a7686]   
+0x1819205ba call     0x1820df9b0   
+0x1819205bf lea      rcx, [rip + 0x11b618a]   
+0x1819205c6 call     0x1820df9b0   
+0x1819205cb lea      rcx, [rip + 0x11ac1b6]   
+0x1819205d2 call     0x1820df9b0   
+0x1819205d7 lea      rcx, [rip + 0x11ac3d2]   
+0x1819205de call     0x1820df9b0   
+0x1819205e3 lea      rcx, [rip + 0x11c3a56]  [{"kind": "type", "name": "LocalizableText", "type_index": 15858}] 
+0x1819205ea call     0x1820df9b0   
+0x1819205ef lea      rcx, [rip + 0x11a737a]   
+0x1819205f6 call     0x1820df9b0   
+0x1819205fb lea      rcx, [rip + 0x11a411e]   
+0x181920602 call     0x1820df9b0   
+0x181920607 lea      rcx, [rip + 0x11a9ba2]   
+0x18192060e call     0x1820df9b0   
+0x181920613 lea      rcx, [rip + 0x11dee66]   
+0x18192061a call     0x1820df9b0   
+0x18192061f lea      rcx, [rip + 0x11ddfea]   
+0x181920626 call     0x1820df9b0   
+0x18192062b lea      rcx, [rip + 0x11dd6ee]   
+0x181920632 call     0x1820df9b0   
+0x181920637 lea      rcx, [rip + 0x11dd9a2]   
+0x18192063e call     0x1820df9b0   
+0x181920643 lea      rcx, [rip + 0x119f41e]  [{"kind": "type", "name": "StandardDecks", "type_index": 1538}] 
+0x18192064a call     0x1820df9b0   
+0x18192064f lea      rcx, [rip + 0x11a7402]  [{"kind": "type", "name": "TCAttributes", "type_index": 13706}] 
+0x181920656 call     0x1820df9b0   
+0x18192065b lea      rcx, [rip + 0x11b1e3e]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181920662 call     0x1820df9b0   
+0x181920667 lea      rcx, [rip + 0x11b261a]  [{"kind": "type", "name": "TuberEntity", "type_index": 472}] 
+0x18192066e call     0x1820df9b0   
+0x181920673 lea      rcx, [rip + 0x11b33b6]  [{"kind": "type", "name": "TuberMatch", "type_index": 303}] 
+0x18192067a call     0x1820df9b0   
+0x18192067f lea      rcx, [rip + 0x11b8952]   
+0x181920686 call     0x1820df9b0   
+0x18192068b lea      rcx, [rip + 0x11b89fe]   
+0x181920692 call     0x1820df9b0   
+0x181920697 lea      rcx, [rip + 0x11b8aaa]   
+0x18192069e call     0x1820df9b0   
+0x1819206a3 lea      rcx, [rip + 0x11b8b56]   
+0x1819206aa call     0x1820df9b0   
+0x1819206af lea      rcx, [rip + 0x1190522]   
+0x1819206b6 call     0x1820df9b0   
+0x1819206bb lea      rcx, [rip + 0x1190466]   
+0x1819206c2 call     0x1820df9b0   
+0x1819206c7 mov      byte ptr [rip + 0x1369112], 1   
+0x1819206ce xor      esi, esi   
+0x1819206d0 mov      qword ptr [rsp + 0xf0], rsi   
+0x1819206d8 mov      rcx, qword ptr [rip + 0x11904f9]   
+0x1819206df call     0x1820dfb80   
+0x1819206e4 mov      r15, rax   
+0x1819206e7 xor      edx, edx   
+0x1819206e9 mov      rcx, rax   
+0x1819206ec call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x1819206f1 mov      qword ptr [rsp + 0xf8], r15   
+0x1819206f9 mov      r12, qword ptr [r14 + 0x38]   
+0x1819206fd mov      rdx, qword ptr [rip + 0x11b332c]  [{"kind": "type", "name": "TuberMatch", "type_index": 303}] 
+0x181920704 test     r12, r12   
+0x181920707 je       0x181921125   
+0x18192070d mov      r8, qword ptr [r12]   
+0x181920711 movzx    eax, byte ptr [rdx + 0x130]   
+0x181920718 cmp      byte ptr [r8 + 0x130], al   
+0x18192071f jb       0x181921164   
+0x181920725 movzx    ecx, al   
+0x181920728 mov      rax, qword ptr [r8 + 0xc8]   
+0x18192072f cmp      qword ptr [rax + rcx*8 - 8], rdx   
+0x181920734 jne      0x181921164   
+0x18192073a xor      edx, edx   
+0x18192073c mov      rcx, r12   
+0x18192073f call     0x181693aa0   TuberMatch.get_TuberMatchInitData
+0x181920744 test     r15, r15   
+0x181920747 je       0x181921125   
+0x18192074d mov      qword ptr [r15 + 0x10], rax   
+0x181920751 lea      rcx, [r15 + 0x10]   
+0x181920755 mov      rdx, rax   
+0x181920758 call     0x1820decd0   
+0x18192075d mov      rax, qword ptr [rip + 0x11a72f4]  [{"kind": "type", "name": "TCAttributes", "type_index": 13706}] 
+0x181920764 cmp      dword ptr [rax + 0xe0], esi   
+0x18192076a jne      0x18192077b   
+0x18192076c mov      rcx, rax   
+0x18192076f call     0x1820dfc70   
+0x181920774 mov      rax, qword ptr [rip + 0x11a72dd]  [{"kind": "type", "name": "TCAttributes", "type_index": 13706}] 
+0x18192077b mov      rax, qword ptr [rax + 0xb8]   
+0x181920782 mov      r13, qword ptr [rax + 8]   
+0x181920786 mov      rax, qword ptr [rip + 0x118817b]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x18192078d cmp      dword ptr [rax + 0xe0], esi   
+0x181920793 jne      0x1819207a4   
+0x181920795 mov      rcx, rax   
+0x181920798 call     0x1820dfc70   
+0x18192079d mov      rax, qword ptr [rip + 0x1188164]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x1819207a4 mov      rax, qword ptr [rax + 0xb8]   
+0x1819207ab mov      rbx, qword ptr [rax + 8]   
+0x1819207af test     rbx, rbx   
+0x1819207b2 je       0x181921125   
+0x1819207b8 mov      rbx, qword ptr [rbx + 0x10]   
+0x1819207bc mov      rcx, qword ptr [rip + 0x11c387d]  [{"kind": "type", "name": "LocalizableText", "type_index": 15858}] 
+0x1819207c3 call     0x1820dfb80   
+0x1819207c8 mov      rdi, rax   
+0x1819207cb xor      r8d, r8d   
+0x1819207ce mov      rdx, rbx   
+0x1819207d1 mov      rcx, rax   
+0x1819207d4 call     0x181ec2e70   
+0x1819207d9 mov      r9, qword ptr [rip + 0x11deca0]   
+0x1819207e0 mov      r8, rdi   
+0x1819207e3 mov      rdx, r13   
+0x1819207e6 mov      rcx, r14   
+0x1819207e9 call     0x18032b4f0   
+0x1819207ee mov      rax, qword ptr [rip + 0x11a7263]  [{"kind": "type", "name": "TCAttributes", "type_index": 13706}] 
+0x1819207f5 mov      rcx, qword ptr [rax + 0xb8]   
+0x1819207fc mov      rbx, qword ptr [rcx + 0x30]   
+0x181920800 mov      qword ptr [rsp + 0x80], rsi   
+0x181920808 mov      r8, qword ptr [rip + 0x11a7161]   
+0x18192080f xor      edx, edx   
+0x181920811 lea      rcx, [rsp + 0x80]   
+0x181920819 call     0x180b9b5a0   
+0x18192081e mov      r9, qword ptr [rip + 0x11dd7bb]   
+0x181920825 mov      r8, qword ptr [rsp + 0x80]   
+0x18192082d mov      rdx, rbx   
+0x181920830 mov      rcx, r14   
+0x181920833 call     0x18032b420   
+0x181920838 xor      r8d, r8d   
+0x18192083b xor      edx, edx   
+0x18192083d mov      rcx, r14   
+0x181920840 call     0x18191f7a0   TuberPlaymat.createItem
+0x181920845 xor      r8d, r8d   
+0x181920848 xor      edx, edx   
+0x18192084a mov      rcx, r14   
+0x18192084d call     0x18191f7a0   TuberPlaymat.createItem
+0x181920852 xor      r8d, r8d   
+0x181920855 lea      edx, [r8 + 1]   
+0x181920859 mov      rcx, r14   
+0x18192085c call     0x18191f7a0   TuberPlaymat.createItem
+0x181920861 xor      r8d, r8d   
+0x181920864 lea      edx, [r8 + 1]   
+0x181920868 mov      rcx, r14   
+0x18192086b call     0x18191f7a0   TuberPlaymat.createItem
+0x181920870 xor      r8d, r8d   
+0x181920873 lea      edx, [r8 + 2]   
+0x181920877 mov      rcx, r14   
+0x18192087a call     0x18191f7a0   TuberPlaymat.createItem
+0x18192087f xor      r8d, r8d   
+0x181920882 lea      edx, [r8 + 3]   
+0x181920886 mov      rcx, r14   
+0x181920889 call     0x18191f7a0   TuberPlaymat.createItem
+0x18192088e xor      r8d, r8d   
+0x181920891 lea      edx, [r8 + 4]   
+0x181920895 mov      rcx, r14   
+0x181920898 call     0x18191f7a0   TuberPlaymat.createItem
+0x18192089d xor      r8d, r8d   
+0x1819208a0 lea      edx, [r8 + 4]   
+0x1819208a4 mov      rcx, r14   
+0x1819208a7 call     0x18191f7a0   TuberPlaymat.createItem
+0x1819208ac xor      r8d, r8d   
+0x1819208af lea      edx, [r8 + 5]   
+0x1819208b3 mov      rcx, r14   
+0x1819208b6 call     0x18191f7a0   TuberPlaymat.createItem
+0x1819208bb xor      r8d, r8d   
+0x1819208be lea      edx, [r8 + 5]   
+0x1819208c2 mov      rcx, r14   
+0x1819208c5 call     0x18191f7a0   TuberPlaymat.createItem
+0x1819208ca xor      r8d, r8d   
+0x1819208cd lea      edx, [r8 + 7]   
+0x1819208d1 mov      rcx, r14   
+0x1819208d4 call     0x18191f7a0   TuberPlaymat.createItem
+0x1819208d9 xor      r8d, r8d   
+0x1819208dc lea      edx, [r8 + 7]   
+0x1819208e0 mov      rcx, r14   
+0x1819208e3 call     0x18191f7a0   TuberPlaymat.createItem
+0x1819208e8 mov      rcx, qword ptr [r14 + 0x78]   
+0x1819208ec test     rcx, rcx   
+0x1819208ef je       0x181921125   
+0x1819208f5 xor      edx, edx   
+0x1819208f7 call     0x1818d0310   TuberBoard.Initialize
+0x1819208fc xor      r8d, r8d   
+0x1819208ff mov      rdx, qword ptr [r15 + 0x10]   
+0x181920903 mov      rcx, r14   
+0x181920906 call     0x18191bae0   TuberPlaymat.GetDeck
+0x18192090b mov      rdi, rax   
+0x18192090e mov      rax, qword ptr [r15 + 0x10]   
+0x181920912 test     rax, rax   
+0x181920915 je       0x181921125   
+0x18192091b mov      rbx, qword ptr [rax + 0xa0]   
+0x181920922 mov      rdx, qword ptr [rip + 0x119f697]   
+0x181920929 mov      rcx, rbx   
+0x18192092c call     0x1802d63b0   
+0x181920931 test     al, al   
+0x181920933 je       0x181920959   
+0x181920935 mov      r8, qword ptr [rip + 0x11a4eec]   
+0x18192093c mov      rdx, rdi   
+0x18192093f mov      rcx, rbx   
+0x181920942 call     0x1802e0820   
+0x181920947 mov      rdx, qword ptr [rip + 0x11d7202]   
+0x18192094e mov      rcx, rax   
+0x181920951 call     0x1802fbbe0   
+0x181920956 mov      rdi, rax   
+0x181920959 mov      rcx, qword ptr [rip + 0x11d7478]   
+0x181920960 call     0x1820dfb80   
+0x181920965 mov      rbx, rax   
+0x181920968 xor      r9d, r9d   
+0x18192096b mov      r8, qword ptr [rip + 0x11b87d6]   
+0x181920972 mov      rdx, r15   
+0x181920975 mov      rcx, rax   
+0x181920978 call     0x180983120   
+0x18192097d mov      r8, qword ptr [rip + 0x11dc7b4]   
+0x181920984 mov      rdx, rbx   
+0x181920987 mov      rcx, rdi   
+0x18192098a call     0x1802fcb30   
+0x18192098f mov      rdx, qword ptr [rip + 0x11d71ba]   
+0x181920996 mov      rcx, rax   
+0x181920999 call     0x1802fbbe0   
+0x18192099e mov      rbx, rax   
+0x1819209a1 mov      rax, qword ptr [r15 + 0x10]   
+0x1819209a5 test     rax, rax   
+0x1819209a8 je       0x18192115e   
+0x1819209ae test     rbx, rbx   
+0x1819209b1 je       0x18192115e   
+0x1819209b7 mov      r8, qword ptr [rip + 0x11abdca]   
+0x1819209be mov      rdx, qword ptr [rax + 0xb8]   
+0x1819209c5 mov      rcx, rbx   
+0x1819209c8 call     0x180abf690   
+0x1819209cd mov      r8, qword ptr [rip + 0x11abfdc]   
+0x1819209d4 mov      rdx, rbx   
+0x1819209d7 lea      rcx, [rsp + 0x50]   
+0x1819209dc call     0x180a13c70   
+0x1819209e1 movups   xmm0, xmmword ptr [rsp + 0x50]   
+0x1819209e6 movups   xmmword ptr [rsp + 0x68], xmm0   
+0x1819209eb movsd    xmm1, qword ptr [rsp + 0x60]   
+0x1819209f1 movsd    qword ptr [rsp + 0x78], xmm1   
+0x1819209f7 mov      qword ptr [rsp + 0x38], rsi   
+0x1819209fc lea      rbx, [rsp + 0x68]   
+0x181920a01 mov      qword ptr [rsp + 0x40], rbx   
+0x181920a06 mov      qword ptr [rsp + 0x48], r12   
+0x181920a0b nop      dword ptr [rax + rax]   
+0x181920a10 mov      rdx, qword ptr [rip + 0x11b8d89]   
+0x181920a17 lea      rcx, [rsp + 0x68]   
+0x181920a1c call     0x180855c00   
+0x181920a21 test     al, al   
+0x181920a23 je       0x181920a3e   
+0x181920a25 xor      r9d, r9d   
+0x181920a28 mov      r8, qword ptr [r14 + 0x80]   
+0x181920a2f mov      rdx, qword ptr [rsp + 0x78]   
+0x181920a34 mov      rcx, r14   
+0x181920a37 call     0x18191f370   TuberPlaymat.createCard
+0x181920a3c jmp      0x181920a10   
+0x181920a3e mov      rdx, qword ptr [rip + 0x11b8ca3]   
+0x181920a45 mov      rcx, rbx   
+0x181920a48 call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x181920a4d jmp      0x181920a85   
+0x181920a4f mov      rdx, qword ptr [rip + 0x11b8c92]   
+0x181920a56 mov      rcx, qword ptr [rsp + 0x40]   
+0x181920a5b call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x181920a60 mov      rcx, qword ptr [rsp + 0x38]   
+0x181920a65 test     rcx, rcx   
+0x181920a68 jne      0x18192112b   
+0x181920a6e xor      esi, esi   
+0x181920a70 mov      r14, qword ptr [rsp + 0xe0]   
+0x181920a78 mov      r15, qword ptr [rsp + 0xf8]   
+0x181920a80 mov      r12, qword ptr [rsp + 0x48]   
+0x181920a85 mov      rcx, qword ptr [r14 + 0x38]   
+0x181920a89 test     rcx, rcx   
+0x181920a8c je       0x18192115e   
+0x181920a92 mov      rdx, qword ptr [rcx]   
+0x181920a95 mov      rax, qword ptr [rdx + 0x268]   
+0x181920a9c mov      rdx, qword ptr [rdx + 0x270]   
+0x181920aa3 call     rax   
+0x181920aa5 test     al, al   
+0x181920aa7 jne      0x181920cb0   
+0x181920aad test     r12, r12   
+0x181920ab0 je       0x18192115e   
+0x181920ab6 mov      r12, qword ptr [r12 + 0x120]   
+0x181920abe mov      rcx, qword ptr [rip + 0x1190063]   
+0x181920ac5 cmp      dword ptr [rcx + 0xe0], 0   
+0x181920acc jne      0x181920ada   
+0x181920ace call     0x1820dfc70   
+0x181920ad3 mov      rcx, qword ptr [rip + 0x119004e]   
+0x181920ada mov      rax, qword ptr [rcx + 0xb8]   
+0x181920ae1 mov      rdi, qword ptr [rax + 0x10]   
+0x181920ae5 test     rdi, rdi   
+0x181920ae8 jne      0x181920b58   
+0x181920aea cmp      dword ptr [rcx + 0xe0], edi   
+0x181920af0 jne      0x181920afe   
+0x181920af2 call     0x1820dfc70   
+0x181920af7 mov      rcx, qword ptr [rip + 0x119002a]   
+0x181920afe mov      rax, qword ptr [rcx + 0xb8]   
+0x181920b05 mov      rbx, qword ptr [rax]   
+0x181920b08 mov      rcx, qword ptr [rip + 0x11e9cf9]   
+0x181920b0f call     0x1820dfb80   
+0x181920b14 mov      rdi, rax   
+0x181920b17 xor      r9d, r9d   
+0x181920b1a mov      r8, qword ptr [rip + 0x11b84b7]   
+0x181920b21 mov      rdx, rbx   
+0x181920b24 mov      rcx, rax   
+0x181920b27 call     0x180983120   
+0x181920b2c mov      rax, qword ptr [rip + 0x118fff5]   
+0x181920b33 mov      rdx, qword ptr [rax + 0xb8]   
+0x181920b3a mov      qword ptr [rdx + 0x10], rdi   
+0x181920b3e mov      rax, qword ptr [rip + 0x118ffe3]   
+0x181920b45 mov      rcx, qword ptr [rax + 0xb8]   
+0x181920b4c add      rcx, 0x10   
+0x181920b50 mov      rdx, rdi   
+0x181920b53 call     0x1820decd0   
+0x181920b58 mov      r8, qword ptr [rip + 0x11a9789]   
+0x181920b5f mov      rdx, rdi   
+0x181920b62 mov      rcx, r12   
+0x181920b65 call     0x1802e3200   
+0x181920b6a cmp      eax, 2   
+0x181920b6d jle      0x181920cb0   
+0x181920b73 mov      rcx, qword ptr [r15 + 0x10]   
+0x181920b77 test     rcx, rcx   
+0x181920b7a je       0x18192115e   
+0x181920b80 xor      edx, edx   
+0x181920b82 call     0x181689030   TuberMatchInitData.get_CooperativeMode
+0x181920b87 test     al, al   
+0x181920b89 jne      0x181920cb0   
+0x181920b8f mov      rax, qword ptr [rip + 0x119eed2]  [{"kind": "type", "name": "StandardDecks", "type_index": 1538}] 
+0x181920b96 cmp      dword ptr [rax + 0xe0], 0   
+0x181920b9d jne      0x181920bae   
+0x181920b9f mov      rcx, rax   
+0x181920ba2 call     0x1820dfc70   
+0x181920ba7 mov      rax, qword ptr [rip + 0x119eeba]  [{"kind": "type", "name": "StandardDecks", "type_index": 1538}] 
+0x181920bae mov      rax, qword ptr [rax + 0xb8]   
+0x181920bb5 mov      rdi, qword ptr [rax + 0x48]   
+0x181920bb9 mov      rcx, qword ptr [rip + 0x11d7218]   
+0x181920bc0 call     0x1820dfb80   
+0x181920bc5 mov      rbx, rax   
+0x181920bc8 xor      r9d, r9d   
+0x181920bcb mov      r8, qword ptr [rip + 0x11b862e]   
+0x181920bd2 mov      rdx, r15   
+0x181920bd5 mov      rcx, rax   
+0x181920bd8 call     0x180983120   
+0x181920bdd mov      r8, qword ptr [rip + 0x11dc554]   
+0x181920be4 mov      rdx, rbx   
+0x181920be7 mov      rcx, rdi   
+0x181920bea call     0x1802fcb30   
+0x181920bef mov      rdx, qword ptr [rip + 0x11d6f5a]   
+0x181920bf6 mov      rcx, rax   
+0x181920bf9 call     0x1802fbbe0   
+0x181920bfe test     rax, rax   
+0x181920c01 je       0x18192115e   
+0x181920c07 mov      r8, qword ptr [rip + 0x11abda2]   
+0x181920c0e mov      rdx, rax   
+0x181920c11 lea      rcx, [rsp + 0x50]   
+0x181920c16 call     0x180a13c70   
+0x181920c1b movups   xmm0, xmmword ptr [rsp + 0x50]   
+0x181920c20 movups   xmmword ptr [rsp + 0x68], xmm0   
+0x181920c25 movsd    xmm1, qword ptr [rsp + 0x60]   
+0x181920c2b movsd    qword ptr [rsp + 0x78], xmm1   
+0x181920c31 mov      qword ptr [rsp + 0x38], rsi   
+0x181920c36 lea      rbx, [rsp + 0x68]   
+0x181920c3b mov      qword ptr [rsp + 0x40], rbx   
+0x181920c40 mov      rdx, qword ptr [rip + 0x11b8b59]   
+0x181920c47 lea      rcx, [rsp + 0x68]   
+0x181920c4c call     0x180855c00   
+0x181920c51 test     al, al   
+0x181920c53 je       0x181920c6e   
+0x181920c55 xor      r9d, r9d   
+0x181920c58 mov      r8, qword ptr [r14 + 0x80]   
+0x181920c5f mov      rdx, qword ptr [rsp + 0x78]   
+0x181920c64 mov      rcx, r14   
+0x181920c67 call     0x18191f370   TuberPlaymat.createCard
+0x181920c6c jmp      0x181920c40   
+0x181920c6e mov      rdx, qword ptr [rip + 0x11b8a73]   
+0x181920c75 mov      rcx, rbx   
+0x181920c78 call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x181920c7d jmp      0x181920cb0   
+0x181920c7f mov      rdx, qword ptr [rip + 0x11b8a62]   
+0x181920c86 mov      rcx, qword ptr [rsp + 0x40]   
+0x181920c8b call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x181920c90 mov      rcx, qword ptr [rsp + 0x38]   
+0x181920c95 test     rcx, rcx   
+0x181920c98 jne      0x181921131   
+0x181920c9e xor      esi, esi   
+0x181920ca0 mov      r14, qword ptr [rsp + 0xe0]   
+0x181920ca8 mov      r15, qword ptr [rsp + 0xf8]   
+0x181920cb0 mov      rax, qword ptr [r15 + 0x10]   
+0x181920cb4 test     rax, rax   
+0x181920cb7 je       0x181921158   
+0x181920cbd mov      edi, dword ptr [rax + 0xa8]   
+0x181920cc3 mov      rax, qword ptr [r14 + 0x80]   
+0x181920cca test     rax, rax   
+0x181920ccd je       0x181921158   
+0x181920cd3 mov      rbx, qword ptr [rax + 0x48]   
+0x181920cd7 mov      rcx, qword ptr [r14 + 0x38]   
+0x181920cdb test     rcx, rcx   
+0x181920cde je       0x181921158   
+0x181920ce4 mov      rcx, qword ptr [rcx + 0x40]   
+0x181920ce8 test     rcx, rcx   
+0x181920ceb je       0x181921158   
+0x181920cf1 mov      rdx, qword ptr [rcx]   
+0x181920cf4 mov      rax, qword ptr [rdx + 0x188]   
+0x181920cfb mov      rdx, qword ptr [rdx + 0x190]   
+0x181920d02 call     rax   
+0x181920d04 mov      qword ptr [rsp + 0x30], rsi   
+0x181920d09 mov      r8, qword ptr [rip + 0x11a6c60]   
+0x181920d10 mov      edx, eax   
+0x181920d12 lea      rcx, [rsp + 0x30]   
+0x181920d17 call     0x180b9b5a0   
+0x181920d1c mov      r9, qword ptr [rip + 0x11b5a2d]   
+0x181920d23 mov      r8, qword ptr [rsp + 0x30]   
+0x181920d28 mov      edx, edi   
+0x181920d2a mov      rcx, rbx   
+0x181920d2d call     0x18031cd90   
+0x181920d32 mov      rax, qword ptr [r15 + 0x10]   
+0x181920d36 test     rax, rax   
+0x181920d39 je       0x181921158   
+0x181920d3f cmp      byte ptr [rax + 0xc0], 0   
+0x181920d46 jne      0x1819210f2   
+0x181920d4c mov      rax, qword ptr [r14 + 0x78]   
+0x181920d50 test     rax, rax   
+0x181920d53 je       0x18192115e   
+0x181920d59 mov      r12, qword ptr [rax + 0x70]   
+0x181920d5d mov      rcx, qword ptr [rip + 0x118fdc4]   
+0x181920d64 cmp      dword ptr [rcx + 0xe0], 0   
+0x181920d6b jne      0x181920d79   
+0x181920d6d call     0x1820dfc70   
+0x181920d72 mov      rcx, qword ptr [rip + 0x118fdaf]   
+0x181920d79 mov      rax, qword ptr [rcx + 0xb8]   
+0x181920d80 mov      rdi, qword ptr [rax + 0x18]   
+0x181920d84 test     rdi, rdi   
+0x181920d87 jne      0x181920df7   
+0x181920d89 cmp      dword ptr [rcx + 0xe0], edi   
+0x181920d8f jne      0x181920d9d   
+0x181920d91 call     0x1820dfc70   
+0x181920d96 mov      rcx, qword ptr [rip + 0x118fd8b]   
+0x181920d9d mov      rax, qword ptr [rcx + 0xb8]   
+0x181920da4 mov      rbx, qword ptr [rax]   
+0x181920da7 mov      rcx, qword ptr [rip + 0x11e7e2a]   
+0x181920dae call     0x1820dfb80   
+0x181920db3 mov      rdi, rax   
+0x181920db6 xor      r9d, r9d   
+0x181920db9 mov      r8, qword ptr [rip + 0x11b82d0]   
+0x181920dc0 mov      rdx, rbx   
+0x181920dc3 mov      rcx, rax   
+0x181920dc6 call     0x180983120   
+0x181920dcb mov      rax, qword ptr [rip + 0x118fd56]   
+0x181920dd2 mov      rdx, qword ptr [rax + 0xb8]   
+0x181920dd9 mov      qword ptr [rdx + 0x18], rdi   
+0x181920ddd mov      rax, qword ptr [rip + 0x118fd44]   
+0x181920de4 mov      rcx, qword ptr [rax + 0xb8]   
+0x181920deb add      rcx, 0x18   
+0x181920def mov      rdx, rdi   
+0x181920df2 call     0x1820decd0   
+0x181920df7 mov      r8, qword ptr [rip + 0x11de2da]   
+0x181920dfe mov      rdx, rdi   
+0x181920e01 mov      rcx, r12   
+0x181920e04 call     0x1802fcb30   
+0x181920e09 test     rax, rax   
+0x181920e0c je       0x18192115e   
+0x181920e12 xor      ecx, ecx   
+0x181920e14 mov      r8, rax   
+0x181920e17 mov      rdx, qword ptr [rip + 0x11831b2]   
+0x181920e1e call     0x181f349f0   
+0x181920e23 mov      qword ptr [rsp + 0xf0], rax   
+0x181920e2b mov      qword ptr [rsp + 0x50], rsi   
+0x181920e30 lea      rbx, [rsp + 0xf0]   
+0x181920e38 mov      qword ptr [rsp + 0x58], rbx   
+0x181920e3d nop      dword ptr [rax]   
+0x181920e40 mov      rdi, qword ptr [rsp + 0xf0]   
+0x181920e48 test     rdi, rdi   
+0x181920e4b je       0x18192114c   
+0x181920e51 mov      r9, qword ptr [rip + 0x11a6de8]   
+0x181920e58 mov      r10, qword ptr [rdi]   
+0x181920e5b movzx    ecx, si   
+0x181920e5e movzx    edx, word ptr [r10 + 0x12e]   
+0x181920e66 cmp      si, dx   
+0x181920e69 jae      0x181920e98   
+0x181920e6b mov      r8, qword ptr [r10 + 0xb0]   
+0x181920e72 nop      dword ptr [rax]   
+0x181920e76 nop      word ptr [rax + rax]   
+0x181920e80 movzx    eax, cx   
+0x181920e83 add      rax, rax   
+0x181920e86 cmp      qword ptr [r8 + rax*8], r9   
+0x181920e8a je       0x181921067   
+0x181920e90 inc      cx   
+0x181920e93 cmp      cx, dx   
+0x181920e96 jb       0x181920e80   
+0x181920e98 xor      r8d, r8d   
+0x181920e9b mov      rdx, r9   
+0x181920e9e mov      rcx, rdi   
+0x181920ea1 call     0x1820ef980   
+0x181920ea6 mov      rdx, rax   
+0x181920ea9 mov      rax, qword ptr [rdx]   
+0x181920eac mov      rdx, qword ptr [rdx + 8]   
+0x181920eb0 mov      rcx, rdi   
+0x181920eb3 call     rax   
+0x181920eb5 test     al, al   
+0x181920eb7 je       0x1819210a3   
+0x181920ebd mov      rdi, qword ptr [rsp + 0xf0]   
+0x181920ec5 test     rdi, rdi   
+0x181920ec8 je       0x181921147   
+0x181920ece mov      r9, qword ptr [rip + 0x1188adb]   
+0x181920ed5 mov      r10, qword ptr [rdi]   
+0x181920ed8 movzx    eax, si   
+0x181920edb movzx    edx, word ptr [r10 + 0x12e]   
+0x181920ee3 cmp      si, dx   
+0x181920ee6 jae      0x181920f08   
+0x181920ee8 mov      r8, qword ptr [r10 + 0xb0]   
+0x181920eef nop         
+0x181920ef0 movzx    ecx, ax   
+0x181920ef3 add      rcx, rcx   
+0x181920ef6 cmp      qword ptr [r8 + rcx*8], r9   
+0x181920efa je       0x181921085   
+0x181920f00 inc      ax   
+0x181920f03 cmp      ax, dx   
+0x181920f06 jb       0x181920ef0   
+0x181920f08 xor      r8d, r8d   
+0x181920f0b mov      rdx, r9   
+0x181920f0e mov      rcx, rdi   
+0x181920f11 call     0x1820ef980   
+0x181920f16 mov      rdx, rax   
+0x181920f19 mov      rax, qword ptr [rdx]   
+0x181920f1c mov      rdx, qword ptr [rdx + 8]   
+0x181920f20 mov      rcx, rdi   
+0x181920f23 call     rax   
+0x181920f25 mov      qword ptr [rsp + 0x38], rax   
+0x181920f2a mov      r13, qword ptr [r14 + 0x38]   
+0x181920f2e mov      rax, qword ptr [rip + 0x11879d3]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181920f35 cmp      dword ptr [rax + 0xe0], 0   
+0x181920f3c jne      0x181920f4d   
+0x181920f3e mov      rcx, rax   
+0x181920f41 call     0x1820dfc70   
+0x181920f46 mov      rax, qword ptr [rip + 0x11879bb]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181920f4d mov      rax, qword ptr [rax + 0xb8]   
+0x181920f54 mov      rcx, qword ptr [rax + 0x90]   
+0x181920f5b test     rcx, rcx   
+0x181920f5e je       0x181921142   
+0x181920f64 mov      r12, qword ptr [rcx + 0x10]   
+0x181920f68 mov      rcx, qword ptr [rip + 0x11b1d19]  [{"kind": "type", "name": "TuberEntity", "type_index": 472}] 
+0x181920f6f call     0x1820dfb80   
+0x181920f74 mov      rdi, rax   
+0x181920f77 mov      qword ptr [rsp + 0x28], rsi   
+0x181920f7c mov      qword ptr [rsp + 0x20], r12   
+0x181920f81 xor      r9d, r9d   
+0x181920f84 xor      r8d, r8d   
+0x181920f87 mov      rdx, r13   
+0x181920f8a mov      rcx, rax   
+0x181920f8d call     0x1818d20f0   TuberEntity..ctor | TuberPlayable..ctor
+0x181920f92 test     rdi, rdi   
+0x181920f95 je       0x18192113d   
+0x181920f9b mov      r8, qword ptr [rdi]   
+0x181920f9e mov      rax, qword ptr [r8 + 0x1e8]   
+0x181920fa5 mov      r8, qword ptr [r8 + 0x1f0]   
+0x181920fac mov      rdx, qword ptr [rsp + 0x38]   
+0x181920fb1 mov      rcx, rdi   
+0x181920fb4 call     rax   
+0x181920fb6 mov      rdi, rax   
+0x181920fb9 mov      rax, qword ptr [rip + 0x11b14e0]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181920fc0 cmp      dword ptr [rax + 0xe0], 0   
+0x181920fc7 jne      0x181920fd8   
+0x181920fc9 mov      rcx, rax   
+0x181920fcc call     0x1820dfc70   
+0x181920fd1 mov      rax, qword ptr [rip + 0x11b14c8]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181920fd8 mov      rax, qword ptr [rax + 0xb8]   
+0x181920fdf mov      r12, qword ptr [rax + 0x50]   
+0x181920fe3 mov      qword ptr [rsp + 0x30], rsi   
+0x181920fe8 mov      r8, qword ptr [rip + 0x11a91c1]   
+0x181920fef mov      edx, 1   
+0x181920ff4 lea      rcx, [rsp + 0x30]   
+0x181920ff9 call     0x180b9b5a0   
+0x181920ffe test     rdi, rdi   
+0x181921001 je       0x181921137   
+0x181921007 mov      r9, qword ptr [rip + 0x11dd602]   
+0x18192100e mov      r8, qword ptr [rsp + 0x30]   
+0x181921013 mov      rdx, r12   
+0x181921016 mov      rcx, rdi   
+0x181921019 call     0x18032b280   
+0x18192101e mov      rax, qword ptr [rip + 0x11b147b]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181921025 mov      rdx, qword ptr [rax + 0xb8]   
+0x18192102c mov      r12, qword ptr [rdx + 0x48]   
+0x181921030 mov      qword ptr [rsp + 0x48], rsi   
+0x181921035 mov      r8, qword ptr [rip + 0x11a36e4]   
+0x18192103c mov      edx, 5   
+0x181921041 lea      rcx, [rsp + 0x48]   
+0x181921046 call     0x180b9b5a0   
+0x18192104b mov      r9, qword ptr [rip + 0x11dccce]   
+0x181921052 mov      r8, qword ptr [rsp + 0x48]   
+0x181921057 mov      rdx, r12   
+0x18192105a mov      rcx, rdi   
+0x18192105d call     0x18032b280   
+0x181921062 jmp      0x181920e40   
+0x181921067 movzx    ecx, cx   
+0x18192106a add      rcx, rcx   
+0x18192106d movsxd   rdx, dword ptr [r8 + rcx*8 + 8]   
+0x181921072 shl      rdx, 4   
+0x181921076 add      rdx, 0x138   
+0x18192107d add      rdx, r10   
+0x181921080 jmp      0x181920ea9   
+0x181921085 movzx    ecx, ax   
+0x181921088 add      rcx, rcx   
+0x18192108b movsxd   rdx, dword ptr [r8 + rcx*8 + 8]   
+0x181921090 shl      rdx, 4   
+0x181921094 add      rdx, 0x138   
+0x18192109b add      rdx, r10   
+0x18192109e jmp      0x181920f19   
+0x1819210a3 cmp      qword ptr [rbx], 0   
+0x1819210a7 je       0x1819210ba   
+0x1819210a9 xor      ecx, ecx   
+0x1819210ab mov      r8, qword ptr [rbx]   
+0x1819210ae mov      rdx, qword ptr [rip + 0x11a5993]   
+0x1819210b5 call     0x181f355e0   
+0x1819210ba jmp      0x1819210f2   
+0x1819210bc mov      rax, qword ptr [rsp + 0x58]   
+0x1819210c1 cmp      qword ptr [rax], 0   
+0x1819210c5 je       0x1819210d8   
+0x1819210c7 xor      ecx, ecx   
+0x1819210c9 mov      r8, qword ptr [rax]   
+0x1819210cc mov      rdx, qword ptr [rip + 0x11a5975]   
+0x1819210d3 call     0x181f355e0   
+0x1819210d8 mov      rcx, qword ptr [rsp + 0x50]   
+0x1819210dd test     rcx, rcx   
+0x1819210e0 jne      0x181921152   
+0x1819210e2 mov      r14, qword ptr [rsp + 0xe0]   
+0x1819210ea mov      r15, qword ptr [rsp + 0xf8]   
+0x1819210f2 mov      rax, qword ptr [r15 + 0x10]   
+0x1819210f6 test     rax, rax   
+0x1819210f9 je       0x18192115e   
+0x1819210fb cmp      byte ptr [rax + 0xfb], 0   
+0x181921102 je       0x181921112   
+0x181921104 xor      r8d, r8d   
+0x181921107 mov      rdx, rax   
+0x18192110a mov      rcx, r14   
+0x18192110d call     0x18191f4c0   TuberPlaymat.createHirelings
+0x181921112 add      rsp, 0xa0   
+0x181921119 pop      r15   
+0x18192111b pop      r14   
+0x18192111d pop      r13   
+0x18192111f pop      r12   
+0x181921121 pop      rdi   
+0x181921122 pop      rsi   
+0x181921123 pop      rbx   
+0x181921124 ret         
+0x181921125 call     0x1820dfbd0   
+0x18192112a int3        
+0x18192112b call     0x1820dfc60   
+0x181921130 int3        
+0x181921131 call     0x1820dfc60   
+0x181921136 nop         
+0x181921137 call     0x1820dfbd0   
+0x18192113c nop         
+0x18192113d call     0x1820dfbd0   
+0x181921142 call     0x1820dfbd0   
+0x181921147 call     0x1820dfbd0   
+0x18192114c call     0x1820dfbd0   
+0x181921151 nop         
+0x181921152 call     0x1820dfc60   
+0x181921157 int3        
+0x181921158 call     0x1820dfbd0   
+0x18192115d int3        
+0x18192115e call     0x1820dfbd0   
+0x181921163 int3        
+0x181921164 mov      rcx, r12   
+0x181921167 call     0x1820ded10   
+0x18192116c int3        
+0x18192116d int3        
+0x18192116e int3        
+0x18192116f int3        

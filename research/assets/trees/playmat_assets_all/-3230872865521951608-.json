@@ -1,0 +1,23 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 454869228525152829
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8367622628573127243
+  },
+  "m_Name": "",
+  "resolveOn": 1,
+  "validatable": {
+    "m_FileID": 0,
+    "m_PathID": 212119322976594430
+  },
+  "validatableGameObjects": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 212119322976594430
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4284054273354973836
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 8485592581357649752
+  },
+  "m_Name": "",
+  "triggerName": "Show",
+  "maxDuration": 10.0,
+  "debugLogWhileBlocking": 0
+}

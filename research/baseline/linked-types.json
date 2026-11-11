@@ -1,0 +1,4210 @@
+[
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.AnimationPlaySoundByIndex"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.GameAudioResolver"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.PlaySoundByName"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.AudioCategoryDuckingDictionary"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.background.BackgroundAudio"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.background.PlayTrackOnMonoBehaviourEvent"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.background.PlayTrackOnStart"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.UGUIPointerSounds"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.audio.LoopSound"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.audio.ZenClickEventPlaySound"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.background.PlayTrackOnMonoBehaviourEvent/TrackData"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.AudioDuckingConfiguration"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.background.Channel"
+  },
+  {
+    "assembly": "audio, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.audio.background.Track"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.attributes.AttributeImageDisplaySubscriber"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.attributes.AttributeImageDisplayView"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.attributes.AttributeTextDisplaySubscriber"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.attributes.AttributeTextDisplayView"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.attributes.EventsForNullAttributeSubscriber"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.attributes.EventsForNullAttributeView"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.BoardgamesTextInputValidator"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.BundledPrefabLoader"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.menus.AutoUpdateCheck"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.menus.ConfirmOrCancelDialog"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.moz.MozOnChildren"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.notifications.socket.SocketNotificationsProvider"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.SafeAreaManager"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.SafeAreaTransform"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.src.broadcast.motd.BroadcastContentProvider"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.ui.DisconnectWarningDisplay"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.ui.OnlineStatusIndicator"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.ui.PlayerOnlineStatusMonitor"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "CheckDefaultGraphicsBootSettings"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "ExitApplicationEndorser"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "game.src.cheats.RunCheatFromInputFieldText"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "GameObjectDynamicLoader"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.boardgames.src.localization.InputTypeLocalizationSubstitutor"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.ChatView"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.FanView"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.HintView"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.LobbyChatProvider"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.matchMaking.PlayQueue"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.SaveMetaDataProvider"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.cheats.LogAutoOpenWithConfig"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.src.scenes.LogoutEndorser"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "LotusAudioController"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "PlayAudioSoundWithDelay"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "SceneChangeEndorser"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "SceneChangeModel"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.PermissionConfirmationDialogFinder"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "VersionNumberText"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.analytics.AnalyticsManager"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.analytics.messages.PerformanceMetrics"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.match.MatchCommandQueue"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.match.monobehaviours.AnimateTimer"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.match.monobehaviours.PlayerTimerController"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.match.monobehaviours.renderers.NameRenderer"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.menus.ConnectivityIcon"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.menus.OkDialog"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.menus.ZenContinueAutoScrollOnSelect"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.ui.ConfigureMultiTouch"
+  },
+  {
+    "assembly": "boardgames, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.ui.misc.ServerVersionNumberText"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "core.widgets.DestroyInRelease"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.animation.ToggleParameterOnKeyPress"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.animation.ToggleParameterOnTap"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.cheats.ClearConsole"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.cheats.CopyLogsToClipboard"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.console.ConsoleBuffer"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.console.inspector.ConsoleHierarchyView"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.debug.Timelord"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.ugui.inputfield.FilterInputWithRegex"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.ugui.SetFocus"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.CopyToClipboard"
+  },
+  {
+    "assembly": "console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.LogToText"
+  },
+  {
+    "assembly": "core-achievements, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.social.AchievementsButton"
+  },
+  {
+    "assembly": "core-achievements, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.social.UnitySocialProvider"
+  },
+  {
+    "assembly": "core-animation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "core.animation.DiceRoll"
+  },
+  {
+    "assembly": "core-animation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.animation.ExposeImageProperty"
+  },
+  {
+    "assembly": "core-animation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.animation.SetAnimParam"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioController"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioObject"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.account.AccountProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.alerts.AlertQueue"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.cheats.AllCheatDefinitions"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.cheats.Cheats"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.client.ExitApplicationControl"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.diagnostics.FPSTracker"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.AddressablesLoadSource"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.AssetLoader"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.BuildSettingsSceneLoadSource"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.caching.AssetCacheProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.Loader"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.loaders.AssetRequester"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.LoaderStrategy"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.ResourcesLoadSource"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.logging.ClientErrorReporter"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.match.selection.Selection"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.notifications.Notifications"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.prefabs.implementations.byflavor.PrefabByFlavorLoader"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.prefabs.implementations.byflavor.PrefabByFlavorLookup"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.prefabs.implementations.byflavor.PrefabByFlavorMetadata"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.prefabs.prefabProvider.ProviderInstantiator"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.session.SessionProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.DuplicateLogFileOnQuit"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.LogDispatcher"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "EventDispatcher"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "GameManagers"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Logging.DeviceOutputLogProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "MemoryWatchdog"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "PersistOnLoad"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "SubscriptionProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "SyncBundledAssetProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "SyncBundleProvider"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.prefabs.implementations.byflavor.PrefabByFlavorLookup/Entry"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.prefabs.implementations.byflavor.PrefabFlavorsMetaData"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioCategory"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioController_CurrentInspectorSelection"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioItem"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioItem/LoopMode"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioSubItem"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.loader.Loader/SerializedLoaderStrategy"
+  },
+  {
+    "assembly": "core-canis, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.BoolUnityEvents"
+  },
+  {
+    "assembly": "core-commands, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.commands.CommandExecutor"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.click.ClickDispatcher"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.activation.ActivateModuleOnMouseOrTouchInput"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.CompositeInputModule"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.CurrentInputModuleType"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.eventDispatch.PointerEventDispatcher"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.eventDispatch.SelectedObjectEventDispatcher"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.EventsForInputModuleActivation"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.EventsForSelectionState"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.EventsForToggleState"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.navigation.AxialSelectionNavigator"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.navigation.NoNavigationNavigator"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.compositeModule.selectOnActivation.ContextualOnActivationSelector"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.CreateExplicitInputContext"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.CreateHeirarchicalInputContext"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.CreateMultiHeirarchyInputContext"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.GlobalInputDispatcher"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.InputContextManager"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.RegisterContextInputActions"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.RegisterGlobalInputActions"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.context.TerminateHeirarchicalContextTree"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.debug.TrackSelectedGameObject"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.drag.DragDispatcher"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.EventsForTouchScreenKeyboard"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.ForceSwitchKeyboard"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.InputManager"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.multitouch.MultitouchInputManager"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.multitouch.PinchGesture"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.ScrollOnAxisInputContext"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.ScrollOnAxisInputGlobal"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.ui.ImageInputCue"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.ui.selectable.advancedNavigation.AdvancedSelectableNavigation"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.EventsForVersionedParentTransformChange"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.util.VersionedParentTransform"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "InControl.InControlInputDetector"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.input.context.MultiHeirarchicalInputContextRegistrar"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.input.context.RegisterTransformWithInputContext"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.input.context.ButtonClickPassthrough"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.input.context.InputModuleButton"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.input.context.ToggleClickPassthrough"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.yawp.ui.CreateBlockingInputContextForCanvasGroup"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.UnityEventBool"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.input.ui.selectable.advancedNavigation.AdvancedSelectableNavigation/DirectionalNavigationData"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.InputAction"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.UnityEventFloat"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "InControl.InControlInputDetector/BindingList"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "InControl.InControlInputDetector/InputBinding"
+  },
+  {
+    "assembly": "core-input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.UnityEventForDataComp"
+  },
+  {
+    "assembly": "core-localization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.localization.TMPDropdownLocalizer"
+  },
+  {
+    "assembly": "core-localization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "localization.TMPLocalizer"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.OverrideAnimatorControllerForPlatform"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentGridLayoutAdjuster"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentLayoutAdjuster"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentLayoutElementAdjuster"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentRectTransformAdjuster"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentTMPAdjuster"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentTransformAdjuster"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.ToggleByPlatforms"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentRectTransformAdjuster/PlatformAdjustmentPair"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentRectTransformAdjustment"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentTransformAdjuster/PlatformAdjustmentPair"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentTransformAdjustment"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.OverrideAnimatorControllerForPlatform/ControllerOverride"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentLayoutAdjuster/PlatformAdjustmentPair"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentLayoutAdjustment"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentTMPAdjuster/PlatformAdjustmentPair"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentTMPAdjustment"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentGridLayoutAdjuster/PlatformGridAdjustmentPair"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentGridLayoutAdjustment"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentLayoutElementAdjuster/PlatformAdjustmentPair"
+  },
+  {
+    "assembly": "core-platformdependent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platformdependent.PlatformDependentLayoutElementAdjustment"
+  },
+  {
+    "assembly": "core-prompter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.prompt.behaviours.BoolChoicePromptBehaviour"
+  },
+  {
+    "assembly": "core-prompter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.prompt.behaviours.BoolResolvablePromptBehaviour"
+  },
+  {
+    "assembly": "core-prompter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.prompt.behaviours.DismissablePromptBehaviour"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "core.ui.SubmitOnEnter"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "core.ui.TMPResetCaret"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "core.ui.TMPSubmitOnEnter"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.circuitBehaviours.DataCompositionEvents"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.EmptyImage"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.EventsOnEnable"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.EventsOnStart"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.ugui.collections.EventsForCanPageDisplay"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.ugui.RectTransformBoxColliderSync"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.ugui.TabNavigation"
+  },
+  {
+    "assembly": "core-ui, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.ui.RectTransformTextResize"
+  },
+  {
+    "assembly": "direbytes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.direBytes.DireByteAlertImageRenderer"
+  },
+  {
+    "assembly": "direbytes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.direBytes.DireByteImageRenderer"
+  },
+  {
+    "assembly": "direbytes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.direBytes.messages.DireBytesDescriptionRenderer"
+  },
+  {
+    "assembly": "direbytes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.direBytes.messages.DireBytesNameRenderer"
+  },
+  {
+    "assembly": "InAppPurchasing, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.store.DirusProductProvider"
+  },
+  {
+    "assembly": "InAppPurchasing, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.store.IAPProductRenderer"
+  },
+  {
+    "assembly": "InAppPurchasing, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.store.IAPStoreFactory/PlatformStoreModel"
+  },
+  {
+    "assembly": "InAppPurchasing-GooglePlay, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.google.GooglePlayIAPStoreModel"
+  },
+  {
+    "assembly": "InAppPurchasing-iOS, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.ios.AppleIAPStoreModel"
+  },
+  {
+    "assembly": "InAppPurchasing-NintendoSwitch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.NintendoSwitch.NintendoSwitchIAPStoreModel"
+  },
+  {
+    "assembly": "InAppPurchasing-Steam, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.iap.steam.SteamIAPStoreModel"
+  },
+  {
+    "assembly": "InControl, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "InControl.InControlManager"
+  },
+  {
+    "assembly": "platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.platform.providers.PlatformProvider"
+  },
+  {
+    "assembly": "sausage-core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.ui.SelectableValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AbilityCostRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "ActiveTooltipEventsHandler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioPhaseMapToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "BattleTypeManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.behaviours.SettingsVolumeSlider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "BurrowBoxPositionHolder"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "ChallengeDifficultyBackerRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "client.tuber.match.voodoo.TuberCameraUnitView"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "CoopMatchResultsDataRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "CorvidPlotSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "DisableableMozObject"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "dwd.core.animation.SetAnyAnimParam"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "EntitySuitRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "FactionBoardOutcastRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "FishDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "GenericShaderReset"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "HintOnIdleTurn"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.dataRenderers.CorvidPlotCostRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.dataRenderers.FirstPlayerIconRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.dataRenderers.QuestButtonBattleRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.prompt.behaviours.EnlistArbiterPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.prompt.ClockworkDifficultyDescriptionSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.prompt.prompts.EyrieLeaderDescriptionSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.prompt.prompts.VagabotBattleTrackRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.prompt.VagabotAbilityDescriptionSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.match.voodoo.ChildOfParentDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.menus.behaviours.ProductLockedRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.canis.src.menus.prompts.behaviours.RedeemPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.animation.RandomStateSpeed"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.animation.SetImageAlphaOnDisable"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.camera.DisableCameraScrollOnMouseOver"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.camera.DollyGrip"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.camera.NamedDollyAnimation"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.ActivateObjectsForBuildableSlots"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.CasualtyStatusAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.CostRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.DeliveryPresentsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.DisableFromDisabledAttribute"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.FactionImage"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.FlagSuitRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.MapTypeAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.MapTypeSpriteRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.MinisterCostRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.MinisterStatusRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.MinisterTypeRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.NextTrackCostMarker"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.ObjectiveCompleteRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.OutrageCauseRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.PendingBattleDiceAdvantageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.PlayerImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.PlotCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.PlotImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.PlotTrackRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.RelationshipPipRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.SafeSubscriberNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.ScorchedEarthRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.ServicePriceRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.TokenFaceRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.TrackCurrentVPRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.TradePostCraftingCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.TradePostRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.UnitTrackSlot"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.VagabondAidRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.VagabondCompletableQuestsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.VagabondQuestVPHelper"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.VagabondQuestVPRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.VagabondStatRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.WinnerStatusAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.AdventurousMiceItemSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.GoalsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.MoveOrBattlePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.PlayerInformationPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.QuickBattlePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.prompt.behaviours.RiverfolkSetPricesPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.SelectAPlayerPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.TutorialPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.TutorialPromptKeyPressContinue"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.TutorialPromptKeyPressDismisser"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.prompts.SettingsPage"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.VagabotMarksmanBannerVictoryPointsController"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.FlavoredLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.HiddenViewsLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.kabbage.EntityFXLocator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.kabbage.ShowVagabondSatchel"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.kabbage.TuberCameraRelativePositionRootModule"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.CraftedPersistentCardsSorter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.DuchySwayedMinistersLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.FundsSorter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.MinisterLayoutRefresher"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.SerializedReferenceViewLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.SwayedMinistersSorter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.layout.TuberUnitPileFlavorManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.SerializedReferenceViewProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.TuberVFXUnitProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.VagabondRelationshipDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.ClockworkConfigChangeManualTrait"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.ConfigureClockworkChangeRandomTraitCount"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.ConfigureClockworkChangeTraitMethod"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.ConfigureClockworkDifficultyLevel"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.OpenClockworkConfig"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.PendingFriendRequestRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.PlayerSlotTypeOrNameButtonEvents"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.TutorialFocusManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.GameLobbySessionProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.prompts.behaviours.ConfigureClockworkSettingsPromptBehavior"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.prompts.behaviours.FeedbackPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.prompts.behaviours.PracticeGameMarqEyriePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.TuberChallengeSaveIconRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.TuberGameSaveIconRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.tuber_client.src.match.dataRenderers.MinisterLockedRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.tuber_client.src.match.dataRenderers.MinisterNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.tuber_client.src.match.dataRenderers.PlatformChatAvailabilityObserver"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.tuber_client.src.match.dataRenderers.PlatformChatAvailabilitySubscriber"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.tuber_client.src.match.dataRenderers.TrackRecruitRateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.tuber_client.src.match.voodoo.ArchetypeDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "MountainPassRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "MoveBoxToBurrow"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "OpenLostSoulsCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "OutcastHudRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "PlotPlaymatTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "PlotTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "PreventEventForDisabledClientAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "ProjectedOutcastRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "RemainingCasualtiesRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "RevealedHandButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "RevealMinistersButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "RiverFishRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TotalDamageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.achievements.TuberAchievements"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.AnimateFogSettings"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.AnimatorConsistentTimeScale"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.DestroyAfter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.DestroyAt"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.DetachTarget"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.MaterialRandomizer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.PlayParticleFromAnimationEvent"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.RandomStateTransition"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.animation.TuberTriggeredBlockingAnimation"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.camera.CameraControlProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.camera.CameraLocationManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.camera.CameraScrollDisabler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.camera.EntityCameraLocation"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.camera.FindMainCameraForCanvas"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.chat.TuberChatMessageView"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.CardSuitDescriptionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ChallengeFactionSelectionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ChallengeOwnedIconRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ChallengeProgressionStatusRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ClockworkDifficultyImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ClockworkDifficultyRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ClockworkSettingsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ClockworkTraitRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ClockworkTraitToggleRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.CurrentMoodNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EnableForGameHasPassword"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EnableForGameIsCoop"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EnableForUnlockedData"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EventsForChildedFerryRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EventsForFactionCosmeticActive"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EventsForOppressedClearingsView"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EventsForSlotFilled"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.EventsForTokenFacingView"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.FriendInviteResponder"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.FriendRequestResponder"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.FriendsListInviteRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.FriendsListItemRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.FriendStatusRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.InviteFriendSelectableValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ItemImageSourceRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.MapLayoutRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.MoodStatusColors"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.MoodStatusRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.PendingGamePlayerNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ProgressionStatusRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.RelicsCollectedRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.RemoveFriendSelectableValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.RuinItemCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.SelectedChallengeObject"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.SelectedObject"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.SetSelectedFriendEntry"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.VagabotCharacterDescriptionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.WaystationsAvailableRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.AbleImageRaycastDuringCardDrag"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.ActivateModuleOnControllerEnabledPref"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.CameraPanHotkeyDisabler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.ClearingHinter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.ClickFXAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.CurrentlyDraggedCardValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.DominanceHinter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.DraggableCard"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.GamepadSupportEnabler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.HandNavigationFinder"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.HoverableSelectionItem"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.InitialSelectionChildIndexPriority"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.InitialSelectionFilteredPriority"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.InitialSelectionForcePriority"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.InitialSelectionHighlightedPriority"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.InitialSelectionLastSelectedPriority"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.KeyboardInputCharacterLimit"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.MinimizeAndDisableInputOnButtonPress"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.PlayerInfoHotkeyDisabler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.PlaymatDragHandler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.PlaymatHotKeyMovementHandler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.PlaymatPhysicsInput"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.PlaymatPhysicsInputSubmitHandler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.SettingsHotkeyDisabler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.SteamdeckKeyboardInputReader"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.ToggleInfoPageOnGamepadInput"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.TuberHinter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.TuberHintManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.input.TuberPhysicsRaycaster"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.BattleCombatDamageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.BattleCombatDiceRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.BattleDirector"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.BattleEntityManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.CombatDamageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.CombatLootingRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.EnableAfterBattleAmbush"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.QuickBattleCombatDamageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.QuickBattleDiceRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.QuickBattleEntityManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.TuberBattleStateAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.BoardNodeDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.ClockworkActiveOrderDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.CoffinMakersWarriorAreaPileDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.CrownsDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.EventOnEntitiesInitialized"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.FactionPileDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.FactionPlayerDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.FactionPlayerImageDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.FactionPositionPoolItem"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.FlavoredUnitViewProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.GardensDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.InstantiatePrefabOnClick"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.PlayerCountPositionPoolItem"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.PlayerUILoader"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.PlaymatPileDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.PositionPool"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.RuleBannerRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.SelectionPromptRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.TransformableUnitView"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.TuberEntitiesProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.TuberGameMessageQueue"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.TuberMatchHub"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.TuberMatchMessageDispatcher"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.VagabondCharacterCardRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.canis.TuberOfflineMatches"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.challenges.ChallengeBranchRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.data.FactionColorData"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.data.FactionSpriteData"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.data.VagabondCharacterSpriteData"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ActivateForHasVictoryPoints"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ActiveCardTextRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ActiveOrderSuitRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.BattleTotalDamageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.BurrowInitializer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CardImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CardItemRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CardSuitRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ClearingCardSuitRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ClearingCostHintRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ClearingPriorityBannerRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ClearingSuitMaterial"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CoffinMakersWarriorAreaCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CraftingCostRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CrownCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.DescriptionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.DominancePresentImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.DrawRateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.EyrieDecreeListRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.FactionAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.FactionGameObjects"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.FactionMaterial"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ForestShaderCutoutRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.HoardValueRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ImageFormattedLocalizer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.KeepersDrawRateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.KeepersRetinueDraggableSuitValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.LocalizableDescriptionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.MatchResultsScoreRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.MultiTrackDrawRateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ObserverCardDescriptionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ObserverDescriptionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ObserverNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.OnBoardWoodCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.PlayerVictoryPointRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.RecruitRateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.RelicStrategicViewStackRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.RelicTypeStackRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.SetActiveForLocalPlayer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.StackCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.StackedViewsLayoutDragRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.StackParentViewInitializer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.StatusRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.SubscriberCropImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.SubscriberImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.SubscriberNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.SubscriberVictoryPointDirectionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.SubscriberVictoryPointRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.TowerFlagRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.TrackDrawRateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.UIFactionRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.UIImageRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.UnitViewWithContainer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.VagabondRelationshipIndicator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.VictoryPointRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.GameLobbyChatProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.BuyRiverfolkServicesPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.ChooseWaystationPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.CoopOptionPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.CorvidExposurePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.DuchyMoveOrBattlePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.DuchySwayMinisterPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.EntityPositionPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.EventsForSelectCardPromptHasResult"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.FactionDraftPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.GameResultsScenePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.HundredsChooseCraftModePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.HundredsChooseToLootPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.HundredsHoardItemSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.HundredsMobDiePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.HundredsMoveWarlordPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.KeepersMoveRelicsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.MultiEntitySelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.RiverfolkFundSelectPromptBehavior"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.SelectBuildingPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.SelectCardPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.SelectIntegerForEntityPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.SelectRelicPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.SelectSuitPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.SettingsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.ShopPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.TuberDirebytesDetailPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.TuberDirebytesPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.TuberReportPlayerPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.VagabondAllyDamagePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.VagabondItemSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.prompts.CombatDetailsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.prompts.CombatMinimizablePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.AbleComponentsWhenStrategicViewChanged"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.AnimationActivatedRigging"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.DirtyEveryUpdate"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.KeyGrip"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.NamedRigging"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.ScaledBillboard"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.StrategicViewCanvas"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.StrategicViewElement"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.render.TuberViewManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.selection.InputContextAutoSelection"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.selection.TuberSelectionResponder"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.sequences.HideVFXKabbage"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.ActiveCardTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.BasicDescriptionTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.ClearingRuleBannerTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.HundredsOppressTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.HundredsTemperamentalTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.KeepersMoveOrRecoverTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.MapTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.RelicStackTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.RuinsTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tooltips.VagabondSatchelOverburdenedTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.TuberGameChatProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.TuberTimerManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.CurrentActiveCallToActionInput"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.DayNightCycleCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.DisableWhenTutorialPrompting"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.DismissDecreeAssignmentCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.DismissPromptCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.HundredsCraftForVPCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.HundredsCraftToHoardCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.MozEntityCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OffsetWhenTutorialPrompting"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OpenInfoPanelAutoCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OpenInfoPanelCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OpenInfoPanelCallToActionGamepad"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OpenOutrageHandCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OpenQuestBookAutoCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.OpenStoreCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.PromptCloseInputDisabler"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.PromptMozEntityCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.ReshowDecreeAssignmentCallToAction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.TutorialEffects"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.TutorialPromptCloseManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.TutorialUIElements"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.AbilityButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.AbilityButtonsContainer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.AllianceViewSupportersButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.AvailableQuestsButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.AvailableShopItemAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.ChallengeRulesRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.ChildCountRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.CoopRulesRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.DecreeAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.DecreePromptAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.DominanceAvailable"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.EntityButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.EscalatedDaylightAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.EventOnCurrentPlayerChange"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.EventsForCosmeticActive"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.EventsForIsActivePlayer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.EyrieDecreeCancelButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.HideHandDuringBattleIntro"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.HideUIOnOpponentTurn"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.KeepersRetinueCancelButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.MaterialColorPhaseAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.MobDieResultHelper"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.OpponentSunMoonTurnIndicator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PhaseButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PhaseButtonForceButtonHintValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PhaseButtonStateRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PhaseChangeAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PileHasChildrenAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PlayerInformationButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PlaymatBattleReturnButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PromptPhaseButtonEvents"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.ProtectWarlordToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.RemainingActionsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.RetinueAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.RetinuePromptAnimator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.RevealCardPileButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.RiverfolkConquestAbilityRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.SettingsButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.ShopButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.SkipReplayButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TrailblazeColliderButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TuberActionLog"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TuberActionLogEntry"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TuberAnimateTimer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TuberOnlineStatusListener"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TuberReactivateInputFieldOnEnter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.TuberTMPTuberReactivateInputFieldOnEnter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.UndoButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.VagabondDayLaborAbilityButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.WaystationTypeRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.AlphaValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.AvailableSelectionValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.CameraStationaryValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.EnabledValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.InBattleValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.OwnedProductValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.SelectableChildValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.selectionKindValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.validators.TutorialSelectionAvailableValidator"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.ActivePlayerAbilityDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.ClearingStacks"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.ClockworkTraitLayoutRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.DuchyOpponentSwayedMinistersLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.FixedSlottedLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.FlavoredPathProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.HiddenPile"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.HundredsHoardLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.kabbage.FaceForwardRootModule"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.kabbage.SetAttachedUnitAnimParam"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.kabbage.UpdateCameraZoomRootModule"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.layout.RelicSorter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.MinisterTypeLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.MultiMoveData"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.OnDemandSlottedLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.StackedViewsLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.TuberLayoutPile"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.VagabondSatchelLayout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.WaypointPath"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.WaypointPathProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.WaypointRootModule"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ActiveGameLastTurnTimeRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ActiveGamePlayersDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ActiveGameYourTurnRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.CompleteGameOptionsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ConfigureMatchPlayerTypeRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ConfigureMenuMap"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ConfigureOfflineMatchPlayerNameField"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.EventOnStartForGamepad"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.EventsForPlayerType"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.FactionNameRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.FactionToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.FactionWarning"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.FriendsListButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LeaderboardButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LobbyGameFactionsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LobbyGameOptionsRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LocaleDropdown"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LoggedInUserLabel"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LoginButtonLocalizer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.MoreGamesButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.NewContentAlertBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.PlayerConfigButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.PlayerSlotSpacingRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.PlayerTypeToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.SelectChallengeDifficultyButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.SelectedChallengeDifficultyRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.SelectedChallengeOwnedRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.SelectedChallengeRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.TuberDirebytesButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.LobbySessionProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.AccountActionsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.AddFriendPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.behaviours.FriendsListPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.behaviours.LeaderboardPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.behaviours.LeaderboardRankRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ChallengesSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ChangePasswordPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGameDetailsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGamePlayerSlot"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGamePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGameScenePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureOfflineGamePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ContinueGamePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ContinueOfflineGamePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.CreateAccountPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.EulaPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.FactionSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ForgotPasswordPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.GamePasswordPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.LandingPromptAnims"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.LandingPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.LocalPlayModePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.LoginPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.OnlineMatchesPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.PlayerConfigurationPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.RulesLinkBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.RulesPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.SerializedMatchDataProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ShopModePromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.TuberChatSocialPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.TutorialSelectPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.UnlockedCosmeticPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.WaitingForPlayersMatchSettingsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.WaitingForPlayersPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.TuberLoadingBlackout"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.TuberLobbyGameProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.TuberSplashBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.TuberWatchForScreenSettingsChanged"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.AdvancedSetupTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.CardMoz"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.CorvidPassiveLocalizationSubstitutor"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.DisableMoz"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.EnableMozOnButtonPress"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.HinterMoz"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.ItemTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.MoodMoz"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.MozManager"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.OverlayUI"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.PersonalityTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.PhaseButtonTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.ScorchedEarthTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.TuberCombatHitsTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.TuberOutrageTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.TuberPlayerNameTooltipSource"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.moz.TuberTooltip"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.notifications.TuberNotifications"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.notifications.TuberPlaymatNotifications"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prefabLookups.MultiPileFlavors"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prefabLookups.PileFlavors"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.behaviours.AnimationSignalReceiver"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.behaviours.GameResultsPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.behaviours.PromptFactionImage"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.behaviours.SpinnerPromptBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.behaviours.TuberPromptAnims"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.HardwareBackEvents"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.PromptOptions"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.TuberGenericPrompter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.Quality.TuberAutoDetectQuality"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.Quality.TuberDestroyForMemoryMinSpec"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.Quality.TuberEnableForQuality"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.render.ForestShaderCutoutPositionReset"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.match.ui.HundredsOppressIconRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.match.ui.HundredsOppressLocalizationSubstitutor"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.match.ui.HundredsOppressTitleRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.match.ui.KeepersMoveOrRecoverIconRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.match.ui.KeepersMoveOrRecoverLocalizationSubstitutor"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.match.ui.KeepersWintersChillLocalizationSubstitutor"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.tuber_client.src.menus.behaviours.PlayerConfigNameOrTypeRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.TuberGameInit"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.TuberObbConfiguration"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.utils.ChangePlatformOverride"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.direBytes.TuberDireBytesProvider"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.grm.TuberGameroomButtonBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.iap.TuberIAPProductRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.iap.TuberIAPStoreBehaviour"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.iap.TuberIAPStoreFactory"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TuberAbilityButtonGamepadAnimationParamaterSetter"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TuberMatchMessageConsumer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "VagabondModelRenderer"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.MapAnimationControllerPair"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.kabbage.EntityFXLocator/KabbageAnchorInfo"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.ConfigureMenuMap/MapType"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "RiverFishRenderer/FishOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.MapSpritePair"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.SpriteInfo"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.kabbage.EntityFXLocator/AnimatorTrigger"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.voodoo.kabbage.EntityFXLocator/FXAnimatorInfo"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.data.FactionSpriteData/FactionSprite"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ClearingCardSuitRenderer/SuitOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ClearingSuitMaterial/SuitToMaterial"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.MaterialColorPhaseAnimator/colorMaterialEntry"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.FixedSlottedLayout/StandIn"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.FactionMaterial/FactionToMaterial"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prompt.TuberModalScope"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.iap.TuberIAPStoreBehaviour/ProductUnlockedPrompt"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioPhaseMapToggle/MapAudioOverride"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "AudioPhaseMapToggle/PhaseTrackData"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.FactionImage/FactionToImage"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.MapAnimatorOverride"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.UnityEventAccountID"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.CombatDamageRenderer/BattleDamageItem"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.FactionGameObjects/FactionObjects"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ShopItemCategory"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.LobbyGameOptionsRenderer/MapDisplaySettings"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "ChallengeDifficultyBackerRenderer/DifficultyOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.MoveOrBattlePromptBehaviour/StringButton"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.prompt.behaviours.SelectAPlayerPromptBehaviour/FactionObject"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.prompt.behaviours.FactionPrefabAssociation"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.utils.TuberSpriteLookupUtils/FactionSprites"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.utils.TuberSpriteLookupUtils/SuitSprites"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.FriendStatusRenderer/FriendStatusIcons"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.MapLayoutRenderer/MapSpritePair"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.challenges.ChallengeBranchRenderer/FactionColorOverride"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.FactionToggle/UnityEventFaction"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.behaviours.PlayerTypeToggle/UnityEventPlayerType"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.PlayerConfigurationPromptBehaviour/FactionToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.PlayerConfigurationPromptBehaviour/PlayerTypeToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.RulesPromptBehaviour/NamedSection"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.UnlockedCosmeticPromptBehaviour/ProductSpriteOverride"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.keyedLookup.KeyedMatchInitDataLookup"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.keyedLookup.KeyedMatchInitDataLookup/MatchInitDataEntry"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGameDetailsPromptBehaviour/FactionImage"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGameDetailsPromptBehaviour/FactionToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.menus.prompts.ConfigureGamePromptBehaviour/FactionIcon"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.utils.ConfigureGameUtils/DeckSelectionToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.utils.ConfigureGameUtils/MapSelectionToggle"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "Lib.src.match.dataRenderers.MinisterCostRenderer/MinisterTypeCosts"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CardSuitRenderer/SuitOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.CraftingCostRenderer/CraftingCostImages"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.tutorial.TutorialUIElements/NamedUIElement"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PhaseButton/PhaseEvents"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.PhaseButtonStateRenderer/PhaseStateAnimation"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.prefabLookups.MultiPileFlavors/FlavorSet"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.ActiveOrderSuitRenderer/SuitOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.match.dataRenderers.FlagSuitRenderer/SuitColorOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.src.menus.behaviours.TutorialFocusManager/TutorialFocus"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "EntitySuitRenderer/SuitOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "FactionBoardOutcastRenderer/OutcastOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "OutcastHudRenderer/OutcastOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.CardSuitDescriptionRenderer/SuitOverrides"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.ItemImageSourceRenderer/ItemSourceSprite"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.battle.DamageMod"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.VagabondCharacterCardRenderer/CharacterOptions"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.behaviours.VagabondCharacterCardRenderer/CharacterToProductMapping"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.voodoo.MinisterTypeLayout/PageButtons"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.dataRenderers.TowerFlagRenderer/FactionToMaterial"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.dataRenderers.RelicsCollectedRenderer/RelicDisplays"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.ui.WaystationTypeRenderer/TypeSprite"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.data.FactionColorData/FactionColor"
+  },
+  {
+    "assembly": "tuber-client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "tuber.client.match.data.VagabondCharacterSpriteData/VagabondCharacterSprite"
+  },
+  {
+    "assembly": "Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.AddressableAssets.Addressables"
+  },
+  {
+    "assembly": "Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider"
+  },
+  {
+    "assembly": "Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider"
+  },
+  {
+    "assembly": "Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider"
+  },
+  {
+    "assembly": "Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider"
+  },
+  {
+    "assembly": "Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider"
+  },
+  {
+    "assembly": "Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ResourceManagement.ResourceProviders.SceneProvider"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TextMeshPro"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TextMeshProUGUI"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_Dropdown"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_FontAsset"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_InputField"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_SpriteAsset"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_SubMeshUI"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.VertexGradient"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_InputField/OnChangeEvent"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_InputField/SelectionEvent"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_InputField/SubmitEvent"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_InputField/TextSelectionEvent"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_InputField/TouchScreenKeyboardEvent"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.FaceInfo_Legacy"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.FontAssetCreationSettings"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.KerningTable"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_Character"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_FontFeatureTable"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_FontWeightPair"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_GlyphAdjustmentRecord"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_GlyphPairAdjustmentRecord"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_GlyphValueRecord"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_Dropdown/DropdownEvent"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_Dropdown/OptionData"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_Dropdown/OptionDataList"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_Sprite"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_SpriteCharacter"
+  },
+  {
+    "assembly": "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "TMPro.TMP_SpriteGlyph"
+  },
+  {
+    "assembly": "UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEditor.Audio.AudioMixerSnapshotController"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.AnimationClip"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Animations.ParentConstraint"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Animations.PositionConstraint"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Animator"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.AnimatorOverrideController"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Avatar"
+  },
+  {
+    "assembly": "UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.RuntimeAnimatorController"
+  },
+  {
+    "assembly": "UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Audio.AudioMixer"
+  },
+  {
+    "assembly": "UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Audio.AudioMixerGroup"
+  },
+  {
+    "assembly": "UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.AudioListener"
+  },
+  {
+    "assembly": "UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.AudioSource"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Camera"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Cubemap"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.FlareLayer"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.GameObject"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Light"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.LightingSettings"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.LightmapSettings"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.LightProbes"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Material"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Mesh"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.MeshFilter"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.MeshRenderer"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Object"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.RectTransform"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.RenderSettings"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.RenderTexture"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Shader"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.SkinnedMeshRenderer"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Sprite"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.SpriteRenderer"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.TextAsset"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Texture2D"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Transform"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.U2D.SpriteAtlas"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Events.ArgumentCache"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Events.PersistentCallGroup"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Events.PersistentListenerMode"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.RectOffset"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Events.UnityEvent"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Events.UnityEvent`1[lotus.ClientChatMessage]"
+  },
+  {
+    "assembly": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Events.UnityEvent`1[System.Boolean]"
+  },
+  {
+    "assembly": "UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ParticleSystem"
+  },
+  {
+    "assembly": "UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.ParticleSystemRenderer"
+  },
+  {
+    "assembly": "UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.BoxCollider2D"
+  },
+  {
+    "assembly": "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.BoxCollider"
+  },
+  {
+    "assembly": "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.CapsuleCollider"
+  },
+  {
+    "assembly": "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.MeshCollider"
+  },
+  {
+    "assembly": "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.SphereCollider"
+  },
+  {
+    "assembly": "UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Font"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.EventSystems.EventSystem"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.EventSystems.EventTrigger"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.EventSystems.PhysicsRaycaster"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.EventSystems.StandaloneInputModule"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.AspectRatioFitter"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Button"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.CanvasScaler"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.ContentSizeFitter"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.GraphicRaycaster"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.GridLayoutGroup"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.HorizontalLayoutGroup"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Image"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.InputField"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.LayoutElement"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Mask"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.RectMask2D"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Scrollbar"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.ScrollRect"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Selectable"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Slider"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Text"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Toggle"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.ToggleGroup"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.VerticalLayoutGroup"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.AnimationTriggers"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.ColorBlock"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.MaskableGraphic/CullStateChangedEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Navigation"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.SpriteState"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Button/ButtonClickedEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.FontData"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.InputField/EndEditEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.InputField/OnChangeEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.InputField/SubmitEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.ScrollRect/ScrollRectEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Scrollbar/ScrollEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Toggle/ToggleEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.EventSystems.EventTrigger/Entry"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.EventSystems.EventTrigger/TriggerEvent"
+  },
+  {
+    "assembly": "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.UI.Slider/SliderEvent"
+  },
+  {
+    "assembly": "UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.Canvas"
+  },
+  {
+    "assembly": "UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.CanvasGroup"
+  },
+  {
+    "assembly": "UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "UnityEngine.CanvasRenderer"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.validators.validationResolvers.EnableValidationResolver"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lib.validators.validationResolvers.EventsOnValidationResolver"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.ActiveValidationResolver"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.ChildIndexValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.GlobalInputValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.InputModuleValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.OnScreenValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.PlatformValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.RuntimePlatformValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.SelectableValidationResolver"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.SelectedChildObjectValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.SelectedObjectValidator"
+  },
+  {
+    "assembly": "validators, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "validators.WhileActiveValidator"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "boardgames.voodoo.HideChildrenUntilDataObserver"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.ContainerView"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.EntityView"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.EntityViewInitializer"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.PileRefresher"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.PoolableItem"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.PoolManager"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.UnitView"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.UpdateManager"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.AttachUnitRootModule"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.OffsetWithPathRootModule"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.ShowUnitRootModule"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.TransformBlendRootModule"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.VoodooRenderAnimator"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.VoodooRenderRoot"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.kabbage.VoodooStaticPath"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "voodoo.UnitViewOverrideProvider"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "zen.src.match.monobehaviours.renderers.RegisterEntityView"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.OnPositionRequestedEvent"
+  },
+  {
+    "assembly": "voodoo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "type": "lotus.PoolDefinition"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.ClientMatchConfigData"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.ClockworkConfig"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.RuinItemLocations"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.ScoreForBuilding"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.SpecialClearing"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.StartingBuilding"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.StartingToken"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.data.matchinitdata.TuberPlayerMatchInitData"
+  },
+  {
+    "assembly": "tuber-canis",
+    "type": "tuber.canis.TuberMatchInitData"
+  },
+  {
+    "assembly": "UnityEngine.TextCoreFontEngineModule",
+    "type": "UnityEngine.TextCore.FaceInfo"
+  },
+  {
+    "assembly": "UnityEngine.TextCoreFontEngineModule",
+    "type": "UnityEngine.TextCore.Glyph"
+  },
+  {
+    "assembly": "UnityEngine.TextCoreFontEngineModule",
+    "type": "UnityEngine.TextCore.GlyphMetrics"
+  },
+  {
+    "assembly": "UnityEngine.TextCoreFontEngineModule",
+    "type": "UnityEngine.TextCore.GlyphRect"
+  },
+  {
+    "assembly": "Utils",
+    "type": "Canis.utils.ids.ArchetypeID"
+  },
+  {
+    "assembly": "Utils",
+    "type": "Canis.utils.ids.GameID"
+  }
+]

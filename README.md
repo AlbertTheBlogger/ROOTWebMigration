@@ -1,0 +1,62 @@
+# ROOTWebMigration · 林间议事厅 / Woodland Rooms
+
+自托管的 ROOT 网页规则重实现。当前版本 **v1.1.0**，支持秋季地图、基础四阵营和 2–4 人联机。不依赖 Steam 联机；原游戏安装目录未被修改。
+
+## 当前功能
+
+- 独立账号、公共/密码房间、每局玩家名、准备及下一局。
+- 猫咪贵族、飞鹰王朝、森林联盟、神秘游侠；游侠含盗贼、工匠、猎人。
+- 基础牌组、制作、战斗及插入选择，服务器负责规则和随机结果。
+- SQLite 自动存档、刷新/重启恢复、命令幂等和玩家私有视图。
+- 简单人机、五章教程、管理员及图片棋盘。
+
+扩展阵营、第二游侠、其他地图、扩展牌组及进阶开局尚未实现。复杂规则与原数字版动态行为尚未逐项交叉核验。人机不代表成熟战略 AI。
+
+## 本机运行
+
+需要 Node.js 24.11.1 或兼容的更新版本，使用内置 SQLite，无 npm 第三方依赖。
+
+```powershell
+npm start
+```
+
+打开 http://127.0.0.1:3000 。默认数据库为 data/root.sqlite，首次启动自动创建。
+
+环境变量：HOST、PORT、DB_PATH、APP_ORIGIN、COOKIE_SECURE。局域网访问需配置 HOST 和实际 APP_ORIGIN；HTTPS 下设置 COOKIE_SECURE=true。
+
+## 验证与备份
+
+```powershell
+npm test
+npm run check
+node scripts/backup.mjs
+```
+
+测试使用临时数据库。备份脚本生成 SQLite 一致性副本；不要直接复制正在写入的数据库主文件作为完整备份。
+
+tools/ 下保留浏览器验收和研究工具。Python 依赖记录在 research/requirements.lock.txt，虚拟环境不入库。部分专项 UI 工具依赖本地 audit/ 中的隔离夹具，克隆仓库后不能直接假定这些夹具存在。
+
+## 目录
+
+| 路径 | 用途 |
+| --- | --- |
+| backend/server.mjs | HTTP、账号、房间、SQLite、SSE 与人机调度 |
+| backend/rules/versions/ | 当前四阵营引擎及旧存档兼容版本 |
+| frontend/ | 页面、交互、样式和美术资源 |
+| tests/ | 规则、接口、管理、教程与恢复测试 |
+| tools/、research/ | 资源研究及开发验收工具/资料 |
+| scripts/backup.mjs | 数据库一致性备份 |
+| docs/交接文档.md | 当前状态及维护入口 |
+| docs/HANDOFF-2026-11-09.md | 持续维护的详细历史 |
+
+## 部署与维护
+
+当前采用单实例 Node + SQLite + SSE。Dockerfile、compose.yaml 和 deploy/nginx.conf.example 为参考配置；生产维护以最新交接文档为准。SSE 通知与限流状态在进程内，不能直接扩成多个实例。
+
+JSON API 保留不压缩、明确 Content-Length 和 Connection: close 的处理；变动前需验证真实公网完整响应。历史 ruleset ID 用于存档兼容，不随产品版本改名。
+
+## 版本控制范围
+
+源码、必要网页资源、测试、工具与研究资料纳入 Git。数据库、玩家验收数据、会话/凭据、虚拟环境、缓存、日志和部署压缩包不入库。当前采用 main 分支；提交前运行适用检查，部署与 Git 推送分别记录。
+
+项目包含从本地原游戏提取的美术及研究资料，尚未确认公开分发授权，仓库默认私有；本项目不授予第三方素材的使用或再分发许可。

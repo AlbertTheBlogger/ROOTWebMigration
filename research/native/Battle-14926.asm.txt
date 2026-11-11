@@ -1,0 +1,20 @@
+0000000181754a80  mov      qword ptr [rsp + 0x18], rsi
+0000000181754a85  push     rdi
+0000000181754a86  sub      rsp, 0x20
+0000000181754a8a  cmp      byte ptr [rip + 0x153403d], 0
+0000000181754a91  mov      rsi, rdx
+0000000181754a94  mov      rdi, rcx
+0000000181754a97  jne      0x181754adc
+0000000181754a99  lea      rcx, [rip + 0x13aead8]
+0000000181754aa0  call     0x1820df9b0
+0000000181754aa5  lea      rcx, [rip + 0x1372f7c]
+0000000181754aac  call     0x1820df9b0
+0000000181754ab1  lea      rcx, [rip + 0x1372eb8]
+0000000181754ab8  call     0x1820df9b0
+0000000181754abd  lea      rcx, [rip + 0x137318c]
+0000000181754ac4  call     0x1820df9b0
+0000000181754ac9  lea      rcx, [rip + 0x137ef60]
+0000000181754ad0  call     0x1820df9b0
+0000000181754ad5  mov      byte ptr [rip + 0x1533ff2], 1
+0000000181754adc  test     rsi, rsi
+0000000181754adf  je       0x181754cd5

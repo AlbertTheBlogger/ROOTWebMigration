@@ -1,0 +1,6124 @@
+{
+  "tool": "tools/research_assets.py",
+  "python": "3.12.1",
+  "unitypy": "1.25.4",
+  "read_only": true,
+  "files": [
+    {
+      "source": "Root_Data/resources.assets",
+      "sha256": "853b1eefc0b151317ea07a03950cf966c93e002122b8594a93a136d86d1f212f",
+      "objects": [
+        {
+          "path_id": 65,
+          "asset_file": "resources.assets",
+          "type": "TextAsset",
+          "name": "UniversalDeepLink"
+        },
+        {
+          "path_id": 66,
+          "asset_file": "resources.assets",
+          "type": "TextAsset",
+          "name": "LineBreaking Leading Characters"
+        },
+        {
+          "path_id": 67,
+          "asset_file": "resources.assets",
+          "type": "TextAsset",
+          "name": "LineBreaking Following Characters"
+        },
+        {
+          "path_id": 360,
+          "asset_file": "resources.assets",
+          "type": "GameObject",
+          "name": "DiagnosticsDisplay"
+        },
+        {
+          "path_id": 361,
+          "asset_file": "resources.assets",
+          "type": "GameObject",
+          "name": "Fps"
+        },
+        {
+          "path_id": 362,
+          "asset_file": "resources.assets",
+          "type": "GameObject",
+          "name": "Memory"
+        },
+        {
+          "path_id": 363,
+          "asset_file": "resources.assets",
+          "type": "GameObject",
+          "name": "SystemInfo"
+        },
+        {
+          "path_id": 372,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "TMP StyleSheet",
+          "parse_error": "ValueError: Expected to read 6608 bytes, but only read 48 bytes"
+        },
+        {
+          "path_id": 373,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "Emoticons",
+          "parse_error": "ValueError: Expected to read 21296 bytes, but only read 44 bytes"
+        },
+        {
+          "path_id": 374,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "LiberationSans SDF - Fallback",
+          "parse_error": "ValueError: Expected to read 1556 bytes, but only read 64 bytes"
+        },
+        {
+          "path_id": 375,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "LiberationSans SDF",
+          "parse_error": "ValueError: Expected to read 28764 bytes, but only read 52 bytes"
+        },
+        {
+          "path_id": 376,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "EmojiOne",
+          "parse_error": "ValueError: Expected to read 3016 bytes, but only read 40 bytes"
+        },
+        {
+          "path_id": 377,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "Default Style Sheet",
+          "parse_error": "ValueError: Expected to read 2252 bytes, but only read 52 bytes"
+        },
+        {
+          "path_id": 378,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "TMP Settings",
+          "parse_error": "ValueError: Expected to read 272 bytes, but only read 44 bytes"
+        },
+        {
+          "path_id": 379,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 80 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 380,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 172 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 381,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 40 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 382,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 188 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 383,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 40 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 384,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 84 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 385,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 188 bytes, but only read 32 bytes"
+        },
+        {
+          "path_id": 386,
+          "asset_file": "resources.assets",
+          "type": "MonoBehaviour",
+          "name": "",
+          "parse_error": "ValueError: Expected to read 40 bytes, but only read 32 bytes"
+        }
+      ],
+      "exports": [],
+      "errors": [],
+      "containers": [],
+      "object_counts": {
+        "Material": 7,
+        "Texture2D": 6,
+        "Mesh": 1,
+        "Shader": 50,
+        "TextAsset": 3,
+        "AudioClip": 255,
+        "Font": 1,
+        "Sprite": 36,
+        "GameObject": 4,
+        "CanvasRenderer": 3,
+        "Canvas": 1,
+        "RectTransform": 4,
+        "MonoBehaviour": 15
+      }
+    },
+    {
+      "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/cards_assets_all.bundle",
+      "sha256": "21df4576e0fde9bab900ce5d4b1e4806c6af84071e47a11bf24ca2ff78f28ab3",
+      "objects": [],
+      "exports": [],
+      "errors": [],
+      "containers": [
+        {
+          "path": "Bird.png",
+          "path_id": -3112427098185491039
+        },
+        {
+          "path": "Bird.png",
+          "path_id": -8544956445941312554
+        },
+        {
+          "path": "Fox.png",
+          "path_id": -257706523579294463
+        },
+        {
+          "path": "Fox.png",
+          "path_id": 2383720607271457156
+        },
+        {
+          "path": "Mouse.png",
+          "path_id": -4531805804850433733
+        },
+        {
+          "path": "Mouse.png",
+          "path_id": -797078230389851833
+        },
+        {
+          "path": "Rabbit.png",
+          "path_id": 5500358631420312410
+        },
+        {
+          "path": "Rabbit.png",
+          "path_id": -1621635124232117416
+        },
+        {
+          "path": "S_crd_frm_paper.png",
+          "path_id": 2010694771435335325
+        },
+        {
+          "path": "S_crd_frm_paper.png",
+          "path_id": 5208326370184576673
+        },
+        {
+          "path": "S_crd_iconLarge_Boot.png",
+          "path_id": 1469216811340948159
+        },
+        {
+          "path": "S_crd_iconLarge_Boot.png",
+          "path_id": -8014753342253614679
+        },
+        {
+          "path": "S_crd_iconLarge_Crossbow.png",
+          "path_id": 576608337241740011
+        },
+        {
+          "path": "S_crd_iconLarge_Crossbow.png",
+          "path_id": -4349718593188368312
+        },
+        {
+          "path": "S_crd_iconLarge_GoldStack.png",
+          "path_id": -8810359630957449708
+        },
+        {
+          "path": "S_crd_iconLarge_GoldStack.png",
+          "path_id": 1253766033305027126
+        },
+        {
+          "path": "S_crd_iconLarge_Hammer.png",
+          "path_id": 5097326867639771732
+        },
+        {
+          "path": "S_crd_iconLarge_Hammer.png",
+          "path_id": 4859698362535079691
+        },
+        {
+          "path": "S_crd_iconLarge_Sack.png",
+          "path_id": -304170041024152411
+        },
+        {
+          "path": "S_crd_iconLarge_Sack.png",
+          "path_id": -1257791002250951522
+        },
+        {
+          "path": "S_crd_iconLarge_Sword.png",
+          "path_id": -5809529422419841292
+        },
+        {
+          "path": "S_crd_iconLarge_Sword.png",
+          "path_id": 4045595243651050979
+        },
+        {
+          "path": "S_crd_iconLarge_TeaPot.png",
+          "path_id": 2523074612358521120
+        },
+        {
+          "path": "S_crd_iconLarge_TeaPot.png",
+          "path_id": 6038878736433167975
+        },
+        {
+          "path": "S_crd_iconLarge_Torch.png",
+          "path_id": 4989476174198748716
+        },
+        {
+          "path": "S_crd_iconLarge_Torch.png",
+          "path_id": 1430332100504370266
+        },
+        {
+          "path": "S_crd_icon_Boot.png",
+          "path_id": 3653818814844855378
+        },
+        {
+          "path": "S_crd_icon_Boot.png",
+          "path_id": 7217920603455707867
+        },
+        {
+          "path": "S_crd_icon_Crossbow.png",
+          "path_id": 8512323895258637359
+        },
+        {
+          "path": "S_crd_icon_Crossbow.png",
+          "path_id": 557592418368522235
+        },
+        {
+          "path": "S_crd_icon_GoldStack.png",
+          "path_id": -6944292665474078128
+        },
+        {
+          "path": "S_crd_icon_GoldStack.png",
+          "path_id": -146949338706176036
+        },
+        {
+          "path": "S_crd_icon_GoldStack_grey.png",
+          "path_id": 2801511678048471375
+        },
+        {
+          "path": "S_crd_icon_GoldStack_grey.png",
+          "path_id": 2366417510856698746
+        },
+        {
+          "path": "S_crd_icon_Hammer.png",
+          "path_id": 3016559240195621818
+        },
+        {
+          "path": "S_crd_icon_Hammer.png",
+          "path_id": 2191699281386875254
+        },
+        {
+          "path": "S_crd_icon_Sack.png",
+          "path_id": -5614787590127786241
+        },
+        {
+          "path": "S_crd_icon_Sack.png",
+          "path_id": 4111978349994533521
+        },
+        {
+          "path": "S_crd_icon_Sack_grey.png",
+          "path_id": 7346364876219208293
+        },
+        {
+          "path": "S_crd_icon_Sack_grey.png",
+          "path_id": -3097354489558990000
+        },
+        {
+          "path": "S_crd_icon_Sword.png",
+          "path_id": -2599685775599517913
+        },
+        {
+          "path": "S_crd_icon_Sword.png",
+          "path_id": -7564094727238315178
+        },
+        {
+          "path": "S_crd_icon_TeaPot.png",
+          "path_id": 6832060330799183537
+        },
+        {
+          "path": "S_crd_icon_TeaPot.png",
+          "path_id": -8091370605332948296
+        },
+        {
+          "path": "S_crd_icon_TeaPot_grey.png",
+          "path_id": 6248470435186031724
+        },
+        {
+          "path": "S_crd_icon_TeaPot_grey.png",
+          "path_id": 5956353939346270282
+        },
+        {
+          "path": "S_crd_icon_Torch.png",
+          "path_id": -4580479901024759093
+        },
+        {
+          "path": "S_crd_icon_Torch.png",
+          "path_id": 2708897271751070770
+        },
+        {
+          "path": "S_crd_icon_craftcost_1die.png",
+          "path_id": 3988118445351103518
+        },
+        {
+          "path": "S_crd_icon_craftcost_1die.png",
+          "path_id": 1717914956050622603
+        },
+        {
+          "path": "S_crd_icon_craftcost_2die.png",
+          "path_id": -8409744967153510824
+        },
+        {
+          "path": "S_crd_icon_craftcost_2die.png",
+          "path_id": -783293319395112242
+        },
+        {
+          "path": "S_crd_icon_craftcost_3die.png",
+          "path_id": -4069370250086106619
+        },
+        {
+          "path": "S_crd_icon_craftcost_3die.png",
+          "path_id": 6183713690846966641
+        },
+        {
+          "path": "T_crd_Card_Back.png",
+          "path_id": -3092233286384739071
+        },
+        {
+          "path": "T_crd_CraftedCardIcons.spriteatlas",
+          "path_id": -6418931726979649571
+        },
+        {
+          "path": "T_crd_EyrieLeader_Charismatic.png",
+          "path_id": -2282963245611383921
+        },
+        {
+          "path": "T_crd_EyrieLeader_Charismatic.png",
+          "path_id": -8504066473054333768
+        },
+        {
+          "path": "T_crd_EyrieLeader_Commander.png",
+          "path_id": 9196226606876648194
+        },
+        {
+          "path": "T_crd_EyrieLeader_Commander.png",
+          "path_id": -3406313669329535346
+        },
+        {
+          "path": "T_crd_EyrieLeader_Commander.png",
+          "path_id": 3334289404893463135
+        },
+        {
+          "path": "T_crd_EyrieLeader_Despot.png",
+          "path_id": -3683039970401709224
+        },
+        {
+          "path": "T_crd_EyrieLeader_Despot.png",
+          "path_id": -7309470995286429501
+        },
+        {
+          "path": "T_crd_EyrieLeader_builder.png",
+          "path_id": 2948713785163147093
+        },
+        {
+          "path": "T_crd_EyrieLeader_builder.png",
+          "path_id": -3004661381583128462
+        },
+        {
+          "path": "T_crd_LoyalVizier.jpg",
+          "path_id": -7631221117889933953
+        },
+        {
+          "path": "T_crd_Vagabond_Ranger.png",
+          "path_id": -7314539785157308669
+        },
+        {
+          "path": "T_crd_Vagabond_Ranger.png",
+          "path_id": 2779412416632133861
+        },
+        {
+          "path": "T_crd_Vagabond_Thief.png",
+          "path_id": -2768289191444539679
+        },
+        {
+          "path": "T_crd_Vagabond_Thief.png",
+          "path_id": 5063728786957744978
+        },
+        {
+          "path": "T_crd_Vagabond_Tinker.png",
+          "path_id": 7754537406760191194
+        },
+        {
+          "path": "T_crd_Vagabond_Tinker.png",
+          "path_id": 7499823033130179257
+        },
+        {
+          "path": "T_crd_bird_ambush.jpg",
+          "path_id": 5972410070725376199
+        },
+        {
+          "path": "T_crd_bird_armorers.jpg",
+          "path_id": 1988342309494935255
+        },
+        {
+          "path": "T_crd_bird_armstrader.jpg",
+          "path_id": 3911669970754922875
+        },
+        {
+          "path": "T_crd_bird_birdybindle.jpg",
+          "path_id": -2408144736673347757
+        },
+        {
+          "path": "T_crd_bird_brutaltactics.jpg",
+          "path_id": -7550228027685790556
+        },
+        {
+          "path": "T_crd_bird_crossbow.jpg",
+          "path_id": 5850023958568274524
+        },
+        {
+          "path": "T_crd_bird_dominance.jpg",
+          "path_id": -2142001317059855988
+        },
+        {
+          "path": "T_crd_bird_royalclaim.jpg",
+          "path_id": 1989112855745909436
+        },
+        {
+          "path": "T_crd_bird_sappers.jpg",
+          "path_id": -5652915952167428609
+        },
+        {
+          "path": "T_crd_bird_woodlandrunners.jpg",
+          "path_id": -8625684546494281490
+        },
+        {
+          "path": "T_crd_boat_builders.jpg",
+          "path_id": 8401492706104889048
+        },
+        {
+          "path": "T_crd_bunny_ambush.jpg",
+          "path_id": -4092092003495250767
+        },
+        {
+          "path": "T_crd_bunny_avisittofriends.jpg",
+          "path_id": -711722563911872423
+        },
+        {
+          "path": "T_crd_bunny_bakesale.jpg",
+          "path_id": 7638628711528321898
+        },
+        {
+          "path": "T_crd_bunny_betterburrowbank.jpg",
+          "path_id": 3432993538330225371
+        },
+        {
+          "path": "T_crd_bunny_cobbler.jpg",
+          "path_id": 8832791981894611330
+        },
+        {
+          "path": "T_crd_bunny_commandwarren.jpg",
+          "path_id": -7229282057876119308
+        },
+        {
+          "path": "T_crd_bunny_dominance.jpg",
+          "path_id": -2105302814743707490
+        },
+        {
+          "path": "T_crd_bunny_favoroftherabbits.jpg",
+          "path_id": -7355958149234627695
+        },
+        {
+          "path": "T_crd_bunny_quest_errand.png",
+          "path_id": -506805546233095089
+        },
+        {
+          "path": "T_crd_bunny_quest_errand.png",
+          "path_id": 9130030156822862374
+        },
+        {
+          "path": "T_crd_bunny_quest_expelbandits.png",
+          "path_id": -2003582084812289334
+        },
+        {
+          "path": "T_crd_bunny_quest_expelbandits.png",
+          "path_id": -1412152101068895502
+        },
+        {
+          "path": "T_crd_bunny_quest_fendoffabear.png",
+          "path_id": 5064174278926944299
+        },
+        {
+          "path": "T_crd_bunny_quest_fendoffabear.png",
+          "path_id": 3065148481070013773
+        },
+        {
+          "path": "T_crd_bunny_quest_giveaspeech.png",
+          "path_id": 8005937854956772612
+        },
+        {
+          "path": "T_crd_bunny_quest_giveaspeech.png",
+          "path_id": -6496670712478198943
+        },
+        {
+          "path": "T_crd_bunny_quest_guardduty.png",
+          "path_id": 2905268290831893362
+        },
+        {
+          "path": "T_crd_bunny_quest_guardduty.png",
+          "path_id": -7878506935802588822
+        },
+        {
+          "path": "T_crd_bunny_roottea.jpg",
+          "path_id": 2557994446527927426
+        },
+        {
+          "path": "T_crd_bunny_smugglerstrail.jpg",
+          "path_id": -3914084557741465486
+        },
+        {
+          "path": "T_crd_charm_offensive.jpg",
+          "path_id": 3367005549202122058
+        },
+        {
+          "path": "T_crd_coffin_makers.jpg",
+          "path_id": 7241322342989190895
+        },
+        {
+          "path": "T_crd_corvid_planners.jpg",
+          "path_id": 8203423820485138195
+        },
+        {
+          "path": "T_crd_eyrie_emigre.jpg",
+          "path_id": -3834876041402188281
+        },
+        {
+          "path": "T_crd_false_orders.jpg",
+          "path_id": -4335271732742802288
+        },
+        {
+          "path": "T_crd_fox_ambush.jpg",
+          "path_id": -4341965107330222545
+        },
+        {
+          "path": "T_crd_fox_anvil.jpg",
+          "path_id": 4170058663817171158
+        },
+        {
+          "path": "T_crd_fox_dominance.jpg",
+          "path_id": -5431207895972671487
+        },
+        {
+          "path": "T_crd_fox_favorofthefoxes.jpg",
+          "path_id": 7696262584671412637
+        },
+        {
+          "path": "T_crd_fox_foxfolksteel.jpg",
+          "path_id": 6523073728467684087
+        },
+        {
+          "path": "T_crd_fox_gentlyusedknapsack.jpg",
+          "path_id": 1820424561155764025
+        },
+        {
+          "path": "T_crd_fox_informants.jpg",
+          "path_id": 5050310810983522151
+        },
+        {
+          "path": "T_crd_fox_partisans.jpg",
+          "path_id": -5051972905226219349
+        },
+        {
+          "path": "T_crd_fox_protectionracket.jpg",
+          "path_id": 1884250226644483250
+        },
+        {
+          "path": "T_crd_fox_quest_errand.png",
+          "path_id": -6989372725157582136
+        },
+        {
+          "path": "T_crd_fox_quest_errand.png",
+          "path_id": 8916987158742916872
+        },
+        {
+          "path": "T_crd_fox_quest_fundraising.png",
+          "path_id": -3372138351010829333
+        },
+        {
+          "path": "T_crd_fox_quest_fundraising.png",
+          "path_id": 4715390449838604359
+        },
+        {
+          "path": "T_crd_fox_quest_giveaspeech.png",
+          "path_id": 745177537380816857
+        },
+        {
+          "path": "T_crd_fox_quest_giveaspeech.png",
+          "path_id": -7173610649939820414
+        },
+        {
+          "path": "T_crd_fox_quest_logisticshelp.png",
+          "path_id": 1354772190855797060
+        },
+        {
+          "path": "T_crd_fox_quest_logisticshelp.png",
+          "path_id": -3236824854003742638
+        },
+        {
+          "path": "T_crd_fox_quest_repairashed.png",
+          "path_id": 2776283601419642469
+        },
+        {
+          "path": "T_crd_fox_quest_repairashed.png",
+          "path_id": -1570354184698426645
+        },
+        {
+          "path": "T_crd_fox_roottea.jpg",
+          "path_id": 6199195706215876134
+        },
+        {
+          "path": "T_crd_fox_standanddeliver.jpg",
+          "path_id": 6117997961384008583
+        },
+        {
+          "path": "T_crd_fox_taxcollector.jpg",
+          "path_id": -640079579055229588
+        },
+        {
+          "path": "T_crd_fox_travelgear.jpg",
+          "path_id": -6540386899183443077
+        },
+        {
+          "path": "T_crd_league_of_adventurous_mice.jpg",
+          "path_id": 8952427212761831410
+        },
+        {
+          "path": "T_crd_master_engravers.jpg",
+          "path_id": -5852391825076489617
+        },
+        {
+          "path": "T_crd_minister_Banker.png",
+          "path_id": -8774695803303152678
+        },
+        {
+          "path": "T_crd_minister_BaronOfDirt.png",
+          "path_id": 5912544628140171164
+        },
+        {
+          "path": "T_crd_minister_Brigadier.png",
+          "path_id": 2220987439923530169
+        },
+        {
+          "path": "T_crd_minister_Captain.png",
+          "path_id": 8689332261059604316
+        },
+        {
+          "path": "T_crd_minister_DuchessOfMud.png",
+          "path_id": 3938035282820298503
+        },
+        {
+          "path": "T_crd_minister_EarlOfStone.png",
+          "path_id": -1677040153866702690
+        },
+        {
+          "path": "T_crd_minister_Foremole.png",
+          "path_id": -4897359872824895228
+        },
+        {
+          "path": "T_crd_minister_Marshal.png",
+          "path_id": 7520860412565701030
+        },
+        {
+          "path": "T_crd_minister_Mayor.png",
+          "path_id": -8306797661638252068
+        },
+        {
+          "path": "T_crd_mouse_ambush.jpg",
+          "path_id": 8985733370354917822
+        },
+        {
+          "path": "T_crd_mouse_codebreakers.jpg",
+          "path_id": -1485736016364870786
+        },
+        {
+          "path": "T_crd_mouse_crossbow.jpg",
+          "path_id": 7562719300919112257
+        },
+        {
+          "path": "T_crd_mouse_dominance.jpg",
+          "path_id": -3237490250163346618
+        },
+        {
+          "path": "T_crd_mouse_favorofthemice.jpg",
+          "path_id": -3242265846526581517
+        },
+        {
+          "path": "T_crd_mouse_investments.jpg",
+          "path_id": 2157189289002225429
+        },
+        {
+          "path": "T_crd_mouse_mouseinasack.jpg",
+          "path_id": -6570927633713301495
+        },
+        {
+          "path": "T_crd_mouse_partisans.jpg",
+          "path_id": 2980236293531423022
+        },
+        {
+          "path": "T_crd_mouse_quest_escort.png",
+          "path_id": 241934853979424989
+        },
+        {
+          "path": "T_crd_mouse_quest_escort.png",
+          "path_id": 2285326933921889462
+        },
+        {
+          "path": "T_crd_mouse_quest_expelbandits.png",
+          "path_id": 3277630628727854936
+        },
+        {
+          "path": "T_crd_mouse_quest_expelbandits.png",
+          "path_id": -733033256809261960
+        },
+        {
+          "path": "T_crd_mouse_quest_fendoffabear.png",
+          "path_id": 4364832383909408314
+        },
+        {
+          "path": "T_crd_mouse_quest_fendoffabear.png",
+          "path_id": 8885174636250785441
+        },
+        {
+          "path": "T_crd_mouse_quest_guardduty.png",
+          "path_id": -3010551451915393487
+        },
+        {
+          "path": "T_crd_mouse_quest_guardduty.png",
+          "path_id": -7131521636870083627
+        },
+        {
+          "path": "T_crd_mouse_quest_logisticshelp.png",
+          "path_id": 1288875050625428247
+        },
+        {
+          "path": "T_crd_mouse_quest_logisticshelp.png",
+          "path_id": -2287364783454431323
+        },
+        {
+          "path": "T_crd_mouse_roottea.jpg",
+          "path_id": 5843238295354499498
+        },
+        {
+          "path": "T_crd_mouse_scoutingparty.jpg",
+          "path_id": -2433341253006227969
+        },
+        {
+          "path": "T_crd_mouse_sword.jpg",
+          "path_id": 470800843222527067
+        },
+        {
+          "path": "T_crd_mouse_travelgear.jpg",
+          "path_id": -4653276865117454534
+        },
+        {
+          "path": "T_crd_murine_broker.jpg",
+          "path_id": 4811518570952695578
+        },
+        {
+          "path": "T_crd_propaganda_bureau.jpg",
+          "path_id": 8354174399788029421
+        },
+        {
+          "path": "T_crd_rabbit_partisans.jpg",
+          "path_id": -3398861743637926144
+        },
+        {
+          "path": "T_crd_saboteurs.jpg",
+          "path_id": 4737903566555562205
+        },
+        {
+          "path": "T_crd_soup_kitchens.jpg",
+          "path_id": -6028910850737976831
+        },
+        {
+          "path": "T_crd_swap_meet.jpg",
+          "path_id": 3322627503497293555
+        },
+        {
+          "path": "T_crd_tunnels.jpg",
+          "path_id": 96930538277228223
+        }
+      ],
+      "object_counts": {
+        "Texture2D": 122,
+        "Sprite": 85,
+        "SpriteAtlas": 1,
+        "AssetBundle": 1
+      }
+    },
+    {
+      "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_all.bundle",
+      "sha256": "89ec5690ccaf00fb8e4a6595f91b49f174359c5ca2535d73038543caa4abdd6c",
+      "objects": [
+        {
+          "path_id": -7030229213176759517,
+          "asset_file": "CAB-5714b53535d603988ab1ca4a877ae44a",
+          "type": "MonoScript",
+          "name": "Image",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "Image",
+            "m_Namespace": "UnityEngine.UI",
+            "m_AssemblyName": "UnityEngine.UI"
+          }
+        }
+      ],
+      "exports": [],
+      "errors": [],
+      "containers": [
+        {
+          "path": "Assets/GameAssets/Animations_shared/C_UI_DefaultShowHideMinimizeDraftFactionSelect.controller",
+          "path_id": 6800452571650329199
+        },
+        {
+          "path": "Assets/GameAssets/Animations_shared/DraftFaction/C_ui_Button_DraftFaction.controller",
+          "path_id": 3600305532088742246
+        },
+        {
+          "path": "Assets/GameAssets/Cards/S_crd_icon_hundreds.png",
+          "path_id": -1562089681147588803
+        },
+        {
+          "path": "Assets/GameAssets/Cards/S_crd_icon_hundreds.png",
+          "path_id": 205658472838674174
+        },
+        {
+          "path": "Assets/GameAssets/Environment/Buildings/Tunnel/A_bldg_DuchyTunnel_Recruit.anim",
+          "path_id": 4635504422514090070
+        },
+        {
+          "path": "Assets/GameAssets/Environment/Buildings/Tunnel/A_bldg_DuchyTunnel_Tickle.anim",
+          "path_id": 7157171998862664664
+        },
+        {
+          "path": "Assets/GameAssets/GRM_Button/WolfHead_256.png",
+          "path_id": -5762053450944476842
+        },
+        {
+          "path": "Assets/GameAssets/GRM_Button/WolfHead_256.png",
+          "path_id": 6175510992331034262
+        },
+        {
+          "path": "Assets/GameAssets/Textures_shared/Noise1.jpg",
+          "path_id": 7441226686561702117
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Icon/S_fx_SpeedBits.png",
+          "path_id": 8325917077594419177
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Icon/S_fx_SpeedBits.png",
+          "path_id": -2980471428630462232
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Icon/S_icon_Marq_WoodCost.png",
+          "path_id": -7666242884643743043
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Mock_EFUN/M_chr_VagaBanjo.mat",
+          "path_id": -1848223779285116285
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Mock_EFUN/S_env_ChalkRolloverStreak.png",
+          "path_id": -6976819031319839108
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Mock_EFUN/S_env_ChalkRolloverStreak.png",
+          "path_id": -8626879283726701986
+        },
+        {
+          "path": "Assets/GameAssets/UI_shared/Mock_EFUN/T_chr_VagaBanjo.png",
+          "path_id": 6923916790482144143
+        },
+        {
+          "path": "Assets/Resources_moved/CardPieces/BGArt/T_crd_faithfulretainer.png",
+          "path_id": 397192533064969767
+        }
+      ],
+      "object_counts": {
+        "Sprite": 371,
+        "AnimationClip": 8,
+        "MonoScript": 1,
+        "Texture2D": 10,
+        "Material": 1,
+        "AssetBundle": 1,
+        "AnimatorController": 2
+      }
+    },
+    {
+      "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91.bundle",
+      "sha256": "bde0a25f391a1567c4db13b682b60132e6f90815fb0d59bd7971c30200e78ad8",
+      "objects": [
+        {
+          "path_id": -8423559073598086310,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoScript",
+          "name": "FactionSpriteData",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "FactionSpriteData",
+            "m_Namespace": "tuber.client.match.data",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -7886660930821603771,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionColorData_StandardEdge",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionColors"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8803664485165851713
+          }
+        },
+        {
+          "path_id": -6956108915455493247,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_CombatDetails_FactionHead",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": -5842876101897228023,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_FactionHead",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": -5086043177740332375,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_FactionHeadBanned",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": -4629944292145050273,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "VagabondCharacterSpriteData_PassAndPlayCurtain_Avatar",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "vagabondCharacterSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 5179780175214995434
+          }
+        },
+        {
+          "path_id": -4596494914985711309,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "VagabotCharacterSpriteData_PassAndPlayCurtain_Avatar",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "vagabondCharacterSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 5179780175214995434
+          }
+        },
+        {
+          "path_id": -4485780396981306712,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionColorData_GainVPFX",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionColors"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8803664485165851713
+          }
+        },
+        {
+          "path_id": -3931024592805730708,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_PatternBacker_Prompts",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": -3592468652197437459,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionColorData_TutorialEntry_Backer",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionColors"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8803664485165851713
+          }
+        },
+        {
+          "path_id": -2457439517137887285,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionColorData_GameConfigPlayerSlot_FactionNameBacker",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionColors"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8803664485165851713
+          }
+        },
+        {
+          "path_id": -1514343634975850419,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionColorData_StandardBacker",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionColors"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8803664485165851713
+          }
+        },
+        {
+          "path_id": -1503717150473208228,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_AvatarCrop",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": -33513099400255682,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_TutorialEntry_Avatar",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": 55467522499038354,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_PatternBacker_128",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": 150704904895089232,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionColorData_PassAndPlayCurtain_Border",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionColors"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8803664485165851713
+          }
+        },
+        {
+          "path_id": 1111707215648603137,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "VagabotCharacterSpriteData_FactionSelectionPrompt_Avatar",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "vagabondCharacterSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 5179780175214995434
+          }
+        },
+        {
+          "path_id": 3899610168537667219,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_PatternBacker_128_NoIcons",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": 4352311698291578502,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_PassAndPlayCurtain_Avatar",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": 5179780175214995434,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoScript",
+          "name": "VagabondCharacterSpriteData",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "VagabondCharacterSpriteData",
+            "m_Namespace": "tuber.client.match.data",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 7418616295482209626,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "VagabondCharacterSpriteData_AvatarCrop",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "vagabondCharacterSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 5179780175214995434
+          }
+        },
+        {
+          "path_id": 8130699329130179743,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoBehaviour",
+          "name": "FactionSpriteData_TutorialPrompt_Backer",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "factionSprites",
+            "factionCosmeticSprites"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8423559073598086310
+          }
+        },
+        {
+          "path_id": 8803664485165851713,
+          "asset_file": "CAB-cda2f42def257e976ceb965f5bf6db2c",
+          "type": "MonoScript",
+          "name": "FactionColorData",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "FactionColorData",
+            "m_Namespace": "tuber.client.match.data",
+            "m_AssemblyName": "tuber-client"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "path_id": -6956108915455493247,
+          "name": "FactionSpriteData_CombatDetails_FactionHead",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/-6956108915455493247-FactionSpriteData_CombatDetails_FactionHead.json"
+        },
+        {
+          "path_id": -5842876101897228023,
+          "name": "FactionSpriteData_FactionHead",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/-5842876101897228023-FactionSpriteData_FactionHead.json"
+        },
+        {
+          "path_id": -5086043177740332375,
+          "name": "FactionSpriteData_FactionHeadBanned",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/-5086043177740332375-FactionSpriteData_FactionHeadBanned.json"
+        },
+        {
+          "path_id": -3931024592805730708,
+          "name": "FactionSpriteData_PatternBacker_Prompts",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/-3931024592805730708-FactionSpriteData_PatternBacker_Prompts.json"
+        },
+        {
+          "path_id": -1503717150473208228,
+          "name": "FactionSpriteData_AvatarCrop",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/-1503717150473208228-FactionSpriteData_AvatarCrop.json"
+        },
+        {
+          "path_id": -33513099400255682,
+          "name": "FactionSpriteData_TutorialEntry_Avatar",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/-33513099400255682-FactionSpriteData_TutorialEntry_Avatar.json"
+        },
+        {
+          "path_id": 55467522499038354,
+          "name": "FactionSpriteData_PatternBacker_128",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/55467522499038354-FactionSpriteData_PatternBacker_128.json"
+        },
+        {
+          "path_id": 3899610168537667219,
+          "name": "FactionSpriteData_PatternBacker_128_NoIcons",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/3899610168537667219-FactionSpriteData_PatternBacker_128_NoIcons.json"
+        },
+        {
+          "path_id": 4352311698291578502,
+          "name": "FactionSpriteData_PassAndPlayCurtain_Avatar",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/4352311698291578502-FactionSpriteData_PassAndPlayCurtain_Avatar.json"
+        },
+        {
+          "path_id": 8130699329130179743,
+          "name": "FactionSpriteData_TutorialPrompt_Backer",
+          "file": "trees/factiondata_assets_all_3f85b4b8d966eded49d49c5376f60a91/8130699329130179743-FactionSpriteData_TutorialPrompt_Backer.json"
+        }
+      ],
+      "errors": [],
+      "containers": [
+        {
+          "path": "Assets/GameAssets/FactionData/FactionColorData_GainVPFX.asset",
+          "path_id": -4485780396981306712
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionColorData_GameConfigPlayerSlot_FactionNameBacker.asset",
+          "path_id": -2457439517137887285
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionColorData_PassAndPlayCurtain_Border.asset",
+          "path_id": 150704904895089232
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionColorData_StandardBacker.asset",
+          "path_id": -1514343634975850419
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionColorData_StandardEdge.asset",
+          "path_id": -7886660930821603771
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionColorData_TutorialEntry_Backer.asset",
+          "path_id": -3592468652197437459
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_AvatarCrop.asset",
+          "path_id": -1503717150473208228
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_CombatDetails_FactionHead.asset",
+          "path_id": -6956108915455493247
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_FactionHead.asset",
+          "path_id": -5842876101897228023
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_FactionHeadBanned.asset",
+          "path_id": -5086043177740332375
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_PassAndPlayCurtain_Avatar.asset",
+          "path_id": 4352311698291578502
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_PatternBacker_128.asset",
+          "path_id": 55467522499038354
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_PatternBacker_128_NoIcons.asset",
+          "path_id": 3899610168537667219
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_PatternBacker_Prompts.asset",
+          "path_id": -3931024592805730708
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_TutorialEntry_Avatar.asset",
+          "path_id": -33513099400255682
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/FactionSpriteData_TutorialPrompt_Backer.asset",
+          "path_id": 8130699329130179743
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/VagabondCharacterSpriteData_AvatarCrop.asset",
+          "path_id": 7418616295482209626
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/VagabondCharacterSpriteData_PassAndPlayCurtain_Avatar.asset",
+          "path_id": -4629944292145050273
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/VagabotCharacterSpriteData_FactionSelectionPrompt_Avatar.asset",
+          "path_id": 1111707215648603137
+        },
+        {
+          "path": "Assets/GameAssets/FactionData/VagabotCharacterSpriteData_PassAndPlayCurtain_Avatar.asset",
+          "path_id": -4596494914985711309
+        }
+      ],
+      "object_counts": {
+        "MonoScript": 3,
+        "MonoBehaviour": 20,
+        "Sprite": 17,
+        "Texture2D": 17,
+        "AssetBundle": 1
+      }
+    },
+    {
+      "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/playmat_assets_all.bundle",
+      "sha256": "c27bff04981eadbad94d51441fabeeaa70a22fbac89399879d97f471dfa5b3c7",
+      "objects": [
+        {
+          "path_id": -9133896037874895418,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine"
+        },
+        {
+          "path_id": -9079980366943215668,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "tooltipPrefab",
+            "localizationKey",
+            "WarnIfEmpty"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 3945820374313880023
+          }
+        },
+        {
+          "path_id": -9049194195865448925,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TMP SubMeshUI [BaskervilleTenPro SDF Material + SourceHanSerifSC-Regular Atlas]"
+        },
+        {
+          "path_id": -9028955923101778659,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "PileFlavors",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "PileFlavors",
+            "m_Namespace": "tuber.client.prefabLookups",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -9022707954817927207,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": -9004120538761443829,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Pointer"
+        },
+        {
+          "path_id": -8951069084756316461,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "visibilityCollider"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 7914603524160512458
+          }
+        },
+        {
+          "path_id": -8820067455518030635,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Padding",
+            "m_ChildAlignment",
+            "m_Spacing",
+            "m_ChildForceExpandWidth",
+            "m_ChildForceExpandHeight",
+            "m_ChildControlWidth",
+            "m_ChildControlHeight",
+            "m_ChildScaleWidth",
+            "m_ChildScaleHeight",
+            "m_ReverseArrangement"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8091456346061954500
+          }
+        },
+        {
+          "path_id": -8688768900041648758,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "StrategicIcon"
+        },
+        {
+          "path_id": -8626655894395704998,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "MartialLawTooltip"
+        },
+        {
+          "path_id": -8397465484718944696,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "RuinsTooltipSource",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "RuinsTooltipSource",
+            "m_Namespace": "tuber.client.match.tooltips",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -8367649116070949885,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Scale_DottedLine_Snare"
+        },
+        {
+          "path_id": -8367622628573127243,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "ActiveValidationResolver",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "ActiveValidationResolver",
+            "m_Namespace": "validators",
+            "m_AssemblyName": "validators"
+          }
+        },
+        {
+          "path_id": -8223215139692762437,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Target"
+        },
+        {
+          "path_id": -8091456346061954500,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "HorizontalLayoutGroup",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "HorizontalLayoutGroup",
+            "m_Namespace": "UnityEngine.UI",
+            "m_AssemblyName": "UnityEngine.UI"
+          }
+        },
+        {
+          "path_id": -8061065799621265187,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon 3"
+        },
+        {
+          "path_id": -8056218397515941228,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine"
+        },
+        {
+          "path_id": -8018387255277051613,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Outrage"
+        },
+        {
+          "path_id": -7866647744273281899,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Backer"
+        },
+        {
+          "path_id": -7848525367194083035,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "GamepadTarget"
+        },
+        {
+          "path_id": -7825526989898358874,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "parameterName",
+            "minValue",
+            "maxValue"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 4474937435075221062
+          }
+        },
+        {
+          "path_id": -7825149521554167873,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -7792585190626022564,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -7646509600764003950,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "UnitView",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "UnitView",
+            "m_Namespace": "lotus",
+            "m_AssemblyName": "voodoo"
+          }
+        },
+        {
+          "path_id": -7625782446345886238,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -6252146680482108729
+          }
+        },
+        {
+          "path_id": -7601585799793114765,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Navigation",
+            "m_Transition",
+            "m_Colors",
+            "m_SpriteState",
+            "m_AnimationTriggers",
+            "m_Interactable",
+            "m_TargetGraphic"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 5369838926229419390
+          }
+        },
+        {
+          "path_id": -7587444652299753269,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "tooltipPrefab",
+            "localizationKey",
+            "WarnIfEmpty"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 3945820374313880023
+          }
+        },
+        {
+          "path_id": -7459805359470762085,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "InputModuleValidator",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "InputModuleValidator",
+            "m_Namespace": "validators",
+            "m_AssemblyName": "validators"
+          }
+        },
+        {
+          "path_id": -7381696325948023987,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "MartialLawTooltip"
+        },
+        {
+          "path_id": -7141402132507436551,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "lastSelectedPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 2629914726988611025
+          }
+        },
+        {
+          "path_id": -7132554884721107847,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "parameterName",
+            "minValue",
+            "maxValue"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8239040820698297284
+          }
+        },
+        {
+          "path_id": -7083437930602171320,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": -7039669904166990817,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine"
+        },
+        {
+          "path_id": -7030294877081058070,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_IgnoreLayout",
+            "m_MinWidth",
+            "m_MinHeight",
+            "m_PreferredWidth",
+            "m_PreferredHeight",
+            "m_FlexibleWidth",
+            "m_FlexibleHeight",
+            "m_LayoutPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 425168875757824589
+          }
+        },
+        {
+          "path_id": -6498563898459282664,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy",
+            "OnPositionRemoved"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7646509600764003950
+          }
+        },
+        {
+          "path_id": -6491218825153031461,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon 2"
+        },
+        {
+          "path_id": -6432420941257537973,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "P_Strat_RuinItemCount"
+        },
+        {
+          "path_id": -6363513622362885175,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "itemSpriteNames"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8397465484718944696
+          }
+        },
+        {
+          "path_id": -6361176474119842262,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "tooltipPrefab",
+            "localizationKey",
+            "WarnIfEmpty"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 3945820374313880023
+          }
+        },
+        {
+          "path_id": -6252146680482108729,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "AvailableSelectionValidator",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "AvailableSelectionValidator",
+            "m_Namespace": "tuber.client.match.validators",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -6194508664297879566,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "Click",
+            "StartDrag",
+            "StopDrag"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 1888235536735480216
+          }
+        },
+        {
+          "path_id": -6193567788419726487,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy",
+            "OnPositionRemoved"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7646509600764003950
+          }
+        },
+        {
+          "path_id": -6161530354065429887,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "offset"
+        },
+        {
+          "path_id": -6142922582339684569,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -6084570147804834993,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": -6019051006597177482,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Scale_DottedLine"
+        },
+        {
+          "path_id": -5611578190869170333,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Ruins"
+        },
+        {
+          "path_id": -5600566408019137393,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DescriptionContainer"
+        },
+        {
+          "path_id": -5590703621689733866,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Root"
+        },
+        {
+          "path_id": -5380466437605979070,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "PrefabByFlavorLoader",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "PrefabByFlavorLoader",
+            "m_Namespace": "dwd.core.prefabs.implementations.byflavor",
+            "m_AssemblyName": "core-canis"
+          }
+        },
+        {
+          "path_id": -5377406970452920682,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TMP SubMeshUI [BaskervilleTenPro SDF Material + SourceHanSerifSC-Regular Atlas]"
+        },
+        {
+          "path_id": -5191734808939626303,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine_Snare"
+        },
+        {
+          "path_id": -5041869201916244241,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -4986538069060427980,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "doScale",
+            "maxScale",
+            "strategicViewEnableHeight",
+            "strategicView"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -4860992240585017580
+          }
+        },
+        {
+          "path_id": -4905571540904761976,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "countText",
+            "stratIcon"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 1590950107994347758
+          }
+        },
+        {
+          "path_id": -4860992240585017580,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "ScaledBillboard",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "ScaledBillboard",
+            "m_Namespace": "tuber.client.match.render",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -4823962849205561495,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_text",
+            "m_isRightToLeft",
+            "m_fontAsset",
+            "m_sharedMaterial",
+            "m_fontSharedMaterials",
+            "m_fontMaterial",
+            "m_fontMaterials",
+            "m_fontColor32",
+            "m_fontColor",
+            "m_enableVertexGradient",
+            "m_colorMode",
+            "m_fontColorGradient",
+            "m_fontColorGradientPreset",
+            "m_spriteAsset",
+            "m_tintAllSprites",
+            "m_StyleSheet",
+            "m_TextStyleHashCode",
+            "m_overrideHtmlColors",
+            "m_faceColor",
+            "m_fontSize",
+            "m_fontSizeBase",
+            "m_fontWeight",
+            "m_enableAutoSizing",
+            "m_fontSizeMin",
+            "m_fontSizeMax",
+            "m_fontStyle",
+            "m_HorizontalAlignment",
+            "m_VerticalAlignment",
+            "m_textAlignment",
+            "m_characterSpacing",
+            "m_wordSpacing",
+            "m_lineSpacing",
+            "m_lineSpacingMax",
+            "m_paragraphSpacing",
+            "m_charWidthMaxAdj",
+            "m_enableWordWrapping",
+            "m_wordWrappingRatios",
+            "m_overflowMode",
+            "m_linkedTextComponent",
+            "parentLinkedComponent",
+            "m_enableKerning",
+            "m_enableExtraPadding",
+            "checkPaddingRequired",
+            "m_isRichText",
+            "m_parseCtrlCharacters",
+            "m_isOrthographic",
+            "m_isCullingEnabled",
+            "m_horizontalMapping",
+            "m_verticalMapping",
+            "m_uvLineOffset",
+            "m_geometrySortingOrder",
+            "m_IsTextObjectScaleStatic",
+            "m_VertexBufferAutoSizeReduction",
+            "m_useMaxVisibleDescender",
+            "m_pageToDisplay",
+            "m_margin",
+            "m_isUsingLegacyAnimationComponent",
+            "m_isVolumetricText",
+            "m_hasFontAssetChanged",
+            "m_baseMaterial",
+            "m_maskOffset"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -5755350681981302373
+          }
+        },
+        {
+          "path_id": -4733718027819102191,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "M_Chr_Sword01"
+        },
+        {
+          "path_id": -4671640951145532387,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "M_Chr_Shield01"
+        },
+        {
+          "path_id": -4579527144531398683,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "StrategicIcon"
+        },
+        {
+          "path_id": -4537475167218934097,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine"
+        },
+        {
+          "path_id": -4393198603655016152,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "parameterName",
+            "minValue",
+            "maxValue"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 4474937435075221062
+          }
+        },
+        {
+          "path_id": -4388815045479204559,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "tooltipPrefab",
+            "localizationKey",
+            "WarnIfEmpty"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 3945820374313880023
+          }
+        },
+        {
+          "path_id": -4219964765674452560,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy",
+            "OnPositionRemoved"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7646509600764003950
+          }
+        },
+        {
+          "path_id": -4151544587065986065,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -9028955923101778659
+          }
+        },
+        {
+          "path_id": -4016665026837610194,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_HorizontalFit",
+            "m_VerticalFit"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": -5392852106782294089
+          }
+        },
+        {
+          "path_id": -4009821202245901988,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TransformableMozView"
+        },
+        {
+          "path_id": -3993269132017204796,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -9028955923101778659
+          }
+        },
+        {
+          "path_id": -3942485150179783699,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -9028955923101778659
+          }
+        },
+        {
+          "path_id": -3619300872895562699,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -3551471191982668816,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "PrefabByFlavorLookup",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "PrefabByFlavorLookup",
+            "m_Namespace": "dwd.core.prefabs.implementations.byflavor",
+            "m_AssemblyName": "core-canis"
+          }
+        },
+        {
+          "path_id": -3521707454186047270,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "BattleCasualtiesLookup",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "defaultPathRoot",
+            "folder",
+            "simplifyNames",
+            "entries"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -3551471191982668816
+          }
+        },
+        {
+          "path_id": -3261462753017818346,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Container"
+        },
+        {
+          "path_id": -3230872865521951608,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "resolveOn",
+            "validatable",
+            "validatableGameObjects"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8367622628573127243
+          }
+        },
+        {
+          "path_id": -3210814807493294270,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "container"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -1610095611848557203
+          }
+        },
+        {
+          "path_id": -3202151364252147709,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "PlatformAdjustments"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": -3038145867651520103
+          }
+        },
+        {
+          "path_id": -3040155119282394055,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "SelectedObjectValidator",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "SelectedObjectValidator",
+            "m_Namespace": "validators",
+            "m_AssemblyName": "validators"
+          }
+        },
+        {
+          "path_id": -2991937099216758457,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "warnOnLookupFailure",
+            "byFlavorLookup"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -5380466437605979070
+          }
+        },
+        {
+          "path_id": -2937520590560100493,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "doScale",
+            "maxScale",
+            "strategicViewEnableHeight",
+            "strategicView"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -4860992240585017580
+          }
+        },
+        {
+          "path_id": -2844763070549351488,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 57775885495252318
+          }
+        },
+        {
+          "path_id": -2670555384015389763,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -2645701494090761018,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "TuberHinter",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "TuberHinter",
+            "m_Namespace": "tuber.client.input",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -2599788750650607632,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "MartialLaw"
+        },
+        {
+          "path_id": -2549650182726118783,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon 2"
+        },
+        {
+          "path_id": -2524718288240925912,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "animator",
+            "mouseoverName"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 9008425757484838556
+          }
+        },
+        {
+          "path_id": -2394457852951246101,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_IgnoreLayout",
+            "m_MinWidth",
+            "m_MinHeight",
+            "m_PreferredWidth",
+            "m_PreferredHeight",
+            "m_FlexibleWidth",
+            "m_FlexibleHeight",
+            "m_LayoutPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 425168875757824589
+          }
+        },
+        {
+          "path_id": -2345680855989243608,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_IgnoreLayout",
+            "m_MinWidth",
+            "m_MinHeight",
+            "m_PreferredWidth",
+            "m_PreferredHeight",
+            "m_FlexibleWidth",
+            "m_FlexibleHeight",
+            "m_LayoutPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 425168875757824589
+          }
+        },
+        {
+          "path_id": -2217754250082634531,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DescriptionContainer"
+        },
+        {
+          "path_id": -2200089993518802161,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "UnitPrefabLookup",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "defaultPathRoot",
+            "folder",
+            "simplifyNames",
+            "entries"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -3551471191982668816
+          }
+        },
+        {
+          "path_id": -2134379138996455515,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Count"
+        },
+        {
+          "path_id": -1905780149197534420,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "AllowSelectionWhenNoninteractable",
+            "SourceSelectionCenter",
+            "NavigateLeft",
+            "NavigateRight",
+            "NavigateUp",
+            "NavigateDown"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 2547509757007336061
+          }
+        },
+        {
+          "path_id": -1875021729210885283,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -3040155119282394055
+          }
+        },
+        {
+          "path_id": -1637242383236939887,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -1610095611848557203,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "TransformableUnitView",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "TransformableUnitView",
+            "m_Namespace": "tuber.client.match.behaviours",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -1551622092849430364,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "hintAnimator",
+            "hintLinkedCollider",
+            "useReferencedEntityID"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -2645701494090761018
+          }
+        },
+        {
+          "path_id": -1162505025230353289,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "OutrageTooltip"
+        },
+        {
+          "path_id": -1085824266263841458,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "InitialSelectionFilteredPriority",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "InitialSelectionFilteredPriority",
+            "m_Namespace": "tuber.client.input",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": -748268852379382573,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -9028955923101778659
+          }
+        },
+        {
+          "path_id": -473273551047580571,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TransformableBuilding"
+        },
+        {
+          "path_id": -371981338130049154,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -146372962394559941,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "P_ui_SmallHint"
+        },
+        {
+          "path_id": -117218895956997580,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": -99240525225298531,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Strategic Icon Root"
+        },
+        {
+          "path_id": 39734274369166288,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 57775885495252318,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "PlaymatPhysicsInputSubmitHandler",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "PlaymatPhysicsInputSubmitHandler",
+            "m_Namespace": "tuber.client.input",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 110653419686707576,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_HorizontalFit",
+            "m_VerticalFit"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": -5392852106782294089
+          }
+        },
+        {
+          "path_id": 161498894785219753,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "iconPrefab",
+            "showOutsideStrategicView",
+            "showInStrategicView",
+            "sortOrder",
+            "doScale",
+            "maxScale"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8992057535457455970
+          }
+        },
+        {
+          "path_id": 172548083651971720,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "G_bldg_GenWindow"
+        },
+        {
+          "path_id": 212119322976594430,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Circle2D"
+        },
+        {
+          "path_id": 291382170433752190,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostCanvas"
+        },
+        {
+          "path_id": 425168875757824589,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "LayoutElement",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "LayoutElement",
+            "m_Namespace": "UnityEngine.UI",
+            "m_AssemblyName": "UnityEngine.UI"
+          }
+        },
+        {
+          "path_id": 444852130916629162,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon 4"
+        },
+        {
+          "path_id": 453610801470553966,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostCanvas"
+        },
+        {
+          "path_id": 454869228525152829,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "GamepadSelectableSmall"
+        },
+        {
+          "path_id": 475354565042976671,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": 550406160618712609,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Scale_DottedLine_Snare"
+        },
+        {
+          "path_id": 558575683910633468,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 573974113393512230,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "inputModuleType"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7459805359470762085
+          }
+        },
+        {
+          "path_id": 601891663488631188,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "image",
+            "alpha"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 7317094969351864491
+          }
+        },
+        {
+          "path_id": 604215148113486421,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "locKey"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": 7054336648845644862
+          }
+        },
+        {
+          "path_id": 658494001527538843,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "container"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -1610095611848557203
+          }
+        },
+        {
+          "path_id": 703407955212011396,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy",
+            "OnPositionRemoved"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7646509600764003950
+          }
+        },
+        {
+          "path_id": 708750419844053627,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Count Strategic Icon Root"
+        },
+        {
+          "path_id": 743185729145247528,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 918462259361937869,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "BuildingRuin"
+        },
+        {
+          "path_id": 943378303319973216,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "P_Strat_Ruin"
+        },
+        {
+          "path_id": 1167370544297313263,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "hintAnimator",
+            "hintLinkedCollider",
+            "useReferencedEntityID"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -2645701494090761018
+          }
+        },
+        {
+          "path_id": 1292596589758094846,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "parameterName",
+            "minValue",
+            "maxValue"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8239040820698297284
+          }
+        },
+        {
+          "path_id": 1354512886440734497,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "locKey"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": 7054336648845644862
+          }
+        },
+        {
+          "path_id": 1411110011880553044,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "P_ui_SmallHint"
+        },
+        {
+          "path_id": 1439234165842963449,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Outrage"
+        },
+        {
+          "path_id": 1502150167100489074,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy",
+            "OnPositionRemoved"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7646509600764003950
+          }
+        },
+        {
+          "path_id": 1590950107994347758,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "RuinItemCountRenderer",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "RuinItemCountRenderer",
+            "m_Namespace": "tuber.client.dataRenderers",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 1638912655070076005,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "SelectableValidationResolver",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "SelectableValidationResolver",
+            "m_Namespace": "validators",
+            "m_AssemblyName": "validators"
+          }
+        },
+        {
+          "path_id": 1765642835181494548,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 1888235536735480216,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "ZenClickEventPlaySound",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "ZenClickEventPlaySound",
+            "m_Namespace": "zen.src.audio",
+            "m_AssemblyName": "audio"
+          }
+        },
+        {
+          "path_id": 1900377569003909117,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "EntityFXLocator",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "EntityFXLocator",
+            "m_Namespace": "lib.src.match.voodoo.kabbage",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 1904023318408073339,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "CardSubviewsLookup",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "defaultPathRoot",
+            "folder",
+            "simplifyNames",
+            "entries"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -3551471191982668816
+          }
+        },
+        {
+          "path_id": 1958352208748544246,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "InitialSelectionHighlightedPriority",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "InitialSelectionHighlightedPriority",
+            "m_Namespace": "tuber.client.input",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 2167812317235059946,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "parameterName",
+            "minValue",
+            "maxValue"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 4474937435075221062
+          }
+        },
+        {
+          "path_id": 2473997809663990081,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "G_bldg_Lantern"
+        },
+        {
+          "path_id": 2547509757007336061,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "AdvancedSelectableNavigation",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "AdvancedSelectableNavigation",
+            "m_Namespace": "dwd.core.input.ui.selectable.advancedNavigation",
+            "m_AssemblyName": "core-input"
+          }
+        },
+        {
+          "path_id": 2601640517737170447,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 2610702446226062212,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Backer"
+        },
+        {
+          "path_id": 2623913435126597357,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 2629914726988611025,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "InitialSelectionLastSelectedPriority",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "InitialSelectionLastSelectedPriority",
+            "m_Namespace": "tuber.client.input",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 2931714018318538837,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 3004333711361558950,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Description"
+        },
+        {
+          "path_id": 3118234585595083509,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostContainer"
+        },
+        {
+          "path_id": 3264948651380937914,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "PlatformAdjustments"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": -3038145867651520103
+          }
+        },
+        {
+          "path_id": 3398023604889458625,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "animator",
+            "mapColorPairs"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 7704913397815434644
+          }
+        },
+        {
+          "path_id": 3423942832397551002,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "inAvailableSelectionPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 1958352208748544246
+          }
+        },
+        {
+          "path_id": 3468075317434369095,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_text",
+            "m_isRightToLeft",
+            "m_fontAsset",
+            "m_sharedMaterial",
+            "m_fontSharedMaterials",
+            "m_fontMaterial",
+            "m_fontMaterials",
+            "m_fontColor32",
+            "m_fontColor",
+            "m_enableVertexGradient",
+            "m_colorMode",
+            "m_fontColorGradient",
+            "m_fontColorGradientPreset",
+            "m_spriteAsset",
+            "m_tintAllSprites",
+            "m_StyleSheet",
+            "m_TextStyleHashCode",
+            "m_overrideHtmlColors",
+            "m_faceColor",
+            "m_fontSize",
+            "m_fontSizeBase",
+            "m_fontWeight",
+            "m_enableAutoSizing",
+            "m_fontSizeMin",
+            "m_fontSizeMax",
+            "m_fontStyle",
+            "m_HorizontalAlignment",
+            "m_VerticalAlignment",
+            "m_textAlignment",
+            "m_characterSpacing",
+            "m_wordSpacing",
+            "m_lineSpacing",
+            "m_lineSpacingMax",
+            "m_paragraphSpacing",
+            "m_charWidthMaxAdj",
+            "m_enableWordWrapping",
+            "m_wordWrappingRatios",
+            "m_overflowMode",
+            "m_linkedTextComponent",
+            "parentLinkedComponent",
+            "m_enableKerning",
+            "m_enableExtraPadding",
+            "checkPaddingRequired",
+            "m_isRichText",
+            "m_parseCtrlCharacters",
+            "m_isOrthographic",
+            "m_isCullingEnabled",
+            "m_horizontalMapping",
+            "m_verticalMapping",
+            "m_uvLineOffset",
+            "m_geometrySortingOrder",
+            "m_IsTextObjectScaleStatic",
+            "m_VertexBufferAutoSizeReduction",
+            "m_useMaxVisibleDescender",
+            "m_pageToDisplay",
+            "m_margin",
+            "m_isUsingLegacyAnimationComponent",
+            "m_isVolumetricText",
+            "m_hasFontAssetChanged",
+            "m_baseMaterial",
+            "m_maskOffset"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -5755350681981302373
+          }
+        },
+        {
+          "path_id": 3474222918131711990,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8623993299323281714
+          }
+        },
+        {
+          "path_id": 3661964318984809640,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": 3730737561787867601,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 3733966026942487388,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine_Snare"
+        },
+        {
+          "path_id": 3783915077183938172,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "ChestTop"
+        },
+        {
+          "path_id": 3844856158703428653,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "warnOnLookupFailure",
+            "byFlavorLookup"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -5380466437605979070
+          }
+        },
+        {
+          "path_id": 3907238497482369730,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_text",
+            "m_isRightToLeft",
+            "m_fontAsset",
+            "m_sharedMaterial",
+            "m_fontSharedMaterials",
+            "m_fontMaterial",
+            "m_fontMaterials",
+            "m_fontColor32",
+            "m_fontColor",
+            "m_enableVertexGradient",
+            "m_colorMode",
+            "m_fontColorGradient",
+            "m_fontColorGradientPreset",
+            "m_spriteAsset",
+            "m_tintAllSprites",
+            "m_StyleSheet",
+            "m_TextStyleHashCode",
+            "m_overrideHtmlColors",
+            "m_faceColor",
+            "m_fontSize",
+            "m_fontSizeBase",
+            "m_fontWeight",
+            "m_enableAutoSizing",
+            "m_fontSizeMin",
+            "m_fontSizeMax",
+            "m_fontStyle",
+            "m_HorizontalAlignment",
+            "m_VerticalAlignment",
+            "m_textAlignment",
+            "m_characterSpacing",
+            "m_wordSpacing",
+            "m_lineSpacing",
+            "m_lineSpacingMax",
+            "m_paragraphSpacing",
+            "m_charWidthMaxAdj",
+            "m_enableWordWrapping",
+            "m_wordWrappingRatios",
+            "m_overflowMode",
+            "m_linkedTextComponent",
+            "parentLinkedComponent",
+            "m_enableKerning",
+            "m_enableExtraPadding",
+            "checkPaddingRequired",
+            "m_isRichText",
+            "m_parseCtrlCharacters",
+            "m_isOrthographic",
+            "m_isCullingEnabled",
+            "m_horizontalMapping",
+            "m_verticalMapping",
+            "m_uvLineOffset",
+            "m_geometrySortingOrder",
+            "m_IsTextObjectScaleStatic",
+            "m_VertexBufferAutoSizeReduction",
+            "m_useMaxVisibleDescender",
+            "m_pageToDisplay",
+            "m_margin",
+            "m_isUsingLegacyAnimationComponent",
+            "m_isVolumetricText",
+            "m_hasFontAssetChanged",
+            "m_baseMaterial",
+            "m_maskOffset"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -5755350681981302373
+          }
+        },
+        {
+          "path_id": 3945820374313880023,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "TuberTooltip",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "TuberTooltip",
+            "m_Namespace": "tuber.client.moz",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 3987386054620755415,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "warnOnLookupFailure",
+            "byFlavorLookup"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -5380466437605979070
+          }
+        },
+        {
+          "path_id": 4045659194057404761,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TutorialDoinker"
+        },
+        {
+          "path_id": 4164302979531679695,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 5470922004244885755
+          }
+        },
+        {
+          "path_id": 4414333126173827110,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine_Snare"
+        },
+        {
+          "path_id": 4474937435075221062,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "RandomStateSpeed",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "RandomStateSpeed",
+            "m_Namespace": "lib.src.animation",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 4521465888837484633,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Description"
+        },
+        {
+          "path_id": 4540934097811854415,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "kabbageAnchors",
+            "fxAnimators"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 1900377569003909117
+          }
+        },
+        {
+          "path_id": 4681337697219988178,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 4737709894775115782,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Padding",
+            "m_ChildAlignment",
+            "m_Spacing",
+            "m_ChildForceExpandWidth",
+            "m_ChildForceExpandHeight",
+            "m_ChildControlWidth",
+            "m_ChildControlHeight",
+            "m_ChildScaleWidth",
+            "m_ChildScaleHeight",
+            "m_ReverseArrangement"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -8091456346061954500
+          }
+        },
+        {
+          "path_id": 4741062821985339896,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon 4"
+        },
+        {
+          "path_id": 4965438474273035218,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "CardMozViewsLookup",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "defaultPathRoot",
+            "folder",
+            "simplifyNames",
+            "entries"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -3551471191982668816
+          }
+        },
+        {
+          "path_id": 4969032738646993922,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "sounds",
+            "conditionallySkipMatchStartAudio"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": 9165481456145500156
+          }
+        },
+        {
+          "path_id": 5055040246102629919,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine"
+        },
+        {
+          "path_id": 5097829020116951112,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon"
+        },
+        {
+          "path_id": 5104707505455892478,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "G_env_ShadowPlane"
+        },
+        {
+          "path_id": 5140976191074492254,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Ruins_Lo1"
+        },
+        {
+          "path_id": 5141509638579162610,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon"
+        },
+        {
+          "path_id": 5201664827350822501,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "container"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -1610095611848557203
+          }
+        },
+        {
+          "path_id": 5369838926229419390,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "Selectable",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "Selectable",
+            "m_Namespace": "UnityEngine.UI",
+            "m_AssemblyName": "UnityEngine.UI"
+          }
+        },
+        {
+          "path_id": 5470922004244885755,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "EntityView",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "EntityView",
+            "m_Namespace": "lotus",
+            "m_AssemblyName": "voodoo"
+          }
+        },
+        {
+          "path_id": 5485673830359803020,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "logging",
+            "initStrategy",
+            "OnPositionRemoved"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -7646509600764003950
+          }
+        },
+        {
+          "path_id": 5502086609493639707,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "iconPrefab",
+            "showOutsideStrategicView",
+            "showInStrategicView",
+            "sortOrder",
+            "doScale",
+            "maxScale"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8992057535457455970
+          }
+        },
+        {
+          "path_id": 5550123535121875574,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "OutrageTooltip"
+        },
+        {
+          "path_id": 5585525360585836794,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "tooltipPrefab",
+            "localizationKey",
+            "WarnIfEmpty"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 3945820374313880023
+          }
+        },
+        {
+          "path_id": 5604124297842210098,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_IgnoreLayout",
+            "m_MinWidth",
+            "m_MinHeight",
+            "m_PreferredWidth",
+            "m_PreferredHeight",
+            "m_FlexibleWidth",
+            "m_FlexibleHeight",
+            "m_LayoutPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 425168875757824589
+          }
+        },
+        {
+          "path_id": 5680345386405817342,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "PointerB"
+        },
+        {
+          "path_id": 6027484589114320363,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostIcon 3"
+        },
+        {
+          "path_id": 6066117653179191749,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "PlatformAdjustments"
+          ],
+          "script_ref": {
+            "m_FileID": 2,
+            "m_PathID": -3038145867651520103
+          }
+        },
+        {
+          "path_id": 6406895543264643948,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 6604561096652605514,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "resolveOn",
+            "validatable"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 1638912655070076005
+          }
+        },
+        {
+          "path_id": 6643389942787151268,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "PoolableItem",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "PoolableItem",
+            "m_Namespace": "lotus",
+            "m_AssemblyName": "voodoo"
+          }
+        },
+        {
+          "path_id": 6688907654779639392,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Quad"
+        },
+        {
+          "path_id": 6711851222120522500,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "container"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -1610095611848557203
+          }
+        },
+        {
+          "path_id": 6844793683635280577,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 6856152639914337147,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 6894782645990481510,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "inFilterPriority"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -1085824266263841458
+          }
+        },
+        {
+          "path_id": 6897986373116277365,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "tooltipPrefab",
+            "localizationKey",
+            "WarnIfEmpty"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 3945820374313880023
+          }
+        },
+        {
+          "path_id": 7026542318943366979,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": 7317094969351864491,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "SetImageAlphaOnDisable",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "SetImageAlphaOnDisable",
+            "m_Namespace": "lib.src.animation",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 7333347249059552402,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8623993299323281714
+          }
+        },
+        {
+          "path_id": 7364429139656831846,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 7438369829697523925,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8623993299323281714
+          }
+        },
+        {
+          "path_id": 7704913397815434644,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "MapTypeAnimator",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "MapTypeAnimator",
+            "m_Namespace": "lib.src.match.dataRenderers",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 7745845832700730864,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "SelectableEnableResolver"
+        },
+        {
+          "path_id": 7772261466195906363,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "MartialLaw"
+        },
+        {
+          "path_id": 7787530216229330170,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TransformableWarrior"
+        },
+        {
+          "path_id": 7842438369055538685,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Chest"
+        },
+        {
+          "path_id": 7904342230105084618,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 6643389942787151268
+          }
+        },
+        {
+          "path_id": 7914603524160512458,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "OnScreenValidator",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "OnScreenValidator",
+            "m_Namespace": "validators",
+            "m_AssemblyName": "validators"
+          }
+        },
+        {
+          "path_id": 7968920053393111845,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "DottedLine_Snare"
+        },
+        {
+          "path_id": 8097902595142673029,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "ItemAnchor"
+        },
+        {
+          "path_id": 8118205847996570300,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "metadata"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 8623993299323281714
+          }
+        },
+        {
+          "path_id": 8128827249149723521,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 8135558240524900906,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "Scale_DottedLine"
+        },
+        {
+          "path_id": 8239040820698297284,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "RandomStateTransition",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "RandomStateTransition",
+            "m_Namespace": "tuber.client.animation",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 8600781390119958100,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 8623993299323281714,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "PrefabByFlavorMetadata",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "PrefabByFlavorMetadata",
+            "m_Namespace": "dwd.core.prefabs.implementations.byflavor",
+            "m_AssemblyName": "core-canis"
+          }
+        },
+        {
+          "path_id": 8829693393095239464,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "warnOnLookupFailure",
+            "byFlavorLookup"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -5380466437605979070
+          }
+        },
+        {
+          "path_id": 8832381365461347344,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 8838484936000152027,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "PointerT"
+        },
+        {
+          "path_id": 8874796502664444590,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "AbilityButtonLookup",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "defaultPathRoot",
+            "folder",
+            "simplifyNames",
+            "entries"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": -3551471191982668816
+          }
+        },
+        {
+          "path_id": 8913998332696110759,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 8914699717836525045,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "animator",
+            "mouseoverName"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 9008425757484838556
+          }
+        },
+        {
+          "path_id": 8918899708558340362,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "animator",
+            "mapColorPairs"
+          ],
+          "script_ref": {
+            "m_FileID": 0,
+            "m_PathID": 7704913397815434644
+          }
+        },
+        {
+          "path_id": 8992057535457455970,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "StrategicViewElement",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "StrategicViewElement",
+            "m_Namespace": "tuber.client.match.render",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 8999853616897583827,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoBehaviour",
+          "name": "",
+          "keys": [
+            "m_GameObject",
+            "m_Enabled",
+            "m_Script",
+            "m_Name",
+            "m_Material",
+            "m_Color",
+            "m_RaycastTarget",
+            "m_RaycastPadding",
+            "m_Maskable",
+            "m_OnCullStateChanged",
+            "m_Sprite",
+            "m_Type",
+            "m_PreserveAspect",
+            "m_FillCenter",
+            "m_FillMethod",
+            "m_FillAmount",
+            "m_FillClockwise",
+            "m_FillOrigin",
+            "m_UseSpriteMesh",
+            "m_PixelsPerUnitMultiplier"
+          ],
+          "script_ref": {
+            "m_FileID": 1,
+            "m_PathID": -7030229213176759517
+          }
+        },
+        {
+          "path_id": 9008425757484838556,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "MonoScript",
+          "name": "HinterMoz",
+          "keys": [
+            "m_Name",
+            "m_ExecutionOrder",
+            "m_PropertiesHash",
+            "m_ClassName",
+            "m_Namespace",
+            "m_AssemblyName"
+          ],
+          "script": {
+            "m_ClassName": "HinterMoz",
+            "m_Namespace": "tuber.client.moz",
+            "m_AssemblyName": "tuber-client"
+          }
+        },
+        {
+          "path_id": 9109526437909751839,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "TransformablePawn"
+        },
+        {
+          "path_id": 9169996742563981338,
+          "asset_file": "CAB-8279b31771d7f5e6d3e2d8186758a380",
+          "type": "GameObject",
+          "name": "CostContainer"
+        }
+      ],
+      "exports": [
+        {
+          "path_id": -9079980366943215668,
+          "name": "",
+          "file": "trees/playmat_assets_all/-9079980366943215668-.json"
+        },
+        {
+          "path_id": -8820067455518030635,
+          "name": "",
+          "file": "trees/playmat_assets_all/-8820067455518030635-.json"
+        },
+        {
+          "path_id": -7825526989898358874,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7825526989898358874-.json"
+        },
+        {
+          "path_id": -7825149521554167873,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7825149521554167873-.json"
+        },
+        {
+          "path_id": -7792585190626022564,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7792585190626022564-.json"
+        },
+        {
+          "path_id": -7601585799793114765,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7601585799793114765-.json"
+        },
+        {
+          "path_id": -7587444652299753269,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7587444652299753269-.json"
+        },
+        {
+          "path_id": -7132554884721107847,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7132554884721107847-.json"
+        },
+        {
+          "path_id": -7030294877081058070,
+          "name": "",
+          "file": "trees/playmat_assets_all/-7030294877081058070-.json"
+        },
+        {
+          "path_id": -6498563898459282664,
+          "name": "",
+          "file": "trees/playmat_assets_all/-6498563898459282664-.json"
+        },
+        {
+          "path_id": -6361176474119842262,
+          "name": "",
+          "file": "trees/playmat_assets_all/-6361176474119842262-.json"
+        },
+        {
+          "path_id": -6194508664297879566,
+          "name": "",
+          "file": "trees/playmat_assets_all/-6194508664297879566-.json"
+        },
+        {
+          "path_id": -6193567788419726487,
+          "name": "",
+          "file": "trees/playmat_assets_all/-6193567788419726487-.json"
+        },
+        {
+          "path_id": -6142922582339684569,
+          "name": "",
+          "file": "trees/playmat_assets_all/-6142922582339684569-.json"
+        },
+        {
+          "path_id": -5041869201916244241,
+          "name": "",
+          "file": "trees/playmat_assets_all/-5041869201916244241-.json"
+        },
+        {
+          "path_id": -4986538069060427980,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4986538069060427980-.json"
+        },
+        {
+          "path_id": -4905571540904761976,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4905571540904761976-.json"
+        },
+        {
+          "path_id": -4823962849205561495,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4823962849205561495-.json"
+        },
+        {
+          "path_id": -4393198603655016152,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4393198603655016152-.json"
+        },
+        {
+          "path_id": -4388815045479204559,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4388815045479204559-.json"
+        },
+        {
+          "path_id": -4219964765674452560,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4219964765674452560-.json"
+        },
+        {
+          "path_id": -4016665026837610194,
+          "name": "",
+          "file": "trees/playmat_assets_all/-4016665026837610194-.json"
+        },
+        {
+          "path_id": -3619300872895562699,
+          "name": "",
+          "file": "trees/playmat_assets_all/-3619300872895562699-.json"
+        },
+        {
+          "path_id": -3521707454186047270,
+          "name": "BattleCasualtiesLookup",
+          "file": "trees/playmat_assets_all/-3521707454186047270-BattleCasualtiesLookup.json"
+        },
+        {
+          "path_id": -3230872865521951608,
+          "name": "",
+          "file": "trees/playmat_assets_all/-3230872865521951608-.json"
+        },
+        {
+          "path_id": -2991937099216758457,
+          "name": "",
+          "file": "trees/playmat_assets_all/-2991937099216758457-.json"
+        },
+        {
+          "path_id": -2937520590560100493,
+          "name": "",
+          "file": "trees/playmat_assets_all/-2937520590560100493-.json"
+        },
+        {
+          "path_id": -2670555384015389763,
+          "name": "",
+          "file": "trees/playmat_assets_all/-2670555384015389763-.json"
+        },
+        {
+          "path_id": -2524718288240925912,
+          "name": "",
+          "file": "trees/playmat_assets_all/-2524718288240925912-.json"
+        },
+        {
+          "path_id": -2394457852951246101,
+          "name": "",
+          "file": "trees/playmat_assets_all/-2394457852951246101-.json"
+        },
+        {
+          "path_id": -2345680855989243608,
+          "name": "",
+          "file": "trees/playmat_assets_all/-2345680855989243608-.json"
+        },
+        {
+          "path_id": -2200089993518802161,
+          "name": "UnitPrefabLookup",
+          "file": "trees/playmat_assets_all/-2200089993518802161-UnitPrefabLookup.json"
+        },
+        {
+          "path_id": -1905780149197534420,
+          "name": "",
+          "file": "trees/playmat_assets_all/-1905780149197534420-.json"
+        },
+        {
+          "path_id": -1637242383236939887,
+          "name": "",
+          "file": "trees/playmat_assets_all/-1637242383236939887-.json"
+        },
+        {
+          "path_id": -1551622092849430364,
+          "name": "",
+          "file": "trees/playmat_assets_all/-1551622092849430364-.json"
+        },
+        {
+          "path_id": -371981338130049154,
+          "name": "",
+          "file": "trees/playmat_assets_all/-371981338130049154-.json"
+        },
+        {
+          "path_id": -117218895956997580,
+          "name": "",
+          "file": "trees/playmat_assets_all/-117218895956997580-.json"
+        },
+        {
+          "path_id": 39734274369166288,
+          "name": "",
+          "file": "trees/playmat_assets_all/39734274369166288-.json"
+        },
+        {
+          "path_id": 110653419686707576,
+          "name": "",
+          "file": "trees/playmat_assets_all/110653419686707576-.json"
+        },
+        {
+          "path_id": 161498894785219753,
+          "name": "",
+          "file": "trees/playmat_assets_all/161498894785219753-.json"
+        },
+        {
+          "path_id": 558575683910633468,
+          "name": "",
+          "file": "trees/playmat_assets_all/558575683910633468-.json"
+        },
+        {
+          "path_id": 601891663488631188,
+          "name": "",
+          "file": "trees/playmat_assets_all/601891663488631188-.json"
+        },
+        {
+          "path_id": 703407955212011396,
+          "name": "",
+          "file": "trees/playmat_assets_all/703407955212011396-.json"
+        },
+        {
+          "path_id": 743185729145247528,
+          "name": "",
+          "file": "trees/playmat_assets_all/743185729145247528-.json"
+        },
+        {
+          "path_id": 1167370544297313263,
+          "name": "",
+          "file": "trees/playmat_assets_all/1167370544297313263-.json"
+        },
+        {
+          "path_id": 1292596589758094846,
+          "name": "",
+          "file": "trees/playmat_assets_all/1292596589758094846-.json"
+        },
+        {
+          "path_id": 1502150167100489074,
+          "name": "",
+          "file": "trees/playmat_assets_all/1502150167100489074-.json"
+        },
+        {
+          "path_id": 1765642835181494548,
+          "name": "",
+          "file": "trees/playmat_assets_all/1765642835181494548-.json"
+        },
+        {
+          "path_id": 1904023318408073339,
+          "name": "CardSubviewsLookup",
+          "file": "trees/playmat_assets_all/1904023318408073339-CardSubviewsLookup.json"
+        },
+        {
+          "path_id": 2167812317235059946,
+          "name": "",
+          "file": "trees/playmat_assets_all/2167812317235059946-.json"
+        },
+        {
+          "path_id": 2601640517737170447,
+          "name": "",
+          "file": "trees/playmat_assets_all/2601640517737170447-.json"
+        },
+        {
+          "path_id": 2623913435126597357,
+          "name": "",
+          "file": "trees/playmat_assets_all/2623913435126597357-.json"
+        },
+        {
+          "path_id": 2931714018318538837,
+          "name": "",
+          "file": "trees/playmat_assets_all/2931714018318538837-.json"
+        },
+        {
+          "path_id": 3398023604889458625,
+          "name": "",
+          "file": "trees/playmat_assets_all/3398023604889458625-.json"
+        },
+        {
+          "path_id": 3468075317434369095,
+          "name": "",
+          "file": "trees/playmat_assets_all/3468075317434369095-.json"
+        },
+        {
+          "path_id": 3730737561787867601,
+          "name": "",
+          "file": "trees/playmat_assets_all/3730737561787867601-.json"
+        },
+        {
+          "path_id": 3844856158703428653,
+          "name": "",
+          "file": "trees/playmat_assets_all/3844856158703428653-.json"
+        },
+        {
+          "path_id": 3907238497482369730,
+          "name": "",
+          "file": "trees/playmat_assets_all/3907238497482369730-.json"
+        },
+        {
+          "path_id": 3987386054620755415,
+          "name": "",
+          "file": "trees/playmat_assets_all/3987386054620755415-.json"
+        },
+        {
+          "path_id": 4164302979531679695,
+          "name": "",
+          "file": "trees/playmat_assets_all/4164302979531679695-.json"
+        },
+        {
+          "path_id": 4540934097811854415,
+          "name": "",
+          "file": "trees/playmat_assets_all/4540934097811854415-.json"
+        },
+        {
+          "path_id": 4681337697219988178,
+          "name": "",
+          "file": "trees/playmat_assets_all/4681337697219988178-.json"
+        },
+        {
+          "path_id": 4737709894775115782,
+          "name": "",
+          "file": "trees/playmat_assets_all/4737709894775115782-.json"
+        },
+        {
+          "path_id": 4965438474273035218,
+          "name": "CardMozViewsLookup",
+          "file": "trees/playmat_assets_all/4965438474273035218-CardMozViewsLookup.json"
+        },
+        {
+          "path_id": 4969032738646993922,
+          "name": "",
+          "file": "trees/playmat_assets_all/4969032738646993922-.json"
+        },
+        {
+          "path_id": 5485673830359803020,
+          "name": "",
+          "file": "trees/playmat_assets_all/5485673830359803020-.json"
+        },
+        {
+          "path_id": 5502086609493639707,
+          "name": "",
+          "file": "trees/playmat_assets_all/5502086609493639707-.json"
+        },
+        {
+          "path_id": 5585525360585836794,
+          "name": "",
+          "file": "trees/playmat_assets_all/5585525360585836794-.json"
+        },
+        {
+          "path_id": 5604124297842210098,
+          "name": "",
+          "file": "trees/playmat_assets_all/5604124297842210098-.json"
+        },
+        {
+          "path_id": 6406895543264643948,
+          "name": "",
+          "file": "trees/playmat_assets_all/6406895543264643948-.json"
+        },
+        {
+          "path_id": 6604561096652605514,
+          "name": "",
+          "file": "trees/playmat_assets_all/6604561096652605514-.json"
+        },
+        {
+          "path_id": 6844793683635280577,
+          "name": "",
+          "file": "trees/playmat_assets_all/6844793683635280577-.json"
+        },
+        {
+          "path_id": 6856152639914337147,
+          "name": "",
+          "file": "trees/playmat_assets_all/6856152639914337147-.json"
+        },
+        {
+          "path_id": 6897986373116277365,
+          "name": "",
+          "file": "trees/playmat_assets_all/6897986373116277365-.json"
+        },
+        {
+          "path_id": 7364429139656831846,
+          "name": "",
+          "file": "trees/playmat_assets_all/7364429139656831846-.json"
+        },
+        {
+          "path_id": 8128827249149723521,
+          "name": "",
+          "file": "trees/playmat_assets_all/8128827249149723521-.json"
+        },
+        {
+          "path_id": 8600781390119958100,
+          "name": "",
+          "file": "trees/playmat_assets_all/8600781390119958100-.json"
+        },
+        {
+          "path_id": 8829693393095239464,
+          "name": "",
+          "file": "trees/playmat_assets_all/8829693393095239464-.json"
+        },
+        {
+          "path_id": 8832381365461347344,
+          "name": "",
+          "file": "trees/playmat_assets_all/8832381365461347344-.json"
+        },
+        {
+          "path_id": 8874796502664444590,
+          "name": "AbilityButtonLookup",
+          "file": "trees/playmat_assets_all/8874796502664444590-AbilityButtonLookup.json"
+        },
+        {
+          "path_id": 8913998332696110759,
+          "name": "",
+          "file": "trees/playmat_assets_all/8913998332696110759-.json"
+        },
+        {
+          "path_id": 8914699717836525045,
+          "name": "",
+          "file": "trees/playmat_assets_all/8914699717836525045-.json"
+        },
+        {
+          "path_id": 8918899708558340362,
+          "name": "",
+          "file": "trees/playmat_assets_all/8918899708558340362-.json"
+        },
+        {
+          "path_id": 8999853616897583827,
+          "name": "",
+          "file": "trees/playmat_assets_all/8999853616897583827-.json"
+        }
+      ],
+      "errors": [],
+      "containers": [
+        {
+          "path": "A_BattleBuilding_DamageOff.anim",
+          "path_id": -5786650303203339409
+        },
+        {
+          "path": "A_BattleBuilding_DamageOn.anim",
+          "path_id": -2383536880582638712
+        },
+        {
+          "path": "AbilityButtonLookup.asset",
+          "path_id": 8874796502664444590
+        },
+        {
+          "path": "BattleCasualtiesLookup.asset",
+          "path_id": -3521707454186047270
+        },
+        {
+          "path": "BuildingRuin.prefab",
+          "path_id": 918462259361937869
+        },
+        {
+          "path": "C_BattleBuilding.controller",
+          "path_id": 3899023311611621693
+        },
+        {
+          "path": "C_Chr_Default.controller",
+          "path_id": -2496738461692757746
+        },
+        {
+          "path": "C_bldg_Default.controller",
+          "path_id": -237449331798589742
+        },
+        {
+          "path": "CardMozViewsLookup.asset",
+          "path_id": 4965438474273035218
+        },
+        {
+          "path": "CardSubviewsLookup.asset",
+          "path_id": 1904023318408073339
+        },
+        {
+          "path": "G_bldg_GenWindow.fbx",
+          "path_id": 172548083651971720
+        },
+        {
+          "path": "G_bldg_GenWindow.fbx",
+          "path_id": -1817216043182082792
+        },
+        {
+          "path": "G_bldg_Lantern.fbx",
+          "path_id": 2473997809663990081
+        },
+        {
+          "path": "G_bldg_Lantern.fbx",
+          "path_id": 8158653574536592962
+        },
+        {
+          "path": "G_env_ShadowPlane.fbx",
+          "path_id": 5104707505455892478
+        },
+        {
+          "path": "G_env_ShadowPlane.fbx",
+          "path_id": -7350060749033883657
+        },
+        {
+          "path": "G_env_ShadowPlane.fbx",
+          "path_id": 1638493272880084050
+        },
+        {
+          "path": "M_Chr_Shield01.fbx",
+          "path_id": -4671640951145532387
+        },
+        {
+          "path": "M_Chr_Shield01.fbx",
+          "path_id": 3853866999439283489
+        },
+        {
+          "path": "M_Chr_Shield01.fbx",
+          "path_id": -4774558554964498619
+        },
+        {
+          "path": "M_Chr_Sword01.fbx",
+          "path_id": -4733718027819102191
+        },
+        {
+          "path": "M_Chr_Sword01.fbx",
+          "path_id": -5067267310410323862
+        },
+        {
+          "path": "M_Chr_Sword01.fbx",
+          "path_id": 2364386345211563319
+        },
+        {
+          "path": "M_bldg_GenWindow.mat",
+          "path_id": 4162524242001756271
+        },
+        {
+          "path": "M_bldg_Lantern.mat",
+          "path_id": -710447519330310330
+        },
+        {
+          "path": "M_env_Shadow.mat",
+          "path_id": 3858693245062980812
+        },
+        {
+          "path": "T_WarriorReticle.png",
+          "path_id": -963338592736525740
+        },
+        {
+          "path": "T_WarriorReticle.png",
+          "path_id": -7361040768810200807
+        },
+        {
+          "path": "T_blg_GeneralWindow.png",
+          "path_id": 376334121791651516
+        },
+        {
+          "path": "T_env_Shadow.png",
+          "path_id": 1678680930834700978
+        },
+        {
+          "path": "TransformableBuilding.prefab",
+          "path_id": -473273551047580571
+        },
+        {
+          "path": "TransformableMozView.prefab",
+          "path_id": -4009821202245901988
+        },
+        {
+          "path": "TransformablePawn.prefab",
+          "path_id": 9109526437909751839
+        },
+        {
+          "path": "TransformableWarrior.prefab",
+          "path_id": 7787530216229330170
+        },
+        {
+          "path": "UnitPrefabLookup.asset",
+          "path_id": -2200089993518802161
+        }
+      ],
+      "object_counts": {
+        "RectTransform": 51,
+        "BoxCollider": 6,
+        "GameObject": 78,
+        "MonoBehaviour": 117,
+        "Animator": 7,
+        "Transform": 27,
+        "MonoScript": 35,
+        "Material": 8,
+        "CanvasRenderer": 38,
+        "MeshFilter": 11,
+        "Sprite": 2,
+        "Texture2D": 6,
+        "MeshRenderer": 11,
+        "Canvas": 5,
+        "AnimationClip": 5,
+        "Shader": 2,
+        "MeshCollider": 1,
+        "Mesh": 8,
+        "AnimatorController": 4,
+        "AssetBundle": 1,
+        "Avatar": 1
+      }
+    },
+    {
+      "source": "Root_Data/StreamingAssets/Localization/win/localization",
+      "sha256": "643d20f7d1bf1ccc419782cf6654b884a22d8f4f911f78d2a3c7b4ad59d5fd5c",
+      "objects": [
+        {
+          "path_id": -8493395759431697859,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "cs_CZ"
+        },
+        {
+          "path_id": -8344333472191148478,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "es_ES"
+        },
+        {
+          "path_id": -2520338871558226608,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "ja_JP"
+        },
+        {
+          "path_id": 1764737265780378401,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "ru_RU"
+        },
+        {
+          "path_id": 1828328055999055205,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "en_US",
+          "text_export": "localization/en_US.txt",
+          "text_prefix": "#_=_\n\nprompts.playerturn.nameformat={0}'s Turn\naccount.changepassword.failed.invalidOldPassword=Old password did not mat",
+          "text_length": 501900
+        },
+        {
+          "path_id": 3307709018400900752,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "de_DE"
+        },
+        {
+          "path_id": 3930093615117646645,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "zh_CN",
+          "text_export": "localization/zh_CN.txt",
+          "text_prefix": "#_=_\n\nprompts.playerturn.nameformat={0}的回合\naccount.changepassword.failed.invalidOldPassword=旧密码不一致\naccount.error.usernam",
+          "text_length": 345600
+        },
+        {
+          "path_id": 5235724264151787004,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "fr_FR"
+        },
+        {
+          "path_id": 7017541629731125452,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "it_IT"
+        },
+        {
+          "path_id": 7696160326897241035,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "cs_CS"
+        },
+        {
+          "path_id": 8301194093152962942,
+          "asset_file": "CAB-06564b48b45ebe1380674e64339710d0",
+          "type": "TextAsset",
+          "name": "pl_PL"
+        }
+      ],
+      "exports": [],
+      "errors": [],
+      "containers": [
+        {
+          "path": "assets/editor/localization/cs_cs.txt",
+          "path_id": 7696160326897241035
+        },
+        {
+          "path": "assets/editor/localization/cs_cz.txt",
+          "path_id": -8493395759431697859
+        },
+        {
+          "path": "assets/editor/localization/de_de.txt",
+          "path_id": 3307709018400900752
+        },
+        {
+          "path": "assets/editor/localization/en_us.txt",
+          "path_id": 1828328055999055205
+        },
+        {
+          "path": "assets/editor/localization/es_es.txt",
+          "path_id": -8344333472191148478
+        },
+        {
+          "path": "assets/editor/localization/fr_fr.txt",
+          "path_id": 5235724264151787004
+        },
+        {
+          "path": "assets/editor/localization/it_it.txt",
+          "path_id": 7017541629731125452
+        },
+        {
+          "path": "assets/editor/localization/ja_jp.txt",
+          "path_id": -2520338871558226608
+        },
+        {
+          "path": "assets/editor/localization/pl_pl.txt",
+          "path_id": 8301194093152962942
+        },
+        {
+          "path": "assets/editor/localization/ru_ru.txt",
+          "path_id": 1764737265780378401
+        },
+        {
+          "path": "assets/editor/localization/zh_cn.txt",
+          "path_id": 3930093615117646645
+        }
+      ],
+      "object_counts": {
+        "TextAsset": 11,
+        "AssetBundle": 1
+      }
+    }
+  ]
+}

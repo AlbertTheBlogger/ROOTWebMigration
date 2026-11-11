@@ -1,0 +1,27 @@
+# Runtime data and credentials
+/data/
+*.sqlite
+*.sqlite-*
+*.db
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/deploy/known_hosts
+
+# Dependencies and generated development output
+node_modules/
+__pycache__/
+*.py[cod]
+*.log
+/audit/
+/outputs/
+/outputs-deploy.tar.gz
+/node-SHASUMS256.txt
+/research/.venv/
+/research/raw/
+/research/sources/
+/deploy/*.tar.gz
+/deploy/*-files.txt
+/deploy/*-files.json

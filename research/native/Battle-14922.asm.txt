@@ -1,0 +1,86 @@
+00000001817544e0  mov      qword ptr [rsp + 8], rbx
+00000001817544e5  mov      qword ptr [rsp + 0x10], rbp
+00000001817544ea  mov      qword ptr [rsp + 0x18], rsi
+00000001817544ef  push     rdi
+00000001817544f0  sub      rsp, 0x20
+00000001817544f4  cmp      byte ptr [rip + 0x15345cf], 0
+00000001817544fb  mov      rdi, r9
+00000001817544fe  mov      rbp, r8
+0000000181754501  mov      rbx, rdx
+0000000181754504  jne      0x181754549
+0000000181754506  lea      rcx, [rip + 0x1375313]
+000000018175450d  call     0x1820df9b0
+0000000181754512  lea      rcx, [rip + 0x13a75cf]
+0000000181754519  call     0x1820df9b0
+000000018175451e  lea      rcx, [rip + 0x1380d3b]
+0000000181754525  call     0x1820df9b0
+000000018175452a  lea      rcx, [rip + 0x137665f]
+0000000181754531  call     0x1820df9b0
+0000000181754536  lea      rcx, [rip + 0x13af373]
+000000018175453d  call     0x1820df9b0
+0000000181754542  mov      byte ptr [rip + 0x1534581], 1
+0000000181754549  mov      rcx, qword ptr [rip + 0x13af360]
+0000000181754550  call     0x1820dfb80
+0000000181754555  xor      edx, edx
+0000000181754557  mov      rcx, rax
+000000018175455a  mov      rsi, rax
+000000018175455d  call     0x180001c20 ; TuberMatch.FinishReconnect, TuberHirelingEntity.Initialize, TuberPlayerEntity.postAllPlayersInitialized
+0000000181754562  test     rsi, rsi
+0000000181754565  je       0x18175463c
+000000018175456b  lea      rcx, [rsi + 0x10]
+000000018175456f  mov      qword ptr [rsi + 0x10], rdi
+0000000181754573  mov      rdx, rdi
+0000000181754576  call     0x1820decd0
+000000018175457b  xor      edx, edx
+000000018175457d  mov      rcx, rbp
+0000000181754580  call     0x1818d1520 ; TuberEntityExtensions.Faction
+0000000181754585  test     rbx, rbx
+0000000181754588  je       0x18175463c
+000000018175458e  mov      r9, qword ptr [rbx]
+0000000181754591  mov      r8d, eax
+0000000181754594  mov      rdi, qword ptr [rsp + 0x50]
+0000000181754599  mov      rcx, rbx
+000000018175459c  mov      rdx, rdi
+000000018175459f  mov      r10, qword ptr [r9 + 0x418]
+00000001817545a6  mov      r9, qword ptr [r9 + 0x420]
+00000001817545ad  call     r10
+00000001817545b0  test     eax, eax
+00000001817545b2  jg       0x1817545dd
+00000001817545b4  mov      rdx, qword ptr [rip + 0x1380ca5]
+00000001817545bb  mov      rcx, rbx
+00000001817545be  call     0x1820decf0
+00000001817545c3  test     rax, rax
+00000001817545c6  jne      0x1817545dd
+00000001817545c8  mov      rbx, qword ptr [rsp + 0x30]
+00000001817545cd  mov      rbp, qword ptr [rsp + 0x38]
+00000001817545d2  mov      rsi, qword ptr [rsp + 0x40]
+00000001817545d7  add      rsp, 0x20
+00000001817545db  pop      rdi
+00000001817545dc  ret      
+00000001817545dd  test     rdi, rdi
+00000001817545e0  je       0x18175463c
+00000001817545e2  mov      rcx, qword ptr [rip + 0x13a74ff]
+00000001817545e9  mov      rdi, qword ptr [rdi + 0x48]
+00000001817545ed  call     0x1820dfb80
+00000001817545f2  mov      r8, qword ptr [rip + 0x1376597]
+00000001817545f9  xor      r9d, r9d
+00000001817545fc  mov      rdx, rsi
+00000001817545ff  mov      rcx, rax
+0000000181754602  mov      rbx, rax
+0000000181754605  call     0x180983120
+000000018175460a  mov      r8, qword ptr [rip + 0x137520f]
+0000000181754611  mov      rdx, rbx
+0000000181754614  mov      rcx, rdi
+0000000181754617  call     0x1802e3200
+000000018175461c  test     eax, eax
+000000018175461e  jle      0x181754624
+0000000181754620  mov      al, 1
+0000000181754622  jmp      0x1817545c8
+0000000181754624  mov      rdx, qword ptr [rip + 0x1380c35]
+000000018175462b  mov      rcx, qword ptr [rsi + 0x10]
+000000018175462f  call     0x1820decf0
+0000000181754634  test     rax, rax
+0000000181754637  setne    al
+000000018175463a  jmp      0x1817545c8
+000000018175463c  call     0x1820dfbd0
+0000000181754641  int3     

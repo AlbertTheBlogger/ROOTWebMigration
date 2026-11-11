@@ -1,0 +1,1795 @@
+{
+  "source_sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "initializer_va": "0x1814f8090",
+  "method": "unrolled inline List.Add and shared Add call, grouped by static-field stores",
+  "limits": [
+    "Static initialization evidence; original runtime has not been observed."
+  ],
+  "decks": {
+    "DrawDeck": [
+      {
+        "type": "FavoroftheFoxesFox",
+        "append_va": "0x1814f863e"
+      },
+      {
+        "type": "FavoroftheMiceMouse",
+        "append_va": "0x1814f86cc"
+      },
+      {
+        "type": "FavoroftheRabbitsRabbit",
+        "append_va": "0x1814f8752"
+      },
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814f87d8"
+      },
+      {
+        "type": "BakeSaleRabbit",
+        "append_va": "0x1814f885e"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814f88e4"
+      },
+      {
+        "type": "SmugglersTrailRabbit",
+        "append_va": "0x1814f896a"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814f89f0"
+      },
+      {
+        "type": "InvestmentsMouse",
+        "append_va": "0x1814f8a76"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814f8afc"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814f8b82"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814f8c08"
+      },
+      {
+        "type": "WoodlandRunnersBird",
+        "append_va": "0x1814f8c8e"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814f8d14"
+      },
+      {
+        "type": "AnvilFox",
+        "append_va": "0x1814f8d9a"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814f8e20"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814f8ea6"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814f8f2c"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814f8fb2"
+      },
+      {
+        "type": "ArmsTraderBird",
+        "append_va": "0x1814f9038"
+      },
+      {
+        "type": "CrossbowMouse",
+        "append_va": "0x1814f90be"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814f913f"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814f9177"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814f91af"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814f91cf"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814f9207"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814f9227"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814f925f"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814f927f"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814f92b7"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814f92d7"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814f930f"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814f932f"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814f934f"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814f9387"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814f93a7"
+      },
+      {
+        "type": "RoyalClaimBird",
+        "append_va": "0x1814f93df"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814f9417"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814f9437"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814f946f"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814f948f"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814f94c7"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814f94e7"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814f951f"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814f953f"
+      },
+      {
+        "type": "AmbushRabbit",
+        "append_va": "0x1814f9577"
+      },
+      {
+        "type": "AmbushBird",
+        "append_va": "0x1814f95af"
+      },
+      {
+        "type": "AmbushBird",
+        "append_va": "0x1814f95cf"
+      },
+      {
+        "type": "AmbushFox",
+        "append_va": "0x1814f9607"
+      },
+      {
+        "type": "AmbushMouse",
+        "append_va": "0x1814f963f"
+      }
+    ],
+    "ExilesAndPartisansDeck": [
+      {
+        "type": "MousePartisans",
+        "append_va": "0x1814f96c5"
+      },
+      {
+        "type": "LeagueOfAdventurousMice",
+        "append_va": "0x1814f96fd"
+      },
+      {
+        "type": "LeagueOfAdventurousMice",
+        "append_va": "0x1814f971d"
+      },
+      {
+        "type": "MurineBroker",
+        "append_va": "0x1814f9755"
+      },
+      {
+        "type": "MasterEngravers",
+        "append_va": "0x1814f978d"
+      },
+      {
+        "type": "RabbitPartisans",
+        "append_va": "0x1814f97c5"
+      },
+      {
+        "type": "CharmOffensive",
+        "append_va": "0x1814f97fd"
+      },
+      {
+        "type": "SwapMeet",
+        "append_va": "0x1814f9835"
+      },
+      {
+        "type": "SwapMeet",
+        "append_va": "0x1814f9855"
+      },
+      {
+        "type": "Tunnels",
+        "append_va": "0x1814f988d"
+      },
+      {
+        "type": "Tunnels",
+        "append_va": "0x1814f98ad"
+      },
+      {
+        "type": "CoffinMakers",
+        "append_va": "0x1814f98e5"
+      },
+      {
+        "type": "FalseOrders",
+        "append_va": "0x1814f991d"
+      },
+      {
+        "type": "FalseOrders",
+        "append_va": "0x1814f993d"
+      },
+      {
+        "type": "FoxPartisans",
+        "append_va": "0x1814f9975"
+      },
+      {
+        "type": "Informants",
+        "append_va": "0x1814f99ad"
+      },
+      {
+        "type": "Informants",
+        "append_va": "0x1814f99cd"
+      },
+      {
+        "type": "PropagandaBureau",
+        "append_va": "0x1814f9a05"
+      },
+      {
+        "type": "Saboteurs",
+        "append_va": "0x1814f9a3d"
+      },
+      {
+        "type": "Saboteurs",
+        "append_va": "0x1814f9a5d"
+      },
+      {
+        "type": "Saboteurs",
+        "append_va": "0x1814f9a7d"
+      },
+      {
+        "type": "SoupKitchens",
+        "append_va": "0x1814f9ab5"
+      },
+      {
+        "type": "BoatBuilders",
+        "append_va": "0x1814f9aed"
+      },
+      {
+        "type": "CorvidPlanners",
+        "append_va": "0x1814f9b25"
+      },
+      {
+        "type": "EyrieEmigre",
+        "append_va": "0x1814f9b5d"
+      },
+      {
+        "type": "AmbushBird",
+        "append_va": "0x1814f9b7d"
+      },
+      {
+        "type": "AmbushBird",
+        "append_va": "0x1814f9b9d"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814f9bbd"
+      },
+      {
+        "type": "WoodlandRunnersBird",
+        "append_va": "0x1814f9bdd"
+      },
+      {
+        "type": "ArmsTraderBird",
+        "append_va": "0x1814f9bfd"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814f9c1d"
+      },
+      {
+        "type": "AmbushFox",
+        "append_va": "0x1814f9c3d"
+      },
+      {
+        "type": "AnvilFox",
+        "append_va": "0x1814f9c5d"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814f9c7d"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814f9c9d"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814f9cbd"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814f9cdd"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814f9cfd"
+      },
+      {
+        "type": "AmbushRabbit",
+        "append_va": "0x1814f9d1d"
+      },
+      {
+        "type": "SmugglersTrailRabbit",
+        "append_va": "0x1814f9d3d"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814f9d5d"
+      },
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814f9d7d"
+      },
+      {
+        "type": "BakeSaleRabbit",
+        "append_va": "0x1814f9d9d"
+      },
+      {
+        "type": "AmbushMouse",
+        "append_va": "0x1814f9dbd"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814f9ddd"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814f9dfd"
+      },
+      {
+        "type": "CrossbowMouse",
+        "append_va": "0x1814f9e1d"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814f9e3d"
+      },
+      {
+        "type": "InvestmentsMouse",
+        "append_va": "0x1814f9e5d"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814f9e7d"
+      }
+    ],
+    "Tutorial02Deck": [
+      {
+        "type": "FavoroftheFoxesFox",
+        "append_va": "0x1814f9ef0"
+      },
+      {
+        "type": "FavoroftheRabbitsRabbit",
+        "append_va": "0x1814f9f10"
+      },
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814f9f30"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814f9f50"
+      },
+      {
+        "type": "InvestmentsMouse",
+        "append_va": "0x1814f9f70"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814f9f90"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814f9fb0"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814f9fd0"
+      },
+      {
+        "type": "AnvilFox",
+        "append_va": "0x1814f9ff0"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814fa010"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814fa030"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814fa050"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814fa070"
+      },
+      {
+        "type": "CrossbowMouse",
+        "append_va": "0x1814fa090"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814fa0b0"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fa0d0"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fa0f0"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fa110"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fa130"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fa150"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fa170"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fa190"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fa1b0"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fa1d0"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fa1f0"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fa210"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fa230"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fa250"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fa270"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fa290"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fa2b0"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fa2d0"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fa2f0"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fa310"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fa330"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fa350"
+      }
+    ],
+    "Tutorial03Deck": [
+      {
+        "type": "FavoroftheFoxesFox",
+        "append_va": "0x1814fa3c3"
+      },
+      {
+        "type": "FavoroftheRabbitsRabbit",
+        "append_va": "0x1814fa3e3"
+      },
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814fa403"
+      },
+      {
+        "type": "BakeSaleRabbit",
+        "append_va": "0x1814fa423"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814fa443"
+      },
+      {
+        "type": "SmugglersTrailRabbit",
+        "append_va": "0x1814fa463"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814fa483"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814fa4a3"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814fa4c3"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814fa4e3"
+      },
+      {
+        "type": "WoodlandRunnersBird",
+        "append_va": "0x1814fa503"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814fa523"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814fa543"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814fa563"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814fa583"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814fa5a3"
+      },
+      {
+        "type": "ArmsTraderBird",
+        "append_va": "0x1814fa5c3"
+      },
+      {
+        "type": "CrossbowMouse",
+        "append_va": "0x1814fa5e3"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814fa603"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814fa623"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fa643"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fa663"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fa683"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fa6a3"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fa6c3"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fa6e3"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fa703"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fa723"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fa743"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fa763"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fa783"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fa7a3"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fa7c3"
+      },
+      {
+        "type": "RoyalClaimBird",
+        "append_va": "0x1814fa7e3"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fa803"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fa823"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fa843"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fa863"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fa883"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fa8a3"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fa8c3"
+      }
+    ],
+    "Tutorial04Deck": [
+      {
+        "type": "FavoroftheMiceMouse",
+        "append_va": "0x1814fa936"
+      },
+      {
+        "type": "FavoroftheRabbitsRabbit",
+        "append_va": "0x1814fa956"
+      },
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814fa976"
+      },
+      {
+        "type": "BakeSaleRabbit",
+        "append_va": "0x1814fa996"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814fa9b6"
+      },
+      {
+        "type": "SmugglersTrailRabbit",
+        "append_va": "0x1814fa9d6"
+      },
+      {
+        "type": "InvestmentsMouse",
+        "append_va": "0x1814fa9f6"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814faa16"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814faa36"
+      },
+      {
+        "type": "WoodlandRunnersBird",
+        "append_va": "0x1814faa56"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814faa76"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814faa96"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814faab6"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814faad6"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814faaf6"
+      },
+      {
+        "type": "ArmsTraderBird",
+        "append_va": "0x1814fab16"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814fab36"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814fab56"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fab76"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fab96"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fabb6"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fabd6"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fabf6"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fac16"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fac36"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fac56"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fac76"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fac96"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814facb6"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814facd6"
+      },
+      {
+        "type": "RoyalClaimBird",
+        "append_va": "0x1814facf6"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fad16"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fad36"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fad56"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fad76"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fad96"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fadb6"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fadd6"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fadf6"
+      }
+    ],
+    "Tutorial05Deck": [
+      {
+        "type": "FavoroftheRabbitsRabbit",
+        "append_va": "0x1814fae69"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814fae89"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814faea9"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814faec9"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814faee9"
+      },
+      {
+        "type": "AnvilFox",
+        "append_va": "0x1814faf09"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814faf29"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814faf49"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814faf69"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814faf89"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fafa9"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fafc9"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fafe9"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fb009"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fb029"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fb049"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fb069"
+      },
+      {
+        "type": "RoyalClaimBird",
+        "append_va": "0x1814fb089"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fb0a9"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fb0c9"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fb0e9"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fb109"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fb129"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fb149"
+      }
+    ],
+    "TutorialR01Deck": [
+      {
+        "type": "FavoroftheFoxesFox",
+        "append_va": "0x1814fb1bc"
+      },
+      {
+        "type": "FavoroftheRabbitsRabbit",
+        "append_va": "0x1814fb1dc"
+      },
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814fb1fc"
+      },
+      {
+        "type": "BakeSaleRabbit",
+        "append_va": "0x1814fb21c"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814fb23c"
+      },
+      {
+        "type": "SmugglersTrailRabbit",
+        "append_va": "0x1814fb25c"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814fb27c"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814fb29c"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814fb2bc"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814fb2dc"
+      },
+      {
+        "type": "WoodlandRunnersBird",
+        "append_va": "0x1814fb2fc"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814fb31c"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814fb33c"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814fb35c"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814fb37c"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814fb39c"
+      },
+      {
+        "type": "ArmsTraderBird",
+        "append_va": "0x1814fb3bc"
+      },
+      {
+        "type": "CrossbowMouse",
+        "append_va": "0x1814fb3dc"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814fb3fc"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814fb41c"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fb43c"
+      },
+      {
+        "type": "ScoutingPartyMouse",
+        "append_va": "0x1814fb45c"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fb47c"
+      },
+      {
+        "type": "CobblerRabbit",
+        "append_va": "0x1814fb49c"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fb4bc"
+      },
+      {
+        "type": "CommandWarrenRabbit",
+        "append_va": "0x1814fb4dc"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fb4fc"
+      },
+      {
+        "type": "BetterBurrowBankRabbit",
+        "append_va": "0x1814fb51c"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fb53c"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fb55c"
+      },
+      {
+        "type": "TaxCollectorFox",
+        "append_va": "0x1814fb57c"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fb59c"
+      },
+      {
+        "type": "CodebreakersMouse",
+        "append_va": "0x1814fb5bc"
+      },
+      {
+        "type": "RoyalClaimBird",
+        "append_va": "0x1814fb5dc"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fb5fc"
+      },
+      {
+        "type": "StandandDeliverFox",
+        "append_va": "0x1814fb61c"
+      },
+      {
+        "type": "SappersBird",
+        "append_va": "0x1814fb63c"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fb65c"
+      },
+      {
+        "type": "ArmorersBird",
+        "append_va": "0x1814fb67c"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fb69c"
+      },
+      {
+        "type": "BrutalTacticsBird",
+        "append_va": "0x1814fb6bc"
+      }
+    ],
+    "ItemsOnlyDeck": [
+      {
+        "type": "AVisittoFriendsRabbit",
+        "append_va": "0x1814fb72f"
+      },
+      {
+        "type": "BakeSaleRabbit",
+        "append_va": "0x1814fb74f"
+      },
+      {
+        "type": "TravelGearMouse",
+        "append_va": "0x1814fb76f"
+      },
+      {
+        "type": "SmugglersTrailRabbit",
+        "append_va": "0x1814fb78f"
+      },
+      {
+        "type": "RootTeaRabbit",
+        "append_va": "0x1814fb7af"
+      },
+      {
+        "type": "InvestmentsMouse",
+        "append_va": "0x1814fb7cf"
+      },
+      {
+        "type": "BirdyBindleBird",
+        "append_va": "0x1814fb7ef"
+      },
+      {
+        "type": "RootTeaMouse",
+        "append_va": "0x1814fb80f"
+      },
+      {
+        "type": "SwordMouse",
+        "append_va": "0x1814fb82f"
+      },
+      {
+        "type": "WoodlandRunnersBird",
+        "append_va": "0x1814fb84f"
+      },
+      {
+        "type": "TravelGearFox",
+        "append_va": "0x1814fb86f"
+      },
+      {
+        "type": "AnvilFox",
+        "append_va": "0x1814fb88f"
+      },
+      {
+        "type": "GentlyUsedKnapsackFox",
+        "append_va": "0x1814fb8af"
+      },
+      {
+        "type": "MouseinaSackMouse",
+        "append_va": "0x1814fb8cf"
+      },
+      {
+        "type": "CrossbowBird",
+        "append_va": "0x1814fb8ef"
+      },
+      {
+        "type": "ProtectionRacketFox",
+        "append_va": "0x1814fb90f"
+      },
+      {
+        "type": "ArmsTraderBird",
+        "append_va": "0x1814fb92f"
+      },
+      {
+        "type": "CrossbowMouse",
+        "append_va": "0x1814fb94f"
+      },
+      {
+        "type": "FoxfolkSteelFox",
+        "append_va": "0x1814fb96f"
+      },
+      {
+        "type": "RootTeaFox",
+        "append_va": "0x1814fb98f"
+      }
+    ],
+    "AmbushCards": [
+      {
+        "type": "AmbushBird",
+        "append_va": "0x1814fba02"
+      },
+      {
+        "type": "AmbushFox",
+        "append_va": "0x1814fba22"
+      },
+      {
+        "type": "AmbushMouse",
+        "append_va": "0x1814fba42"
+      },
+      {
+        "type": "AmbushRabbit",
+        "append_va": "0x1814fba62"
+      }
+    ],
+    "DominanceCards": [
+      {
+        "type": "DominanceFox",
+        "append_va": "0x1814fbaed"
+      },
+      {
+        "type": "DominanceMouse",
+        "append_va": "0x1814fbb25"
+      },
+      {
+        "type": "DominanceRabbit",
+        "append_va": "0x1814fbb5d"
+      },
+      {
+        "type": "DominanceBird",
+        "append_va": "0x1814fbb95"
+      }
+    ],
+    "VagabondQuestDeck": [
+      {
+        "type": "RepairaShedFox",
+        "append_va": "0x1814fbc20"
+      },
+      {
+        "type": "EscortMouse",
+        "append_va": "0x1814fbc58"
+      },
+      {
+        "type": "FundraisingFox",
+        "append_va": "0x1814fbc90"
+      },
+      {
+        "type": "FendoffaBearMouse",
+        "append_va": "0x1814fbcc8"
+      },
+      {
+        "type": "FendoffaBearRabbit",
+        "append_va": "0x1814fbd00"
+      },
+      {
+        "type": "ExpelBanditsRabbit",
+        "append_va": "0x1814fbd38"
+      },
+      {
+        "type": "ExpelBanditsMouse",
+        "append_va": "0x1814fbd70"
+      },
+      {
+        "type": "GuardDutyMouse",
+        "append_va": "0x1814fbda8"
+      },
+      {
+        "type": "GuardDutyRabbit",
+        "append_va": "0x1814fbde0"
+      },
+      {
+        "type": "LogisticsMouse",
+        "append_va": "0x1814fbe18"
+      },
+      {
+        "type": "LogisticsFox",
+        "append_va": "0x1814fbe50"
+      },
+      {
+        "type": "ErrandFox",
+        "append_va": "0x1814fbe88"
+      },
+      {
+        "type": "ErrandRabbit",
+        "append_va": "0x1814fbec0"
+      },
+      {
+        "type": "GiveaSpeechRabbit",
+        "append_va": "0x1814fbef8"
+      },
+      {
+        "type": "GiveaSpeechFox",
+        "append_va": "0x1814fbf30"
+      }
+    ],
+    "VagabondsDeck": [
+      {
+        "type": "RangerArchetype",
+        "append_va": "0x1814fbfbb"
+      },
+      {
+        "type": "ThiefArchetype",
+        "append_va": "0x1814fbff3"
+      },
+      {
+        "type": "TinkerArchetype",
+        "append_va": "0x1814fc02b"
+      },
+      {
+        "type": "VagrantArchetype",
+        "append_va": "0x1814fc063"
+      },
+      {
+        "type": "ArbiterArchetype",
+        "append_va": "0x1814fc09b"
+      },
+      {
+        "type": "ScoundrelArchetype",
+        "append_va": "0x1814fc0d3"
+      },
+      {
+        "type": "AdventurerArchetype",
+        "append_va": "0x1814fc10b"
+      },
+      {
+        "type": "RoninArchetype",
+        "append_va": "0x1814fc143"
+      },
+      {
+        "type": "HarrierArchetype",
+        "append_va": "0x1814fc17b"
+      }
+    ],
+    "VagabotsDeck": [
+      {
+        "type": "VagabotRangerArchetype",
+        "append_va": "0x1814fc206"
+      },
+      {
+        "type": "VagabotThiefArchetype",
+        "append_va": "0x1814fc23e"
+      },
+      {
+        "type": "VagabotTinkerArchetype",
+        "append_va": "0x1814fc276"
+      }
+    ],
+    "EyrieDynastiesLeaders": [
+      {
+        "type": "BuilderLeader",
+        "append_va": "0x1814fc301"
+      },
+      {
+        "type": "CharismaticLeader",
+        "append_va": "0x1814fc339"
+      },
+      {
+        "type": "CommanderLeader",
+        "append_va": "0x1814fc371"
+      },
+      {
+        "type": "DespotLeader",
+        "append_va": "0x1814fc3a9"
+      }
+    ],
+    "UndergroundDuchyMinisters": [
+      {
+        "type": "ForemoleMinister",
+        "append_va": "0x1814fc434"
+      },
+      {
+        "type": "CaptainMinister",
+        "append_va": "0x1814fc46c"
+      },
+      {
+        "type": "MarshalMinister",
+        "append_va": "0x1814fc4a4"
+      },
+      {
+        "type": "BrigadierMinister",
+        "append_va": "0x1814fc4dc"
+      },
+      {
+        "type": "BankerMinister",
+        "append_va": "0x1814fc514"
+      },
+      {
+        "type": "MayorMinister",
+        "append_va": "0x1814fc54c"
+      },
+      {
+        "type": "DuchessOfMudMinister",
+        "append_va": "0x1814fc584"
+      },
+      {
+        "type": "BaronOfDirtMinister",
+        "append_va": "0x1814fc5bc"
+      },
+      {
+        "type": "EarlOfStoneMinister",
+        "append_va": "0x1814fc5f4"
+      }
+    ],
+    "LordOfTheHundredsMoods": [
+      {
+        "type": "GrandioseMood",
+        "append_va": "0x1814fc67f"
+      },
+      {
+        "type": "StubbornMood",
+        "append_va": "0x1814fc6b7"
+      },
+      {
+        "type": "BitterMood",
+        "append_va": "0x1814fc6ef"
+      },
+      {
+        "type": "LavishMood",
+        "append_va": "0x1814fc727"
+      },
+      {
+        "type": "RelentlessMood",
+        "append_va": "0x1814fc75f"
+      },
+      {
+        "type": "WrathfulMood",
+        "append_va": "0x1814fc797"
+      },
+      {
+        "type": "JubilantMood",
+        "append_va": "0x1814fc7cf"
+      },
+      {
+        "type": "RowdyMood",
+        "append_va": "0x1814fc807"
+      }
+    ]
+  },
+  "counts": {
+    "DrawDeck": {
+      "FavoroftheFoxesFox": 1,
+      "FavoroftheMiceMouse": 1,
+      "FavoroftheRabbitsRabbit": 1,
+      "AVisittoFriendsRabbit": 1,
+      "BakeSaleRabbit": 1,
+      "TravelGearMouse": 1,
+      "SmugglersTrailRabbit": 1,
+      "RootTeaRabbit": 1,
+      "InvestmentsMouse": 1,
+      "BirdyBindleBird": 1,
+      "RootTeaMouse": 1,
+      "SwordMouse": 1,
+      "WoodlandRunnersBird": 1,
+      "TravelGearFox": 1,
+      "AnvilFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "MouseinaSackMouse": 1,
+      "CrossbowBird": 1,
+      "ProtectionRacketFox": 1,
+      "ArmsTraderBird": 1,
+      "CrossbowMouse": 1,
+      "FoxfolkSteelFox": 1,
+      "RootTeaFox": 1,
+      "ScoutingPartyMouse": 2,
+      "CobblerRabbit": 2,
+      "CommandWarrenRabbit": 2,
+      "BetterBurrowBankRabbit": 2,
+      "TaxCollectorFox": 3,
+      "CodebreakersMouse": 2,
+      "RoyalClaimBird": 1,
+      "StandandDeliverFox": 2,
+      "SappersBird": 2,
+      "ArmorersBird": 2,
+      "BrutalTacticsBird": 2,
+      "AmbushRabbit": 1,
+      "AmbushBird": 2,
+      "AmbushFox": 1,
+      "AmbushMouse": 1
+    },
+    "ExilesAndPartisansDeck": {
+      "MousePartisans": 1,
+      "LeagueOfAdventurousMice": 2,
+      "MurineBroker": 1,
+      "MasterEngravers": 1,
+      "RabbitPartisans": 1,
+      "CharmOffensive": 1,
+      "SwapMeet": 2,
+      "Tunnels": 2,
+      "CoffinMakers": 1,
+      "FalseOrders": 2,
+      "FoxPartisans": 1,
+      "Informants": 2,
+      "PropagandaBureau": 1,
+      "Saboteurs": 3,
+      "SoupKitchens": 1,
+      "BoatBuilders": 1,
+      "CorvidPlanners": 1,
+      "EyrieEmigre": 1,
+      "AmbushBird": 2,
+      "BirdyBindleBird": 1,
+      "WoodlandRunnersBird": 1,
+      "ArmsTraderBird": 1,
+      "CrossbowBird": 1,
+      "AmbushFox": 1,
+      "AnvilFox": 1,
+      "FoxfolkSteelFox": 1,
+      "ProtectionRacketFox": 1,
+      "TravelGearFox": 1,
+      "RootTeaFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "AmbushRabbit": 1,
+      "SmugglersTrailRabbit": 1,
+      "RootTeaRabbit": 1,
+      "AVisittoFriendsRabbit": 1,
+      "BakeSaleRabbit": 1,
+      "AmbushMouse": 1,
+      "MouseinaSackMouse": 1,
+      "RootTeaMouse": 1,
+      "CrossbowMouse": 1,
+      "SwordMouse": 1,
+      "InvestmentsMouse": 1,
+      "TravelGearMouse": 1
+    },
+    "Tutorial02Deck": {
+      "FavoroftheFoxesFox": 1,
+      "FavoroftheRabbitsRabbit": 1,
+      "AVisittoFriendsRabbit": 1,
+      "RootTeaRabbit": 1,
+      "InvestmentsMouse": 1,
+      "RootTeaMouse": 1,
+      "SwordMouse": 1,
+      "TravelGearFox": 1,
+      "AnvilFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "MouseinaSackMouse": 1,
+      "CrossbowBird": 1,
+      "ProtectionRacketFox": 1,
+      "CrossbowMouse": 1,
+      "RootTeaFox": 1,
+      "ScoutingPartyMouse": 2,
+      "CobblerRabbit": 2,
+      "CommandWarrenRabbit": 2,
+      "BetterBurrowBankRabbit": 2,
+      "TaxCollectorFox": 3,
+      "CodebreakersMouse": 2,
+      "StandandDeliverFox": 2,
+      "SappersBird": 2,
+      "ArmorersBird": 2,
+      "BrutalTacticsBird": 2
+    },
+    "Tutorial03Deck": {
+      "FavoroftheFoxesFox": 1,
+      "FavoroftheRabbitsRabbit": 1,
+      "AVisittoFriendsRabbit": 1,
+      "BakeSaleRabbit": 1,
+      "TravelGearMouse": 1,
+      "SmugglersTrailRabbit": 1,
+      "RootTeaRabbit": 1,
+      "BirdyBindleBird": 1,
+      "RootTeaMouse": 1,
+      "SwordMouse": 1,
+      "WoodlandRunnersBird": 1,
+      "TravelGearFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "MouseinaSackMouse": 1,
+      "CrossbowBird": 1,
+      "ProtectionRacketFox": 1,
+      "ArmsTraderBird": 1,
+      "CrossbowMouse": 1,
+      "FoxfolkSteelFox": 1,
+      "RootTeaFox": 1,
+      "ScoutingPartyMouse": 2,
+      "CobblerRabbit": 2,
+      "CommandWarrenRabbit": 2,
+      "BetterBurrowBankRabbit": 2,
+      "TaxCollectorFox": 3,
+      "CodebreakersMouse": 2,
+      "RoyalClaimBird": 1,
+      "StandandDeliverFox": 2,
+      "SappersBird": 1,
+      "ArmorersBird": 2,
+      "BrutalTacticsBird": 2
+    },
+    "Tutorial04Deck": {
+      "FavoroftheMiceMouse": 1,
+      "FavoroftheRabbitsRabbit": 1,
+      "AVisittoFriendsRabbit": 1,
+      "BakeSaleRabbit": 1,
+      "TravelGearMouse": 1,
+      "SmugglersTrailRabbit": 1,
+      "InvestmentsMouse": 1,
+      "BirdyBindleBird": 1,
+      "RootTeaMouse": 1,
+      "WoodlandRunnersBird": 1,
+      "TravelGearFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "MouseinaSackMouse": 1,
+      "CrossbowBird": 1,
+      "ProtectionRacketFox": 1,
+      "ArmsTraderBird": 1,
+      "FoxfolkSteelFox": 1,
+      "RootTeaFox": 1,
+      "ScoutingPartyMouse": 2,
+      "CobblerRabbit": 2,
+      "CommandWarrenRabbit": 2,
+      "BetterBurrowBankRabbit": 2,
+      "TaxCollectorFox": 2,
+      "CodebreakersMouse": 2,
+      "RoyalClaimBird": 1,
+      "StandandDeliverFox": 2,
+      "SappersBird": 2,
+      "ArmorersBird": 2,
+      "BrutalTacticsBird": 2
+    },
+    "Tutorial05Deck": {
+      "FavoroftheRabbitsRabbit": 1,
+      "TravelGearMouse": 1,
+      "RootTeaRabbit": 1,
+      "BirdyBindleBird": 1,
+      "SwordMouse": 1,
+      "AnvilFox": 1,
+      "CrossbowBird": 1,
+      "FoxfolkSteelFox": 1,
+      "ScoutingPartyMouse": 1,
+      "CobblerRabbit": 1,
+      "CommandWarrenRabbit": 1,
+      "BetterBurrowBankRabbit": 1,
+      "TaxCollectorFox": 3,
+      "CodebreakersMouse": 2,
+      "RoyalClaimBird": 1,
+      "StandandDeliverFox": 2,
+      "SappersBird": 2,
+      "ArmorersBird": 1,
+      "BrutalTacticsBird": 1
+    },
+    "TutorialR01Deck": {
+      "FavoroftheFoxesFox": 1,
+      "FavoroftheRabbitsRabbit": 1,
+      "AVisittoFriendsRabbit": 1,
+      "BakeSaleRabbit": 1,
+      "TravelGearMouse": 1,
+      "SmugglersTrailRabbit": 1,
+      "RootTeaRabbit": 1,
+      "BirdyBindleBird": 1,
+      "RootTeaMouse": 1,
+      "SwordMouse": 1,
+      "WoodlandRunnersBird": 1,
+      "TravelGearFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "MouseinaSackMouse": 1,
+      "CrossbowBird": 1,
+      "ProtectionRacketFox": 1,
+      "ArmsTraderBird": 1,
+      "CrossbowMouse": 1,
+      "FoxfolkSteelFox": 1,
+      "RootTeaFox": 1,
+      "ScoutingPartyMouse": 2,
+      "CobblerRabbit": 2,
+      "CommandWarrenRabbit": 2,
+      "BetterBurrowBankRabbit": 2,
+      "TaxCollectorFox": 3,
+      "CodebreakersMouse": 2,
+      "RoyalClaimBird": 1,
+      "StandandDeliverFox": 2,
+      "SappersBird": 1,
+      "ArmorersBird": 2,
+      "BrutalTacticsBird": 2
+    },
+    "ItemsOnlyDeck": {
+      "AVisittoFriendsRabbit": 1,
+      "BakeSaleRabbit": 1,
+      "TravelGearMouse": 1,
+      "SmugglersTrailRabbit": 1,
+      "RootTeaRabbit": 1,
+      "InvestmentsMouse": 1,
+      "BirdyBindleBird": 1,
+      "RootTeaMouse": 1,
+      "SwordMouse": 1,
+      "WoodlandRunnersBird": 1,
+      "TravelGearFox": 1,
+      "AnvilFox": 1,
+      "GentlyUsedKnapsackFox": 1,
+      "MouseinaSackMouse": 1,
+      "CrossbowBird": 1,
+      "ProtectionRacketFox": 1,
+      "ArmsTraderBird": 1,
+      "CrossbowMouse": 1,
+      "FoxfolkSteelFox": 1,
+      "RootTeaFox": 1
+    },
+    "AmbushCards": {
+      "AmbushBird": 1,
+      "AmbushFox": 1,
+      "AmbushMouse": 1,
+      "AmbushRabbit": 1
+    },
+    "DominanceCards": {
+      "DominanceFox": 1,
+      "DominanceMouse": 1,
+      "DominanceRabbit": 1,
+      "DominanceBird": 1
+    },
+    "VagabondQuestDeck": {
+      "RepairaShedFox": 1,
+      "EscortMouse": 1,
+      "FundraisingFox": 1,
+      "FendoffaBearMouse": 1,
+      "FendoffaBearRabbit": 1,
+      "ExpelBanditsRabbit": 1,
+      "ExpelBanditsMouse": 1,
+      "GuardDutyMouse": 1,
+      "GuardDutyRabbit": 1,
+      "LogisticsMouse": 1,
+      "LogisticsFox": 1,
+      "ErrandFox": 1,
+      "ErrandRabbit": 1,
+      "GiveaSpeechRabbit": 1,
+      "GiveaSpeechFox": 1
+    },
+    "VagabondsDeck": {
+      "RangerArchetype": 1,
+      "ThiefArchetype": 1,
+      "TinkerArchetype": 1,
+      "VagrantArchetype": 1,
+      "ArbiterArchetype": 1,
+      "ScoundrelArchetype": 1,
+      "AdventurerArchetype": 1,
+      "RoninArchetype": 1,
+      "HarrierArchetype": 1
+    },
+    "VagabotsDeck": {
+      "VagabotRangerArchetype": 1,
+      "VagabotThiefArchetype": 1,
+      "VagabotTinkerArchetype": 1
+    },
+    "EyrieDynastiesLeaders": {
+      "BuilderLeader": 1,
+      "CharismaticLeader": 1,
+      "CommanderLeader": 1,
+      "DespotLeader": 1
+    },
+    "UndergroundDuchyMinisters": {
+      "ForemoleMinister": 1,
+      "CaptainMinister": 1,
+      "MarshalMinister": 1,
+      "BrigadierMinister": 1,
+      "BankerMinister": 1,
+      "MayorMinister": 1,
+      "DuchessOfMudMinister": 1,
+      "BaronOfDirtMinister": 1,
+      "EarlOfStoneMinister": 1
+    },
+    "LordOfTheHundredsMoods": {
+      "GrandioseMood": 1,
+      "StubbornMood": 1,
+      "BitterMood": 1,
+      "LavishMood": 1,
+      "RelentlessMood": 1,
+      "WrathfulMood": 1,
+      "JubilantMood": 1,
+      "RowdyMood": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -4641288701806157750
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 935201124149637584
+  },
+  "m_Name": "",
+  "factionSpriteData": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "factionColorData": {
+    "m_FileID": 8,
+    "m_PathID": -3592468652197437459
+  },
+  "vagabondSpriteData": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "vagabotSpriteData": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "includeClockwork": 0
+}

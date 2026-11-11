@@ -1,0 +1,705 @@
+0x1819157b0 mov      qword ptr [rsp + 0x10], rbx   
+0x1819157b5 mov      qword ptr [rsp + 0x18], rsi   
+0x1819157ba mov      qword ptr [rsp + 0x20], rdi   
+0x1819157bf mov      qword ptr [rsp + 8], rcx   
+0x1819157c4 push     r12   
+0x1819157c6 push     r14   
+0x1819157c8 push     r15   
+0x1819157ca sub      rsp, 0x90   
+0x1819157d1 mov      rsi, rcx   
+0x1819157d4 cmp      byte ptr [rip + 0x13740bc], 0   
+0x1819157db jne      0x1819158e4   
+0x1819157e1 lea      rcx, [rip + 0x11c7b90]   
+0x1819157e8 call     0x1820df9b0   
+0x1819157ed lea      rcx, [rip + 0x11bc91c]   
+0x1819157f4 call     0x1820df9b0   
+0x1819157f9 lea      rcx, [rip + 0x11bd1b0]   
+0x181915800 call     0x1820df9b0   
+0x181915805 lea      rcx, [rip + 0x11930fc]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x18191580c call     0x1820df9b0   
+0x181915811 lea      rcx, [rip + 0x11c3ed0]   
+0x181915818 call     0x1820df9b0   
+0x18191581d lea      rcx, [rip + 0x11c8e8c]   
+0x181915824 call     0x1820df9b0   
+0x181915829 lea      rcx, [rip + 0x11c3f70]   
+0x181915830 call     0x1820df9b0   
+0x181915835 lea      rcx, [rip + 0x11c8f2c]   
+0x18191583c call     0x1820df9b0   
+0x181915841 lea      rcx, [rip + 0x11c4010]   
+0x181915848 call     0x1820df9b0   
+0x18191584d lea      rcx, [rip + 0x11c8fcc]   
+0x181915854 call     0x1820df9b0   
+0x181915859 lea      rcx, [rip + 0x11b7150]   
+0x181915860 call     0x1820df9b0   
+0x181915865 lea      rcx, [rip + 0x11c5674]   
+0x18191586c call     0x1820df9b0   
+0x181915871 lea      rcx, [rip + 0x11d10c0]  [{"kind": "type", "name": "LoyalVizier", "type_index": 1176}] 
+0x181915878 call     0x1820df9b0   
+0x18191587d lea      rcx, [rip + 0x11e930c]   
+0x181915884 call     0x1820df9b0   
+0x181915889 lea      rcx, [rip + 0x11e9880]   
+0x181915890 call     0x1820df9b0   
+0x181915895 lea      rcx, [rip + 0x11aa1cc]  [{"kind": "type", "name": "StandardDecks", "type_index": 1538}] 
+0x18191589c call     0x1820df9b0   
+0x1819158a1 lea      rcx, [rip + 0x11d0138]   
+0x1819158a8 call     0x1820df9b0   
+0x1819158ad lea      rcx, [rip + 0x11bb0ac]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x1819158b4 call     0x1820df9b0   
+0x1819158b9 lea      rcx, [rip + 0x11bcbe0]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1819158c0 call     0x1820df9b0   
+0x1819158c5 lea      rcx, [rip + 0x11be7dc]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x1819158cc call     0x1820df9b0   
+0x1819158d1 lea      rcx, [rip + 0x11c27c8]  [{"kind": "type", "name": "TypedID", "type_index": 15874}] 
+0x1819158d8 call     0x1820df9b0   
+0x1819158dd mov      byte ptr [rip + 0x1373fb3], 1   
+0x1819158e4 xorps    xmm0, xmm0   
+0x1819158e7 xor      eax, eax   
+0x1819158e9 movups   xmmword ptr [rsp + 0x58], xmm0   
+0x1819158ee mov      qword ptr [rsp + 0x68], rax   
+0x1819158f3 xor      edx, edx   
+0x1819158f5 mov      rcx, rsi   
+0x1819158f8 call     0x1818e02e0   TuberPlayerEntity.initialize
+0x1819158fd xor      edx, edx   
+0x1819158ff mov      rcx, rsi   
+0x181915902 call     0x1818df910   TuberPlayerEntity.get_TuberMatch
+0x181915907 mov      r15, rax   
+0x18191590a mov      rcx, qword ptr [rip + 0x1192ff7]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915911 cmp      dword ptr [rcx + 0xe0], 0   
+0x181915918 jne      0x181915926   
+0x18191591a call     0x1820dfc70   
+0x18191591f mov      rcx, qword ptr [rip + 0x1192fe2]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915926 mov      rcx, qword ptr [rcx + 0xb8]   
+0x18191592d mov      rbx, qword ptr [rcx + 0x138]   
+0x181915934 test     rbx, rbx   
+0x181915937 je       0x18191637c   
+0x18191593d mov      rbx, qword ptr [rbx + 0x10]   
+0x181915941 mov      rcx, qword ptr [rip + 0x11be760]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x181915948 call     0x1820dfb80   
+0x18191594d mov      rdi, rax   
+0x181915950 xor      r14d, r14d   
+0x181915953 mov      qword ptr [rsp + 0x20], r14   
+0x181915958 mov      r9, rbx   
+0x18191595b mov      r8, rsi   
+0x18191595e mov      rdx, r15   
+0x181915961 mov      rcx, rax   
+0x181915964 call     0x1818d31b0   TuberItemArea..ctor | TuberPlayArea..ctor
+0x181915969 mov      qword ptr [rsi + 0x118], rdi   
+0x181915970 lea      rcx, [rsi + 0x118]   
+0x181915977 mov      rdx, rdi   
+0x18191597a call     0x1820decd0   
+0x18191597f mov      r15, qword ptr [rsi + 0x118]   
+0x181915986 mov      rax, qword ptr [rip + 0x11bcb13]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x18191598d cmp      dword ptr [rax + 0xe0], r14d   
+0x181915994 jne      0x1819159a5   
+0x181915996 mov      rcx, rax   
+0x181915999 call     0x1820dfc70   
+0x18191599e mov      rax, qword ptr [rip + 0x11bcafb]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1819159a5 mov      rax, qword ptr [rax + 0xb8]   
+0x1819159ac mov      r12, qword ptr [rax + 0x128]   
+0x1819159b3 mov      edx, 7   
+0x1819159b8 mov      rcx, qword ptr [rip + 0x11d0021]   
+0x1819159bf call     0x1820ded50   
+0x1819159c4 mov      rbx, rax   
+0x1819159c7 mov      rcx, qword ptr [rip + 0x11baf92]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x1819159ce call     0x1820dfb80   
+0x1819159d3 mov      rdi, rax   
+0x1819159d6 xor      edx, edx   
+0x1819159d8 mov      rcx, rax   
+0x1819159db call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x1819159e0 test     rdi, rdi   
+0x1819159e3 je       0x18191637c   
+0x1819159e9 mov      qword ptr [rdi + 0x10], r14   
+0x1819159ed mov      dword ptr [rdi + 0x18], r14d   
+0x1819159f1 test     rbx, rbx   
+0x1819159f4 je       0x18191637c   
+0x1819159fa mov      rdx, qword ptr [rbx]   
+0x1819159fd mov      rdx, qword ptr [rdx + 0x40]   
+0x181915a01 mov      rcx, rdi   
+0x181915a04 call     0x1820decf0   
+0x181915a09 test     rax, rax   
+0x181915a0c je       0x181916382   
+0x181915a12 cmp      dword ptr [rbx + 0x18], r14d   
+0x181915a16 jbe      0x1819163fe   
+0x181915a1c mov      qword ptr [rbx + 0x20], rdi   
+0x181915a20 lea      rcx, [rbx + 0x20]   
+0x181915a24 mov      rdx, rdi   
+0x181915a27 call     0x1820decd0   
+0x181915a2c mov      rcx, qword ptr [rip + 0x11baf2d]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x181915a33 call     0x1820dfb80   
+0x181915a38 mov      rdi, rax   
+0x181915a3b xor      edx, edx   
+0x181915a3d mov      rcx, rax   
+0x181915a40 call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x181915a45 test     rdi, rdi   
+0x181915a48 je       0x18191637c   
+0x181915a4e mov      dword ptr [rdi + 0x10], r14d   
+0x181915a52 mov      qword ptr [rdi + 0x14], 1   
+0x181915a5a mov      rdx, qword ptr [rbx]   
+0x181915a5d mov      rdx, qword ptr [rdx + 0x40]   
+0x181915a61 mov      rcx, rdi   
+0x181915a64 call     0x1820decf0   
+0x181915a69 test     rax, rax   
+0x181915a6c je       0x181916392   
+0x181915a72 cmp      dword ptr [rbx + 0x18], 1   
+0x181915a76 jbe      0x1819163fe   
+0x181915a7c mov      qword ptr [rbx + 0x28], rdi   
+0x181915a80 lea      rcx, [rbx + 0x28]   
+0x181915a84 mov      rdx, rdi   
+0x181915a87 call     0x1820decd0   
+0x181915a8c mov      rcx, qword ptr [rip + 0x11baecd]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x181915a93 call     0x1820dfb80   
+0x181915a98 mov      rdi, rax   
+0x181915a9b xor      edx, edx   
+0x181915a9d mov      rcx, rax   
+0x181915aa0 call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x181915aa5 test     rdi, rdi   
+0x181915aa8 je       0x18191637c   
+0x181915aae mov      dword ptr [rdi + 0x10], r14d   
+0x181915ab2 mov      dword ptr [rdi + 0x14], 2   
+0x181915ab9 mov      dword ptr [rdi + 0x18], 1   
+0x181915ac0 mov      rdx, qword ptr [rbx]   
+0x181915ac3 mov      rdx, qword ptr [rdx + 0x40]   
+0x181915ac7 mov      rcx, rdi   
+0x181915aca call     0x1820decf0   
+0x181915acf test     rax, rax   
+0x181915ad2 je       0x1819163a2   
+0x181915ad8 cmp      dword ptr [rbx + 0x18], 2   
+0x181915adc jbe      0x1819163fe   
+0x181915ae2 mov      qword ptr [rbx + 0x30], rdi   
+0x181915ae6 lea      rcx, [rbx + 0x30]   
+0x181915aea mov      rdx, rdi   
+0x181915aed call     0x1820decd0   
+0x181915af2 mov      rcx, qword ptr [rip + 0x11bae67]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x181915af9 call     0x1820dfb80   
+0x181915afe mov      rdi, rax   
+0x181915b01 xor      edx, edx   
+0x181915b03 mov      rcx, rax   
+0x181915b06 call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x181915b0b test     rdi, rdi   
+0x181915b0e je       0x18191637c   
+0x181915b14 mov      dword ptr [rdi + 0x10], r14d   
+0x181915b18 mov      qword ptr [rdi + 0x14], 3   
+0x181915b20 mov      rdx, qword ptr [rbx]   
+0x181915b23 mov      rdx, qword ptr [rdx + 0x40]   
+0x181915b27 mov      rcx, rdi   
+0x181915b2a call     0x1820decf0   
+0x181915b2f test     rax, rax   
+0x181915b32 je       0x1819163b2   
+0x181915b38 cmp      dword ptr [rbx + 0x18], 3   
+0x181915b3c jbe      0x1819163fe   
+0x181915b42 mov      qword ptr [rbx + 0x38], rdi   
+0x181915b46 lea      rcx, [rbx + 0x38]   
+0x181915b4a mov      rdx, rdi   
+0x181915b4d call     0x1820decd0   
+0x181915b52 mov      rcx, qword ptr [rip + 0x11bae07]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x181915b59 call     0x1820dfb80   
+0x181915b5e mov      rdi, rax   
+0x181915b61 xor      edx, edx   
+0x181915b63 mov      rcx, rax   
+0x181915b66 call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x181915b6b test     rdi, rdi   
+0x181915b6e je       0x18191637c   
+0x181915b74 mov      dword ptr [rdi + 0x10], r14d   
+0x181915b78 mov      qword ptr [rdi + 0x14], 4   
+0x181915b80 mov      rdx, qword ptr [rbx]   
+0x181915b83 mov      rdx, qword ptr [rdx + 0x40]   
+0x181915b87 mov      rcx, rdi   
+0x181915b8a call     0x1820decf0   
+0x181915b8f test     rax, rax   
+0x181915b92 je       0x1819163c2   
+0x181915b98 cmp      dword ptr [rbx + 0x18], 4   
+0x181915b9c jbe      0x1819163fe   
+0x181915ba2 mov      qword ptr [rbx + 0x40], rdi   
+0x181915ba6 lea      rcx, [rbx + 0x40]   
+0x181915baa mov      rdx, rdi   
+0x181915bad call     0x1820decd0   
+0x181915bb2 mov      rcx, qword ptr [rip + 0x11bada7]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x181915bb9 call     0x1820dfb80   
+0x181915bbe mov      rdi, rax   
+0x181915bc1 xor      edx, edx   
+0x181915bc3 mov      rcx, rax   
+0x181915bc6 call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x181915bcb test     rdi, rdi   
+0x181915bce je       0x18191637c   
+0x181915bd4 mov      dword ptr [rdi + 0x10], r14d   
+0x181915bd8 mov      dword ptr [rdi + 0x14], 4   
+0x181915bdf mov      dword ptr [rdi + 0x18], 1   
+0x181915be6 mov      rdx, qword ptr [rbx]   
+0x181915be9 mov      rdx, qword ptr [rdx + 0x40]   
+0x181915bed mov      rcx, rdi   
+0x181915bf0 call     0x1820decf0   
+0x181915bf5 test     rax, rax   
+0x181915bf8 je       0x1819163d2   
+0x181915bfe cmp      dword ptr [rbx + 0x18], 5   
+0x181915c02 jbe      0x1819163fe   
+0x181915c08 mov      qword ptr [rbx + 0x48], rdi   
+0x181915c0c lea      rcx, [rbx + 0x48]   
+0x181915c10 mov      rdx, rdi   
+0x181915c13 call     0x1820decd0   
+0x181915c18 mov      rcx, qword ptr [rip + 0x11bad41]  [{"kind": "type", "name": "TrackPositionInfo", "type_index": 1539}] 
+0x181915c1f call     0x1820dfb80   
+0x181915c24 mov      rdi, rax   
+0x181915c27 xor      edx, edx   
+0x181915c29 mov      rcx, rax   
+0x181915c2c call     0x180001be0   ConditionalCardValuation..ctor | EyrieRestoreRoostUndo..ctor | EyrieReturnToDecreeUndo..ctor | EyrieUndoBuild..ctor | EyrieUndoMove..ctor | EyrieUndoRecruit..ctor | MarquiseFieldHospitalUndo..ctor | MarquiseSetupBuildingUndo..ctor | MarquiseUndoKeepAction..ctor | TuberUndoAction..ctor | UndoDiscardItems..ctor | VagabondBirdsongUndoRefresh..ctor | WoodlandUndoRevolt..ctor | WoodlandUndoSpreadSympathy..ctor | PlayerMatchInitDataPacker..ctor | PackerUtils..ctor | TuberMatchModel..ctor | GameResultsEntry..ctor | TuberBoardLayout..ctor | AmongCorvidPlot..ctor | AmongDuchyBuildings..ctor | AmongHundredsStrongholds..ctor | AmongHundredsWarlord..ctor | AmongKeepersRelics..ctor | Intervention..ctor | AdvancedSetupFactionOption..ctor | PlayerInitData..ctor | QuestInfo..ctor | TrackPositionInfo..ctor | TuberMatchTypes..ctor | DominanceCoalitionWinCondition..ctor | IWinCondition..ctor | ScoreWinCondition..ctor | ClockworkConfig..ctor | RuinItemLocations..ctor | ScoreForBuilding..ctor | SpecialClearing..ctor | StartingBuilding..ctor | StartingToken..ctor | GamePhases..ctor | Objective..ctor | LogGenerator..ctor | DefaultLogGenerator..ctor | ResolutionStateData..ctor | BattleResolutionFactory..ctor | SerializedBattleResolutionFactory..ctor | StandardBattleResolutionFactory..ctor | SerializedStandardBattleResolutionFactory..ctor | StandardBattleResolution..ctor
+0x181915c31 test     rdi, rdi   
+0x181915c34 je       0x18191637c   
+0x181915c3a mov      dword ptr [rdi + 0x10], r14d   
+0x181915c3e mov      qword ptr [rdi + 0x14], 5   
+0x181915c46 mov      rdx, qword ptr [rbx]   
+0x181915c49 mov      rdx, qword ptr [rdx + 0x40]   
+0x181915c4d mov      rcx, rdi   
+0x181915c50 call     0x1820decf0   
+0x181915c55 test     rax, rax   
+0x181915c58 je       0x1819163e2   
+0x181915c5e cmp      dword ptr [rbx + 0x18], 6   
+0x181915c62 jbe      0x1819163fe   
+0x181915c68 mov      qword ptr [rbx + 0x50], rdi   
+0x181915c6c lea      rcx, [rbx + 0x50]   
+0x181915c70 mov      rdx, rdi   
+0x181915c73 call     0x1820decd0   
+0x181915c78 test     r15, r15   
+0x181915c7b je       0x18191637c   
+0x181915c81 mov      r9, qword ptr [rip + 0x11e9488]   
+0x181915c88 mov      r8, rbx   
+0x181915c8b mov      rdx, r12   
+0x181915c8e mov      rcx, r15   
+0x181915c91 call     0x18032b4f0   
+0x181915c96 mov      rax, qword ptr [rip + 0x11d0c9b]  [{"kind": "type", "name": "LoyalVizier", "type_index": 1176}] 
+0x181915c9d cmp      dword ptr [rax + 0xe0], r14d   
+0x181915ca4 jne      0x181915cb5   
+0x181915ca6 mov      rcx, rax   
+0x181915ca9 call     0x1820dfc70   
+0x181915cae mov      rax, qword ptr [rip + 0x11d0c83]  [{"kind": "type", "name": "LoyalVizier", "type_index": 1176}] 
+0x181915cb5 mov      rax, qword ptr [rax + 0xb8]   
+0x181915cbc mov      qword ptr [rsp + 0x20], r14   
+0x181915cc1 xor      r9d, r9d   
+0x181915cc4 mov      r8, rsi   
+0x181915cc7 mov      rdx, qword ptr [rax]   
+0x181915cca mov      rcx, rsi   
+0x181915ccd call     0x1818df020   TuberPlayerEntity.createEntityFor
+0x181915cd2 mov      qword ptr [rsi + 0x148], rax   
+0x181915cd9 lea      rcx, [rsi + 0x148]   
+0x181915ce0 mov      rdx, rax   
+0x181915ce3 call     0x1820decd0   
+0x181915ce8 mov      rax, qword ptr [rip + 0x11d0c49]  [{"kind": "type", "name": "LoyalVizier", "type_index": 1176}] 
+0x181915cef mov      rcx, qword ptr [rax + 0xb8]   
+0x181915cf6 mov      qword ptr [rsp + 0x20], r14   
+0x181915cfb xor      r9d, r9d   
+0x181915cfe mov      r8, rsi   
+0x181915d01 mov      rdx, qword ptr [rcx]   
+0x181915d04 mov      rcx, rsi   
+0x181915d07 call     0x1818df020   TuberPlayerEntity.createEntityFor
+0x181915d0c mov      qword ptr [rsi + 0x150], rax   
+0x181915d13 lea      rcx, [rsi + 0x150]   
+0x181915d1a mov      rdx, rax   
+0x181915d1d call     0x1820decd0   
+0x181915d22 xor      edx, edx   
+0x181915d24 mov      rcx, rsi   
+0x181915d27 call     0x1818df910   TuberPlayerEntity.get_TuberMatch
+0x181915d2c mov      r15, rax   
+0x181915d2f mov      rcx, qword ptr [rip + 0x1192bd2]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915d36 mov      rdx, qword ptr [rcx + 0xb8]   
+0x181915d3d mov      rbx, qword ptr [rdx + 0x140]   
+0x181915d44 test     rbx, rbx   
+0x181915d47 je       0x18191637c   
+0x181915d4d mov      rbx, qword ptr [rbx + 0x10]   
+0x181915d51 mov      rcx, qword ptr [rip + 0x11be350]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x181915d58 call     0x1820dfb80   
+0x181915d5d mov      rdi, rax   
+0x181915d60 mov      qword ptr [rsp + 0x20], r14   
+0x181915d65 mov      r9, rbx   
+0x181915d68 mov      r8, rsi   
+0x181915d6b mov      rdx, r15   
+0x181915d6e mov      rcx, rax   
+0x181915d71 call     0x1818d31b0   TuberItemArea..ctor | TuberPlayArea..ctor
+0x181915d76 mov      qword ptr [rsi + 0x120], rdi   
+0x181915d7d lea      rcx, [rsi + 0x120]   
+0x181915d84 mov      rdx, rdi   
+0x181915d87 call     0x1820decd0   
+0x181915d8c xor      edx, edx   
+0x181915d8e mov      rcx, rsi   
+0x181915d91 call     0x1818df910   TuberPlayerEntity.get_TuberMatch
+0x181915d96 mov      r15, rax   
+0x181915d99 mov      rcx, qword ptr [rip + 0x1192b68]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915da0 mov      rdx, qword ptr [rcx + 0xb8]   
+0x181915da7 mov      rbx, qword ptr [rdx + 0x148]   
+0x181915dae test     rbx, rbx   
+0x181915db1 je       0x18191637c   
+0x181915db7 mov      rbx, qword ptr [rbx + 0x10]   
+0x181915dbb mov      rcx, qword ptr [rip + 0x11be2e6]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x181915dc2 call     0x1820dfb80   
+0x181915dc7 mov      rdi, rax   
+0x181915dca mov      qword ptr [rsp + 0x20], r14   
+0x181915dcf mov      r9, rbx   
+0x181915dd2 mov      r8, rsi   
+0x181915dd5 mov      rdx, r15   
+0x181915dd8 mov      rcx, rax   
+0x181915ddb call     0x1818d31b0   TuberItemArea..ctor | TuberPlayArea..ctor
+0x181915de0 mov      qword ptr [rsi + 0x128], rdi   
+0x181915de7 lea      rcx, [rsi + 0x128]   
+0x181915dee mov      rdx, rdi   
+0x181915df1 call     0x1820decd0   
+0x181915df6 mov      rbx, qword ptr [rsi + 0x128]   
+0x181915dfd mov      rax, qword ptr [rip + 0x11bc69c]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181915e04 mov      rdx, qword ptr [rax + 0xb8]   
+0x181915e0b mov      rdi, qword ptr [rdx + 0x68]   
+0x181915e0f mov      edx, 1   
+0x181915e14 mov      rcx, qword ptr [rip + 0x11c755d]   
+0x181915e1b call     0x1820ded50   
+0x181915e20 test     rbx, rbx   
+0x181915e23 je       0x18191637c   
+0x181915e29 mov      r9, qword ptr [rip + 0x11e8d60]   
+0x181915e30 mov      r8, rax   
+0x181915e33 mov      rdx, rdi   
+0x181915e36 mov      rcx, rbx   
+0x181915e39 call     0x18032b4f0   
+0x181915e3e xor      edx, edx   
+0x181915e40 mov      rcx, rsi   
+0x181915e43 call     0x1818df910   TuberPlayerEntity.get_TuberMatch
+0x181915e48 mov      r15, rax   
+0x181915e4b mov      rcx, qword ptr [rip + 0x1192ab6]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915e52 mov      rdx, qword ptr [rcx + 0xb8]   
+0x181915e59 mov      rbx, qword ptr [rdx + 0x150]   
+0x181915e60 test     rbx, rbx   
+0x181915e63 je       0x18191637c   
+0x181915e69 mov      rbx, qword ptr [rbx + 0x10]   
+0x181915e6d mov      rcx, qword ptr [rip + 0x11be234]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x181915e74 call     0x1820dfb80   
+0x181915e79 mov      rdi, rax   
+0x181915e7c mov      qword ptr [rsp + 0x20], r14   
+0x181915e81 mov      r9, rbx   
+0x181915e84 mov      r8, rsi   
+0x181915e87 mov      rdx, r15   
+0x181915e8a mov      rcx, rax   
+0x181915e8d call     0x1818d31b0   TuberItemArea..ctor | TuberPlayArea..ctor
+0x181915e92 mov      qword ptr [rsi + 0x130], rdi   
+0x181915e99 lea      rcx, [rsi + 0x130]   
+0x181915ea0 mov      rdx, rdi   
+0x181915ea3 call     0x1820decd0   
+0x181915ea8 mov      rbx, qword ptr [rsi + 0x130]   
+0x181915eaf mov      rax, qword ptr [rip + 0x11bc5ea]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181915eb6 mov      rcx, qword ptr [rax + 0xb8]   
+0x181915ebd mov      rdi, qword ptr [rcx + 0x68]   
+0x181915ec1 mov      edx, 1   
+0x181915ec6 mov      rcx, qword ptr [rip + 0x11c74ab]   
+0x181915ecd call     0x1820ded50   
+0x181915ed2 test     rax, rax   
+0x181915ed5 je       0x18191637c   
+0x181915edb cmp      dword ptr [rax + 0x18], r14d   
+0x181915edf jbe      0x1819163fe   
+0x181915ee5 mov      dword ptr [rax + 0x20], 1   
+0x181915eec test     rbx, rbx   
+0x181915eef je       0x18191637c   
+0x181915ef5 mov      r9, qword ptr [rip + 0x11e8c94]   
+0x181915efc mov      r8, rax   
+0x181915eff mov      rdx, rdi   
+0x181915f02 mov      rcx, rbx   
+0x181915f05 call     0x18032b4f0   
+0x181915f0a xor      edx, edx   
+0x181915f0c mov      rcx, rsi   
+0x181915f0f call     0x1818df910   TuberPlayerEntity.get_TuberMatch
+0x181915f14 mov      r15, rax   
+0x181915f17 mov      rcx, qword ptr [rip + 0x11929ea]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915f1e mov      rdx, qword ptr [rcx + 0xb8]   
+0x181915f25 mov      rbx, qword ptr [rdx + 0x158]   
+0x181915f2c test     rbx, rbx   
+0x181915f2f je       0x18191637c   
+0x181915f35 mov      rbx, qword ptr [rbx + 0x10]   
+0x181915f39 mov      rcx, qword ptr [rip + 0x11be168]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x181915f40 call     0x1820dfb80   
+0x181915f45 mov      rdi, rax   
+0x181915f48 mov      qword ptr [rsp + 0x20], r14   
+0x181915f4d mov      r9, rbx   
+0x181915f50 mov      r8, rsi   
+0x181915f53 mov      rdx, r15   
+0x181915f56 mov      rcx, rax   
+0x181915f59 call     0x1818d31b0   TuberItemArea..ctor | TuberPlayArea..ctor
+0x181915f5e mov      qword ptr [rsi + 0x138], rdi   
+0x181915f65 lea      rcx, [rsi + 0x138]   
+0x181915f6c mov      rdx, rdi   
+0x181915f6f call     0x1820decd0   
+0x181915f74 mov      rbx, qword ptr [rsi + 0x138]   
+0x181915f7b mov      rax, qword ptr [rip + 0x11bc51e]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x181915f82 mov      rcx, qword ptr [rax + 0xb8]   
+0x181915f89 mov      rdi, qword ptr [rcx + 0x68]   
+0x181915f8d mov      edx, 1   
+0x181915f92 mov      rcx, qword ptr [rip + 0x11c73df]   
+0x181915f99 call     0x1820ded50   
+0x181915f9e test     rax, rax   
+0x181915fa1 je       0x18191637c   
+0x181915fa7 cmp      dword ptr [rax + 0x18], r14d   
+0x181915fab jbe      0x1819163fe   
+0x181915fb1 mov      dword ptr [rax + 0x20], 2   
+0x181915fb8 test     rbx, rbx   
+0x181915fbb je       0x18191637c   
+0x181915fc1 mov      r9, qword ptr [rip + 0x11e8bc8]   
+0x181915fc8 mov      r8, rax   
+0x181915fcb mov      rdx, rdi   
+0x181915fce mov      rcx, rbx   
+0x181915fd1 call     0x18032b4f0   
+0x181915fd6 xor      edx, edx   
+0x181915fd8 mov      rcx, rsi   
+0x181915fdb call     0x1818df910   TuberPlayerEntity.get_TuberMatch
+0x181915fe0 mov      r15, rax   
+0x181915fe3 mov      rcx, qword ptr [rip + 0x119291e]  [{"kind": "type", "name": "EntityNames", "type_index": 444}] 
+0x181915fea mov      rdx, qword ptr [rcx + 0xb8]   
+0x181915ff1 mov      rbx, qword ptr [rdx + 0x160]   
+0x181915ff8 test     rbx, rbx   
+0x181915ffb je       0x18191637c   
+0x181916001 mov      rbx, qword ptr [rbx + 0x10]   
+0x181916005 mov      rcx, qword ptr [rip + 0x11be09c]  [{"kind": "type", "name": "TuberPlayArea", "type_index": 480}] 
+0x18191600c call     0x1820dfb80   
+0x181916011 mov      rdi, rax   
+0x181916014 mov      qword ptr [rsp + 0x20], r14   
+0x181916019 mov      r9, rbx   
+0x18191601c mov      r8, rsi   
+0x18191601f mov      rdx, r15   
+0x181916022 mov      rcx, rax   
+0x181916025 call     0x1818d31b0   TuberItemArea..ctor | TuberPlayArea..ctor
+0x18191602a mov      qword ptr [rsi + 0x140], rdi   
+0x181916031 lea      rcx, [rsi + 0x140]   
+0x181916038 mov      rdx, rdi   
+0x18191603b call     0x1820decd0   
+0x181916040 mov      rbx, qword ptr [rsi + 0x140]   
+0x181916047 mov      rax, qword ptr [rip + 0x11bc452]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x18191604e mov      rcx, qword ptr [rax + 0xb8]   
+0x181916055 mov      rdi, qword ptr [rcx + 0x68]   
+0x181916059 mov      edx, 1   
+0x18191605e mov      rcx, qword ptr [rip + 0x11c7313]   
+0x181916065 call     0x1820ded50   
+0x18191606a test     rax, rax   
+0x18191606d je       0x18191637c   
+0x181916073 cmp      dword ptr [rax + 0x18], r14d   
+0x181916077 jbe      0x1819163fe   
+0x18191607d mov      dword ptr [rax + 0x20], 3   
+0x181916084 test     rbx, rbx   
+0x181916087 je       0x18191637c   
+0x18191608d mov      r9, qword ptr [rip + 0x11e8afc]   
+0x181916094 mov      r8, rax   
+0x181916097 mov      rdx, rdi   
+0x18191609a mov      rcx, rbx   
+0x18191609d call     0x18032b4f0   
+0x1819160a2 xor      edx, edx   
+0x1819160a4 mov      rcx, rsi   
+0x1819160a7 call     0x1818df980   TuberPlayerEntity.get_tpMatchInitData
+0x1819160ac test     rax, rax   
+0x1819160af je       0x1819160c0   
+0x1819160b1 xor      edx, edx   
+0x1819160b3 mov      rcx, rax   
+0x1819160b6 call     0x1814fd150   TuberPlayerMatchInitData.LeadersToUse
+0x1819160bb test     rax, rax   
+0x1819160be jne      0x1819160f3   
+0x1819160c0 mov      rax, qword ptr [rip + 0x11a99a1]  [{"kind": "type", "name": "StandardDecks", "type_index": 1538}] 
+0x1819160c7 cmp      dword ptr [rax + 0xe0], r14d   
+0x1819160ce jne      0x1819160df   
+0x1819160d0 mov      rcx, rax   
+0x1819160d3 call     0x1820dfc70   
+0x1819160d8 mov      rax, qword ptr [rip + 0x11a9989]  [{"kind": "type", "name": "StandardDecks", "type_index": 1538}] 
+0x1819160df mov      rax, qword ptr [rax + 0xb8]   
+0x1819160e6 mov      rax, qword ptr [rax + 0x68]   
+0x1819160ea test     rax, rax   
+0x1819160ed je       0x18191637c   
+0x1819160f3 mov      r8, qword ptr [rip + 0x11b68b6]   
+0x1819160fa mov      rdx, rax   
+0x1819160fd lea      rcx, [rsp + 0x40]   
+0x181916102 call     0x180a13c70   
+0x181916107 movups   xmm0, xmmword ptr [rsp + 0x40]   
+0x18191610c movups   xmmword ptr [rsp + 0x70], xmm0   
+0x181916111 movsd    xmm1, qword ptr [rsp + 0x50]   
+0x181916117 movsd    qword ptr [rsp + 0x80], xmm1   
+0x181916120 mov      qword ptr [rsp + 0x40], r14   
+0x181916125 lea      rbx, [rsp + 0x70]   
+0x18191612a mov      qword ptr [rsp + 0x48], rbx   
+0x18191612f nop         
+0x181916130 mov      rdx, qword ptr [rip + 0x11c3669]   
+0x181916137 lea      rcx, [rsp + 0x70]   
+0x18191613c call     0x180855c00   
+0x181916141 test     al, al   
+0x181916143 je       0x1819161b7   
+0x181916145 mov      r15, qword ptr [rsp + 0x80]   
+0x18191614d xor      edx, edx   
+0x18191614f mov      rcx, rsi   
+0x181916152 call     0x1818df980   TuberPlayerEntity.get_tpMatchInitData
+0x181916157 test     rax, rax   
+0x18191615a je       0x181916165   
+0x18191615c mov      rdi, qword ptr [rax + 0x88]   
+0x181916163 jmp      0x181916168   
+0x181916165 mov      rdi, r14   
+0x181916168 mov      rcx, qword ptr [rip + 0x11c1f31]  [{"kind": "type", "name": "TypedID", "type_index": 15874}] 
+0x18191616f cmp      dword ptr [rcx + 0xe0], 0   
+0x181916176 jne      0x18191617d   
+0x181916178 call     0x1820dfc70   
+0x18191617d xor      r8d, r8d   
+0x181916180 mov      rdx, r15   
+0x181916183 mov      rcx, rdi   
+0x181916186 call     0x181ec72e0   
+0x18191618b test     al, al   
+0x18191618d je       0x181916198   
+0x18191618f mov      r8, qword ptr [rsi + 0x120]   
+0x181916196 jmp      0x18191619f   
+0x181916198 mov      r8, qword ptr [rsi + 0xb0]   
+0x18191619f mov      qword ptr [rsp + 0x20], r14   
+0x1819161a4 xor      r9d, r9d   
+0x1819161a7 mov      rdx, r15   
+0x1819161aa mov      rcx, rsi   
+0x1819161ad call     0x1818df020   TuberPlayerEntity.createEntityFor
+0x1819161b2 jmp      0x181916130   
+0x1819161b7 mov      rdx, qword ptr [rip + 0x11c352a]   
+0x1819161be mov      rcx, rbx   
+0x1819161c1 call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x1819161c6 jmp      0x1819161f2   
+0x1819161c8 mov      rdx, qword ptr [rip + 0x11c3519]   
+0x1819161cf mov      rcx, qword ptr [rsp + 0x48]   
+0x1819161d4 call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x1819161d9 mov      rcx, qword ptr [rsp + 0x40]   
+0x1819161de test     rcx, rcx   
+0x1819161e1 jne      0x1819163f2   
+0x1819161e7 xor      r14d, r14d   
+0x1819161ea mov      rsi, qword ptr [rsp + 0xb0]   
+0x1819161f2 xor      edx, edx   
+0x1819161f4 mov      rcx, rsi   
+0x1819161f7 call     0x1818df980   TuberPlayerEntity.get_tpMatchInitData
+0x1819161fc test     rax, rax   
+0x1819161ff je       0x18191633c   
+0x181916205 cmp      qword ptr [rax + 0x90], 0   
+0x18191620d je       0x18191633c   
+0x181916213 xor      edx, edx   
+0x181916215 mov      rcx, rsi   
+0x181916218 call     0x1818df980   TuberPlayerEntity.get_tpMatchInitData
+0x18191621d test     rax, rax   
+0x181916220 je       0x18191637c   
+0x181916226 mov      rdx, qword ptr [rax + 0x90]   
+0x18191622d test     rdx, rdx   
+0x181916230 je       0x18191637c   
+0x181916236 mov      r8, qword ptr [rip + 0x11c4ca3]   
+0x18191623d lea      rcx, [rsp + 0x40]   
+0x181916242 call     0x180a7d240   
+0x181916247 movups   xmm0, xmmword ptr [rsp + 0x40]   
+0x18191624c movups   xmmword ptr [rsp + 0x58], xmm0   
+0x181916251 movsd    xmm1, qword ptr [rsp + 0x50]   
+0x181916257 movsd    qword ptr [rsp + 0x68], xmm1   
+0x18191625d mov      qword ptr [rsp + 0x40], r14   
+0x181916262 lea      rbx, [rsp + 0x58]   
+0x181916267 mov      qword ptr [rsp + 0x48], rbx   
+0x18191626c nop      dword ptr [rax]   
+0x181916270 mov      rdx, qword ptr [rip + 0x11c84f1]   
+0x181916277 lea      rcx, [rsp + 0x58]   
+0x18191627c call     0x180854e90   
+0x181916281 test     al, al   
+0x181916283 je       0x181916304   
+0x181916285 mov      ecx, dword ptr [rsp + 0x68]   
+0x181916289 test     ecx, ecx   
+0x18191628b je       0x1819162bc   
+0x18191628d sub      ecx, 1   
+0x181916290 je       0x1819162b3   
+0x181916292 sub      ecx, 1   
+0x181916295 je       0x1819162aa   
+0x181916297 cmp      ecx, 1   
+0x18191629a je       0x1819162a1   
+0x18191629c mov      rdi, r14   
+0x18191629f jmp      0x1819162c3   
+0x1819162a1 mov      rdi, qword ptr [rsi + 0x140]   
+0x1819162a8 jmp      0x1819162c3   
+0x1819162aa mov      rdi, qword ptr [rsi + 0x138]   
+0x1819162b1 jmp      0x1819162c3   
+0x1819162b3 mov      rdi, qword ptr [rsi + 0x130]   
+0x1819162ba jmp      0x1819162c3   
+0x1819162bc mov      rdi, qword ptr [rsi + 0x128]   
+0x1819162c3 mov      rax, qword ptr [rip + 0x11d066e]  [{"kind": "type", "name": "LoyalVizier", "type_index": 1176}] 
+0x1819162ca cmp      dword ptr [rax + 0xe0], 0   
+0x1819162d1 jne      0x1819162e2   
+0x1819162d3 mov      rcx, rax   
+0x1819162d6 call     0x1820dfc70   
+0x1819162db mov      rax, qword ptr [rip + 0x11d0656]  [{"kind": "type", "name": "LoyalVizier", "type_index": 1176}] 
+0x1819162e2 mov      rax, qword ptr [rax + 0xb8]   
+0x1819162e9 mov      qword ptr [rsp + 0x20], r14   
+0x1819162ee xor      r9d, r9d   
+0x1819162f1 mov      r8, rdi   
+0x1819162f4 mov      rdx, qword ptr [rax]   
+0x1819162f7 mov      rcx, rsi   
+0x1819162fa call     0x1818df020   TuberPlayerEntity.createEntityFor
+0x1819162ff jmp      0x181916270   
+0x181916304 mov      rdx, qword ptr [rip + 0x11c83a5]   
+0x18191630b mov      rcx, rbx   
+0x18191630e call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x181916313 jmp      0x18191633c   
+0x181916315 mov      rdx, qword ptr [rip + 0x11c8394]   
+0x18191631c mov      rcx, qword ptr [rsp + 0x48]   
+0x181916321 call     0x180001c20   TuberMatch.FinishReconnect | TuberHirelingEntity.Initialize | TuberPlayerEntity.postAllPlayersInitialized | TuberPlaymat.Configure | TuberBoardLayout.PostProcessBoard | AIProfile.InvalidateCachedPlan | TuberArchetype.onAbilityCreated | TuberArchetype.onTriggerCreated | TuberTriggerFactory.initializeEntities
+0x181916326 mov      rcx, qword ptr [rsp + 0x40]   
+0x18191632b test     rcx, rcx   
+0x18191632e jne      0x1819163f8   
+0x181916334 mov      rsi, qword ptr [rsp + 0xb0]   
+0x18191633c xor      r8d, r8d   
+0x18191633f lea      edx, [r8 + 1]   
+0x181916343 mov      rcx, rsi   
+0x181916346 call     0x181929770   IEyriePlayerPropertiesUtils.commonEyrieInitialize
+0x18191634b mov      rax, qword ptr [rsi]   
+0x18191634e mov      rdx, qword ptr [rax + 0x300]   
+0x181916355 mov      rcx, rsi   
+0x181916358 call     qword ptr [rax + 0x2f8]   
+0x18191635e lea      r11, [rsp + 0x90]   
+0x181916366 mov      rbx, qword ptr [r11 + 0x28]   
+0x18191636a mov      rsi, qword ptr [r11 + 0x30]   
+0x18191636e mov      rdi, qword ptr [r11 + 0x38]   
+0x181916372 mov      rsp, r11   
+0x181916375 pop      r15   
+0x181916377 pop      r14   
+0x181916379 pop      r12   
+0x18191637b ret         
+0x18191637c call     0x1820dfbd0   
+0x181916381 int3        
+0x181916382 call     0x1820df700   
+0x181916387 mov      rcx, rax   
+0x18191638a xor      edx, edx   
+0x18191638c call     0x1820dfb90   
+0x181916391 int3        
+0x181916392 call     0x1820df700   
+0x181916397 mov      rcx, rax   
+0x18191639a xor      edx, edx   
+0x18191639c call     0x1820dfb90   
+0x1819163a1 int3        
+0x1819163a2 call     0x1820df700   
+0x1819163a7 mov      rcx, rax   
+0x1819163aa xor      edx, edx   
+0x1819163ac call     0x1820dfb90   
+0x1819163b1 int3        
+0x1819163b2 call     0x1820df700   
+0x1819163b7 mov      rcx, rax   
+0x1819163ba xor      edx, edx   
+0x1819163bc call     0x1820dfb90   
+0x1819163c1 int3        
+0x1819163c2 call     0x1820df700   
+0x1819163c7 mov      rcx, rax   
+0x1819163ca xor      edx, edx   
+0x1819163cc call     0x1820dfb90   
+0x1819163d1 int3        
+0x1819163d2 call     0x1820df700   
+0x1819163d7 mov      rcx, rax   
+0x1819163da xor      edx, edx   
+0x1819163dc call     0x1820dfb90   
+0x1819163e1 int3        
+0x1819163e2 call     0x1820df700   
+0x1819163e7 mov      rcx, rax   
+0x1819163ea xor      edx, edx   
+0x1819163ec call     0x1820dfb90   
+0x1819163f1 int3        
+0x1819163f2 call     0x1820dfc60   
+0x1819163f7 int3        
+0x1819163f8 call     0x1820dfc60   
+0x1819163fd int3        
+0x1819163fe call     0x1820dfbc0   
+0x181916403 int3        
+0x181916404 int3        
+0x181916405 int3        
+0x181916406 int3        
+0x181916407 int3        
+0x181916408 int3        
+0x181916409 int3        
+0x18191640a int3        
+0x18191640b int3        
+0x18191640c int3        
+0x18191640d int3        
+0x18191640e int3        
+0x18191640f int3        

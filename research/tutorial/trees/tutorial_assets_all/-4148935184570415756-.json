@@ -1,0 +1,23 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4580866787616221882
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 6902047114698053430
+  },
+  "m_Name": "",
+  "BasicPrefab": {
+    "m_FileID": 0,
+    "m_PathID": -5034451410864726360
+  },
+  "zeroOutItem": 1,
+  "siblingIndexOffset": 2,
+  "onInstantiateComplete": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

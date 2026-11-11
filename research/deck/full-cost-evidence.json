@@ -1,0 +1,298 @@
+[
+  {
+    "type": "FavoroftheFoxesFox",
+    "cost": [
+      "fox",
+      "fox",
+      "fox"
+    ],
+    "attribute_va": "0x1814b5bed",
+    "allocation_va": "0x1814b5bfb"
+  },
+  {
+    "type": "FavoroftheMiceMouse",
+    "cost": [
+      "mouse",
+      "mouse",
+      "mouse"
+    ],
+    "attribute_va": "0x1814b612d",
+    "allocation_va": "0x1814b613b"
+  },
+  {
+    "type": "FavoroftheRabbitsRabbit",
+    "cost": [
+      "rabbit",
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814b665a",
+    "allocation_va": "0x1814b6668"
+  },
+  {
+    "type": "AVisittoFriendsRabbit",
+    "cost": [
+      "rabbit"
+    ],
+    "attribute_va": "0x1814a6df6",
+    "allocation_va": "0x1814a6e04"
+  },
+  {
+    "type": "BakeSaleRabbit",
+    "cost": [
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814aa226",
+    "allocation_va": "0x1814aa234"
+  },
+  {
+    "type": "TravelGearMouse",
+    "cost": [
+      "rabbit"
+    ],
+    "attribute_va": "0x1814c8cd7",
+    "allocation_va": "0x1814c8ce5"
+  },
+  {
+    "type": "SmugglersTrailRabbit",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814c49a6",
+    "allocation_va": "0x1814c49b4"
+  },
+  {
+    "type": "RootTeaRabbit",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814c1cc6",
+    "allocation_va": "0x1814c1cd4"
+  },
+  {
+    "type": "InvestmentsMouse",
+    "cost": [
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814b9127",
+    "allocation_va": "0x1814b9135"
+  },
+  {
+    "type": "BirdyBindleBird",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814aaf67",
+    "allocation_va": "0x1814aaf75"
+  },
+  {
+    "type": "RootTeaMouse",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814c1577",
+    "allocation_va": "0x1814c1585"
+  },
+  {
+    "type": "SwordMouse",
+    "cost": [
+      "fox",
+      "fox"
+    ],
+    "attribute_va": "0x1814c6e37",
+    "allocation_va": "0x1814c6e45"
+  },
+  {
+    "type": "WoodlandRunnersBird",
+    "cost": [
+      "rabbit"
+    ],
+    "attribute_va": "0x1814ce007",
+    "allocation_va": "0x1814ce015"
+  },
+  {
+    "type": "TravelGearFox",
+    "cost": [
+      "rabbit"
+    ],
+    "attribute_va": "0x1814c8637",
+    "allocation_va": "0x1814c8645"
+  },
+  {
+    "type": "AnvilFox",
+    "cost": [
+      "fox"
+    ],
+    "attribute_va": "0x1814a8787",
+    "allocation_va": "0x1814a8795"
+  },
+  {
+    "type": "GentlyUsedKnapsackFox",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814b8357",
+    "allocation_va": "0x1814b8365"
+  },
+  {
+    "type": "MouseinaSackMouse",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814bd7a7",
+    "allocation_va": "0x1814bd7b5"
+  },
+  {
+    "type": "CrossbowBird",
+    "cost": [
+      "fox"
+    ],
+    "attribute_va": "0x1814b15c7",
+    "allocation_va": "0x1814b15d5"
+  },
+  {
+    "type": "ProtectionRacketFox",
+    "cost": [
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814bf177",
+    "allocation_va": "0x1814bf185"
+  },
+  {
+    "type": "ArmsTraderBird",
+    "cost": [
+      "fox",
+      "fox"
+    ],
+    "attribute_va": "0x1814a94a7",
+    "allocation_va": "0x1814a94b5"
+  },
+  {
+    "type": "CrossbowMouse",
+    "cost": [
+      "fox"
+    ],
+    "attribute_va": "0x1814b1c77",
+    "allocation_va": "0x1814b1c85"
+  },
+  {
+    "type": "FoxfolkSteelFox",
+    "cost": [
+      "fox",
+      "fox"
+    ],
+    "attribute_va": "0x1814b7c67",
+    "allocation_va": "0x1814b7c75"
+  },
+  {
+    "type": "RootTeaFox",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814c0e27",
+    "allocation_va": "0x1814c0e35"
+  },
+  {
+    "type": "ScoutingPartyMouse",
+    "cost": [
+      "mouse",
+      "mouse"
+    ],
+    "attribute_va": "0x1814c3a41",
+    "allocation_va": "0x1814c3a4f"
+  },
+  {
+    "type": "CobblerRabbit",
+    "cost": [
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814aec80",
+    "allocation_va": "0x1814aec8e"
+  },
+  {
+    "type": "CommandWarrenRabbit",
+    "cost": [
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814aff00",
+    "allocation_va": "0x1814aff0e"
+  },
+  {
+    "type": "BetterBurrowBankRabbit",
+    "cost": [
+      "rabbit",
+      "rabbit"
+    ],
+    "attribute_va": "0x1814aaa10",
+    "allocation_va": "0x1814aaa1e"
+  },
+  {
+    "type": "TaxCollectorFox",
+    "cost": [
+      "rabbit",
+      "fox",
+      "mouse"
+    ],
+    "attribute_va": "0x1814c7641",
+    "allocation_va": "0x1814c764f"
+  },
+  {
+    "type": "CodebreakersMouse",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814af291",
+    "allocation_va": "0x1814af29f"
+  },
+  {
+    "type": "RoyalClaimBird",
+    "cost": [
+      "wild",
+      "wild",
+      "wild",
+      "wild"
+    ],
+    "attribute_va": "0x1814c28f3",
+    "allocation_va": "0x1814c2901"
+  },
+  {
+    "type": "StandandDeliverFox",
+    "cost": [
+      "mouse",
+      "mouse",
+      "mouse"
+    ],
+    "attribute_va": "0x1814c5bc3",
+    "allocation_va": "0x1814c5bd1"
+  },
+  {
+    "type": "SappersBird",
+    "cost": [
+      "mouse"
+    ],
+    "attribute_va": "0x1814c3541",
+    "allocation_va": "0x1814c354f"
+  },
+  {
+    "type": "ArmorersBird",
+    "cost": [
+      "fox"
+    ],
+    "attribute_va": "0x1814a8f81",
+    "allocation_va": "0x1814a8f8f"
+  },
+  {
+    "type": "BrutalTacticsBird",
+    "cost": [
+      "fox",
+      "fox"
+    ],
+    "attribute_va": "0x1814ac171",
+    "allocation_va": "0x1814ac17f"
+  }
+]

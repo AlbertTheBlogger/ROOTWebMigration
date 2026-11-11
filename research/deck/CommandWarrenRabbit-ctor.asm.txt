@@ -1,0 +1,296 @@
+0x1814afa80 push     rbx   
+0x1814afa82 push     rsi   
+0x1814afa83 push     rdi   
+0x1814afa84 sub      rsp, 0x20   
+0x1814afa88 cmp      byte ptr [rip + 0x17d802f], 0   
+0x1814afa8f mov      rsi, rcx   
+0x1814afa92 jne      0x1814afbef   
+0x1814afa98 lea      rcx, [rip + 0x16512f9]  [{"kind": "type", "name": "CardCraftAbility", "type_index": 3257}] 
+0x1814afa9f call     0x1820df9b0   
+0x1814afaa4 lea      rcx, [rip + 0x16571cd]  [{"kind": "type", "name": "CommandWarrenAbility", "type_index": 3279}] 
+0x1814afaab call     0x1820df9b0   
+0x1814afab0 lea      rcx, [rip + 0x1657271]  [{"kind": "type", "name": "CommandWarrenRabbit", "type_index": 1191}] 
+0x1814afab7 call     0x1820df9b0   
+0x1814afabc lea      rcx, [rip + 0x165b32d]  [{"kind": "type", "name": "CoreAttributes", "type_index": 16542}] 
+0x1814afac3 call     0x1820df9b0   
+0x1814afac8 lea      rcx, [rip + 0x15ec0a1]   
+0x1814afacf call     0x1820df9b0   
+0x1814afad4 lea      rcx, [rip + 0x15ebfdd]   
+0x1814afadb call     0x1820df9b0   
+0x1814afae0 lea      rcx, [rip + 0x1622291]   
+0x1814afae7 call     0x1820df9b0   
+0x1814afaec lea      rcx, [rip + 0x161925d]   
+0x1814afaf3 call     0x1820df9b0   
+0x1814afaf8 lea      rcx, [rip + 0x1619199]   
+0x1814afaff call     0x1820df9b0   
+0x1814afb04 lea      rcx, [rip + 0x1601bdd]   
+0x1814afb0b call     0x1820df9b0   
+0x1814afb10 lea      rcx, [rip + 0x1634529]  [{"kind": "type", "name": "LocalizableText", "type_index": 15858}] 
+0x1814afb17 call     0x1820df9b0   
+0x1814afb1c lea      rcx, [rip + 0x1617e4d]   
+0x1814afb23 call     0x1820df9b0   
+0x1814afb28 lea      rcx, [rip + 0x161c119]   
+0x1814afb2f call     0x1820df9b0   
+0x1814afb34 lea      rcx, [rip + 0x16156ad]   
+0x1814afb3b call     0x1820df9b0   
+0x1814afb40 lea      rcx, [rip + 0x164f7d9]   
+0x1814afb47 call     0x1820df9b0   
+0x1814afb4c lea      rcx, [rip + 0x164d98d]   
+0x1814afb53 call     0x1820df9b0   
+0x1814afb58 lea      rcx, [rip + 0x164db91]   
+0x1814afb5f call     0x1820df9b0   
+0x1814afb64 lea      rcx, [rip + 0x164f915]   
+0x1814afb6b call     0x1820df9b0   
+0x1814afb70 lea      rcx, [rip + 0x164ed59]   
+0x1814afb77 call     0x1820df9b0   
+0x1814afb7c lea      rcx, [rip + 0x164e24d]   
+0x1814afb83 call     0x1820df9b0   
+0x1814afb88 lea      rcx, [rip + 0x164e451]   
+0x1814afb8f call     0x1820df9b0   
+0x1814afb94 lea      rcx, [rip + 0x164fa45]   
+0x1814afb9b call     0x1820df9b0   
+0x1814afba0 lea      rcx, [rip + 0x164f4b9]   
+0x1814afba7 call     0x1820df9b0   
+0x1814afbac lea      rcx, [rip + 0x1634b7d]   
+0x1814afbb3 call     0x1820df9b0   
+0x1814afbb8 lea      rcx, [rip + 0x16228e1]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afbbf call     0x1820df9b0   
+0x1814afbc4 lea      rcx, [rip + 0x15e95d5]  [{"kind": "literal", "value": "root.cardtext.commandwarren"}] 
+0x1814afbcb call     0x1820df9b0   
+0x1814afbd0 lea      rcx, [rip + 0x15e72a1]  [{"kind": "literal", "value": "root.cardname.commandwarren"}] 
+0x1814afbd7 call     0x1820df9b0   
+0x1814afbdc lea      rcx, [rip + 0x164c47d]  [{"kind": "literal", "value": "bunny_commandwarren"}] 
+0x1814afbe3 call     0x1820df9b0   
+0x1814afbe8 mov      byte ptr [rip + 0x17d7ecf], 1   
+0x1814afbef xor      edx, edx   
+0x1814afbf1 mov      rcx, rsi   
+0x1814afbf4 call     0x18149b020   TuberArchetype..ctor
+0x1814afbf9 mov      rax, qword ptr [rip + 0x1657128]  [{"kind": "type", "name": "CommandWarrenRabbit", "type_index": 1191}] 
+0x1814afc00 cmp      dword ptr [rax + 0xe0], 0   
+0x1814afc07 jne      0x1814afc18   
+0x1814afc09 mov      rcx, rax   
+0x1814afc0c call     0x1820dfc70   
+0x1814afc11 mov      rax, qword ptr [rip + 0x1657110]  [{"kind": "type", "name": "CommandWarrenRabbit", "type_index": 1191}] 
+0x1814afc18 mov      rax, qword ptr [rax + 0xb8]   
+0x1814afc1f lea      rcx, [rsi + 0x30]   
+0x1814afc23 mov      rdx, qword ptr [rax]   
+0x1814afc26 mov      qword ptr [rsi + 0x30], rdx   
+0x1814afc2a call     0x1820decd0   
+0x1814afc2f mov      rdx, qword ptr [rip + 0x162286a]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afc36 cmp      dword ptr [rdx + 0xe0], 0   
+0x1814afc3d jne      0x1814afc4e   
+0x1814afc3f mov      rcx, rdx   
+0x1814afc42 call     0x1820dfc70   
+0x1814afc47 mov      rdx, qword ptr [rip + 0x1622852]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afc4e mov      rax, qword ptr [rip + 0x16570d3]  [{"kind": "type", "name": "CommandWarrenRabbit", "type_index": 1191}] 
+0x1814afc55 mov      rcx, rsi   
+0x1814afc58 mov      rdx, qword ptr [rdx + 0xb8]   
+0x1814afc5f mov      r9, qword ptr [rip + 0x164f6ba]   
+0x1814afc66 mov      r8, qword ptr [rax + 0xb8]   
+0x1814afc6d mov      rdx, qword ptr [rdx + 0xd0]   
+0x1814afc74 mov      r8, qword ptr [r8]   
+0x1814afc77 call     0x18032b4f0   
+0x1814afc7c mov      rax, qword ptr [rip + 0x165b16d]  [{"kind": "type", "name": "CoreAttributes", "type_index": 16542}] 
+0x1814afc83 cmp      dword ptr [rax + 0xe0], 0   
+0x1814afc8a jne      0x1814afc9b   
+0x1814afc8c mov      rcx, rax   
+0x1814afc8f call     0x1820dfc70   
+0x1814afc94 mov      rax, qword ptr [rip + 0x165b155]  [{"kind": "type", "name": "CoreAttributes", "type_index": 16542}] 
+0x1814afc9b mov      rax, qword ptr [rax + 0xb8]   
+0x1814afca2 mov      rcx, qword ptr [rip + 0x1634397]  [{"kind": "type", "name": "LocalizableText", "type_index": 15858}] 
+0x1814afca9 mov      rdi, qword ptr [rax + 8]   
+0x1814afcad call     0x1820dfb80   
+0x1814afcb2 mov      rdx, qword ptr [rip + 0x15e71bf]  [{"kind": "literal", "value": "root.cardname.commandwarren"}] 
+0x1814afcb9 xor      r8d, r8d   
+0x1814afcbc mov      rcx, rax   
+0x1814afcbf mov      rbx, rax   
+0x1814afcc2 call     0x181ec2e70   
+0x1814afcc7 mov      r9, qword ptr [rip + 0x164f7b2]   
+0x1814afcce mov      r8, rbx   
+0x1814afcd1 mov      rdx, rdi   
+0x1814afcd4 mov      rcx, rsi   
+0x1814afcd7 call     0x18032b4f0   
+0x1814afcdc mov      rax, qword ptr [rip + 0x16227bd]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afce3 mov      rcx, qword ptr [rax + 0xb8]   
+0x1814afcea mov      rdi, qword ptr [rcx + 0xb8]   
+0x1814afcf1 mov      rcx, qword ptr [rip + 0x1634348]  [{"kind": "type", "name": "LocalizableText", "type_index": 15858}] 
+0x1814afcf8 call     0x1820dfb80   
+0x1814afcfd mov      rdx, qword ptr [rip + 0x15e949c]  [{"kind": "literal", "value": "root.cardtext.commandwarren"}] 
+0x1814afd04 xor      r8d, r8d   
+0x1814afd07 mov      rcx, rax   
+0x1814afd0a mov      rbx, rax   
+0x1814afd0d call     0x181ec2e70   
+0x1814afd12 mov      r9, qword ptr [rip + 0x164f767]   
+0x1814afd19 mov      r8, rbx   
+0x1814afd1c mov      rdx, rdi   
+0x1814afd1f mov      rcx, rsi   
+0x1814afd22 call     0x18032b4f0   
+0x1814afd27 mov      rax, qword ptr [rip + 0x1622772]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afd2e mov      rcx, rsi   
+0x1814afd31 mov      r9, qword ptr [rip + 0x164f8a8]   
+0x1814afd38 mov      r8, qword ptr [rip + 0x164c321]  [{"kind": "literal", "value": "bunny_commandwarren"}] 
+0x1814afd3f mov      rdx, qword ptr [rax + 0xb8]   
+0x1814afd46 mov      rdx, qword ptr [rdx + 0xd8]   
+0x1814afd4d call     0x18032b4f0   
+0x1814afd52 mov      rax, qword ptr [rip + 0x1622747]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afd59 mov      rcx, qword ptr [rax + 0xb8]   
+0x1814afd60 mov      rdi, qword ptr [rcx + 0xb0]   
+0x1814afd67 mov      rcx, qword ptr [rip + 0x160197a]   
+0x1814afd6e call     0x1820dfb80   
+0x1814afd73 mov      rdx, qword ptr [rip + 0x1618f1e]   
+0x1814afd7a mov      rcx, rax   
+0x1814afd7d mov      rbx, rax   
+0x1814afd80 call     0x180a1f500   
+0x1814afd85 mov      rcx, qword ptr [rip + 0x1656eec]  [{"kind": "type", "name": "CommandWarrenAbility", "type_index": 3279}] 
+0x1814afd8c cmp      dword ptr [rcx + 0xe0], 0   
+0x1814afd93 jne      0x1814afda1   
+0x1814afd95 call     0x1820dfc70   
+0x1814afd9a mov      rcx, qword ptr [rip + 0x1656ed7]  [{"kind": "type", "name": "CommandWarrenAbility", "type_index": 3279}] 
+0x1814afda1 mov      rcx, qword ptr [rcx + 0xb8]   
+0x1814afda8 mov      rdx, qword ptr [rcx]   
+0x1814afdab test     rbx, rbx   
+0x1814afdae je       0x1814b001e   
+0x1814afdb4 mov      r9, qword ptr [rip + 0x1618f95]   
+0x1814afdbb inc      dword ptr [rbx + 0x1c]   
+0x1814afdbe mov      rcx, qword ptr [rbx + 0x10]   
+0x1814afdc2 movsxd   r8, dword ptr [rbx + 0x18]   
+0x1814afdc6 test     rcx, rcx   
+0x1814afdc9 je       0x1814b001e   
+0x1814afdcf cmp      r8d, dword ptr [rcx + 0x18]   
+0x1814afdd3 jb       0x1814afdee   
+0x1814afdd5 mov      rax, qword ptr [r9 + 0x20]   
+0x1814afdd9 mov      rcx, rbx   
+0x1814afddc mov      r8, qword ptr [rax + 0xc0]   
+0x1814afde3 mov      r8, qword ptr [r8 + 0x70]   
+0x1814afde7 call     0x180abf790   
+0x1814afdec jmp      0x1814afe11   
+0x1814afdee lea      eax, [r8 + 1]   
+0x1814afdf2 mov      dword ptr [rbx + 0x18], eax   
+0x1814afdf5 cmp      r8d, dword ptr [rcx + 0x18]   
+0x1814afdf9 jae      0x1814b0024   
+0x1814afdff mov      qword ptr [rcx + r8*8 + 0x20], rdx   
+0x1814afe04 lea      rcx, [rcx + r8*8]   
+0x1814afe08 add      rcx, 0x20   
+0x1814afe0c call     0x1820decd0   
+0x1814afe11 mov      rax, qword ptr [rip + 0x1650f80]  [{"kind": "type", "name": "CardCraftAbility", "type_index": 3257}] 
+0x1814afe18 cmp      dword ptr [rax + 0xe0], 0   
+0x1814afe1f jne      0x1814afe30   
+0x1814afe21 mov      rcx, rax   
+0x1814afe24 call     0x1820dfc70   
+0x1814afe29 mov      rax, qword ptr [rip + 0x1650f68]  [{"kind": "type", "name": "CardCraftAbility", "type_index": 3257}] 
+0x1814afe30 mov      rax, qword ptr [rax + 0xb8]   
+0x1814afe37 mov      r9, qword ptr [rip + 0x1618f12]   
+0x1814afe3e mov      rcx, qword ptr [rbx + 0x10]   
+0x1814afe42 movsxd   r8, dword ptr [rbx + 0x18]   
+0x1814afe46 mov      rdx, qword ptr [rax]   
+0x1814afe49 inc      dword ptr [rbx + 0x1c]   
+0x1814afe4c test     rcx, rcx   
+0x1814afe4f je       0x1814b001e   
+0x1814afe55 cmp      r8d, dword ptr [rcx + 0x18]   
+0x1814afe59 jb       0x1814afe74   
+0x1814afe5b mov      rax, qword ptr [r9 + 0x20]   
+0x1814afe5f mov      rcx, rbx   
+0x1814afe62 mov      r8, qword ptr [rax + 0xc0]   
+0x1814afe69 mov      r8, qword ptr [r8 + 0x70]   
+0x1814afe6d call     0x180abf790   
+0x1814afe72 jmp      0x1814afe97   
+0x1814afe74 lea      eax, [r8 + 1]   
+0x1814afe78 mov      dword ptr [rbx + 0x18], eax   
+0x1814afe7b cmp      r8d, dword ptr [rcx + 0x18]   
+0x1814afe7f jae      0x1814b0024   
+0x1814afe85 mov      qword ptr [rcx + r8*8 + 0x20], rdx   
+0x1814afe8a lea      rcx, [rcx + r8*8]   
+0x1814afe8e add      rcx, 0x20   
+0x1814afe92 call     0x1820decd0   
+0x1814afe97 mov      r9, qword ptr [rip + 0x164d852]   
+0x1814afe9e mov      r8, rbx   
+0x1814afea1 mov      rdx, rdi   
+0x1814afea4 mov      rcx, rsi   
+0x1814afea7 call     0x18032b4f0   
+0x1814afeac mov      rax, qword ptr [rip + 0x16225ed]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afeb3 xor      edi, edi   
+0x1814afeb5 mov      r8, qword ptr [rip + 0x161bd8c]   
+0x1814afebc xor      edx, edx   
+0x1814afebe mov      rcx, qword ptr [rax + 0xb8]   
+0x1814afec5 mov      rbx, qword ptr [rcx + 8]   
+0x1814afec9 lea      rcx, [rsp + 0x40]   
+0x1814afece mov      qword ptr [rsp + 0x40], rdi   
+0x1814afed3 call     0x180b9b5a0   
+0x1814afed8 mov      r9, qword ptr [rip + 0x164e9f1]   
+0x1814afedf mov      rdx, rbx   
+0x1814afee2 mov      r8, qword ptr [rsp + 0x40]   
+0x1814afee7 mov      rcx, rsi   
+0x1814afeea call     0x18032b280   
+0x1814afeef mov      rax, qword ptr [rip + 0x16225aa]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814afef6 lea      edx, [rdi + 2]   
+0x1814afef9 mov      rcx, qword ptr [rax + 0xb8]   
+0x1814aff00 mov      rbx, qword ptr [rcx + 0x88]   
+0x1814aff07 mov      rcx, qword ptr [rip + 0x1634822]   
+0x1814aff0e call     0x1820ded50   
+0x1814aff13 mov      r9, qword ptr [rip + 0x164f146]   
+0x1814aff1a mov      r8, rax   
+0x1814aff1d mov      rdx, rbx   
+0x1814aff20 mov      rcx, rsi   
+0x1814aff23 call     0x18032b4f0   
+0x1814aff28 mov      rax, qword ptr [rip + 0x1622571]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814aff2f xor      edx, edx   
+0x1814aff31 mov      r8, qword ptr [rip + 0x16152b0]   
+0x1814aff38 mov      rcx, qword ptr [rax + 0xb8]   
+0x1814aff3f mov      rbx, qword ptr [rcx + 0x98]   
+0x1814aff46 lea      rcx, [rsp + 0x50]   
+0x1814aff4b mov      qword ptr [rsp + 0x50], rdi   
+0x1814aff50 call     0x180b9b5a0   
+0x1814aff55 mov      r9, qword ptr [rip + 0x164de74]   
+0x1814aff5c mov      rdx, rbx   
+0x1814aff5f mov      r8, qword ptr [rsp + 0x50]   
+0x1814aff64 mov      rcx, rsi   
+0x1814aff67 call     0x18032b280   
+0x1814aff6c mov      rax, qword ptr [rip + 0x162252d]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814aff73 lea      edx, [rdi + 0x50]   
+0x1814aff76 mov      r8, qword ptr [rip + 0x16179f3]   
+0x1814aff7d mov      rcx, qword ptr [rax + 0xb8]   
+0x1814aff84 mov      rbx, qword ptr [rcx + 0x218]   
+0x1814aff8b lea      rcx, [rsp + 0x58]   
+0x1814aff90 mov      qword ptr [rsp + 0x58], rdi   
+0x1814aff95 call     0x180b9b5a0   
+0x1814aff9a mov      r9, qword ptr [rip + 0x164e03f]   
+0x1814affa1 mov      rdx, rbx   
+0x1814affa4 mov      r8, qword ptr [rsp + 0x58]   
+0x1814affa9 mov      rcx, rsi   
+0x1814affac call     0x18032b420   
+0x1814affb1 mov      rax, qword ptr [rip + 0x16224e8]  [{"kind": "type", "name": "TuberAttributes", "type_index": 279}] 
+0x1814affb8 mov      rcx, qword ptr [rax + 0xb8]   
+0x1814affbf mov      rdi, qword ptr [rcx + 0x290]   
+0x1814affc6 mov      rcx, qword ptr [rip + 0x1621dab]   
+0x1814affcd call     0x1820dfb80   
+0x1814affd2 mov      rdx, qword ptr [rip + 0x15ebadf]   
+0x1814affd9 mov      rcx, rax   
+0x1814affdc mov      rbx, rax   
+0x1814affdf call     0x1807a0970   
+0x1814affe4 test     rbx, rbx   
+0x1814affe7 je       0x1814b001e   
+0x1814affe9 mov      r9, qword ptr [rip + 0x15ebb80]   
+0x1814afff0 mov      edx, 8   
+0x1814afff5 mov      rcx, rbx   
+0x1814afff8 lea      r8d, [rdx + 2]   
+0x1814afffc call     0x180792000   
+0x1814b0001 mov      r9, qword ptr [rip + 0x164d4d8]   
+0x1814b0008 mov      r8, rbx   
+0x1814b000b mov      rdx, rdi   
+0x1814b000e mov      rcx, rsi   
+0x1814b0011 call     0x18032b4f0   
+0x1814b0016 add      rsp, 0x20   
+0x1814b001a pop      rdi   
+0x1814b001b pop      rsi   
+0x1814b001c pop      rbx   
+0x1814b001d ret         
+0x1814b001e call     0x1820dfbd0   
+0x1814b0023 int3        
+0x1814b0024 call     0x1820dfbc0   
+0x1814b0029 int3        
+0x1814b002a int3        
+0x1814b002b int3        
+0x1814b002c int3        
+0x1814b002d int3        
+0x1814b002e int3        
+0x1814b002f int3        

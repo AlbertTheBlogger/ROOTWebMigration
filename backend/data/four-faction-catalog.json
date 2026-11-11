@@ -1,0 +1,198 @@
+{
+  "sourceSha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "quests": [
+    {
+      "id": "RepairaShedFox",
+      "name": "修复盾牌",
+      "suit": "fox",
+      "items": [
+        "torch",
+        "hammer"
+      ],
+      "source": "0x1814991a0"
+    },
+    {
+      "id": "EscortMouse",
+      "name": "护送人员",
+      "suit": "mouse",
+      "items": [
+        "boot",
+        "boot"
+      ],
+      "source": "0x181491340"
+    },
+    {
+      "id": "FundraisingFox",
+      "name": "筹款",
+      "suit": "fox",
+      "items": [
+        "tea",
+        "coin"
+      ],
+      "source": "0x181492ad0"
+    },
+    {
+      "id": "FendoffaBearMouse",
+      "name": "击退棕熊",
+      "suit": "mouse",
+      "items": [
+        "torch",
+        "crossbow"
+      ],
+      "source": "0x181491eb0"
+    },
+    {
+      "id": "FendoffaBearRabbit",
+      "name": "击退棕熊",
+      "suit": "rabbit",
+      "items": [
+        "torch",
+        "crossbow"
+      ],
+      "source": "0x181492280"
+    },
+    {
+      "id": "ExpelBanditsRabbit",
+      "name": "驱逐强盗",
+      "suit": "rabbit",
+      "items": [
+        "sword",
+        "sword"
+      ],
+      "source": "0x181491ae0"
+    },
+    {
+      "id": "ExpelBanditsMouse",
+      "name": "驱逐强盗",
+      "suit": "mouse",
+      "items": [
+        "sword",
+        "sword"
+      ],
+      "source": "0x181491710"
+    },
+    {
+      "id": "GuardDutyMouse",
+      "name": "担任护卫",
+      "suit": "mouse",
+      "items": [
+        "torch",
+        "sword"
+      ],
+      "source": "0x1814939f0"
+    },
+    {
+      "id": "GuardDutyRabbit",
+      "name": "担任护卫",
+      "suit": "rabbit",
+      "items": [
+        "torch",
+        "sword"
+      ],
+      "source": "0x181493dc0"
+    },
+    {
+      "id": "LogisticsMouse",
+      "name": "帮忙运货",
+      "suit": "mouse",
+      "items": [
+        "boot",
+        "bag"
+      ],
+      "source": "0x1814953b0"
+    },
+    {
+      "id": "LogisticsFox",
+      "name": "帮忙运货",
+      "suit": "fox",
+      "items": [
+        "boot",
+        "bag"
+      ],
+      "source": "0x181494fe0"
+    },
+    {
+      "id": "ErrandFox",
+      "name": "当差",
+      "suit": "fox",
+      "items": [
+        "tea",
+        "boot"
+      ],
+      "source": "0x181490ba0"
+    },
+    {
+      "id": "ErrandRabbit",
+      "name": "当差",
+      "suit": "rabbit",
+      "items": [
+        "tea",
+        "boot"
+      ],
+      "source": "0x181490f70"
+    },
+    {
+      "id": "GiveaSpeechRabbit",
+      "name": "发表演讲",
+      "suit": "rabbit",
+      "items": [
+        "torch",
+        "tea"
+      ],
+      "source": "0x181493270"
+    },
+    {
+      "id": "GiveaSpeechFox",
+      "name": "发表演讲",
+      "suit": "fox",
+      "items": [
+        "torch",
+        "tea"
+      ],
+      "source": "0x181492ea0"
+    }
+  ],
+  "sympathyTrack": [
+    {
+      "cost": 1,
+      "points": 0
+    },
+    {
+      "cost": 1,
+      "points": 1
+    },
+    {
+      "cost": 1,
+      "points": 1
+    },
+    {
+      "cost": 2,
+      "points": 1
+    },
+    {
+      "cost": 2,
+      "points": 2
+    },
+    {
+      "cost": 2,
+      "points": 2
+    },
+    {
+      "cost": 3,
+      "points": 3
+    },
+    {
+      "cost": 3,
+      "points": 4
+    },
+    {
+      "cost": 3,
+      "points": 4
+    },
+    {
+      "cost": 3,
+      "points": 4
+    }
+  ],
+  "ruleSource": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf?v=1774903756"
+}

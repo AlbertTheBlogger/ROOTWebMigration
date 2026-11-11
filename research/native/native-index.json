@@ -1,0 +1,411 @@
+{
+  "source": "GameAssembly.dll",
+  "sha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "image_base": "0x180000000",
+  "module": {
+    "raw": 41540704,
+    "count": 21049,
+    "pointer_raw": 46203344
+  },
+  "mapping_reference": "https://github.com/SamboyCoding/Cpp2IL/blob/development/LibCpp2IL/BinaryStructures/Il2CppCodeGenModule.cs",
+  "capstone_version": "5.0.6",
+  "methods": [
+    {
+      "type": "FallBoardLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": ".ctor",
+      "token": "0x600102e",
+      "va": "0x181947ba0",
+      "rva": "0x1947ba0",
+      "raw": 26505120,
+      "bytes": 7468,
+      "disassembly": "FallBoardLayout-4141.asm.txt"
+    },
+    {
+      "type": "FallBoardLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "ShouldRandomizeSuits",
+      "token": "0x600102f",
+      "va": "0x181947b10",
+      "rva": "0x1947b10",
+      "raw": 26504976,
+      "bytes": 142,
+      "disassembly": "FallBoardLayout-4142.asm.txt"
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": ".ctor",
+      "token": "0x6001040",
+      "va": "0x18197ace0",
+      "rva": "0x197ace0",
+      "raw": 26714336,
+      "bytes": 117,
+      "disassembly": "TuberBoardNodeLayout-4159.asm.txt"
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "WithIsStartingLocation",
+      "token": "0x6001041",
+      "va": "0x18197acd0",
+      "rva": "0x197acd0",
+      "raw": 26714320,
+      "bytes": null
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "WithIsRuinLocation",
+      "token": "0x6001042",
+      "va": "0x18197acc0",
+      "rva": "0x197acc0",
+      "raw": 26714304,
+      "bytes": null
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "WithIsEdgeLocation",
+      "token": "0x6001043",
+      "va": "0x18197acb0",
+      "rva": "0x197acb0",
+      "raw": 26714288,
+      "bytes": null
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "ClearingNode",
+      "token": "0x6001044",
+      "va": "0x18197a760",
+      "rva": "0x197a760",
+      "raw": 26712928,
+      "bytes": 176,
+      "disassembly": "TuberBoardNodeLayout-4163.asm.txt"
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "ForestNode",
+      "token": "0x6001045",
+      "va": "0x18197a970",
+      "rva": "0x197a970",
+      "raw": 26713456,
+      "bytes": 207,
+      "disassembly": "TuberBoardNodeLayout-4164.asm.txt"
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "ToUnconnectedBoardNode",
+      "token": "0x6001046",
+      "va": "0x18197aa40",
+      "rva": "0x197aa40",
+      "raw": 26713664,
+      "bytes": 623,
+      "disassembly": "TuberBoardNodeLayout-4165.asm.txt"
+    },
+    {
+      "type": "TuberBoardNodeLayout",
+      "namespace": "tuber.canis.entities.boards",
+      "method": "FinalizeBoardNode",
+      "token": "0x6001047",
+      "va": "0x18197a810",
+      "rva": "0x197a810",
+      "raw": 26713104,
+      "bytes": 338,
+      "disassembly": "TuberBoardNodeLayout-4166.asm.txt"
+    },
+    {
+      "type": "AmbushFox",
+      "namespace": "tuber.canis.archetypes.CardArchetypes",
+      "method": ".ctor",
+      "token": "0x60018b9",
+      "va": "0x1814a7790",
+      "rva": "0x14a7790",
+      "raw": 21654416,
+      "bytes": 943,
+      "disassembly": "AmbushFox-6328.asm.txt"
+    },
+    {
+      "type": "AmbushFox",
+      "namespace": "tuber.canis.archetypes.CardArchetypes",
+      "method": ".cctor",
+      "token": "0x60018ba",
+      "va": "0x1814a7700",
+      "rva": "0x14a7700",
+      "raw": 21654272,
+      "bytes": 135,
+      "disassembly": "AmbushFox-6329.asm.txt"
+    },
+    {
+      "type": "AnvilFox",
+      "namespace": "tuber.canis.archetypes.CardArchetypes",
+      "method": ".ctor",
+      "token": "0x60018bf",
+      "va": "0x1814a8450",
+      "rva": "0x14a8450",
+      "raw": 21657680,
+      "bytes": 1566,
+      "disassembly": "AnvilFox-6334.asm.txt"
+    },
+    {
+      "type": "AnvilFox",
+      "namespace": "tuber.canis.archetypes.CardArchetypes",
+      "method": ".cctor",
+      "token": "0x60018c0",
+      "va": "0x1814a83c0",
+      "rva": "0x14a83c0",
+      "raw": 21657536,
+      "bytes": 135,
+      "disassembly": "AnvilFox-6335.asm.txt"
+    },
+    {
+      "type": "ArmorersBird",
+      "namespace": "tuber.canis.archetypes.CardArchetypes",
+      "method": ".ctor",
+      "token": "0x60018c1",
+      "va": "0x1814a8b00",
+      "rva": "0x14a8b00",
+      "raw": 21659392,
+      "bytes": 1500,
+      "disassembly": "ArmorersBird-6336.asm.txt"
+    },
+    {
+      "type": "ArmorersBird",
+      "namespace": "tuber.canis.archetypes.CardArchetypes",
+      "method": ".cctor",
+      "token": "0x60018c2",
+      "va": "0x1814a8a70",
+      "rva": "0x14a8a70",
+      "raw": 21659248,
+      "bytes": 135,
+      "disassembly": "ArmorersBird-6337.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": ".ctor",
+      "token": "0x6002d3a",
+      "va": "0x181669750",
+      "rva": "0x1669750",
+      "raw": 23497552,
+      "bytes": 28,
+      "disassembly": "FieldHospitalResolution-11577.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": ".ctor",
+      "token": "0x6002d3b",
+      "va": "0x1816695f0",
+      "rva": "0x16695f0",
+      "raw": 23497200,
+      "bytes": 350,
+      "disassembly": "FieldHospitalResolution-11578.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": ".ctor",
+      "token": "0x6002d3c",
+      "va": "0x181669770",
+      "rva": "0x1669770",
+      "raw": 23497584,
+      "bytes": 206,
+      "disassembly": "FieldHospitalResolution-11579.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": "RemoveClearingElement",
+      "token": "0x6002d3d",
+      "va": "0x181669310",
+      "rva": "0x1669310",
+      "raw": 23496464,
+      "bytes": 258,
+      "disassembly": "FieldHospitalResolution-11580.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": "execute",
+      "token": "0x6002d3e",
+      "va": "0x181669840",
+      "rva": "0x1669840",
+      "raw": 23497792,
+      "bytes": 113,
+      "disassembly": "FieldHospitalResolution-11581.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": "MakeSerializedAction",
+      "token": "0x6002d3f",
+      "va": "0x1816691d0",
+      "rva": "0x16691d0",
+      "raw": 23496144,
+      "bytes": 139,
+      "disassembly": "FieldHospitalResolution-11582.asm.txt"
+    },
+    {
+      "type": "FieldHospitalResolution",
+      "namespace": "tuber.canis.actions.MarquiseDeCatActions",
+      "method": "OnSkip",
+      "token": "0x6002d40",
+      "va": "0x181669260",
+      "rva": "0x1669260",
+      "raw": 23496288,
+      "bytes": 169,
+      "disassembly": "FieldHospitalResolution-11583.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": ".ctor",
+      "token": "0x6003a49",
+      "va": "0x181755910",
+      "rva": "0x1755910",
+      "raw": 24464656,
+      "bytes": 186,
+      "disassembly": "Battle-14920.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": ".ctor",
+      "token": "0x6003a4a",
+      "va": "0x1817559d0",
+      "rva": "0x17559d0",
+      "raw": 24464848,
+      "bytes": 136,
+      "disassembly": "Battle-14921.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "CanRollDice",
+      "token": "0x6003a4b",
+      "va": "0x1817544e0",
+      "rva": "0x17544e0",
+      "raw": 24459488,
+      "bytes": 354,
+      "disassembly": "Battle-14922.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "RunStartBattleSequence",
+      "token": "0x6003a4c",
+      "va": "0x181755850",
+      "rva": "0x1755850",
+      "raw": 24464464,
+      "bytes": 191,
+      "disassembly": "Battle-14923.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "LogBattleAnalytics",
+      "token": "0x6003a4d",
+      "va": "0x181754ce0",
+      "rva": "0x1754ce0",
+      "raw": 24461536,
+      "bytes": 2580,
+      "disassembly": "Battle-14924.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "execute",
+      "token": "0x6003a4e",
+      "va": "0x181755a60",
+      "rva": "0x1755a60",
+      "raw": 24464992,
+      "bytes": 113,
+      "disassembly": "Battle-14925.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "HandleReturningAction",
+      "token": "0x6003a4f",
+      "va": "0x181754a80",
+      "rva": "0x1754a80",
+      "raw": 24460928,
+      "bytes": 101,
+      "disassembly": "Battle-14926.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "MakeSerializedAction",
+      "token": "0x6003a50",
+      "va": "0x181755700",
+      "rva": "0x1755700",
+      "raw": 24464128,
+      "bytes": 324,
+      "disassembly": "Battle-14927.asm.txt"
+    },
+    {
+      "type": "Battle",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "Deserialize",
+      "token": "0x6003a51",
+      "va": "0x181754650",
+      "rva": "0x1754650",
+      "raw": 24459856,
+      "bytes": 824,
+      "disassembly": "Battle-14928.asm.txt"
+    },
+    {
+      "type": "ChooseAmbushCards",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": ".ctor",
+      "token": "0x6003aa2",
+      "va": "0x181417010",
+      "rva": "0x1417010",
+      "raw": 21062672,
+      "bytes": 56,
+      "disassembly": "ChooseAmbushCards-15009.asm.txt"
+    },
+    {
+      "type": "ChooseAmbushCards",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "execute",
+      "token": "0x6003aa3",
+      "va": "0x181755c80",
+      "rva": "0x1755c80",
+      "raw": 24465536,
+      "bytes": 113,
+      "disassembly": "ChooseAmbushCards-15010.asm.txt"
+    },
+    {
+      "type": "ChooseAmbushCards",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "GetValidAmbushCardsForPlayer",
+      "token": "0x6003aa4",
+      "va": "0x181755ae0",
+      "rva": "0x1755ae0",
+      "raw": 24465120,
+      "bytes": 251,
+      "disassembly": "ChooseAmbushCards-15011.asm.txt"
+    },
+    {
+      "type": "ChooseAmbushCards",
+      "namespace": "tuber.canis.actions.BattleActions",
+      "method": "MakeSerializedAction",
+      "token": "0x6003aa5",
+      "va": "0x181755be0",
+      "rva": "0x1755be0",
+      "raw": 24465376,
+      "bytes": 156,
+      "disassembly": "ChooseAmbushCards-15012.asm.txt"
+    }
+  ],
+  "limits": [
+    "Static address mapping and disassembly only; methods were not executed.",
+    "Disassembly is not reconstructed C# and does not prove full control-flow semantics."
+  ]
+}

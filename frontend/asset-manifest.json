@@ -1,0 +1,814 @@
+{
+  "cards": {
+    "FavoroftheFoxesFox": "/assets/original/cards_assets_all/T_crd_fox_favorofthefoxes-7696262584671412637.webp?v=4169ba1ef244",
+    "FavoroftheMiceMouse": "/assets/original/cards_assets_all/T_crd_mouse_favorofthemice--3242265846526581517.webp?v=6e00aad5e1a7",
+    "FavoroftheRabbitsRabbit": "/assets/original/cards_assets_all/T_crd_bunny_favoroftherabbits--7355958149234627695.webp?v=5fab1b234af5",
+    "AVisittoFriendsRabbit": "/assets/original/cards_assets_all/T_crd_bunny_avisittofriends--711722563911872423.webp?v=123fe79e6cc2",
+    "BakeSaleRabbit": "/assets/original/cards_assets_all/T_crd_bunny_bakesale-7638628711528321898.webp?v=f36e373610fa",
+    "TravelGearMouse": "/assets/original/cards_assets_all/T_crd_mouse_travelgear--4653276865117454534.webp?v=92e9b98583c1",
+    "SmugglersTrailRabbit": "/assets/original/cards_assets_all/T_crd_bunny_smugglerstrail--3914084557741465486.webp?v=39c49b66964b",
+    "RootTeaRabbit": "/assets/original/cards_assets_all/T_crd_bunny_roottea-2557994446527927426.webp?v=e8d4432901d5",
+    "InvestmentsMouse": "/assets/original/cards_assets_all/T_crd_mouse_investments-2157189289002225429.webp?v=c70d41f71727",
+    "BirdyBindleBird": "/assets/original/cards_assets_all/T_crd_bird_birdybindle--2408144736673347757.webp?v=b559962c0592",
+    "RootTeaMouse": "/assets/original/cards_assets_all/T_crd_mouse_roottea-5843238295354499498.webp?v=52419aa392ed",
+    "SwordMouse": "/assets/original/cards_assets_all/T_crd_mouse_sword-470800843222527067.webp?v=0d3c0c01ef81",
+    "WoodlandRunnersBird": "/assets/original/cards_assets_all/T_crd_bird_woodlandrunners--8625684546494281490.webp?v=da5ea9c7ee53",
+    "TravelGearFox": "/assets/original/cards_assets_all/T_crd_fox_travelgear--6540386899183443077.webp?v=1a0ecb255176",
+    "AnvilFox": "/assets/original/cards_assets_all/T_crd_fox_anvil-4170058663817171158.webp?v=34f6e67b7495",
+    "GentlyUsedKnapsackFox": "/assets/original/cards_assets_all/T_crd_fox_gentlyusedknapsack-1820424561155764025.webp?v=4cd79789a97a",
+    "MouseinaSackMouse": "/assets/original/cards_assets_all/T_crd_mouse_mouseinasack--6570927633713301495.webp?v=23210c35f9bd",
+    "CrossbowBird": "/assets/original/cards_assets_all/T_crd_bird_crossbow-5850023958568274524.webp?v=b1034f19d417",
+    "ProtectionRacketFox": "/assets/original/cards_assets_all/T_crd_fox_protectionracket-1884250226644483250.webp?v=b9650941e86f",
+    "ArmsTraderBird": "/assets/original/cards_assets_all/T_crd_bird_armstrader-3911669970754922875.webp?v=94ad1d6207f8",
+    "CrossbowMouse": "/assets/original/cards_assets_all/T_crd_mouse_crossbow-7562719300919112257.webp?v=72a9fea0a869",
+    "FoxfolkSteelFox": "/assets/original/cards_assets_all/T_crd_fox_foxfolksteel-6523073728467684087.webp?v=0c351732b8cb",
+    "RootTeaFox": "/assets/original/cards_assets_all/T_crd_fox_roottea-6199195706215876134.webp?v=28610e459493",
+    "ScoutingPartyMouse": "/assets/original/cards_assets_all/T_crd_mouse_scoutingparty--2433341253006227969.webp?v=38abf8d90613",
+    "CobblerRabbit": "/assets/original/cards_assets_all/T_crd_bunny_cobbler-8832791981894611330.webp?v=2f0056d6f837",
+    "CommandWarrenRabbit": "/assets/original/cards_assets_all/T_crd_bunny_commandwarren--7229282057876119308.webp?v=a533bf832719",
+    "BetterBurrowBankRabbit": "/assets/original/cards_assets_all/T_crd_bunny_betterburrowbank-3432993538330225371.webp?v=2eab25ba337f",
+    "TaxCollectorFox": "/assets/original/cards_assets_all/T_crd_fox_taxcollector--640079579055229588.webp?v=8549b371f04c",
+    "CodebreakersMouse": "/assets/original/cards_assets_all/T_crd_mouse_codebreakers--1485736016364870786.webp?v=664a27f71b61",
+    "RoyalClaimBird": "/assets/original/cards_assets_all/T_crd_bird_royalclaim-1989112855745909436.webp?v=c806f68a99c2",
+    "StandandDeliverFox": "/assets/original/cards_assets_all/T_crd_fox_standanddeliver-6117997961384008583.webp?v=a48e48bfc2aa",
+    "SappersBird": "/assets/original/cards_assets_all/T_crd_bird_sappers--5652915952167428609.webp?v=b06b11bb120e",
+    "ArmorersBird": "/assets/original/cards_assets_all/T_crd_bird_armorers-1988342309494935255.webp?v=0ce5960ebdbd",
+    "BrutalTacticsBird": "/assets/original/cards_assets_all/T_crd_bird_brutaltactics--7550228027685790556.webp?v=6a63c32e90b0",
+    "AmbushRabbit": "/assets/original/cards_assets_all/T_crd_bunny_ambush--4092092003495250767.webp?v=10f850acf474",
+    "AmbushBird": "/assets/original/cards_assets_all/T_crd_bird_ambush-5972410070725376199.webp?v=2798b661744a",
+    "AmbushFox": "/assets/original/cards_assets_all/T_crd_fox_ambush--4341965107330222545.webp?v=974f7a637d13",
+    "AmbushMouse": "/assets/original/cards_assets_all/T_crd_mouse_ambush-8985733370354917822.webp?v=e57b545c56da"
+  },
+  "leaders": {
+    "despot": "/assets/original/cards_assets_all/T_crd_EyrieLeader_Despot--7309470995286429501.webp?v=42fe4bf93dc7",
+    "commander": "/assets/original/cards_assets_all/T_crd_EyrieLeader_Commander--3406313669329535346.webp?v=dfafdf6d5f6f",
+    "charismatic": "/assets/original/cards_assets_all/T_crd_EyrieLeader_Charismatic--8504066473054333768.webp?v=6ca93f66835d",
+    "builder": "/assets/original/cards_assets_all/T_crd_EyrieLeader_builder--3004661381583128462.webp?v=fbe08a993f3c"
+  },
+  "portraits": {
+    "cat": "/assets/original/marquise_assets_all/Avatar_MarquiseDeCat--466157958804350764.webp?v=1ff87e88e9bf",
+    "bird": "/assets/original/eyrie_assets_all/Avatar_EyrieDynasties_Despot--718154712742468074.webp?v=46dbb04cb3d6",
+    "alliance": "/assets/original/alliance_assets_all/Avatar_WoodlandAlliance-3054629790786736104.webp?v=d8450a254130",
+    "vagabond": "/assets/original/defaultlocalgroup_assets_all/S_icon_Vaga_Head--5535311335644308776.webp?v=36cbfab3924c"
+  },
+  "items": {
+    "bag": "/assets/original/cards_assets_all/S_crd_iconLarge_Sack--1257791002250951522.webp?v=3f17a5054588",
+    "boot": "/assets/original/cards_assets_all/S_crd_iconLarge_Boot--8014753342253614679.webp?v=a3fd39314cdd",
+    "crossbow": "/assets/original/cards_assets_all/S_crd_iconLarge_Crossbow--4349718593188368312.webp?v=3603c3d75f6c",
+    "hammer": "/assets/original/cards_assets_all/S_crd_iconLarge_Hammer-4859698362535079691.webp?v=c23b561be98e",
+    "sword": "/assets/original/cards_assets_all/S_crd_iconLarge_Sword-4045595243651050979.webp?v=6ad9e4d92c45",
+    "tea": "/assets/original/cards_assets_all/S_crd_iconLarge_TeaPot-6038878736433167975.webp?v=f3e0d38af070",
+    "coin": "/assets/original/cards_assets_all/S_crd_iconLarge_GoldStack-1253766033305027126.webp?v=0648046d4d14",
+    "torch": "/assets/original/cards_assets_all/S_crd_iconLarge_Torch-1430332100504370266.webp?v=2469e9582b94"
+  },
+  "symbols": {
+    "cat": "/assets/original/defaultlocalgroup_assets_all/S_icon_Drawer_MarquiseWarrior--5837914548808560161.webp?v=bd5c596ba280",
+    "bird": "/assets/original/defaultlocalgroup_assets_all/S_icon_Drawer_EyrieWarrior-2644266430775587943.webp?v=7de42fea21fd",
+    "sawmill": "/assets/original/defaultlocalgroup_assets_all/S_icon_Sawmill-5258612999641841284.webp?v=18bb7c5540bc",
+    "workshop": "/assets/original/defaultlocalgroup_assets_all/S_icon_Workshop-5302894779454173423.webp?v=5fc8fa470381",
+    "recruiter": "/assets/original/defaultlocalgroup_assets_all/S_icon_Recruiter--5302944652082961402.webp?v=9a2a877b6fa5",
+    "keep": "/assets/original/defaultlocalgroup_assets_all/S_icon_Keep-7883067840790858121.webp?v=fb6b66c9beb8",
+    "roost": "/assets/original/defaultlocalgroup_assets_all/S_icon_Roost-4066108500425001067.webp?v=38613d3b9d72",
+    "wood": "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_Wood-5654872393175241247.webp?v=be3447b54e94",
+    "ruin": "/assets/original/defaultlocalgroup_assets_all/S_icon_Ruin--2958837082460047092.webp?v=10283adb6321",
+    "alliance": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Head--3084156120547819873.webp?v=a47338140103",
+    "vagabond": "/assets/original/defaultlocalgroup_assets_all/S_icon_Vaga_Head--5535311335644308776.webp?v=36cbfab3924c",
+    "sympathy": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Sympathy-5964523114129938645.webp?v=c6b5b1e5c120",
+    "base-fox": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseFox--2003128051301950270.webp?v=79ab9c539883",
+    "base-mouse": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseMouse-5357773812519511716.webp?v=28867cb204ad",
+    "base-rabbit": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseBunny--2365105621515189540.webp?v=5631e7998285"
+  },
+  "suits": {
+    "fox": "/assets/suits/fox.webp",
+    "rabbit": "/assets/suits/rabbit.webp",
+    "mouse": "/assets/suits/mouse.webp",
+    "wild": "/assets/suits/wild.webp"
+  },
+  "units": {
+    "cat": "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_HeadCount--2041494168984117354.webp?v=c4a7e37570ce",
+    "bird": "/assets/original/defaultlocalgroup_assets_all/S_icon_Eyrie_WarriorCount--1142459001686082706.webp?v=8a91fa4ee4c3",
+    "alliance": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_HeadCount--5644971584482754250.webp?v=29fd1987b112"
+  },
+  "board": {
+    "texture": "/assets/board/T_env_Playmat4k-61.c27d6d35f3a6.webp",
+    "width": 1200,
+    "height": 761.9013375773179,
+    "imageY": -131.32376387121664,
+    "imageHeight": 1058.0168816306773,
+    "clearings": {
+      "0": {
+        "x": 149.6181307254282,
+        "y": 110.01266747120519
+      },
+      "1": {
+        "x": 650.651212807626,
+        "y": 92.13170023415658
+      },
+      "2": {
+        "x": 1041.9087480642524,
+        "y": 172.4597137575143
+      },
+      "3": {
+        "x": 525.5750919776057,
+        "y": 240.94799739647686
+      },
+      "4": {
+        "x": 104.11106637489412,
+        "y": 330.2013457557632
+      },
+      "5": {
+        "x": 373.17651756821203,
+        "y": 418.27072112661
+      },
+      "6": {
+        "x": 776.7898734990664,
+        "y": 356.339826346697
+      },
+      "7": {
+        "x": 1093.18388594821,
+        "y": 397.2324318704925
+      },
+      "8": {
+        "x": 1007.7556810900358,
+        "y": 653.3348967544856
+      },
+      "9": {
+        "x": 695.5511115230629,
+        "y": 582.4786671386439
+      },
+      "10": {
+        "x": 460.48693589518746,
+        "y": 675.0107099274551
+      },
+      "11": {
+        "x": 151.37891106721,
+        "y": 615.7209856602148
+      }
+    },
+    "riverPath": "M52.48 634.44L66.63 658.78L72.68 651.67ZM63.23 636.18L52.48 634.44L72.68 651.67ZM63.23 636.18L72.68 651.67L89.02 644.08ZM82.15 633.01L63.23 636.18L89.02 644.08ZM82.15 633.01L89.02 644.08L105.36 636.50ZM98.92 626.38L82.15 633.01L105.36 636.50ZM98.92 626.38L105.36 636.50L130.05 631.42ZM119.61 618.08L98.92 626.38L130.05 631.42ZM119.61 618.08L130.05 631.42L147.68 621.01ZM134.45 610.92L119.61 618.08L147.68 621.01ZM134.45 610.92L147.68 621.01L172.88 612.87ZM164.04 599.75L134.45 610.92L172.88 612.87ZM164.04 599.75L172.88 612.87L189.80 605.20ZM178.56 594.68L164.04 599.75L189.80 605.20ZM178.56 594.68L189.80 605.20L204.91 595.06ZM196.34 584.53L178.56 594.68L204.91 595.06ZM196.34 584.53L204.91 595.06L221.86 588.38ZM215.28 578.61L196.34 584.53L221.86 588.38ZM215.28 578.61L221.86 588.38L231.79 583.53ZM224.95 573.67L215.28 578.61L231.79 583.53ZM224.95 573.67L231.79 583.53L244.68 580.96ZM238.95 570.85L224.95 573.67L244.68 580.96ZM238.95 570.85L244.68 580.96L249.60 579.24ZM244.27 569.78L238.95 570.85L249.60 579.24ZM244.27 569.78L249.60 579.24L252.88 576.13ZM249.60 570.60L244.27 569.78L252.88 576.13ZM249.60 570.60L252.88 576.13L263.69 575.02ZM260.48 569.47L249.60 570.60L263.69 575.02ZM260.48 569.47L263.69 575.02L269.80 572.16ZM264.34 567.52L260.48 569.47L269.80 572.16ZM264.34 567.52L269.80 572.16L276.92 569.13ZM269.44 562.63L264.34 567.52L276.92 569.13ZM269.44 562.63L276.92 569.13L291.03 564.24ZM283.00 554.80L269.44 562.63L291.03 564.24ZM283.00 554.80L291.03 564.24L300.71 562.37ZM293.40 550.82L283.00 554.80L300.71 562.37ZM293.40 550.82L300.71 562.37L313.65 558.50ZM309.50 546.84L293.40 550.82L313.65 558.50ZM309.50 546.84L313.65 558.50L323.95 556.86ZM322.27 545.28L309.50 546.84L323.95 556.86ZM322.27 545.28L323.95 556.86L338.93 556.90ZM339.81 545.02L322.27 545.28L338.93 556.90ZM339.81 545.02L338.93 556.90L353.51 557.48ZM356.30 545.40L339.81 545.02L353.51 557.48ZM356.30 545.40L353.51 557.48L362.35 557.33ZM367.07 544.97L356.30 545.40L362.35 557.33ZM367.07 544.97L362.35 557.33L375.64 558.66ZM383.45 543.75L367.07 544.97L375.64 558.66ZM383.45 543.75L375.64 558.66L386.11 558.74ZM395.37 545.44L383.45 543.75L386.11 558.74ZM395.37 545.44L386.11 558.74L397.26 561.68ZM410.15 545.10L395.37 545.44L397.26 561.68ZM410.15 545.10L397.26 561.68L408.55 563.68ZM420.60 548.36L410.15 545.10L408.55 563.68ZM420.60 548.36L408.55 563.68L422.45 565.66ZM435.07 546.90L420.60 548.36L422.45 565.66ZM435.07 546.90L422.45 565.66L432.56 566.24ZM443.68 548.35L435.07 546.90L432.56 566.24ZM443.68 548.35L432.56 566.24L448.84 568.13ZM455.63 549.89L443.68 548.35L448.84 568.13ZM455.63 549.89L448.84 568.13L465.57 573.89ZM465.59 552.94L455.63 549.89L465.57 573.89ZM465.59 552.94L465.57 573.89L473.84 574.91ZM471.03 553.49L465.59 552.94L473.84 574.91ZM471.03 553.49L473.84 574.91L479.36 574.89ZM476.79 555.19L471.03 553.49L479.36 574.89ZM476.79 555.19L479.36 574.89L493.39 576.43ZM486.10 553.25L476.79 555.19L493.39 576.43ZM486.10 553.25L493.39 576.43L504.29 577.71ZM494.30 553.37L486.10 553.25L504.29 577.71ZM494.30 553.37L504.29 577.71L514.61 579.09ZM509.69 559.63L494.30 553.37L514.61 579.09ZM509.69 559.63L514.61 579.09L524.59 579.32ZM523.68 560.45L509.69 559.63L524.59 579.32ZM523.68 560.45L524.59 579.32L533.77 578.44ZM532.68 561.82L523.68 560.45L533.77 578.44ZM532.68 561.82L533.77 578.44L542.95 579.59ZM541.69 566.28L532.68 561.82L542.95 579.59ZM541.69 566.28L542.95 579.59L554.17 580.07ZM556.57 566.02L541.69 566.28L554.17 580.07ZM556.57 566.02L554.17 580.07L565.25 582.54ZM569.50 567.54L556.57 566.02L565.25 582.54ZM569.50 567.54L565.25 582.54L577.54 585.21ZM582.28 568.85L569.50 567.54L577.54 585.21ZM582.28 568.85L577.54 585.21L592.99 589.25ZM594.41 572.05L582.28 568.85L592.99 589.25ZM594.41 572.05L592.99 589.25L612.60 591.77ZM613.92 578.67L594.41 572.05L612.60 591.77ZM613.92 578.67L612.60 591.77L641.00 592.05ZM642.23 578.39L613.92 578.67L641.00 592.05ZM642.23 578.39L641.00 592.05L681.29 590.24ZM680.70 578.78L642.23 578.39L681.29 590.24ZM680.70 578.78L681.29 590.24L691.62 590.85ZM689.97 573.78L680.70 578.78L691.62 590.85ZM689.97 573.78L691.62 590.85L712.84 588.70ZM703.64 569.85L689.97 573.78L712.84 588.70ZM703.64 569.85L712.84 588.70L732.10 583.10ZM709.67 567.49L703.64 569.85L732.10 583.10ZM709.67 567.49L732.10 583.10L742.62 575.07ZM715.70 565.34L709.67 567.49L742.62 575.07ZM715.70 565.34L742.62 575.07L745.84 563.61ZM717.02 563.64L715.70 565.34L745.84 563.61ZM717.02 563.64L745.84 563.61L739.94 549.83ZM716.36 559.20L717.02 563.64L739.94 549.83ZM716.36 559.20L739.94 549.83L728.03 531.92ZM698.67 543.25L716.36 559.20L728.03 531.92ZM698.67 543.25L728.03 531.92L709.61 505.61ZM673.22 517.95L698.67 543.25L709.61 505.61ZM673.22 517.95L709.61 505.61L702.91 496.31ZM667.60 500.76L673.22 517.95L702.91 496.31ZM667.60 500.76L702.91 496.31L700.58 483.88ZM664.24 486.47L667.60 500.76L700.58 483.88ZM664.24 486.47L700.58 483.88L694.63 473.18ZM667.79 474.82L664.24 486.47L694.63 473.18ZM667.79 474.82L694.63 473.18L693.84 465.24ZM670.65 463.71L667.79 474.82L693.84 465.24ZM670.65 463.71L693.84 465.24L698.12 453.69ZM676.45 447.78L670.65 463.71L698.12 453.69ZM676.45 447.78L698.12 453.69L702.17 444.14ZM687.50 436.92L676.45 447.78L702.17 444.14ZM687.50 436.92L702.17 444.14L710.00 438.08ZM701.05 431.83L687.50 436.92L710.00 438.08ZM701.05 431.83L710.00 438.08L724.10 433.66ZM713.86 428.84L701.05 431.83L724.10 433.66ZM713.86 428.84L724.10 433.66L735.89 429.10ZM723.94 422.91L713.86 428.84L735.89 429.10ZM723.94 422.91L735.89 429.10L743.43 424.11ZM726.17 419.01L723.94 422.91L743.43 424.11ZM743.43 424.11L746.69 420.35L726.17 419.01ZM746.69 420.35L727.62 416.72L726.17 419.01ZM746.69 420.35L748.35 416.61L727.62 416.72ZM748.35 416.61L729.38 413.73L727.62 416.72ZM729.38 413.73L748.35 416.61L749.25 411.41ZM730.57 411.96L729.38 413.73L749.25 411.41ZM730.57 411.96L749.25 411.41L748.42 407.90ZM731.32 409.08L730.57 411.96L748.42 407.90ZM731.32 409.08L748.42 407.90L747.26 405.93ZM730.95 406.05L731.32 409.08L747.26 405.93ZM747.26 405.93L745.23 402.71L730.95 406.05ZM745.23 402.71L730.16 402.22L730.95 406.05ZM730.16 402.22L745.23 402.71L743.58 400.32ZM728.87 400.10L730.16 402.22L743.58 400.32ZM743.58 400.32L740.93 397.16L728.87 400.10ZM740.93 397.16L727.11 397.38L728.87 400.10ZM727.11 397.38L740.93 397.16L737.64 393.55ZM725.68 395.23L727.11 397.38L737.64 393.55ZM725.68 395.23L737.64 393.55L733.73 390.83ZM722.78 392.37L725.68 395.23L733.73 390.83ZM733.73 390.83L732.54 388.81L722.78 392.37ZM732.54 388.81L720.90 389.87L722.78 392.37ZM732.54 388.81L732.85 386.90L720.90 389.87ZM732.85 386.90L718.74 387.24L720.90 389.87ZM718.74 387.24L732.85 386.90L731.56 383.89ZM717.38 384.33L718.74 387.24L731.56 383.89ZM731.56 383.89L731.92 382.53L717.38 384.33ZM731.92 382.53L715.75 381.42L717.38 384.33ZM731.92 382.53L732.59 378.84L715.75 381.42ZM732.59 378.84L714.39 375.19L715.75 381.42ZM732.59 378.84L734.18 374.41L714.39 375.19ZM734.18 374.41L714.32 372.00L714.39 375.19ZM734.18 374.41L735.43 369.24L714.32 372.00ZM735.43 369.24L715.62 366.42L714.32 372.00ZM735.43 369.24L742.61 363.08L715.62 366.42ZM742.61 363.08L728.03 361.25L715.62 366.42ZM742.61 363.08L758.87 355.87L728.03 361.25ZM758.87 355.87L744.68 351.84L728.03 361.25ZM758.87 355.87L784.19 348.03L744.68 351.84ZM784.19 348.03L761.59 345.09L744.68 351.84ZM761.59 345.09L784.19 348.03L788.77 343.54ZM766.52 340.02L761.59 345.09L788.77 343.54ZM766.52 340.02L788.77 343.54L791.17 339.56ZM770.80 336.94L766.52 340.02L791.17 339.56ZM770.80 336.94L791.17 339.56L791.52 335.68ZM773.02 333.07L770.80 336.94L791.52 335.68ZM791.52 335.68L791.54 331.36L773.02 333.07ZM791.54 331.36L773.78 329.55L773.02 333.07ZM773.78 329.55L791.54 331.36L791.87 327.91ZM774.22 325.46L773.78 329.55L791.87 327.91ZM774.22 325.46L791.87 327.91L792.54 324.09ZM775.72 321.54L774.22 325.46L792.54 324.09ZM775.72 321.54L792.54 324.09L793.08 320.94ZM776.73 318.54L775.72 321.54L793.08 320.94ZM793.08 320.94L793.62 318.94L776.73 318.54ZM793.62 318.94L777.82 315.53L776.73 318.54ZM793.62 318.94L795.63 316.63L777.82 315.53ZM795.63 316.63L778.02 314.03L777.82 315.53ZM795.63 316.63L796.27 314.94L778.02 314.03ZM796.27 314.94L778.42 312.51L778.02 314.03ZM796.27 314.94L797.15 313.22L778.42 312.51ZM797.15 313.22L778.63 310.68L778.42 312.51ZM797.15 313.22L797.68 311.22L778.63 310.68ZM797.68 311.22L778.98 308.13L778.63 310.68ZM797.68 311.22L798.88 307.38L778.98 308.13ZM798.88 307.38L779.87 303.79L778.98 308.13ZM798.88 307.38L801.90 298.10L779.87 303.79ZM801.90 298.10L780.04 298.82L779.87 303.79ZM801.90 298.10L799.00 289.10L780.04 298.82ZM799.00 289.10L780.62 293.98L780.04 298.82ZM799.00 289.10L788.68 280.92L780.62 293.98ZM788.68 280.92L779.67 290.17L780.62 293.98ZM788.68 280.92L780.73 278.92L779.67 290.17ZM780.73 278.92L776.00 288.70L779.67 290.17ZM780.73 278.92L767.23 277.30L776.00 288.70ZM767.23 277.30L759.91 289.10L776.00 288.70ZM767.23 277.30L748.33 278.08L759.91 289.10ZM748.33 278.08L743.53 290.46L759.91 289.10ZM748.33 278.08L736.50 277.06L743.53 290.46ZM736.50 277.06L729.51 289.36L743.53 290.46ZM736.50 277.06L725.95 276.25L729.51 289.36ZM725.95 276.25L718.03 288.22L729.51 289.36ZM725.95 276.25L716.68 273.68L718.03 288.22ZM716.68 273.68L709.74 283.10L718.03 288.22ZM716.68 273.68L708.64 267.06L709.74 283.10ZM708.64 267.06L699.89 281.01L709.74 283.10ZM708.64 267.06L699.89 263.49L699.89 281.01ZM699.89 263.49L689.75 279.49L699.89 281.01ZM699.89 263.49L678.22 260.97L689.75 279.49ZM678.22 260.97L672.59 272.08L689.75 279.49ZM678.22 260.97L655.60 259.30L672.59 272.08ZM655.60 259.30L653.49 268.05L672.59 272.08ZM653.49 268.05L655.60 259.30L648.21 258.42ZM646.04 267.41L653.49 268.05L648.21 258.42ZM646.04 267.41L648.21 258.42L640.93 257.06ZM638.28 268.02L646.04 267.41L640.93 257.06ZM640.93 257.06L627.22 253.83L638.28 268.02ZM627.22 253.83L622.73 270.95L638.28 268.02ZM627.22 253.83L606.31 252.38L622.73 270.95ZM606.31 252.38L599.21 269.92L622.73 270.95ZM606.31 252.38L598.06 250.55L599.21 269.92ZM598.06 250.55L589.83 266.58L599.21 269.92ZM598.06 250.55L594.29 248.64L589.83 266.58ZM594.29 248.64L585.14 262.04L589.83 266.58ZM594.29 248.64L592.55 245.00L585.14 262.04ZM592.55 245.00L580.46 261.37L585.14 262.04ZM592.55 245.00L585.04 238.20L580.46 261.37ZM585.04 238.20L572.77 254.31L580.46 261.37ZM585.04 238.20L577.52 234.28L572.77 254.31ZM577.52 234.28L565.09 248.69L572.77 254.31ZM577.52 234.28L576.09 230.74L565.09 248.69ZM576.09 230.74L561.59 245.64L565.09 248.69ZM576.09 230.74L574.04 228.63L561.59 245.64ZM574.04 228.63L559.29 244.67L561.59 245.64ZM574.04 228.63L571.99 227.83L559.29 244.67ZM571.99 227.83L556.99 243.70L559.29 244.67ZM571.99 227.83L568.64 226.94L556.99 243.70ZM568.64 226.94L554.65 242.74L556.99 243.70ZM568.64 226.94L565.52 225.78L554.65 242.74ZM565.52 225.78L552.32 241.78L554.65 242.74ZM565.52 225.78L559.51 224.89L552.32 241.78ZM559.51 224.89L547.65 239.87L552.32 241.78ZM559.51 224.89L549.89 221.45L547.65 239.87ZM549.89 221.45L536.96 238.32L547.65 239.87ZM549.89 221.45L545.43 219.04L536.96 238.32ZM545.43 219.04L531.46 237.53L536.96 238.32ZM545.43 219.04L537.87 217.46L531.46 237.53ZM537.87 217.46L522.77 236.27L531.46 237.53ZM537.87 217.46L530.60 215.65L522.77 236.27ZM530.60 215.65L515.02 234.51L522.77 236.27ZM530.60 215.65L529.46 214.90L515.02 234.51ZM529.46 214.90L510.63 233.02L515.02 234.51ZM529.46 214.90L528.32 214.15L510.63 233.02ZM528.32 214.15L504.99 232.73L510.63 233.02ZM528.32 214.15L526.62 213.64L504.99 232.73ZM526.62 213.64L497.93 231.33L504.99 232.73ZM526.62 213.64L525.43 213.00L497.93 231.33ZM525.43 213.00L494.48 231.08L497.93 231.33ZM525.43 213.00L519.64 211.89L494.48 231.08ZM519.64 211.89L492.87 228.52L494.48 231.08ZM519.64 211.89L519.55 211.83L492.87 228.52ZM519.55 211.83L493.58 225.30L492.87 228.52ZM493.58 225.30L519.55 211.83L517.74 210.52ZM491.78 223.99L493.58 225.30L517.74 210.52ZM491.78 223.99L517.74 210.52L515.93 209.22ZM488.51 223.44L491.78 223.99L515.93 209.22ZM515.93 209.22L515.84 209.15L488.51 223.44ZM515.84 209.15L482.61 223.65L488.51 223.44ZM515.84 209.15L514.89 208.47L482.61 223.65ZM514.89 208.47L481.59 219.86L482.61 223.65ZM514.89 208.47L513.94 207.79L481.59 219.86ZM513.94 207.79L481.77 216.08L481.59 219.86ZM513.94 207.79L512.99 207.10L481.77 216.08ZM512.99 207.10L484.38 214.29L481.77 216.08ZM512.99 207.10L512.04 206.42L484.38 214.29ZM512.04 206.42L486.11 211.20L484.38 214.29ZM512.04 206.42L510.38 203.41L486.11 211.20ZM510.38 203.41L490.69 200.75L486.11 211.20ZM490.69 200.75L510.38 203.41L509.50 201.10ZM491.39 198.65L490.69 200.75L509.50 201.10ZM491.39 198.65L509.50 201.10L509.21 198.86ZM491.80 196.51L491.39 198.65L509.21 198.86ZM509.21 198.86L509.50 194.22L491.80 196.51ZM509.50 194.22L492.59 193.77L491.80 196.51ZM509.50 194.22L514.39 190.18L492.59 193.77ZM514.39 190.18L495.57 189.90L492.59 193.77ZM495.57 189.90L514.39 190.18L515.12 188.79ZM498.21 187.50L495.57 189.90L515.12 188.79ZM515.12 188.79L515.24 188.04L498.21 187.50ZM515.24 188.04L501.01 185.25L498.21 187.50ZM501.01 185.25L515.24 188.04L516.51 186.47ZM502.90 183.81L501.01 185.25L516.51 186.47ZM516.51 186.47L519.88 184.85L502.90 183.81ZM519.88 184.85L505.99 181.46L502.90 183.81ZM519.88 184.85L525.32 179.60L505.99 181.46ZM525.32 179.60L512.01 174.40L505.99 181.46ZM512.01 174.40L525.32 179.60L526.46 178.50ZM512.79 173.15L512.01 174.40L526.46 178.50ZM512.79 173.15L526.46 178.50L527.60 177.40ZM513.27 171.80L512.79 173.15L527.60 177.40ZM527.60 177.40L528.50 176.53L513.27 171.80ZM528.50 176.53L513.65 169.80L513.27 171.80ZM513.65 169.80L528.50 176.53L529.67 175.48ZM514.28 168.50L513.65 169.80L529.67 175.48ZM514.28 168.50L529.67 175.48L530.92 174.47ZM515.41 167.43L514.28 168.50L530.92 174.47ZM530.92 174.47L540.52 167.21L515.41 167.43ZM540.52 167.21L529.72 158.75L515.41 167.43ZM540.52 167.21L543.74 165.66L529.72 158.75ZM543.74 165.66L535.86 156.39L529.72 158.75ZM535.86 156.39L543.74 165.66L545.03 164.73ZM537.25 155.57L535.86 156.39L545.03 164.73ZM537.25 155.57L545.03 164.73L546.07 163.51ZM538.36 154.43L537.25 155.57L546.07 163.51ZM546.07 163.51L548.77 159.03L538.36 154.43ZM548.77 159.03L539.11 153.33L538.36 154.43ZM548.77 159.03L552.79 156.69L539.11 153.33ZM552.79 156.69L546.79 150.39L539.11 153.33ZM552.79 156.69L564.89 152.09L546.79 150.39ZM564.89 152.09L559.10 145.23L546.79 150.39ZM564.89 152.09L572.48 148.67L559.10 145.23ZM572.48 148.67L568.27 143.86L559.10 145.23ZM572.48 148.67L575.34 147.84L568.27 143.86ZM575.34 147.84L572.39 143.15L568.27 143.86ZM575.34 147.84L576.93 146.48L572.39 143.15ZM576.93 146.48L574.28 142.14L572.39 143.15ZM574.28 142.14L576.93 146.48L578.34 145.62ZM575.75 141.33L574.28 142.14L578.34 145.62ZM575.75 141.33L578.34 145.62L579.96 145.08ZM577.21 140.52L575.75 141.33L579.96 145.08ZM579.96 145.08L585.12 144.17L577.21 140.52ZM585.12 144.17L581.60 138.00L577.21 140.52ZM585.12 144.17L594.07 140.02L581.60 138.00ZM594.07 140.02L585.59 133.73L581.60 138.00ZM594.07 140.02L597.93 133.44L585.59 133.73ZM597.93 133.44L589.57 129.46L585.59 133.73ZM597.93 133.44L607.27 127.58L589.57 129.46ZM607.27 127.58L592.51 124.54L589.57 129.46ZM607.27 127.58L614.47 122.78L592.51 124.54ZM614.47 122.78L601.27 118.57L592.51 124.54ZM614.47 122.78L619.61 118.10L601.27 118.57ZM619.61 118.10L606.37 112.42L601.27 118.57ZM619.61 118.10L625.54 109.95L606.37 112.42ZM625.54 109.95L610.57 105.43L606.37 112.42ZM611.55 103.63L610.57 105.43L625.54 109.95ZM627.61 108.52L611.55 103.63L625.54 109.95ZM611.55 103.63L627.61 108.52L628.85 107.43ZM611.68 103.39L611.55 103.63L628.85 107.43ZM611.68 103.39L628.85 107.43L629.42 106.45ZM611.81 103.16L611.68 103.39L629.42 106.45ZM629.42 106.45L629.73 105.41L611.81 103.16ZM629.73 105.41L612.06 102.71L611.81 103.16ZM612.06 102.71L629.73 105.41L629.54 104.77ZM612.19 102.49L612.06 102.71L629.54 104.77ZM612.19 102.49L629.54 104.77L628.93 104.15ZM612.35 102.28L612.19 102.49L628.93 104.15ZM628.93 104.15L627.52 103.44L612.35 102.28ZM627.52 103.44L612.54 102.03L612.35 102.28ZM612.54 102.03L627.52 103.44L626.61 102.57ZM612.72 101.56L612.54 102.03L626.61 102.57ZM612.72 101.56L626.61 102.57L626.99 101.80ZM613.30 100.80L612.72 101.56L626.99 101.80ZM613.88 100.21L613.30 100.80L626.99 101.80ZM627.61 101.28L613.88 100.21L626.99 101.80ZM627.61 101.28L627.48 100.54L613.88 100.21ZM627.48 100.54L614.32 99.68L613.88 100.21ZM627.48 100.54L626.67 100.03L614.32 99.68ZM626.67 100.03L614.55 99.26L614.32 99.68ZM614.55 99.26L626.67 100.03L625.35 99.17ZM614.68 98.67L614.55 99.26L625.35 99.17ZM614.68 98.67L625.35 99.17L625.74 98.39ZM614.75 97.87L614.68 98.67L625.74 98.39ZM614.80 97.31L614.75 97.87L625.74 98.39ZM627.48 97.60L614.80 97.31L625.74 98.39ZM627.48 97.60L628.68 95.92L614.80 97.31ZM628.68 95.92L614.96 95.72L614.80 97.31ZM628.68 95.92L627.13 94.88L614.96 95.72ZM627.13 94.88L615.53 94.04L614.96 95.72ZM627.13 94.88L634.43 87.02L615.53 94.04ZM634.43 87.02L625.25 83.88L615.53 94.04ZM634.43 87.02L641.41 79.41L625.25 83.88ZM641.41 79.41L631.62 76.77L625.25 83.88ZM641.41 79.41L648.26 72.92L631.62 76.77ZM648.26 72.92L639.91 70.40L631.62 76.77ZM648.26 72.92L652.61 68.80L639.91 70.40ZM652.61 68.80L642.84 65.38L639.91 70.40ZM652.61 68.80L659.01 63.19L642.84 65.38ZM659.01 63.19L644.80 61.30L642.84 65.38ZM659.01 63.19L660.32 60.25L644.80 61.30ZM660.32 60.25L650.39 57.16L644.80 61.30ZM650.39 57.16L660.32 60.25L661.93 57.75ZM651.20 54.89L650.39 57.16L661.93 57.75ZM651.20 54.89L661.93 57.75L663.77 56.33ZM650.61 53.61L651.20 54.89L663.77 56.33ZM648.22 51.95L650.61 53.61L663.77 56.33ZM666.29 54.95L648.22 51.95L663.77 56.33ZM648.22 51.95L666.29 54.95L667.24 54.22ZM646.77 51.04L648.22 51.95L667.24 54.22ZM646.77 51.04L667.24 54.22L667.81 53.42ZM646.01 50.13L646.77 51.04L667.81 53.42ZM667.81 53.42L667.86 53.27L646.01 50.13ZM667.86 53.27L645.88 49.69L646.01 50.13ZM667.86 53.27L667.53 52.21L645.88 49.69ZM667.53 52.21L645.96 48.74L645.88 49.69ZM667.53 52.21L666.24 51.02L645.96 48.74ZM666.24 51.02L646.59 47.96L645.96 48.74ZM666.24 51.02L664.25 49.71L646.59 47.96ZM664.25 49.71L651.04 45.10L646.59 47.96ZM664.25 49.71L670.91 41.78L651.04 45.10ZM670.91 41.78L659.76 36.66L651.04 45.10ZM670.91 41.78L679.05 36.13L659.76 36.66ZM679.05 36.13L668.27 30.03L659.76 36.66ZM679.05 36.13L686.94 32.17L668.27 30.03ZM686.94 32.17L676.93 25.23L668.27 30.03ZM686.94 32.17L698.50 21.00L676.93 25.23ZM698.50 21.00L685.41 16.34L676.93 25.23ZM698.50 21.00L706.30 12.47L685.41 16.34ZM706.30 12.47L688.54 11.83L685.41 16.34ZM688.54 11.83L706.30 12.47L706.66 11.54ZM687.77 10.56L688.54 11.83L706.66 11.54ZM706.66 11.54L706.51 10.28L687.77 10.56ZM706.51 10.28L685.99 9.22L687.77 10.56ZM685.99 9.22L706.51 10.28L705.55 9.34ZM686.24 8.61L685.99 9.22L705.55 9.34ZM705.55 9.34L702.26 7.61L686.24 8.61ZM702.26 7.61L690.89 6.45L686.24 8.61ZM702.26 7.61L704.85 6.05L690.89 6.45ZM704.85 6.05L692.78 4.96L690.89 6.45ZM704.85 6.05L703.39 4.48L692.78 4.96ZM703.39 4.48L694.68 3.47L692.78 4.96ZM703.39 4.48L703.71 2.52L694.68 3.47ZM703.71 2.52L693.05 1.57L694.68 3.47ZM703.71 2.52L708.95 -0.10L693.05 1.57ZM708.95 -0.10L696.05 -0.33L693.05 1.57Z",
+    "forests": {
+      "15": {
+        "position": [
+          -7.6560006737709045,
+          0.0,
+          0.9840007424354553
+        ],
+        "x": 213.85621400965653,
+        "y": 456.34005152533297
+      },
+      "16": {
+        "position": [
+          -3.98000031709671,
+          0.0,
+          2.620001792907715
+        ],
+        "x": 437.05032312741344,
+        "y": 555.6724132082983
+      },
+      "12": {
+        "position": [
+          -3.352000415325165,
+          0.0,
+          -3.8960026502609253
+        ],
+        "x": 475.18031904742253,
+        "y": 160.04301560504103
+      },
+      "14": {
+        "position": [
+          0.7359999865293503,
+          0.0,
+          -1.4980011284351349
+        ],
+        "x": 723.3896550743773,
+        "y": 305.6414273013784
+      },
+      "13": {
+        "position": [
+          -6.452000677585602,
+          0.0,
+          -1.9080015420913696
+        ],
+        "x": 286.9589562437424,
+        "y": 280.7476111466088
+      },
+      "17": {
+        "position": [
+          0.3659999817609787,
+          0.0,
+          1.1460008919239044
+        ],
+        "x": 700.9245262862622,
+        "y": 466.1761438903323
+      },
+      "18": {
+        "position": [
+          4.448000013828278,
+          0.0,
+          1.4500010311603546
+        ],
+        "x": 948.7695404799498,
+        "y": 484.63398765124555
+      }
+    }
+  },
+  "characters": {
+    "thief": "/assets/original/cards_assets_all/T_crd_Vagabond_Thief-5063728786957744978.webp?v=08b100913756",
+    "tinker": "/assets/original/cards_assets_all/T_crd_Vagabond_Tinker-7499823033130179257.webp?v=b37b036f3301",
+    "ranger": "/assets/original/cards_assets_all/T_crd_Vagabond_Ranger-2779412416632133861.webp?v=82b4a8e96c41"
+  },
+  "dominance": {
+    "DominanceFox": "/assets/original/cards_assets_all/T_crd_fox_dominance--5431207895972671487.webp?v=d097c1c51f49",
+    "DominanceMouse": "/assets/original/cards_assets_all/T_crd_mouse_dominance--3237490250163346618.webp?v=8a9bf23897d0",
+    "DominanceRabbit": "/assets/original/cards_assets_all/T_crd_bunny_dominance--2105302814743707490.webp?v=2943c7b0958f",
+    "DominanceBird": "/assets/original/cards_assets_all/T_crd_bird_dominance--2142001317059855988.webp?v=3edc5d00ec99"
+  },
+  "illustrations": {
+    "hero": "/assets/original/frontend_assets_all/S_ill_Header_Registration-6562587341017648257.webp?v=eb3aface9c98",
+    "cat": "/assets/original/marquise_assets_all/S_ill_MarquiseDeCat--1006048085914686748.webp?v=e2dfb77c3a23",
+    "bird": "/assets/original/eyrie_assets_all/S_ill_Eyrie--7891714037732847448.webp?v=a6af16b72a3a"
+  },
+  "mapReference": "/assets/original/frontend_assets_all/S_ui_RulesAutumnMap--6204769766121856409.webp?v=f0722b7a1378",
+  "files": [
+    "/assets/board/T_env_Playmat4k-61.c27d6d35f3a6.webp",
+    "/assets/original/alliance_assets_all/Avatar_WoodlandAlliance-3054629790786736104.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_Boot--8014753342253614679.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_Crossbow--4349718593188368312.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_GoldStack-1253766033305027126.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_Hammer-4859698362535079691.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_Sack--1257791002250951522.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_Sword-4045595243651050979.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_TeaPot-6038878736433167975.webp",
+    "/assets/original/cards_assets_all/S_crd_iconLarge_Torch-1430332100504370266.webp",
+    "/assets/original/cards_assets_all/T_crd_EyrieLeader_Charismatic--8504066473054333768.webp",
+    "/assets/original/cards_assets_all/T_crd_EyrieLeader_Commander--3406313669329535346.webp",
+    "/assets/original/cards_assets_all/T_crd_EyrieLeader_Despot--7309470995286429501.webp",
+    "/assets/original/cards_assets_all/T_crd_EyrieLeader_builder--3004661381583128462.webp",
+    "/assets/original/cards_assets_all/T_crd_Vagabond_Ranger-2779412416632133861.webp",
+    "/assets/original/cards_assets_all/T_crd_Vagabond_Thief-5063728786957744978.webp",
+    "/assets/original/cards_assets_all/T_crd_Vagabond_Tinker-7499823033130179257.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_ambush-5972410070725376199.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_armorers-1988342309494935255.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_armstrader-3911669970754922875.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_birdybindle--2408144736673347757.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_brutaltactics--7550228027685790556.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_crossbow-5850023958568274524.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_dominance--2142001317059855988.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_royalclaim-1989112855745909436.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_sappers--5652915952167428609.webp",
+    "/assets/original/cards_assets_all/T_crd_bird_woodlandrunners--8625684546494281490.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_ambush--4092092003495250767.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_avisittofriends--711722563911872423.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_bakesale-7638628711528321898.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_betterburrowbank-3432993538330225371.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_cobbler-8832791981894611330.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_commandwarren--7229282057876119308.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_dominance--2105302814743707490.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_favoroftherabbits--7355958149234627695.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_quest_errand-9130030156822862374.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_quest_expelbandits--1412152101068895502.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_quest_fendoffabear-5064174278926944299.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_quest_giveaspeech-8005937854956772612.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_quest_guardduty-2905268290831893362.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_roottea-2557994446527927426.webp",
+    "/assets/original/cards_assets_all/T_crd_bunny_smugglerstrail--3914084557741465486.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_ambush--4341965107330222545.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_anvil-4170058663817171158.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_dominance--5431207895972671487.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_favorofthefoxes-7696262584671412637.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_foxfolksteel-6523073728467684087.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_gentlyusedknapsack-1820424561155764025.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_protectionracket-1884250226644483250.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_quest_errand-8916987158742916872.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_quest_fundraising-4715390449838604359.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_quest_giveaspeech-745177537380816857.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_quest_logisticshelp-1354772190855797060.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_quest_repairashed-2776283601419642469.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_roottea-6199195706215876134.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_standanddeliver-6117997961384008583.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_taxcollector--640079579055229588.webp",
+    "/assets/original/cards_assets_all/T_crd_fox_travelgear--6540386899183443077.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_ambush-8985733370354917822.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_codebreakers--1485736016364870786.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_crossbow-7562719300919112257.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_dominance--3237490250163346618.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_favorofthemice--3242265846526581517.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_investments-2157189289002225429.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_mouseinasack--6570927633713301495.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_quest_escort-2285326933921889462.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_quest_expelbandits-3277630628727854936.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_quest_fendoffabear-8885174636250785441.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_quest_guardduty--3010551451915393487.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_quest_logisticshelp-1288875050625428247.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_roottea-5843238295354499498.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_scoutingparty--2433341253006227969.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_sword-470800843222527067.webp",
+    "/assets/original/cards_assets_all/T_crd_mouse_travelgear--4653276865117454534.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseBunny--2365105621515189540.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseFox--2003128051301950270.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseMouse-5357773812519511716.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Head--3084156120547819873.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_HeadCount--5644971584482754250.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Sympathy-5964523114129938645.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Drawer_EyrieWarrior-2644266430775587943.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Drawer_MarquiseWarrior--5837914548808560161.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Eyrie_WarriorCount--1142459001686082706.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Keep-7883067840790858121.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_HeadCount--2041494168984117354.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_Wood-5654872393175241247.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Recruiter--5302944652082961402.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Roost-4066108500425001067.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Ruin--2958837082460047092.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Sawmill-5258612999641841284.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Vaga_Head--5535311335644308776.webp",
+    "/assets/original/defaultlocalgroup_assets_all/S_icon_Workshop-5302894779454173423.webp",
+    "/assets/original/defaultlocalgroup_assets_all/T_icon_ClearingIndFox--6716184848535519007.webp",
+    "/assets/original/defaultlocalgroup_assets_all/T_icon_ClearingIndMouse-549846321502176588.webp",
+    "/assets/original/defaultlocalgroup_assets_all/T_icon_ClearingIndRabbit--3168631628066192735.webp",
+    "/assets/original/eyrie_assets_all/Avatar_EyrieDynasties_Despot--718154712742468074.webp",
+    "/assets/original/eyrie_assets_all/S_ill_Eyrie--7891714037732847448.webp",
+    "/assets/original/frontend_assets_all/S_ill_Header_Registration-6562587341017648257.webp",
+    "/assets/original/frontend_assets_all/S_ui_RulesAutumnMap--6204769766121856409.webp",
+    "/assets/original/marquise_assets_all/Avatar_MarquiseDeCat--466157958804350764.webp",
+    "/assets/original/marquise_assets_all/S_ill_MarquiseDeCat--1006048085914686748.webp",
+    "/assets/suits/fox.webp",
+    "/assets/suits/wild.webp",
+    "/assets/suits/mouse.webp",
+    "/assets/suits/rabbit.webp"
+  ],
+  "catalog": [
+    {
+      "type": "FavoroftheFoxesFox",
+      "name": "狐之援助",
+      "suit": "fox",
+      "count": 1,
+      "kind": "favor",
+      "cost": [
+        "fox",
+        "fox",
+        "fox"
+      ]
+    },
+    {
+      "type": "FavoroftheMiceMouse",
+      "name": "鼠之援助",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "favor",
+      "cost": [
+        "mouse",
+        "mouse",
+        "mouse"
+      ]
+    },
+    {
+      "type": "FavoroftheRabbitsRabbit",
+      "name": "兔之援助",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "favor",
+      "cost": [
+        "rabbit",
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "AVisittoFriendsRabbit",
+      "name": "拜访好友",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "BakeSaleRabbit",
+      "name": "售卖蛋糕",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "item": "coin"
+    },
+    {
+      "type": "TravelGearMouse",
+      "name": "旅行装备",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "SmugglersTrailRabbit",
+      "name": "走私路线",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "RootTeaRabbit",
+      "name": "草根茶",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "item": "tea"
+    },
+    {
+      "type": "InvestmentsMouse",
+      "name": "投资",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "item": "coin"
+    },
+    {
+      "type": "BirdyBindleBird",
+      "name": "飞鹰行囊",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "RootTeaMouse",
+      "name": "草根茶",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "item": "tea"
+    },
+    {
+      "type": "SwordMouse",
+      "name": "长剑",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "item": "sword"
+    },
+    {
+      "type": "WoodlandRunnersBird",
+      "name": "林地跑者",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "TravelGearFox",
+      "name": "旅行装备",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit"
+      ],
+      "points": 1,
+      "item": "boot"
+    },
+    {
+      "type": "AnvilFox",
+      "name": "铁砧",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 2,
+      "item": "hammer"
+    },
+    {
+      "type": "GentlyUsedKnapsackFox",
+      "name": "半新小袋",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "MouseinaSackMouse",
+      "name": "老鼠口袋",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 1,
+      "item": "bag"
+    },
+    {
+      "type": "CrossbowBird",
+      "name": "十字弩",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 1,
+      "item": "crossbow"
+    },
+    {
+      "type": "ProtectionRacketFox",
+      "name": "保护费",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ],
+      "points": 3,
+      "item": "coin"
+    },
+    {
+      "type": "ArmsTraderBird",
+      "name": "武器商",
+      "suit": "wild",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "item": "sword"
+    },
+    {
+      "type": "CrossbowMouse",
+      "name": "十字弩",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox"
+      ],
+      "points": 1,
+      "item": "crossbow"
+    },
+    {
+      "type": "FoxfolkSteelFox",
+      "name": "狐族钢剑",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "fox",
+        "fox"
+      ],
+      "points": 2,
+      "item": "sword"
+    },
+    {
+      "type": "RootTeaFox",
+      "name": "草根茶",
+      "suit": "fox",
+      "count": 1,
+      "kind": "item",
+      "cost": [
+        "mouse"
+      ],
+      "points": 2,
+      "item": "tea"
+    },
+    {
+      "type": "ScoutingPartyMouse",
+      "name": "侦查团",
+      "suit": "mouse",
+      "count": 2,
+      "kind": "scouting",
+      "cost": [
+        "mouse",
+        "mouse"
+      ]
+    },
+    {
+      "type": "CobblerRabbit",
+      "name": "补鞋匠",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "cobbler",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "CommandWarrenRabbit",
+      "name": "指挥所",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "commandwarren",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "BetterBurrowBankRabbit",
+      "name": "好利银行",
+      "suit": "rabbit",
+      "count": 2,
+      "kind": "bank",
+      "cost": [
+        "rabbit",
+        "rabbit"
+      ]
+    },
+    {
+      "type": "TaxCollectorFox",
+      "name": "征税官",
+      "suit": "fox",
+      "count": 3,
+      "kind": "tax",
+      "cost": [
+        "rabbit",
+        "fox",
+        "mouse"
+      ]
+    },
+    {
+      "type": "CodebreakersMouse",
+      "name": "密码破译",
+      "suit": "mouse",
+      "count": 2,
+      "kind": "codebreakers",
+      "cost": [
+        "mouse"
+      ]
+    },
+    {
+      "type": "RoyalClaimBird",
+      "name": "加冕",
+      "suit": "wild",
+      "count": 1,
+      "kind": "royalclaim",
+      "cost": [
+        "wild",
+        "wild",
+        "wild",
+        "wild"
+      ]
+    },
+    {
+      "type": "StandandDeliverFox",
+      "name": "拦路抢劫",
+      "suit": "fox",
+      "count": 2,
+      "kind": "standdeliver",
+      "cost": [
+        "mouse",
+        "mouse",
+        "mouse"
+      ]
+    },
+    {
+      "type": "SappersBird",
+      "name": "陷阱挖掘",
+      "suit": "wild",
+      "count": 2,
+      "kind": "sappers",
+      "cost": [
+        "mouse"
+      ]
+    },
+    {
+      "type": "ArmorersBird",
+      "name": "铠甲兵",
+      "suit": "wild",
+      "count": 2,
+      "kind": "armorers",
+      "cost": [
+        "fox"
+      ]
+    },
+    {
+      "type": "BrutalTacticsBird",
+      "name": "野蛮战术",
+      "suit": "wild",
+      "count": 2,
+      "kind": "brutal",
+      "cost": [
+        "fox",
+        "fox"
+      ]
+    },
+    {
+      "type": "AmbushRabbit",
+      "name": "奇袭！",
+      "suit": "rabbit",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null
+    },
+    {
+      "type": "AmbushBird",
+      "name": "奇袭！",
+      "suit": "wild",
+      "count": 2,
+      "kind": "ambush",
+      "cost": null
+    },
+    {
+      "type": "AmbushFox",
+      "name": "奇袭！",
+      "suit": "fox",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null
+    },
+    {
+      "type": "AmbushMouse",
+      "name": "奇袭！",
+      "suit": "mouse",
+      "count": 1,
+      "kind": "ambush",
+      "cost": null
+    }
+  ],
+  "quests": {
+    "RepairaShedFox": "/assets/original/cards_assets_all/T_crd_fox_quest_repairashed-2776283601419642469.webp",
+    "EscortMouse": "/assets/original/cards_assets_all/T_crd_mouse_quest_escort-2285326933921889462.webp",
+    "FundraisingFox": "/assets/original/cards_assets_all/T_crd_fox_quest_fundraising-4715390449838604359.webp",
+    "FendoffaBearMouse": "/assets/original/cards_assets_all/T_crd_mouse_quest_fendoffabear-8885174636250785441.webp",
+    "FendoffaBearRabbit": "/assets/original/cards_assets_all/T_crd_bunny_quest_fendoffabear-5064174278926944299.webp",
+    "ExpelBanditsRabbit": "/assets/original/cards_assets_all/T_crd_bunny_quest_expelbandits--1412152101068895502.webp",
+    "ExpelBanditsMouse": "/assets/original/cards_assets_all/T_crd_mouse_quest_expelbandits-3277630628727854936.webp",
+    "GuardDutyMouse": "/assets/original/cards_assets_all/T_crd_mouse_quest_guardduty--3010551451915393487.webp",
+    "GuardDutyRabbit": "/assets/original/cards_assets_all/T_crd_bunny_quest_guardduty-2905268290831893362.webp",
+    "ErrandFox": "/assets/original/cards_assets_all/T_crd_fox_quest_errand-8916987158742916872.webp",
+    "ErrandRabbit": "/assets/original/cards_assets_all/T_crd_bunny_quest_errand-9130030156822862374.webp",
+    "GiveaSpeechRabbit": "/assets/original/cards_assets_all/T_crd_bunny_quest_giveaspeech-8005937854956772612.webp",
+    "GiveaSpeechFox": "/assets/original/cards_assets_all/T_crd_fox_quest_giveaspeech-745177537380816857.webp",
+    "LogisticsMouse": "/assets/original/cards_assets_all/T_crd_mouse_quest_logisticshelp-1288875050625428247.webp",
+    "LogisticsFox": "/assets/original/cards_assets_all/T_crd_fox_quest_logisticshelp-1354772190855797060.webp"
+  },
+  "characterDetails": {
+    "thief": {
+      "name": "盗贼",
+      "ability": "偷窃",
+      "description": "选择你所在领地的一位玩家，从其手中随机抽取一张卡牌。",
+      "cost": "消耗一个未损坏且未耗竭的火把。"
+    },
+    "tinker": {
+      "name": "工匠",
+      "ability": "劳作",
+      "description": "从弃牌堆中拿取一张与你所在领地类型相同的卡牌。",
+      "cost": "消耗一个未损坏且未耗竭的火把。"
+    },
+    "ranger": {
+      "name": "猎人",
+      "ability": "隐藏",
+      "description": "修复最多3个道具。然后立刻结束白天阶段。",
+      "cost": "消耗一个未损坏且未耗竭的火把。"
+    }
+  }
+}

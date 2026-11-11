@@ -1,0 +1,20 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -2943611130950582562
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3262508331336424964
+  },
+  "m_Name": "",
+  "withinSound": "",
+  "exitSound": "",
+  "downSound": "button1",
+  "upSound": "",
+  "selectSound": "mouseOver",
+  "submitSound": "button1",
+  "cancelSound": "",
+  "leftClickOnly": 1
+}

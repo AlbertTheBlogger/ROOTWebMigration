@@ -1,0 +1,338 @@
+[
+  {
+    "type": "ItemTypes",
+    "namespace": "tuber.canis.enums",
+    "type_index": 1024,
+    "values": [
+      {
+        "field": "Sack",
+        "value_as_compressed_int32": 0,
+        "metadata_offset": 5949901,
+        "raw_bytes": "00",
+        "type_index": 20888
+      },
+      {
+        "field": "Boot",
+        "value_as_compressed_int32": 1,
+        "metadata_offset": 5949902,
+        "raw_bytes": "02",
+        "type_index": 20888
+      },
+      {
+        "field": "Crossbow",
+        "value_as_compressed_int32": 2,
+        "metadata_offset": 5949903,
+        "raw_bytes": "04",
+        "type_index": 20888
+      },
+      {
+        "field": "Hammer",
+        "value_as_compressed_int32": 3,
+        "metadata_offset": 5949904,
+        "raw_bytes": "06",
+        "type_index": 20888
+      },
+      {
+        "field": "Sword",
+        "value_as_compressed_int32": 4,
+        "metadata_offset": 5949905,
+        "raw_bytes": "08",
+        "type_index": 20888
+      },
+      {
+        "field": "TeaPot",
+        "value_as_compressed_int32": 5,
+        "metadata_offset": 5949906,
+        "raw_bytes": "0a",
+        "type_index": 20888
+      },
+      {
+        "field": "Torch",
+        "value_as_compressed_int32": 6,
+        "metadata_offset": 5949907,
+        "raw_bytes": "0c",
+        "type_index": 20888
+      },
+      {
+        "field": "GoldStack",
+        "value_as_compressed_int32": 7,
+        "metadata_offset": 5949908,
+        "raw_bytes": "0e",
+        "type_index": 20888
+      },
+      {
+        "field": "Invalid",
+        "value_as_compressed_int32": 8,
+        "metadata_offset": 5949909,
+        "raw_bytes": "10",
+        "type_index": 20888
+      }
+    ]
+  },
+  {
+    "type": "Suits",
+    "namespace": "tuber.canis.enums",
+    "type_index": 1029,
+    "values": [
+      {
+        "field": "Rabbit",
+        "value_as_compressed_int32": 0,
+        "metadata_offset": 5949932,
+        "raw_bytes": "00",
+        "type_index": 20888
+      },
+      {
+        "field": "Fox",
+        "value_as_compressed_int32": 1,
+        "metadata_offset": 5949933,
+        "raw_bytes": "02",
+        "type_index": 20888
+      },
+      {
+        "field": "Mouse",
+        "value_as_compressed_int32": 2,
+        "metadata_offset": 5949934,
+        "raw_bytes": "04",
+        "type_index": 20888
+      },
+      {
+        "field": "Bird",
+        "value_as_compressed_int32": 3,
+        "metadata_offset": 5949935,
+        "raw_bytes": "06",
+        "type_index": 20888
+      },
+      {
+        "field": "Invalid",
+        "value_as_compressed_int32": 4,
+        "metadata_offset": 5949936,
+        "raw_bytes": "08",
+        "type_index": 20888
+      }
+    ]
+  },
+  {
+    "type": "MapLayout",
+    "namespace": "tuber.canis.enums",
+    "type_index": 1036,
+    "values": [
+      {
+        "field": "Fall",
+        "value_as_compressed_int32": 0,
+        "metadata_offset": 5949973,
+        "raw_bytes": "00",
+        "type_index": 20888
+      },
+      {
+        "field": "Winter",
+        "value_as_compressed_int32": 1,
+        "metadata_offset": 5949974,
+        "raw_bytes": "02",
+        "type_index": 20888
+      },
+      {
+        "field": "Lake",
+        "value_as_compressed_int32": 2,
+        "metadata_offset": 5949975,
+        "raw_bytes": "04",
+        "type_index": 20888
+      },
+      {
+        "field": "Mountain",
+        "value_as_compressed_int32": 3,
+        "metadata_offset": 5949976,
+        "raw_bytes": "06",
+        "type_index": 20888
+      },
+      {
+        "field": "Invalid",
+        "value_as_compressed_int32": 4,
+        "metadata_offset": 5949977,
+        "raw_bytes": "08",
+        "type_index": 20888
+      }
+    ]
+  },
+  {
+    "type": "BattlePhases",
+    "namespace": "tuber.canis.data.enums",
+    "type_index": 1578,
+    "values": [
+      {
+        "field": "None",
+        "value_as_compressed_int32": 0,
+        "metadata_offset": 5966814,
+        "raw_bytes": "00",
+        "type_index": 20888
+      },
+      {
+        "field": "Started",
+        "value_as_compressed_int32": 1,
+        "metadata_offset": 5966815,
+        "raw_bytes": "02",
+        "type_index": 20888
+      },
+      {
+        "field": "AmbushSelection",
+        "value_as_compressed_int32": 2,
+        "metadata_offset": 5966816,
+        "raw_bytes": "04",
+        "type_index": 20888
+      },
+      {
+        "field": "Fight",
+        "value_as_compressed_int32": 3,
+        "metadata_offset": 5966817,
+        "raw_bytes": "06",
+        "type_index": 20888
+      },
+      {
+        "field": "InterruptsSelection",
+        "value_as_compressed_int32": 4,
+        "metadata_offset": 5966818,
+        "raw_bytes": "08",
+        "type_index": 20888
+      },
+      {
+        "field": "DamageAllocation",
+        "value_as_compressed_int32": 5,
+        "metadata_offset": 5966819,
+        "raw_bytes": "0a",
+        "type_index": 20888
+      },
+      {
+        "field": "VagabondChooseAllies",
+        "value_as_compressed_int32": 100,
+        "metadata_offset": 5966820,
+        "raw_bytes": "80c8",
+        "type_index": 20888
+      },
+      {
+        "field": "HundredsLooting",
+        "value_as_compressed_int32": 104,
+        "metadata_offset": 5966822,
+        "raw_bytes": "80d0",
+        "type_index": 20888
+      },
+      {
+        "field": "HundredsBitter",
+        "value_as_compressed_int32": 106,
+        "metadata_offset": 5966824,
+        "raw_bytes": "80d4",
+        "type_index": 20888
+      },
+      {
+        "field": "PayBattleCosts",
+        "value_as_compressed_int32": 110,
+        "metadata_offset": 5966826,
+        "raw_bytes": "80dc",
+        "type_index": 20888
+      },
+      {
+        "field": "MoveToAmbush",
+        "value_as_compressed_int32": 120,
+        "metadata_offset": 5966828,
+        "raw_bytes": "80f0",
+        "type_index": 20888
+      },
+      {
+        "field": "DefenderAmbush",
+        "value_as_compressed_int32": 121,
+        "metadata_offset": 5966830,
+        "raw_bytes": "80f2",
+        "type_index": 20888
+      },
+      {
+        "field": "DefenderAmbushDiscard",
+        "value_as_compressed_int32": 122,
+        "metadata_offset": 5966832,
+        "raw_bytes": "80f4",
+        "type_index": 20888
+      },
+      {
+        "field": "DefenderAmbushDamage",
+        "value_as_compressed_int32": 123,
+        "metadata_offset": 5966834,
+        "raw_bytes": "80f6",
+        "type_index": 20888
+      },
+      {
+        "field": "EnlistVagabondArbiter",
+        "value_as_compressed_int32": 124,
+        "metadata_offset": 5966836,
+        "raw_bytes": "80f8",
+        "type_index": 20888
+      },
+      {
+        "field": "DiceRoll",
+        "value_as_compressed_int32": 130,
+        "metadata_offset": 5966838,
+        "raw_bytes": "8104",
+        "type_index": 20888
+      },
+      {
+        "field": "ActivateSwiftStrike",
+        "value_as_compressed_int32": 131,
+        "metadata_offset": 5966840,
+        "raw_bytes": "8106",
+        "type_index": 20888
+      },
+      {
+        "field": "ActivateSwiftStrikeAttacker",
+        "value_as_compressed_int32": 132,
+        "metadata_offset": 5966842,
+        "raw_bytes": "8108",
+        "type_index": 20888
+      },
+      {
+        "field": "ActivateSwiftStrikeDefender",
+        "value_as_compressed_int32": 133,
+        "metadata_offset": 5966844,
+        "raw_bytes": "810a",
+        "type_index": 20888
+      },
+      {
+        "field": "AttackerInterrupts",
+        "value_as_compressed_int32": 140,
+        "metadata_offset": 5966846,
+        "raw_bytes": "8118",
+        "type_index": 20888
+      },
+      {
+        "field": "DefenderInterrupts",
+        "value_as_compressed_int32": 141,
+        "metadata_offset": 5966848,
+        "raw_bytes": "811a",
+        "type_index": 20888
+      },
+      {
+        "field": "PerformBattle",
+        "value_as_compressed_int32": 150,
+        "metadata_offset": 5966850,
+        "raw_bytes": "812c",
+        "type_index": 20888
+      },
+      {
+        "field": "DefenderDamage",
+        "value_as_compressed_int32": 151,
+        "metadata_offset": 5966852,
+        "raw_bytes": "812e",
+        "type_index": 20888
+      },
+      {
+        "field": "HundredsFinishLooting",
+        "value_as_compressed_int32": 160,
+        "metadata_offset": 5966854,
+        "raw_bytes": "8140",
+        "type_index": 20888
+      },
+      {
+        "field": "BattleCleanup",
+        "value_as_compressed_int32": 200,
+        "metadata_offset": 5966856,
+        "raw_bytes": "8190",
+        "type_index": 20888
+      }
+    ]
+  }
+]

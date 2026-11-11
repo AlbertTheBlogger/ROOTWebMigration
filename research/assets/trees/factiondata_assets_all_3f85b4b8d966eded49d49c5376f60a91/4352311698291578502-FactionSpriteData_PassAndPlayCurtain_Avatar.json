@@ -1,0 +1,135 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8423559073598086310
+  },
+  "m_Name": "FactionSpriteData_PassAndPlayCurtain_Avatar",
+  "factionSprites": [
+    {
+      "faction": 0,
+      "sprite": {
+        "m_FileID": 15,
+        "m_PathID": 2485533959193613711
+      }
+    },
+    {
+      "faction": 1,
+      "sprite": {
+        "m_FileID": 19,
+        "m_PathID": 4998549483395737913
+      }
+    },
+    {
+      "faction": 2,
+      "sprite": {
+        "m_FileID": 11,
+        "m_PathID": 738652406958397012
+      }
+    },
+    {
+      "faction": 3,
+      "sprite": {
+        "m_FileID": 3,
+        "m_PathID": -744615598198175044
+      }
+    },
+    {
+      "faction": 5,
+      "sprite": {
+        "m_FileID": 3,
+        "m_PathID": -744615598198175044
+      }
+    },
+    {
+      "faction": 6,
+      "sprite": {
+        "m_FileID": 12,
+        "m_PathID": 7061357374432705628
+      }
+    },
+    {
+      "faction": 7,
+      "sprite": {
+        "m_FileID": 13,
+        "m_PathID": 3829027777346583963
+      }
+    },
+    {
+      "faction": 9,
+      "sprite": {
+        "m_FileID": 17,
+        "m_PathID": 5029932002971212363
+      }
+    },
+    {
+      "faction": 8,
+      "sprite": {
+        "m_FileID": 18,
+        "m_PathID": -3960726086574228341
+      }
+    },
+    {
+      "faction": 14,
+      "sprite": {
+        "m_FileID": 14,
+        "m_PathID": 7742833877797929520
+      }
+    },
+    {
+      "faction": 15,
+      "sprite": {
+        "m_FileID": 14,
+        "m_PathID": 667551286238377784
+      }
+    },
+    {
+      "faction": 4,
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 2447528166493633516
+      }
+    },
+    {
+      "faction": 10,
+      "sprite": {
+        "m_FileID": 23,
+        "m_PathID": -5697235227870985455
+      }
+    },
+    {
+      "faction": 11,
+      "sprite": {
+        "m_FileID": 24,
+        "m_PathID": 4559316809155803104
+      }
+    },
+    {
+      "faction": 12,
+      "sprite": {
+        "m_FileID": 25,
+        "m_PathID": -848988652337747844
+      }
+    },
+    {
+      "faction": 13,
+      "sprite": {
+        "m_FileID": 9,
+        "m_PathID": 7305259491636300444
+      }
+    }
+  ],
+  "factionCosmeticSprites": [
+    {
+      "faction": 0,
+      "sprite": {
+        "m_FileID": 15,
+        "m_PathID": 751282206271143593
+      }
+    }
+  ]
+}

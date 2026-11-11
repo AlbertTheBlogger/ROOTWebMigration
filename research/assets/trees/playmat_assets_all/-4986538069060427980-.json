@@ -1,0 +1,19 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 453610801470553966
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -4860992240585017580
+  },
+  "m_Name": "",
+  "doScale": 1,
+  "maxScale": 2.0,
+  "strategicViewEnableHeight": 15.0,
+  "strategicView": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  }
+}

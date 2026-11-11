@@ -1,0 +1,22 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 61089031011441357
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7699101208630634273
+  },
+  "m_Name": "",
+  "initialSelectionPriority": [],
+  "inputActions": [],
+  "suppressGlobalInput": 0,
+  "layer": 500,
+  "contextCameraTag": "MainCamera",
+  "OnContextCreated": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}
