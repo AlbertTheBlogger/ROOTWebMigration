@@ -20,3 +20,8 @@ export function tutorialAction(room){
  throw new Error('No tutorial action '+meta.stepId+' '+g.phase);
 }
 
+
+export function tutorialCommandFor(room){
+ if(room.tutorial.guide?.canAdvance)return {type:'guide-next'};
+ return room.tutorial.ready?{type:'next'}:{type:'action',action:tutorialAction(room)};
+}

@@ -116,7 +116,7 @@ function prepare(run){
       area(2).warriors.bird=1;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];
       for(let i=0;i<2;i++)deal(state,hero,card=>card.kind!=='ambush');run.context={clearing:2};npcBattle(run,'bird','lizard',2);break;
     case 'overview':area(0).warriors.cat=3;area(0).keep=true;deal(state,hero,card=>card.kind==='item');break;
-    case 'basic-move':area(0).warriors.cat=3;run.context={from:0,to:3};break;
+    case 'basic-move':area(0).warriors.cat=3;area(0).keep=true;run.context={from:0,to:3};break;
     case 'basic-defenseless':area(3).warriors.cat=1;area(3).buildings=[{faction:'bird',type:'roost'}];run.context={clearing:3,target:'bird'};break;
     case 'basic-battle':area(3).warriors.cat=3;area(3).warriors.bird=1;area(3).buildings=[{faction:'bird',type:'roost'}];run.context={clearing:3,target:'bird'};break;
     case 'cat-wood':state.phase='wood';state.woodPending=[1];area(1).buildings=[{faction:'cat',type:'sawmill'}];area(1).warriors.cat=1;run.context={clearing:1};break;
@@ -170,6 +170,7 @@ function prepareStep(run){
   else if(step.id==='vg-slip'){run.context={to:0};run.count=0;}
   else prepare(run);
   run.attempt=0;
+  run.guideCursor=0;
   run.ready=step.goal==='read';
   run.checkpoint={game:structuredClone(run.game),context:structuredClone(run.context)};
 }
@@ -177,6 +178,18 @@ export function createTutorial(user,lessonId){
   lessonById(lessonId);
   const run={schemaVersion:1,curriculumVersion:catalog.version,id:randomUUID(),userId:user.id,playerName:user.username,lessonId,step:0,ready:false,completed:false,count:0,context:{},receipts:[]};
   prepareStep(run);return run;
+}
+
+function guideFor(run){
+  const step=currentStep(run),guide=step.guidance;
+  if(!guide)return null;
+  const responding=run.ready&&step.goal!=='read';
+  const lines=responding?guide.after:guide.before;
+  const cursor=Math.max(0,Math.min(run.guideCursor||0,step.goal==='read'||responding?Math.max(0,lines.length-1):lines.length));
+  const acting=!run.ready&&cursor===lines.length;
+  return {speaker:guide.speaker,mode:run.completed?'complete':acting?'act':responding?'result':'dialogue',cursor,total:lines.length,
+    text:lines[cursor]?.text||step.text,focus:lines[cursor]?.focus||'map',prompts:guide.prompts,
+    canAdvance:!run.completed&&!acting&&(cursor<lines.length-1||!run.ready),canBack:!run.completed&&cursor>0};
 }
 function allowed(run,action){
   const step=currentStep(run),context=run.context;
@@ -196,7 +209,7 @@ function allowed(run,action){
   if(action.type==='discard'&&step.id==='liz-discard')return player(run.game,'lizard').hand.find(card=>card.id===action.card)?.suit==='rabbit';
   if(action.type==='build'&&context.building&&action.building!==context.building)return false;
   if(action.type==='quest')return action.quest===context.quest;
-  if(action.type==='move')return action.from===context.from&&action.to===context.to&&(step.id!=='wa-organize'||run.game.board[context.to].warriors.alliance===0);
+  if(action.type==='move')return action.from===context.from&&action.to===context.to&&(!['move','march'].includes(step.id)||action.count===1)&&(step.id!=='wa-organize'||run.game.board[context.to].warriors.alliance===0);
   if(action.type==='slip')return action.to===context.to;
   if(action.type==='organize')return action.clearing===context.to;
   if(action.target!==undefined&&context.target!==undefined&&action.target!==context.target)return false;
@@ -234,27 +247,43 @@ export function advanceTutorial(source,command){
   const run=structuredClone(source);
   ensure(!run.completed||command.type==='restart','本章已完成，可返回目录或重新练习');
   if(command.type==='restart'){const fresh=createTutorial({id:run.userId,username:run.playerName},run.lessonId);fresh.everCompleted=!!(run.everCompleted||run.completed);return fresh;}
-  if(command.type==='retry-step'){run.game=structuredClone(run.checkpoint.game);run.context=structuredClone(run.checkpoint.context);run.count=0;run.attempt=(run.attempt||0)+1;run.ready=currentStep(run).goal==='read';return run;}
+  if(command.type==='retry-step'){run.game=structuredClone(run.checkpoint.game);run.context=structuredClone(run.checkpoint.context);run.count=0;run.guideCursor=0;run.attempt=(run.attempt||0)+1;run.ready=currentStep(run).goal==='read';return run;}
+  const guide=guideFor(run);
+  if(command.type==='guide-next'||command.type==='guide-back'){
+    ensure(guide&&(command.type==='guide-next'?guide.canAdvance:guide.canBack),'请跟随当前引导');
+    run.guideCursor=guide.cursor+(command.type==='guide-next'?1:-1);return run;
+  }
   if(command.type==='next'){
     ensure(run.ready,'请先完成当前教学目标');
+    ensure(!guide||!guide.canAdvance,'请先听完当前引导');
     if(run.step+1===lessonById(run.lessonId).steps.length){run.completed=true;run.everCompleted=true;return run;}
     run.step++;prepareStep(run);return run;
   }
   ensure(command.type==='action'&&!run.ready,'请点击继续进入下一节');
+  ensure(!guide||guide.mode==='act','请先听完当前引导');
   ensure(command.action&&allowed(run,command.action),'请按本节目标操作，可查看提示或重试本节');
   run.game=resolveOpponents(rules.applyAction(run.game,run.userId,command.action,rng),run.userId);
   if(['twice','liz-sacrifice','liz-discard'].includes(currentStep(run).goal))run.count++;
-  run.ready=achieved(run,command.action);return run;
+  run.ready=achieved(run,command.action);if(run.ready)run.guideCursor=0;return run;
 }
 export function projectTutorial(run,version){
   const lesson=lessonById(run.lessonId),step=currentStep(run);
   const game=rules.projectGame(run.game,run.userId);
-  const actionTypes=run.ready||run.completed?[]:step.actions;
+  const guide=guideFor(run);
+  if(guide&&run.ready&&['battle','defenseless'].includes(step.id)){
+    const before=run.checkpoint.game,at=run.context.clearing;
+    const dice=run.game.randomEvents.filter(event=>event.type==='battle-dice').at(-1)?.values;
+    guide.outcome={dice:dice?[...dice]:null,
+      cat:[before.board[at].warriors.cat,run.game.board[at].warriors.cat],bird:[before.board[at].warriors.bird,run.game.board[at].warriors.bird],
+      roost:[before.board[at].buildings.filter(b=>b.type==='roost').length,run.game.board[at].buildings.filter(b=>b.type==='roost').length],
+      points:player(run.game,'cat').score-player(before,'cat').score};
+  }
+  const actionTypes=run.ready||run.completed||(guide&&guide.mode!=='act')?[]:step.actions;
   const permitted=action=>actionTypes.includes(action.type)&&allowed(run,action);
   game.mapActions=game.mapActions.filter(permitted);
   game.factionActions=game.factionActions.filter(option=>permitted(option.action));
   game.craftOptions=game.craftOptions.filter(option=>permitted({type:'craft',card:option.card}));game.effectOptions=[];
   if(game.choice&&!game.choice.waiting)game.choice.options=game.choice.options.filter(option=>permitted({type:'choice',optionId:option.id}));
   const goalCount=step.goal==='liz-sacrifice'?3:['twice','liz-discard'].includes(step.goal)?2:1;
-  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:4,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{id:run.id,lessonId:lesson.id,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context:run.context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
+  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:4,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{guide,id:run.id,lessonId:lesson.id,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context:run.context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
 }

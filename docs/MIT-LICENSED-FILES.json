@@ -25,6 +25,7 @@
     "deploy/REMOTE.md",
     "docs/AUTH-LATENCY-2026-11-09.md",
     "docs/BASE-FOUR-ACCEPTANCE-2026-11-09.md",
+    "docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md",
     "docs/CATS-BIRDS-ACCEPTANCE-2026-11-09.md",
     "docs/DESKTOP-UI-AUDIT-2026-11-10.md",
     "docs/HANDOFF-2026-11-09.md",
@@ -100,6 +101,12 @@
       "feature": "Lizard tutorial engineering record; existing licensed implementation/test files extended",
       "addedFiles": 1,
       "excluded": "Original/extracted/adapted tutorial text, research evidence and the new extraction utility remain outside this grant."
+    },
+    {
+      "date": "2026-11-11",
+      "feature": "Basics tutorial immersive map guidance and engineering record",
+      "addedFiles": 1,
+      "excluded": "Original and adapted game/tutorial text remains excluded; local gameplay screenshots are not published."
     }
   ]
 }

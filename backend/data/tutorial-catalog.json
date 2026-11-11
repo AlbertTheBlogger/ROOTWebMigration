@@ -1,93 +1,233 @@
 {
-  "version": 2,
+  "version": 3,
   "lessons": [
     {
       "id": "basics",
-      "title": "基础操作",
+      "title": "贵族崛起",
       "faction": "cat",
-      "summary": "认识地图、控制权、行军、战斗和分数。",
+      "summary": "带领一小队猫咪战士踏入森林，开辟道路，击退飞鹰，迈出统治林地的第一步。",
       "steps": [
         {
           "id": "overview",
-          "title": "先看懂一张地图",
-          "text": "中间是秋季地图，左侧是玩家与公共物品，右侧是自己的信息和日志。领地外侧的圆形图标表示花色，小阵营图标表示控制者。点击玩家卡可看公开详情，点击手牌可看完整牌面。",
+          "title": "森林在等待你",
+          "text": "欢迎来到《茂林源记》。四个各具特色的阵营将在这里展开战斗与冒险，争夺森林的统治权。",
           "goal": "read",
           "actions": [],
           "scene": "overview",
           "result": "",
           "sourceKeys": [
-            "tutorial1.turn1.suits",
-            "tutorial1.turn1.control"
-          ]
+            "tutorial1.turn1.preintro",
+            "tutorial1.turn1.intro",
+            "tutorial1.turn1.suits"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "欢迎来到《茂林源记》。四个各具特色的阵营将在这里展开战斗与冒险，争夺森林的统治权。",
+                "focus": "map"
+              },
+              {
+                "text": "这一次，你将扮演雄心勃勃的猫咪贵族。此时的贵族还没有庞大的军队，只有一小队战士，和一座立足林间的城堡。",
+                "focus": "home"
+              },
+              {
+                "text": "看，林地边缘的图标代表这里的居民：狐狸、兔子和老鼠。沿着道路，我们就能走进他们的家园。",
+                "focus": "suits"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
         },
         {
           "id": "move",
-          "title": "把士兵送到相邻领地",
-          "text": "选择移动，起点选秋林0，终点选秋林3，再填写数量并确认。至少控制起点或终点才能移动。点选只是在准备，确认才会执行。",
+          "title": "向森林进军",
+          "text": "将一名猫咪战士移动到相邻的林地，扩大我们的统治。",
           "goal": "action",
           "actions": [
             "move"
           ],
           "scene": "basic-move",
-          "result": "你通过真实移动获得了新领地的控制。猫咪一次行军还可以再移动一次。",
+          "result": "很好！这片林地已经有了我们的战士。拥有最多战士与建筑的一方，就能统治这里。",
           "sourceKeys": [
-            "tutorial1.turn1.movelesson"
-          ]
+            "tutorial1.turn1.movelesson",
+            "tutorial1.turn1.control"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "我听见远处拍动翅膀的声音。在飞鹰到来之前，先让我们的旗帜飘扬在更多林地上。",
+                "focus": "from"
+              }
+            ],
+            "after": [
+              {
+                "text": "很好！这片林地已经有了我们的战士。拥有最多战士与建筑的一方，就能统治这里。",
+                "focus": "to"
+              },
+              {
+                "text": "记住：沿路移动时，起点或终点至少有一处必须由我们统治。道路已经打通，继续前进。",
+                "focus": "route"
+              }
+            ],
+            "prompts": {
+              "source": "选中城堡旁闪光的猫咪部队。让一名战士先去探路。",
+              "destination": "沿着亮起的道路，点选前方的林地。",
+              "confirm": "就派一名战士前去。确认行军，让我们的旗帜在那里升起。"
+            }
+          }
         },
         {
           "id": "march",
-          "title": "完成同一次行军的第二次移动",
-          "text": "从秋林3移动到提示的相邻空地。第二次移动不会再花费一个猫咪行动。也可以在正式对局中选择结束行军。",
+          "title": "脚步不要停",
+          "text": "一次行军可以移动两次。我们的脚步还不用停下。",
           "goal": "action",
           "actions": [
             "move"
           ],
           "scene": "basic-march",
-          "result": "两次移动组成一次行军。注意行动次数和移动次数的区别。",
+          "result": "做得好！两次移动，合起来只用了一次行军。我们的战士已经走进森林深处。",
           "sourceKeys": [
             "tutorial1.turn1.movelesson.2"
-          ]
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "当你使用“行军”时，可以移动两次。趁道路畅通，让刚刚出发的战士再前进一步。",
+                "focus": "from"
+              }
+            ],
+            "after": [
+              {
+                "text": "做得好！两次移动，合起来只用了一次行军。我们的战士已经走进森林深处。",
+                "focus": "to"
+              }
+            ],
+            "prompts": {
+              "source": "选中刚刚抵达的那支部队。",
+              "destination": "点选道路尽头亮起的林地，继续这次行军。",
+              "confirm": "仍然派出一名战士。确认后，这次行军就结束了。"
+            }
+          }
         },
         {
           "id": "battle",
-          "title": "观察士兵上限与建筑损失",
-          "text": "在秋林3发起战斗。这个练习的骰子固定为3/3，方便观察计算。士兵先承受伤害，剩余命中再移除建筑。无人防守会使攻击方多造成1点命中。",
+          "title": "林间的振翅声",
+          "text": "飞鹰在附近筑起了巢。集结战士，把他们赶出这片林地。",
           "goal": "action",
           "actions": [
             "battle"
           ],
           "scene": "basic-battle",
-          "result": "查看日志中的骰子、战力上限和最终命中。摧毁敌方建筑或标记可以得分。",
+          "result": "我们的进攻先击退了飞鹰战士，剩余的命中摧毁了鸟巢。战斗总是先移除战士，再移除建筑和标记。",
           "sourceKeys": [
-            "tutorial1.roostbattle"
-          ]
+            "tutorial1.EyrieAppear",
+            "tutorial1.firstbattle.intro",
+            "tutorial1.roostbattle",
+            "tutorial1.firstbattle.dice.revamp",
+            "tutorial1.firstbattle.remove.revamp"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "我担心的事情发生了：飞鹰战士守着新筑的巢。若任由他们招募援军，我们的道路就危险了。",
+                "focus": "clearing"
+              },
+              {
+                "text": "我们的战士已经集结。选择这片林地，向飞鹰发起战斗！",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "我们的进攻先击退了飞鹰战士，剩余的命中摧毁了鸟巢。战斗总是先移除战士，再移除建筑和标记。",
+                "focus": "clearing"
+              },
+              {
+                "text": "摧毁敌人的建筑或标记，每移除一个就获得一分。看，我们离胜利又近了一步。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {
+              "source": "点选有飞鹰战士与鸟巢的闪光林地。",
+              "confirm": "部队已就位。确认发起战斗，攻下这座鸟巢！",
+              "choice": "飞鹰就在眼前。选择飞鹰王朝，再确认进攻。"
+            }
+          }
         },
         {
           "id": "defenseless",
-          "title": "再打一次无人防守的鸟巢",
-          "text": "这次秋林3只有敌方鸟巢，没有防守士兵。你只有一名攻击士兵，练习骰子仍固定为3/3。发起战斗后，查看骰子命中上限和无人防守的额外命中。",
+          "title": "趁鸟巢空虚",
+          "text": "还有一座鸟巢无人看守。派出一名战士，把它拆掉！",
           "goal": "action",
           "actions": [
             "battle"
           ],
           "scene": "basic-defenseless",
-          "result": "骰子部分最多造成1点命中，额外命中不受士兵数量限制。防守方没有士兵时，无法用骰子造成伤害。",
+          "result": "鸟巢倒下了！敌人没有战士防守，我们就会额外造成一次命中。",
           "sourceKeys": [
             "tutorial1.roostintroduction",
             "tutorial1.roostbattle"
-          ]
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "看，那座鸟巢已经没有守卫。别给飞鹰重整旗鼓的机会，派出一名战士进攻！",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "鸟巢倒下了！敌人没有战士防守，我们就会额外造成一次命中。",
+                "focus": "clearing"
+              },
+              {
+                "text": "骰子的命中最多等于自己的战士数量。这次只有一名战士，所以骰子只提供一次命中；无人防守的额外命中另算。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "点选只剩鸟巢的闪光林地。",
+              "confirm": "只有一名战士也足够。确认进攻，拆掉这座无人防守的巢！",
+              "choice": "选定飞鹰王朝，确认这次进攻。"
+            }
+          }
         },
         {
           "id": "basic-finish",
-          "title": "把操作与结果连起来",
-          "text": "移动依赖道路和控制权，建造依赖空位，战斗依赖士兵与命中计算。正式对局通常先到30分获胜。接下来学习四个阵营各自如何得分。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "title": "森林中的第一步",
+          "text": "漂亮！你摧毁了鸟巢。森林暂时安静了下来，是休息的时候了。",
           "goal": "read",
           "actions": [],
           "scene": null,
           "result": "",
           "sourceKeys": [
             "tutorial1.destroyroost"
-          ]
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "漂亮！你摧毁了鸟巢。森林暂时安静了下来，是休息的时候了。",
+                "focus": "clearing"
+              },
+              {
+                "text": "今天，我们沿道路扩张，也用战斗为贵族赢得了声望。真正的争夺中，率先达到三十分的阵营将获胜。",
+                "focus": "score"
+              },
+              {
+                "text": "但统治森林还需要木材、工坊和更多战士。接下来，前往“猫咪贵族”一章，建立我们的林间领地吧。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
         }
       ]
     },

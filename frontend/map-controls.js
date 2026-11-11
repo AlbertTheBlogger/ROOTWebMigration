@@ -65,7 +65,8 @@ function positionPopup(id){
   popup.style.width=width+'px';
   popup.style.left=Math.max(10,Math.min(box.width-width-10,point.right-box.left+8))+'px';
   const height=Math.min(popup.scrollHeight,box.height*.65);
-  popup.style.top=Math.max(62,Math.min(box.height-height-12,point.top-box.top))+'px';
+  const minimum=mounted.tutorial?.guide?(board.querySelector('.tutorial-dialogue')?.offsetHeight||0)+76:62;
+  popup.style.top=Math.max(minimum,Math.min(box.height-height-12,point.top-box.top))+'px';
 }
 function clearHighlights(){for(const node of mounted.board.querySelectorAll('.actionable'))node.classList.remove('actionable');}
 function highlight(ids){
@@ -95,7 +96,11 @@ function syncMinimize(){
   else minimize.remove();
   if(!popup.hidden&&state.picked!==null)positionPopup(state.picked);
 }
-function refresh(){renderControls();syncMinimize();}
+function refresh(){renderControls();syncMinimize();reportTutorialStage();}
+function reportTutorialStage(){
+  if(!mounted?.tutorial?.guide)return;
+  mounted.onTutorialStage?.({from:state.from,picked:state.picked,choice:!!mounted.game.choice});
+}
 function movementControls(entry,actions){
   const host=mounted.movement;
   host.replaceChildren();
@@ -189,10 +194,10 @@ export function pickMapClearing(id){
   }
   refresh();return true;
 }
-export function mountMapControls({game,userId,version,gameId,tutorial}){
+export function mountMapControls({game,userId,version,gameId,tutorial,onTutorialStage}){
   const source=document.querySelector('.actions');const board=document.querySelector('.map-card');if(!source||!board)return;
   saveDrafts();mounted?.observer?.disconnect();
-  const context=[gameId,game.turn,game.round,game.phase,game.choice?.choiceId].join('|');
+  const context=[gameId,game.turn,game.round,game.phase,game.choice?.choiceId,...(tutorial?.guide?[tutorial.index,tutorial.attempt,tutorial.guide.mode,tutorial.guide.cursor]:[])].join('|');
   if(state.context!==context)state={context,version,activeKey:null,picked:null,from:null,drafts:new Map()};
   else if(state.version!==version){state.version=version;state.picked=null;state.from=null;state.choiceOption=null;state.drafts.clear();}
   const overlay=element('div','map-controls actions');overlay.dataset.ruleset=game.ruleset;const banner=element('div','map-stage');banner.setAttribute('role','status');
@@ -214,7 +219,13 @@ export function mountMapControls({game,userId,version,gameId,tutorial}){
   }
   const movement=element('div','map-movement');
   if(tutorial)status.textContent=tutorial.reading?'阅读教程面板后继续':tutorial.ready?'本节目标已完成，请在教程面板继续':'按本节目标完成操作';
-  mounted={board,game,userId,overlay,banner,menu,popup,entries,numericChoice,movement};
+  mounted={board,game,userId,overlay,banner,menu,popup,entries,numericChoice,movement,tutorial,onTutorialStage};
+  if(tutorial?.guide){
+    board.classList.add('guided-map');
+    for(const entry of entries)if(entry.form.id==='move'){
+      const count=entry.form.elements.count;count.value='1';count.min='1';count.max='1';count.readOnly=true;
+    }
+  }
   const minimize=element('button','map-minimize',state.minimized?'展开操作':'最小化操作');minimize.type='button';minimize.dataset.mapMinimize='true';minimize.setAttribute('aria-expanded',String(!state.minimized));
   mounted.minimize=minimize;
   overlay.classList.toggle('minimized',!!state.minimized);
@@ -277,7 +288,13 @@ export function mountMapControls({game,userId,version,gameId,tutorial}){
   const store=element('div','map-form-store');store.hidden=true;
   for(const entry of entries)store.append(entry.form);
   overlay.append(banner,status,menu,common,movement,store,popup);source.remove();board.append(overlay);
-  if(!game.choice||numericChoice)refresh();else syncMinimize();
+  if(!game.choice||numericChoice)refresh();else{syncMinimize();reportTutorialStage();}
   const reposition=()=>{if(!popup.hidden&&state.picked!==null)positionPopup(state.picked);};
-  mounted.observer=new ResizeObserver(reposition);mounted.observer.observe(board);
+  let previousWidth=board.clientWidth;
+  mounted.observer=new ResizeObserver(()=>{
+    if(tutorial?.guide)board.style.setProperty('--guide-height',(board.querySelector('.tutorial-dialogue')?.offsetHeight||0)+'px');
+    if(board.clientWidth!==previousWidth){previousWidth=board.clientWidth;reportTutorialStage();}
+    reposition();
+  });mounted.observer.observe(board);
+  if(tutorial?.guide)mounted.observer.observe(board.querySelector('.tutorial-dialogue'));
 }

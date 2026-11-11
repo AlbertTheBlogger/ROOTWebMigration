@@ -390,3 +390,72 @@
 .player-seat.lizard{border-top-color:#d2b928}.player-card.lizard{--faction:#b5a124}.clearing-unit.lizard{background:#f4e5a2;border-color:#a88f25}.clearing-ruler.lizard{background:#e7cb63}.building-slot[data-piece^="garden-"]{border-color:#ae972c;background:#f5ebbc}.lizard-panel{border-top:3px solid #baa231}.lizard-tracks>div{margin:10px 0}.lizard-public-cards{display:flex;flex-wrap:wrap;gap:6px;max-height:260px;overflow:auto}.public-lizard-card{display:flex;flex-direction:column;width:75px;align-items:center;text-align:center}.public-lizard-card img{width:48px;height:64px;object-fit:contain}.public-lizard-card small{font-size:11px}.lizard-tracks .scoring-spaces{display:flex;flex-wrap:wrap;gap:4px}.lizard-tracks .scoring-spaces>span{flex:1;min-width:45px;font-size:12px}.lizard-tracks .scoring-spaces small{font-size:10px}
 
 .score.lizard{border-left-color:#b5a124}.lizard-summary{color:#725c19}
+
+/* The first journey keeps its voice and its next action inside the map. */
+.game-stage.guided-tutorial { grid-template-columns:minmax(0,1fr) 250px;align-items:start; }
+.guided-tutorial .left-sidebar { display:none; }
+.guided-tutorial .right-sidebar { height:auto;grid-template-rows:auto auto; }
+.guided-tutorial .info-pane,.guided-tutorial .log-pane { max-height:350px; }
+.guided-map { --guide-height:190px;background:#e4ddc5; }
+.guided-map .tutorial-dialogue { display:flex;gap:16px;position:relative;margin:0;padding:18px 22px 14px;background:#f6eac8;color:#543d28;border:0;border-bottom:2px solid #b39561;border-radius:0;overflow:visible;max-height:none;font-family:var(--game-hint-font); }
+.guide-character { display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 72px;gap:5px; }
+.guide-portrait { width:66px;height:80px;object-fit:contain; }
+.guide-character span { font-size:11px;white-space:nowrap;color:#92552c; }
+.guide-copy { flex:1;min-width:0; }
+.guide-heading { display:flex;align-items:center;justify-content:space-between;gap:8px; }
+.tutorial-dialogue .guide-heading h3 { font-size:22px;font-weight:500;margin:0 0 7px;letter-spacing:2px; }
+.guide-heading small { color:#8c744e;font:11px/1.4 sans-serif;white-space:nowrap; }
+.tutorial-dialogue .guide-line { font-size:17px;line-height:1.8;margin:0;min-height:3.6em; }
+.guide-footer { display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:7px;margin-top:9px; }
+.guide-cue { font-size:10px;color:#92764a; }
+.tutorial-dialogue .tutorial-buttons button { padding:6px 10px;min-height:34px; }
+.tutorial-dialogue .tutorial-buttons .primary { background:#785733;border-color:#785733; }
+.guide-evidence { display:flex;align-items:center;flex-wrap:wrap;gap:18px; }
+.guide-evidence:empty { display:none; }
+.guide-evidence > span { display:inline-flex;align-items:center;gap:6px;font-size:14px;color:#765129; }
+.guide-evidence .suit-art { width:24px;height:24px; }
+.guide-evidence small { color:#876d49;font:11px/1.6 sans-serif; }
+.guided-map .map-controls { top:var(--guide-height); }
+.guided-map .map-stage,.guided-map .map-turn-status,.guided-map .map-movement,.guided-map .map-label,.guided-map .map-common { display:none; }
+.guided-map .map-toolbar { min-height:52px; }
+.guided-map .map-action-menu { top:8px;left:18px;right:18px; }
+.guided-map .map-action-menu button { min-height:34px; }
+.guided-map .map-context { transform:translateY(calc(-1 * var(--guide-height)));max-height:calc(100% - 76px); }
+.guided-map .map-context.centered { top:80px!important;transform:translateX(-50%); }
+.guided-map .map-context form > p,.guided-map .map-context .map-minimize { display:none; }
+.guided-map .map-context input[name=count] { max-width:85px; }
+.guided-map .map-context input[readonly] { background:#e9dfc7; }
+.guided-map .map .guide-focus .ground { fill:#f6d57933;stroke:#ffe293;stroke-width:6;stroke-dasharray:10 5;filter:drop-shadow(0 0 5px #f5cc73);animation:guide-beacon 1.8s ease-in-out infinite; }
+.guided-map .map .guide-focus .clearing-number { background:#ffe293;color:#60401d; }
+.guided-map .guide-suit .clearing-suit { outline:4px solid #ffe293;outline-offset:3px;border-radius:50%; }
+.guided-map .guide-route { stroke:#ffe293;stroke-width:8;stroke-dasharray:13 10;fill:none;pointer-events:none;opacity:.85; }
+.guided-map[data-guide-acting=true] .clearing:not(.actionable) { opacity:.5;cursor:default; }
+.guide-score-focus { outline:2px solid #c9a45e;outline-offset:4px;border-radius:4px; }
+@keyframes guide-beacon { 50% { stroke-opacity:.5; } }
+@media(max-width:1000px) { .game-stage.guided-tutorial { grid-template-columns:minmax(0,1fr); }.guided-tutorial .right-sidebar { display:grid;grid-template-columns:1fr 1fr;height:auto; } }
+@media(max-width:760px) {
+ .guided-tutorial .right-sidebar { display:contents; }.guided-tutorial .info-pane,.guided-tutorial .log-pane { height:auto;max-height:320px; }
+ .guided-map .tutorial-dialogue { padding:12px;gap:9px;width:100%; }
+ .guide-character { flex-basis:43px; }.guide-portrait { width:42px;height:58px; }.guide-character span { font-size:9px; }
+ .tutorial-dialogue .guide-heading h3 { font-size:18px;letter-spacing:1px; }.tutorial-dialogue .guide-line { font-size:15px;line-height:1.75; }
+ .tutorial-dialogue .tutorial-buttons { gap:3px; }.tutorial-dialogue .tutorial-buttons button { padding:6px;min-height:34px;font-size:12px; }
+ .guide-cue { display:none; }.guide-footer { justify-content:flex-end; }
+ .guided-map .map { min-height:330px; }.guided-map .map-context { padding:10px;width:calc(100% - 20px)!important; }
+}
+@media(prefers-reduced-motion:reduce) { .guided-map .map .guide-focus .ground { animation:none; } }
+
+.guide-dice b { display:inline-grid;place-items:center;width:27px;height:27px;background:#fff9e8;border:1px solid #b29461;border-radius:5px;font:bold 18px Georgia,serif; }.tutorial-dialogue .guide-evidence { gap:7px 15px;margin-top:5px; }.tutorial-dialogue .guide-evidence > span { font-size:12px; }
+
+.guided-map .map { min-height:0;max-height:none;background:#2e3d30; }.guided-map .map-context { max-height:calc(100% - 76px); }
+
+.guided-map { --action-paper:#fff5de;--action-ink:#604429;--action-edge:#b89a66; }
+.guided-map .map-action-menu .map-mode.active,.guided-map .map-context button.primary { background:#785733;color:#fff7e4; }
+.guided-map .map-context { padding:12px;border-width:1px; }
+.guided-map .map-context form#move { display:flex;align-items:center;flex-wrap:wrap;gap:9px; }
+.guided-map .map-context form#move label { display:flex;align-items:center;gap:8px;white-space:nowrap; }
+.guided-map .map-context form#move input[name=count] { width:48px;min-height:34px;padding:4px; }
+.guided-map .map-context form#move button { flex:1;min-height:38px; }
+.guided-map .map-context > .map-cancel { position:absolute;right:8px;top:3px;min-height:30px;padding:4px 8px;font-size:12px; }
+.guided-map .map-target-label { padding-right:45px;margin-bottom:7px; }
+
+.guided-map .map-context form#move label:has(> select[name=from]),.guided-map .map-context form#move label:has(> select[name=to]) { display:none; }

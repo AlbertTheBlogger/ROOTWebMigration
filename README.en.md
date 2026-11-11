@@ -12,6 +12,8 @@ The Lizard Cult is implemented as a separate expansion ruleset. Select the Lizar
 
 The Lizard Cult tutorial now adds 19 guided nodes adapted from the original installation's Sacred Scales material, with checkpoint retries and saved progress. See the [extraction and acceptance record](docs/LIZARD-TUTORIAL-2026-11-11.md) (Chinese). This update has not been deployed to production.
 
+The introductory chapter, Rise of the Marquise (贵族崛起), now uses short character dialogue inside the map, contextual action prompts, focused map views, previous-line review, retries, and saved dialogue progress. The other five chapters retain their existing flow. See the [redesign record](docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md) (Chinese). This update is not deployed to production.
+
 ## Current features
 
 - Independent accounts, public and password-protected rooms, per-game player names, ready states, and subsequent games.

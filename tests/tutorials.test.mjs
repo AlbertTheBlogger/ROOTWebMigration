@@ -3,13 +3,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createTutorial,advanceTutorial,projectTutorial,tutorialCatalog} from '../backend/tutorials.mjs';
 
-import {tutorialAction} from './helpers/tutorial-actions.mjs';
+import {tutorialAction,tutorialCommandFor} from './helpers/tutorial-actions.mjs';
 
 function lizardStep(id){
  let run=createTutorial({id:'learner',username:'Learner'},'lizard');
  for(let n=0;projectTutorial(run,0).tutorial.stepId!==id;n++){
   assert.ok(n<100);const room=projectTutorial(run,n);
-  run=advanceTutorial(run,room.tutorial.ready?{type:'next'}:{type:'action',action:tutorialAction(room)});
+  run=advanceTutorial(run,tutorialCommandFor(room));
  }
  return run;
 }
@@ -19,14 +19,19 @@ test('all six tutorial chapters complete through real rules and checked goals',(
   let run=createTutorial({id:'learner',username:'Learner'},lesson.id);let actions=0;const seen=new Set();
   while(!run.completed){
    assert.ok(actions++<150,lesson.id);const room=projectTutorial(run,actions);seen.add(room.tutorial.stepId);
-   run=advanceTutorial(run,room.tutorial.ready?{type:'next'}:{type:'action',action:tutorialAction(room)});
+   if(room.tutorial.guide?.outcome){
+    assert.deepEqual(room.tutorial.guide.outcome.dice,[3,3]);assert.equal(room.tutorial.guide.outcome.points,1);
+    assert.equal(room.tutorial.guide.outcome.bird[1],0);assert.equal(room.tutorial.guide.outcome.roost[1],0);
+   }
+   run=advanceTutorial(run,tutorialCommandFor(room));
   }
   assert.equal(seen.size,lesson.stepCount);assert.equal(run.everCompleted,true);
  }
 });
 
 test('off-goal actions and premature completion are rejected; retry restores the same lesson checkpoint',()=>{
- let run=createTutorial({id:'learner',username:'Learner'},'basics');run=advanceTutorial(run,{type:'next'});
+ let run=createTutorial({id:'learner',username:'Learner'},'basics');
+ while(run.step===0||projectTutorial(run,0).tutorial.guide?.canAdvance)run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
  assert.throws(()=>advanceTutorial(run,{type:'next'}),/教学目标/);
  const original=structuredClone(run.game);
  assert.throws(()=>advanceTutorial(run,{type:'action',action:{type:'end'}}),/本节目标/);
@@ -42,6 +47,35 @@ test('tutorial projection preserves secret hands and never exposes the checkpoin
  assert.ok(!('supporters' in room.game.alliance));
 });
 
+test('basics dialogue persists line by line, gates actions and resets cleanly on retry',()=>{
+ let run=createTutorial({id:'learner',username:'Learner'},'basics');
+ const original=structuredClone(run.game);
+ assert.equal(projectTutorial(run,0).tutorial.guide.cursor,0);
+ assert.throws(()=>advanceTutorial(run,{type:'next'}),/听完/);
+ assert.throws(()=>advanceTutorial(run,{type:'guide-back'}),/当前引导/);
+ run=advanceTutorial(run,{type:'guide-next'});
+ assert.equal(projectTutorial(run,0).tutorial.guide.cursor,1);
+ assert.deepEqual(run.game,original);
+ const saved=JSON.parse(JSON.stringify(run));assert.deepEqual(projectTutorial(saved,2),projectTutorial(run,2));
+ run=advanceTutorial(saved,{type:'guide-back'});assert.equal(run.guideCursor,0);
+ while(run.step===0)run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
+ assert.equal(projectTutorial(run,0).game.mapActions.length,0);
+ assert.throws(()=>advanceTutorial(run,{type:'action',action:{type:'move',from:0,to:3,count:1}}),/听完/);
+ run=advanceTutorial(run,{type:'guide-next'});
+ const room=projectTutorial(run,0);assert.equal(room.tutorial.guide.mode,'act');
+ assert.ok(room.game.mapActions.every(a=>a.type==='move'&&a.count===1&&a.from===0&&a.to===3));
+ assert.throws(()=>advanceTutorial(run,{type:'action',action:{type:'move',from:0,to:3,count:3}}),/本节目标/);
+ const before=structuredClone(run.game);
+ run=advanceTutorial(run,{type:'action',action:tutorialAction(room)});
+ assert.equal(run.ready,true);assert.equal(projectTutorial(run,0).tutorial.guide.mode,'result');
+ assert.throws(()=>advanceTutorial(run,{type:'next'}),/听完/);
+ run=advanceTutorial(run,{type:'retry-step'});assert.deepEqual(run.game,before);
+ assert.equal(run.guideCursor,0);assert.equal(run.ready,false);
+ // Saves created before the dialogue upgrade start at the first line safely.
+ delete run.guideCursor;run.curriculumVersion=2;
+ assert.equal(projectTutorial(run,0).tutorial.guide.cursor,0);
+});
+
 test('Lizard chapter uses v6 and preserves real cards through all 19 checked scenes',()=>{
  let run=createTutorial({id:'learner',username:'Learner'},'lizard');let commands=0;const seen=new Set();
  while(!run.completed){
@@ -52,7 +86,7 @@ test('Lizard chapter uses v6 and preserves real cards through all 19 checked sce
    ...s.players.flatMap(p=>[...p.hand,...p.crafted]),...Object.values(s.bird.decree).flat().filter(c=>!c.vizier),...(s.combat?.ambushCard?[s.combat.ambushCard]:[])];
   assert.equal(all.length,54,room.tutorial.stepId);assert.equal(new Set(all.map(c=>c.id)).size,54,room.tutorial.stepId);
   const serialized=JSON.parse(JSON.stringify(run));assert.deepEqual(projectTutorial(serialized,commands),room);
-  run=advanceTutorial(serialized,room.tutorial.ready?{type:'next'}:{type:'action',action:tutorialAction(room)});
+  run=advanceTutorial(serialized,tutorialCommandFor(room));
   assert.ok(commands++<100);
  }
  assert.equal(seen.size,19);

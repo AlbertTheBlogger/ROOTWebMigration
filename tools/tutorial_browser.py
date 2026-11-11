@@ -27,6 +27,39 @@ def plan(room):
  if 'end' in meta['actionTypes']:return {'type':'end'}
  raise AssertionError(('no action',meta['stepId'],g['phase']))
 
+def basics_action(page,room,action):
+ """Use the map itself for the first journey; no movement dropdown shortcuts."""
+ kind=action['type']
+ if kind=='choice':
+  expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-stage','choice')
+  click_action(page,room['game'],action);return
+ assert kind in ('move','battle')
+ if kind=='move':
+  expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-stage','source')
+  # The destination is visible but is not yet an eligible source.
+  wrong=page.locator(f'.map [data-action=clearing][data-id="{action["to"]}"]').bounding_box()
+  page.mouse.click(wrong['x']+wrong['width']/2,wrong['y']+wrong['height']/2)
+  expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-stage','source')
+  source=page.locator(f'.map [data-action=clearing][data-id="{action["from"]}"]')
+  if room['tutorial']['stepId']=='march':source.focus();page.keyboard.press('Enter')
+  else:source.click()
+  expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-stage','destination')
+  assert page.locator('.map .guide-route').count()==1
+  page.locator(f'.map [data-action=clearing][data-id="{action["to"]}"]').click()
+ else:page.locator(f'.map [data-action=clearing][data-id="{action["clearing"]}"]').click()
+ expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-stage','confirm')
+ if kind=='move':assert page.locator('.map-context [name=count]').input_value()=='1'
+ if kind=='move' and room['tutorial']['stepId']=='move':
+  page.locator('.map-context .map-cancel').click()
+  expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-stage','source')
+  page.locator(f'.map [data-action=clearing][data-id="{action["from"]}"]').click()
+  page.locator(f'.map [data-action=clearing][data-id="{action["to"]}"]').click()
+ page.locator('.map-card').scroll_into_view_if_needed()
+ page.screenshot(path=str(OUTPUT/f'basics-{room["tutorial"]["stepId"]}-confirm.png'))
+ confirm=page.locator(f'.map-context form#{kind} button[type=submit],.map-context form#{kind} button:not([type])')
+ assert confirm.evaluate("e=>{const r=e.getBoundingClientRect();const hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return e.contains(hit)}"),'Map confirmation covered'
+ confirm.click()
+
 def run():
  OUTPUT.mkdir(parents=True,exist_ok=True)
  with socket.socket() as probe:probe.bind(('127.0.0.1',0));port=probe.getsockname()[1]
@@ -50,6 +83,7 @@ def run():
     page.screenshot(path=str(OUTPUT/'catalog.png'),full_page=True)
     for lesson in selected:
      retried=False
+     basics_checks=set()
      page.locator(f'[data-action=tutorial-start][data-lesson={lesson}]').click();expect(page.locator('.tutorial-coach')).to_be_visible()
      expect(page.locator('.scoreboard .victory-track progress')).to_have_count(4)
      expect(page.locator('.own-resources .victory-track progress')).to_have_count(1)
@@ -60,6 +94,16 @@ def run():
      for count in range(150):
       room=view();meta=room['tutorial']
       if meta['completed']:break
+      if lesson=='basics' and meta['stepId']=='overview' and meta['guide']['cursor']==1 and 'back' not in basics_checks:
+       trace.append({'lesson':lesson,'step':meta['stepId'],'action':'guide-back'});page.locator('[data-action=tutorial-guide-back]').click()
+       expect(page.locator('.guide-line')).to_contain_text('欢迎来到')
+       assert view()['tutorial']['guide']['cursor']==0
+       page.reload();expect(page.locator('.guide-line')).to_contain_text('欢迎来到');basics_checks.add('back');continue
+      if lesson=='basics' and meta['stepId']=='move' and meta['guide']['mode']=='result' and 'retry' not in basics_checks:
+       trace.append({'lesson':lesson,'step':meta['stepId'],'action':'retry-step'});page.locator('[data-action=tutorial-retry]').click()
+       expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-mode','dialogue')
+       reset=view();assert reset['game']['board'][0]['warriors']['cat']==3 and reset['game']['board'][3]['warriors']['cat']==0
+       page.reload();expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-guide-mode','dialogue');basics_checks.add('retry');continue
       if lesson=='lizard' and meta['stepId']=='liz-sacrifice' and meta['count']==1 and not retried:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'retry-step'})
        page.locator('[data-action=tutorial-retry]').click()
@@ -68,22 +112,33 @@ def run():
        page.reload();expect(page.locator('.tutorial-coach')).to_be_visible();assert view()['version']==reset['version'];retried=True;continue
       if count==2:
        page.reload();expect(page.locator('.tutorial-coach')).to_be_visible();assert view()['version']==room['version']
-      if meta['ready']:
+      if meta.get('guide',{} ) and meta['guide']['canAdvance']:
+       trace.append({'lesson':lesson,'step':meta['stepId'],'action':'guide-next'});page.locator('[data-action=tutorial-guide-next]').click()
+      elif meta['ready']:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'next'});page.locator('[data-action=tutorial-next]').click()
       else:
        action=plan(room);trace.append({'lesson':lesson,'step':meta['stepId'],'action':action})
-       click_action(page,room['game'],action)
+       if lesson=='basics':basics_action(page,room,action)
+       else:click_action(page,room['game'],action)
       page.wait_for_function("v=>fetch('/api/tutorials/'+v.lesson).then(r=>r.json()).then(r=>r.room.version>v.version)",arg={'lesson':lesson,'version':room['version']},timeout=10000)
+      if lesson=='basics':
+       assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
+       assert page.locator('.map-card > .tutorial-dialogue').count()==1
+       assert page.locator('.right-sidebar .tutorial-coach').count()==0
+       if meta['stepId'] in ['overview','move','battle','defenseless','basic-finish'] and (not meta.get('guide') or meta['guide']['cursor']==0):
+        page.locator('.map-card').scroll_into_view_if_needed()
+        page.screenshot(path=str(OUTPUT/f'basics-{meta["stepId"]}-{meta["guide"]["mode"]}.png'))
       if not meta['ready'] and meta['stepId'] in ['move','cat-build','bird-add','wa-revolt','vg-quest','liz-recruit','liz-crusade','liz-hated']:page.screenshot(path=str(OUTPUT/(meta['stepId']+'.png')))
      assert view()['tutorial']['completed'],lesson
      if lesson=='lizard':assert retried
+     if lesson=='basics':assert basics_checks=={'back','retry'}
      print(json.dumps({'lesson':lesson,'commands':count,'completed':True}),flush=True)
      page.locator('.tutorial-coach [data-action=tutorials]').first.click();expect(page.locator('.tutorial-lesson')).to_have_count(6)
     assert all('已完成' in page.locator('.tutorial-lesson[data-lesson='+id+']').inner_text() for id in selected)
     page.set_viewport_size({'width':390,'height':844});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1');page.screenshot(path=str(OUTPUT/'mobile-catalog.png'),full_page=True)
     page.locator('[data-action=tutorial-start][data-lesson=basics]').click();expect(page.locator('.tutorial-coach')).to_be_visible();assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1');page.screenshot(path=str(OUTPUT/'mobile-game.png'),full_page=True)
     assert not errors,errors
-    report={'passed':True,'chapters':len(selected),'nodes':sum(l['stepCount'] for l in catalog if l['id'] in selected),'commands':len(trace),'pageErrors':errors,'checks':['normal signup and tutorial entry','all actions through existing map UI','reload restores every chapter','completion progress saved','mobile no overflow'],'fixture':'No browser-injected game states. Scenes are prepared by the tutorial server.'}
+    report={'passed':True,'chapters':len(selected),'nodes':sum(l['stepCount'] for l in catalog if l['id'] in selected),'commands':len(trace),'pageErrors':errors,'checks':['normal signup and tutorial entry','all actions through existing map UI','reload restores every chapter','completion progress saved','mobile no overflow']+(['basics dialogue back and reload','basics checkpoint retry and reload','map-only move without dropdowns','disabled target is inert','cancel and reselect move','keyboard map source selection','map confirmation hit testing'] if 'basics' in selected else []),'fixture':'No browser-injected game states. Scenes are prepared by the tutorial server.'}
     (OUTPUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(report),flush=True);browser.close()
   finally:
    (OUTPUT/'trace.json').write_text(json.dumps(trace,ensure_ascii=False,indent=2),encoding='utf-8');process.terminate();process.wait(timeout=10);log.close()

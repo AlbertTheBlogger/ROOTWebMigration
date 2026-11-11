@@ -6,7 +6,7 @@ import {mkdtempSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {createApp} from '../backend/server.mjs';
-import {tutorialAction} from './helpers/tutorial-actions.mjs';
+import {tutorialAction,tutorialCommandFor} from './helpers/tutorial-actions.mjs';
 
 test('tutorial HTTP progress, private saves, retries and restart recovery',async t=>{
  const folder=mkdtempSync(join(tmpdir(),'tutorial-api-'));const dbPath=join(folder,'qa.sqlite');
@@ -29,7 +29,7 @@ test('tutorial HTTP progress, private saves, retries and restart recovery',async
  assert.equal((await request(other,'/api/tutorials/basics')).status,404);
  assert.equal((await request({},'/api/tutorials')).status,401);
  assert.equal((await request(learner,'/api/tutorials')).body.lessons.length,6);
- const first={runId:room.tutorial.id,version:room.version,commandId:randomUUID(),command:{type:'next'}};
+ const first={runId:room.tutorial.id,version:room.version,commandId:randomUUID(),command:{type:'guide-next'}};
  const next=await request(learner,'/api/tutorials/basics/command',first);room=next.body.room;
  assert.equal((await request(learner,'/api/tutorials/basics/command',first)).body.room.version,room.version);
  assert.equal((await request(learner,'/api/tutorials/basics/command',{...first,command:{type:'restart'}})).status,409);
@@ -45,7 +45,7 @@ test('tutorial HTTP progress, private saves, retries and restart recovery',async
    if(lesson.id==='lizard'&&['liz-setup','liz-crusade','liz-hated','liz-fear'].includes(room.tutorial.stepId)&&!room.tutorial.ready){
     const saved=room;await app.close();await start();room=(await request(learner,'/api/tutorials/lizard')).body.room;assert.deepEqual(room,saved);
    }
-   const command=room.tutorial.ready?{type:'next'}:{type:'action',action:tutorialAction(room)};
+   const command=tutorialCommandFor(room);
    const result=await request(learner,`/api/tutorials/${lesson.id}/command`,{runId:room.tutorial.id,version:room.version,commandId:randomUUID(),command});
    assert.equal(result.status,200,JSON.stringify(result.body));room=result.body.room;
   }

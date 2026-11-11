@@ -360,6 +360,11 @@ function tutorialListView(){
   frame(`<div class="heading"><div><h1>新手教程</h1><p class="muted">从基础操作开始，再学习基础与扩展阵营。</p></div>${btn('返回房间大厅','lobby')}</div><div class="notice">每节都有明确目标，进度由服务器保存。正式联机从大厅创建或加入房间，选择本局玩家名与阵营，全部准备后由房主开始。</div><div class="tutorial-catalog">${lessons.map((lesson,index)=>`<article class="panel tutorial-lesson" data-lesson="${lesson.id}">${artImage(ART.portraits[lesson.faction],names[lesson.faction],'tutorial-portrait')}<div><small>第 ${index+1} 章 · ${lesson.stepCount} 节</small><h2>${esc(lesson.title)}</h2><p>${esc(lesson.summary)}</p><p class="caption">${lesson.completed?'已完成，可再次练习':lesson.started?'进行到第 '+(lesson.step+1)+' 节':'尚未开始'}</p>${btn(lesson.started?'继续学习':'开始学习','tutorial-start','primary',false,`data-lesson="${lesson.id}"`)}</div></article>`).join('')}</div>`);
 }
 function tutorialCoach(meta){
+  if(meta.guide){
+    const guide=meta.guide,acting=guide.mode==='act';
+    const next=meta.completed?btn('前往猫咪贵族','tutorial-start','primary',false,'data-lesson="cats"'):guide.canAdvance?btn('继续 ▸','tutorial-guide-next','primary'):meta.ready?btn(meta.index+1===meta.total?'结束旅程':'继续 ▸','tutorial-next','primary'):'';
+    return `<section class="tutorial-coach tutorial-dialogue" aria-label="林间引导" data-guide-mode="${guide.mode}"><div class="guide-character">${artImage(ART.portraits.cat,'猫咪贵族','guide-portrait')}<span>${esc(guide.speaker)}</span></div><div class="guide-copy"><div class="guide-heading"><h3>${esc(meta.heading)}</h3><small>${meta.index+1} / ${meta.total}</small></div><p class="guide-line" aria-live="polite">${esc(guide.text)}</p><div class="guide-evidence"></div><div class="guide-footer"><span class="guide-cue">${acting?'◆ 等待你的命令':meta.completed?'旅程已记录':`◆ ${Math.min(guide.cursor+1,guide.total)} / ${guide.total}`}</span><div class="tutorial-buttons">${guide.canBack?btn('上句话','tutorial-guide-back','quiet'):''}${next}${!meta.reading&&!meta.completed?btn('重试','tutorial-retry','quiet'):''}${btn('离开教程','tutorials','quiet')}</div></div></div></section>`;
+  }
   const context=meta.context;
   const location=context.from!==undefined?`秋林 ${context.from} → 秋林 ${context.to}`:context.clearing!==undefined?`秋林 ${context.clearing}`:context.to!==undefined?`前往秋林 ${context.to}`:'';
   return `<section class="panel tutorial-coach"><small>第 ${meta.index+1} / ${meta.total} 节</small><h3>${esc(meta.heading)}</h3><p>${esc(meta.text)}</p>${location&&!meta.reading&&!meta.completed?`<p class="tutorial-target">本节目标 · ${esc(location)}</p>`:''}${meta.goalCount>1?`<p>已完成 ${meta.count} / ${meta.goalCount} 次</p>`:''}<p class="caption">${meta.newScene?'本节使用预置练习局面。':'沿用当前练习局面。'}${meta.completed?'本章进度已保存。':meta.reading?'阅读后可以继续。':meta.ready?'目标已完成。':'完成实操后解锁继续。'}</p>${meta.result?`<p class="tutorial-result">${esc(meta.result)}</p>`:''}<div class="tutorial-buttons">${meta.completed?`<strong>本章学习完成</strong>${btn('返回教程目录','tutorials','primary')}`:btn(meta.reading?'读完，继续':meta.index+1===meta.total?'完成本章':'继续下一节','tutorial-next','primary',!meta.ready)}${!meta.completed&&!meta.reading?btn('重试本节','tutorial-retry','quiet'):''}${meta.completed?btn('返回房间大厅','lobby','quiet'):btn('教程目录','tutorials','quiet')}</div></section>`;
@@ -376,12 +381,72 @@ function filterTutorialControls(meta){
   }
   if(meta.ready){const prompt=meta.reading?'阅读本节说明':'本节目标已完成';if(source.querySelector('h2'))source.querySelector('h2').textContent=prompt;if(source.querySelector('.phase'))source.querySelector('.phase').textContent=prompt;}
 }
+function updateBasicGuide({from=null,picked=null,choice=false}={}){
+  const meta=S.room?.tutorial,guide=meta?.guide;
+  if(!guide)return;
+  const board=document.querySelector('.map-card'),dialogue=board?.querySelector('.tutorial-dialogue');
+  if(!dialogue)return;
+  const acting=guide.mode==='act',context=meta.context,moving=context.from!==undefined;
+  const phase=choice?'choice':picked!==null?'confirm':moving&&from!==null?'destination':'source';
+  dialogue.querySelector('.guide-line').textContent=acting?(guide.prompts[phase]||meta.text):guide.text;
+  dialogue.dataset.guideStage=acting?phase:guide.focus;
+  const focus=acting?(phase==='destination'?'to':phase==='source'&&moving?'from':moving?'route':'clearing'):guide.focus;
+  let ids=focus==='home'?[0]:focus==='from'?[context.from]:focus==='to'?[context.to]:focus==='route'?[context.from,context.to]:focus==='clearing'?[context.clearing??3]:[];
+  ids=ids.filter(id=>id!==undefined);
+  for(const node of board.querySelectorAll('.clearing')){
+    node.classList.toggle('guide-focus',ids.includes(Number(node.dataset.id)));
+    node.classList.toggle('guide-suit',focus==='suits');
+    if(acting)node.setAttribute('aria-disabled',String(!node.classList.contains('actionable')));
+    else node.removeAttribute('aria-disabled');
+  }
+  board.querySelector('.guide-route')?.remove();
+  const map=board.querySelector('svg.map');
+  map.dataset.fullView ||= map.getAttribute('viewBox');
+  const cameraIds=moving&&['from','to','route'].includes(focus)?[context.from,context.to]:ids;
+  const camera=cameraIds.map(id=>board.querySelector(`.clearing[data-id="${id}"] .ground`)).filter(Boolean);
+  const height=innerWidth<=760?330:Math.min(520,Math.max(360,innerHeight*.52));
+  map.style.height=height+'px';
+  if(camera.length){
+    const xs=camera.map(node=>Number(node.getAttribute('cx'))),ys=camera.map(node=>Number(node.getAttribute('cy')));
+    const aspect=map.clientWidth/height;
+    let width=Math.max(innerWidth<=760?420:620,Math.max(...xs)-Math.min(...xs)+280);
+    let boxHeight=Math.max(Math.max(...ys)-Math.min(...ys)+270,width/aspect);width=boxHeight*aspect;
+    const x=Math.max(15,Math.min((Math.min(...xs)+Math.max(...xs)-width)/2,ART.board.width-width-15));
+    const y=Math.max(20,Math.min((Math.min(...ys)+Math.max(...ys)-boxHeight)/2,ART.board.height-boxHeight-20));
+    map.setAttribute('viewBox',`${x} ${y} ${width} ${boxHeight}`);
+  }else{
+    map.setAttribute('viewBox',map.dataset.fullView);
+    if(innerWidth<=760){const box=map.dataset.fullView.split(' ').map(Number);map.style.height=(map.clientWidth*box[3]/box[2])+'px';}
+  }
+  if(context.from!==undefined&&['route','to'].includes(focus)){
+    const centers=[context.from,context.to].map(id=>board.querySelector(`.clearing[data-id="${id}"] .ground`));
+    if(centers.every(Boolean)){
+      const route=document.createElementNS('http://www.w3.org/2000/svg','path');
+      route.setAttribute('d',`M ${centers[0].getAttribute('cx')} ${centers[0].getAttribute('cy')} L ${centers[1].getAttribute('cx')} ${centers[1].getAttribute('cy')}`);
+      route.setAttribute('class','guide-route');route.setAttribute('aria-hidden','true');
+      map.insertBefore(route,map.querySelector('.clearing'));
+    }
+  }
+  const hero=S.room.game.players.find(p=>p.id===S.user.id);
+  const evidence=dialogue.querySelector('.guide-evidence');
+  if(focus==='suits')evidence.innerHTML=['fox','rabbit','mouse'].map(suit=>`<span>${suitImage(suit)}${names[suit]}</span>`).join('');
+  else if(focus==='score')evidence.innerHTML=`<span class="guide-score">贵族的声望　${hero.score} / 30</span>`;
+  else if(acting&&['battle','defenseless'].includes(meta.stepId))evidence.innerHTML='<small>本次演练：骰子固定为 3 / 3，进攻方取高值，防守方取低值。</small>';
+  else evidence.replaceChildren();
+  if(guide.outcome){
+    const outcome=guide.outcome;
+    evidence.innerHTML=(outcome.dice?`<span class="guide-dice" aria-label="掷骰结果 ${outcome.dice.join(' / ')}">${outcome.dice.map(value=>`<b>${value}</b>`).join('')}</span>`:'')+
+      `<span>猫咪 ${outcome.cat.join(' → ')}</span><span>飞鹰 ${outcome.bird.join(' → ')}</span><span>鸟巢 ${outcome.roost.join(' → ')}</span><span>声望 +${outcome.points}</span>`;
+  }
+  for(const track of document.querySelectorAll('.victory-track'))track.classList.toggle('guide-score-focus',focus==='score');
+  board.dataset.guideActing=String(acting);
+}
 async function loadTutorials(){
   const result=await api('/api/tutorials');closeStream();S.room=null;S.history=null;S.page='tutorials';S.tutorials=result.lessons;location.hash='tutorials';render();
 }
 function enterTutorial(room){
   closeStream();S.history=null;S.room=room;S.page='tutorial';S.selected=0;S.card=null;location.hash=`tutorial=${room.tutorial.lessonId}`;render();
-  requestAnimationFrame(()=>document.querySelector(innerWidth<=760?'.tutorial-coach':'.map-card')?.scrollIntoView({block:innerWidth<=760?'start':'center'}));
+  requestAnimationFrame(()=>document.querySelector(room.tutorial.guide?'.map-card':innerWidth<=760?'.tutorial-coach':'.map-card')?.scrollIntoView({block:room.tutorial.guide?'start':innerWidth<=760?'start':'center'}));
 }
 async function tutorialCommand(command){
   const room=S.room;
@@ -406,11 +471,11 @@ function gameView(){
   const actorId=game.choice?.playerId||game.players[game.turn].id;
   const activeBot=S.room.members.find(member=>member.userId===actorId&&member.bot);
   const botStatus=S.room.botError?`<div class="notice" role="status">${esc(S.room.botError)} ${S.room.ownerId===S.user.id?btn('重试人机','bot-retry'):''}</div>`:activeBot&&!game.winner?`<div class="notice game-notice" role="status">${esc(activeBot.name)} 正在自动行动…</div>`:'';
-  frame(`${roomHeader()}${limitations()}${botStatus}<div class="game-stage ${S.room.tutorial?'tutorial-game':''}">
+  frame(`${roomHeader()}${S.room.tutorial?.guide?'':limitations()}${botStatus}<div class="game-stage ${S.room.tutorial?'tutorial-game':''} ${S.room.tutorial?.guide?'guided-tutorial':''}">
     <aside class="left-sidebar"><div class="scoreboard">${scores}</div>${itemPool(game)}</aside>
     <section class="game-board">${board(game)}<section class="panel actions">${controls(game,me)}</section></section>
     <aside class="right-sidebar game-panels ${S.room.tutorial?'tutorial-panels':''}">
-      ${S.room.tutorial?tutorialCoach(S.room.tutorial):''}
+      ${S.room.tutorial&&!S.room.tutorial.guide?tutorialCoach(S.room.tutorial):''}
       <section class="panel info-pane"><h3>我的阵营 · ${names[me.faction]}</h3><section class="own-resources">${pieceStock(game,me)}</section>
         <section class="hand-panel"><div class="row"><h3>我的手牌</h3><small>仅你可见 · 余牌 ${game.deckCount}</small></div><div class="hand">${hand}</div></section>
         ${newFactionOverview(game,me)}
@@ -418,13 +483,14 @@ function gameView(){
       <section class="panel log-pane"><div class="row"><h3>林间纪事</h3><small>第 ${(game.turnsCompleted??0)+1} 轮</small></div>${btn('查看近期操作','recent-actions','quiet')}<div class="logs">${logs}</div>${!game.winner&&game.players.length===2?btn('认输并结束本局','resign','quiet danger'):''}</section>
     </aside>
   </div>`);
+  if(S.room.tutorial?.guide)document.querySelector('.map-card').insertAdjacentHTML('afterbegin',tutorialCoach(S.room.tutorial));
   if(S.room.tutorial)filterTutorialControls(S.room.tutorial);
   decorate(game,S.user.id,ART,names);
-  mountMapControls({game,userId:S.user.id,version:S.room.version,gameId:S.room.gameId,tutorial:S.room.tutorial});
+  mountMapControls({game,userId:S.user.id,version:S.room.version,gameId:S.room.gameId,tutorial:S.room.tutorial,onTutorialStage:updateBasicGuide});
   fitSidebars();
   const observationKey=S.room.tutorial?S.room.gameId+'|'+S.room.tutorial.index+'|'+(S.room.tutorial.attempt||0):null;
   if(observationKey!==tutorialObservationKey){observe(null,ART);tutorialObservationKey=observationKey;}
-  observe(game,ART);
+  if(S.room.tutorial?.guide)observe(null,ART);else observe(game,ART);
 }
 function historyModal(){const h=S.history;return `<div class="modal-backdrop"><section class="modal" role="dialog" aria-modal="true" aria-label="我的对局"><div class="panel-header"><h2>我的服务器存档</h2>${btn('关闭','close-history','quiet')}</div>${h.game?`<p class="muted">存档查看 · ${esc(h.game.ruleset)}</p>${h.game.players.map(p=>`<div class="history-item">${esc(p.name)} · ${names[p.faction]} · ${p.score} 分 · 手牌 ${p.handCount} 张</div>`).join('')}<div class="logs">${renderLogGroups(h.game)}</div>${btn('返回列表','history','quiet')}`:h.games.map(g=>`<article class="history-item"><h3>${g.players.map(p=>esc(p.name)).join(' × ')}</h3><p class="muted">房间 #${g.roomCode} · 第 ${g.round} 轮 · ${g.winner?'已结束':'进行中'}</p><div class="row"><small>${new Date(g.updatedAt).toLocaleString()}</small>${btn('查看存档','view-history','',false,`data-id="${g.id}"`)}</div></article>`).join('')||'<p class="muted">开始第一局后，服务器存档会显示在这里。</p>'}</section></div>`;}
 function adminView(){
@@ -547,12 +613,16 @@ app.addEventListener('click',event=>{const b=event.target.closest('[data-action]
   if(action==='player-public'){const player=S.room.game.players.find(player=>player.id===b.dataset.player);if(player){showPublicDetails(player.name+' · '+names[player.faction],playerPublicDetails(S.room.game,player));decorate(S.room.game,S.user.id,ART,names);}return;}
   if(action==='recent-actions'){showEvents(S.room.game);return;}
   if(action==='forest-info'){if(pickMapClearing(Number(b.dataset.id)))return;toast(`森林 ${b.dataset.id} · 游侠可在清晨潜行进出`,'game');return;}
-  if(action==='clearing'){S.selected=Number(b.dataset.id);render();pickMapClearing(S.selected);return;}if(action==='card'){S.card=b.dataset.card;const card=S.room.game.players.find(player=>player.id===S.user.id).hand.find(card=>card.id===S.card);render();if(card)previewCard(card,ART,names);return;}
+  if(action==='clearing'){if(S.room?.tutorial?.guide?.mode==='act'&&!b.classList.contains('actionable'))return;S.selected=Number(b.dataset.id);render();pickMapClearing(S.selected);return;}if(action==='card'){S.card=b.dataset.card;const card=S.room.game.players.find(player=>player.id===S.user.id).hand.find(card=>card.id===S.card);render();if(card)previewCard(card,ART,names);return;}
   safely(async()=>{
     if(action==='tab-login'||action==='tab-register'){S.mode=action.slice(4);render();return;}
     if(action==='tutorials'){await loadTutorials();return;}
     if(action==='tutorial-start'){enterTutorial((await api(`/api/tutorials/${b.dataset.lesson}/start`,{})).room);return;}
     if(action==='tutorial-next'){await tutorialCommand({type:'next'});return;}
+    if(action==='tutorial-guide-next'||action==='tutorial-guide-back'){
+      await tutorialCommand({type:action==='tutorial-guide-next'?'guide-next':'guide-back'});
+      document.querySelector('.tutorial-dialogue .tutorial-buttons .primary')?.focus({preventScroll:true});return;
+    }
     if(action==='tutorial-retry'){await tutorialCommand({type:'retry-step'});return;}
     if(action==='tutorial-restart'){if(confirm('从本章第一节重新开始？'))await tutorialCommand({type:'restart'});return;}
     if(action==='admin-refresh'){await loadAdmin();return;}
