@@ -1,3 +1,5 @@
+> 2026-11-12已部署e428902：蜥蜴v6、蜥蜴教程、基础章沉浸式改造上线。服务器163项测试、387项哈希和公网63次教程操作通过。备份与回滚见[本次部署记录](../docs/DEPLOYMENT-2026-11-12.md)；以下旧状态保留供历史参考。
+
 > 2026-11-09 房间测试人机已发布。房主可在 v5 房间按阵营添加或移除人机，自动执行开局、行动及中断决策，重启后继续。当前采用原自动对局测试策略，房间模式从第一轮开始发展。105 项 Node 测试本地与服务器均通过，网页单真人三人机第九轮正常结束。发布前备份 `/opt/woodland-rooms-before-bots-20261109` 和 `/var/lib/woodland-rooms/backup-before-bots-20261109.sqlite`，发布后数据数量一致且 integrity_check 为 ok。更新包 SHA-256 为 `6b8b575aa18c62c5c097f3747ef682c251082f1a85424fc8d159b7d9d8e00ee9`。证据见 `audit/bots-deploy.json`、`audit/bots-server-node-tests.txt`、`audit/bots-browser/report.json`。
 
 <!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->

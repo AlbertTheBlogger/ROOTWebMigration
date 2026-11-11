@@ -8,11 +8,11 @@ A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.
 
 ## Expansion work in the current repository
 
-The Lizard Cult is implemented as a separate expansion ruleset. Select the Lizard Cult mode when creating a room; 2–4 players can choose among five available factions. It includes Lost Souls and Outcast handling, rituals and conspiracies, gardens, Evening crafting, public panels, and simple bots. Existing v1.1 saves remain compatible. This iteration has not been deployed to production; the release tag remains v1.1.0. See the [implementation and acceptance record](docs/LIZARD-CULT-ACCEPTANCE-2026-11-11.md) (Chinese).
+The Lizard Cult is implemented as a separate expansion ruleset. Select the Lizard Cult mode when creating a room; 2–4 players can choose among five available factions. It includes Lost Souls and Outcast handling, rituals and conspiracies, gardens, Evening crafting, public panels, and simple bots. Existing v1.1 saves remain compatible. Deployed on November 12, 2026 (Asia/Shanghai); the release tag remains v1.1.0. See the [implementation and acceptance record](docs/LIZARD-CULT-ACCEPTANCE-2026-11-11.md) (Chinese).
 
-The Lizard Cult tutorial now adds 19 guided nodes adapted from the original installation's Sacred Scales material, with checkpoint retries and saved progress. See the [extraction and acceptance record](docs/LIZARD-TUTORIAL-2026-11-11.md) (Chinese). This update has not been deployed to production.
+The Lizard Cult tutorial now adds 19 guided nodes adapted from the original installation's Sacred Scales material, with checkpoint retries and saved progress. See the [extraction and acceptance record](docs/LIZARD-TUTORIAL-2026-11-11.md) (Chinese). Included in the November 12 deployment.
 
-The introductory chapter, Rise of the Marquise (贵族崛起), now uses short character dialogue inside the map, contextual action prompts, focused map views, previous-line review, retries, and saved dialogue progress. The other five chapters retain their existing flow. See the [redesign record](docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md) (Chinese). This update is not deployed to production.
+The introductory chapter, Rise of the Marquise (贵族崛起), now uses short character dialogue inside the map, contextual action prompts, focused map views, previous-line review, retries, and saved dialogue progress. The other five chapters retain their existing flow. See the [redesign record](docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md) (Chinese). Deployed on November 12, 2026. See the [deployment record](docs/DEPLOYMENT-2026-11-12.md) (Chinese).
 
 ## Current features
 
