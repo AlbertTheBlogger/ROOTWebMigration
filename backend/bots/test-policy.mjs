@@ -1,6 +1,7 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 // Shared smoke-test policies. Room bots enable development from round one.
 function ruler(c) {
+  if(c.buildings.some(building=>building.faction==='lizard'&&building.type.startsWith('garden-')))return 'lizard';
   const cat=c.warriors.cat+c.buildings.filter(b=>b.faction==='cat').length;
   const bird=c.warriors.bird+c.buildings.filter(b=>b.faction==='bird').length;
   return bird>0 && bird>=cat?'bird':cat>0?'cat':null;
@@ -52,6 +53,18 @@ export function candidates(game, player, policyOptions = {}) {
   if (game.phase === 'birdsong') return [{ type: 'birdsong-end' }];
   if (game.phase === 'discard') return player.hand.map(card => ({ type: 'discard', card: card.id }));
   const options = game.factionActions || [];
+  if(player.faction==='lizard') {
+    if(game.phase==='lizard-conspiracies') {
+      const priority=['圣化','转化','圣战','圣战移动'];
+      return [...options].sort((a,b)=>priority.indexOf(a.category)-priority.indexOf(b.category)).map(option=>option.action).concat({type:'conspiracies-done'});
+    }
+    if(game.phase==='daylight') {
+      const priority=['仪式得分','仪式建造','献祭','仪式招募'];
+      const preferred=options.filter(option=>option.category!=='仪式得分'||!option.label.includes('+0分'));
+      return preferred.sort((a,b)=>priority.indexOf(a.category)-priority.indexOf(b.category)).map(option=>option.action).concat({type:'end'});
+    }
+    if(game.phase==='lizard-craft')return [...(game.craftOptions||[]).map(option=>({type:'craft',card:option.card})),{type:'lizard-craft-done'}];
+  }
   if (player.faction === 'alliance') {
     if (game.phase === 'revolt') return [...options.map(option => option.action), { type: 'revolt-done' }];
     if (game.phase === 'spread') return [...options.map(option => option.action), { type: 'spread-done' }];

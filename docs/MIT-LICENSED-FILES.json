@@ -18,6 +18,7 @@
     "backend/rules/versions/battle-lab.mjs",
     "backend/rules/versions/card-lab.mjs",
     "backend/rules/versions/cats-birds.mjs",
+    "backend/rules/versions/lizard-cult.mjs",
     "backend/rules/versions/registry.mjs",
     "backend/server.mjs",
     "backend/tutorials.mjs",
@@ -31,6 +32,7 @@
     "docs/IMPROVEMENTS-2026-11-09.md",
     "docs/LICENSE-SCOPE-AUDIT-2026-11-11.md",
     "docs/LICENSE-SCOPE-INVENTORY-2026-11-11.csv",
+    "docs/LIZARD-CULT-ACCEPTANCE-2026-11-11.md",
     "docs/MIT-LICENSE-APPLICATION-2026-11-11.md",
     "docs/MIT-LICENSED-FILES.json",
     "docs/ORIGINAL-ART-2026-11-09.md",
@@ -61,6 +63,8 @@
     "tests/engine.test.mjs",
     "tests/four-http.test.mjs",
     "tests/helpers/tutorial-actions.mjs",
+    "tests/lizard-cult.test.mjs",
+    "tests/lizard-http.test.mjs",
     "tests/log-ui.test.mjs",
     "tests/playthrough.test.mjs",
     "tests/room-deletion.test.mjs",
@@ -80,6 +84,15 @@
     "tools/four_browser.py",
     "tools/four_selfplay.mjs",
     "tools/improvements_browser.py",
+    "tools/lizard_browser.py",
     "tools/tutorial_browser.py"
+  ],
+  "updates": [
+    {
+      "date": "2026-11-11",
+      "feature": "Lizard Cult implementation, tests, browser acceptance and engineering record",
+      "addedFiles": 5,
+      "excluded": "Original art, extracted data and game text remain excluded."
+    }
   ]
 }

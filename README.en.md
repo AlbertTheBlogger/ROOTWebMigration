@@ -6,6 +6,10 @@
 
 A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.0**, supports the autumn map, the four base-game factions, and online games for 2–4 players. Multiplayer does not depend on Steam. The original game's installation directory has not been modified.
 
+## Expansion work in the current repository
+
+The Lizard Cult is implemented as a separate expansion ruleset. Select the Lizard Cult mode when creating a room; 2–4 players can choose among five available factions. It includes Lost Souls and Outcast handling, rituals and conspiracies, gardens, Evening crafting, public panels, and simple bots. Existing v1.1 saves remain compatible. This iteration has not been deployed to production; the release tag remains v1.1.0. See the [implementation and acceptance record](docs/LIZARD-CULT-ACCEPTANCE-2026-11-11.md) (Chinese).
+
 ## Current features
 
 - Independent accounts, public and password-protected rooms, per-game player names, ready states, and subsequent games.
@@ -14,7 +18,7 @@ A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.
 - SQLite persistence, recovery after page refreshes or server restarts, idempotent commands, and player-specific private views.
 - Simple bots, a five-chapter tutorial, administrator tools, and an image-based board.
 
-Expansion factions, a second Vagabond, additional maps, expansion decks, and advanced setup are not yet implemented. Complex rule interactions have not been exhaustively compared with the original digital game's runtime behavior. The bots are basic opponents rather than mature strategic AI.
+Expansion factions other than the Lizard Cult, a second Vagabond, additional maps, expansion decks, and advanced setup are not yet implemented. Complex rule interactions have not been exhaustively compared with the original digital game's runtime behavior. The bots are basic opponents rather than mature strategic AI.
 
 ## Run locally
 

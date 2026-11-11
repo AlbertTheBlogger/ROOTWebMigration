@@ -1,0 +1,21 @@
+{
+  "gameAssemblySha256": "a32ee3d3fcf9d8357249505f5491faeb4ac75949213bdd2a4a60201e4c1158f9",
+  "ruleset": "root-lizard-cult-v6",
+  "lawSource": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf?v=1774903756",
+  "lawDate": "2025-10-13",
+  "staticTrackEvidence": {
+    "method": "LizardCultPlayer.GetTrackInfo",
+    "startVA": "0x1819361b0",
+    "gardenPointsByPlacedCount": [
+      0,
+      0,
+      2,
+      2,
+      3,
+      4
+    ],
+    "drawBonusAtPlacedCount": 2,
+    "limits": "Static interpretation of a bounded next-mapped-method window; not dynamic verification. AdditionalDraws and initialize evidence files are partial PE runtime regions."
+  },
+  "license": "Extracted research evidence and original game content are excluded from the project MIT grant."
+}

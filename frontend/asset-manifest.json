@@ -49,7 +49,8 @@
     "cat": "/assets/original/marquise_assets_all/Avatar_MarquiseDeCat--466157958804350764.webp?v=1ff87e88e9bf",
     "bird": "/assets/original/eyrie_assets_all/Avatar_EyrieDynasties_Despot--718154712742468074.webp?v=46dbb04cb3d6",
     "alliance": "/assets/original/alliance_assets_all/Avatar_WoodlandAlliance-3054629790786736104.webp?v=d8450a254130",
-    "vagabond": "/assets/original/defaultlocalgroup_assets_all/S_icon_Vaga_Head--5535311335644308776.webp?v=36cbfab3924c"
+    "vagabond": "/assets/original/defaultlocalgroup_assets_all/S_icon_Vaga_Head--5535311335644308776.webp?v=36cbfab3924c",
+    "lizard": "/assets/original/lizard/S_ill_LizardCult.webp?v=a89f425a51fd"
   },
   "items": {
     "bag": "/assets/original/cards_assets_all/S_crd_iconLarge_Sack--1257791002250951522.webp?v=3f17a5054588",
@@ -76,7 +77,11 @@
     "sympathy": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_Sympathy-5964523114129938645.webp?v=c6b5b1e5c120",
     "base-fox": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseFox--2003128051301950270.webp?v=79ab9c539883",
     "base-mouse": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseMouse-5357773812519511716.webp?v=28867cb204ad",
-    "base-rabbit": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseBunny--2365105621515189540.webp?v=5631e7998285"
+    "base-rabbit": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_BaseBunny--2365105621515189540.webp?v=5631e7998285",
+    "lizard": "/assets/original/lizard/S_icon_Liz_Head.webp?v=9167905c10ca",
+    "garden-fox": "/assets/original/lizard/S_icon_Liz_Garden.webp?v=d0f16fcba64f",
+    "garden-rabbit": "/assets/original/lizard/S_icon_Liz_Garden.webp?v=d0f16fcba64f",
+    "garden-mouse": "/assets/original/lizard/S_icon_Liz_Garden.webp?v=d0f16fcba64f"
   },
   "suits": {
     "fox": "/assets/suits/fox.webp",
@@ -87,7 +92,8 @@
   "units": {
     "cat": "/assets/original/defaultlocalgroup_assets_all/S_icon_Marq_HeadCount--2041494168984117354.webp?v=c4a7e37570ce",
     "bird": "/assets/original/defaultlocalgroup_assets_all/S_icon_Eyrie_WarriorCount--1142459001686082706.webp?v=8a91fa4ee4c3",
-    "alliance": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_HeadCount--5644971584482754250.webp?v=29fd1987b112"
+    "alliance": "/assets/original/defaultlocalgroup_assets_all/S_icon_Alli_HeadCount--5644971584482754250.webp?v=29fd1987b112",
+    "lizard": "/assets/original/lizard/S_icon_Liz_Head.webp?v=9167905c10ca"
   },
   "board": {
     "texture": "/assets/board/T_env_Playmat4k-61.c27d6d35f3a6.webp",
@@ -329,12 +335,15 @@
     "/assets/original/eyrie_assets_all/S_ill_Eyrie--7891714037732847448.webp",
     "/assets/original/frontend_assets_all/S_ill_Header_Registration-6562587341017648257.webp",
     "/assets/original/frontend_assets_all/S_ui_RulesAutumnMap--6204769766121856409.webp",
+    "/assets/original/lizard/S_icon_Liz_Garden.webp",
+    "/assets/original/lizard/S_icon_Liz_Head.webp",
+    "/assets/original/lizard/S_ill_LizardCult.webp",
     "/assets/original/marquise_assets_all/Avatar_MarquiseDeCat--466157958804350764.webp",
     "/assets/original/marquise_assets_all/S_ill_MarquiseDeCat--1006048085914686748.webp",
     "/assets/suits/fox.webp",
-    "/assets/suits/wild.webp",
     "/assets/suits/mouse.webp",
-    "/assets/suits/rabbit.webp"
+    "/assets/suits/rabbit.webp",
+    "/assets/suits/wild.webp"
   ],
   "catalog": [
     {

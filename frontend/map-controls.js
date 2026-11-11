@@ -99,7 +99,7 @@ function refresh(){renderControls();syncMinimize();}
 function movementControls(entry,actions){
   const host=mounted.movement;
   host.replaceChildren();
-  if(!actions.some(action=>action.type==='move'&&action.from!==undefined))return;
+  if(!actions.some(action=>['move','crusade'].includes(action.type)&&action.from!==undefined))return;
   const selectField=(label,values,value,change)=>{
     const wrapper=element('label','',label);
     const select=element('select','');select.setAttribute('aria-label',label);
@@ -140,7 +140,7 @@ function renderControls(){
     title('目前无法建造 · 请检查木材、统治和建筑空位');
     clearHighlights();return;
   }
-  const moving=actions.some(a=>a.type==='move'&&a.from!==undefined)||entry.form.id==='move';
+  const moving=actions.some(a=>['move','crusade'].includes(a.type)&&a.from!==undefined)||entry.form.id==='move';
   movementControls(entry,actions);
   const spatial=!!entry.form.querySelector('[name=clearing],[name=from],[name=to]')||actions.some(a=>targetOf(a,game)!==null);
   title(entry.label+(moving?(state.from===null?' · 选择起点':' · 选择终点'):spatial?' · 点击目标地块':''));
@@ -167,7 +167,7 @@ export function pickMapClearing(id){
   if(numericChoice){if(!game.choice.options.some(o=>Number(o.id)===id)){state.picked=null;refresh();return false;}state.picked=id;refresh();return true;}
   const entry=entries.find(e=>e.key===state.activeKey);if(!entry)return false;
   const actions=actionsFor(entry,game);
-  if((actions.some(a=>a.type==='move'&&a.from!==undefined)||entry.form.id==='move')&&state.from===null){
+  if((actions.some(a=>['move','crusade'].includes(a.type)&&a.from!==undefined)||entry.form.id==='move')&&state.from===null){
     if(!actions.some(a=>a.from===id))return false;
     state.from=id;state.picked=null;refresh();return true;
   }
@@ -205,6 +205,8 @@ export function mountMapControls({game,userId,version,gameId,tutorial}){
   if(!game.choice&&game.players[game.turn]?.id===userId&&!game.winner){
     if(game.phase==='wood')status.textContent=`待生产木材 ${game.woodPending.length} 枚`;
     if(game.phase==='daylight'&&game.players[game.turn].faction==='cat')status.textContent=`剩余行动 ${game.actions}${game.march?' · 行军中':''}`;
+    if(game.phase==='lizard-conspiracies')status.textContent=`侍僧 ${game.lizard.acolytes} · ${game.factionNames[game.lizard.outcast]}被逐者${game.lizard.hated?' · 憎恨':''}`;
+    if(game.phase==='lizard-craft')status.textContent='仅用被逐者花色花园锻造；结束后抽牌';
     if(game.phase==='military')status.textContent=`剩余军事行动 ${game.alliance.operations} · 长官 ${game.alliance.officers}`;
     if(game.phase==='refresh')status.textContent=`还可恢复 ${game.vagabond.refreshLeft} 个物品`;
     if(game.phase==='decree-add')status.textContent=`已添加法令 ${game.bird.added} / 2，本轮最多一张鸟类牌`;

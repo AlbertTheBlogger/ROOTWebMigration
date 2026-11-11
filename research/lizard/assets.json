@@ -1,0 +1,38 @@
+[
+  {
+    "name": "S_icon_Liz_Garden",
+    "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_all.bundle",
+    "sourceSha256": "89ec5690ccaf00fb8e4a6595f91b49f174359c5ca2535d73038543caa4abdd6c",
+    "pathId": -1703099175754385450,
+    "file": "/assets/original/lizard/S_icon_Liz_Garden.webp",
+    "sha256": "d0f16fcba64f0f035a62fb377056c84717765e4123689d4cbc535dbf6cc65dc8",
+    "dimensions": [
+      112,
+      112
+    ]
+  },
+  {
+    "name": "S_icon_Liz_Head",
+    "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_all.bundle",
+    "sourceSha256": "89ec5690ccaf00fb8e4a6595f91b49f174359c5ca2535d73038543caa4abdd6c",
+    "pathId": 1192462192290996071,
+    "file": "/assets/original/lizard/S_icon_Liz_Head.webp",
+    "sha256": "9167905c10cac3f6ef20a687cc778d5e256ef59a6f3036887ad93c6f677d920a",
+    "dimensions": [
+      128,
+      96
+    ]
+  },
+  {
+    "name": "S_ill_LizardCult",
+    "source": "Root_Data/StreamingAssets/aa/StandaloneWindows64/vagabond_assets_all.bundle",
+    "sourceSha256": "2b6b129075757c30259d11a5436c711fb3011dca4f59a8fadb23fbc02ed23b9e",
+    "pathId": 4060581273219689076,
+    "file": "/assets/original/lizard/S_ill_LizardCult.webp",
+    "sha256": "a89f425a51fd1d0d0577288ede4db6a8e39e78463feac399dd61ec0df5ca9636",
+    "dimensions": [
+      246,
+      229
+    ]
+  }
+]

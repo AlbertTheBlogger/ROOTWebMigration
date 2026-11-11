@@ -4,6 +4,7 @@ import * as battleLab from './battle-lab.mjs';
 import * as cardLab from './card-lab.mjs';
 import * as catsBirds from './cats-birds.mjs';
 import * as baseFour from './base-four.mjs';
+import * as lizardCult from './lizard-cult.mjs';
 
 // Ruleset and state schema versions are separate from package/database versions.
 const implementations = new Map([
@@ -12,6 +13,7 @@ const implementations = new Map([
   [cardLab.RULESET, { ...cardLab, stateSchemaVersion: 3 }],
   [catsBirds.RULESET, { ...catsBirds, stateSchemaVersion: 4 }],
   [baseFour.RULESET, { ...baseFour, stateSchemaVersion: 5 }],
+  [lizardCult.RULESET, { ...lizardCult, stateSchemaVersion: 6 }],
 ]);
 function implementation(id) {
   const value = implementations.get(id);

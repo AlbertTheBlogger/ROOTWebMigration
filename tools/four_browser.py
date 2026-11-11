@@ -18,6 +18,7 @@ OUTPUT = ROOT/'audit/v5/browser'
 
 
 def ruler(area):
+    if any(b['faction']=='lizard' and b['type'].startswith('garden-') for b in area['buildings']): return 'lizard'
     strengths = {faction: count+sum(building['faction']==faction for building in area['buildings'])
                  for faction, count in area['warriors'].items()}
     maximum = max(strengths.values())
@@ -35,6 +36,13 @@ def pick_action(game, me):
     phase = game['phase']
     if phase=='birdsong': return {'type':'birdsong-end'}
     if phase=='discard': return {'type':'discard', 'card':me['hand'][0]['id']}
+    if me['faction']=='lizard':
+        options=game['factionActions']
+        if phase=='lizard-craft': return {'type':'craft','card':game['craftOptions'][0]['card']} if game['craftOptions'] else {'type':'lizard-craft-done'}
+        priority=['仪式得分','仪式建造','献祭','仪式招募','圣化','转化','圣战','圣战移动']
+        options=[o for o in options if o['category']!='仪式得分' or '+0分' not in o['label']]
+        if options:return min(options,key=lambda o:priority.index(o['category']))['action']
+        return {'type':'conspiracies-done' if phase=='lizard-conspiracies' else 'end'}
     if me['faction'] in ('alliance','vagabond'):
         options = game['factionActions']
         if phase=='daylight' and game['craftOptions']:
@@ -113,7 +121,7 @@ def click_action(page, game, action):
         form = page.locator('form[data-type=faction-action]').filter(has=page.locator(f'option[value="{matching}"]'))
         key=form.get_attribute('data-map-key')
         page.locator(f'[data-map-mode="{key}"]').click()
-        army_move=kind=='move' and 'from' in action
+        army_move=kind in ('move','crusade') and 'from' in action
         if army_move:
             page.get_by_label('移动起点',exact=True).select_option(str(action['from']))
             page.get_by_label('移动终点',exact=True).select_option(str(action['to']))

@@ -385,3 +385,8 @@
 .card-preview:has(.public-player-details) { width:min(680px,92vw); }
 .card-preview.nested-preview { width:min(420px,86vw);max-height:82dvh; }
 .card-preview.nested-preview::backdrop { background:#17251e66; }
+
+/* Lizard Cult: presentation only; rules and legal actions are server-authoritative. */
+.player-seat.lizard{border-top-color:#d2b928}.player-card.lizard{--faction:#b5a124}.clearing-unit.lizard{background:#f4e5a2;border-color:#a88f25}.clearing-ruler.lizard{background:#e7cb63}.building-slot[data-piece^="garden-"]{border-color:#ae972c;background:#f5ebbc}.lizard-panel{border-top:3px solid #baa231}.lizard-tracks>div{margin:10px 0}.lizard-public-cards{display:flex;flex-wrap:wrap;gap:6px;max-height:260px;overflow:auto}.public-lizard-card{display:flex;flex-direction:column;width:75px;align-items:center;text-align:center}.public-lizard-card img{width:48px;height:64px;object-fit:contain}.public-lizard-card small{font-size:11px}.lizard-tracks .scoring-spaces{display:flex;flex-wrap:wrap;gap:4px}.lizard-tracks .scoring-spaces>span{flex:1;min-width:45px;font-size:12px}.lizard-tracks .scoring-spaces small{font-size:10px}
+
+.score.lizard{border-left-color:#b5a124}.lizard-summary{color:#725c19}

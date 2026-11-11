@@ -1,0 +1,204 @@
+181935650 mov qword ptr [rsp + 0x10], rbx
+181935655 mov qword ptr [rsp + 0x18], rsi
+18193565a push rdi
+18193565b sub rsp, 0x30
+18193565f cmp byte ptr [rip + 0x13542e6], 0
+181935666 mov ebx, edx
+181935668 mov rdi, rcx
+18193566b jne 0x181935714
+181935671 lea rcx, [rip + 0x119e070]
+181935678 call 0x1820df9b0
+18193567d lea rcx, [rip + 0x11c6464]
+181935684 call 0x1820df9b0
+181935689 lea rcx, [rip + 0x1166678]
+181935690 call 0x1820df9b0
+181935695 lea rcx, [rip + 0x11a86fc]
+18193569c call 0x1820df9b0
+1819356a1 lea rcx, [rip + 0x11b56b0]
+1819356a8 call 0x1820df9b0
+1819356ad lea rcx, [rip + 0x119242c]
+1819356b4 call 0x1820df9b0
+1819356b9 lea rcx, [rip + 0x1192368]
+1819356c0 call 0x1820df9b0
+1819356c5 lea rcx, [rip + 0x11922a4]
+1819356cc call 0x1820df9b0
+1819356d1 lea rcx, [rip + 0x1192578]
+1819356d8 call 0x1820df9b0
+1819356dd lea rcx, [rip + 0x11c4724]
+1819356e4 call 0x1820df9b0
+1819356e9 lea rcx, [rip + 0x119cdb0]
+1819356f0 call 0x1820df9b0
+1819356f5 lea rcx, [rip + 0x119a1bc]
+1819356fc call 0x1820df9b0
+181935701 lea rcx, [rip + 0x11a36c8]
+181935708 call 0x1820df9b0
+18193570d mov byte ptr [rip + 0x1354238], 1
+181935714 mov rcx, qword ptr [rip + 0x11a36b5]
+18193571b call 0x1820dfb80
+181935720 xor edx, edx
+181935722 mov rcx, rax
+181935725 mov rsi, rax
+181935728 call 0x180001c20
+18193572d test rsi, rsi
+181935730 je 0x181935971
+181935736 mov dword ptr [rsi + 0x10], ebx
+181935739 mov rdi, qword ptr [rdi + 0x128]
+181935740 test rdi, rdi
+181935743 je 0x181935971
+181935749 mov rcx, qword ptr [rip + 0x11c6398]
+181935750 mov rdi, qword ptr [rdi + 0x48]
+181935754 mov qword ptr [rsp + 0x40], rbp
+181935759 call 0x1820dfb80
+18193575e mov r8, qword ptr [rip + 0x119a153]
+181935765 xor r9d, r9d
+181935768 mov rdx, rsi
+18193576b mov rcx, rax
+18193576e mov rbx, rax
+181935771 call 0x180983120
+181935776 mov r8, qword ptr [rip + 0x119df6b]
+18193577d mov rdx, rbx
+181935780 mov rcx, rdi
+181935783 call 0x1802e6240
+181935788 mov rbp, rax
+18193578b test rax, rax
+18193578e je 0x181935876
+181935794 mov rax, qword ptr [rip + 0x119cd05]
+18193579b cmp dword ptr [rax + 0xe0], 0
+1819357a2 jne 0x1819357b3
+1819357a4 mov rcx, rax
+1819357a7 call 0x1820dfc70
+1819357ac mov rax, qword ptr [rip + 0x119cced]
+1819357b3 mov rax, qword ptr [rax + 0xb8]
+1819357ba mov rcx, rbp
+1819357bd mov r8, qword ptr [rip + 0x11c4644]
+1819357c4 mov rdx, qword ptr [rax + 0x128]
+1819357cb call 0x18032afe0
+1819357d0 xor ebx, ebx
+1819357d2 mov rdi, rax
+1819357d5 test rax, rax
+1819357d8 je 0x181935878
+1819357de mov r10, qword ptr [rax]
+1819357e1 movzx ecx, bx
+1819357e4 mov r9, qword ptr [rip + 0x116651d]
+1819357eb movzx edx, word ptr [r10 + 0x12e]
+1819357f3 cmp bx, dx
+1819357f6 jae 0x181935814
+1819357f8 mov r8, qword ptr [r10 + 0xb0]
+1819357ff nop
+181935800 movzx eax, cx
+181935803 add rax, rax
+181935806 cmp qword ptr [r8 + rax*8], r9
+18193580a je 0x18193585c
+18193580c inc cx
+18193580f cmp cx, dx
+181935812 jb 0x181935800
+181935814 xor r8d, r8d
+181935817 mov rdx, r9
+18193581a mov rcx, rdi
+18193581d call 0x1820ef980
+181935822 mov r8, qword ptr [rax]
+181935825 mov rcx, rdi
+181935828 mov rdx, qword ptr [rax + 8]
+18193582c call r8
+18193582f mov rsi, rax
+181935832 test rax, rax
+181935835 je 0x18193587b
+181935837 mov r8, qword ptr [rip + 0x1192132]
+18193583e lea rcx, [rsp + 0x58]
+181935843 mov edx, dword ptr [rax + 0x18]
+181935846 mov qword ptr [rsp + 0x58], rbx
+18193584b call 0x180b9b5a0
+181935850 mov rdi, qword ptr [rsp + 0x58]
+181935855 mov qword ptr [rsp + 0x20], rdi
+18193585a jmp 0x181935888
+18193585c movzx ecx, cx
+18193585f add rcx, rcx
+181935862 movsxd rax, dword ptr [r8 + rcx*8 + 8]
+181935867 shl rax, 4
+18193586b add rax, 0x138
+181935871 add rax, r10
+181935874 jmp 0x181935822
+181935876 xor ebx, ebx
+181935878 mov rsi, rbx
+18193587b mov rdi, rbx
+18193587e mov qword ptr [rsp + 0x20], rbx
+181935883 test rbp, rbp
+181935886 je 0x1819358b5
+181935888 mov rdx, qword ptr [rbp + 0x48]
+18193588c test rdx, rdx
+18193588f je 0x181935977
+181935895 mov edx, dword ptr [rdx + 0x18]
+181935898 lea rcx, [rsp + 0x58]
+18193589d mov r8, qword ptr [rip + 0x11920cc]
+1819358a4 mov qword ptr [rsp + 0x58], rbx
+1819358a9 call 0x180b9b5a0
+1819358ae mov rax, qword ptr [rsp + 0x58]
+1819358b3 jmp 0x1819358b8
+1819358b5 mov rax, rbx
+1819358b8 test dil, al
+1819358bb je 0x1819358e4
+1819358bd mov edx, dword ptr [rsp + 0x24]
+1819358c1 lea rcx, [rsp + 0x58]
+1819358c6 mov r8, qword ptr [rip + 0x11920a3]
+1819358cd shr rax, 0x20
+1819358d1 sub edx, eax
+1819358d3 mov qword ptr [rsp + 0x58], rbx
+1819358d8 call 0x180b9b5a0
+1819358dd mov rax, qword ptr [rsp + 0x58]
+1819358e2 jmp 0x1819358e7
+1819358e4 mov rax, rbx
+1819358e7 mov r8, qword ptr [rip + 0x11921f2]
+1819358ee lea rcx, [rsp + 0x28]
+1819358f3 xor edx, edx
+1819358f5 mov qword ptr [rsp + 0x28], rax
+1819358fa call 0x180b97fa0
+1819358ff mov rcx, qword ptr [rip + 0x11b5452]
+181935906 mov edi, eax
+181935908 cmp dword ptr [rcx + 0xe0], 0
+18193590f jne 0x181935916
+181935911 call 0x1820dfc70
+181935916 lea ecx, [rdi - 1]
+181935919 xor r8d, r8d
+18193591c xor edx, edx
+18193591e call 0x18105cad0
+181935923 test rsi, rsi
+181935926 je 0x18193596c
+181935928 cmp eax, dword ptr [rsi + 0x18]
+18193592b jae 0x18193597d
+18193592d cdqe
+18193592f mov rdx, qword ptr [rsi + rax*8 + 0x20]
+181935934 test rdx, rdx
+181935937 je 0x18193596c
+181935939 mov r8, qword ptr [rip + 0x1192030]
+181935940 lea rcx, [rsp + 0x58]
+181935945 mov edx, dword ptr [rdx + 0x14]
+181935948 mov qword ptr [rsp + 0x58], rbx
+18193594d call 0x180b9b5a0
+181935952 mov rax, qword ptr [rsp + 0x58]
+181935957 mov rbp, qword ptr [rsp + 0x40]
+18193595c mov rbx, qword ptr [rsp + 0x48]
+181935961 mov rsi, qword ptr [rsp + 0x50]
+181935966 add rsp, 0x30
+18193596a pop rdi
+18193596b ret
+18193596c mov rax, rbx
+18193596f jmp 0x181935957
+181935971 call 0x1820dfbd0
+181935976 int3
+181935977 call 0x1820dfbd0
+18193597c int3
+18193597d call 0x1820dfbc0
+181935982 int3
+181935983 int3
+181935984 int3
+181935985 int3
+181935986 int3
+181935987 int3
+181935988 int3
+181935989 int3
+18193598a int3
+18193598b int3
+18193598c int3
+18193598d int3
+18193598e int3
+18193598f int3

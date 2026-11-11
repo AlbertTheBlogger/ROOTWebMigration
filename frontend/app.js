@@ -15,8 +15,8 @@ function characterDetails(character){
 }
 function originalHero(){return ART.illustrations.hero?artImage(ART.illustrations.hero,'ROOT 原版插画','original-hero'):forest();}
 const S={user:null,rooms:[],room:null,mode:'login',selected:0,card:null,stream:null,busy:false,connected:false,history:null,ruleset:'root-base-four-v5'};
-const names={alliance:'森林联盟',vagabond:'神秘游侠',sympathy:'民意', 'base-fox':'狐狸基地','base-rabbit':'兔子基地','base-mouse':'老鼠基地',bag:'背包',boot:'靴子',crossbow:'弩',hammer:'锤子',sword:'长剑',tea:'茶壶',coin:'钱币',torch:'火把',thief:'盗贼',tinker:'工匠',ranger:'猎人',cat:'猫咪贵族',bird:'飞鹰王朝',fox:'狐狸',rabbit:'兔子',mouse:'老鼠',wild:'鸟类',sawmill:'锯木厂',workshop:'工坊',recruiter:'征兵所',roost:'鸟巢',wood:'木材',keep:'城堡',move:'移动',recruit:'招募',battle:'战斗',build:'建造',despot:'制裁者',commander:'指挥者',charismatic:'号召者',builder:'建设者'};
-const phases={wood:'清晨 · 分配木材',daylight:'白昼 · 阵营行动',revolt:'清晨 · 起义',spread:'清晨 · 传播民意',military:'夜晚 · 军事行动',refresh:'清晨 · 恢复物品',slip:'清晨 · 潜行',capacity:'夜晚 · 行囊容量','decree-add':'清晨 · 添加法令','new-roost':'清晨 · 安置鸟巢',decree:'白昼 · 执行法令',leader:'动乱 · 更换领袖',discard:'夜晚 · 弃牌',finished:'对局结束',birdsong:'清晨 · 持续牌效果',craft:'白昼 · 锻造',setup:'标准开局设置'};
+const names={lizard:'蜥蜴神教','garden-fox':'狐狸花园','garden-rabbit':'兔子花园','garden-mouse':'老鼠花园',alliance:'森林联盟',vagabond:'神秘游侠',sympathy:'民意', 'base-fox':'狐狸基地','base-rabbit':'兔子基地','base-mouse':'老鼠基地',bag:'背包',boot:'靴子',crossbow:'弩',hammer:'锤子',sword:'长剑',tea:'茶壶',coin:'钱币',torch:'火把',thief:'盗贼',tinker:'工匠',ranger:'猎人',cat:'猫咪贵族',bird:'飞鹰王朝',fox:'狐狸',rabbit:'兔子',mouse:'老鼠',wild:'鸟类',sawmill:'锯木厂',workshop:'工坊',recruiter:'征兵所',roost:'鸟巢',wood:'木材',keep:'城堡',move:'移动',recruit:'招募',battle:'战斗',build:'建造',despot:'制裁者',commander:'指挥者',charismatic:'号召者',builder:'建设者'};
+const phases={'lizard-conspiracies':'清晨 · 侍僧密谋','lizard-craft':'夜晚 · 花园锻造',wood:'清晨 · 分配木材',daylight:'白昼 · 阵营行动',revolt:'清晨 · 起义',spread:'清晨 · 传播民意',military:'夜晚 · 军事行动',refresh:'清晨 · 恢复物品',slip:'清晨 · 潜行',capacity:'夜晚 · 行囊容量','decree-add':'清晨 · 添加法令','new-roost':'清晨 · 安置鸟巢',decree:'白昼 · 执行法令',leader:'动乱 · 更换领袖',discard:'夜晚 · 弃牌',finished:'对局结束',birdsong:'清晨 · 持续牌效果',craft:'白昼 · 锻造',setup:'标准开局设置'};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const btn=(label,action,cls='',disabled=false,extra='')=>`<button type="button" class="${cls}" data-action="${action}" ${disabled?'disabled':''} ${extra}>${label}</button>`;
 const brand=`<svg class="brand-mark" viewBox="0 0 44 48" aria-hidden="true"><path fill="#2e5844" d="M22 0 3 13v22l19 13 19-13V13z"/><path fill="#e6d9af" d="m22 8-10 15h6l-9 12h11v7h4v-7h11l-9-12h6z"/></svg>`;
@@ -88,9 +88,9 @@ function syncBusyButtons(){
 function connection(){const e=document.querySelector('.connection');if(e){e.textContent=S.connected?'● 已连接 · 自动保存':'○ 正在重连 · 保留服务器进度';e.classList.toggle('offline',!S.connected);}syncBusyButtons();}
 function frame(content){app.innerHTML=`<header class="topbar"><div class="brand" data-action="lobby" role="button" tabindex="0">${brand}<div><div class="brand-name">林间议事厅</div><div class="brand-sub">WOODLAND ROOMS</div></div></div><nav class="nav">${S.user?`${S.user.role==='admin'?btn('管理控制台','lobby','quiet'):btn('新手教程','tutorials','quiet')+btn('我的对局','history','quiet')}<span class="avatar">${esc(S.user.username[0].toUpperCase())}</span><span class="username muted">${esc(S.user.username)}</span>${btn('退出','logout','quiet')}`:'<span class="badge">v1.1 发布版</span>'}</nav></header><main class="wrap ${S.room?.game?'game-wrap':''}">${content}</main><footer class="footer"><span>WOODLAND ROOMS</span><span>v1.1 发布版</span></footer>${S.history?historyModal():''}`;connection();}
 function limitations(){
-  const ruleset=S.room?.game?.ruleset||S.ruleset;
-  const standard=['root-cats-birds-v4','root-base-four-v5'].includes(ruleset);
-  const title=ruleset==='root-base-four-v5'?'基础四阵营标准局':standard?'猫鹰标准局':'历史模式';
+  const ruleset=S.room?.game?.ruleset||S.room?.ruleset||S.ruleset;
+  const standard=['root-cats-birds-v4','root-base-four-v5','root-lizard-cult-v6'].includes(ruleset);
+  const title=ruleset==='root-lizard-cult-v6'?'扩展标准局 · 蜥蜴神教':ruleset==='root-base-four-v5'?'基础四阵营标准局':standard?'猫鹰标准局':'历史模式';
   const lines=standard?[
     '使用秋季地图与基础牌组。',
     '依次设置城堡、初始建筑与领袖，随后按清晨、白昼、夜晚行动。',
@@ -109,7 +109,7 @@ function roomCard(r){
       ${r.canDelete?btn('删除房间','delete-room','quiet danger',false,`data-code="${r.code}"`):''}
     </div></article>`;
 }
-function lobbyView(){frame(`<div class="heading"><div><div class="eyebrow">THE GATHERING PLACE</div><h1>今晚，谁来执掌森林？</h1><p class="muted">找一个席位，或为朋友们开一间房。</p></div><span class="badge">${S.rooms.filter(r=>r.status==='waiting').length} 个房间等待中</span></div>${limitations()}<div class="lobby-grid"><section class="panel"><div class="panel-header"><h2>林间房间</h2>${btn('↻ 刷新','refresh','quiet')}</div><div class="room-grid">${S.rooms.map(roomCard).join('')||'<div class="empty"><div class="empty-symbol">♧</div>森林还很安静。<br>创建第一间房，邀请朋友加入。</div>'}</div></section><aside><section class="panel"><h2>创建房间</h2><form id="create"><label>房间人数<select name="capacity"><option value="4">最多四人 · 全部基础阵营</option><option value="3">最多三人</option><option value="2">猫鹰双人</option></select></label><label>房间名称<input name="title" maxlength="24" placeholder="例如：周末林间小聚" required></label><label>本局玩家名<input name="name" maxlength="24" value="${esc(S.user.username)}" required></label><label>房间密码 <small>可不填，即公共房间</small><input name="password" type="password" maxlength="128" autocomplete="new-password" placeholder="留空即可公开加入"></label><button class="primary">＋ 创建房间</button></form></section><section class="panel"><h3>有朋友的房间号？</h3><form id="join"><label>六位房间号<input name="code" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="例如 123456" required></label><label>本局玩家名<input name="name" value="${esc(S.user.username)}" maxlength="24" required></label><label>房间密码<input name="password" type="password" maxlength="128" placeholder="公共房间留空"></label><button>加入朋友的房间 →</button></form></section></aside></div>`);}
+function lobbyView(){frame(`<div class="heading"><div><div class="eyebrow">THE GATHERING PLACE</div><h1>今晚，谁来执掌森林？</h1><p class="muted">找一个席位，或为朋友们开一间房。</p></div><span class="badge">${S.rooms.filter(r=>r.status==='waiting').length} 个房间等待中</span></div>${limitations()}<div class="lobby-grid"><section class="panel"><div class="panel-header"><h2>林间房间</h2>${btn('↻ 刷新','refresh','quiet')}</div><div class="room-grid">${S.rooms.map(roomCard).join('')||'<div class="empty"><div class="empty-symbol">♧</div>森林还很安静。<br>创建第一间房，邀请朋友加入。</div>'}</div></section><aside><section class="panel"><h2>创建房间</h2><form id="create"><label>游戏模式<select name="ruleset"><option value="root-base-four-v5">基础四阵营标准局</option><option value="root-lizard-cult-v6">扩展标准局 · 蜥蜴神教</option></select></label><label>房间人数<select name="capacity"><option value="4">最多四人</option><option value="3">最多三人</option><option value="2">最多双人</option></select></label><label>房间名称<input name="title" maxlength="24" placeholder="例如：周末林间小聚" required></label><label>本局玩家名<input name="name" maxlength="24" value="${esc(S.user.username)}" required></label><label>房间密码 <small>可不填，即公共房间</small><input name="password" type="password" maxlength="128" autocomplete="new-password" placeholder="留空即可公开加入"></label><button class="primary">＋ 创建房间</button></form></section><section class="panel"><h3>有朋友的房间号？</h3><form id="join"><label>六位房间号<input name="code" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="例如 123456" required></label><label>本局玩家名<input name="name" value="${esc(S.user.username)}" maxlength="24" required></label><label>房间密码<input name="password" type="password" maxlength="128" placeholder="公共房间留空"></label><button>加入朋友的房间 →</button></form></section></aside></div>`);}
 function roomHeader(){
   const room=S.room;
   if(room.tutorial)return `<div class="heading"><div>${btn('← 教程目录','tutorials','quiet')}<h1 class="room-title">${esc(room.title)}</h1><span class="badge">单人练习 · 服务器保存进度</span></div>${btn('重新开始本章','tutorial-restart','quiet')}</div>`;
@@ -119,14 +119,15 @@ function roomHeader(){
 function waitingView(){
   const room=S.room;
   const me=room.members.find(player=>player.userId===S.user.id);
-  const availableFactions=(room.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird'];
+  S.ruleset=room.ruleset||S.ruleset;
+  const availableFactions=room.availableFactions||((room.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird']);
   const seats=availableFactions.map(faction=>{
     const candidates=room.members.filter(player=>player.faction===faction);
     const owner=candidates.find(player=>player.ready)||candidates[0];
-    return `<article class="player-seat ${faction}"><div class="faction-emblem">${artImage(ART.portraits[faction],names[faction],'seat-portrait')}</div><div class="eyebrow">${({cat:'MARQUISE DE CAT',bird:'EYRIE DYNASTIES',alliance:'WOODLAND ALLIANCE',vagabond:'VAGABOND'})[faction]}</div><div class="player-name">${owner?esc(owner.name):'虚位以待'}</div><div class="muted">${names[faction]}${owner?.userId===room.ownerId?' · 房主':''}${owner?.userId===S.user.id?' · 你':''}</div><div class="seat-controls">${candidates.filter(player=>player!==owner).map(player=>`<p class="caption">${esc(player.name)}${player.userId===S.user.id?' · 你':''} · 待准备</p>`).join('')}${owner?`<span class="badge">${owner.bot?'人机 · 已准备':owner.ready?'✓ 已准备':'等待准备'}</span>${owner.bot&&room.ownerId===S.user.id?btn('移除人机','bot-remove','quiet danger',false,`data-user="${esc(owner.userId)}"`):''}`:`<p class="muted">将房间号发送给朋友，邀请加入。</p>${room.ownerId===S.user.id?btn('添加人机','bot-add','',room.members.length>=(room.capacity||2),`data-faction="${faction}"`):''}`}</div></article>`;
+    return `<article class="player-seat ${faction}"><div class="faction-emblem">${artImage(ART.portraits[faction],names[faction],'seat-portrait')}</div><div class="eyebrow">${({cat:'MARQUISE DE CAT',bird:'EYRIE DYNASTIES',alliance:'WOODLAND ALLIANCE',vagabond:'VAGABOND',lizard:'LIZARD CULT'})[faction]}</div><div class="player-name">${owner?esc(owner.name):'虚位以待'}</div><div class="muted">${names[faction]}${owner?.userId===room.ownerId?' · 房主':''}${owner?.userId===S.user.id?' · 你':''}</div><div class="seat-controls">${candidates.filter(player=>player!==owner).map(player=>`<p class="caption">${esc(player.name)}${player.userId===S.user.id?' · 你':''} · 待准备</p>`).join('')}${owner?`<span class="badge">${owner.bot?'人机 · 已准备':owner.ready?'✓ 已准备':'等待准备'}</span>${owner.bot&&room.ownerId===S.user.id?btn('移除人机','bot-remove','quiet danger',false,`data-user="${esc(owner.userId)}"`):''}`:`<p class="muted">将房间号发送给朋友，邀请加入。</p>${room.ownerId===S.user.id?btn('添加人机','bot-add','',room.members.length>=(room.capacity||2),`data-faction="${faction}"`):''}`}</div></article>`;
   }).join('');
   const factions=availableFactions.map(faction=>`<option value="${faction}" ${faction===me.faction?'selected':''}>${names[faction]}</option>`).join('');
-  const mode=room.ownerId===S.user.id?`<label>本局规则<select id="ruleset"><option value="root-base-four-v5" ${S.ruleset==='root-base-four-v5'?'selected':''}>基础四阵营标准局</option><option value="root-cats-birds-v4" ${S.ruleset==='root-cats-birds-v4'?'selected':''}>猫鹰标准局 · 完整基础牌组</option><option value="root-card-lab-v3" ${S.ruleset==='root-card-lab-v3'?'selected':''}>基础牌组与物品锻造</option><option value="root-battle-lab-v2" ${S.ruleset==='root-battle-lab-v2'?'selected':''}>秋季地图与战斗</option><option value="root-core-lab-v1" ${S.ruleset==='root-core-lab-v1'?'selected':''}>旧基础模式</option></select></label>`:'<p class="muted">由房主选择本局规则。</p>';
+  const mode=room.ownerId===S.user.id?`<label>本局规则<select id="ruleset"><option value="root-lizard-cult-v6" ${S.ruleset==='root-lizard-cult-v6'?'selected':''}>扩展标准局 · 蜥蜴神教</option><option value="root-base-four-v5" ${S.ruleset==='root-base-four-v5'?'selected':''}>基础四阵营标准局</option><option value="root-cats-birds-v4" ${S.ruleset==='root-cats-birds-v4'?'selected':''}>猫鹰标准局 · 完整基础牌组</option><option value="root-card-lab-v3" ${S.ruleset==='root-card-lab-v3'?'selected':''}>基础牌组与物品锻造</option><option value="root-battle-lab-v2" ${S.ruleset==='root-battle-lab-v2'?'selected':''}>秋季地图与战斗</option><option value="root-core-lab-v1" ${S.ruleset==='root-core-lab-v1'?'selected':''}>旧基础模式</option></select></label>`:'<p class="muted">由房主选择本局规则。</p>';
   frame(`${roomHeader()}${limitations()}<div class="players">${seats}</div><section class="panel"><div class="lobby-grid"><form id="profile"><h3>本局身份</h3><label>玩家名<input name="name" value="${esc(me.name)}" maxlength="24" required></label><label>阵营<select name="faction">${factions}</select></label><button>保存身份</button></form><div><h3>进入森林前</h3><p class="muted">每局可以独立设置玩家名。准备前可以自由选择阵营，先准备的玩家占用该阵营；修改身份后需重新准备。标准局依次选择城堡、初始建筑与飞鹰领袖，随后按清晨、白昼、夜晚进行。</p>${mode}${room.members.some(player=>player.bot)?'<p class="caption">人机会自动行动，并保存对局进度。</p>':''}<div class="divider"></div>${btn(me.ready?'取消准备':'准备','ready','primary')}</div></div><div class="divider"></div><div class="waiting-footer"><span class="muted">${room.members.filter(player=>player.ready).length} / ${room.members.length} 人已准备 · 上限 ${room.capacity||2} 人</span><div>${btn('离开房间','leave','quiet danger')}${room.ownerId===S.user.id?btn('开始游戏','start','primary',room.members.length<2||!room.members.every(player=>player.ready)):'<span class="muted">等待房主开始</span>'}</div></div></section>`);
 }
 function board(game){
@@ -178,7 +179,7 @@ function newFactionControls(game,me){
   for(const option of game.effectOptions||[]){
     html+=`<form data-type="effect"><input type="hidden" name="card" value="${esc(option.card)}">${option.clearing?selectAreas(game,'clearing'):''}${option.target?targetSelect(game,me):''}<button>使用${esc(option.name)}</button></form>`;
   }
-  if(game.phase==='daylight'){
+  if(['daylight','lizard-craft'].includes(game.phase)){
     for(const option of game.craftOptions||[]){
       html+=`<form data-type="craft"><input type="hidden" name="card" value="${esc(option.card)}"><p class="caption">${esc(option.name)} · ${option.cost.map(suit=>suit==='wild'?'任意':names[suit]).join(' + ')}</p><label>锻造点（可选，留空自动支付）<input name="pieces" placeholder="编号见阵营面板"></label><button>锻造${esc(option.name)}</button></form>`;
     }
@@ -191,7 +192,7 @@ function newFactionControls(game,me){
       ?`<details><summary>指定支付的支持者（可选）</summary><div class="supporter-payment">${game.alliance.supporters.map(card=>`<label><input type="checkbox" name="supporter" value="${esc(card.id)}">${artImage(ART.cards[card.archetype]||ART.dominance?.[card.archetype],card.name,'supporter-art')}${esc(card.name)} · ${names[card.suit]}</label>`).join('')}</div></details>`:'';
     html+=`<details class="action-section faction-action-group" data-category="${category}" ${categories.length===1?'open':''}><summary>${category} · ${options.length} 个选项</summary><form data-type="faction-action"><select name="option" aria-label="目标领地或行动">${options.map(option=>`<option value="${option.index}">${esc(translate(option.label))}</option>`).join('')}</select>${payment}<button>执行${category}</button></form></details>`;
   }
-  const endings={birdsong:['结束清晨牌效果 →','birdsong-end'],revolt:['起义完成，传播民意 →','revolt-done'],spread:['传播完成，进入白昼 →','spread-done'],refresh:['恢复完成，开始潜行 →','refresh-done'],slip:['跳过潜行，进入白昼 →','slip-done'],daylight:['进入夜晚 →','end'],military:['结束军事行动，抽牌 →','military-done']};
+  const endings={'lizard-conspiracies':['结束密谋，进入白昼 →','conspiracies-done'],'lizard-craft':['结束夜晚锻造，抽牌 →','lizard-craft-done'],birdsong:['结束清晨牌效果 →','birdsong-end'],revolt:['起义完成，传播民意 →','revolt-done'],spread:['传播完成，进入白昼 →','spread-done'],refresh:['恢复完成，开始潜行 →','refresh-done'],slip:['跳过潜行，进入白昼 →','slip-done'],daylight:['进入夜晚 →','end'],military:['结束军事行动，抽牌 →','military-done']};
   if(game.phase==='refresh')html+=`<p class="caption">还可恢复 ${game.vagabond.refreshLeft} 个物品。</p>`;
   if(game.phase==='military')html+=`<p class="caption">剩余军事行动 ${game.alliance.operations} / 长官 ${game.alliance.officers}</p>`;
   if(game.phase==='capacity')html+='<p class="caption">行囊超重，请选择物品永久丢弃。</p>';
@@ -212,8 +213,13 @@ function birdOverview(game){
   const bird=game.bird;
   return `<h3>飞鹰领袖 · ${names[bird.leader]||'尚未选择'}</h3>${bird.leader?btn(names[bird.leader]+' · 查看牌面与效果','leader-preview','quiet',false,`data-leader="${bird.leader}"`):''}<div class="decree">${['recruit','move','battle','build'].map(column=>`<div data-decree-column="${column}">${names[column]}<div>${bird.decree[column].map(card=>`<span class="pip" title="${names[card.suit]}${card.vizier?' · 大臣':''}">${suitImage(card.suit)}${card.vizier?'·':''}</span>`).join('')}</div></div>`).join('')}</div>`;
 }
+function lizardOverview(game){
+  const liz=game.lizard;if(!liz)return '';
+  const cards=list=>list.map(card=>`<span class="public-lizard-card">${artImage(ART.cards[card.archetype]||ART.dominance?.[card.archetype],card.name,'supporter-art')}<small>${esc(card.name)} · ${names[card.suit]}</small></span>`).join('')||'<small>无</small>';
+  return `<h3>蜥蜴神教</h3><p>被逐者：${names[liz.outcast]||'待选择'}${liz.hated?' · 憎恨（密谋少花1侍僧）':''} · 侍僧 ${liz.acolytes}</p><div class="lizard-tracks">${(liz.gardenTracks||[]).map(track=>`<div><strong>${names[track.suit]}花园 ${track.built} / 5</strong><span class="scoring-spaces">${track.points.slice(1).map((points,index)=>`<span class="${track.built===index+1?'current':''}">${index+1}座<small>仪式 +${points}分${index===1?' · 抽牌+1':''}</small></span>`).join('')}</span></div>`).join('')}</div><p class="caption">鸟牌仅可用于献祭，仪式展示牌在夜晚收回；每花色每回合得分一次。只用被逐者花色花园在夜晚锻造。</p><h3>本轮公开展示 ${liz.revealed.length} 张</h3><div class="lizard-public-cards">${cards(liz.revealed)}</div><h3>失魂堆 ${liz.lostSouls.length} 张</h3><div class="lizard-public-cards">${cards(liz.lostSouls)}</div>`;
+}
 function newFactionOverview(game,me){
-  if(game.ruleset!=='root-base-four-v5')return '';
+  if(!['root-base-four-v5','root-lizard-cult-v6'].includes(game.ruleset))return '';
   let html='';
   if(me.faction==='bird')html+=`<section class="panel bird-panel">${birdOverview(game)}</section>`;
   if(me.faction==='alliance'&&game.players.some(player=>player.faction==='alliance')){
@@ -232,10 +238,10 @@ function newFactionOverview(game,me){
     const quests=publicQuests(game);
     html+=`<section class="panel vagabond-panel"><h3>神秘游侠 · ${names[vg.character]||'选择角色'}</h3><p>${vg.position===null?'准备入场':(vg.position>=12?'森林 ':'秋林 ')+vg.position} · 已完成任务 ${vg.completedQuests.length}</p>${artImage(ART.characters?.[vg.character],names[vg.character],'choice-art own-character-card')}${characterDetails(vg.character)}<div class="vg-inventory">${inventory}</div><div class="relations">${relations}</div><h3>公开任务</h3><div class="quest-cards">${quests}</div></section>`;
   }
-  return html;
+  return html+(game.lizard?`<section class="panel lizard-panel">${lizardOverview(game)}</section>`:'');
 }
 function controls(g,me){
-  const standard=['root-cats-birds-v4','root-base-four-v5'].includes(g.ruleset);
+  const standard=['root-cats-birds-v4','root-base-four-v5','root-lizard-cult-v6'].includes(g.ruleset);
   if(g.winner)return `<h2>林间落幕</h2><p>${g.players.filter(player=>(g.winners||[g.winner]).includes(player.id)).map(player=>esc(player.name)).join(' 与 ')} 获胜</p><p class="muted">本局进度已保存在服务器。</p>${S.room.ownerId===S.user.id?btn('开下一局','new-game','primary'):''}${btn('离开房间','leave','quiet')}`;
   if(g.choice){
     if(g.choice.waiting){
@@ -247,8 +253,8 @@ function controls(g,me){
   if(g.pending){const l=g.pending.losses[0];if(l.faction!==me.faction)return '<h2>战损结算</h2><p class="muted">等待对方选择移除的建筑或标记。</p>';const c=g.board[g.pending.clearing];const pieces=[...new Set(c.buildings.filter(b=>b.faction===me.faction).map(b=>b.type).concat(me.faction==='cat'?[...(c.keep?['keep']:[]),...(c.wood?['wood']:[])]:[]))];return `<h2>选择战损</h2><p class="muted">${c.name}还需承受 ${l.hits} 点伤害。</p><div class="stack">${pieces.map(p=>btn(`移除${names[p]}`,'loss','',false,`data-piece="${p}"`)).join('')}</div>`;}
   if(g.players[g.turn].id!==me.id)return `<h2>静候下一步</h2><p class="muted">当前由 ${esc(g.players[g.turn].name)} 行动。</p><p class="caption">你仍可查看地图、自己的手牌和公开法令。</p>`;
   let html=`<h2>轮到你了</h2><span class="phase">${phases[g.phase]}</span>`;
-  if(g.ruleset==='root-base-four-v5')html+=dominanceControls(g,me);
-  if(['alliance','vagabond'].includes(me.faction))return html+newFactionControls(g,me);
+  if(['root-base-four-v5','root-lizard-cult-v6'].includes(g.ruleset))html+=dominanceControls(g,me);
+  if(['alliance','vagabond','lizard'].includes(me.faction))return html+newFactionControls(g,me);
   if(standard){
     for(const option of g.effectOptions||[]){
       html+=`<form data-type="effect"><input type="hidden" name="card" value="${esc(option.card)}">${option.clearing?selectAreas(g,'clearing'):''}${option.target?targetSelect(g,me):''}<button>使用${esc(option.name)}</button></form>`;
@@ -305,17 +311,19 @@ function pieceStock(game,player){
   const faction=player.faction;
   const army=game.board.reduce((sum,area)=>sum+(area.warriors[faction]||0),0);
   const officers=faction==='alliance'?(game.alliance?.officers||0):0;
-  const total={cat:25,bird:20,alliance:10}[faction];
-  const types=faction==='cat'?['sawmill','workshop','recruiter']:faction==='bird'?['roost']:faction==='alliance'?['base-fox','base-rabbit','base-mouse']:[];
+  const total={cat:25,bird:20,alliance:10,lizard:25}[faction];
+  const acolytes=faction==='lizard'?(game.lizard?.acolytes||0):0;
+  const types=faction==='cat'?['sawmill','workshop','recruiter']:faction==='bird'?['roost']:faction==='alliance'?['base-fox','base-rabbit','base-mouse']:faction==='lizard'?['garden-fox','garden-rabbit','garden-mouse']:[];
   let html=victoryTrack(player)+factionScoring(game,player);
-  if(total)html+=`<div class="army-counts"><span>地图军队 <b>${army}</b></span><span>储备 <b>${Math.max(0,total-army-officers)} / ${total}</b></span>${faction==='alliance'?`<span>长官 <b>${officers}</b></span>`:''}</div>`;
+  if(total)html+=`<div class="army-counts"><span>地图军队 <b>${army}</b></span><span>储备 <b>${Math.max(0,total-army-officers-acolytes)} / ${total}</b></span>${faction==='alliance'?`<span>长官 <b>${officers}</b></span>`:''}</div>`;
   html+=`<div class="building-stock">${types.map(type=>{
     const used=game.board.reduce((sum,area)=>sum+area.buildings.filter(b=>b.faction===faction&&b.type===type).length,0);
-    const limit=faction==='cat'?6:faction==='bird'?7:1;
+    const limit=faction==='cat'?6:faction==='bird'?7:faction==='lizard'?5:1;
     const track=game.catBuildingTracks?.find(track=>track.type===type);
     const next=track?.spaces[used];
     return `<span title="${names[type]}剩余 ${limit-used}，总量 ${limit}">${artImage(ART.symbols[type],names[type],'stock-art')}<span>${names[type]}<b>${limit-used} / ${limit}</b>${track?`<small>${next?'下一座 '+next.wood+' 木材 · '+next.points+' 分':'建筑已全部使用'}</small><span class="building-track">${track.spaces.map((space,index)=>`<small class="${index<used?'built':index===used?'next':''}" title="第${index+1}座">${space.wood}木<br>${space.points}分</small>`).join('')}</span>`:''}</span></span>`;
   }).join('')}</div>`;
+  if(faction==='lizard'&&game.lizard)html+=`<p class="caption lizard-summary">侍僧 ${game.lizard.acolytes} · 被逐者 ${names[game.lizard.outcast]||'待选择'}${game.lizard.hated?'（憎恨）':''} · 展示牌 ${game.lizard.revealed.length} · 失魂 ${game.lizard.lostSouls.length}</p>`;
   if(faction==='alliance')html+=`<p class="caption">民意剩余 ${10-game.board.filter(a=>a.sympathy).length} / 10 · 支持者 ${game.alliance.supporterCount}</p>`;
   return html;
 }
@@ -335,6 +343,7 @@ function playerPublicDetails(game,player){
   if(player.faction==='bird'){
     html+=birdOverview(game);
   }
+  if(player.faction==='lizard')html+=lizardOverview(game);
   if(player.faction==='alliance')html+='<p class="caption">军队和长官共用10名战士供应。</p>';
   return html+'</section>';
 }
@@ -566,11 +575,11 @@ app.addEventListener('click',event=>{const b=event.target.closest('[data-action]
     if(action==='view-history'){S.history=await api(`/api/games/${b.dataset.id}`);render();return;}
     if(action==='close-history'){S.history=null;render();return;}
     if(action==='open-room'){if(b.dataset.mine==='true'){await enter((await api(`/api/rooms/${b.dataset.code}`)).room);}else{const f=document.querySelector('#join');f.elements.code.value=b.dataset.code;f.elements.name.focus();f.scrollIntoView({behavior:'smooth',block:'center'});toast('填写本局玩家名后加入');}return;}
-    if(action==='bot-add'){S.ruleset='root-base-four-v5';await command({type:'bot-add',faction:b.dataset.faction});return;}
+    if(action==='bot-add'){await command({type:'bot-add',faction:b.dataset.faction});return;}
     if(action==='bot-remove'){await command({type:'bot-remove',userId:b.dataset.user});return;}
     if(action==='bot-retry'){await command({type:'bot-retry'});return;}
     if(action==='ready'){await command({type:'ready',ready:!S.room.members.find(m=>m.userId===S.user.id).ready});return;}
-    if(action==='start'){await command({type:'start',ruleset:S.ruleset});return;}
+    if(action==='start'){await command({type:'start',ruleset:S.room.ruleset||S.ruleset});return;}
     if(action==='choice'){await command({type:'action',action:{type:'choice',choiceId:b.dataset.choice,optionId:b.dataset.option}});return;}
     if(action==='craft'){await command({type:'action',action:{type:'craft',card:b.dataset.card}});return;}
     if(action==='resign'){if(confirm('确定认输并结束当前对局？存档会保留。'))await command({type:'resign'});return;}
@@ -579,7 +588,7 @@ app.addEventListener('click',event=>{const b=event.target.closest('[data-action]
   });
 });
 app.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('[role=button]')){event.preventDefault();event.target.dispatchEvent(new MouseEvent('click',{bubbles:true}));}});
-app.addEventListener('change',event=>{if(event.target.id==='ruleset'){S.ruleset=event.target.value;}});
+app.addEventListener('change',event=>{if(event.target.id==='ruleset'){const ruleset=event.target.value;safely(async()=>{await command({type:'ruleset',ruleset});});}});
 window.addEventListener('beforeunload',closeStream);
 async function init(){try{const [session,art]=await Promise.all([api('/api/me'),api('/asset-manifest.json')]);ART=art;S.user=session.user;if(S.user){if(S.user.role==='admin'){await loadAdmin();return;}if(location.hash==='#tutorials'){await loadTutorials();return;}const tutorial=location.hash.match(/^#tutorial=([a-z-]+)$/);if(tutorial){enterTutorial((await api(`/api/tutorials/${tutorial[1]}/start`,{})).room);return;}S.rooms=(await api('/api/rooms')).rooms;const m=location.hash.match(/^#room=(\d{6})$/);if(m){try{await enter((await api(`/api/rooms/${m[1]}`)).room);return;}catch{location.hash='';}}}render();}catch{app.innerHTML='<div class="loading">连接服务器失败，请刷新重试。</div>';}}
 setInterval(async()=>{if(S.user&&!S.room&&!S.busy&&!S.history){try{const rooms=(await api('/api/rooms')).rooms;S.rooms=rooms;const grid=document.querySelector('.room-grid');if(grid)grid.innerHTML=rooms.map(roomCard).join('')||'<div class="empty">暂无房间，创建一间邀请朋友加入。</div>';}catch{}}},8000);
