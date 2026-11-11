@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "lessons": [
     {
       "id": "basics",
@@ -597,6 +597,300 @@
           "result": "",
           "sourceKeys": [
             "tutorial5.goal.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lizard",
+      "title": "蜥蜴神教",
+      "faction": "lizard",
+      "summary": "神圣的鳞片：学会展示仪式、花园、失魂与被逐者，以及侍僧密谋。",
+      "steps": [
+        {
+          "id": "liz-intro",
+          "title": "神圣的鳞片：认识神教",
+          "text": "蜥蜴通过展示手牌执行仪式，靠花园和得分仪式发展；清晨用侍僧发动密谋。原版称花园为庭院、侍僧为仆从、被逐者为遭弃类型，本章沿用网页版术语。点击玩家卡可查看三色花园轨道、失魂堆和公开展示牌。",
+          "goal": "read",
+          "actions": [],
+          "scene": "liz-overview",
+          "result": "",
+          "sourceKeys": [
+            "lct.intro",
+            "lct.garden",
+            "lct.strategy"
+          ]
+        },
+        {
+          "id": "liz-setup",
+          "title": "选择起始花园与被逐者",
+          "text": "先在地图高亮角落放置4名士兵和1座匹配花园，邻接领地会各放1名士兵；随后选择初始被逐者花色。角落由当前规则决定，不能占用其他玩家的起始角落。这是整章唯一的自由选择被逐者步骤。",
+          "goal": "setup",
+          "actions": [
+            "choice"
+          ],
+          "scene": "liz-setup",
+          "result": "开局完成。之后的被逐者由失魂堆决定，而不是每回合任意选择。",
+          "sourceKeys": [
+            "lct.place.warriors",
+            "lct.adjacent.warriors",
+            "lct.pick.outcast",
+            "lct.pick.outcast.2"
+          ]
+        },
+        {
+          "id": "liz-recruit",
+          "title": "展示手牌招募",
+          "text": "练习中已在秋林2放有老鼠花园。选择“仪式招募”，点秋林4，展示一张老鼠牌招募1名士兵。展示牌会离开手牌进入公开区，本回合不能再次支付。鸟牌不能代替老鼠牌。",
+          "goal": "action",
+          "actions": [
+            "ritual-recruit"
+          ],
+          "scene": "liz-rituals",
+          "result": "你没有弃掉这张牌，而是将它公开展示；它将在夜晚回手。",
+          "sourceKeys": [
+            "lct.explain.reveal",
+            "lct.recruit.intro",
+            "lct.reveal.icon",
+            "lct.hatred.birds"
+          ]
+        },
+        {
+          "id": "liz-build",
+          "title": "用另一张牌建造花园",
+          "text": "秋林4刚招募的士兵让你控制了这块老鼠领地。选择“仪式建造”，点秋林4，展示另一张老鼠牌放置第二座老鼠花园。建造需要控制权、空建筑格和该色花园供应；有花园后，蜥蜴优先控制该领地。",
+          "goal": "action",
+          "actions": [
+            "ritual-build"
+          ],
+          "scene": null,
+          "result": "第二座老鼠花园已建成。花园使你拥有控制权，但建造本身不会自动得到花园仪式分。",
+          "sourceKeys": [
+            "lct.first.build",
+            "lct.pilgrims"
+          ]
+        },
+        {
+          "id": "liz-score",
+          "title": "花费手牌举行得分仪式",
+          "text": "你现在有两座老鼠花园。选择“仪式得分”，花费剩下的老鼠牌获得2分。这张牌进入失魂堆，不会像展示牌那样在夜晚收回。每个花色每回合只能得分一次，没有该色花园时不能得分。",
+          "goal": "action",
+          "actions": [
+            "ritual-score"
+          ],
+          "scene": null,
+          "result": "获得2分。建造、展示和花费是不同操作；得分仪式会真正消耗卡牌。",
+          "sourceKeys": [
+            "lct.garden.track",
+            "lct.score",
+            "lct.score.2"
+          ]
+        },
+        {
+          "id": "liz-return",
+          "title": "进入夜晚，收回展示牌",
+          "text": "点击“进入夜晚”。刚才招募和建造展示的两张牌会先返回手牌，然后进入夜晚锻造阶段。原版提示它们不能再用于本回合的仪式，并不表示它们要一直留在公开区。",
+          "goal": "action",
+          "actions": [
+            "end"
+          ],
+          "scene": null,
+          "result": "两张展示牌已返回手牌，失魂堆中的得分牌不会返回。",
+          "sourceKeys": [
+            "lct.return",
+            "lct.reveal.icon"
+          ]
+        },
+        {
+          "id": "liz-craft",
+          "title": "用被逐者花园锻造草根茶",
+          "text": "本节被逐者是老鼠，夜晚只能激活老鼠花园锻造。选择锻造“草根茶”，支付一个老鼠锻造点。牌面自己的花色不等于锻造所需花色；看卡牌费用。展示牌回手后也能按正常锻造规则使用。",
+          "goal": "action",
+          "actions": [
+            "craft"
+          ],
+          "scene": null,
+          "result": "已锻造草根茶，获得物品和2分。每座花园每回合只能作为锻造点使用一次。",
+          "sourceKeys": [
+            "lct.t2.craft.2"
+          ]
+        },
+        {
+          "id": "liz-draw",
+          "title": "结束夜晚锻造并抽牌",
+          "text": "点击“结束夜晚锻造，抽牌”。基础抽1张，再加花园轨道已经揭开的奖励：本练习有两座老鼠花园，因此多抽1张。这里的奖励是同色第二座花园揭开1个标记，不是每两座都再奖励一次。",
+          "goal": "action",
+          "actions": [
+            "lizard-craft-done"
+          ],
+          "scene": null,
+          "result": "本次共抽2张牌。正式对局夜晚若超过5张，还需选择弃牌。",
+          "sourceKeys": [
+            "lct.garden.draw"
+          ]
+        },
+        {
+          "id": "liz-revenge",
+          "title": "防守损失如何成为侍僧",
+          "text": "教练已向秋林2的3名蜥蜴发动战斗，敌军有2名。本节骰子固定为3/3，且没有伏击牌；确认“不发动伏击”，观察命中上限和复仇。只有防守战斗损失的蜥蜴才会成为侍僧。",
+          "goal": "liz-revenge",
+          "actions": [
+            "choice"
+          ],
+          "scene": "liz-revenge",
+          "result": "防守损失2名蜥蜴，获得2名侍僧；1名蜥蜴和花园仍留在秋林2。",
+          "sourceKeys": [
+            "lct.marquise.dialog.attack",
+            "lct.revenge"
+          ]
+        },
+        {
+          "id": "liz-outcast",
+          "title": "让失魂决定被逐者",
+          "text": "失魂堆预置了2张老鼠、1张兔子和1张鸟牌；原被逐者为狐狸。点击“结束清晨牌效果”。统计时忽略鸟牌，唯一最多的老鼠成为新被逐者；失魂随后移入弃牌堆。本次换了花色，因此不是憎恨。",
+          "goal": "liz-outcast",
+          "actions": [
+            "birdsong-end"
+          ],
+          "scene": "liz-outcast",
+          "result": "新被逐者是老鼠。对手的花费和弃牌同样会影响下一次统计；相同最多或平票的处理按当前规则执行。",
+          "sourceKeys": [
+            "lct.lost.souls",
+            "lct.enemy.lost.souls",
+            "lct.t3.outcast"
+          ]
+        },
+        {
+          "id": "liz-crusade",
+          "title": "圣战：移动后再战斗",
+          "text": "本节有2名侍僧，未憎恨的老鼠被逐者。选择“圣战移动”，从秋林2沿道路向高亮邻地移动2名蜥蜴；移动后选择与飞鹰战斗。移动仍需控制起点或终点，追加战斗不再花侍僧。本节骰子固定3/3。",
+          "goal": "liz-crusade",
+          "actions": [
+            "crusade",
+            "choice"
+          ],
+          "scene": "liz-crusade",
+          "result": "2名侍僧已消耗。圣战可以从被逐者领地移入其他花色领地，再在目的地战斗。",
+          "sourceKeys": [
+            "lct.intro.conspiracy",
+            "lct.crusade"
+          ]
+        },
+        {
+          "id": "liz-battle",
+          "title": "圣战：直接在原地战斗",
+          "text": "圣战也可以不移动，直接在被逐者领地战斗。选择“圣战”，点秋林2向飞鹰发起战斗，花费2名侍僧。本节2名蜥蜴对1名飞鹰，骰子固定3/3；留意进攻方损失不会补充侍僧。",
+          "goal": "liz-attack",
+          "actions": [
+            "crusade",
+            "choice"
+          ],
+          "scene": "liz-battle",
+          "result": "你移除了飞鹰，也损失1名进攻蜥蜴。侍僧仍为0，复仇只适用于防守战斗损失。",
+          "sourceKeys": [
+            "lct.t3.crusade.battle",
+            "lct.t3.crusade.battle.2"
+          ]
+        },
+        {
+          "id": "liz-sacrifice",
+          "title": "连续三次献祭",
+          "text": "用手中的3张鸟牌分别执行“献祭”。每次展示一张鸟牌，把储备中的1名蜥蜴放入侍僧区。鸟牌不能当作花色仪式的万能牌，但每张都能用于一次献祭。",
+          "goal": "liz-sacrifice",
+          "actions": [
+            "sacrifice"
+          ],
+          "scene": "liz-sacrifice",
+          "result": "3张鸟牌均已公开展示，侍僧增加到3名。夜晚仍会收回这些鸟牌。",
+          "sourceKeys": [
+            "lct.hatred.birds",
+            "lct.intro.sacrifice",
+            "lct.t3.sacrifice"
+          ]
+        },
+        {
+          "id": "liz-discard",
+          "title": "弃牌影响下次被逐者",
+          "text": "本节直接预置到夜晚弃牌：你有7张手牌，原被逐者为兔子，并保留3名侍僧。选择并弃掉2张兔子牌，把手牌减到5张。它们会进入公开失魂堆；对手后续仍可能改变多数花色。",
+          "goal": "liz-discard",
+          "actions": [
+            "discard"
+          ],
+          "scene": "liz-discard",
+          "result": "两张兔子牌进入失魂堆。下一节将直接预置到你的下一次清晨，保留这两张弃牌和当前棋盘。",
+          "sourceKeys": [
+            "lct.t3.discard",
+            "lct.t3.discard.2"
+          ]
+        },
+        {
+          "id": "liz-hated",
+          "title": "相同花色成为憎恨",
+          "text": "现在已来到下次清晨，沿用刚才的两张兔子失魂牌。点击“结束清晨牌效果”。最多花色与当前兔子被逐者相同，因此转为憎恨：圣战和转化成本从2降至1，圣化从3降至2。",
+          "goal": "liz-hated",
+          "actions": [
+            "birdsong-end"
+          ],
+          "scene": "liz-next-birdsong",
+          "result": "兔子被逐者已成为憎恨。本轮剩下的3名侍僧足够完成一次转化和一次圣化。",
+          "sourceKeys": [
+            "lct.t4.hated.outcast"
+          ]
+        },
+        {
+          "id": "liz-convert",
+          "title": "用一名侍僧转化敌兵",
+          "text": "选择“转化”，点秋林11，把其中1名飞鹰战士替换为蜥蜴。该领地是兔子花色，符合被逐者限制；憎恨状态让本次只花1名侍僧。转化战士不直接得分。",
+          "goal": "action",
+          "actions": [
+            "convert"
+          ],
+          "scene": null,
+          "result": "敌方战士已被替换，剩余2名侍僧。飞鹰鸟巢还在，可以继续圣化。",
+          "sourceKeys": [
+            "lct.t4.convert"
+          ]
+        },
+        {
+          "id": "liz-sanctify",
+          "title": "用两名侍僧圣化建筑",
+          "text": "选择“圣化”，点秋林11，把飞鹰鸟巢替换为兔子花园。憎恨状态下花费2名侍僧；替换利用被移除建筑腾出的格子，并要求有兔子花园供应。移除敌方建筑获得1分。",
+          "goal": "action",
+          "actions": [
+            "sanctify"
+          ],
+          "scene": null,
+          "result": "鸟巢已变为兔子花园，侍僧用完，并因移除建筑获得1分。原版称此行动为“净化”，网页版称“圣化”。",
+          "sourceKeys": [
+            "lct.t4.sanctify"
+          ]
+        },
+        {
+          "id": "liz-fear",
+          "title": "花园被拆与随机弃牌",
+          "text": "本节飞鹰正在进攻秋林2中无人防守的花园。确认“不发动伏击”，观察花园返回供应，以及信徒恐惧造成的随机弃牌。骰子固定3/3；随机结果由服务器决定并保存，不能靠刷新重掷。",
+          "goal": "liz-fear",
+          "actions": [
+            "choice"
+          ],
+          "scene": "liz-fear",
+          "result": "花园被拆，随机失去1张手牌并进入失魂堆。没有防守战士损失，因此不会获得侍僧。",
+          "sourceKeys": [
+            "lct.ftt.garden.removed"
+          ]
+        },
+        {
+          "id": "liz-summary",
+          "title": "把仪式与密谋串成一局",
+          "text": "原版教程以累计12分作为收尾；本章将其拆为已完成的短练习，不要求再打一整局。正式游戏中，先用手牌维持仪式与花园，再观察失魂多数和憎恨，准备侍僧发动密谋。可以返回大厅创建蜥蜴扩展局，添加人机继续练习。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "lct.t4.off.rails",
+            "lct.goal.12vp",
+            "lct.strategy"
           ]
         }
       ]

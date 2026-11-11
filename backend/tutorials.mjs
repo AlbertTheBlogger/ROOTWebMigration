@@ -1,7 +1,7 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import { readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
-import * as rules from './rules/versions/base-four.mjs';
+import * as rules from './rules/versions/registry.mjs';
 
 const catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog.json',import.meta.url),'utf8'));
 const recipes=JSON.parse(readFileSync(new URL('./data/full-card-catalog.json',import.meta.url),'utf8')).cards;
@@ -27,8 +27,9 @@ function resolveOpponents(state,userId){
 }
 function setupState(run){
   const lesson=lessonById(run.lessonId);
-  const members=factions.map(faction=>({userId:faction===lesson.faction?run.userId:`tutorial-${faction}`,name:faction===lesson.faction?run.playerName:labels[faction],faction}));
-  return resolveOpponents(rules.createGame(members,()=>0),run.userId);
+  const selected=lesson.faction==='lizard'?['cat','bird','alliance','lizard']:factions;
+  const members=selected.map(faction=>({userId:faction===lesson.faction?run.userId:`tutorial-${faction}`,name:faction===lesson.faction?run.playerName:labels[faction],faction}));
+  return resolveOpponents(rules.createGame(members,()=>0,lesson.faction==='lizard'?'root-lizard-cult-v6':'root-base-four-v5'),run.userId);
 }
 function baseline(run){
   let state=setupState(run);
@@ -38,7 +39,7 @@ function baseline(run){
     state=rules.applyAction(state,choice.playerId,{type:'choice',choiceId:choice.id,optionId:option},()=>0);
   }
   state.deck.push(...state.players.flatMap(p=>p.hand.splice(0)),...state.alliance.supporters.splice(0));
-  for(const area of state.board){area.warriors={cat:0,bird:0,alliance:0};area.buildings=[];area.wood=0;area.keep=false;area.sympathy=false;area.ruins=0;}
+  for(const area of state.board){area.warriors=Object.fromEntries(Object.keys(area.warriors).map(faction=>[faction,0]));area.buildings=[];area.wood=0;area.keep=false;area.sympathy=false;area.ruins=0;}
   state.turn=state.players.findIndex(p=>p.id===run.userId);state.turnsCompleted=0;state.round=1;
   state.phase='daylight';state.actions=3;state.march=0;state.effects.frames=[];state.combat=null;state.winner=null;
   state.log=['已载入本节练习局面'];state.logTurns=[1];
@@ -71,11 +72,49 @@ function prepare(run){
   if(step.scene==='basic-march'){
     run.context={from:3,to:run.game.board[3].links.find(id=>id!==0)};return;
   }
-  if(['cat-setup','bird-setup','vg-setup'].includes(step.scene)){run.game=setupState(run);return;}
+  if(['cat-setup','bird-setup','vg-setup','liz-setup'].includes(step.scene)){run.game=setupState(run);return;}
+  if(step.scene==='liz-next-birdsong'){
+    // Explicit tutorial time jump: retain the learner's two discards and board.
+    run.game.turn=run.game.players.findIndex(p=>p.id===run.userId);run.game.phase='birdsong';run.game.effects.frames=[];
+    run.game.lizard.scoredSuits=[];run.context={clearing:11,target:'bird'};return;
+  }
   const state=baseline(run);run.game=state;
   const hero=state.players.find(p=>p.id===run.userId);
   const area=id=>state.board.find(area=>area.id===id);
   switch(step.scene){
+    case 'liz-overview':area(2).warriors.lizard=4;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];state.lizard.outcast='mouse';break;
+    case 'liz-rituals':{
+      area(2).warriors.lizard=2;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];state.lizard.outcast='mouse';
+      for(let i=0;i<3;i++)deal(state,hero,card=>card.suit==='mouse');
+      const tea=deal(state,hero,card=>card.archetype==='RootTeaFox');run.context={clearing:4,craftCard:tea.id};break;
+    }
+    case 'liz-revenge':
+      area(2).warriors.lizard=3;area(2).warriors.bird=2;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];state.lizard.outcast='mouse';
+      run.context={clearing:2};npcBattle(run,'bird','lizard',2);break;
+    case 'liz-outcast':{
+      state.phase='birdsong';state.lizard.outcast='fox';state.lizard.hated=false;
+      area(2).warriors.lizard=3;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];
+      for(const suit of ['mouse','mouse','rabbit','wild']){const holder={hand:[]};state.lizard.lostSouls.push(deal(state,holder,card=>card.suit===suit));}
+      break;
+    }
+    case 'liz-crusade':{
+      state.phase='lizard-conspiracies';state.lizard.outcast='mouse';state.lizard.acolytes=2;
+      area(2).warriors.lizard=3;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];
+      const to=area(2).links[0];area(to).warriors.bird=1;run.context={from:2,to,count:2,target:'bird'};break;
+    }
+    case 'liz-battle':
+      state.phase='lizard-conspiracies';state.lizard.outcast='mouse';state.lizard.acolytes=2;
+      area(2).warriors.lizard=2;area(2).warriors.bird=1;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];run.context={clearing:2,target:'bird'};break;
+    case 'liz-sacrifice':for(let i=0;i<3;i++)deal(state,hero,card=>card.suit==='wild');break;
+    case 'liz-discard':
+      state.phase='discard';state.lizard.outcast='rabbit';state.lizard.hated=false;state.lizard.acolytes=3;
+      area(1).warriors.lizard=2;area(1).buildings=[{faction:'lizard',type:'garden-rabbit'}];
+      area(11).warriors.bird=1;area(11).buildings=[{faction:'bird',type:'roost'}];
+      for(let i=0;i<2;i++)deal(state,hero,card=>card.suit==='rabbit');
+      for(let i=0;i<5;i++)deal(state,hero,card=>['fox','mouse'].includes(card.suit));break;
+    case 'liz-fear':
+      area(2).warriors.bird=1;area(2).buildings=[{faction:'lizard',type:'garden-mouse'}];
+      for(let i=0;i<2;i++)deal(state,hero,card=>card.kind!=='ambush');run.context={clearing:2};npcBattle(run,'bird','lizard',2);break;
     case 'overview':area(0).warriors.cat=3;area(0).keep=true;deal(state,hero,card=>card.kind==='item');break;
     case 'basic-move':area(0).warriors.cat=3;run.context={from:0,to:3};break;
     case 'basic-defenseless':area(3).warriors.cat=1;area(3).buildings=[{faction:'bird',type:'roost'}];run.context={clearing:3,target:'bird'};break;
@@ -146,11 +185,15 @@ function allowed(run,action){
     const choice=run.game.effects.frames[0];const option=choice?.options.find(option=>option.id===action.optionId);
     if(!option)return false;
     if(choice.kind==='setup-character')return option.id==='thief';
+    if(step.id==='liz-crusade'&&choice.kind==='lizard-crusade-battle')return option.id===context.target;
     if(step.id==='bird-leader'&&choice.kind==='setup-leader')return option.id==='despot';
     return choice.kind!=='hospital'||option.id!=='pass';
   }
   if(action.type==='decree-add')return action.column==='recruit';
-  if(action.type==='craft')return action.card===context.card;
+  if(action.type==='craft')return action.card===(context.card||context.craftCard);
+  if(action.type==='crusade'&&step.id==='liz-crusade')return action.from===context.from&&action.to===context.to&&action.count===context.count;
+  if(action.type==='crusade'&&step.id==='liz-battle')return action.from===undefined&&action.clearing===context.clearing&&action.defender===context.target;
+  if(action.type==='discard'&&step.id==='liz-discard')return player(run.game,'lizard').hand.find(card=>card.id===action.card)?.suit==='rabbit';
   if(action.type==='build'&&context.building&&action.building!==context.building)return false;
   if(action.type==='quest')return action.quest===context.quest;
   if(action.type==='move')return action.from===context.from&&action.to===context.to&&(step.id!=='wa-organize'||run.game.board[context.to].warriors.alliance===0);
@@ -163,6 +206,14 @@ function allowed(run,action){
 function achieved(run,action){
   const state=run.game,step=currentStep(run);
   switch(step.goal){
+    case 'liz-revenge':return state.lizard.acolytes===2&&!state.combat&&!state.effects.frames.length;
+    case 'liz-outcast':return state.phase==='lizard-conspiracies'&&state.lizard.outcast==='mouse'&&!state.lizard.hated&&state.lizard.lostSouls.length===0;
+    case 'liz-crusade':return state.lizard.acolytes===0&&state.board[run.context.to].warriors.bird===0&&!state.combat&&!state.effects.frames.length;
+    case 'liz-attack':return state.lizard.acolytes===0&&state.board[2].warriors.lizard===1&&state.board[2].warriors.bird===0&&!state.combat;
+    case 'liz-sacrifice':return run.count===3&&state.lizard.acolytes===3&&state.lizard.revealed.length===3;
+    case 'liz-discard':return run.count===2&&player(state,'lizard').hand.length===5&&state.lizard.lostSouls.filter(card=>card.suit==='rabbit').length===2;
+    case 'liz-hated':return state.phase==='lizard-conspiracies'&&state.lizard.outcast==='rabbit'&&state.lizard.hated;
+    case 'liz-fear':return player(state,'lizard').hand.length===1&&state.lizard.lostSouls.length===1&&!state.board[2].buildings.some(b=>b.faction==='lizard')&&!state.combat;
     case 'action':return action.type===step.actions[0]&&!state.combat&&!state.effects.frames.some(frame=>frame.type==='choice');
     case 'setup':return state.setup.complete;
     case 'leader':return state.bird.leader==='despot'&&state.setup.complete;
@@ -192,7 +243,7 @@ export function advanceTutorial(source,command){
   ensure(command.type==='action'&&!run.ready,'请点击继续进入下一节');
   ensure(command.action&&allowed(run,command.action),'请按本节目标操作，可查看提示或重试本节');
   run.game=resolveOpponents(rules.applyAction(run.game,run.userId,command.action,rng),run.userId);
-  if(currentStep(run).goal==='twice')run.count++;
+  if(['twice','liz-sacrifice','liz-discard'].includes(currentStep(run).goal))run.count++;
   run.ready=achieved(run,command.action);return run;
 }
 export function projectTutorial(run,version){
@@ -204,5 +255,6 @@ export function projectTutorial(run,version){
   game.factionActions=game.factionActions.filter(option=>permitted(option.action));
   game.craftOptions=game.craftOptions.filter(option=>permitted({type:'craft',card:option.card}));game.effectOptions=[];
   if(game.choice&&!game.choice.waiting)game.choice.options=game.choice.options.filter(option=>permitted({type:'choice',optionId:option.id}));
-  return {code:`tutorial-${run.lessonId}`,title:`基础教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:4,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{id:run.id,lessonId:lesson.id,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context:run.context,count:run.count,goalCount:step.goal==='twice'?2:1,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
+  const goalCount=step.goal==='liz-sacrifice'?3:['twice','liz-discard'].includes(step.goal)?2:1;
+  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:4,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{id:run.id,lessonId:lesson.id,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context:run.context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
 }

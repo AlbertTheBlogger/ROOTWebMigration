@@ -6,11 +6,14 @@ export function tutorialAction(room){
  if(meta.actionTypes.includes('craft')&&g.craftOptions.length)return {type:'craft',card:g.craftOptions[0].card};
  if(g.phase==='decree-add')return meta.actionTypes.includes('decree-add')?{type:'decree-add',card:p.hand[0].id,column:'recruit'}:{type:'decree-ready'};
  if(g.phase==='craft')return {type:'craft-done'};
+ if(meta.actionTypes.includes('lizard-craft-done'))return {type:'lizard-craft-done'};
+ if(meta.actionTypes.includes('birdsong-end'))return {type:'birdsong-end'};
  if(g.phase==='leader')return {type:'leader',leader:g.leaders[0]};
  if(g.phase==='revolt'&&meta.actionTypes.includes('revolt-done'))return {type:'revolt-done'};
  if(g.phase==='spread'&&meta.actionTypes.includes('spread-done'))return {type:'spread-done'};
  if(g.phase==='refresh'&&meta.actionTypes.includes('refresh-done'))return {type:'refresh-done'};
  if(meta.actionTypes.includes('extra'))return {type:'extra',card:p.hand.find(card=>card.suit==='wild').id};
+ if(meta.actionTypes.includes('discard'))return {type:'discard',card:p.hand.find(card=>meta.stepId!=='liz-discard'||card.suit==='rabbit').id};
  const action=g.factionActions[0]?.action||g.mapActions[0];
  if(action)return action;
  if(meta.actionTypes.includes('end'))return {type:'end'};

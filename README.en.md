@@ -10,13 +10,15 @@ A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.
 
 The Lizard Cult is implemented as a separate expansion ruleset. Select the Lizard Cult mode when creating a room; 2–4 players can choose among five available factions. It includes Lost Souls and Outcast handling, rituals and conspiracies, gardens, Evening crafting, public panels, and simple bots. Existing v1.1 saves remain compatible. This iteration has not been deployed to production; the release tag remains v1.1.0. See the [implementation and acceptance record](docs/LIZARD-CULT-ACCEPTANCE-2026-11-11.md) (Chinese).
 
+The Lizard Cult tutorial now adds 19 guided nodes adapted from the original installation's Sacred Scales material, with checkpoint retries and saved progress. See the [extraction and acceptance record](docs/LIZARD-TUTORIAL-2026-11-11.md) (Chinese). This update has not been deployed to production.
+
 ## Current features
 
 - Independent accounts, public and password-protected rooms, per-game player names, ready states, and subsequent games.
 - Marquise de Cat, Eyrie Dynasties, Woodland Alliance, and Vagabond. Available Vagabond characters: Thief, Tinker, and Ranger.
 - The base deck, crafting, combat, and interrupting decisions, with rules and random outcomes managed by the server.
 - SQLite persistence, recovery after page refreshes or server restarts, idempotent commands, and player-specific private views.
-- Simple bots, a five-chapter tutorial, administrator tools, and an image-based board.
+- Simple bots, a six-chapter tutorial (58 nodes, including the Lizard Cult), administrator tools, and an image-based board.
 
 Expansion factions other than the Lizard Cult, a second Vagabond, additional maps, expansion decks, and advanced setup are not yet implemented. Complex rule interactions have not been exhaustively compared with the original digital game's runtime behavior. The bots are basic opponents rather than mature strategic AI.
 

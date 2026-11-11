@@ -357,7 +357,7 @@ function fitSidebars(){
 }
 function tutorialListView(){
   const lessons=S.tutorials||[];
-  frame(`<div class="heading"><div><h1>新手教程</h1><p class="muted">从基础操作开始，再学习四个阵营。</p></div>${btn('返回房间大厅','lobby')}</div><div class="notice">每节都有明确目标，进度由服务器保存。正式联机从大厅创建或加入房间，选择本局玩家名与阵营，全部准备后由房主开始。</div><div class="tutorial-catalog">${lessons.map((lesson,index)=>`<article class="panel tutorial-lesson" data-lesson="${lesson.id}">${artImage(ART.portraits[lesson.faction],names[lesson.faction],'tutorial-portrait')}<div><small>第 ${index+1} 章 · ${lesson.stepCount} 节</small><h2>${esc(lesson.title)}</h2><p>${esc(lesson.summary)}</p><p class="caption">${lesson.completed?'已完成，可再次练习':lesson.started?'进行到第 '+(lesson.step+1)+' 节':'尚未开始'}</p>${btn(lesson.started?'继续学习':'开始学习','tutorial-start','primary',false,`data-lesson="${lesson.id}"`)}</div></article>`).join('')}</div>`);
+  frame(`<div class="heading"><div><h1>新手教程</h1><p class="muted">从基础操作开始，再学习基础与扩展阵营。</p></div>${btn('返回房间大厅','lobby')}</div><div class="notice">每节都有明确目标，进度由服务器保存。正式联机从大厅创建或加入房间，选择本局玩家名与阵营，全部准备后由房主开始。</div><div class="tutorial-catalog">${lessons.map((lesson,index)=>`<article class="panel tutorial-lesson" data-lesson="${lesson.id}">${artImage(ART.portraits[lesson.faction],names[lesson.faction],'tutorial-portrait')}<div><small>第 ${index+1} 章 · ${lesson.stepCount} 节</small><h2>${esc(lesson.title)}</h2><p>${esc(lesson.summary)}</p><p class="caption">${lesson.completed?'已完成，可再次练习':lesson.started?'进行到第 '+(lesson.step+1)+' 节':'尚未开始'}</p>${btn(lesson.started?'继续学习':'开始学习','tutorial-start','primary',false,`data-lesson="${lesson.id}"`)}</div></article>`).join('')}</div>`);
 }
 function tutorialCoach(meta){
   const context=meta.context;

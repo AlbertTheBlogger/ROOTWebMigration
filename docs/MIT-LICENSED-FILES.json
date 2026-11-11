@@ -33,6 +33,7 @@
     "docs/LICENSE-SCOPE-AUDIT-2026-11-11.md",
     "docs/LICENSE-SCOPE-INVENTORY-2026-11-11.csv",
     "docs/LIZARD-CULT-ACCEPTANCE-2026-11-11.md",
+    "docs/LIZARD-TUTORIAL-2026-11-11.md",
     "docs/MIT-LICENSE-APPLICATION-2026-11-11.md",
     "docs/MIT-LICENSED-FILES.json",
     "docs/ORIGINAL-ART-2026-11-09.md",
@@ -93,6 +94,12 @@
       "feature": "Lizard Cult implementation, tests, browser acceptance and engineering record",
       "addedFiles": 5,
       "excluded": "Original art, extracted data and game text remain excluded."
+    },
+    {
+      "date": "2026-11-11",
+      "feature": "Lizard tutorial engineering record; existing licensed implementation/test files extended",
+      "addedFiles": 1,
+      "excluded": "Original/extracted/adapted tutorial text, research evidence and the new extraction utility remain outside this grant."
     }
   ]
 }

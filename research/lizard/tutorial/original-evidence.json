@@ -1,0 +1,1295 @@
+{
+  "tool": "tools/research_lizard_tutorial.py",
+  "method": "Fresh read-only Unity TextAsset extraction and tutorial menu scan; existing IL2CPP metadata cross-reference. No original executable run or script-body recovery.",
+  "source": "Root_Data/StreamingAssets/Localization/win/localization",
+  "sourceSha256": "643d20f7d1bf1ccc419782cf6654b884a22d8f4f911f78d2a3c7b4ad59d5fd5c",
+  "locales": {
+    "en_US": {
+      "textSha256": "f3202bdf5fc129417fe82ae9eabd5b6188102da2d66b3411e16178fbc7401be3",
+      "pathId": 1828328055999055205,
+      "entryCount": 50,
+      "entries": {
+        "lct.intro": {
+          "text": "The <color=#748421>Lizard Cult</color> wishes to spread our gospel throughout the woodland. You must seek <color=#748421>outcasts</color> and <color=#748421>acolytes</color> to crusade for your cause and defend your sanctum. But your fight is not with tooth and claw alone. Tending to your <sprite name=\"Garden\"><color=#748421>Gardens</color> reveals a path to victory through mysterious rituals.",
+          "line": 955
+        },
+        "lct.place.warriors": {
+          "text": "You start the game with 4 humble <color=#748421>warriors</color> and a <sprite name=\"Garden\"><color=#748421>Garden</color> building in the corner clearing opposite the Marquise de Cat Keep.",
+          "line": 956
+        },
+        "lct.adjacent.warriors": {
+          "text": "In addition, you place a warrior in each clearing adjacent to your starting <sprite name=\"Garden\"><color=#748421>Garden</color>.",
+          "line": 957
+        },
+        "lct.explain.reveal": {
+          "text": "During Daylight, you perform <color=#748421>ritual</color> actions by revealing cards from your hand.",
+          "line": 958
+        },
+        "lct.recruit.intro": {
+          "text": "Using the <color=#748421>Recruit</color> ritual you may reveal a card from your hand to recruit a warrior in a clearing matching its suit. ",
+          "line": 959
+        },
+        "lct.reveal.icon": {
+          "text": "The cards you reveal are moved to the <sprite name=\"eyeicon\"> area and can't be used for rituals again until your next turn.",
+          "line": 960
+        },
+        "lct.first.build": {
+          "text": "Let's try another <color=#748421>ritual</color> using a different card in our hand. Use the <color=#748421>Build</color> ritual to reveal a <sprite name=\"mouseicon\"> card and place a <sprite name=\"Garden\"><color=#748421>Garden</color> in a matching clearing you rule.",
+          "line": 961
+        },
+        "lct.pilgrims": {
+          "text": "You automatically rule any clearing where you have a <sprite name=\"Garden\"><color=#748421>Garden</color>. Even non-believers are in awe of their divine properties.",
+          "line": 962
+        },
+        "lct.garden": {
+          "text": "<sprite name=\"Garden\"><color=#748421>Gardens</color> can be used to score points with the <color=#748421>Score</color> ritual. Tap your avatar to learn more about <sprite name=\"Garden\"><color=#748421>Gardens</color>.",
+          "line": 963
+        },
+        "lct.garden.gamepad": {
+          "text": "<sprite name=\"Garden\"><color=#748421>Gardens</color> can be used to score points with the <color=#748421>Score</color> ritual. Press <sprite name=\"Switch_LeftBumper\"> to learn more about <sprite name=\"Garden\"><color=#748421>Gardens</color>.",
+          "line": 964
+        },
+        "lct.garden.track": {
+          "text": "The more <sprite name=\"Garden\"><color=#748421>Gardens</color> you have on the map of a suit, the more points you score when using the <color=#748421>Score</color> ritual.",
+          "line": 965
+        },
+        "lct.garden.draw": {
+          "text": "You uncover a <sprite name=\"DrawCard\"> when you have two <sprite name=\"Garden\"><color=#748421>Gardens</color> of the same suit on the map. Doing so increases the cards you draw during Evening.",
+          "line": 966
+        },
+        "lct.score": {
+          "text": "Use the <color=#748421>Score</color> ritual to discard a <sprite name=\"mouseicon\"> card and gain <style=\"vpnum\">2</style>. This is a unique and powerful ritual that requires you discard the card you used rather than reveal it.",
+          "line": 967
+        },
+        "lct.score.2": {
+          "text": "You may perform the <color=#748421>Score</color> ritual only once per suit each turn. ",
+          "line": 968
+        },
+        "lct.return": {
+          "text": "The cards you revealed for rituals are now returned to your hand.",
+          "line": 969
+        },
+        "lct.strategy": {
+          "text": "Carefully managing the suits in your hand is key to the cult's success.",
+          "line": 970
+        },
+        "lct.marquise.dialog.attack": {
+          "text": "Time to kick these zealots back to the stone age! En garde!",
+          "line": 971
+        },
+        "lct.revenge": {
+          "text": "These whiskered heathens have dealt a blow to our warriors. Thankfully, our <color=#748421>Revenge</color> ability allows us to transform our fallen defending <color=#748421>warriors</color> into <color=#748421>acolytes</color>.",
+          "line": 972
+        },
+        "lct.pick.outcast": {
+          "text": "The <color=#748421>Outcast</color> determines the clearing suits you can interact with using your <color=#748421>acolytes</color>. Choosing <sprite name=\"mouseicon\"> will allow us to wage war against enemies in <sprite name=\"mouseicon\"> clearings this turn. ",
+          "line": 973
+        },
+        "lct.pick.outcast.2": {
+          "text": "In a typical game you will choose the initial <color=#748421>Outcast</color> suit during setup, but the cult makes exceptions for true believers like you.",
+          "line": 974
+        },
+        "lct.intro.conspiracy": {
+          "text": "Now that we have an <color=#748421>Outcast</color> and enough <color=#748421>acolytes</color>, we can perform <color=#748421>conspiracies</color> during Birdsong. <color=#748421>Conspiracies</color> are a set of conflict oriented actions that use <color=#748421>acolytes</color> instead of cards in hand.",
+          "line": 975
+        },
+        "lct.crusade": {
+          "text": "Spend two <color=#748421>acolytes</color> to use the <color=#748421>Crusade</color> Conspiracy. This will allow you to move 2 warriors from a clearing matching the suit of the <color=#748421>Outcast</color> to battle in an adjacent clearing. ",
+          "line": 976
+        },
+        "lct.t2.marquise": {
+          "text": "These wackos again? A fistful of steel should show them who's boss! ",
+          "line": 977
+        },
+        "lct.flavor.battle": {
+          "text": "May this burning pyre of sawdust please the gods.",
+          "line": 978
+        },
+        "lct.hatred.birds": {
+          "text": "Because of your <color=#748421>Hatred of Birds</color>, your <sprite name=\"birdicon\"> cards can't be used as any suit for performing rituals. Instead they are used for a unique ritual called <color=#748421>Sacrifice</color>.",
+          "line": 979
+        },
+        "lct.intro.sacrifice": {
+          "text": "Reveal <sprite name=\"birdicon\"> cards for the <color=#748421>Sacrifice</color> ritual to transform warriors in your supply into more <color=#748421>Acolytes</color> that can be used for <color=#748421>Conspiracies</color>.",
+          "line": 980
+        },
+        "lct.t2.ritual": {
+          "text": "Our rituals offer flexibility in where to recruit and build on the map. Let's <color=#748421>Recruit</color> to a new area of the map now.",
+          "line": 981
+        },
+        "lct.t2.craft": {
+          "text": "Reveal a <sprite name=\"rabbiticon\"> to add a <sprite name=\"Garden\"><color=#748421>Garden</color> to the clearing where you destroyed your enemy's sawmill.",
+          "line": 982
+        },
+        "lct.t2.craft.2": {
+          "text": "<sprite name=\"Garden\"><color=#748421>Gardens</color> matching the suit of the outcast contribute towards crafting during evening. Use their crafting power to score Root Tea.",
+          "line": 983
+        },
+        "lct.lost.souls": {
+          "text": "Used and discarded cards from all players go to the <color=#748421>Lost Souls</color> pile rather than the discard pile. The most common suit of these <color=#748421>Lost Souls</color> will determine the suit of the <color=#748421>Outcast</color> at the start of your turn.",
+          "line": 984
+        },
+        "lct.enemy.lost.souls": {
+          "text": "Enemy cards go to the <color=#748421>Lost Souls</color> pile as well. Watch out, even a careful plot to control the <color=#748421>Outcast</color> suit can be disrupted by clever opponents.",
+          "line": 985
+        },
+        "lct.t3.outcast": {
+          "text": "At the start of your turn, the most common suit in the <color=#748421>Lost Souls</color> pile (ignoring <sprite name=\"birdicon\">) determines the new <color=#748421>Outcast</color>. Then the <color=#748421>lost souls</color> pile is sent to the discard pile.",
+          "line": 986
+        },
+        "lct.t3.outcast.2": {
+          "text": "Since <sprite name=\"rabbiticon\"> was the most common suit, it becomes the new Outcast.",
+          "line": 987
+        },
+        "lct.t3.crusade.battle": {
+          "text": "There is more than one way to <color=#748421>Crusade</color>. Rather than move from an <color=#748421>Outcast</color> clearing and battle in a neighboring clearing you can also battle in the <color=#748421>Outcast</color> clearing itself. Do so now to protect your <sprite name=\"Garden\"><color=#748421>Garden</color>.",
+          "line": 988
+        },
+        "lct.t3.crusade.battle.2": {
+          "text": "Success. However, you lost a warrior in the battle. Remember, only <color=#748421>warriors</color> lost in battles where you were the DEFENDER seek revenge by becoming <color=#748421>acolytes</color>.",
+          "line": 989
+        },
+        "lct.t3.sacrifice": {
+          "text": "Use the <color=#748421>Sacrifice</color> action three times to gain more <color=#748421>acolytes</color>.",
+          "line": 990
+        },
+        "lct.t3.recruit": {
+          "text": "Use the <color=#748421>Recruit</color> action to place another <color=#748421>warrior</color> near your <sprite name=\"Garden\"><color=#748421>Gardens</color>.",
+          "line": 991
+        },
+        "lct.t3.recruit.2": {
+          "text": "Finally let's <color=#748421>Recruit</color> again to establish rule in the <sprite name=\"rabbiticon\"> clearing near your <sprite name=\"Garden\"><color=#748421>Gardens</color>.",
+          "line": 992
+        },
+        "lct.t3.discard": {
+          "text": "You have too many cards in hand. Discarding two bunny cards will help to ensure the <color=#748421>Outcast</color> will become the <color=#748421>Hated Outcast</color>.",
+          "line": 993
+        },
+        "lct.t3.discard.2": {
+          "text": "Being hated sounds bad you say? No no... the righteous are often misunderstood. Patience friend, you will see.",
+          "line": 994
+        },
+        "lct.t4.hated.outcast": {
+          "text": "As foretold, the most common suit in the Lost Souls pile is the same as the suit of the current <color=#748421>Outcast</color>. When this happens, the <color=#748421>Outcast</color> becomes the <color=#748421>Hated Outcast</color>, reducing the cost of your <color=#748421>conspiracies</color> by 1!",
+          "line": 995
+        },
+        "lct.t4.convert": {
+          "text": "The <color=#748421>Lizard Cult</color> welcomes new blood with open arms. Use the <color=#748421>Convert</color> conspiracy to replace an enemy warrior in an <color=#748421>Outcast</color> clearing with one of our own.",
+          "line": 996
+        },
+        "lct.t4.sanctify": {
+          "text": "We must purify not only souls, but false monuments as well. Use <color=#748421>Sanctify</color>, to replace an enemy building with a <sprite name=\"Garden\"><color=#748421>Garden</color>.",
+          "line": 997
+        },
+        "lct.t4.off.rails": {
+          "text": "Your knowledge of our sacred text is nearly complete. Score <style=\"vpnumddteen\">12</style> to prove your undying allegiance to the <color=#748421>Lizard Cult</color>.",
+          "line": 998
+        },
+        "lct.goal.12vp": {
+          "text": "Score <style=\"vpnumddteen\">12</style> ({0}/{1})",
+          "line": 999
+        },
+        "lct.ftt.garden.removed": {
+          "text": "When a <color=#748421>garden</color> is removed, it returns to your garden track, often reducing the victory points scored by rituals. In addition, you lose a random card in hand. Protect <sprite name=\"Garden\"><color=#748421>Garden</color> at all costs.",
+          "line": 1000
+        },
+        "tutorial.title.tutorialR01": {
+          "text": "Sacred Scales",
+          "line": 1130
+        },
+        "tutorial.description.tutorialR01": {
+          "text": "Learn to play the Lizard Cult",
+          "line": 1131
+        },
+        "tooltip.tutorial.hatedoutcast": {
+          "text": "Hated Outcast",
+          "line": 1149
+        },
+        "tooltip.tutorial.mostcommonsuit": {
+          "text": "Most Common Suit",
+          "line": 1150
+        }
+      }
+    },
+    "zh_CN": {
+      "textSha256": "c4ae522d22557a89f656532b6b4efb9f8ec23ee91897a59beea5be5130783628",
+      "pathId": 3930093615117646645,
+      "entryCount": 50,
+      "entries": {
+        "lct.intro": {
+          "text": "<color=#748421>蜥蜴神教</color>希望在丛林中传播福音。你必须寻找<color=#748421>遭弃者</color>和<color=#748421>仆从</color>来发动圣战，保护你的圣坛，传播你的思想。但你的战斗并不仅仅依靠牙尖爪利。通过<sprite name=\"Garden\"><color=#748421>庭院</color>的神秘仪式你也可以获得胜利。",
+          "line": 948
+        },
+        "lct.place.warriors": {
+          "text": "你在开始游戏时拥有 4 个<color=#748421>士兵</color>和一个<sprite name=\"Garden\"><color=#748421>庭院</color>。你要选择猫咪贵族对角的那个领地开始。",
+          "line": 949
+        },
+        "lct.adjacent.warriors": {
+          "text": "另外，你要在和你的初始<sprite name=\"Garden\"><color=#748421>庭院</color>相邻的领地上都放置 1 个士兵。",
+          "line": 950
+        },
+        "lct.explain.reveal": {
+          "text": "白天阶段，你可以进行<color=#748421>仪式</color>行动，只需要展示你的手牌即可。",
+          "line": 951
+        },
+        "lct.recruit.intro": {
+          "text": "通过<color=#748421>招募</color>仪式，你可以展示一张手牌来在对应类型的领地上招募 1 个士兵。",
+          "line": 952
+        },
+        "lct.reveal.icon": {
+          "text": "你展示的卡牌移动到<sprite name=\"eyeicon\">区域，而且直到下个回合，不能再被用于仪式。",
+          "line": 953
+        },
+        "lct.first.build": {
+          "text": "现在让我们试试用另一张手牌来发动另一个<color=#748421>仪式</color>。<color=#748421>建造</color>行动可以展示一张<sprite name=\"mouseicon\">类型的牌，并在一个你控制的对应类型的领地上放置一个<sprite name=\"Garden\"><color=#748421>庭院</color>。",
+          "line": 954
+        },
+        "lct.pilgrims": {
+          "text": "你自动控制所有拥有<sprite name=\"Garden\"><color=#748421>庭院</color>的领地。那些非信徒也会惊叹于圣坛的壮丽。",
+          "line": 955
+        },
+        "lct.garden": {
+          "text": "<sprite name=\"Garden\"><color=#748421>庭院</color>可以让你通过<color=#748421>得分</color>仪式获得分数。点击你的头像查看更多关于<sprite name=\"Garden\"><color=#748421>庭院</color>的信息。",
+          "line": 956
+        },
+        "lct.garden.gamepad": {
+          "text": "<sprite name=\"Garden\"><color=#748421>Gardens</color> can be used to score points with the <color=#748421>Score</color> ritual. Press <sprite name=\"Switch_LeftBumper\"> to learn more about <sprite name=\"Garden\"><color=#748421>Gardens</color>.",
+          "line": 957
+        },
+        "lct.garden.track": {
+          "text": "你拥有的<sprite name=\"Garden\"><color=#748421>庭院</color>越多，你在进行<color=#748421>得分</color>仪式时得到的分数越多。",
+          "line": 958
+        },
+        "lct.garden.draw": {
+          "text": "你每有 2 个相同类型的<sprite name=\"Garden\"><color=#748421>庭院</color>便获得 1 个<sprite name=\"DrawCard\">，这可以让你在夜晚抽取额外的卡牌。",
+          "line": 959
+        },
+        "lct.score": {
+          "text": "发动<color=#748421>得分</color>仪式，弃掉 1 张<sprite name=\"mouseicon\">牌，获得<style=\"vpnum\">2</style>点分数。这是一个独特而强大的仪式，需要通过弃牌来发动，而不是展示卡牌。",
+          "line": 960
+        },
+        "lct.score.2": {
+          "text": "你每个回合，每个类型只可以进行一次<color=#748421>得分</color>仪式。",
+          "line": 961
+        },
+        "lct.return": {
+          "text": "现在你之前展示过的卡牌将会返回你的手牌。",
+          "line": 962
+        },
+        "lct.strategy": {
+          "text": "神教的成功在于妥善的处理遭弃者的类型。",
+          "line": 963
+        },
+        "lct.marquise.dialog.attack": {
+          "text": "是时候把那些非信徒打回石器时代了！前进！",
+          "line": 964
+        },
+        "lct.revenge": {
+          "text": "这些非信徒让我们损失了一些士兵。幸好我们拥有<color=#748421>复仇</color>能力，让我们可以将作为防守方损失的<color=#748421>士兵</color>转化为<color=#748421>仆从</color>。",
+          "line": 965
+        },
+        "lct.pick.outcast": {
+          "text": "<color=#748421>遭弃者</color>类型决定了你的<color=#748421>仆从</color>可以行动的领地类型。选择<sprite name=\"mouseicon\">类型将会让我们可以在这个回合针对<sprite name=\"mouseicon\">类型的领地发起战斗。",
+          "line": 966
+        },
+        "lct.pick.outcast.2": {
+          "text": "在通常的游戏中，你只能在设置阶段选择第一个回合的<color=#748421>遭弃者</color>类型。但蜥蜴神教可以为像你这样的虔诚者开个特例。",
+          "line": 967
+        },
+        "lct.intro.conspiracy": {
+          "text": "现在我们拥有<color=#748421>遭弃者</color>领地，并且还有足够的<color=#748421>仆从</color>，我们可以在清晨阶段执行<color=#748421>阴谋</color>。<color=#748421>阴谋</color>是一些通过使用<color=#748421>仆从</color>而非卡牌来进行的行动。",
+          "line": 968
+        },
+        "lct.crusade": {
+          "text": "花费 2 个<color=#748421>仆从</color>来发动<color=#748421>圣战</color>阴谋。这可以让你从<color=#748421>遭弃者</color>类型的领地移动 2 个士兵，并对相邻领地发动战斗。",
+          "line": 969
+        },
+        "lct.t2.marquise": {
+          "text": "又是这些家伙？现在是时候让他们知道我们的厉害了！",
+          "line": 970
+        },
+        "lct.flavor.battle": {
+          "text": "愿熊熊烈火愉悦我们的圣灵！",
+          "line": 971
+        },
+        "lct.hatred.birds": {
+          "text": "因为你的<color=#748421>憎恶飞鹰</color>能力，你的<sprite name=\"birdicon\">飞鹰类型卡牌不能在仪式中当作百搭牌使用。他们只能用于一个特殊的仪式：<color=#748421>献祭</color>。",
+          "line": 972
+        },
+        "lct.intro.sacrifice": {
+          "text": "展示<sprite name=\"birdicon\">卡牌，进行<color=#748421>牺牲</color>仪式，来将你的供给堆中的士兵转化为<color=#748421>仆从</color>，而仆从可以用于发动<color=#748421>阴谋</color>。",
+          "line": 973
+        },
+        "lct.t2.ritual": {
+          "text": "我们的仪式在招募和建造上提供了很大的灵活性。现在让我们在一个新的领地进行<color=#748421>招募</color>吧。",
+          "line": 974
+        },
+        "lct.t2.craft": {
+          "text": "展示一张<sprite name=\"rabbiticon\">牌，在你刚刚摧毁了敌人的锯木厂的领地建造<sprite name=\"Garden\"><color=#748421>庭院</color> 。",
+          "line": 975
+        },
+        "lct.t2.craft.2": {
+          "text": "<sprite name=\"Garden\"><color=#748421>庭院</color>和遭弃者类型对应了夜晚锻造时的卡牌类型。使用锻造来获得草根茶吧。",
+          "line": 976
+        },
+        "lct.lost.souls": {
+          "text": "所有玩家使用过的和弃掉的卡牌都会进入<color=#748421>遭弃者</color>牌堆，而不是弃牌堆。这些<color=#748421>遭弃者</color>牌中数量最多的类型将会成为你的回合中的<color=#748421>遭弃者</color>类型。",
+          "line": 977
+        },
+        "lct.enemy.lost.souls": {
+          "text": "敌人的卡牌也会进入<color=#748421>遭弃者</color>牌堆。要注意聪明的对手可能会打乱你关于<color=#748421>遭弃者</color>类型的计划。",
+          "line": 978
+        },
+        "lct.t3.outcast": {
+          "text": "在你的回合开始时，<color=#748421>遭弃者牌堆</color>中除了飞鹰<sprite name=\"birdicon\">类型之外的数量最多的类型将会成为新的<color=#748421>遭弃者</color>。然后<color=#748421>遭弃者</color>牌堆将会全部进入弃牌堆。",
+          "line": 979
+        },
+        "lct.t3.outcast.2": {
+          "text": "<sprite name=\"rabbiticon\">是数量最多，所以他是新的遭弃者类型。",
+          "line": 980
+        },
+        "lct.t3.crusade.battle": {
+          "text": "有很多手段来发动<color=#748421>圣战</color>。你可以从一个<color=#748421>遭弃者</color>领地出发，在相邻的领地发起战斗。也可以在<color=#748421>遭弃者</color>领地本身发动战斗。现在就这样做吧，保护你的<sprite name=\"Garden\"><color=#748421>庭院</color>。",
+          "line": 981
+        },
+        "lct.t3.crusade.battle.2": {
+          "text": "成功了！但是你在战斗中损失了一个士兵。记住，只有在你是防御者时，损失的<color=#748421>士兵</color>才会转化为<color=#748421>仆从</color>，为你复仇。",
+          "line": 982
+        },
+        "lct.t3.sacrifice": {
+          "text": "执行 3 次<color=#748421>献祭</color>行动来获得更多<color=#748421>仆从</color>。",
+          "line": 983
+        },
+        "lct.t3.recruit": {
+          "text": "执行<color=#748421>招募</color>行动来在你的<sprite name=\"Garden\"><color=#748421>庭院</color>附近放置另一个<color=#748421>士兵</color>。",
+          "line": 984
+        },
+        "lct.t3.recruit.2": {
+          "text": "现在让我们再次在你的<sprite name=\"Garden\"><color=#748421>庭院</color>附近的<sprite name=\"rabbiticon\">类型领地<color=#748421>招募</color>来维持秩序。",
+          "line": 985
+        },
+        "lct.t3.discard": {
+          "text": "你的手牌太多了。弃掉 2 张兔子牌可以保证<color=#748421>遭弃者</color>可以保证变成<color=#748421>憎恶遭弃者</color>。",
+          "line": 986
+        },
+        "lct.t3.discard.2": {
+          "text": "你说憎恶这个词不太好听？不不……正义经常像这样被误解。要有耐心，我的朋友，你会明白的。",
+          "line": 987
+        },
+        "lct.t4.hated.outcast": {
+          "text": "正如预言所称的那样，遭弃者牌堆中数量最多的类型正是目前的<color=#748421>遭弃者</color>类型。而这意味着<color=#748421>遭弃者</color>标记将会成为<color=#748421>憎恶遭弃者</color>，你的<color=#748421>阴谋</color>所需要的仆从数量减 1。",
+          "line": 988
+        },
+        "lct.t4.convert": {
+          "text": "<color=#748421>蜥蜴神教</color>欢迎新鲜的血液。使用<color=#748421>转化</color>阴谋来将一个位于<color=#748421>遭弃者</color>领地的敌方士兵换成你自己的士兵。",
+          "line": 989
+        },
+        "lct.t4.sanctify": {
+          "text": "你不但要净化灵魂，还要净化那些虚假的建筑。使用<color=#748421>净化</color>来用<sprite name=\"Garden\"><color=#748421>庭院</color>取代一个敌方建筑。",
+          "line": 990
+        },
+        "lct.t4.off.rails": {
+          "text": "你对于神圣祷文的解读几乎完美。获得<style=\"vpnumddteen\">12</style>点分数，这证明了你对<color=#748421>蜥蜴神教</color>真诚的信仰。",
+          "line": 991
+        },
+        "lct.goal.12vp": {
+          "text": "Score <style=\"vpnumddteen\">12</style> ({0}/{1})",
+          "line": 992
+        },
+        "lct.ftt.garden.removed": {
+          "text": "每当一个<color=#748421>庭院</color>被移除，它会回到你的庭院条上。通常这意味着你从仪式获得的分数会减少。此外你还会随机丢弃一张手牌。因此要保护你的<sprite name=\"Garden\"><color=#748421>庭院</color>，不惜一切代价。",
+          "line": 993
+        },
+        "tutorial.title.tutorialR01": {
+          "text": "神圣的鳞片",
+          "line": 1123
+        },
+        "tutorial.description.tutorialR01": {
+          "text": "学习游玩蜥蜴神教",
+          "line": 1124
+        },
+        "tooltip.tutorial.hatedoutcast": {
+          "text": "憎恶遭弃类型",
+          "line": 1142
+        },
+        "tooltip.tutorial.mostcommonsuit": {
+          "text": "最多的类型",
+          "line": 1143
+        }
+      }
+    }
+  },
+  "metadataSourceSha256": "8a503fad4a10dbb24f74dcf40e7dbd3f4e9971622f3a3479f75a6bafa3d9a008",
+  "scriptTypes": [
+    {
+      "index": 409,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.selectionfilters",
+      "name": "TuberRiverfolkTutorialGame1SelectionFiltering",
+      "token": "0x2000199",
+      "metadata_offset": 9666416,
+      "fields": [],
+      "methods": [
+        {
+          "index": 1985,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x60007c2"
+        },
+        {
+          "index": 1986,
+          "name": "init",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x60007c3"
+        }
+      ]
+    },
+    {
+      "index": 1620,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.data.tutorialScripts",
+      "name": "TuberRiverfolkTutorialGame1Script",
+      "token": "0x2000653",
+      "metadata_offset": 9772984,
+      "fields": [],
+      "methods": [
+        {
+          "index": 7594,
+          "name": ".ctor",
+          "parameter_count": 1,
+          "parameters": [
+            "m"
+          ],
+          "token": "0x6001dab"
+        },
+        {
+          "index": 7595,
+          "name": "innerActions",
+          "parameter_count": 0,
+          "parameters": [],
+          "token": "0x6001dac"
+        }
+      ]
+    },
+    {
+      "index": 1660,
+      "assembly": "tuber-canis.dll",
+      "namespace": "tuber.canis.data.tutorialScripts",
+      "name": "TutorialConstants",
+      "token": "0x200067d",
+      "metadata_offset": 9776504,
+      "fields": [
+        {
+          "index": 6135,
+          "name": "Dialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6136,
+          "name": "UpdateDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6137,
+          "name": "WaitForContinue",
+          "type_index": 27416
+        },
+        {
+          "index": 6138,
+          "name": "VisualHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6139,
+          "name": "TutorialFocus",
+          "type_index": 27416
+        },
+        {
+          "index": 6140,
+          "name": "HideTutorialAction",
+          "type_index": 27416
+        },
+        {
+          "index": 6141,
+          "name": "CallToAction",
+          "type_index": 27416
+        },
+        {
+          "index": 6142,
+          "name": "ShowHint",
+          "type_index": 27416
+        },
+        {
+          "index": 6143,
+          "name": "DisableClientAction",
+          "type_index": 27416
+        },
+        {
+          "index": 6144,
+          "name": "ClickToContinue",
+          "type_index": 27416
+        },
+        {
+          "index": 6145,
+          "name": "Persistent",
+          "type_index": 27416
+        },
+        {
+          "index": 6146,
+          "name": "Continuable",
+          "type_index": 27416
+        },
+        {
+          "index": 6147,
+          "name": "Goals",
+          "type_index": 27416
+        },
+        {
+          "index": 6148,
+          "name": "BelowReveals",
+          "type_index": 27416
+        },
+        {
+          "index": 6149,
+          "name": "AboveReveals",
+          "type_index": 27416
+        },
+        {
+          "index": 6150,
+          "name": "WarriorsInHud",
+          "type_index": 27416
+        },
+        {
+          "index": 6151,
+          "name": "ActionsCounter",
+          "type_index": 27416
+        },
+        {
+          "index": 6152,
+          "name": "OpponentPortrait",
+          "type_index": 27416
+        },
+        {
+          "index": 6153,
+          "name": "CardDrawInHud",
+          "type_index": 27416
+        },
+        {
+          "index": 6154,
+          "name": "ShopInHud",
+          "type_index": 27416
+        },
+        {
+          "index": 6155,
+          "name": "Bases",
+          "type_index": 27416
+        },
+        {
+          "index": 6156,
+          "name": "Officers",
+          "type_index": 27416
+        },
+        {
+          "index": 6157,
+          "name": "Quests",
+          "type_index": 27416
+        },
+        {
+          "index": 6158,
+          "name": "OutcastInHud",
+          "type_index": 27416
+        },
+        {
+          "index": 6159,
+          "name": "TradePostsInHud",
+          "type_index": 27416
+        },
+        {
+          "index": 6160,
+          "name": "PaymentsFundsAndCommitments",
+          "type_index": 27416
+        },
+        {
+          "index": 6161,
+          "name": "LostSouls",
+          "type_index": 27416
+        },
+        {
+          "index": 6162,
+          "name": "Acolytes",
+          "type_index": 27416
+        },
+        {
+          "index": 6163,
+          "name": "Reveals",
+          "type_index": 27416
+        },
+        {
+          "index": 6164,
+          "name": "HatedOutcast",
+          "type_index": 27416
+        },
+        {
+          "index": 6165,
+          "name": "OpenInfoPanel",
+          "type_index": 27416
+        },
+        {
+          "index": 6166,
+          "name": "ResolveDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6167,
+          "name": "FindBuildDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6168,
+          "name": "OpenStore",
+          "type_index": 27416
+        },
+        {
+          "index": 6169,
+          "name": "OpenOutrageHand",
+          "type_index": 27416
+        },
+        {
+          "index": 6170,
+          "name": "DismissDecreeAssignment",
+          "type_index": 27416
+        },
+        {
+          "index": 6171,
+          "name": "ReshowDecreeAssignment",
+          "type_index": 27416
+        },
+        {
+          "index": 6172,
+          "name": "DayNightCycle",
+          "type_index": 27416
+        },
+        {
+          "index": 6173,
+          "name": "MozEntity",
+          "type_index": 27416
+        },
+        {
+          "index": 6174,
+          "name": "PromptMozEntity",
+          "type_index": 27416
+        },
+        {
+          "index": 6175,
+          "name": "OpenLostSouls",
+          "type_index": 27416
+        },
+        {
+          "index": 6176,
+          "name": "OpenQuestBookAuto",
+          "type_index": 27416
+        },
+        {
+          "index": 6177,
+          "name": "FindWaystationDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6178,
+          "name": "FindMoodDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6179,
+          "name": "UseHundredsBuild",
+          "type_index": 27416
+        },
+        {
+          "index": 6180,
+          "name": "BigXHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6181,
+          "name": "RuleBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6182,
+          "name": "ClearingBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6183,
+          "name": "WoodInHud",
+          "type_index": 27416
+        },
+        {
+          "index": 6184,
+          "name": "rollAdvantage",
+          "type_index": 27416
+        },
+        {
+          "index": 6185,
+          "name": "diceRange",
+          "type_index": 27416
+        },
+        {
+          "index": 6186,
+          "name": "TotalHits",
+          "type_index": 27416
+        },
+        {
+          "index": 6187,
+          "name": "Building",
+          "type_index": 27416
+        },
+        {
+          "index": 6188,
+          "name": "WorkshopOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6189,
+          "name": "SawmillOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6190,
+          "name": "BuildingSlot",
+          "type_index": 27416
+        },
+        {
+          "index": 6191,
+          "name": "Score",
+          "type_index": 27416
+        },
+        {
+          "index": 6192,
+          "name": "ActionPanel",
+          "type_index": 27416
+        },
+        {
+          "index": 6193,
+          "name": "HighlightWorkshop",
+          "type_index": 27416
+        },
+        {
+          "index": 6194,
+          "name": "HighlightSawmill",
+          "type_index": 27416
+        },
+        {
+          "index": 6195,
+          "name": "HighlightRecruiter",
+          "type_index": 27416
+        },
+        {
+          "index": 6196,
+          "name": "RoostOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6197,
+          "name": "TradePostOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6198,
+          "name": "InfoPanelTrack",
+          "type_index": 27416
+        },
+        {
+          "index": 6199,
+          "name": "SupporterArea",
+          "type_index": 27416
+        },
+        {
+          "index": 6200,
+          "name": "SympathyCost",
+          "type_index": 27416
+        },
+        {
+          "index": 6201,
+          "name": "ItemsOnPlayer",
+          "type_index": 27416
+        },
+        {
+          "index": 6202,
+          "name": "BrokenHeart",
+          "type_index": 27416
+        },
+        {
+          "index": 6203,
+          "name": "QuestBook",
+          "type_index": 27416
+        },
+        {
+          "index": 6204,
+          "name": "VagabondActionPanel",
+          "type_index": 27416
+        },
+        {
+          "index": 6205,
+          "name": "ItemPanel",
+          "type_index": 27416
+        },
+        {
+          "index": 6206,
+          "name": "RuinOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6207,
+          "name": "NonSatchelItems",
+          "type_index": 27416
+        },
+        {
+          "index": 6208,
+          "name": "EveningActions",
+          "type_index": 27416
+        },
+        {
+          "index": 6209,
+          "name": "LowerRightSatchelSlot",
+          "type_index": 27416
+        },
+        {
+          "index": 6210,
+          "name": "DecreeHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6211,
+          "name": "WoodlandWarriors",
+          "type_index": 27416
+        },
+        {
+          "index": 6212,
+          "name": "AbilityHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6213,
+          "name": "Defenseless",
+          "type_index": 27416
+        },
+        {
+          "index": 6214,
+          "name": "RecruitDecree",
+          "type_index": 27416
+        },
+        {
+          "index": 6215,
+          "name": "PriorityNumber",
+          "type_index": 27416
+        },
+        {
+          "index": 6216,
+          "name": "RiverfolkFunds",
+          "type_index": 27416
+        },
+        {
+          "index": 6217,
+          "name": "RiverfolkPayments",
+          "type_index": 27416
+        },
+        {
+          "index": 6218,
+          "name": "RiverfolkCommitments",
+          "type_index": 27416
+        },
+        {
+          "index": 6219,
+          "name": "GardenOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6220,
+          "name": "LizardsReveals",
+          "type_index": 27416
+        },
+        {
+          "index": 6221,
+          "name": "RiverfolkFundsPanel",
+          "type_index": 27416
+        },
+        {
+          "index": 6222,
+          "name": "GardenSetup",
+          "type_index": 27416
+        },
+        {
+          "index": 6223,
+          "name": "LostSoulsLabel",
+          "type_index": 27416
+        },
+        {
+          "index": 6224,
+          "name": "HighlightService",
+          "type_index": 27416
+        },
+        {
+          "index": 6225,
+          "name": "ServiceCostLabel",
+          "type_index": 27416
+        },
+        {
+          "index": 6226,
+          "name": "TunnelsSetup",
+          "type_index": 27416
+        },
+        {
+          "index": 6227,
+          "name": "TunnelOnBoard",
+          "type_index": 27416
+        },
+        {
+          "index": 6228,
+          "name": "BurrowClearing",
+          "type_index": 27416
+        },
+        {
+          "index": 6229,
+          "name": "CrownsFocus",
+          "type_index": 27416
+        },
+        {
+          "index": 6230,
+          "name": "ExposureAbility",
+          "type_index": 27416
+        },
+        {
+          "index": 6231,
+          "name": "FerryHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6232,
+          "name": "FerryBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6233,
+          "name": "TowerHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6234,
+          "name": "TowerBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6235,
+          "name": "MountainPassHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6236,
+          "name": "MountainPassBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6237,
+          "name": "ClearingSuit",
+          "type_index": 27416
+        },
+        {
+          "index": 6238,
+          "name": "KeepersWaystationFlip",
+          "type_index": 27416
+        },
+        {
+          "index": 6239,
+          "name": "KeepersRetinueHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6240,
+          "name": "KeepersRetinueColumnHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6241,
+          "name": "KeepersDevoutKnightsHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6242,
+          "name": "KeepersHUDRelicHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6243,
+          "name": "HundredsCommandHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6244,
+          "name": "HundredsProwessHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6245,
+          "name": "HundredsAdvanceHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6246,
+          "name": "HundredsProwessBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6247,
+          "name": "HundredsProwessValueHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6248,
+          "name": "HundredsCraftPointsBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6249,
+          "name": "HundredsCraftHoardBanner",
+          "type_index": 27416
+        },
+        {
+          "index": 6250,
+          "name": "HundredsMoodItemHighlight",
+          "type_index": 27416
+        },
+        {
+          "index": 6251,
+          "name": "OutrageSymbol",
+          "type_index": 27416
+        },
+        {
+          "index": 6252,
+          "name": "IntroDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6253,
+          "name": "CatDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6254,
+          "name": "EyrieDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6255,
+          "name": "WoodlandDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6256,
+          "name": "VagabondDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6257,
+          "name": "LizardDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6258,
+          "name": "RiverfolkDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6259,
+          "name": "DuchyDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6260,
+          "name": "CorvidDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6261,
+          "name": "KeepersDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6262,
+          "name": "HundredsDialog",
+          "type_index": 27416
+        },
+        {
+          "index": 6263,
+          "name": "CloseBuyRiverfolkServices",
+          "type_index": 27416
+        },
+        {
+          "index": 6264,
+          "name": "NoRoosts",
+          "type_index": 27416
+        },
+        {
+          "index": 6265,
+          "name": "MartialLaw",
+          "type_index": 27416
+        },
+        {
+          "index": 6266,
+          "name": "WarriorSupply",
+          "type_index": 27416
+        },
+        {
+          "index": 6267,
+          "name": "BaseRemoved",
+          "type_index": 27416
+        },
+        {
+          "index": 6268,
+          "name": "FiveSupporters",
+          "type_index": 27416
+        },
+        {
+          "index": 6269,
+          "name": "VagabondSelect",
+          "type_index": 27416
+        },
+        {
+          "index": 6270,
+          "name": "VagabondDefenseless",
+          "type_index": 27416
+        },
+        {
+          "index": 6271,
+          "name": "CoinStack",
+          "type_index": 27416
+        },
+        {
+          "index": 6272,
+          "name": "TeaPot",
+          "type_index": 27416
+        },
+        {
+          "index": 6273,
+          "name": "VagabondAlly",
+          "type_index": 27416
+        },
+        {
+          "index": 6274,
+          "name": "VagabondAllyAttack",
+          "type_index": 27416
+        },
+        {
+          "index": 6275,
+          "name": "NoItemToCraft",
+          "type_index": 27416
+        },
+        {
+          "index": 6276,
+          "name": "VagabondFirstTimeDamage",
+          "type_index": 27416
+        },
+        {
+          "index": 6277,
+          "name": "VagabondFirstTimeRevoltDamage",
+          "type_index": 27416
+        },
+        {
+          "index": 6278,
+          "name": "VagabondFirstTimeExploreChoice",
+          "type_index": 27416
+        },
+        {
+          "index": 6279,
+          "name": "VagabondRepairBrokenItem",
+          "type_index": 27416
+        },
+        {
+          "index": 6280,
+          "name": "VagabondSlipWarning",
+          "type_index": 27416
+        },
+        {
+          "index": 6281,
+          "name": "TwoVagabondInformation",
+          "type_index": 27416
+        },
+        {
+          "index": 6282,
+          "name": "FirstTimeDiscarding",
+          "type_index": 27416
+        },
+        {
+          "index": 6283,
+          "name": "FirstLostSympathy",
+          "type_index": 27416
+        },
+        {
+          "index": 6284,
+          "name": "FirstScoredBattleVP",
+          "type_index": 27416
+        },
+        {
+          "index": 6285,
+          "name": "FirstRollCappedByWarriors",
+          "type_index": 27416
+        },
+        {
+          "index": 6286,
+          "name": "FirstDieSwap",
+          "type_index": 27416
+        },
+        {
+          "index": 6287,
+          "name": "FirstDefenselessEnemy",
+          "type_index": 27416
+        },
+        {
+          "index": 6288,
+          "name": "MoveToKeep",
+          "type_index": 27416
+        },
+        {
+          "index": 6289,
+          "name": "BuyFirstRiverfolkService",
+          "type_index": 27416
+        },
+        {
+          "index": 6290,
+          "name": "FirstLostGarden",
+          "type_index": 27416
+        },
+        {
+          "index": 6291,
+          "name": "FirstMountainMap",
+          "type_index": 27416
+        },
+        {
+          "index": 6292,
+          "name": "FirstLakeMap",
+          "type_index": 27416
+        },
+        {
+          "index": 6293,
+          "name": "FirstExposureAbility",
+          "type_index": 27416
+        },
+        {
+          "index": 6294,
+          "name": "HundredsOnlyLavish",
+          "type_index": 27416
+        }
+      ],
+      "methods": []
+    }
+  ],
+  "menuSource": "Root_Data/StreamingAssets/aa/StandaloneWindows64/tutorialmenuprompts_assets_all.bundle",
+  "menuSourceSha256": "a83a00a88ed64512f2767b43f9946b0bcdff6411230bcff779959975673e18eb",
+  "menuMatches": [],
+  "limits": "The current menu scan has no matching serialized string fields; script/type names do not establish original runtime progression. Existing metadata index belongs to the recorded baseline and is not regenerated by this utility.",
+  "license": "Original-game text and extracted evidence; excluded from project MIT grant."
+}

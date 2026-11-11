@@ -2,6 +2,8 @@
 
 <!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
 
+> 2026-11-11补充：第六章蜥蜴神教已实现，19节点；当前目录共六章58节点，registry按v5/v6区分引擎。原五章定义不变。新资料提取与162项测试、桌面132次/手机43次UI验收见[LIZARD-TUTORIAL-2026-11-11.md](LIZARD-TUTORIAL-2026-11-11.md)。新章尚未部署服务器。以下为原五章实现的历史记录。
+
 本轮采用原安装包静态解析，提取基础教程文本、Unity界面资源树及IL2CPP教程类型元数据，据此梳理教学目标和逻辑。网页版实现五章39个教学节点，通过现有地图、操作面板和v5规则引擎完成实操，服务器保存个人进度。章节分别为基础操作6节、猫咪贵族8节、飞鹰王朝6节、森林联盟10节、神秘游侠9节。
 
 ## 解析来源与证据边界
