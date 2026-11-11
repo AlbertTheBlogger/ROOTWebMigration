@@ -1,0 +1,72 @@
+# ROOTWebMigration · Woodland Rooms / 林间议事厅
+
+[简体中文](README.md) | English
+
+A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.0**, supports the autumn map, the four base-game factions, and online games for 2–4 players. Multiplayer does not depend on Steam. The original game's installation directory has not been modified.
+
+## Current features
+
+- Independent accounts, public and password-protected rooms, per-game player names, ready states, and subsequent games.
+- Marquise de Cat, Eyrie Dynasties, Woodland Alliance, and Vagabond. Available Vagabond characters: Thief, Tinker, and Ranger.
+- The base deck, crafting, combat, and interrupting decisions, with rules and random outcomes managed by the server.
+- SQLite persistence, recovery after page refreshes or server restarts, idempotent commands, and player-specific private views.
+- Simple bots, a five-chapter tutorial, administrator tools, and an image-based board.
+
+Expansion factions, a second Vagabond, additional maps, expansion decks, and advanced setup are not yet implemented. Complex rule interactions have not been exhaustively compared with the original digital game's runtime behavior. The bots are basic opponents rather than mature strategic AI.
+
+## Run locally
+
+Requires Node.js 24.11.1 or a compatible newer version. The application uses Node's built-in SQLite support and has no third-party npm dependencies.
+
+```powershell
+npm start
+```
+
+Open <http://127.0.0.1:3000>. The default database, `data/root.sqlite`, is created on first startup.
+
+Environment variables: `HOST`, `PORT`, `DB_PATH`, `APP_ORIGIN`, and `COOKIE_SECURE`. For LAN access, configure `HOST` and the actual `APP_ORIGIN`. Set `COOKIE_SECURE=true` when serving over HTTPS.
+
+## Validation and backups
+
+```powershell
+npm test
+npm run check
+node scripts/backup.mjs
+```
+
+Tests use temporary databases. The backup script creates a consistent SQLite copy. Copying only the main database file while it is being written is not a complete backup procedure.
+
+Browser acceptance and research tools are kept in `tools/`. Python dependencies are recorded in `research/requirements.lock.txt`; the virtual environment is excluded from Git. Some focused UI tools depend on local isolated fixtures in `audit/`, which are not included in a fresh clone.
+
+## Project layout
+
+| Path | Purpose |
+| --- | --- |
+| `backend/server.mjs` | HTTP, accounts, rooms, SQLite, SSE, and bot scheduling |
+| `backend/rules/versions/` | The current four-faction engine and compatibility engines for older saves |
+| `frontend/` | Pages, interactions, styles, and visual assets |
+| `tests/` | Rules, API, administration, tutorial, and recovery tests |
+| `tools/`, `research/` | Asset research, development validation tools, and supporting material |
+| `scripts/backup.mjs` | Consistent database backups |
+| `docs/交接文档.md` | Current project status and maintenance entry point, in Chinese |
+| `docs/HANDOFF-2026-11-09.md` | Maintained development and maintenance history, in Chinese |
+
+## Deployment and maintenance
+
+The current architecture uses a single Node instance with SQLite and SSE. `Dockerfile`, `compose.yaml`, and `deploy/nginx.conf.example` are reference configurations; consult the latest handoff documentation for production maintenance. SSE notifications and rate-limit state are held in process memory, so the application cannot be scaled directly to multiple instances.
+
+JSON API responses intentionally remain uncompressed, with explicit `Content-Length` and `Connection: close` headers. Verify complete responses over the actual public network path before changing this behavior. Historical ruleset IDs are retained for save compatibility and are independent of product version names.
+
+## Version control scope
+
+Git tracks source code, required web assets, tests, tools, and research material. Databases, private player acceptance data, sessions and credentials, virtual environments, caches, logs, and deployment archives are excluded. Development currently uses the `main` branch. Run the checks appropriate to each change before committing; Git pushes and production deployments are recorded separately.
+
+## Project purpose and rights notice
+
+This project is an unofficial web adaptation and rules reimplementation of the existing commercial game ROOT. It explores browser-based execution, interaction, and self-hosted multiplayer. It is not officially affiliated with the original rights holders and has not received their authorization, approval, or endorsement.
+
+The artwork, game setting, and gameplay design used in this project originate from the commercial work. All associated copyrights, trademarks, and other rights remain with their respective owners. This project does not claim, assert, take ownership of, or reserve any rights in that third-party content, and has no authority to grant licenses on behalf of its rights holders.
+
+The source is made publicly available for learning, research, and technical exchange. Any open-source license for code written for this project must be distinguished from the rights in third-party content: such a license does not authorize the use of the original artwork, trademarks, or other third-party material, nor does it remove the need to obtain any required permissions.
+
+The repository has not yet selected or included a specific open-source license (`LICENSE`). Public source availability alone does not provide a complete license to copy, modify, or redistribute the material. Any license adopted later can apply only to content this project has the authority to license. This notice does not replace authorization from third-party rights holders.

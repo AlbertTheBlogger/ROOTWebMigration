@@ -1,5 +1,7 @@
 # ROOTWebMigration · 林间议事厅 / Woodland Rooms
 
+简体中文 | [English](README.en.md)
+
 自托管的 ROOT 网页规则重实现。当前版本 **v1.1.0**，支持秋季地图、基础四阵营和 2–4 人联机。不依赖 Steam 联机；原游戏安装目录未被修改。
 
 ## 当前功能
