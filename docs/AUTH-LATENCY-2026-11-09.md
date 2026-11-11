@@ -1,5 +1,7 @@
 # 注册延迟排查与反馈修复
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 用户报告注册点击后约十秒没有反馈，刷新后显示已登录。
 
 实测服务器本机登录验证 66–68ms，密码 scrypt 单次约 72ms。公网健康接口约 41ms，登录失败请求 101–108ms。公网成功注册请求 101ms，后续房间列表 40ms，从点击到大厅 242ms。测试时服务器负载接近零，数据库 quick_check 为 ok。

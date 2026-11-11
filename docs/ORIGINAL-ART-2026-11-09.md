@@ -1,5 +1,7 @@
 # 原版美术提取与接入
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 日期 2026-11-09。本轮从用户提供的 Unity 安装目录只读提取图片，应用到网页版。
 
 当前映射 38 种基础牌插画、4 张飞鹰领袖图、2 个阵营头像、7 类物品图标、8 个棋子与建筑图标、3 张插画和一张秋季地图说明图，共 63 个实际使用文件，约 3.76MB。

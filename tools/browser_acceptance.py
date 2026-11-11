@@ -1,3 +1,4 @@
+# Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 """Run two-player browser acceptance against an isolated, temporary local database."""
 import json
 import os

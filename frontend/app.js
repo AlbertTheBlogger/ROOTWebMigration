@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import { renderLogGroups } from '/log-ui.js';
 import { mountMapControls, pickMapClearing } from '/map-controls.js';
 import { decorate, observe, showEvents, previewCard, previewLeader, showPublicDetails } from '/experience.js';

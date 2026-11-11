@@ -1,3 +1,4 @@
+# Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import json,os,socket,subprocess,tempfile,time,urllib.request,shutil
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect

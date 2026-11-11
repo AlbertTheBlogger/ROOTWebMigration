@@ -1,5 +1,7 @@
 # 电脑端操作界面排查（2026-11-10）
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 结论：当前版本未复现新的确认键缺失、角色图片拦截选择或面板遮挡提交的问题。此前角色图片只打开预览的通用交互修复，对电脑端也生效。本轮仅完善验收脚本和记录，没有修改产品代码，没有发布或重启线上服务。
 
 ## 方法与结果

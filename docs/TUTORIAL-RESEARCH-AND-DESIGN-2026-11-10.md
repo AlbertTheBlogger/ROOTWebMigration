@@ -1,5 +1,7 @@
 # ROOT 基础教程解析与项目适配
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 本轮采用原安装包静态解析，提取基础教程文本、Unity界面资源树及IL2CPP教程类型元数据，据此梳理教学目标和逻辑。网页版实现五章39个教学节点，通过现有地图、操作面板和v5规则引擎完成实操，服务器保存个人进度。章节分别为基础操作6节、猫咪贵族8节、飞鹰王朝6节、森林联盟10节、神秘游侠9节。
 
 ## 解析来源与证据边界

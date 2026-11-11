@@ -1,5 +1,7 @@
 # 基础四阵营验收与交接（2026-11-09）
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 ## 实现
 
 新规则 `root-base-four-v5`、schema 5，支持 2–4 人及基础四阵营不同组合，新建网页房间默认容量 4。旧 v1–v4 引擎保留。服务端裁决全部行动并保存状态、秘密信息和待选决策。多人局暂不支持单人投降，房主仍可删除房间。

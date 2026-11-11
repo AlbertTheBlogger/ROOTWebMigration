@@ -1,5 +1,7 @@
 > 2026-11-09 房间测试人机已发布。房主可在 v5 房间按阵营添加或移除人机，自动执行开局、行动及中断决策，重启后继续。当前采用原自动对局测试策略，房间模式从第一轮开始发展。105 项 Node 测试本地与服务器均通过，网页单真人三人机第九轮正常结束。发布前备份 `/opt/woodland-rooms-before-bots-20261109` 和 `/var/lib/woodland-rooms/backup-before-bots-20261109.sqlite`，发布后数据数量一致且 integrity_check 为 ok。更新包 SHA-256 为 `6b8b575aa18c62c5c097f3747ef682c251082f1a85424fc8d159b7d9d8e00ee9`。证据见 `audit/bots-deploy.json`、`audit/bots-server-node-tests.txt`、`audit/bots-browser/report.json`。
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 > 2026-11-09 基础四阵营 v5 已发布，支持 2–4 人和森林联盟、神秘游侠（三种基础角色）。本地及服务器 102 项 Node 测试通过；本地 12 局、服务器 6 局 HTTP 对局均正常结束，分别覆盖 150 与 94 次重启恢复。85 张原版 UI 图片已接入。备份、版本边界及证据见 [四阵营验收与交接](../docs/BASE-FOUR-ACCEPTANCE-2026-11-09.md)。以下为历史记录。
 
 > 最新验收记录更新于 2026-11-09。猫鹰标准局 v4 已完成规则和开局实现，72 项 Node 测试、10 项研究测试通过；12 局 HTTP 自动对局均超过十轮，双浏览器已完成 12 轮。当前范围、证据及维护信息见 [猫鹰验收与交接](../docs/CATS-BIRDS-ACCEPTANCE-2026-11-09.md)。以下保留早期阶段记录。

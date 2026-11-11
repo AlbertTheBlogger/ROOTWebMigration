@@ -1,3 +1,4 @@
+# Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 """Normal browser entry points for one human and three server-side test bots."""
 import json
 import os

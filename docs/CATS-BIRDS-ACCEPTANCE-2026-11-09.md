@@ -1,5 +1,7 @@
 # 猫鹰标准局验收与交接
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 日期 2026-11-09。本轮验收范围为猫咪贵族／猫侯国与飞鹰王朝、秋季地图、基础牌组、双人标准开局。规则版本 `root-cats-birds-v4`，存档 schema 4。
 
 ## 已实现的规则范围

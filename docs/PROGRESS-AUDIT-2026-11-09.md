@@ -1,5 +1,7 @@
 # 项目进度核对（2026-11-09）
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 本次根据用户要求，对照 HANDOFF、ROADMAP、RULES-COVERAGE、BASE-FOUR-ACCEPTANCE、README、IMPLEMENTATION-STATUS、AUTH-LATENCY 和部署记录，检查实际代码、发布清单与验收产物，并重新执行现有测试及浏览器验收。公网仅执行 GET，不登录或写入生产数据。
 
 ## 结论

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import assert from 'node:assert/strict';
 export function tutorialAction(room){
  const g=room.game,meta=room.tutorial,p=g.players.find(p=>p.id===room.ownerId);

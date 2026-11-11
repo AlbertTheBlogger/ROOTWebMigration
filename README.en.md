@@ -1,5 +1,7 @@
 # ROOTWebMigration · Woodland Rooms / 林间议事厅
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 [简体中文](README.md) | English
 
 A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.0**, supports the autumn map, the four base-game factions, and online games for 2–4 players. Multiplayer does not depend on Steam. The original game's installation directory has not been modified.
@@ -67,6 +69,8 @@ This project is an unofficial web adaptation and rules reimplementation of the e
 
 The artwork, game setting, and gameplay design used in this project originate from the commercial work. All associated copyrights, trademarks, and other rights remain with their respective owners. This project does not claim, assert, take ownership of, or reserve any rights in that third-party content, and has no authority to grant licenses on behalf of its rights holders.
 
-The source is made publicly available for learning, research, and technical exchange. Any open-source license for code written for this project must be distinguished from the rights in third-party content: such a license does not authorize the use of the original artwork, trademarks, or other third-party material, nor does it remove the need to obtain any required permissions.
+The project-authored portions of frontend presentation, user interaction, adapted/refactored gameplay logic, AI players, and engineering documentation are licensed under the [MIT License](LICENSE), within the scope explicitly designated by the maintainer. Corresponding project-written tests and interaction acceptance scripts are included. See the [license scope](LICENSE-SCOPE.md) and [file allowlist](docs/MIT-LICENSED-FILES.json).
 
-The repository has not yet selected or included a specific open-source license (`LICENSE`). Public source availability alone does not provide a complete license to copy, modify, or redistribute the material. Any license adopted later can apply only to content this project has the authority to license. This notice does not replace authorization from third-party rights holders.
+**All artwork and game text resources are excluded from claims of project originality and from this MIT grant.** Project-authored technical documentation is included; quoted third-party text is not. `frontend/assets/`, `frontend/asset-manifest.json`, `backend/data/`, `research/`, and other files absent from the allowlist are outside this grant.
+
+Licensing the project's implementation under MIT does not transfer rights in the original game's assets, text, names, trademarks, or gameplay itself. The project has no authority to license that third-party content. Neither the MIT License nor this notice replaces permission from the respective rights holders. See [third-party notices](THIRD_PARTY_NOTICES.md) for known origins and exclusions.

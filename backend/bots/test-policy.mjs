@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 // Shared smoke-test policies. Room bots enable development from round one.
 function ruler(c) {
   const cat=c.warriors.cat+c.buildings.filter(b=>b.faction==='cat').length;

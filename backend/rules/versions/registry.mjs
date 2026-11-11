@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import * as lab from '../../engine.mjs';
 import * as battleLab from './battle-lab.mjs';
 import * as cardLab from './card-lab.mjs';

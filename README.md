@@ -1,5 +1,7 @@
 # ROOTWebMigration · 林间议事厅 / Woodland Rooms
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 简体中文 | [English](README.en.md)
 
 自托管的 ROOT 网页规则重实现。当前版本 **v1.1.0**，支持秋季地图、基础四阵营和 2–4 人联机。不依赖 Steam 联机；原游戏安装目录未被修改。
@@ -67,6 +69,8 @@ JSON API 保留不压缩、明确 Content-Length 和 Connection: close 的处理
 
 本项目中的美术资源、游戏设定与玩法设计均来源于原商业作品；相关著作权、商标权及其他合法权益归各自权利人所有。本项目不对上述第三方内容声索、主张、占有或保留任何权利，也不具备代表原权利人向他人授予许可的资质。
 
-本项目以开放源码的方式公开，供学习、研究与技术交流。开源许可的适用范围应与第三方内容的权利归属分别处理：任何针对本项目自编代码的开源许可，均不包含对原作美术、商标及其他第三方内容的授权，也不免除使用者取得相应许可的义务。
+本项目的前端表现、用户交互、玩法逻辑适配与重构、AI玩家实现及工程文档中的自编部分，按维护者明确指定的范围采用 [MIT许可证](LICENSE)。对应的项目自编测试与交互验收脚本也纳入许可。详见[许可范围](LICENSE-SCOPE.md)和[逐文件清单](docs/MIT-LICENSED-FILES.json)。
 
-目前仓库尚未选定并附带具体的开源许可证（LICENSE）；源码公开本身不构成对复制、修改或再分发的完整许可。后续选定的许可证仅能适用于本项目有权许可的内容。上述声明不替代第三方权利人的授权。
+**所有美术与游戏文本资源均不视为本项目原创，不适用上述MIT许可。** 工程文档中的自撰技术说明属于本项目许可范围，引用的第三方文本除外。`frontend/assets/`、`frontend/asset-manifest.json`、`backend/data/`、`research/`及其他未列入清单的文件不在本次MIT授权范围内。
+
+原游戏资源、文本、名称、商标和玩法本身的权利不因自编实现采用MIT而转移。本项目不具备为其授权的资质；MIT许可和本声明均不替代第三方权利人的授权。来源与排除项见[第三方内容说明](THIRD_PARTY_NOTICES.md)。

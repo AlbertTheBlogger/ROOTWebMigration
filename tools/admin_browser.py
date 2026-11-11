@@ -1,3 +1,4 @@
+# Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 """Exercise admin forms through a browser with an isolated local database."""
 import json,os,shutil,socket,subprocess,tempfile,time,urllib.request
 from pathlib import Path

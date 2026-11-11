@@ -1,5 +1,7 @@
 # 桌面待改善清单落实记录
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 更新于2026-11-09。依据桌面“待改善清单”中的Word文件及两张截图，本轮改动已发布。
 
 | 清单条目 | 实施与证据 |

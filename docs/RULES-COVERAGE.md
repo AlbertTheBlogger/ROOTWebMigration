@@ -1,5 +1,7 @@
 # 当前规则覆盖
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 更新于 2026-11-09。新房间默认使用 `root-base-four-v5`，支持 2–4 人基础四阵营。最新证据见 [四阵营验收](BASE-FOUR-ACCEPTANCE-2026-11-09.md)。规则基准、完整测试证据、边界与维护记录见 [猫鹰验收与交接](CATS-BIRDS-ACCEPTANCE-2026-11-09.md)。
 
 | 功能 | 当前状态 |

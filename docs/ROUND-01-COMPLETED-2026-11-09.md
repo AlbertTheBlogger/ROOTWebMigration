@@ -1,5 +1,7 @@
 # 第一轮续作完成与交接
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 更新日期 2026-11-09。用户恢复工作后，本轮完成战斗队列集成、浏览器验收及服务器发布。本文件取代旧交接文档中的暂停状态，原报告保留为历史记录。
 
 ## 已完成

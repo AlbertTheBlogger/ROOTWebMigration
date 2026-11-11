@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import { readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import * as rules from './rules/versions/base-four.mjs';

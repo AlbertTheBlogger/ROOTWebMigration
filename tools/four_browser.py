@@ -1,3 +1,4 @@
+# Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 """Exercise four independent browser players through the normal v5 game UI."""
 import json
 import os

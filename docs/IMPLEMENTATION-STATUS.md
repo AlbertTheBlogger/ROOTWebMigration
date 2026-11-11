@@ -1,5 +1,7 @@
 > 最新验收记录更新于 2026-11-09。猫鹰标准局 v4 已完成规则和开局实现，72 项 Node 测试、10 项研究测试通过；12 局 HTTP 自动对局均超过十轮，双浏览器已完成 12 轮。当前范围、证据及维护信息见 [猫鹰验收与交接](CATS-BIRDS-ACCEPTANCE-2026-11-09.md)。以下保留早期阶段记录。
 
+<!-- Copyright (c) 2026 AlbertTheBlogger. Project-authored documentation: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md. -->
+
 > 2026-11-09 第二轮更新。已导出原版静态牌表，新增可选 v3 与 20 种物品牌制作。当前 54 项 Node 测试、9 项研究测试通过。最新进度见 [第二轮记录](ROUND-02-2026-11-09.md)。
 
 > 2026-11-09 续作更新。战斗队列已集成并发布，49 项 Node 测试和 7 项研究测试通过。最新状态、限制与交接见 [本轮完成记录](ROUND-01-COMPLETED-2026-11-09.md)。以下为此前阶段记录。

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 """Walk every tutorial chapter through the normal browser controls."""
 import json,os,shutil,socket,subprocess,tempfile,time,urllib.request
 from pathlib import Path

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 const pieceNames = {
   sawmill: '锯木厂', workshop: '工坊', recruiter: '征兵所', roost: '鸟巢',
   keep: '城堡', wood: '木材', ruin: '废墟',

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 import { randomInt } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { RuleError, ruler, shuffle, LABELS } from '../../engine.mjs';

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 let mounted=null;
 let state={context:null,version:null,activeKey:null,picked:null,from:null,drafts:new Map()};
 let announced='';
