@@ -43,7 +43,10 @@ def run():
     card.locator('[name=visibility]').select_option('public');card.locator('form button').click();expect(card).to_contain_text('未设密码')
     user=admin.locator(f'[data-admin-user="{uid}"]')
     user.locator('[data-action=admin-user-logout]').click();expect(host.locator('#auth')).to_be_visible()
-    user.locator('[name=password]').fill('reset-player-password');user.locator('form button').click();expect(user).to_be_visible()
+    user.locator('[name=password]').fill('reset-player-password')
+    with admin.expect_response(lambda r:r.request.method=='POST' and r.url.endswith('/password')) as reset:
+     user.locator('form button').click()
+    assert reset.value.status==200
     host.locator('#auth [name=username]').fill('admin_browser_player');host.locator('#auth [name=password]').fill('reset-player-password');host.locator('#auth button').click();expect(host.locator('#create')).to_be_visible()
     user.locator('[data-action=admin-user-disable]').click();expect(user).to_contain_text('已停用')
     user.locator('[data-action=admin-user-enable]').click();expect(user).to_contain_text('正常')

@@ -1,4 +1,5 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
+import { present as emitPresentation, finishPresentation } from '../presentation.mjs';
 import { randomInt } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { RuleError, shuffle, LABELS as CORE_LABELS } from '../../engine.mjs';
@@ -102,7 +103,7 @@ function executeLizard(s,p,a,rng) {
   if(a.type==='lizard-craft-done') {
     ensure(s.phase==='lizard-craft','当前不在夜晚锻造');
     const bonus=LIZARD_SUITS.filter(suit=>gardenCount(s,suit)>=2).length;
-    draw(s,p,1+bonus,rng);s.phase='discard';if(p.hand.length<=5)nextTurn(s,rng);return true;
+    draw(s,p,1+bonus,rng);s.phase='discard';if(p.hand.length<=5)finishEvening(s,rng);return true;
   }
   const ritual=['ritual-score','ritual-recruit','ritual-build','sacrifice'].includes(a.type);
   const conspiracy=['crusade','convert','sanctify'].includes(a.type);
@@ -182,7 +183,7 @@ function draw(s,p,count,rng) {
     if (s.deck.length) p.hand.push(s.deck.pop());
     if (!s.deck.length && s.discard.length) s.deck=shuffle(s.discard.splice(0),rng);
   }
-  if(p.name && p.hand.length>before)record(s,`${p.name} 抽取 ${p.hand.length-before} 张牌`);
+  if(p.name && p.hand.length>before){record(s,`${p.name} 抽取 ${p.hand.length-before} 张牌`);if(p.id)emitPresentation(s,{kind:'draw',playerId:p.id,faction:p.faction,count:p.hand.length-before});}
 }
 function score(s, faction, points, reason='规则得分') {
   const owner=ownerOf(s,faction);
@@ -191,6 +192,7 @@ function score(s, faction, points, reason='规则得分') {
   owner.score=Math.max(0,owner.score+points);
   if(owner.score!==before){
     record(s,`${owner.name} ${owner.score>before?'获得':'失去'} ${Math.abs(owner.score-before)} 分，当前 ${owner.score} 分`);
+    emitPresentation(s,{kind:'score',playerId:owner.id,faction,delta:owner.score-before,total:owner.score,reason});
     s.scoreEventSeq=(s.scoreEventSeq||0)+1;
     s.scoreEvents ||= [];
     s.scoreEvents.push({seq:s.scoreEventSeq,playerId:owner.id,faction,name:owner.name,reason,delta:owner.score-before,total:owner.score});
@@ -260,6 +262,7 @@ function checkDecree(s) {
   s.bird.used.push(s.bird.leader);
   if (s.bird.used.length===4) s.bird.used=[];
   s.phase='leader';
+  emitPresentation(s,{kind:'turmoil',playerId:ownerOf(s,'bird').id,faction:'bird',delta:ownerOf(s,'bird').score-previousScore,column,birdCards:cards.filter(c=>c.suit==='wild').length,discarded:cards.filter(c=>!c.vizier).length,viziers:cards.filter(c=>c.vizier).length,leader:s.bird.leader});
   record(s,`${current(s).name} 发生动乱：无法执行${{recruit:'招募',move:'移动',battle:'战斗',build:'建造'}[column]}法令（${failed.map(card=>LABELS[card.suit]).join('、')}）；飞鸟牌 ${cards.filter(card=>card.suit==='wild').length} 张，实际失去 ${previousScore-ownerOf(s,'bird').score} 分`);
 }
 function beginTurn(s,rng) {
@@ -275,7 +278,12 @@ function beginTurn(s,rng) {
 }
 function nextTurn(s,rng) { s.turn=(s.turn+1)%s.players.length; s.turnsCompleted++; s.round=1+Math.floor(s.turnsCompleted/s.players.length); beginTurn(s,rng); }
 function daylight(s) { record(s,`${current(s).name} 进入白天`); s.phase='daylight-start'; front(s,[frame('commandwarren'),frame('craft-phase')]); }
-function evening(s) { record(s,`${current(s).name} 进入夜晚`); s.phase='evening-start'; front(s,[frame('cobbler'),frame('evening-score')]); }
+function evening(s) { record(s,`${current(s).name} 进入夜晚`); s.phase='evening-start'; if(crafted(current(s),'cobbler')&&!s.usedEffects.includes(crafted(current(s),'cobbler').id))s.phase='evening';else front(s,[frame('evening-score')]); }
+const eveningPhases=['evening','military','lizard-craft','discard','capacity','evening-end'];
+function availableCobbler(s,p=current(s)) { return eveningPhases.includes(s.phase) && p.crafted.find(card=>card.kind==='cobbler'&&!s.usedEffects.includes(card.id)); }
+function finishEvening(s,rng) { if(availableCobbler(s))s.phase='evening-end';else nextTurn(s,rng); }
+function cobblerOptions(s,p) { return availableCobbler(s,p)?moveOptions(s,p.faction).map(action=>({category:'补鞋匠',label:`${action.from} → ${action.to} · ${action.count} 名`,action:{...action,cobbler:true}})):[]; }
+
 function move(s,p,a) {
   if(p.faction==='vagabond'){moveVagabond(s,a,false);return;}
   const from=areaOf(s,a.from),to=areaOf(s,a.to);
@@ -283,6 +291,7 @@ function move(s,p,a) {
   ensure(ruler(from)===p.faction || ruler(to)===p.faction,'必须统治移动起点或终点');
   ensure(Number.isInteger(a.count) && a.count>0 && a.count<=from.warriors[p.faction],'士兵数量无效');
   from.warriors[p.faction]-=a.count; to.warriors[p.faction]+=a.count;
+  emitPresentation(s,{kind:'move',playerId:p.id,faction:p.faction,from:from.id,to:to.id,count:a.count});
   if(to.sympathy&&p.faction!=='alliance')front(s,[frame('outrage',{faction:p.faction,clearing:to.id})]);
   record(s,`${p.name} 从${from.name}向${to.name}移动 ${a.count} 名士兵`);
 }
@@ -338,6 +347,7 @@ function startBattle(s,p,c,defender,ally) {
     if(allies.length){ask(s,'battle-ally',p,'是否与盟友士兵共同战斗？',[pass('独自战斗'),...allies.map(player=>({id:player.faction,label:player.name,value:player.faction}))],{clearing:c.id,defender});return;}
   }
   s.combat={id:`battle-${++s.battleSequence}`,attacker:p.faction,defender,ally:ally||null,allyRemoved:0,itemHits:0,clearing:c.id,rolls:null,used:[],passed:[],extraAttacker:0,extraDefender:0,despotScored:false};
+  emitPresentation(s,{kind:'battle',playerId:p.id,faction:p.faction,clearing:c.id});
   front(s,[frame('ambush'),frame('roll'),frame('battle-window'),frame('battle-damage'),frame('battle-finish')]);
   record(s,`${p.name} 在${c.name}发起战斗`);
 }
@@ -386,7 +396,7 @@ function pump(s,rng) {
         const n=buildingCount(s,p.faction,p.faction==='cat'?'recruiter':'roost');
         draw(s,p,1+(n>=3?1:0)+(n>=(p.faction==='cat'?5:6)?1:0),rng);
         s.phase='discard';
-        if (p.hand.length<=5) nextTurn(s,rng);
+        if (p.hand.length<=5) finishEvening(s,rng);
         break;
       }
       case 'hospital': hospital(s,data.count,data.suit); break;
@@ -396,6 +406,7 @@ function pump(s,rng) {
         if (crafted(ownerOf(s,b.attacker),'scouting')) break;
         const defender=ownerOf(s,b.defender),suit=areaOf(s,b.clearing).suit;
         const cards=defender.hand.filter(card => card.kind==='ambush' && matches(card,suit));
+        if(!cards.length)break;
         ask(s,'ambush',defender,'防守方是否打出伏击？',[pass('不发动伏击'),...cards.map(card => ({id:card.id,label:`打出${card.name}`,value:card.id}))]);
         break;
       }
@@ -406,7 +417,7 @@ function pump(s,rng) {
         b.rolls=[rng(4),rng(4)].sort((a,b) => b-a);
         b.attackerRolled=Math.min(b.rolls[b.defender==='alliance'?1:0],battleStrength(s,c,b.attacker)); b.defenderRolled=Math.min(b.rolls[b.defender==='alliance'?0:1],battleStrength(s,c,b.defender));
         b.extraAttacker=(battleStrength(s,c,b.defender)===0?1:0)+(b.attacker==='bird' && s.bird.leader==='commander'?1:0);
-        s.randomEvents.push({type:'battle-dice',battleId:b.id,values:[...b.rolls]}); record(s,`服务器战斗骰子 ${b.rolls.join(' / ')}；攻击方战力上限 ${battleStrength(s,c,b.attacker)}，防守方战力上限 ${battleStrength(s,c,b.defender)}${b.defender==='alliance'?'；游击战交换高低骰':''}${battleStrength(s,c,b.defender)===0?'；无人防守，攻击方额外命中 +1':''}${b.attacker==='bird'&&s.bird.leader==='commander'?'；指挥者额外命中 +1':''}`);
+        s.randomEvents.push({type:'battle-dice',battleId:b.id,values:[...b.rolls]});emitPresentation(s,{kind:'dice',faction:b.attacker,clearing:b.clearing,values:b.rolls}); record(s,`服务器战斗骰子 ${b.rolls.join(' / ')}；攻击方战力上限 ${battleStrength(s,c,b.attacker)}，防守方战力上限 ${battleStrength(s,c,b.defender)}${b.defender==='alliance'?'；游击战交换高低骰':''}${battleStrength(s,c,b.defender)===0?'；无人防守，攻击方额外命中 +1':''}${b.attacker==='bird'&&s.bird.leader==='commander'?'；指挥者额外命中 +1':''}`);
         break;
       }
       case 'battle-window': {
@@ -460,7 +471,7 @@ function answer(s,userId,a,rng) {
       front(s,[frame('setup-build')]); break;
     case 'setup-leader': leader(s,value); finishFactionSetup(s,rng); break;
     case 'free-battle': if (value) startBattle(s,p,areaOf(s,value.clearing)); break;
-    case 'free-move': if (value) move(s,p,value); break;
+    case 'free-move': if (value) { move(s,p,value); const card=crafted(p,'cobbler');if(card)s.usedEffects.push(card.id); } break;
     case 'hospital':
       if (value) { ensure(s.board.some(c => c.keep),'城堡已被移除'); const card=discard(s,p,value); ensure(matches(card,resume.suit),'医院需要匹配花色'); s.board.find(c => c.keep).warriors.cat+=resume.count; }
       break;
@@ -470,6 +481,7 @@ function answer(s,userId,a,rng) {
         record(s,`${p.name} 打出${b.ambushCard.name}（${LABELS[b.ambushCard.suit]}）`);
         const attacker=ownerOf(s,b.attacker),suit=areaOf(s,b.clearing).suit;
         const cards=attacker.hand.filter(card => card.kind==='ambush' && matches(card,suit));
+        if(!cards.length){front(s,[frame('ambush-hits')]);break;}
         ask(s,'counter-ambush',attacker,'是否抵消伏击？',[pass('不抵消伏击'),...cards.map(card => ({id:card.id,label:`打出${card.name}`,value:card.id}))]);
       }
       break;
@@ -520,6 +532,7 @@ function craft(s,p,a) {
     for(const c of s.board.filter(c=>c.suit===def.suit))removeAllEnemies(s,c,p.faction);
 
   } else p.crafted.push(card);
+  emitPresentation(s,{kind:'craft',playerId:p.id,faction:p.faction,reason:card.name});
   record(s,`${p.name} 锻造${card.name}`);
 }
 export function createGame(players,rng=randomInt) {
@@ -540,6 +553,10 @@ export function createGame(players,rng=randomInt) {
   return s;
 }
 function execute(s,p,a,rng) {
+  if(a.type==='evening-continue'){ensure(s.phase==='evening','当前不能继续夜晚');front(s,[frame('evening-score')]);return;}
+  if(a.type==='evening-end'){ensure(s.phase==='evening-end','请先完成夜晚步骤');nextTurn(s,rng);return;}
+  if(a.type==='move'&&a.cobbler){const card=availableCobbler(s,p);ensure(card,'补鞋匠只能在夜晚使用一次');move(s,p,a);s.usedEffects.push(card.id);record(s,`${p.name} 使用补鞋匠额外移动`);return;}
+
   if(p.faction==='lizard'&&executeLizard(s,p,a,rng))return;
   if (a.type==='birdsong-end') {
     ensure(s.phase==='birdsong','当前不在清晨');
@@ -638,10 +655,12 @@ export function applyAction(source,userId,a,rng=randomInt) {
   if (s.effects.frames[0]?.type==='choice') { ensure(a.type==='choice','等待当前选择完成'); answer(s,userId,a,rng); }
   else { ensure(s.setup.complete && current(s).id===userId,'等待当前玩家行动'); execute(s,p,a,rng);
     const actionNames={refresh:'恢复物品',repair:'修复物品',slip:'潜行',special:({thief:'偷窃',tinker:'劳作',ranger:'隐藏'})[s.vagabond.character],quest:'完成任务',aid:'援助',strike:'弩击',extra:'花费 1 张飞鸟牌增加行动',overwork:'加班生产 1 枚木材',discard:'弃置 1 张手牌',effect:'使用持续效果',dominance:'激活统治牌', 'drop-item':'丢弃超重物品'};
+    if(a.type==='aid')emitPresentation(s,{kind:'aid',playerId:p.id,faction:p.faction,target:a.target,count:1});
     if(actionNames[a.type])record(s,`${p.name} ${actionNames[a.type]}${a.to!==undefined?'，前往 '+(a.to>=12?'森林 ':'秋林 ')+a.to:a.clearing!==undefined?'，地点 '+areaOf(s,a.clearing).name:''}${a.type==='aid'?'，向 '+ownerOf(s,a.target).name+' 交付 1 张牌':''}`);
     pump(s,rng); }
   normalizeItems(s);
   if (!s.winner && !s.deck.length && s.discard.length) s.deck=shuffle(s.discard.splice(0),rng);
+  finishPresentation(source,s);
   return s;
 }
 export function projectGame(state,userId) {
@@ -666,6 +685,8 @@ export function projectGame(state,userId) {
   s.effectOptions=active?p.crafted.filter(card => !state.usedEffects.includes(card.id) && ((state.phase==='birdsong' && ['royalclaim','standdeliver'].includes(card.kind)) || (['craft','daylight','decree'].includes(state.phase) && ['tax','codebreakers'].includes(card.kind)))).map(card => ({card:card.id,name:card.name,clearing:card.kind==='tax',target:['codebreakers','standdeliver'].includes(card.kind)})):[];
   if(active)for(const effect of s.effectOptions.filter(effect=>effect.clearing))for(const area of state.board.filter(area=>area.warriors[p.faction]>0))s.mapActions.push({type:'effect',card:effect.card,clearing:area.id});
   if (state.privateReveal?.viewer===userId) s.revealedHand=structuredClone(state.privateReveal);
+  s.nightCobbler=!!(active&&availableCobbler(state,p));
+  if(s.nightCobbler){const options=cobblerOptions(state,p);s.factionActions=[...(s.factionActions||[]),...options];s.mapActions=[...(s.mapActions||[]),...options.map(option=>option.action)];}
   return s;
 }
 
@@ -758,7 +779,7 @@ function gainSupporter(s, card) {
   if (!card) return false;
   if (!buildingCount(s, 'alliance', 'base-fox') && !buildingCount(s, 'alliance', 'base-rabbit')
       && !buildingCount(s, 'alliance', 'base-mouse') && s.alliance.supporters.length >= 5) { putDiscard(s, card); record(s,'联盟没有基地且支持者已达5张，新增支持者依规则弃置'); }
-  else { s.alliance.supporters.push(card);return true; }
+  else { s.alliance.supporters.push(card);emitPresentation(s,{kind:'supporter',faction:'alliance',count:1});return true; }
   return false;
 }
 
@@ -837,6 +858,7 @@ function executeAlliance(s, p, a, rng) {
     const count = s.board.filter(other => other.sympathy && other.suit === clearing.suit).length;
     clearing.warriors.alliance += Math.min(count, reserve(s, 'alliance'));
     if (reserve(s, 'alliance') > 0) s.alliance.officers++;
+    emitPresentation(s,{kind:'revolt',playerId:p.id,faction:'alliance',clearing:clearing.id});
     record(s, `${p.name} 在${clearing.name}起义，建立${LABELS[clearing.suit]}基地`);
     return true;
   }
@@ -865,7 +887,7 @@ function executeAlliance(s, p, a, rng) {
   if (a.type === 'military-done') {
     ensure(s.phase === 'military', '当前不在军事行动阶段');
     draw(s, p, 1+s.board.filter(clearing => clearing.buildings.some(building => building.faction === 'alliance')).length, rng);
-    s.phase = 'discard'; if (p.hand.length <= 5) nextTurn(s, rng); return true;
+    s.phase = 'discard'; if (p.hand.length <= 5) finishEvening(s, rng); return true;
   }
   if (!['move', 'battle', 'recruit', 'organize'].includes(a.type)) return false;
   ensure(s.phase === 'military' && s.alliance.operations > 0, '夜晚军事行动次数不足');
@@ -968,8 +990,10 @@ function moveVagabond(s, a, pay, slip = false) {
     ensure(from && s.vagabond.relations[a.ally] === 3 && Number.isInteger(a.count) && a.count > 0 && a.count <= from.warriors[a.ally], '只能携带起点的盟友士兵');
     ensure(ruler(from) === a.ally || ruler(clearing) === a.ally, '盟友必须统治移动起点或终点');
     from.warriors[a.ally] -= a.count; clearing.warriors[a.ally] += a.count;
+    emitPresentation(s,{kind:'move',faction:a.ally,from:from.id,to:clearing.id,count:a.count});
     if (clearing.sympathy && a.ally !== 'alliance') front(s, [frame('outrage', { faction: a.ally, clearing: clearing.id })]);
   }
+  emitPresentation(s,{kind:'move',playerId:ownerOf(s,'vagabond').id,faction:'vagabond',from:origin.id,to:destination.id,count:1});
   s.vagabond.position = destination.id;
 }
 
@@ -1010,7 +1034,7 @@ function removedWarriors(s, by, faction, count, inBattle) {
 function finishDiscard(s, rng) {
   normalizeItems(s);
   if (current(s).faction === 'vagabond' && overCapacity(s)) s.phase = 'capacity';
-  else nextTurn(s, rng);
+  else finishEvening(s, rng);
 }
 
 function overCapacity(s) {

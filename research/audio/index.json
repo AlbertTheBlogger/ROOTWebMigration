@@ -1,0 +1,2042 @@
+[
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 68,
+    "name": "building-corvid-plottoken-snareclick1",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 69,
+    "name": "ui-prompt-exposure-rightguess",
+    "duration": 1.3489115238189697,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 70,
+    "name": "unit-marq-run3",
+    "duration": 0.12498866021633148,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 71,
+    "name": "ui-vppointgained",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 72,
+    "name": "ui-prompt-corvid-trick",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 73,
+    "name": "ui-prompt-vagarepair",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 74,
+    "name": "ui-button-settings",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 75,
+    "name": "map-lake-ferrymovetoclearing",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 76,
+    "name": "building-duchy-buildingspawnfx",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 77,
+    "name": "unit-clock-eyrespawn",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 78,
+    "name": "riverfolk-tradingpost-tickle",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 79,
+    "name": "testbeep",
+    "duration": 1.6571428775787354,
+    "channels": 1,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 80,
+    "name": "ambience-introcinematic",
+    "duration": 11.277505874633789,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 81,
+    "name": "unit-clock-step3",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 82,
+    "name": "ui-mouseclick-snow",
+    "duration": 1.2653968334197998,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 83,
+    "name": "music-altmenu",
+    "duration": 80.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 84,
+    "name": "ui-prompt-vaga-questcomplete",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 85,
+    "name": "unit-clock-marqspawn",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 86,
+    "name": "unit-eyre-summon5",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 87,
+    "name": "ui-prompt-hundreds-looting",
+    "duration": 1.6250113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 88,
+    "name": "ui-clearingfactionswitch",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 89,
+    "name": "ui-button-clockwork",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 90,
+    "name": "unit-victory-alliance",
+    "duration": 0.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 91,
+    "name": "unit-corvid-spawn",
+    "duration": 0.5275737047195435,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 92,
+    "name": "ui-prompt-corvid-exert",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 93,
+    "name": "ui-card-whoosh3",
+    "duration": 0.3437415063381195,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 94,
+    "name": "unit-lizardcult-spawn",
+    "duration": 1.1666666269302368,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 95,
+    "name": "unit-clock-step6",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 96,
+    "name": "unit-eyre-summon",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 97,
+    "name": "building-roost-construct",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 98,
+    "name": "music-introcinematic2",
+    "duration": 31.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 99,
+    "name": "ui-vppointgainedavatarhud",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 100,
+    "name": "unit-clock-step2",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 101,
+    "name": "building-ruin-explore",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 102,
+    "name": "ui-mouseclick-snow2",
+    "duration": 1.118412733078003,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 103,
+    "name": "building-relic-claimed",
+    "duration": 2.124988555908203,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 104,
+    "name": "ui-battle",
+    "duration": 4.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 105,
+    "name": "ui-battle-diceui",
+    "duration": 1.383492112159729,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 106,
+    "name": "building-workshop-summon",
+    "duration": 0.43750566244125366,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 107,
+    "name": "ambience-night",
+    "duration": 12.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 108,
+    "name": "building-duchy-tunneldeath",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 109,
+    "name": "music-battleintro-cymbal",
+    "duration": 5.246304035186768,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 110,
+    "name": "unit-hundred-spawn",
+    "duration": 0.5275737047195435,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 111,
+    "name": "ui-button3",
+    "duration": 0.3750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 112,
+    "name": "ambience-winterbirdsong",
+    "duration": 29.845783233642578,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 113,
+    "name": "unit-generictickle",
+    "duration": 0.6249886751174927,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 114,
+    "name": "ui-mouseclick-water",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 115,
+    "name": "riverfolk-lizardgarden-tickle",
+    "duration": 1.6666666269302368,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 116,
+    "name": "ui-prompt-lizard-sacrifice",
+    "duration": 2.0292062759399414,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 117,
+    "name": "ui-undo-on",
+    "duration": 0.21875283122062683,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 118,
+    "name": "ui-prompt-lizard-convert",
+    "duration": 1.8333333730697632,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 119,
+    "name": "building-relic-destroy",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 120,
+    "name": "unit-victory-marq",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 121,
+    "name": "unit-marq-run7",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 122,
+    "name": "ambience-lakemap",
+    "duration": 32.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 123,
+    "name": "ui-prompt-eyreturmoilleaderswitch",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 124,
+    "name": "ui-clock-orderdraw",
+    "duration": 0.9204308390617371,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 125,
+    "name": "ui-prompt-overwork",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 126,
+    "name": "ui-prompt-lizard-lostsoul",
+    "duration": 2.3333332538604736,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 127,
+    "name": "unit-marq-run6",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 128,
+    "name": "ui-vaga-hearts-fx",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 129,
+    "name": "ui-card-whoosh2",
+    "duration": 0.3437415063381195,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 130,
+    "name": "unit-ali-spawn",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 131,
+    "name": "music-altmenu-riverfolk",
+    "duration": 36.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 132,
+    "name": "ui-vaga-satchel",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 133,
+    "name": "ambience-battleloop",
+    "duration": 6.160317420959473,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 134,
+    "name": "ambience-introcinematic2",
+    "duration": 34.33192825317383,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 135,
+    "name": "unit-emigrie-spawn",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 136,
+    "name": "unit-clock-step4",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 137,
+    "name": "riverfolk-payments",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 138,
+    "name": "music-playmatloop",
+    "duration": 545.3749389648438,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 139,
+    "name": "unit-vaga-spawn",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 140,
+    "name": "unit-marq-run5",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 141,
+    "name": "ui-prompt-hirelingbluebirdsvpgain",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 142,
+    "name": "ui-prompt-lizard-revenge",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 143,
+    "name": "ui-card-whoosh1",
+    "duration": 0.3437415063381195,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 144,
+    "name": "ui-prompt-decree",
+    "duration": 0.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 145,
+    "name": "building-corvid-plottoken-flip",
+    "duration": 1.125,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 146,
+    "name": "building-keep-construct",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 147,
+    "name": "ui-mouseclick-leaves",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 148,
+    "name": "building-hundredsstronghold-recruit",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 149,
+    "name": "building-corvid-plottoken-snareclick2",
+    "duration": 1.125,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 150,
+    "name": "ui-mouseclick-dirt",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 151,
+    "name": "building-workshop-summon2",
+    "duration": 0.43750566244125366,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 152,
+    "name": "unit-duchy-victory",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 153,
+    "name": "ui-mouseclick-sand",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 154,
+    "name": "map-mountain-trailblaze",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 155,
+    "name": "ui-prompt-hundreds-warlordappointed",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 156,
+    "name": "ui-prompt-corvid-trickundo",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 157,
+    "name": "unit-lizardcult-victory",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 158,
+    "name": "building-roost-battle-death",
+    "duration": 7.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 159,
+    "name": "unit-victory-corvid",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 160,
+    "name": "building-duchy-citadel-construct",
+    "duration": 2.874988555908203,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 161,
+    "name": "music-battleintro2",
+    "duration": 6.995306015014648,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 162,
+    "name": "unit-clock-vagavictory",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 163,
+    "name": "ui-crafting-itemrecieved",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 164,
+    "name": "unit-clock-step8",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 165,
+    "name": "building-misc-lakeferry-tickle",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 166,
+    "name": "music-wintermaplayer",
+    "duration": 60.52174758911133,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 167,
+    "name": "ui-timer-loop",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 168,
+    "name": "ui-lobby-loin",
+    "duration": 1.6250113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 169,
+    "name": "unit-riverfolk-victory",
+    "duration": 1.6666666269302368,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 170,
+    "name": "ui-modalclose",
+    "duration": 0.42335599660873413,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 171,
+    "name": "unit-clock-marqvictory",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 172,
+    "name": "ui-prompt-aid",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 173,
+    "name": "unit-genericdeath",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 174,
+    "name": "building-base-tickle",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 175,
+    "name": "music-mountainmaplayer",
+    "duration": 137.7391357421875,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 176,
+    "name": "ui-endgame-headerform",
+    "duration": 4.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 177,
+    "name": "riverfolk-scorchedearth",
+    "duration": 4.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 178,
+    "name": "building-corvid-plottoken-click2",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 179,
+    "name": "ui-prompt-allianceoutrage",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 180,
+    "name": "music-battleintro3",
+    "duration": 6.995306015014648,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 181,
+    "name": "ui-battle-diceroll2",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 182,
+    "name": "ambience-menuloop",
+    "duration": 29.845783233642578,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 183,
+    "name": "map-mountain-trailblazeundo",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 184,
+    "name": "ui-button-maraudersexp-hundreds-removeitems",
+    "duration": 0.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 185,
+    "name": "ui-undo-off",
+    "duration": 0.21875283122062683,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 186,
+    "name": "ui-aibotconfigtickleclick",
+    "duration": 0.3437415063381195,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 187,
+    "name": "ui-prompt-flamebearers",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 188,
+    "name": "ui-prompt-uprisingremovingpieces",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 189,
+    "name": "unit-clock-step1",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 190,
+    "name": "unit-riverfolk-spawn",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 191,
+    "name": "unit-clock-step7",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 192,
+    "name": "ui-prompt-keeper-addshiftretinue",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 193,
+    "name": "building-duchy-market-tickle",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 194,
+    "name": "building-duchy-citadel-tickle",
+    "duration": 0.875,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 195,
+    "name": "ambience-mountainmap",
+    "duration": 32.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 196,
+    "name": "ui-prompt-vagasteal",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 197,
+    "name": "unit-eyre-summon3",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 198,
+    "name": "building-ruin-destroy",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 199,
+    "name": "ui-battle-ballofviolence",
+    "duration": 3.8399999141693115,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 200,
+    "name": "ui-prompt-hundreds-incite",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 201,
+    "name": "building-relic-intro",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 202,
+    "name": "unit-duchy-spawn",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 203,
+    "name": "ui-wardeathminus1",
+    "duration": 1.2829478979110718,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 204,
+    "name": "ambience-day",
+    "duration": 32.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 205,
+    "name": "ui-prompt-lizard-outcast",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 206,
+    "name": "ui-prompt-vagahideout",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 207,
+    "name": "building-duchy-market-construct",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 208,
+    "name": "building-hundredsstronghold-construct",
+    "duration": 1.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 209,
+    "name": "ui-alliance-spreadsympathy",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 210,
+    "name": "building-hundredsstronghold-death",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 211,
+    "name": "riverfolk-lizardgarden-spawn",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 212,
+    "name": "building-duchy-citadel-recruit",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 213,
+    "name": "ui-button-rulespageturn",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 214,
+    "name": "unit-marq-run2",
+    "duration": 0.13507936894893646,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 215,
+    "name": "building-recruit-construct",
+    "duration": 2.036893367767334,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 216,
+    "name": "unit-marq-run4",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 217,
+    "name": "building-duchy-tunnelrecruit",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 218,
+    "name": "vagaexiles-expansion-glide",
+    "duration": 3.6666667461395264,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 219,
+    "name": "ui-button-moregame",
+    "duration": 0.6046938896179199,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 220,
+    "name": "ui-turnbanner",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 221,
+    "name": "ui-dayphase",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 222,
+    "name": "unit-victory-eyrie",
+    "duration": 0.46875283122062683,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 223,
+    "name": "ui-prompt-exposure-wrongguess",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 224,
+    "name": "ui-battle-introcurtains",
+    "duration": 3.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 225,
+    "name": "building-base-construct",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 226,
+    "name": "music-winning",
+    "duration": 18.16832160949707,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 227,
+    "name": "ui-timer-on",
+    "duration": 1.3635833263397217,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 228,
+    "name": "unit-clock-alispawn",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 229,
+    "name": "building-sawmill-death",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 230,
+    "name": "ui-prompt-ali-mobilize",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 231,
+    "name": "wintermap-giftegg-spawn",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 232,
+    "name": "unit-riverfolk-boatmovementsplash1",
+    "duration": 3.6666667461395264,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 233,
+    "name": "riverfolk-tradingpost-spawn",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 234,
+    "name": "riverfolk-movefunds",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 235,
+    "name": "music-blanksong",
+    "duration": 1.4057823419570923,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 236,
+    "name": "ui-prompt-keeper-liveoffland",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 237,
+    "name": "unit-ali-battledeath",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 238,
+    "name": "unit-clock-vagaspawn",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 239,
+    "name": "building-corvid-plottoken-spawn",
+    "duration": 1.375,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 240,
+    "name": "unit-victory-vaga",
+    "duration": 0.6249886751174927,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 241,
+    "name": "building-sawmill-tickle",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 242,
+    "name": "ui-prompt-ali-train",
+    "duration": 1.9123809337615967,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 243,
+    "name": "music-battleintro",
+    "duration": 6.9934468269348145,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 244,
+    "name": "ui-mouseclick-rocks",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 245,
+    "name": "unit-marq-run1",
+    "duration": 0.13108843564987183,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 246,
+    "name": "unit-clock-alivictory",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 247,
+    "name": "building-sawmill-construct",
+    "duration": 1.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 248,
+    "name": "ui-clock-escalate",
+    "duration": 2.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 249,
+    "name": "building-corvid-plottoken-click1",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 250,
+    "name": "ui-button-shop",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 251,
+    "name": "building-duchy-tunneltickle",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 252,
+    "name": "unit-marq-run12",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 253,
+    "name": "unit-clock-death",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 254,
+    "name": "building-corvid-plottoken-extortionclick",
+    "duration": 0.875,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 255,
+    "name": "building-duchy-market-recruit",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 256,
+    "name": "ui-vaga-satchelexhausted",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 257,
+    "name": "ui-landing-open",
+    "duration": 0.6249886751174927,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 258,
+    "name": "building-corvid-plottoken-snareintro",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 259,
+    "name": "ambience-winterday",
+    "duration": 32.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 260,
+    "name": "music-battleloop",
+    "duration": 106.72335815429688,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 261,
+    "name": "ui-prompt-corvid-generic",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 262,
+    "name": "unit-eyrie-spawn",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 263,
+    "name": "unit-clock-step5",
+    "duration": 0.18947845697402954,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 264,
+    "name": "ui-modalopen",
+    "duration": 0.42335599660873413,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 265,
+    "name": "ui-prompt-vagastrike",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 266,
+    "name": "building-workshop-summon3",
+    "duration": 0.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 267,
+    "name": "music-introcinematic",
+    "duration": 13.727051734924316,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 268,
+    "name": "unit-eyre-summon4",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 269,
+    "name": "ui-prompt-leadernew",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 270,
+    "name": "ui-prompt-corvid-exertundo",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 271,
+    "name": "unit-marq-spawn",
+    "duration": 1.25,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 272,
+    "name": "unit-marq-run11",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 273,
+    "name": "building-corvid-plottoken-extortionintro",
+    "duration": 1.4375,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 274,
+    "name": "map-lake-ferrymovefromclearing",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 275,
+    "name": "ui-prompt-lizard-sanctify",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 276,
+    "name": "ambience-birdsong",
+    "duration": 29.845783233642578,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 277,
+    "name": "unit-hundred-mobtoken",
+    "duration": 2.124988555908203,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 278,
+    "name": "building-corvid-plottoken-raidclick",
+    "duration": 0.75,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 279,
+    "name": "ui-prompt-vagadaylabor",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 280,
+    "name": "ui-landing-close",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 281,
+    "name": "ui-clock-banner-mechmarq-recruit",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 282,
+    "name": "building-hundredsstronghold-tickle",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 283,
+    "name": "ui-prompt-hundreds-newmood",
+    "duration": 2.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 284,
+    "name": "wintermap-giftegg-open",
+    "duration": 2.739093065261841,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 285,
+    "name": "ui-prompt-genericalert",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 286,
+    "name": "ui-prompt-keeper-retinueloss",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 287,
+    "name": "ui-lobby-leave",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 288,
+    "name": "ui-button-friends",
+    "duration": 0.7921768426895142,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 289,
+    "name": "unit-marq-run10",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 290,
+    "name": "music-menuloop",
+    "duration": 204.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 291,
+    "name": "ui-prompt-keeper",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 292,
+    "name": "unit-riverfolk-boatmovementsplash2",
+    "duration": 3.3333332538604736,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 293,
+    "name": "building-corvid-plottoken-raidintro",
+    "duration": 2.125,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 294,
+    "name": "building-corvid-plottoken-bomb",
+    "duration": 5.5,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 295,
+    "name": "ui-button2",
+    "duration": 0.3750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 296,
+    "name": "unit-clock-tickleclick",
+    "duration": 0.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 297,
+    "name": "unit-victory-jumpwhoosh",
+    "duration": 0.46875283122062683,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 298,
+    "name": "ui-button-leaderboard",
+    "duration": 1.8749886751174927,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 299,
+    "name": "ui-prompt-hundreds-oppress",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 300,
+    "name": "building-duchy-burrow-tickle",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 301,
+    "name": "ui-prompt-eyriescoreprompt",
+    "duration": 3.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 302,
+    "name": "ui-battle-outrocurtains",
+    "duration": 3.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 303,
+    "name": "ui-prompt-duchy-priceoffailure",
+    "duration": 3.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 304,
+    "name": "unit-eyre-summon2",
+    "duration": 0.8750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 305,
+    "name": "ui-clock-banner-escalateddaylight",
+    "duration": 5.111609935760498,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 306,
+    "name": "ui-battle-diceui2",
+    "duration": 0.7013378739356995,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 307,
+    "name": "unit-hundred-victory",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 308,
+    "name": "unit-clock-eyrevictory",
+    "duration": 1.5,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 309,
+    "name": "music-menuloop-riverfolk",
+    "duration": 124.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 310,
+    "name": "unit-keeper-spawn",
+    "duration": 0.6249886751174927,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 311,
+    "name": "unit-marq-run9",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 312,
+    "name": "building-misc-mountaintower-tickle",
+    "duration": 0.75,
+    "channels": 2,
+    "rate": 48000
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 313,
+    "name": "building-recruit-recruit",
+    "duration": 2.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 314,
+    "name": "building-duchy-tunnelconstruct",
+    "duration": 1.8749886751174927,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 315,
+    "name": "building-recruit-tickle",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 316,
+    "name": "ambience-winternight",
+    "duration": 32.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 317,
+    "name": "ui-battle-diceroll1",
+    "duration": 1.0,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 318,
+    "name": "unit-keeper-victory",
+    "duration": 1.3333333730697632,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 319,
+    "name": "ui-fx-tokenwood",
+    "duration": 0.75,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 320,
+    "name": "unit-marq-run8",
+    "duration": 0.13965986669063568,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 321,
+    "name": "ui-button1",
+    "duration": 0.3750113248825073,
+    "channels": 2,
+    "rate": 44100
+  },
+  {
+    "source": "Root_Data\\resources.assets",
+    "pathId": 322,
+    "name": "music-lakemaplayer",
+    "duration": 154.43478393554688,
+    "channels": 2,
+    "rate": 44100
+  }
+]

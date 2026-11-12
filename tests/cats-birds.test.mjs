@@ -155,7 +155,7 @@ test('ambush ends the battle even if hospital returns attackers, with private op
   const ambush=give(s,'AmbushBird','bird');give(s,'AmbushFox');
   s=r.applyAction(s,'a',{type:'battle',clearing:3});
   assert.ok(!('options' in r.projectGame(s,'a').choice));
-  s=choose(s,ambush.id);s=choose(s,'pass');
+  s=choose(s,ambush.id);
   assert.equal(s.effects.frames[0].kind,'hospital');
   const option=s.effects.frames[0].options.find(o=>o.id!=='pass');
   if(option)s=choose(s,option.id);else s=choose(s,'pass');
@@ -227,8 +227,8 @@ test('persistent duplicates are rejected, Command Warren and Cobbler each happen
   s=r.applyAction(s,'a',{type:'wood',clearing:0});assert.equal(s.effects.frames[0].kind,'free-battle');
   s=choose(s,'pass');assert.equal(s.phase,'craft');assert.equal(s.actions,3);
   s=r.applyAction(s,'a',{type:'craft-done'});s=r.applyAction(s,'a',{type:'end'});
-  assert.equal(s.effects.frames[0].kind,'free-move');
-  s=choose(s,'pass');assert.ok(['birdsong','discard'].includes(s.phase));
+  assert.equal(s.phase,'evening');assert.equal(s.effects.frames.length,0);
+  s=r.applyAction(s,'a',{type:'evening-continue'});assert.ok(['evening-end','discard'].includes(s.phase));
 });
 
 test('Brutal and Stand and Deliver stop immediately when the opposing player wins',()=>{
@@ -242,8 +242,8 @@ test('ambush victory still discards the played physical card and Despot scores o
   let s=phase(ready(),'daylight');s.players[1].score=28;
   s.board[3].warriors={cat:1,bird:1};s.board[3].wood=1;s.board[3].buildings=[];
   const ambush=give(s,'AmbushBird','bird');
-  s=r.applyAction(s,'a',{type:'battle',clearing:3});s=choose(s,ambush.id);s=choose(s,'pass');
-  s=choose(s,'wood');
+  s=r.applyAction(s,'a',{type:'battle',clearing:3});s=choose(s,ambush.id);
+  assert.equal(s.board[3].wood,0,'The only remaining token is removed automatically');
   assert.equal(s.winner,'b');assert.equal(s.players[1].score,30);
   assert.ok(s.discard.some(c=>c.id===ambush.id));invariants(s);
 });

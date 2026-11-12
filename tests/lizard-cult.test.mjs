@@ -104,7 +104,7 @@ test('Revenge moves only defending battle casualties into acolytes',()=>{
   for(const defense of [true,false]){
     let s=turn(setup(),defense?'cat':'lizard',defense?'daylight':'lizard-conspiracies');const c=s.board.find(c=>!c.keep);c.warriors.cat=3;c.warriors.lizard=3;player(s,'cat').hand=[];player(s,'lizard').hand=[];s.lizard.acolytes=3;s.lizard.outcast=c.suit;
     s=defense?act(s,'cat',{type:'battle',clearing:c.id,defender:'lizard'},()=>3):act(s,'lizard',{type:'crusade',clearing:c.id,defender:'cat'},()=>3);
-    const choice=s.effects.frames[0];s=act(s,choice.playerId,{type:'choice',choiceId:choice.id,optionId:'pass'},()=>3);s=resolve(s);
+    s=resolve(s);
     assert.equal(s.board[c.id].warriors.lizard,0);
     if(defense)assert.equal(s.lizard.acolytes,6);else assert.equal(s.lizard.acolytes,1);
   }
@@ -112,7 +112,7 @@ test('Revenge moves only defending battle casualties into acolytes',()=>{
 test('garden loss discards a random unrevealed hand card while preserving revealed cards',()=>{
   let s=turn(setup(),'cat','daylight');const c=s.board.find(c=>!c.keep);c.buildings=[];garden(s,c);c.warriors.lizard=0;c.warriors.cat=1;
   player(s,'lizard').hand=[card('fear-a','fox','item'),card('fear-b','rabbit','item')];s.lizard.revealed=[card('protected','mouse')];
-  s=act(s,'cat',{type:'battle',clearing:c.id,defender:'lizard'});const choice=s.effects.frames[0];s=act(s,'lizard',{type:'choice',choiceId:choice.id,optionId:'pass'},()=>0);s=resolve(s);
+  s=act(s,'cat',{type:'battle',clearing:c.id,defender:'lizard'});s=resolve(s);
   assert.equal(player(s,'lizard').hand.length,1);assert.equal(s.lizard.revealed[0].id,'protected');assert.ok(s.lizard.lostSouls.some(c=>c.id==='fear-a'));
 });
 test('crusade movement finishes outrage before optional destination battle; extra fields cannot bypass legality',()=>{

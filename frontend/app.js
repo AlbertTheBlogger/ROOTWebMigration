@@ -1,4 +1,6 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
+import { moveCamera, resetCamera } from '/map-camera.js';
+import { showPreferences } from '/sound.js';
 import { renderLogGroups } from '/log-ui.js';
 import { mountMapControls, pickMapClearing } from '/map-controls.js';
 import { decorate, observe, showEvents, previewCard, previewLeader, showPublicDetails } from '/experience.js';
@@ -82,8 +84,8 @@ function watch(code){
 }
 function syncBusyButtons(){
   for(const button of app.querySelectorAll('button,.room-seats input,.room-seats select,#ruleset')){
-    if(S.busy){if(!('busyDisabled' in button.dataset))button.dataset.busyDisabled=String(button.disabled);button.disabled=true;}
-    else if('busyDisabled' in button.dataset){button.disabled=button.dataset.busyDisabled==='true';delete button.dataset.busyDisabled;}
+    if(S.busy){if(!('busyDisabled' in button.dataset))button.dataset.busyDisabled=button.dataset.motionDisabled??String(button.disabled);button.disabled=true;}
+    else if('busyDisabled' in button.dataset){button.disabled=button.dataset.busyDisabled==='true'||'motionDisabled' in button.dataset;delete button.dataset.busyDisabled;}
   }
 }
 function connection(){const e=document.querySelector('.connection');if(e){e.textContent=S.connected?'● 已连接 · 自动保存':'○ 正在重连 · 保留服务器进度';e.classList.toggle('offline',!S.connected);}syncBusyButtons();}
@@ -113,9 +115,9 @@ function roomCard(r){
 function lobbyView(){frame(`<div class="heading"><div><div class="eyebrow">THE GATHERING PLACE</div><h1>今晚，谁来执掌森林？</h1><p class="muted">找一个席位，或为朋友们开一间房。</p></div><span class="badge">${S.rooms.filter(r=>r.status==='waiting').length} 个房间等待中</span></div>${limitations()}<div class="lobby-grid"><section class="panel"><div class="panel-header"><h2>林间房间</h2>${btn('↻ 刷新','refresh','quiet')}</div><div class="room-grid">${S.rooms.map(roomCard).join('')||'<div class="empty"><div class="empty-symbol">♧</div>森林还很安静。<br>创建第一间房，邀请朋友加入。</div>'}</div></section><aside><section class="panel"><h2>创建房间</h2><form id="create"><label>游戏模式<select name="ruleset"><option value="root-lizard-cult-v6">扩展标准局 · 五大阵营</option><option value="root-base-four-v5">基础四阵营标准局</option></select></label><p class="caption create-seat-note">固定四个席位 · 两至四位参与者即可开局 · 空位可留空或添加人机</p><label>房间名称<input name="title" maxlength="24" placeholder="例如：周末林间小聚" required></label><label>本局玩家名<input name="name" maxlength="24" value="${esc(S.user.username)}" required></label><label>房间密码 <small>可不填，即公共房间</small><input name="password" type="password" maxlength="128" autocomplete="new-password" placeholder="留空即可公开加入"></label><button class="primary">＋ 创建房间</button></form></section><section class="panel"><h3>有朋友的房间号？</h3><form id="join"><label>六位房间号<input name="code" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="例如 123456" required></label><label>本局玩家名<input name="name" value="${esc(S.user.username)}" maxlength="24" required></label><label>房间密码<input name="password" type="password" maxlength="128" placeholder="公共房间留空"></label><button>加入朋友的房间 →</button></form></section></aside></div>`);}
 function roomHeader(){
   const room=S.room;
-  if(room.tutorial)return `<div class="heading"><div>${btn('← 教程目录','tutorials','quiet')}<h1 class="room-title">${esc(room.title)}</h1><span class="badge">单人练习 · 服务器保存进度</span></div>${btn('重新开始本章','tutorial-restart','quiet')}</div>`;
+  if(room.tutorial)return `<div class="heading"><div>${btn('← 教程目录','tutorials','quiet')}<h1 class="room-title">${esc(room.title)}</h1><span class="badge">单人练习 · 服务器保存进度</span></div><div class="room-host-tools">${btn('声音与动画','preferences','quiet')}${btn('重新开始本章','tutorial-restart','quiet')}</div></div>`;
   return `<div class="heading"><div>${btn('← 房间大厅','lobby','quiet')}<h1 class="room-title">${esc(room.title)}</h1><span class="code-large"># ${room.code}</span> ${btn('复制房间号','copy','quiet')} <span class="badge ${room.locked?'locked':''}">${room.locked?'密码房间':'公共房间'}</span></div>
-    <div class="room-host-tools"><span class="connection"></span>${room.ownerId===S.user.id?btn('删除房间','delete-room','quiet danger',false,`data-code="${room.code}"`):''}</div></div>`;
+    <div class="room-host-tools">${btn('声音与动画','preferences','quiet')}<span class="connection"></span>${room.ownerId===S.user.id?btn('删除房间','delete-room','quiet danger',false,`data-code="${room.code}"`):''}</div></div>`;
 }
 function captureWaitingDraft(){
   const form=document.querySelector('#profile[data-room]');
@@ -271,8 +273,14 @@ function controls(g,me){
   }
   if(g.pending){const l=g.pending.losses[0];if(l.faction!==me.faction)return '<h2>战损结算</h2><p class="muted">等待对方选择移除的建筑或标记。</p>';const c=g.board[g.pending.clearing];const pieces=[...new Set(c.buildings.filter(b=>b.faction===me.faction).map(b=>b.type).concat(me.faction==='cat'?[...(c.keep?['keep']:[]),...(c.wood?['wood']:[])]:[]))];return `<h2>选择战损</h2><p class="muted">${c.name}还需承受 ${l.hits} 点伤害。</p><div class="stack">${pieces.map(p=>btn(`移除${names[p]}`,'loss','',false,`data-piece="${p}"`)).join('')}</div>`;}
   if(g.players[g.turn].id!==me.id)return `<h2>静候下一步</h2><p class="muted">当前由 ${esc(g.players[g.turn].name)} 行动。</p><p class="caption">你仍可查看地图、自己的手牌和公开法令。</p>`;
-  let html=`<h2>轮到你了</h2><span class="phase">${phases[g.phase]}</span>`;
+  let html=`<h2>轮到你了</h2><span class="phase">${g.phase==='evening'?'夜晚 · 自选牌效果':g.phase==='evening-end'?'夜晚 · 回合结束前':phases[g.phase]}</span>`;
   if(['root-base-four-v5','root-lizard-cult-v6'].includes(g.ruleset))html+=dominanceControls(g,me);
+  if(['evening','evening-end'].includes(g.phase)||g.nightCobbler&&['cat','bird'].includes(me.faction)){
+    const moves=(g.factionActions||[]).map((option,index)=>({...option,index})).filter(option=>option.action.cobbler);
+    if(moves.length)html+=`<details class="action-section faction-action-group" data-category="补鞋匠" open><summary>补鞋匠 · 夜晚额外移动一次</summary><form data-type="faction-action"><select name="option">${moves.map(option=>`<option value="${option.index}">${esc(option.label)}</option>`).join('')}</select><button>使用补鞋匠移动</button></form></details>`;
+    if(g.phase==='evening')return html+`<p class="caption">补鞋匠可稍后使用，无需现在决定。</p>${btn('继续夜晚步骤 →','evening-continue','primary')}`;
+    if(g.phase==='evening-end')return html+btn('结束夜晚 →','evening-end','primary');
+  }
   if(['alliance','vagabond','lizard'].includes(me.faction))return html+newFactionControls(g,me);
   if(standard){
     for(const option of g.effectOptions||[]){
@@ -432,10 +440,9 @@ function updateBasicGuide({from=null,picked=null,choice=false}={}){
     let boxHeight=Math.max(Math.max(...ys)-Math.min(...ys)+270,width/aspect);width=boxHeight*aspect;
     const x=Math.max(15,Math.min((Math.min(...xs)+Math.max(...xs)-width)/2,ART.board.width-width-15));
     const y=Math.max(20,Math.min((Math.min(...ys)+Math.max(...ys)-boxHeight)/2,ART.board.height-boxHeight-20));
-    map.setAttribute('viewBox',`${x} ${y} ${width} ${boxHeight}`);
+    moveCamera(map,[x,y,width,boxHeight],S.room.gameId+'|'+(meta.attempt||0));
   }else{
-    map.setAttribute('viewBox',map.dataset.fullView);
-    if(innerWidth<=760){const box=map.dataset.fullView.split(' ').map(Number);map.style.height=(map.clientWidth*box[3]/box[2])+'px';}
+    moveCamera(map,map.dataset.fullView,S.room.gameId+'|'+(meta.attempt||0));
   }
   if(context.from!==undefined&&['route','to'].includes(focus)){
     const centers=[context.from,context.to].map(id=>board.querySelector(`.clearing[data-id="${id}"] .ground`));
@@ -459,6 +466,20 @@ function updateBasicGuide({from=null,picked=null,choice=false}={}){
   }
   for(const track of document.querySelectorAll('.victory-track'))track.classList.toggle('guide-score-focus',focus==='score');
   board.dataset.guideActing=String(acting);
+}
+function focusLessonMap(meta){
+  if(!meta||meta.guide)return;
+  const map=document.querySelector('svg.map');if(!map)return;
+  map.dataset.fullView ||= map.getAttribute('viewBox');
+  const context=meta.context||{},ids=[context.from,context.to,context.clearing,...(context.clearings||[])].filter(id=>id!==undefined);
+  const points=ids.map(id=>ART.board.clearings[id]||ART.board.forests?.[id]).filter(Boolean);
+  for(const el of map.querySelectorAll('.clearing'))el.classList.toggle('guide-focus',ids.includes(Number(el.dataset.id)));
+  let box=map.dataset.fullView;
+  if(points.length){
+    const xs=points.map(p=>p.x),ys=points.map(p=>p.y),width=Math.max(620,Math.max(...xs)-Math.min(...xs)+280),height=Math.max(360,Math.max(...ys)-Math.min(...ys)+280);
+    box=[Math.max(15,Math.min((Math.min(...xs)+Math.max(...xs)-width)/2,ART.board.width-width-15)),Math.max(20,Math.min((Math.min(...ys)+Math.max(...ys)-height)/2,ART.board.height-height-20)),width,height];
+  }
+  moveCamera(map,box,S.room.gameId+'|'+(meta.attempt||0));
 }
 async function loadTutorials(){
   const result=await api('/api/tutorials');closeStream();S.room=null;S.history=null;S.page='tutorials';S.tutorials=result.lessons;location.hash='tutorials';render();
@@ -506,10 +527,11 @@ function gameView(){
   if(S.room.tutorial)filterTutorialControls(S.room.tutorial);
   decorate(game,S.user.id,ART,names);
   mountMapControls({game,userId:S.user.id,version:S.room.version,gameId:S.room.gameId,tutorial:S.room.tutorial,onTutorialStage:updateBasicGuide});
+  focusLessonMap(S.room.tutorial);
   fitSidebars();
   const observationKey=S.room.tutorial?S.room.gameId+'|'+S.room.tutorial.index+'|'+(S.room.tutorial.attempt||0):null;
   if(observationKey!==tutorialObservationKey){observe(null,ART);tutorialObservationKey=observationKey;}
-  if(S.room.tutorial?.guide)observe(null,ART);else observe(game,ART);
+  observe(game,ART,{context:S.room.gameId+'|'+(observationKey||'game')});
 }
 function historyModal(){const h=S.history;return `<div class="modal-backdrop"><section class="modal" role="dialog" aria-modal="true" aria-label="我的对局"><div class="panel-header"><h2>我的服务器存档</h2>${btn('关闭','close-history','quiet')}</div>${h.game?`<p class="muted">存档查看 · ${esc(h.game.ruleset)}</p>${h.game.players.map(p=>`<div class="history-item">${esc(p.name)} · ${names[p.faction]} · ${p.score} 分 · 手牌 ${p.handCount} 张</div>`).join('')}<div class="logs">${renderLogGroups(h.game)}</div>${btn('返回列表','history','quiet')}`:h.games.map(g=>`<article class="history-item"><h3>${g.players.map(p=>esc(p.name)).join(' × ')}</h3><p class="muted">房间 #${g.roomCode} · 第 ${g.round} 轮 · ${g.winner?'已结束':'进行中'}</p><div class="row"><small>${new Date(g.updatedAt).toLocaleString()}</small>${btn('查看存档','view-history','',false,`data-id="${g.id}"`)}</div></article>`).join('')||'<p class="muted">开始第一局后，服务器存档会显示在这里。</p>'}</section></div>`;}
 function adminView(){
@@ -536,7 +558,7 @@ async function adminRequest(path,data){
   try{await api(path,data);}catch(error){if(error.status===409)await loadAdmin();throw error;}
   await loadAdmin();toast('管理操作已完成');
 }
-function render(){if(!S.user)loginView();else if(S.user.role==='admin')adminView();else if(S.page==='tutorials')tutorialListView();else if(!S.room)lobbyView();else if(!S.room.game)waitingView();else gameView();}
+function render(){if(!S.room?.game){observe(null,ART);resetCamera();}if(!S.user)loginView();else if(S.user.role==='admin')adminView();else if(S.page==='tutorials')tutorialListView();else if(!S.room)lobbyView();else if(!S.room.game)waitingView();else gameView();}
 async function loadLobby(){if(S.user?.role==='admin')return loadAdmin();S.page='lobby';closeStream();S.room=null;S.history=null;location.hash='';const b=await api('/api/rooms');S.rooms=b.rooms;render();}
 async function enter(room){S.page='room';S.room=room;S.selected=0;S.card=null;location.hash=`room=${room.code}`;render();watch(room.code);requestAnimationFrame(()=>document.querySelector('.map-card')?.scrollIntoView({block:'center',behavior:'auto'}));}
 function commandId(){
@@ -630,6 +652,7 @@ app.addEventListener('submit',event=>{event.preventDefault();const form=event.ta
   await command({type:'action',action});
 });});
 app.addEventListener('click',event=>{const b=event.target.closest('[data-action]');if(!b||b.disabled)return;const action=b.dataset.action;
+  if(action==='preferences'){showPreferences();return;}
   if(action==='leader-preview'){previewLeader(b.dataset.leader,ART,names);return;}
   if(action==='player-public'){const player=S.room.game.players.find(player=>player.id===b.dataset.player);if(player){showPublicDetails(player.name+' · '+names[player.faction],playerPublicDetails(S.room.game,player));decorate(S.room.game,S.user.id,ART,names);}return;}
   if(action==='recent-actions'){showEvents(S.room.game);return;}

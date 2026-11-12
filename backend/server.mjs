@@ -11,11 +11,14 @@ import { gzipSync } from 'node:zlib';
 import { RULESET, LIMITATIONS } from './engine.mjs';
 import { createGame, applyAction, projectGame, supportedRulesets } from './rules/versions/registry.mjs';
 import { candidates as botCandidates } from './bots/test-policy.mjs';
+import { botStepDelay } from '../frontend/presentation-model.js';
 
 const scrypt=promisify(scryptCb);
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const artManifest=JSON.parse(readFileSync(resolve(root,'frontend/asset-manifest.json'),'utf8'));
 const artFiles=new Set(artManifest.files);
+const audioManifest=JSON.parse(readFileSync(resolve(root,'frontend/audio-manifest.json'),'utf8'));
+const audioFiles=new Set(audioManifest.files);
 const LIZARD_RULESET='root-lizard-cult-v6';
 const roomFactions=payload=>payload.ruleset===LIZARD_RULESET?['cat','bird','alliance','vagabond','lizard']:(payload.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird'];
 function assignSeats(payload){
@@ -28,7 +31,7 @@ function assignSeats(payload){
   return payload;
 }
 const sceneResources=new Map();
-for(const path of ['/clearing-ui.js','/experience.js','/map-controls.js','/log-ui.js']){
+for(const path of ['/clearing-ui.js','/experience.js','/map-controls.js','/log-ui.js','/motion.js','/map-camera.js','/presentation-model.js','/sound.js','/audio-manifest.json']){
   const content=readFileSync(resolve(root,'frontend','.'+path));
   const type=path.endsWith('.js')?'text/javascript; charset=utf-8':path.endsWith('.json')?'application/json; charset=utf-8':path.endsWith('.webp')?'image/webp':path.endsWith('.bin')?'application/octet-stream':'text/plain; charset=utf-8';
   const compress=!path.endsWith('.webp');
@@ -46,7 +49,7 @@ export function configureAccounts(db){
   db.exec("CREATE TABLE IF NOT EXISTS account_access(user_id TEXT PRIMARY KEY REFERENCES users(id),role TEXT NOT NULL DEFAULT 'player' CHECK(role IN ('player','admin')),disabled INTEGER NOT NULL DEFAULT 0 CHECK(disabled IN (0,1)))");
 }
 
-export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.sqlite'),origin=process.env.APP_ORIGIN||null,secure=process.env.COOKIE_SECURE==='true',rateLimit=true,botDelay=600}={}){
+export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.sqlite'),origin=process.env.APP_ORIGIN||null,secure=process.env.COOKIE_SECURE==='true',rateLimit=true,botDelay=null}={}){
   if(dbPath!==':memory:')mkdirSync(dirname(resolve(dbPath)),{recursive:true});
   const db=new DatabaseSync(dbPath);
   if(db.prepare('PRAGMA auto_vacuum').get().auto_vacuum!==2){
@@ -182,7 +185,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
       }
       notify(code);
       scheduleBot(code);
-    }, Math.max(0, botDelay));
+    }, botDelay===null?botStepDelay(room.payload.game):Math.max(0,botDelay));
     timer.unref();
     botTimers.set(code, timer);
   }
@@ -201,6 +204,11 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
         });
         const content=compressed?resource.gzip:resource.content;
         res.writeHead(200,{'Content-Type':resource.type,'Content-Length':content.length,'Cache-Control':resource.immutable?'public, max-age=31536000, immutable':'no-cache','Vary':'Accept-Encoding',...(compressed?{'Content-Encoding':'gzip'}:{})});
+        return res.end(content);
+      }
+      if(audioFiles.has(path)){
+        const content=readFileSync(resolve(root,'frontend','.'+path));
+        res.writeHead(200,{'Content-Type':'audio/wav','Content-Length':content.length,'Cache-Control':'public, max-age=31536000, immutable'});
         return res.end(content);
       }
       if(artFiles.has(path)){

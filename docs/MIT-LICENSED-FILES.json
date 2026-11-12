@@ -7,6 +7,7 @@
   "previousAuditSelectedDocumentationFiles": 20,
   "files": [
     "LICENSE-SCOPE.md",
+    "docs/DEVELOPMENT-1.1.1.md",
     "README.en.md",
     "README.md",
     "ROOT项目进度安排.md",
@@ -14,6 +15,7 @@
     "backend/bots/test-policy.mjs",
     "backend/engine.mjs",
     "backend/rules/effects/queue.mjs",
+    "backend/rules/presentation.mjs",
     "backend/rules/versions/base-four.mjs",
     "backend/rules/versions/battle-lab.mjs",
     "backend/rules/versions/card-lab.mjs",
@@ -29,6 +31,7 @@
     "docs/CATS-BIRDS-ACCEPTANCE-2026-11-09.md",
     "docs/DEPLOYMENT-2026-11-12.md",
     "docs/DESKTOP-UI-AUDIT-2026-11-10.md",
+    "docs/EXPERIENCE-IMPROVEMENTS-2026-11-13.md",
     "docs/FOUR-SEAT-ROOMS-2026-11-12.md",
     "docs/HANDOFF-2026-11-09.md",
     "docs/IMPLEMENTATION-STATUS.md",
@@ -53,9 +56,14 @@
     "frontend/experience.js",
     "frontend/index.html",
     "frontend/log-ui.js",
+    "frontend/map-camera.js",
     "frontend/map-controls.js",
+    "frontend/motion.js",
+    "frontend/presentation-model.js",
+    "frontend/sound.js",
     "frontend/styles.css",
     "tests/admin.test.mjs",
+    "tests/audio-http.test.mjs",
     "tests/base-four.test.mjs",
     "tests/battle-http.test.mjs",
     "tests/battle-lab.test.mjs",
@@ -71,6 +79,8 @@
     "tests/lizard-http.test.mjs",
     "tests/log-ui.test.mjs",
     "tests/playthrough.test.mjs",
+    "tests/presentation.test.mjs",
+    "tests/evening-timing.test.mjs",
     "tests/room-deletion.test.mjs",
     "tests/room-seats.test.mjs",
     "tests/server.test.mjs",
@@ -86,6 +96,7 @@
     "tools/cat_build_browser.py",
     "tools/cats_birds_selfplay.mjs",
     "tools/choice_browser.py",
+    "tools/experience_browser.py",
     "tools/four_browser.py",
     "tools/four_selfplay.mjs",
     "tools/improvements_browser.py",
@@ -123,6 +134,18 @@
       "feature": "Four-seat waiting-room engineering record, HTTP regression and browser acceptance utility",
       "addedFiles": 3,
       "excluded": "Original artwork reused without any change to its exclusion; game text and user-provided reference material remain outside MIT."
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "Shared tutorial/game presentation, camera/audio control code and targeted tests/engineering record",
+      "addedFiles": 9,
+      "excluded": "Original audio, audio manifest, extraction utility and research evidence are outside MIT."
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "Development v1.1.1 Evening timing regression tests and engineering record",
+      "addedFiles": 2,
+      "excluded": "All original game artwork, text, audio, extraction evidence and user data remain excluded."
     }
   ]
 }

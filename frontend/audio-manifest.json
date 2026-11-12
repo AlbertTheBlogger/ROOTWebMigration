@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "clips": {
+    "score": "/assets/audio/score.b1cfa9b2b65d.wav",
+    "battle": "/assets/audio/battle.2d5e4c30b5ce.wav",
+    "build": "/assets/audio/build.f5357e71b1e4.wav",
+    "turmoil": "/assets/audio/turmoil.e2e08a56cc7c.wav",
+    "draw": "/assets/audio/draw.3de5b8ded1a1.wav",
+    "aid": "/assets/audio/aid.2bc106861a33.wav",
+    "revolt": "/assets/audio/revolt.61402e66b587.wav",
+    "move": "/assets/audio/move.071adbb294a5.wav",
+    "dice": "/assets/audio/dice.cd8ce171c1ef.wav"
+  },
+  "files": [
+    "/assets/audio/aid.2bc106861a33.wav",
+    "/assets/audio/battle.2d5e4c30b5ce.wav",
+    "/assets/audio/build.f5357e71b1e4.wav",
+    "/assets/audio/dice.cd8ce171c1ef.wav",
+    "/assets/audio/draw.3de5b8ded1a1.wav",
+    "/assets/audio/move.071adbb294a5.wav",
+    "/assets/audio/revolt.61402e66b587.wav",
+    "/assets/audio/score.b1cfa9b2b65d.wav",
+    "/assets/audio/turmoil.e2e08a56cc7c.wav"
+  ]
+}

@@ -196,7 +196,7 @@ export function pickMapClearing(id){
 }
 export function mountMapControls({game,userId,version,gameId,tutorial,onTutorialStage}){
   const source=document.querySelector('.actions');const board=document.querySelector('.map-card');if(!source||!board)return;
-  saveDrafts();mounted?.observer?.disconnect();
+  saveDrafts();mounted?.observer?.disconnect();if(mounted?.cameraListener)mounted.board.removeEventListener('map-camera-frame',mounted.cameraListener);
   const context=[gameId,game.turn,game.round,game.phase,game.choice?.choiceId,...(tutorial?.guide?[tutorial.index,tutorial.attempt,tutorial.guide.mode,tutorial.guide.cursor]:[])].join('|');
   if(state.context!==context)state={context,version,activeKey:null,picked:null,from:null,drafts:new Map()};
   else if(state.version!==version){state.version=version;state.picked=null;state.from=null;state.choiceOption=null;state.drafts.clear();}
@@ -296,5 +296,7 @@ export function mountMapControls({game,userId,version,gameId,tutorial,onTutorial
     if(board.clientWidth!==previousWidth){previousWidth=board.clientWidth;reportTutorialStage();}
     reposition();
   });mounted.observer.observe(board);
+  mounted.cameraListener=reposition;board.addEventListener('map-camera-frame',reposition);
   if(tutorial?.guide)mounted.observer.observe(board.querySelector('.tutorial-dialogue'));
+
 }

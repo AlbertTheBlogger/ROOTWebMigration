@@ -8,7 +8,8 @@ The root MIT License applies only as described in [LICENSE-SCOPE.md](LICENSE-SCO
 
 | Content / 内容 | Origin and treatment / 来源与处理 |
 | --- | --- |
-| `frontend/assets/**` | Artwork extracted from the original commercial game or derived from user-supplied visual references. Excluded from project MIT licensing; rights remain with their respective holders. 原游戏/参考图片美术，全部排除。 |
+| `frontend/assets/**` | Artwork and audio extracted from the original commercial game or derived from user-supplied visual references. Excluded from project MIT licensing; rights remain with their respective holders. 原游戏/参考图片美术及原包音效，全部排除。 |
+| `frontend/audio-manifest.json`, `frontend/assets/audio/**` | Original-game AudioClips and their mapping; excluded from MIT. PCM conversion does not change ownership. 原包音效及映射，转换格式不改变权利归属。 |
 | `frontend/asset-manifest.json` | Project mapping mixed with original-game content, including three directly extracted Vagabond ability descriptions. Entire file excluded from this grant. 映射与原作文本混合，整文件排除。 |
 | `backend/data/**` | Extracted or adapted card, map, faction and tutorial data/text. Entire directory excluded. 原牌表、地图、阵营与教程数据/文本，整目录排除。 |
 | `research/**` | Extracted images, meshes, localization, assembly, metadata, mixed research outputs and dependency records. Outside this MIT allowlist. 研究目录整体不纳入此次许可。 |

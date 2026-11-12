@@ -1,6 +1,8 @@
 {
   "name": "woodland-rooms",
-  "version": "1.1.0",
+  "version": "1.1.1-dev",
+  "releaseVersion": "1.1",
+  "developmentVersion": "1.1.1",
   "private": true,
   "type": "module",
   "engines": { "node": ">=24.11.1" },

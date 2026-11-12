@@ -133,9 +133,9 @@ test('two selected discards persist into the next Birdsong and enable discounted
  assert.ok(run.game.board[11].buildings.some(b=>b.type==='garden-rabbit'));
 });
 
-test('fear checkpoint retry restores the pre-roll state and produces the same tutorial result',()=>{
- let run=lizardStep('liz-fear');const before=structuredClone(run.game);const command={type:'action',action:tutorialAction(projectTutorial(run,0))};
- run=advanceTutorial(run,command);const after=structuredClone(run.game);assert.equal(run.ready,true);assert.equal(after.lizard.lostSouls.length,1);
- run=advanceTutorial(run,{type:'retry-step'});assert.deepEqual(run.game,before);
- run=advanceTutorial(run,command);assert.deepEqual(run.game,after);
+test('fear with no optional defense resolves automatically and retry restores the same completed checkpoint',()=>{
+ let run=lizardStep('liz-fear');const after=structuredClone(run.game);
+ assert.equal(run.ready,true);assert.equal(after.lizard.lostSouls.length,1);assert.equal(after.combat,null);
+ assert.equal(after.effects.frames.length,0);
+ run=advanceTutorial(run,{type:'retry-step'});assert.deepEqual(run.game,after);assert.equal(run.ready,true);
 });

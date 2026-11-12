@@ -34,6 +34,8 @@ def pick_action(game, me):
         option = next((option for option in options if option['id']=='pass'), options[0])
         return {'type':'choice', 'choiceId':game['choice']['choiceId'], 'optionId':option['id']}
     phase = game['phase']
+    if phase=='evening': return {'type':'evening-continue'}
+    if phase=='evening-end': return {'type':'evening-end'}
     if phase=='birdsong': return {'type':'birdsong-end'}
     if phase=='discard': return {'type':'discard', 'card':me['hand'][0]['id']}
     if me['faction']=='lizard':

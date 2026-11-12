@@ -33,3 +33,17 @@
 - 新增可复用`tools/room_seats_browser.py`；更新既有bots/four/lizard浏览器脚本入口以匹配四席位界面。未通过浏览器注入棋局代替正常操作。
 
 房间专项报告和桌面/手机截图位于`audit/room-seats-browser/`，均已检查。测试数据库为临时文件，未连接或变更生产服务器。
+
+## 2026-11-13 部署记录 手动验收待进行
+
+用户明确要求部署后，已将8823719中的四席位房间更新部署到既有服务器。本次遵循新工作流：只做必要的针对性验证，不执行全项目回归，不进行Git提交或推送；部署不代表用户已验收，也不创建版本标签或Release。
+
+- 北京时间2026-11-13 00:32:21健康检查通过。服务woodland-rooms active/running，运行目录/opt/woodland-rooms不变。
+- 仅覆盖backend/server.mjs、frontend/app.js、frontend/styles.css及三个对应测试文件，共6项SHA256通过。增量包57,988字节，SHA256为ccd6c6c9ee30e259ee19b8ef4b35c6996891237eea56dc1a65eb374fdb5a8158。
+- 暂存副本中运行room-seats、four-http、bots、server四组针对性测试，25项通过；不是本轮完整回归。先前开发轮168项结果仍为历史开发验证，不混称本次结果。
+- 源码备份：/opt/woodland-backup-seats-8823719-20261113/code.tar.gz。SQLite一致性备份：/var/lib/woodland-rooms/backup-before-seats-8823719-20261113.sqlite。备份完整性ok，数据文件未被部署包覆盖。
+- 部署前后数量一致：users9、sessions10、rooms2、games1、snapshots205、commands221、tutorial_runs11；两次integrity_check均ok。
+- 公网只读核验health、新app.js/styles.css哈希及匿名登录页桌面/手机加载通过，无页面错误或手机横向溢出。未创建生产测试账号/房间，也未代替用户进行手动功能验收。
+- 服务器暂存目录和上传包/脚本已清理，当前安装及历史备份保留。日志和哈希在上述服务器备份目录；本地记录audit/room-seats-deployment-package.json和audit/room-seats-public-deploy-check.json。
+
+待用户手动确认：新建四席位房间、选择身份并准备、人机配置、留空开局，以及既有房间/存档体验。确认后再按用户明确指令集中提交。撤回代码可使用源码备份并重启，勿直接恢复旧数据库导致部署后进度丢失。

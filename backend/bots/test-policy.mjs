@@ -12,6 +12,8 @@ function wood(g,id) {
   return [...seen].flatMap(n=>Array(g.board[n].wood).fill(n));
 }
 export function catBirdCandidates(g,p,{developmentRound=12}={}) {
+  if(g.phase==='evening')return [{type:'evening-continue'}];
+  if(g.phase==='evening-end')return [{type:'evening-end'}];
   if(g.phase==='birdsong')return [...(g.round>=developmentRound?g.effectOptions.filter(o=>!o.clearing).map(o=>({type:'effect',card:o.card})):[]),{type:'birdsong-end'}];
   if(g.phase==='wood')return g.woodPending.map(clearing=>({type:'wood',clearing}));
   if(g.phase==='craft')return [...(g.round>=developmentRound?g.craftOptions.map(c=>({type:'craft',card:c.card})):[]),{type:'craft-done'}];
@@ -46,6 +48,8 @@ export function catBirdCandidates(g,p,{developmentRound=12}={}) {
 }
 
 export function candidates(game, player, policyOptions = {}) {
+  if(game.phase==='evening')return [{type:'evening-continue'}];
+  if(game.phase==='evening-end')return [{type:'evening-end'}];
   if (game.choice) {
     const options = [...game.choice.options].sort((a,b) => Number(b.id === 'pass')-Number(a.id === 'pass'));
     return options.map(option => ({ type: 'choice', choiceId: game.choice.choiceId, optionId: option.id }));

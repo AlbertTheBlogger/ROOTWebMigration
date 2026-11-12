@@ -49,6 +49,22 @@ async function harness(t, botDelay = 0) {
   };
 }
 
+test('production bot pacing uses the weighted two to five-and-a-half second thought interval', {timeout:15000}, async t => {
+  const h=await harness(t,null),host=await h.register('bot_natural_pace');
+  let room=(await h.request(host,'/api/rooms',{capacity:4,name:'Human'})).room;
+  room=(await h.command(host,room,{type:'profile',name:'Human',faction:'vagabond'})).room;
+  room=(await h.command(host,room,{type:'bot-add',faction:'cat'})).room;
+  room=(await h.command(host,room,{type:'ready',ready:true})).room;
+  room=(await h.command(host,room,{type:'start',ruleset:'root-base-four-v5'})).room;
+  const version=room.version,started=performance.now();
+  do{await delay(40);room=(await h.request(host,`/api/rooms/${room.code}`)).room;}while(room.version===version&&performance.now()-started<9000);
+  const elapsed=performance.now()-started;
+  assert.ok(room.version>version,'Scheduled production bot did not act');
+  assert.ok(elapsed>=1900&&elapsed<6000,`Observed bot action after ${elapsed}ms`);
+  assert.equal(room.version,version+1,'Only one paced action should have committed');
+  assert.equal(room.botError,null);
+});
+
 test('host bot seats enforce permissions, capacity, idempotence and human ownership', async t => {
   const h = await harness(t, 100000);
   const host = await h.register('bot_host'), guest = await h.register('bot_guest');

@@ -111,7 +111,12 @@ function beginTurn(s,rng) {
 }
 function nextTurn(s,rng) { s.turn=1-s.turn; s.turnsCompleted++; s.round=1+Math.floor(s.turnsCompleted/2); beginTurn(s,rng); }
 function daylight(s) { s.phase='daylight-start'; front(s,[frame('commandwarren'),frame('craft-phase')]); }
-function evening(s) { s.phase='evening-start'; front(s,[frame('cobbler'),frame('evening-score')]); }
+function evening(s) { s.phase='evening-start'; if(crafted(current(s),'cobbler')&&!s.usedEffects.includes(crafted(current(s),'cobbler').id))s.phase='evening';else front(s,[frame('evening-score')]); }
+const eveningPhases=['evening','military','lizard-craft','discard','capacity','evening-end'];
+function availableCobbler(s,p=current(s)) { return eveningPhases.includes(s.phase) && p.crafted.find(card=>card.kind==='cobbler'&&!s.usedEffects.includes(card.id)); }
+function finishEvening(s,rng) { if(availableCobbler(s))s.phase='evening-end';else nextTurn(s,rng); }
+function cobblerOptions(s,p) { return availableCobbler(s,p)?moveOptions(s,p.faction).map(action=>({category:'补鞋匠',label:`${action.from} → ${action.to} · ${action.count} 名`,action:{...action,cobbler:true}})):[]; }
+
 function move(s,p,a) {
   const from=areaOf(s,a.from),to=areaOf(s,a.to);
   ensure(from.links.includes(to.id),'两片林地没有道路相连');
@@ -197,7 +202,7 @@ function pump(s,rng) {
         const n=buildingCount(s,p.faction,p.faction==='cat'?'recruiter':'roost');
         draw(s,p,1+(n>=3?1:0)+(n>=(p.faction==='cat'?5:6)?1:0),rng);
         s.phase='discard';
-        if (p.hand.length<=5) nextTurn(s,rng);
+        if (p.hand.length<=5) finishEvening(s,rng);
         break;
       }
       case 'hospital': hospital(s,data.count,data.suit); break;
@@ -207,6 +212,7 @@ function pump(s,rng) {
         if (crafted(ownerOf(s,b.attacker),'scouting')) break;
         const defender=ownerOf(s,b.defender),suit=areaOf(s,b.clearing).suit;
         const cards=defender.hand.filter(card => card.kind==='ambush' && matches(card,suit));
+        if(!cards.length)break;
         ask(s,'ambush',defender,'防守方是否打出伏击？',[pass('不发动伏击'),...cards.map(card => ({id:card.id,label:`打出${card.name}`,value:card.id}))]);
         break;
       }
@@ -238,7 +244,11 @@ function pump(s,rng) {
         break;
       case 'cardboard': {
         const pieces=cardboard(s,data.faction);
-        if (pieces.length && data.hits>0) ask(s,'cardboard',ownerOf(s,data.faction),'选择承受命中的建筑或标记',pieces.map(type => ({id:type,label:`移除${LABELS[type]}`,value:type})),data);
+        const c=areaOf(s,b.clearing),total=c.buildings.filter(piece=>piece.faction===data.faction).length+(data.faction==='cat'?Number(c.keep)+c.wood:0);
+        if(pieces.length&&data.hits>0&&(pieces.length===1||data.hits>=total)){
+          removeCardboard(s,data.faction,pieces[0],data.by);
+          if(data.hits>1)front(s,[frame('cardboard',{...data,hits:data.hits-1})]);
+        }else if(pieces.length&&data.hits>0)ask(s,'cardboard',ownerOf(s,data.faction),'选择承受命中的建筑或标记',pieces.map(type=>({id:type,label:`移除${LABELS[type]}`,value:type})),data);
         break;
       }
       case 'battle-finish': s.combat=null; break;
@@ -261,7 +271,7 @@ function answer(s,userId,a,rng) {
       front(s,[frame('setup-build')]); break;
     case 'setup-leader': leader(s,value); front(s,[frame('start')]); break;
     case 'free-battle': if (value) startBattle(s,p,areaOf(s,value.clearing)); break;
-    case 'free-move': if (value) move(s,p,value); break;
+    case 'free-move': if (value) { move(s,p,value); const card=crafted(p,'cobbler');if(card)s.usedEffects.push(card.id); } break;
     case 'hospital':
       if (value) { ensure(s.board.some(c => c.keep),'城堡已被移除'); const card=discard(s,p,value); ensure(matches(card,resume.suit),'医院需要匹配花色'); s.board.find(c => c.keep).warriors.cat+=resume.count; }
       break;
@@ -271,6 +281,7 @@ function answer(s,userId,a,rng) {
         record(s,`${p.name} 打出${b.ambushCard.name}（${LABELS[b.ambushCard.suit]}）`);
         const attacker=ownerOf(s,b.attacker),suit=areaOf(s,b.clearing).suit;
         const cards=attacker.hand.filter(card => card.kind==='ambush' && matches(card,suit));
+        if(!cards.length){front(s,[frame('ambush-hits')]);break;}
         ask(s,'counter-ambush',attacker,'是否抵消伏击？',[pass('不抵消伏击'),...cards.map(card => ({id:card.id,label:`打出${card.name}`,value:card.id}))]);
       }
       break;
@@ -340,6 +351,10 @@ export function createGame(players,rng=randomInt) {
   return s;
 }
 function execute(s,p,a,rng) {
+  if(a.type==='evening-continue'){ensure(s.phase==='evening','当前不能继续夜晚');front(s,[frame('evening-score')]);return;}
+  if(a.type==='evening-end'){ensure(s.phase==='evening-end','请先完成夜晚步骤');nextTurn(s,rng);return;}
+  if(a.type==='move'&&a.cobbler){const card=availableCobbler(s,p);ensure(card,'补鞋匠只能在夜晚使用一次');move(s,p,a);s.usedEffects.push(card.id);record(s,`${p.name} 使用补鞋匠额外移动`);return;}
+
   if (a.type==='birdsong-end') {
     ensure(s.phase==='birdsong','当前不在清晨');
     if (p.faction==='bird') { if (!p.hand.length) draw(s,p,1,rng); s.phase='decree-add'; }
@@ -372,7 +387,7 @@ function execute(s,p,a,rng) {
   if (a.type==='craft') { craft(s,p,a); return; }
   if (a.type==='craft-done') { ensure(s.phase==='craft','当前不在制作阶段'); if (p.faction==='cat') s.phase='daylight'; else { s.bird.remaining=structuredClone(s.bird.decree); s.phase='decree'; } return; }
   if (a.type==='leader') { ensure(s.phase==='leader' && p.faction==='bird' && !s.bird.used.includes(a.leader),'不能选择此领袖'); leader(s,a.leader); evening(s); return; }
-  if (a.type==='discard') { ensure(s.phase==='discard' && p.hand.length>5,'当前不需要弃牌'); discard(s,p,a.card); if (p.hand.length===5) nextTurn(s,rng); return; }
+  if (a.type==='discard') { ensure(s.phase==='discard' && p.hand.length>5,'当前不需要弃牌'); discard(s,p,a.card); if (p.hand.length===5) finishEvening(s,rng); return; }
   if (a.type==='effect') { useEffect(s,p,a,rng); return; }
   if (a.type==='march-end') { ensure(p.faction==='cat' && s.phase==='daylight' && s.march>0,'没有进行中的行军'); s.march=0; return; }
   if (a.type==='extra') { ensure(p.faction==='cat' && s.phase==='daylight' && !s.march,'当前不能增加行动'); const card=discard(s,p,a.card); ensure(card.suit==='wild','必须花费鸟牌'); s.actions++; return; }
@@ -443,5 +458,7 @@ export function projectGame(state,userId) {
   s.craftOptions=active?p.hand.filter(card => canCraft(state,p,card)).map(card => ({card:card.id,name:card.name,cost:definitions.get(card.archetype).cost})):[];
   s.effectOptions=active?p.crafted.filter(card => !state.usedEffects.includes(card.id) && ((state.phase==='birdsong' && ['royalclaim','standdeliver'].includes(card.kind)) || (['craft','daylight','decree'].includes(state.phase) && ['tax','codebreakers'].includes(card.kind)))).map(card => ({card:card.id,name:card.name,clearing:card.kind==='tax'})):[];
   if (state.privateReveal?.viewer===userId) s.revealedHand=structuredClone(state.privateReveal);
+  s.nightCobbler=!!(active&&availableCobbler(state,p));
+  if(s.nightCobbler){const options=cobblerOptions(state,p);s.factionActions=[...(s.factionActions||[]),...options];s.mapActions=[...(s.mapActions||[]),...options.map(option=>option.action)];}
   return s;
 }

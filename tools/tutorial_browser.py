@@ -74,6 +74,27 @@ def run():
     except OSError:time.sleep(.1)
    with sync_playwright() as p:
     browser=p.chromium.launch(channel='msedge',headless=True);page=browser.new_page(viewport={'width':int(os.environ.get('TUTORIAL_WIDTH','1912')),'height':int(os.environ.get('TUTORIAL_HEIGHT','948'))});errors=[]
+    motion_audit=os.environ.get('TUTORIAL_MOTION_AUDIT')=='1';motion_events=[];audio_starts=[];playbacks=[]
+    if motion_audit:
+     page.expose_function('recordMotion',lambda kind:motion_events.append(kind))
+     page.expose_function('recordAudioStart',lambda:audio_starts.append(True))
+     page.expose_function('recordPlayback',lambda sample:playbacks.append(sample))
+     page.add_init_script("""(()=>{
+      const seen=new WeakSet();
+      new MutationObserver(records=>{for(const record of records){
+       for(const el of record.addedNodes){if(el.nodeType===1&&el.matches('.presentation-layer')&&!seen.has(el)){
+        seen.add(el);window.recordMotion(el.dataset.kind);
+        const started=performance.now(),full=document.documentElement.dataset.motion==='full'&&!matchMedia('(prefers-reduced-motion: reduce)').matches,stages=new Set();
+        const banner=el.querySelector('.presentation-announcement'),r=banner.getBoundingClientRect(),fixed=getComputedStyle(banner).position==='fixed';
+        const sample=()=>{if(!el.isConnected){if(full&&el.dataset.completed==='true')window.recordPlayback({kind:el.dataset.kind,milliseconds:performance.now()-started,fixed,width:r.width,height:r.height,stages:[...stages]});return;}
+         if(el.dataset.turmoilStage)stages.add(el.dataset.turmoilStage);requestAnimationFrame(sample);};requestAnimationFrame(sample);
+       }}
+       if(record.type==='attributes'&&record.attributeName==='data-camera-moving'&&record.target.dataset.cameraMoving==='true'){
+        const map=record.target,first=map.getAttribute('viewBox');requestAnimationFrame(()=>requestAnimationFrame(()=>{if(map.isConnected&&map.getAttribute('viewBox')!==first)window.recordMotion('camera');}));
+       }
+      }}).observe(document,{subtree:true,childList:true,attributes:true,attributeFilter:['data-camera-moving']});
+      if(window.AudioBufferSourceNode){const start=AudioBufferSourceNode.prototype.start;AudioBufferSourceNode.prototype.start=function(...args){window.recordAudioStart();return start.apply(this,args);};}
+     })();""")
     page.on('pageerror',lambda e:errors.append(str(e)));page.goto(base)
     page.get_by_role('button',name='注册账号',exact=True).click();page.locator('#auth [name=username]').fill('tutorial_browser');page.locator('#auth [name=password]').fill('tutorial-browser-password');page.locator('#auth button').click();expect(page.locator('#create')).to_be_visible()
     page.get_by_role('button',name='新手教程',exact=True).click();expect(page.locator('.tutorial-lesson')).to_have_count(6)
@@ -83,8 +104,24 @@ def run():
     page.screenshot(path=str(OUTPUT/'catalog.png'),full_page=True)
     for lesson in selected:
      retried=False
+     chapter_trace_start=len(trace)
      basics_checks=set()
      page.locator(f'[data-action=tutorial-start][data-lesson={lesson}]').click();expect(page.locator('.tutorial-coach')).to_be_visible()
+     if motion_audit and lesson==selected[0]:
+      page.locator('[data-action=preferences]').click();expect(page.locator('.experience-dialog')).to_be_visible()
+      page.locator('.experience-dialog [name=volume]').fill('0.15')
+      page.locator('[data-sound-preview]').click();page.wait_for_timeout(350)
+      assert audio_starts,'WebAudio playback did not start after an explicit gesture'
+      page.locator('.experience-dialog [name=sound]').uncheck();page.wait_for_timeout(100);before=len(audio_starts)
+      page.locator('[data-sound-preview]').click();page.wait_for_timeout(150);assert len(audio_starts)==before,'Muted preview played audio'
+      page.locator('.experience-dialog [name=motion]').select_option('reduced');page.locator('[data-close-experience]').click()
+      page.reload();expect(page.locator('.tutorial-coach')).to_be_visible();page.locator('[data-action=preferences]').click()
+      expect(page.locator('.experience-dialog [name=sound]')).not_to_be_checked();expect(page.locator('.experience-dialog [name=motion]')).to_have_value('reduced')
+      page.locator('.experience-dialog [name=sound]').check();page.locator('.experience-dialog [name=motion]').select_option('off');page.locator('[data-close-experience]').click()
+      if lesson=='basics':
+       page.locator('[data-action=tutorial-guide-next]').click();trace.append({'lesson':lesson,'step':'overview','action':'guide-next','motionOff':True})
+       expect(page.locator('.guide-line')).to_contain_text('雄心勃勃');expect(page.locator('svg.map')).to_have_attribute('data-camera-moving','false')
+      page.locator('[data-action=preferences]').click();page.locator('.experience-dialog [name=motion]').select_option('full');page.locator('[data-close-experience]').click()
      expect(page.locator('.scoreboard .victory-track progress')).to_have_count(4)
      expect(page.locator('.own-resources .victory-track progress')).to_have_count(1)
      if lesson=='cats':expect(page.locator('.own-resources .building-track')).to_have_count(3)
@@ -121,6 +158,10 @@ def run():
        if lesson=='basics':basics_action(page,room,action)
        else:click_action(page,room['game'],action)
       page.wait_for_function("v=>fetch('/api/tutorials/'+v.lesson).then(r=>r.json()).then(r=>r.room.version>v.version)",arg={'lesson':lesson,'version':room['version']},timeout=10000)
+      if motion_audit and lesson=='eyrie' and meta['stepId']=='bird-turmoil' and not meta['ready']:
+       for stage in ['0','1','2']:
+        page.wait_for_function("s=>document.querySelector('.presentation-layer[data-kind=turmoil]')?.dataset.turmoilStage===s",arg=stage,timeout=15000)
+        page.screenshot(path=str(OUTPUT/f'turmoil-stage-{stage}.png'))
       if lesson=='basics':
        assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
        assert page.locator('.map-card > .tutorial-dialogue').count()==1
@@ -132,13 +173,20 @@ def run():
      assert view()['tutorial']['completed'],lesson
      if lesson=='lizard':assert retried
      if lesson=='basics':assert basics_checks=={'back','retry'}
-     print(json.dumps({'lesson':lesson,'commands':count,'completed':True}),flush=True)
+     print(json.dumps({'lesson':lesson,'commands':len(trace)-chapter_trace_start,'completed':True}),flush=True)
      page.locator('.tutorial-coach [data-action=tutorials]').first.click();expect(page.locator('.tutorial-lesson')).to_have_count(6)
     assert all('已完成' in page.locator('.tutorial-lesson[data-lesson='+id+']').inner_text() for id in selected)
     page.set_viewport_size({'width':390,'height':844});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1');page.screenshot(path=str(OUTPUT/'mobile-catalog.png'),full_page=True)
     page.locator('[data-action=tutorial-start][data-lesson=basics]').click();expect(page.locator('.tutorial-coach')).to_be_visible();assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1');page.screenshot(path=str(OUTPUT/'mobile-game.png'),full_page=True)
     assert not errors,errors
+    if motion_audit:
+     expected={'move','dice','score','camera'} if selected==['basics'] else {'move','build','dice','draw','score','turmoil','revolt','camera'}
+     assert expected.issubset(set(motion_events)),(expected,set(motion_events))
     report={'passed':True,'chapters':len(selected),'nodes':sum(l['stepCount'] for l in catalog if l['id'] in selected),'commands':len(trace),'pageErrors':errors,'checks':['normal signup and tutorial entry','all actions through existing map UI','reload restores every chapter','completion progress saved','mobile no overflow']+(['basics dialogue back and reload','basics checkpoint retry and reload','map-only move without dropdowns','disabled target is inert','cancel and reselect move','keyboard map source selection','map confirmation hit testing'] if 'basics' in selected else []),'fixture':'No browser-injected game states. Scenes are prepared by the tutorial server.'}
+    if motion_audit:
+     assert playbacks and all(sample['milliseconds']>=1450 for sample in playbacks),playbacks
+     if 'eyrie' in selected:assert any(sample['kind']=='turmoil' and set(sample['stages'])=={'0','1','2'} and sample['milliseconds']>=5900 for sample in playbacks),playbacks
+     report.update(motionKinds=sorted(set(motion_events)),audioStarts=len(audio_starts),playbacks=playbacks,settingsChecks=['explicit audio playback','mute suppresses playback','sound/motion preferences persist across reload']+(['motion-off snaps camera'] if 'basics' in selected else []))
     (OUTPUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(report),flush=True);browser.close()
   finally:
    (OUTPUT/'trace.json').write_text(json.dumps(trace,ensure_ascii=False,indent=2),encoding='utf-8');process.terminate();process.wait(timeout=10);log.close()

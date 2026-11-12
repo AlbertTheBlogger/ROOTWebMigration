@@ -171,7 +171,7 @@ function prepareStep(run){
   else prepare(run);
   run.attempt=0;
   run.guideCursor=0;
-  run.ready=step.goal==='read';
+  run.ready=step.goal==='read'||(['liz-revenge','liz-fear','base-lost'].includes(step.goal)&&achieved(run,{}));
   run.checkpoint={game:structuredClone(run.game),context:structuredClone(run.context)};
 }
 export function createTutorial(user,lessonId){
@@ -247,7 +247,7 @@ export function advanceTutorial(source,command){
   const run=structuredClone(source);
   ensure(!run.completed||command.type==='restart','本章已完成，可返回目录或重新练习');
   if(command.type==='restart'){const fresh=createTutorial({id:run.userId,username:run.playerName},run.lessonId);fresh.everCompleted=!!(run.everCompleted||run.completed);return fresh;}
-  if(command.type==='retry-step'){run.game=structuredClone(run.checkpoint.game);run.context=structuredClone(run.checkpoint.context);run.count=0;run.guideCursor=0;run.attempt=(run.attempt||0)+1;run.ready=currentStep(run).goal==='read';return run;}
+  if(command.type==='retry-step'){run.game=structuredClone(run.checkpoint.game);run.context=structuredClone(run.checkpoint.context);run.count=0;run.guideCursor=0;run.attempt=(run.attempt||0)+1;const goal=currentStep(run).goal;run.ready=goal==='read'||(['liz-revenge','liz-fear','base-lost'].includes(goal)&&achieved(run,{}));return run;}
   const guide=guideFor(run);
   if(command.type==='guide-next'||command.type==='guide-back'){
     ensure(guide&&(command.type==='guide-next'?guide.canAdvance:guide.canBack),'请跟随当前引导');

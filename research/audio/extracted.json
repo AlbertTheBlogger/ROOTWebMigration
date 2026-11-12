@@ -1,0 +1,160 @@
+{
+  "sourceSha256": "853b1eefc0b151317ea07a03950cf966c93e002122b8594a93a136d86d1f212f",
+  "resourceFileSha256": "4626411fd1339d77fd0f2515fbc774df5b9a8b5d932dac9e6053994766dbc485",
+  "copyright": "Third-party audio excluded from MIT",
+  "clips": [
+    {
+      "kind": "score",
+      "originalName": "ui-vppointgained",
+      "source": "Root_Data/resources.assets",
+      "pathId": 71,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 50688,
+        "size": 13280
+      },
+      "originalExportSha256": "b3823f1ea5da7a128dbb17699ad28369fc8929b2e3602d0b30bc24fecdc1dd37",
+      "webSha256": "b1cfa9b2b65d640c7ff01d72f188f12f9118e578d073fae242a3a47e8016a251",
+      "file": "/assets/audio/score.b1cfa9b2b65d.wav",
+      "bytes": 66194,
+      "duration": 1.5,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "battle",
+      "originalName": "ui-battle",
+      "source": "Root_Data/resources.assets",
+      "pathId": 104,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 1987360,
+        "size": 39968
+      },
+      "originalExportSha256": "c5a9f2a443b4c915aedf33b92b4dbd714ac14402dd4cd2e01d0971f6455a70dc",
+      "webSha256": "2d5e4c30b5ce72486d0f3c5f954ad1cab8ca292705d588f3c19dce72d4989350",
+      "file": "/assets/audio/battle.2d5e4c30b5ce.wav",
+      "bytes": 176444,
+      "duration": 4.0,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "build",
+      "originalName": "building-workshop-summon",
+      "source": "Root_Data/resources.assets",
+      "pathId": 106,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 2038528,
+        "size": 1344
+      },
+      "originalExportSha256": "298c30fae33e868537277ab3a52e0dcb9cefbc0ffb12334f2155f255b9d2fa92",
+      "webSha256": "f5357e71b1e4b62fd8f5fb1dae64a94b661dd1f0c2159e6eec932090e8e85bbb",
+      "file": "/assets/audio/build.f5357e71b1e4.wav",
+      "bytes": 19338,
+      "duration": 0.43750566893424037,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "turmoil",
+      "originalName": "ui-prompt-eyreturmoilleaderswitch",
+      "source": "Root_Data/resources.assets",
+      "pathId": 123,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 4757824,
+        "size": 22816
+      },
+      "originalExportSha256": "fb719c2b67370e27d39e9046d31241d88a1635932e9b85a044b02a1db4cacd74",
+      "webSha256": "e2e08a56cc7cb40b93de04e1c660a7841f80dc1919b7e34e6d8bb8f2d08b08d9",
+      "file": "/assets/audio/turmoil.e2e08a56cc7c.wav",
+      "bytes": 132344,
+      "duration": 3.0,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "draw",
+      "originalName": "ui-card-whoosh1",
+      "source": "Root_Data/resources.assets",
+      "pathId": 143,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 12540160,
+        "size": 3616
+      },
+      "originalExportSha256": "7592269470ec176485707550ae50a7d19f1c8e4f2ff1ab62388048e42d042ff7",
+      "webSha256": "3de5b8ded1a10add2ef1e3786b6c62da9277e615dac3afe25ea1a457db2c47d4",
+      "file": "/assets/audio/draw.3de5b8ded1a1.wav",
+      "bytes": 15204,
+      "duration": 0.3437641723356009,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "aid",
+      "originalName": "ui-prompt-aid",
+      "source": "Root_Data/resources.assets",
+      "pathId": 172,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 14369696,
+        "size": 23488
+      },
+      "originalExportSha256": "4495a28751561cef0edf035dfb15a4cf1c8c329ed7d3762d18b34bbe11b3e9f9",
+      "webSha256": "2bc106861a3348caa1022dd434aa64e2b2687db6675116e4fbf2bab667b16bea",
+      "file": "/assets/audio/aid.2bc106861a33.wav",
+      "bytes": 132344,
+      "duration": 3.0,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "revolt",
+      "originalName": "ui-prompt-uprisingremovingpieces",
+      "source": "Root_Data/resources.assets",
+      "pathId": 188,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 16907808,
+        "size": 16512
+      },
+      "originalExportSha256": "e3459572e769aecb076d880ee99d3bc691ad703503e4fd3e3da04d3118fc59be",
+      "webSha256": "61402e66b5879cf61bcfa1f36f529f2711d9f1ac2ec55604b18e3191178f4a10",
+      "file": "/assets/audio/revolt.61402e66b587.wav",
+      "bytes": 88244,
+      "duration": 2.0,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "move",
+      "originalName": "unit-marq-run1",
+      "source": "Root_Data/resources.assets",
+      "pathId": 245,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 20633632,
+        "size": 1664
+      },
+      "originalExportSha256": "123c30a09993eb5f03ee892230ac7d9b95b94d5f302d0fdf6e5d7b36a87ba5ab",
+      "webSha256": "071adbb294a5e3070db54045b8e0d0a620833eef6c5aaad129a62b2da8982fc2",
+      "file": "/assets/audio/move.071adbb294a5.wav",
+      "bytes": 5826,
+      "duration": 0.13111111111111112,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    },
+    {
+      "kind": "dice",
+      "originalName": "ui-battle-diceroll1",
+      "source": "Root_Data/resources.assets",
+      "pathId": 317,
+      "resource": {
+        "source": "resources.resource",
+        "offset": 28818848,
+        "size": 7520
+      },
+      "originalExportSha256": "381427e9b693e3d150cc02351e487d0761dc803e7fb2b2fa5b498ceac5e54026",
+      "webSha256": "cd8ce171c1efc1b411436feabd1d0d87961a9e9a6aed9c10938a09019d236dea",
+      "file": "/assets/audio/dice.cd8ce171c1ef.wav",
+      "bytes": 44144,
+      "duration": 1.0,
+      "conversion": "PCM16 mono 22050Hz; no timing cuts"
+    }
+  ]
+}

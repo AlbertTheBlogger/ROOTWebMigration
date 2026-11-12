@@ -1,4 +1,5 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
+import { observePresentation } from './motion.js';
 import { renderLogGroups } from './log-ui.js';
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const effects = {
@@ -117,41 +118,7 @@ export function selectClearing(game,id) {
   }
   for(const select of document.querySelectorAll('form select[name=clearing],form select[name=to]'))if([...select.options].some(o=>Number(o.value)===id))select.value=String(id);
 }
-let previous=null;
-const events=[];
-let running=false;
-let animationTimer;
-const queue=[];
-function playNext(){
-  if(running||!queue.length)return;
-  running=true;const event=queue.shift();const text=event.text;const element=document.createElement('div');element.className='action-animation';
-  const symbol=/骰|战斗/.test(text)?'⚄':/锻造/.test(text)?'⚒':'▣';const dice=/骰/.test(text)?(text.match(/\d+/g)||[]).slice(-2):[];
-  const transfer=event.kind==='score'?`<span class="score-award ${event.delta<0?'loss':''}">${event.delta>0?'+':''}${event.delta}</span>`:event.kind==='aid'?'<span class="aid-transfer" aria-label="援助交付">▤ → 🤝</span>':event.kind==='supporter'?'<span class="supporter-gain">支持者 +1</span>':null;
-  element.dataset.kind=event.kind||'draw';
-  element.innerHTML=`<div class="animation-pieces">${transfer|| (dice.length?dice.map(value=>`<span class="animated-die">${escape(value)}</span>`).join(''):event.image?`<img class="animated-card" src="${escape(event.image)}" alt="牌面">`:`<span class="animated-card card-back">${symbol}</span>`)}</div><div>${escape(text)}</div>`;document.body.append(element);
-  animationTimer=setTimeout(()=>{element.remove();running=false;playNext();},1400);
-}
-export function observe(game,art){
-  if(!game){clearTimeout(animationTimer);document.querySelectorAll('.action-animation').forEach(node=>node.remove());running=false;previous=null;queue.length=0;events.length=0;return;}
-  if(previous&&previous.players.map(p=>p.id).join()===game.players.map(p=>p.id).join()){
-    const factions={cat:'猫咪贵族',bird:'飞鹰王朝',alliance:'森林联盟',vagabond:'神秘游侠'};
-    const scores=(game.scoreEvents||[]).filter(event=>event.seq>(previous.scoreEventSeq||0));
-    queue.unshift(...scores.map(event=>({kind:'score',delta:event.delta,text:`${factions[event.faction]}（${event.name}） · ${event.reason} · ${event.delta>0?'+':''}${event.delta}`})));
-    let overlap=Math.min(previous.log.length,game.log.length);
-    while(overlap&&previous.log.slice(-overlap).join('\n')!==game.log.slice(0,overlap).join('\n'))overlap--;
-    const updates=game.log.slice(overlap);
-    const aid=updates.filter(text=>/援助.*交付 1 张牌/.test(text));
-    for(const p of game.players){
-      const before=previous.players.find(value=>value.id===p.id);
-      const transfers=aid.filter(text=>text.includes('向 '+p.name+' 交付')).length;
-      const drawn=(p.handCount-(before?.handCount||0))-transfers;
-      if(before&&drawn>0)updates.push(`${p.name} 获得 ${drawn} 张手牌`);
-    }
-    events.push(...updates);queue.push(...updates.filter(text=>/锻造|服务器战斗骰子|发起战斗|张手牌|援助.*交付 1 张牌|民愤补偿.*已加入支持者/.test(text)).map(text=>{const card=game.players.flatMap(p=>[...(p.hand||[]),...(p.crafted||[])]).find(card=>text.includes(card.name));return {kind:/援助.*交付/.test(text)?'aid':/民愤补偿.*已加入支持者/.test(text)?'supporter':undefined,text:text.startsWith('服务器战斗骰子')?text.split('；')[0]:text,image:card&&art.cards[card.archetype]};}));while(queue.length>12){const index=queue.findLastIndex(event=>event.kind!=='score');if(index<0)break;queue.splice(index,1);}
-    if(events.length>100)events.splice(0,events.length-100);playNext();
-  }
-  previous=structuredClone(game);
-}
-export function showEvents(game){show('近期操作',`<div class="event-history">${renderLogGroups(game||{log:events})}</div>`);}
+export function observe(game,art,options){observePresentation(game,art,options);}
+export function showEvents(game){show('近期操作',`<div class="event-history">${renderLogGroups(game||{log:[]})}</div>`);}
 
 export function showPublicDetails(title,body){show(title,body);}
