@@ -14,6 +14,8 @@ The Lizard Cult tutorial now adds 19 guided nodes adapted from the original inst
 
 The introductory chapter, Rise of the Marquise (贵族崛起), now uses short character dialogue inside the map, contextual action prompts, focused map views, previous-line review, retries, and saved dialogue progress. The other five chapters retain their existing flow. See the [redesign record](docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md) (Chinese). Deployed on November 12, 2026. See the [deployment record](docs/DEPLOYMENT-2026-11-12.md) (Chinese).
 
+The current repository includes a four-seat waiting-room redesign, **not yet deployed**: new rooms have four seats, names and factions are committed together when ready, and the host can add and configure bots in empty seats. Games can start with 2–4 participants while leaving seats empty. See the [acceptance record](docs/FOUR-SEAT-ROOMS-2026-11-12.md) (Chinese).
+
 ## Current features
 
 - Independent accounts, public and password-protected rooms, per-game player names, ready states, and subsequent games.

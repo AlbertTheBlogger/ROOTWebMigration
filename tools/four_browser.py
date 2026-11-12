@@ -219,6 +219,7 @@ def run():
                     page.locator('#auth [name=username]').fill('four_browser_'+str(index))
                     page.locator('#auth [name=password]').fill('four-browser-test-only-123')
                     page.locator('#auth button').click();expect(page.locator('#create')).to_be_visible()
+                pages[0].locator('#create [name=ruleset]').select_option('root-base-four-v5')
                 pages[0].locator('#create [name=title]').fill('基础四阵营验收房')
                 pages[0].locator('#create button').click();expect(pages[0].locator('.code-large')).to_be_visible()
                 code=pages[0].locator('.code-large').inner_text().strip('# ')

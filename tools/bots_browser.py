@@ -59,17 +59,18 @@ def run():
                 page.locator('#auth [name=password]').fill('bot-browser-only-123')
                 page.locator('#auth button').click()
                 expect(page.locator('#create')).to_be_visible()
+                page.locator('#create [name=ruleset]').select_option('root-base-four-v5')
                 page.locator('#create [name=title]').fill('真人与三人机验收')
                 page.locator('#create button').click()
                 expect(page.locator('.code-large')).to_be_visible()
                 code = page.locator('.code-large').inner_text().strip('# ')
-                for faction in ['bird', 'alliance', 'vagabond']:
-                    page.locator(f'[data-action=bot-add][data-faction={faction}]').click()
+                for seat,faction in enumerate(['bird', 'alliance', 'vagabond'],1):
+                    page.locator(f'[data-action=bot-add][data-seat="{seat}"]').click()
                     expect(page.locator('.player-seat .badge').filter(has_text='人机')).to_have_count(
                         ['bird','alliance','vagabond'].index(faction)+1)
                 page.locator('.player-seat.vagabond [data-action=bot-remove]').click()
-                expect(page.locator('[data-action=bot-add][data-faction=vagabond]')).to_be_visible()
-                page.locator('[data-action=bot-add][data-faction=vagabond]').click()
+                expect(page.locator('[data-action=bot-add][data-seat="3"]')).to_be_visible()
+                page.locator('[data-action=bot-add][data-seat="3"]').click()
                 page.screenshot(path=str(OUTPUT/'seats.png'), full_page=True)
                 page.get_by_role('button', name='准备', exact=True).click()
                 page.get_by_role('button', name='开始游戏', exact=True).click()

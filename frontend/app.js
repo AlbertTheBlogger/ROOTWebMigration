@@ -14,7 +14,8 @@ function characterDetails(character){
   return details?`<section class="character-ability"><h3>${esc(details.name)} · ${esc(details.ability)}</h3><p>${esc(details.cost)}</p><p>${esc(details.description)}</p></section>`:'';
 }
 function originalHero(){return ART.illustrations.hero?artImage(ART.illustrations.hero,'ROOT 原版插画','original-hero'):forest();}
-const S={user:null,rooms:[],room:null,mode:'login',selected:0,card:null,stream:null,busy:false,connected:false,history:null,ruleset:'root-base-four-v5'};
+const S={user:null,rooms:[],room:null,mode:'login',selected:0,card:null,stream:null,busy:false,connected:false,history:null,ruleset:'root-lizard-cult-v6'};
+const waitingDrafts=new Map();
 const names={lizard:'蜥蜴神教','garden-fox':'狐狸花园','garden-rabbit':'兔子花园','garden-mouse':'老鼠花园',alliance:'森林联盟',vagabond:'神秘游侠',sympathy:'民意', 'base-fox':'狐狸基地','base-rabbit':'兔子基地','base-mouse':'老鼠基地',bag:'背包',boot:'靴子',crossbow:'弩',hammer:'锤子',sword:'长剑',tea:'茶壶',coin:'钱币',torch:'火把',thief:'盗贼',tinker:'工匠',ranger:'猎人',cat:'猫咪贵族',bird:'飞鹰王朝',fox:'狐狸',rabbit:'兔子',mouse:'老鼠',wild:'鸟类',sawmill:'锯木厂',workshop:'工坊',recruiter:'征兵所',roost:'鸟巢',wood:'木材',keep:'城堡',move:'移动',recruit:'招募',battle:'战斗',build:'建造',despot:'制裁者',commander:'指挥者',charismatic:'号召者',builder:'建设者'};
 const phases={'lizard-conspiracies':'清晨 · 侍僧密谋','lizard-craft':'夜晚 · 花园锻造',wood:'清晨 · 分配木材',daylight:'白昼 · 阵营行动',revolt:'清晨 · 起义',spread:'清晨 · 传播民意',military:'夜晚 · 军事行动',refresh:'清晨 · 恢复物品',slip:'清晨 · 潜行',capacity:'夜晚 · 行囊容量','decree-add':'清晨 · 添加法令','new-roost':'清晨 · 安置鸟巢',decree:'白昼 · 执行法令',leader:'动乱 · 更换领袖',discard:'夜晚 · 弃牌',finished:'对局结束',birdsong:'清晨 · 持续牌效果',craft:'白昼 · 锻造',setup:'标准开局设置'};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -80,7 +81,7 @@ function watch(code){
   stream.addEventListener('deleted',()=>returnToLobby('房主已删除房间及其全部存档'));
 }
 function syncBusyButtons(){
-  for(const button of app.querySelectorAll('button')){
+  for(const button of app.querySelectorAll('button,.room-seats input,.room-seats select,#ruleset')){
     if(S.busy){if(!('busyDisabled' in button.dataset))button.dataset.busyDisabled=String(button.disabled);button.disabled=true;}
     else if('busyDisabled' in button.dataset){button.disabled=button.dataset.busyDisabled==='true';delete button.dataset.busyDisabled;}
   }
@@ -109,27 +110,45 @@ function roomCard(r){
       ${r.canDelete?btn('删除房间','delete-room','quiet danger',false,`data-code="${r.code}"`):''}
     </div></article>`;
 }
-function lobbyView(){frame(`<div class="heading"><div><div class="eyebrow">THE GATHERING PLACE</div><h1>今晚，谁来执掌森林？</h1><p class="muted">找一个席位，或为朋友们开一间房。</p></div><span class="badge">${S.rooms.filter(r=>r.status==='waiting').length} 个房间等待中</span></div>${limitations()}<div class="lobby-grid"><section class="panel"><div class="panel-header"><h2>林间房间</h2>${btn('↻ 刷新','refresh','quiet')}</div><div class="room-grid">${S.rooms.map(roomCard).join('')||'<div class="empty"><div class="empty-symbol">♧</div>森林还很安静。<br>创建第一间房，邀请朋友加入。</div>'}</div></section><aside><section class="panel"><h2>创建房间</h2><form id="create"><label>游戏模式<select name="ruleset"><option value="root-base-four-v5">基础四阵营标准局</option><option value="root-lizard-cult-v6">扩展标准局 · 蜥蜴神教</option></select></label><label>房间人数<select name="capacity"><option value="4">最多四人</option><option value="3">最多三人</option><option value="2">最多双人</option></select></label><label>房间名称<input name="title" maxlength="24" placeholder="例如：周末林间小聚" required></label><label>本局玩家名<input name="name" maxlength="24" value="${esc(S.user.username)}" required></label><label>房间密码 <small>可不填，即公共房间</small><input name="password" type="password" maxlength="128" autocomplete="new-password" placeholder="留空即可公开加入"></label><button class="primary">＋ 创建房间</button></form></section><section class="panel"><h3>有朋友的房间号？</h3><form id="join"><label>六位房间号<input name="code" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="例如 123456" required></label><label>本局玩家名<input name="name" value="${esc(S.user.username)}" maxlength="24" required></label><label>房间密码<input name="password" type="password" maxlength="128" placeholder="公共房间留空"></label><button>加入朋友的房间 →</button></form></section></aside></div>`);}
+function lobbyView(){frame(`<div class="heading"><div><div class="eyebrow">THE GATHERING PLACE</div><h1>今晚，谁来执掌森林？</h1><p class="muted">找一个席位，或为朋友们开一间房。</p></div><span class="badge">${S.rooms.filter(r=>r.status==='waiting').length} 个房间等待中</span></div>${limitations()}<div class="lobby-grid"><section class="panel"><div class="panel-header"><h2>林间房间</h2>${btn('↻ 刷新','refresh','quiet')}</div><div class="room-grid">${S.rooms.map(roomCard).join('')||'<div class="empty"><div class="empty-symbol">♧</div>森林还很安静。<br>创建第一间房，邀请朋友加入。</div>'}</div></section><aside><section class="panel"><h2>创建房间</h2><form id="create"><label>游戏模式<select name="ruleset"><option value="root-lizard-cult-v6">扩展标准局 · 五大阵营</option><option value="root-base-four-v5">基础四阵营标准局</option></select></label><p class="caption create-seat-note">固定四个席位 · 两至四位参与者即可开局 · 空位可留空或添加人机</p><label>房间名称<input name="title" maxlength="24" placeholder="例如：周末林间小聚" required></label><label>本局玩家名<input name="name" maxlength="24" value="${esc(S.user.username)}" required></label><label>房间密码 <small>可不填，即公共房间</small><input name="password" type="password" maxlength="128" autocomplete="new-password" placeholder="留空即可公开加入"></label><button class="primary">＋ 创建房间</button></form></section><section class="panel"><h3>有朋友的房间号？</h3><form id="join"><label>六位房间号<input name="code" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="例如 123456" required></label><label>本局玩家名<input name="name" value="${esc(S.user.username)}" maxlength="24" required></label><label>房间密码<input name="password" type="password" maxlength="128" placeholder="公共房间留空"></label><button>加入朋友的房间 →</button></form></section></aside></div>`);}
 function roomHeader(){
   const room=S.room;
   if(room.tutorial)return `<div class="heading"><div>${btn('← 教程目录','tutorials','quiet')}<h1 class="room-title">${esc(room.title)}</h1><span class="badge">单人练习 · 服务器保存进度</span></div>${btn('重新开始本章','tutorial-restart','quiet')}</div>`;
   return `<div class="heading"><div>${btn('← 房间大厅','lobby','quiet')}<h1 class="room-title">${esc(room.title)}</h1><span class="code-large"># ${room.code}</span> ${btn('复制房间号','copy','quiet')} <span class="badge ${room.locked?'locked':''}">${room.locked?'密码房间':'公共房间'}</span></div>
     <div class="room-host-tools"><span class="connection"></span>${room.ownerId===S.user.id?btn('删除房间','delete-room','quiet danger',false,`data-code="${room.code}"`):''}</div></div>`;
 }
-function waitingView(){
-  const room=S.room;
-  const me=room.members.find(player=>player.userId===S.user.id);
-  S.ruleset=room.ruleset||S.ruleset;
-  const availableFactions=room.availableFactions||((room.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird']);
-  const seats=availableFactions.map(faction=>{
-    const candidates=room.members.filter(player=>player.faction===faction);
-    const owner=candidates.find(player=>player.ready)||candidates[0];
-    return `<article class="player-seat ${faction}"><div class="faction-emblem">${artImage(ART.portraits[faction],names[faction],'seat-portrait')}</div><div class="eyebrow">${({cat:'MARQUISE DE CAT',bird:'EYRIE DYNASTIES',alliance:'WOODLAND ALLIANCE',vagabond:'VAGABOND',lizard:'LIZARD CULT'})[faction]}</div><div class="player-name">${owner?esc(owner.name):'虚位以待'}</div><div class="muted">${names[faction]}${owner?.userId===room.ownerId?' · 房主':''}${owner?.userId===S.user.id?' · 你':''}</div><div class="seat-controls">${candidates.filter(player=>player!==owner).map(player=>`<p class="caption">${esc(player.name)}${player.userId===S.user.id?' · 你':''} · 待准备</p>`).join('')}${owner?`<span class="badge">${owner.bot?'人机 · 已准备':owner.ready?'✓ 已准备':'等待准备'}</span>${owner.bot&&room.ownerId===S.user.id?btn('移除人机','bot-remove','quiet danger',false,`data-user="${esc(owner.userId)}"`):''}`:`<p class="muted">将房间号发送给朋友，邀请加入。</p>${room.ownerId===S.user.id?btn('添加人机','bot-add','',room.members.length>=(room.capacity||2),`data-faction="${faction}"`):''}`}</div></article>`;
-  }).join('');
-  const factions=availableFactions.map(faction=>`<option value="${faction}" ${faction===me.faction?'selected':''}>${names[faction]}</option>`).join('');
-  const mode=room.ownerId===S.user.id?`<label>本局规则<select id="ruleset"><option value="root-lizard-cult-v6" ${S.ruleset==='root-lizard-cult-v6'?'selected':''}>扩展标准局 · 蜥蜴神教</option><option value="root-base-four-v5" ${S.ruleset==='root-base-four-v5'?'selected':''}>基础四阵营标准局</option><option value="root-cats-birds-v4" ${S.ruleset==='root-cats-birds-v4'?'selected':''}>猫鹰标准局 · 完整基础牌组</option><option value="root-card-lab-v3" ${S.ruleset==='root-card-lab-v3'?'selected':''}>基础牌组与物品锻造</option><option value="root-battle-lab-v2" ${S.ruleset==='root-battle-lab-v2'?'selected':''}>秋季地图与战斗</option><option value="root-core-lab-v1" ${S.ruleset==='root-core-lab-v1'?'selected':''}>旧基础模式</option></select></label>`:'<p class="muted">由房主选择本局规则。</p>';
-  frame(`${roomHeader()}${limitations()}<div class="players">${seats}</div><section class="panel"><div class="lobby-grid"><form id="profile"><h3>本局身份</h3><label>玩家名<input name="name" value="${esc(me.name)}" maxlength="24" required></label><label>阵营<select name="faction">${factions}</select></label><button>保存身份</button></form><div><h3>进入森林前</h3><p class="muted">每局可以独立设置玩家名。准备前可以自由选择阵营，先准备的玩家占用该阵营；修改身份后需重新准备。标准局依次选择城堡、初始建筑与飞鹰领袖，随后按清晨、白昼、夜晚进行。</p>${mode}${room.members.some(player=>player.bot)?'<p class="caption">人机会自动行动，并保存对局进度。</p>':''}<div class="divider"></div>${btn(me.ready?'取消准备':'准备','ready','primary')}</div></div><div class="divider"></div><div class="waiting-footer"><span class="muted">${room.members.filter(player=>player.ready).length} / ${room.members.length} 人已准备 · 上限 ${room.capacity||2} 人</span><div>${btn('离开房间','leave','quiet danger')}${room.ownerId===S.user.id?btn('开始游戏','start','primary',room.members.length<2||!room.members.every(player=>player.ready)):'<span class="muted">等待房主开始</span>'}</div></div></section>`);
+function captureWaitingDraft(){
+  const form=document.querySelector('#profile[data-room]');
+  if(form&&!form.elements.name.readOnly)waitingDrafts.set(form.dataset.room+'|'+form.dataset.user,{name:form.elements.name.value,faction:form.elements.faction.value});
 }
+function waitingView(){
+  captureWaitingDraft();
+  const focused=document.activeElement;
+  const focus=focused?.closest('#profile')?{name:focused.name,start:focused.selectionStart,end:focused.selectionEnd}:null;
+  const room=S.room,host=room.ownerId===S.user.id;
+  S.ruleset=room.ruleset||S.ruleset;
+  const available=room.availableFactions||['cat','bird','alliance','vagabond'];
+  const options=(value,userId)=>available.map(faction=>{
+    const reserved=room.members.some(p=>p.userId!==userId&&p.ready&&p.faction===faction);
+    return `<option value="${faction}" ${faction===value?'selected':''}>${names[faction]}${reserved?' · 已准备':''}</option>`;
+  }).join('');
+  const seats=Array.from({length:4},(_,seat)=>{
+    const player=room.members.find(p=>p.seat===seat),locked=seat>=(room.capacity||2);
+    if(!player)return `<article class="player-seat room-seat empty-seat ${locked?'locked-seat':''}" data-seat="${seat}" aria-label="席位${seat+1} · ${locked?'未开放':'空位'}"><div class="seat-topline"><span>席位 ${seat+1}</span><span>${locked?'旧房间容量限制':'可留空'}</span></div><div class="empty-seat-art" aria-hidden="true">${brand}</div><h3>${locked?'未开放席位':'虚位以待'}</h3><p>将房间号分享给朋友，<br>等待新的旅伴入座。</p>${host&&!locked?btn('添加人机','bot-add','',false,`data-seat="${seat}"`):'<span class="caption">等待房主安排</span>'}</article>`;
+    const mine=player.userId===S.user.id;
+    let draft=(!player.ready&&mine?waitingDrafts.get(room.code+'|'+player.userId):null)||player;
+    if(!available.includes(draft.faction))draft={...draft,faction:player.faction};
+    const faction=draft.faction;
+    const identity=mine?`<form id="profile" class="seat-profile-form" data-room="${room.code}" data-user="${esc(player.userId)}"><label>本局名字<input name="name" value="${esc(draft.name)}" maxlength="24" required autocomplete="off" ${player.ready?'readonly':''}></label><label>选择阵营<select name="faction" ${player.ready?'disabled':''}>${options(faction,player.userId)}</select></label>${player.ready?btn('取消准备','ready','quiet'): '<button class="primary" type="submit">准备</button>'}</form>`:player.bot&&host?`<div class="bot-seat-controls"><label>人机阵营<select data-bot-faction="${esc(player.userId)}" aria-label="席位${seat+1}人机阵营">${options(faction,player.userId)}</select></label><span class="caption">选择后自动准备</span>${btn('移除人机','bot-remove','quiet danger',false,`data-user="${esc(player.userId)}"`)}</div>`:`<div class="seat-observer"><strong>${esc(names[faction])}</strong><p>${player.ready?'已准备，等待房主启程':'正在选择阵营…'}</p></div>`;
+    return `<article class="player-seat room-seat ${faction} ${player.ready?'seat-ready':''} ${mine?'own-seat':''}" data-seat="${seat}" data-user="${esc(player.userId)}"><div class="seat-topline"><span>席位 ${seat+1}</span><span>${player.userId===room.ownerId?'房主':player.bot?'人机':mine?'你':'旅伴'}</span></div><div class="seat-portrait-wrap">${artImage(ART.portraits[faction],names[faction],'seat-portrait')}<span class="seat-faction-title">${names[faction]}</span></div><h3 class="player-name seat-display-name">${esc(draft.name)}</h3><span class="badge seat-status">${player.ready?'✓ 已准备':'选择身份后准备'}${player.bot?' · 人机':''}</span>${identity}</article>`;
+  }).join('');
+  const ready=room.members.filter(p=>p.ready).length;
+  const canStart=room.members.length>=2&&ready===room.members.length&&new Set(room.members.map(p=>p.faction)).size===room.members.length;
+  const mode=host?`<label>本局规则<select id="ruleset">${[['root-lizard-cult-v6','扩展标准局 · 五大阵营'],['root-base-four-v5','基础四阵营标准局'],['root-cats-birds-v4','猫鹰标准局'],['root-card-lab-v3','基础牌组与物品锻造'],['root-battle-lab-v2','秋季地图与战斗'],['root-core-lab-v1','旧基础模式']].map(([id,title])=>`<option value="${id}" ${room.ruleset===id?'selected':''}>${title}</option>`).join('')}</select></label>`:`<p>${room.ruleset==='root-lizard-cult-v6'?'扩展标准局 · 五大阵营':'由房主设置本局规则'}</p>`;
+  frame(`${roomHeader()}<div class="waiting-layout"><section class="room-seats" aria-label="玩家席位">${seats}</section><aside class="panel room-settings"><div class="eyebrow">进入森林前</div><h2>旅伴已入座</h2>${mode}<div class="waiting-readiness" role="status"><strong>${ready} / ${room.members.length}</strong><span>已入座的参与者准备完成</span></div><p class="caption">至少两位参与者即可开始。空席可以留空，也可以由房主添加人机。</p><p class="caption">准备后保留所选阵营；取消准备即可重新选择。</p>${(room.capacity||2)<4?`<p class="caption">此旧房间保留原${room.capacity||2}人容量。新建房间固定四席。</p>`:''}${host?btn('开始游戏','start','primary seat-start',!canStart):'<p class="caption">等待房主开始游戏</p>'}${btn('离开房间','leave','quiet danger')}<details class="waiting-rules"><summary>查看规则说明</summary>${limitations()}</details></aside></div>`);
+  if(focus){const input=document.querySelector('#profile')?.elements[focus.name];if(input&&!input.disabled&&!input.readOnly){input.focus({preventScroll:true});if(input.tagName==='INPUT'&&focus.start!==null)input.setSelectionRange(focus.start,focus.end);}}
+}
+
 function board(game){
   const original=game.mapId&&ART.board;
   const areas=game.board.map(area=>({...area,...(original?.clearings[area.id]||{})}));
@@ -530,7 +549,9 @@ async function command(c){
   const data={commandId:commandId(),version:room.version,command:c};
   try{
     const result=await api(`/api/rooms/${room.code}/command`,data);
+    if(!room.game)document.querySelector('#toast')?.classList.remove('show');
     if(!result.room){await loadLobby();return;}
+    if(['ready','profile'].includes(c.type))waitingDrafts.delete(room.code+'|'+S.user.id);
     if(S.room?.code===room.code&&result.room.version>=S.room.version){S.room=result.room;render();}
   }catch(error){
     if(error.status===409){
@@ -591,9 +612,9 @@ app.addEventListener('submit',event=>{event.preventDefault();const form=event.ta
     }
     return;
   }
-  if(form.id==='create'){data.capacity=Number(data.capacity);await enter((await api('/api/rooms',data)).room);return;}
+  if(form.id==='create'){data.capacity=4;await enter((await api('/api/rooms',data)).room);return;}
   if(form.id==='join'){await enter((await api(`/api/rooms/${data.code}/join`,data)).room);return;}
-  if(form.id==='profile'){await command({type:'profile',...data});toast('本局身份已保存');return;}
+  if(form.id==='profile'){await command({type:'ready',ready:true,...data});return;}
   if(form.dataset.type==='faction-action'){
     const option=S.room.game.factionActions[Number(data.option)];
     if(!option)throw new Error('行动已更新，请重新选择');
@@ -645,7 +666,7 @@ app.addEventListener('click',event=>{const b=event.target.closest('[data-action]
     if(action==='view-history'){S.history=await api(`/api/games/${b.dataset.id}`);render();return;}
     if(action==='close-history'){S.history=null;render();return;}
     if(action==='open-room'){if(b.dataset.mine==='true'){await enter((await api(`/api/rooms/${b.dataset.code}`)).room);}else{const f=document.querySelector('#join');f.elements.code.value=b.dataset.code;f.elements.name.focus();f.scrollIntoView({behavior:'smooth',block:'center'});toast('填写本局玩家名后加入');}return;}
-    if(action==='bot-add'){await command({type:'bot-add',faction:b.dataset.faction});return;}
+    if(action==='bot-add'){await command({type:'bot-add',seat:Number(b.dataset.seat)});return;}
     if(action==='bot-remove'){await command({type:'bot-remove',userId:b.dataset.user});return;}
     if(action==='bot-retry'){await command({type:'bot-retry'});return;}
     if(action==='ready'){await command({type:'ready',ready:!S.room.members.find(m=>m.userId===S.user.id).ready});return;}
@@ -658,7 +679,8 @@ app.addEventListener('click',event=>{const b=event.target.closest('[data-action]
   });
 });
 app.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('[role=button]')){event.preventDefault();event.target.dispatchEvent(new MouseEvent('click',{bubbles:true}));}});
-app.addEventListener('change',event=>{if(event.target.id==='ruleset'){const ruleset=event.target.value;safely(async()=>{await command({type:'ruleset',ruleset});});}});
+app.addEventListener('input',event=>{const form=event.target.closest('#profile');if(!form)return;captureWaitingDraft();const seat=form.closest('.room-seat');seat.querySelector('.seat-display-name').textContent=form.elements.name.value;const faction=form.elements.faction.value;seat.classList.remove('cat','bird','alliance','vagabond','lizard');seat.classList.add(faction);const portrait=seat.querySelector('.seat-portrait');portrait.src=ART.portraits[faction];portrait.alt=names[faction];seat.querySelector('.seat-faction-title').textContent=names[faction];});
+app.addEventListener('change',event=>{if(event.target.dataset.botFaction){const userId=event.target.dataset.botFaction,faction=event.target.value;safely(async()=>{await command({type:'bot-profile',userId,faction});});return;}if(event.target.id==='ruleset'){const ruleset=event.target.value;safely(async()=>{await command({type:'ruleset',ruleset});});}});
 window.addEventListener('beforeunload',closeStream);
 async function init(){try{const [session,art]=await Promise.all([api('/api/me'),api('/asset-manifest.json')]);ART=art;S.user=session.user;if(S.user){if(S.user.role==='admin'){await loadAdmin();return;}if(location.hash==='#tutorials'){await loadTutorials();return;}const tutorial=location.hash.match(/^#tutorial=([a-z-]+)$/);if(tutorial){enterTutorial((await api(`/api/tutorials/${tutorial[1]}/start`,{})).room);return;}S.rooms=(await api('/api/rooms')).rooms;const m=location.hash.match(/^#room=(\d{6})$/);if(m){try{await enter((await api(`/api/rooms/${m[1]}`)).room);return;}catch{location.hash='';}}}render();}catch{app.innerHTML='<div class="loading">连接服务器失败，请刷新重试。</div>';}}
 setInterval(async()=>{if(S.user&&!S.room&&!S.busy&&!S.history){try{const rooms=(await api('/api/rooms')).rooms;S.rooms=rooms;const grid=document.querySelector('.room-grid');if(grid)grid.innerHTML=rooms.map(roomCard).join('')||'<div class="empty">暂无房间，创建一间邀请朋友加入。</div>';}catch{}}},8000);

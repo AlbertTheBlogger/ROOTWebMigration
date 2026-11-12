@@ -29,6 +29,7 @@
     "docs/CATS-BIRDS-ACCEPTANCE-2026-11-09.md",
     "docs/DEPLOYMENT-2026-11-12.md",
     "docs/DESKTOP-UI-AUDIT-2026-11-10.md",
+    "docs/FOUR-SEAT-ROOMS-2026-11-12.md",
     "docs/HANDOFF-2026-11-09.md",
     "docs/IMPLEMENTATION-STATUS.md",
     "docs/IMPROVEMENTS-2026-11-09.md",
@@ -71,6 +72,7 @@
     "tests/log-ui.test.mjs",
     "tests/playthrough.test.mjs",
     "tests/room-deletion.test.mjs",
+    "tests/room-seats.test.mjs",
     "tests/server.test.mjs",
     "tests/supporter-hints.test.mjs",
     "tests/test_research.py",
@@ -88,6 +90,7 @@
     "tools/four_selfplay.mjs",
     "tools/improvements_browser.py",
     "tools/lizard_browser.py",
+    "tools/room_seats_browser.py",
     "tools/tutorial_browser.py"
   ],
   "updates": [
@@ -114,6 +117,12 @@
       "feature": "Production deployment engineering record",
       "addedFiles": 1,
       "excluded": "No change to exclusions for artwork, game text, private databases or credentials."
+    },
+    {
+      "date": "2026-11-12",
+      "feature": "Four-seat waiting-room engineering record, HTTP regression and browser acceptance utility",
+      "addedFiles": 3,
+      "excluded": "Original artwork reused without any change to its exclusion; game text and user-provided reference material remain outside MIT."
     }
   ]
 }

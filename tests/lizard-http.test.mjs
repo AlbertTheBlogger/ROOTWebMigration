@@ -22,7 +22,7 @@ async function harness(t,botDelay=0){
 
 test('Lizard room selection, reservation, persistent ruleset and idempotent setup survive restart',async t=>{
   const h=await harness(t,60000),a=await h.register('lizard_host'),b=await h.register('lizard_guest');
-  let room=(await h.req(a,'/api/rooms',{capacity:2,name:'A'})).room;
+  let room=(await h.req(a,'/api/rooms',{capacity:2,ruleset:'root-base-four-v5',name:'A'})).room;
   assert.equal((await h.command(a,room,{type:'profile',name:'A',faction:'lizard'})).status,422);
   room=(await h.req(b,`/api/rooms/${room.code}/join`,{name:'B'})).room;
   assert.equal((await h.command(b,room,{type:'ruleset',ruleset:'root-lizard-cult-v6'})).status,403);

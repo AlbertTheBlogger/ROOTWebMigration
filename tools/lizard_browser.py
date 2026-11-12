@@ -62,15 +62,14 @@ def run():
                 page.locator('#create [name=ruleset]').select_option('root-lizard-cult-v6')
                 page.locator('#create [name=title]').fill('蜥蜴神教验收')
                 page.locator('#create button').click()
-                expect(page.locator('.player-seat.lizard')).to_be_visible()
+                expect(page.locator('.room-seat')).to_have_count(4)
                 page.locator('#profile [name=faction]').select_option('lizard')
                 page.locator('#profile button').click()
                 expect(page.locator('.player-seat.lizard .player-name')).to_contain_text('lizard_ui_player')
-                for faction in ['cat', 'bird', 'alliance']:
-                    page.locator(f'[data-action=bot-add][data-faction={faction}]').click()
+                for seat,faction in enumerate(['cat', 'bird', 'alliance'],1):
+                    page.locator(f'[data-action=bot-add][data-seat="{seat}"]').click()
                     expect(page.locator('.player-seat .badge').filter(has_text='人机')).to_have_count(['cat', 'bird', 'alliance'].index(faction) + 1)
                 code = page.locator('.code-large').inner_text().strip('# ')
-                page.get_by_role('button', name='准备', exact=True).click()
                 page.get_by_role('button', name='开始游戏', exact=True).click()
                 expect(page.locator('.scoreboard .score')).to_have_count(4)
                 user = page.evaluate("()=>fetch('/api/me').then(r=>r.json()).then(r=>r.user.id)")

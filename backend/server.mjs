@@ -18,6 +18,15 @@ const artManifest=JSON.parse(readFileSync(resolve(root,'frontend/asset-manifest.
 const artFiles=new Set(artManifest.files);
 const LIZARD_RULESET='root-lizard-cult-v6';
 const roomFactions=payload=>payload.ruleset===LIZARD_RULESET?['cat','bird','alliance','vagabond','lizard']:(payload.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird'];
+function assignSeats(payload){
+  const used=new Set(),pending=[];
+  for(const player of payload.members){
+    if(Number.isInteger(player.seat)&&player.seat>=0&&player.seat<(payload.capacity||2)&&!used.has(player.seat))used.add(player.seat);
+    else pending.push(player);
+  }
+  for(const player of pending){player.seat=[0,1,2,3].find(seat=>!used.has(seat));used.add(player.seat);}
+  return payload;
+}
 const sceneResources=new Map();
 for(const path of ['/clearing-ui.js','/experience.js','/map-controls.js','/log-ui.js']){
   const content=readFileSync(resolve(root,'frontend','.'+path));
@@ -57,7 +66,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
   const clients=new Set(),buckets=new Map();let closing=false;
   const botTimers = new Map();
   const dummyHashPromise=hashPassword(randomBytes(24).toString('hex'));
-  function getRoom(code){const row=db.prepare('SELECT * FROM rooms WHERE code=?').get(code);requireThat(row,404,'房间不存在');return {...row,payload:JSON.parse(row.payload)};}
+  function getRoom(code){const row=db.prepare('SELECT * FROM rooms WHERE code=?').get(code);requireThat(row,404,'房间不存在');return {...row,payload:assignSeats(JSON.parse(row.payload))};}
   const member=(room,uid)=>room.payload.members.find(m=>m.userId===uid);
   function roomView(room,uid){requireThat(member(room,uid),403,'你不在这个房间');return {code:room.code,title:room.title,ownerId:room.owner_id,version:room.version,status:room.status,capacity:room.payload.capacity||2,ruleset:room.payload.ruleset||'root-base-four-v5',availableFactions:roomFactions(room.payload),locked:!!(room.password_hash||room.payload.adminPrivate),updatedAt:room.updated_at,members:clone(room.payload.members),botError:room.payload.botError||null,gameId:room.payload.gameId||null,game:room.payload.game?projectGame(room.payload.game,uid):null};}
   function allRooms(uid){return db.prepare('SELECT * FROM rooms ORDER BY updated_at DESC LIMIT 500').all().flatMap(row=>{
@@ -80,6 +89,18 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
   async function body(req){requireThat((req.headers['content-type']||'').startsWith('application/json'),415,'请求必须为 JSON');let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;requireThat(size<=16384,413,'请求体过大');chunks.push(chunk);}let result;try{result=JSON.parse(Buffer.concat(chunks).toString('utf8'));}catch{throw error(400,'JSON 格式错误');}requireThat(result&&typeof result==='object'&&!Array.isArray(result),400,'请求应为 JSON 对象');return result;}
   function notify(code){for(const client of clients){if(client.code!==code)continue;try{const u=session(client.req);if(!u){client.res.end();continue;}const room=getRoom(code);if(!member(room,u.id)){client.res.write('event: removed\ndata: {}\n\n');client.res.end();continue;}client.res.write(`data: ${JSON.stringify(roomView(room,u.id))}\n\n`);}catch{client.res.end();}}}
   function transaction(fn){db.exec('BEGIN IMMEDIATE');try{const value=fn();db.exec('COMMIT');return value;}catch(e){db.exec('ROLLBACK');throw e;}}
+  function vacantSeat(room,requested){
+    const capacity=room.payload.capacity||2;
+    const seat=requested??Array.from({length:capacity},(_,index)=>index).find(index=>!room.payload.members.some(player=>player.seat===index));
+    requireThat(Number.isInteger(seat)&&seat>=0&&seat<capacity,422,'请选择有效的空席位');
+    requireThat(!room.payload.members.some(player=>player.seat===seat),409,'这个席位已有人加入，请选择其他空位');
+    return seat;
+  }
+  function validateIdentity(room,target,name,faction,reserve){
+    requireThat(!room.payload.members.some(player=>player.userId!==target.userId&&player.name===name),409,'本房间已有同名玩家');
+    requireThat(roomFactions(room.payload).includes(faction),422,'该房间未开放此阵营');
+    if(reserve)requireThat(!room.payload.members.some(player=>player.userId!==target.userId&&player.ready&&player.faction===faction),409,'该阵营已有玩家准备，请选择其他阵营');
+  }
   function persist(room,command,actor){
     const version=room.version+1,now=Date.now();
     const result=db.prepare('UPDATE rooms SET owner_id=?,version=?,status=?,payload=?,updated_at=? WHERE code=? AND version=?').run(room.owner_id,version,room.status,JSON.stringify(room.payload),now,room.code,room.version);
@@ -304,11 +325,11 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
     if(method==='GET'&&gameMatch){const row=db.prepare('SELECT state FROM games WHERE id=?').get(gameMatch[1]);requireThat(row,404,'对局不存在');const g=JSON.parse(row.state);requireThat(g.players.some(p=>p.id===u.id),403,'无权读取该对局');return json(res,200,{game:projectGame(g,u.id)});}
     if(method==='POST'&&path==='/api/rooms'){
       throttle(`create:${u.id}`,10);const b=await body(req),name=nameOf(b.name),title=nameOf(b.title||'林间小聚'),pw=password(b.password??'',true);
-      const ruleset=b.ruleset||'root-base-four-v5';requireThat(supportedRulesets().includes(ruleset),422,'不支持所选游戏模式');
-      const capacity=b.capacity??2;requireThat([2,3,4].includes(capacity),422,'房间人数应为二至四人');
+      const ruleset=b.ruleset||LIZARD_RULESET;requireThat(supportedRulesets().includes(ruleset),422,'不支持所选游戏模式');
+      const capacity=b.capacity??4;requireThat([2,3,4].includes(capacity),422,'房间人数应为二至四人');
       const hash=pw?await hashPassword(pw):null;
       const room=transaction(()=>{requireCurrentSession(req,u);requireThat(db.prepare("SELECT count(*) n FROM rooms WHERE owner_id=? AND status!='closed'").get(u.id).n<10,422,'最多同时拥有 10 个房间');let code;do{code=String(randomInt(100000,1000000));}while(db.prepare('SELECT 1 FROM rooms WHERE code=?').get(code));
-        const payload={capacity,ruleset,members:[{userId:u.id,name,faction:'cat',ready:false}],game:null,gameId:null};db.prepare('INSERT INTO rooms VALUES(?,?,?,?,?,?,?,?)').run(code,u.id,title,hash,0,'waiting',JSON.stringify(payload),Date.now());return getRoom(code);});
+        const payload={capacity,ruleset,members:[{userId:u.id,name,faction:'cat',ready:false,seat:0}],game:null,gameId:null};db.prepare('INSERT INTO rooms VALUES(?,?,?,?,?,?,?,?)').run(code,u.id,title,hash,0,'waiting',JSON.stringify(payload),Date.now());return getRoom(code);});
       return json(res,201,{room:roomView(room,u.id)});
     }
     const m=path.match(/^\/api\/rooms\/(\d{6})(?:\/(join|events|command|delete))?$/);requireThat(m,404,'接口不存在');const [,code,operation]=m;
@@ -331,7 +352,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
         if(initial.password_hash)requireThat(await verifyPassword(pw,initial.password_hash),403,'房间密码错误');
       }
       const room=transaction(()=>{const r=getRoom(code);requireCurrentSession(req,u);requireThat(r.password_hash===initial.password_hash&&!!r.payload.adminPrivate===!!initial.payload.adminPrivate,409,'房间访问设置已更新，请重试');if(member(r,u.id))return r;requireThat(r.status==='waiting'&&r.payload.members.length<(r.payload.capacity||2),409,'房间已满或对局已经开始');requireThat(!r.payload.members.some(p=>p.name===name),409,'本房间已有同名玩家');
-        const factions=roomFactions(r.payload);const faction=factions.find(faction=>!r.payload.members.some(player=>player.faction===faction))||factions[0];r.payload.members.push({userId:u.id,name,faction,ready:false});persist(r,{type:'join'},u.id);return r;});notify(code);return json(res,200,{room:roomView(room,u.id)});
+        const factions=roomFactions(r.payload);const faction=factions.find(faction=>!r.payload.members.some(player=>player.faction===faction))||factions[0];r.payload.members.push({userId:u.id,name,faction,ready:false,seat:vacantSeat(r,b.seat)});persist(r,{type:'join'},u.id);return r;});notify(code);return json(res,200,{room:roomView(room,u.id)});
     }
     const r=getRoom(code);requireThat(member(r,u.id),403,'你不在这个房间');
     if(method==='GET'&&!operation)return json(res,200,{room:roomView(r,u.id)});
@@ -358,13 +379,17 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
           requireThat(r.owner_id===u.id,403,'只有房主可以添加人机');
           requireThat(r.status==='waiting',409,'开始后不能添加人机');
           requireThat(r.payload.members.length<(r.payload.capacity||2),409,'房间已满');
-          const factions=roomFactions(r.payload);
-          requireThat(factions.includes(c.faction),422,'该房间未开放此阵营');
-          requireThat(!r.payload.members.some(player=>player.ready&&player.faction===c.faction),409,'该阵营已有玩家准备，请选择其他阵营');
-          const label={cat:'猫咪',bird:'飞鹰',alliance:'联盟',vagabond:'游侠',lizard:'蜥蜴'}[c.faction];
-          const name=nameOf(c.name||`人机·${label}`);
-          requireThat(!r.payload.members.some(player=>player.name===name),409,'本房间已有同名玩家');
-          r.payload.members.push({userId:`bot-${randomUUID()}`,name,faction:c.faction,ready:true,bot:true});
+          const factions=roomFactions(r.payload),seat=vacantSeat(r,c.seat);
+          const faction=c.faction??factions.find(faction=>!r.payload.members.some(player=>player.faction===faction))??factions.find(faction=>!r.payload.members.some(player=>player.ready&&player.faction===faction));
+          const bot={userId:`bot-${randomUUID()}`,name:nameOf(c.name||`林间人机 ${seat+1}`),faction,ready:true,bot:true,seat};
+          validateIdentity(r,bot,bot.name,faction,true);r.payload.members.push(bot);
+        }else if(c.type==='bot-profile'){
+          requireThat(r.owner_id===u.id,403,'只有房主可以修改人机');
+          requireThat(r.status==='waiting',409,'开始后不能修改人机');
+          const bot=r.payload.members.find(player=>player.userId===c.userId&&player.bot);
+          requireThat(bot,422,'请选择人机席位');
+          const name=c.name===undefined?bot.name:nameOf(c.name);
+          validateIdentity(r,bot,name,c.faction,true);bot.name=name;bot.faction=c.faction;bot.ready=true;
         }else if(c.type==='bot-remove'){
           requireThat(r.owner_id===u.id,403,'只有房主可以移除人机');
           requireThat(r.status==='waiting',409,'开始后不能移除人机');
@@ -374,7 +399,15 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
           requireThat(r.owner_id===u.id,403,'只有房主可以重试人机');
           requireThat(r.status==='playing'&&r.payload.botError,409,'当前没有等待重试的人机');
           r.payload.botError=null;
-        }else if(c.type==='ready'){requireThat(r.status==='waiting',409,'对局已开始');requireThat(typeof c.ready==='boolean',422,'准备状态错误');if(c.ready)requireThat(!r.payload.members.some(player=>player.userId!==u.id&&player.ready&&player.faction===me.faction),409,'该阵营已有玩家准备，请选择其他阵营');me.ready=c.ready;}
+        }else if(c.type==='ready'){
+          requireThat(r.status==='waiting',409,'对局已开始');requireThat(typeof c.ready==='boolean',422,'准备状态错误');
+          if(c.ready){
+            const name=c.name===undefined?me.name:nameOf(c.name),faction=c.faction??me.faction;
+            requireThat(!me.ready||(name===me.name&&faction===me.faction),409,'请先取消准备，再修改名字或阵营');
+            validateIdentity(r,me,name,faction,true);me.name=name;me.faction=faction;
+          }
+          me.ready=c.ready;
+        }
         else if(c.type==='start'){
           requireThat(r.owner_id===u.id,403,'只有房主可以开始');requireThat(r.status==='waiting'&&r.payload.members.length>=2&&r.payload.members.every(m=>m.ready),409,'至少两位玩家，且全部准备');
           requireThat(new Set(r.payload.members.map(player=>player.faction)).size===r.payload.members.length,409,'阵营重复，请重新选择并准备');
