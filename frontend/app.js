@@ -389,8 +389,8 @@ function tutorialListView(){
 function tutorialCoach(meta){
   if(meta.guide){
     const guide=meta.guide,acting=guide.mode==='act';
-    const next=meta.completed?btn('前往猫咪贵族','tutorial-start','primary',false,'data-lesson="cats"'):guide.canAdvance?btn('继续 ▸','tutorial-guide-next','primary'):meta.ready?btn(meta.index+1===meta.total?'结束旅程':'继续 ▸','tutorial-next','primary'):'';
-    return `<section class="tutorial-coach tutorial-dialogue" aria-label="林间引导" data-guide-mode="${guide.mode}"><div class="guide-character">${artImage(ART.portraits.cat,'猫咪贵族','guide-portrait')}<span>${esc(guide.speaker)}</span></div><div class="guide-copy"><div class="guide-heading"><h3>${esc(meta.heading)}</h3><small>${meta.index+1} / ${meta.total}</small></div><p class="guide-line" aria-live="polite">${esc(guide.text)}</p><div class="guide-evidence"></div><div class="guide-footer"><span class="guide-cue">${acting?'◆ 等待你的命令':meta.completed?'旅程已记录':`◆ ${Math.min(guide.cursor+1,guide.total)} / ${guide.total}`}</span><div class="tutorial-buttons">${guide.canBack?btn('上句话','tutorial-guide-back','quiet'):''}${next}${!meta.reading&&!meta.completed?btn('重试','tutorial-retry','quiet'):''}${btn('离开教程','tutorials','quiet')}</div></div></div></section>`;
+    const next=meta.completed?(meta.lessonId==='basics'?btn('前往猫咪贵族','tutorial-start','primary',false,'data-lesson="cats"'):btn('返回教程目录','tutorials','primary')):guide.canAdvance?btn('继续 ▸','tutorial-guide-next','primary'):meta.ready?btn(meta.index+1===meta.total?'结束旅程':'继续 ▸','tutorial-next','primary'):guide.watch?btn('观看这一步 ▸','tutorial-coach-next','primary'):'';
+    return `<section class="tutorial-coach tutorial-dialogue" aria-label="林间引导" data-guide-mode="${guide.mode}" data-guide-faction="${esc(meta.faction||'cat')}"><div class="guide-character">${artImage(ART.portraits[meta.faction||'cat'],guide.speaker,'guide-portrait')}<span>${esc(guide.speaker)}</span></div><div class="guide-copy"><div class="guide-heading"><h3>${esc(meta.heading)}</h3><small>${meta.index+1} / ${meta.total}</small></div><p class="guide-line" aria-live="polite">${esc(guide.text)}</p><div class="guide-evidence"></div><div class="guide-footer"><span class="guide-cue">${acting?(guide.watch?'◆ 观察对手':'◆ 等待你的命令'):meta.completed?'旅程已记录':`◆ ${Math.min(guide.cursor+1,guide.total)} / ${guide.total}`}${meta.goalCount>1?` · ${meta.count}/${meta.goalCount}`:''}</span><div class="tutorial-buttons">${guide.canBack?btn('上句话','tutorial-guide-back','quiet'):''}${next}${!meta.reading&&!meta.completed?btn('重试','tutorial-retry','quiet'):''}${btn('离开教程','tutorials','quiet')}</div></div></div></section>`;
   }
   const context=meta.context;
   const location=context.from!==undefined?`秋林 ${context.from} → 秋林 ${context.to}`:context.clearing!==undefined?`秋林 ${context.clearing}`:context.to!==undefined?`前往秋林 ${context.to}`:'';
@@ -399,6 +399,8 @@ function tutorialCoach(meta){
 function filterTutorialControls(meta){
   const source=document.querySelector('.actions');
   if(!source)return;
+  const decree=source.querySelector('#decree-card');
+  if(decree&&(!decree.options.length||!meta.actionTypes.some(type=>['move','recruit','battle','build'].includes(type))))decree.closest('label').remove();
   for(const form of source.querySelectorAll('form')){
     const type=form.dataset.type||form.id;
     if(!meta.actionTypes.includes(type)&&!(type==='faction-action'&&S.room.game.factionActions.length))form.remove();
@@ -407,18 +409,38 @@ function filterTutorialControls(meta){
     if(!meta.actionTypes.includes(button.dataset.action))button.remove();
   }
   if(meta.ready){const prompt=meta.reading?'阅读本节说明':'本节目标已完成';if(source.querySelector('h2'))source.querySelector('h2').textContent=prompt;if(source.querySelector('.phase'))source.querySelector('.phase').textContent=prompt;}
+  const expected=meta.guide?.action;
+  if(expected){
+    for(const form of source.querySelectorAll('form'))for(const field of form.querySelectorAll('[name]')){
+      if(expected[field.name]===undefined)continue;
+      if(field.tagName==='SELECT'){
+        const wanted=String(expected[field.name]);
+        for(const option of field.options)option.disabled=option.value!==wanted;
+        field.value=wanted;
+      }else if(field.type!=='checkbox')field.value=Array.isArray(expected[field.name])?expected[field.name].join(','):String(expected[field.name]);
+    }
+  }
 }
 function updateBasicGuide({from=null,picked=null,choice=false}={}){
   const meta=S.room?.tutorial,guide=meta?.guide;
   if(!guide)return;
   const board=document.querySelector('.map-card'),dialogue=board?.querySelector('.tutorial-dialogue');
   if(!dialogue)return;
-  const acting=guide.mode==='act',context=meta.context,moving=context.from!==undefined;
+  const acting=guide.mode==='act',game=S.room.game;
+  const target=guide.action||game.factionActions[0]?.action||game.mapActions[0]||{};
+  const context={...meta.context,...(target.from!==undefined?{from:target.from,to:target.to}:{}),...(target.clearing!==undefined?{clearing:target.clearing}:{}),...(target.clearings?{clearings:target.clearings}:{} )},moving=context.from!==undefined&&target.type!=='slip';
   const phase=choice?'choice':picked!==null?'confirm':moving&&from!==null?'destination':'source';
-  dialogue.querySelector('.guide-line').textContent=acting?(guide.prompts[phase]||meta.text):guide.text;
+  let instruction=guide.prompts[phase]||meta.text;
+  if(acting&&!guide.watch&&phase==='source'){
+    if(meta.stepId==='bird-execute')instruction=game.phase==='decree-add'?'新法令已写好。点击“开始执行法令”，准备履行承诺。':game.phase==='craft'?'这次没有要锻造的牌。结束锻造，开始依次执行法令。':game.currentDecreeColumn==='recruit'?'先履行招募法令：点秋林1的鸟巢，确认招募一名战士。':game.currentDecreeColumn==='move'?'接下来履行移动法令：先点秋林1的部队，再点秋林0，检查人数并确认。':'最后履行建造法令：点我们控制的秋林0，建起第二座鸟巢。';
+    if(meta.stepId==='wa-organize')instruction=game.phase==='daylight'?'结束白天，进入长官指挥的夜晚。':game.board[meta.context.to].warriors.alliance?'战士已经就位。切换到组织，点秋林1，收回战士并放置民意。':'第一次军事行动：选择移动，点秋林0的战士，再点秋林1，确认移动一名。';
+    if(meta.stepId==='vg-slip')instruction=game.phase==='refresh'?'物品恢复完毕。点击结束恢复，进入潜行阶段。':'点亮起的秋林0，确认清晨潜行。这一步不耗竭靴子。';
+  }
+  dialogue.querySelector('.guide-line').textContent=acting?instruction:guide.text;
   dialogue.dataset.guideStage=acting?phase:guide.focus;
   const focus=acting?(phase==='destination'?'to':phase==='source'&&moving?'from':moving?'route':'clearing'):guide.focus;
-  let ids=focus==='home'?[0]:focus==='from'?[context.from]:focus==='to'?[context.to]:focus==='route'?[context.from,context.to]:focus==='clearing'?[context.clearing??3]:[];
+  let ids=focus==='home'?[0]:focus==='from'?[context.from]:focus==='to'?[context.to]:focus==='route'?[context.from,context.to]:focus==='clearing'?[context.clearing??context.to,...(context.clearings||[]),...(['explore','aid','quest','special'].includes(target.type)?[game.vagabond?.position]:[])]:[];
+  if(meta.lessonId==='basics'&&focus==='clearing'&&!ids.some(id=>id!==undefined))ids=[3];
   ids=ids.filter(id=>id!==undefined);
   for(const node of board.querySelectorAll('.clearing')){
     node.classList.toggle('guide-focus',ids.includes(Number(node.dataset.id)));
@@ -456,9 +478,11 @@ function updateBasicGuide({from=null,picked=null,choice=false}={}){
   const hero=S.room.game.players.find(p=>p.id===S.user.id);
   const evidence=dialogue.querySelector('.guide-evidence');
   if(focus==='suits')evidence.innerHTML=['fox','rabbit','mouse'].map(suit=>`<span>${suitImage(suit)}${names[suit]}</span>`).join('');
-  else if(focus==='score')evidence.innerHTML=`<span class="guide-score">贵族的声望　${hero.score} / 30</span>`;
+  else if(focus==='score')evidence.innerHTML=`<span class="guide-score">${names[meta.faction||'cat']}的声望　${hero.score} / 30</span>`;
   else if(acting&&['battle','defenseless'].includes(meta.stepId))evidence.innerHTML='<small>本次演练：骰子固定为 3 / 3，进攻方取高值，防守方取低值。</small>';
   else evidence.replaceChildren();
+  if(guide.resources){const r=guide.resources;evidence.innerHTML=`<span>第 ${r.round} 轮</span><span>声望 ${r.score}</span><span>手牌 ${r.hand}</span>`+(meta.faction==='cat'?`<span>木材 ${r.wood}</span>`:meta.faction==='alliance'?`<span>长官 ${r.officers}</span>`:meta.faction==='vagabond'?`<span>可用物品 ${r.items}</span>`:'');}
+  for(const panel of document.querySelectorAll('.hand-panel,.own-resources,.map-action-menu'))panel.classList.toggle('guide-panel-focus',acting&&!guide.watch&&(panel.matches('.map-action-menu')||['craft','decree-add','mobilize','train','discard','extra'].includes(target.type)&&panel.matches('.hand-panel')));
   if(guide.outcome){
     const outcome=guide.outcome;
     evidence.innerHTML=(outcome.dice?`<span class="guide-dice" aria-label="掷骰结果 ${outcome.dice.join(' / ')}">${outcome.dice.map(value=>`<b>${value}</b>`).join('')}</span>`:'')+
@@ -520,7 +544,7 @@ function gameView(){
         <section class="hand-panel"><div class="row"><h3>我的手牌</h3><small>仅你可见 · 余牌 ${game.deckCount}</small></div><div class="hand">${hand}</div></section>
         ${newFactionOverview(game,me)}
       </section>
-      <section class="panel log-pane"><div class="row"><h3>林间纪事</h3><small>第 ${(game.turnsCompleted??0)+1} 轮</small></div>${btn('查看近期操作','recent-actions','quiet')}<div class="logs">${logs}</div>${!game.winner&&game.players.length===2?btn('认输并结束本局','resign','quiet danger'):''}</section>
+      <section class="panel log-pane"><div class="row"><h3>林间纪事</h3><small>第 ${(game.turnsCompleted??0)+1} 轮</small></div>${btn('查看近期操作','recent-actions','quiet')}<div class="logs">${logs}</div>${!S.room.tutorial&&!game.winner&&game.players.length===2?btn('认输并结束本局','resign','quiet danger'):''}</section>
     </aside>
   </div>`);
   if(S.room.tutorial?.guide)document.querySelector('.map-card').insertAdjacentHTML('afterbegin',tutorialCoach(S.room.tutorial));
@@ -663,6 +687,7 @@ app.addEventListener('click',event=>{const b=event.target.closest('[data-action]
     if(action==='tutorials'){await loadTutorials();return;}
     if(action==='tutorial-start'){enterTutorial((await api(`/api/tutorials/${b.dataset.lesson}/start`,{})).room);return;}
     if(action==='tutorial-next'){await tutorialCommand({type:'next'});return;}
+    if(action==='tutorial-coach-next'){await tutorialCommand({type:'coach-next'});return;}
     if(action==='tutorial-guide-next'||action==='tutorial-guide-back'){
       await tutorialCommand({type:action==='tutorial-guide-next'?'guide-next':'guide-back'});
       document.querySelector('.tutorial-dialogue .tutorial-buttons .primary')?.focus({preventScroll:true});return;

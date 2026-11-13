@@ -15,7 +15,7 @@ function anchor(id){
 }
 function busy(value){
   const host=board();if(host)host.dataset.presentationBusy=String(value);
-  for(const button of document.querySelectorAll('.tutorial-buttons [data-action=tutorial-next],.tutorial-buttons [data-action=tutorial-guide-next]')){
+  for(const button of document.querySelectorAll('.tutorial-buttons [data-action=tutorial-next],.tutorial-buttons [data-action=tutorial-guide-next],.tutorial-buttons [data-action=tutorial-coach-next]')){
     if(value){if(!('motionDisabled' in button.dataset))button.dataset.motionDisabled=button.dataset.busyDisabled??String(button.disabled);button.disabled=true;}
     else if('motionDisabled' in button.dataset){button.disabled=button.dataset.motionDisabled==='true'||'busyDisabled' in button.dataset;delete button.dataset.motionDisabled;}
   }

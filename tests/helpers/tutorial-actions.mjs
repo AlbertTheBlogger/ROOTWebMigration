@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict';
 export function tutorialAction(room){
  const g=room.game,meta=room.tutorial,p=g.players.find(p=>p.id===room.ownerId);
+ if(meta.guide?.action)return meta.guide.action;
  if(g.choice){assert.equal(g.choice.waiting,false);return {type:'choice',choiceId:g.choice.choiceId,optionId:g.choice.options[0].id};}
  if(meta.actionTypes.includes('craft')&&g.craftOptions.length)return {type:'craft',card:g.craftOptions[0].card};
  if(g.phase==='decree-add')return meta.actionTypes.includes('decree-add')?{type:'decree-add',card:p.hand[0].id,column:'recruit'}:{type:'decree-ready'};
@@ -23,5 +24,6 @@ export function tutorialAction(room){
 
 export function tutorialCommandFor(room){
  if(room.tutorial.guide?.canAdvance)return {type:'guide-next'};
+ if(room.tutorial.guide?.watch&&!room.tutorial.ready)return {type:'coach-next'};
  return room.tutorial.ready?{type:'next'}:{type:'action',action:tutorialAction(room)};
 }

@@ -4,7 +4,7 @@
 
 [简体中文](README.md) | English
 
-Development version **v1.1.1** (package: 1.1.1-dev); the public release remains **v1.1**, and the existing v1.1.0 tag is unchanged. This update fixes Cobbler's Evening timing and battle waits with no real choice, and introduces weighted 70%/20%/10% bot thinking intervals. Longer animations finish before the next bot action. See the [development record](docs/DEVELOPMENT-1.1.1.md) (Chinese).
+Development version **v1.1.2** (package: 1.1.2-dev); the public release remains **v1.1**, and the existing v1.1.0 tag is unchanged. The four base-faction tutorials now use character dialogue inside the map and two consecutive practice rounds. Deployed on November 13, 2026; **user acceptance is pending**. The development tag `dev-v1.1.2` identifies this iteration without creating a new public release. See the [development record](docs/DEVELOPMENT-1.1.2.md) (Chinese).
 
 A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.0**, supports the autumn map, the four base-game factions, and online games for 2–4 players. Multiplayer does not depend on Steam. The original game's installation directory has not been modified.
 
@@ -14,13 +14,13 @@ The Lizard Cult is implemented as a separate expansion ruleset. Select the Lizar
 
 The Lizard Cult tutorial now adds 19 guided nodes adapted from the original installation's Sacred Scales material, with checkpoint retries and saved progress. See the [extraction and acceptance record](docs/LIZARD-TUTORIAL-2026-11-11.md) (Chinese). Included in the November 12 deployment.
 
-The introductory chapter, Rise of the Marquise (贵族崛起), now uses short character dialogue inside the map, contextual action prompts, focused map views, previous-line review, retries, and saved dialogue progress. The other five chapters retain their existing flow. See the [redesign record](docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md) (Chinese). Deployed on November 12, 2026. See the [deployment record](docs/DEPLOYMENT-2026-11-12.md) (Chinese).
+The introductory chapter, Rise of the Marquise (贵族崛起), uses short character dialogue inside the map, contextual action prompts, focused map views, previous-line review, retries, and saved dialogue progress. It was deployed on November 12, 2026; see the [redesign record](docs/BASICS-TUTORIAL-REDESIGN-2026-11-11.md) (Chinese). Development v1.1.2 extends this approach to the four base factions and adds two consecutive practice rounds per faction. The Lizard chapter retains its previous flow; see the [current record](docs/DEVELOPMENT-1.1.2.md) (Chinese).
 
 The four-seat waiting-room redesign was deployed on November 13, 2026 (Asia/Shanghai), **pending user acceptance**: new rooms have four seats, names and factions are committed together when ready, and the host can add and configure bots in empty seats. Games can start with 2–4 participants while leaving seats empty. See the [acceptance record](docs/FOUR-SEAT-ROOMS-2026-11-12.md) (Chinese).
 
 Tutorial camera transitions, shared map effects, and original-game UI sounds were deployed on November 13, 2026 (Asia/Shanghai). **User acceptance is pending.** See the [engineering record](docs/EXPERIENCE-IMPROVEMENTS-2026-11-13.md) (Chinese).
 
-Follow-up feedback is also deployed as of November 13, 2026: restored large desktop announcements, longer action effects, and a three-stage Turmoil presentation. Bot pacing was subsequently adjusted in development v1.1.1 as described above. Automated regression passed; user acceptance remains pending.
+Follow-up feedback is also deployed as of November 13, 2026: restored large desktop announcements, longer action effects, and a three-stage Turmoil presentation. Bot pacing was subsequently adjusted in development v1.1.1; see its [record](docs/DEVELOPMENT-1.1.1.md). Automated regression passed; user acceptance remains pending.
 
 ## Current features
 
@@ -28,7 +28,7 @@ Follow-up feedback is also deployed as of November 13, 2026: restored large desk
 - Marquise de Cat, Eyrie Dynasties, Woodland Alliance, and Vagabond. Available Vagabond characters: Thief, Tinker, and Ranger.
 - The base deck, crafting, combat, and interrupting decisions, with rules and random outcomes managed by the server.
 - SQLite persistence, recovery after page refreshes or server restarts, idempotent commands, and player-specific private views.
-- Simple bots, a six-chapter tutorial (58 nodes, including the Lizard Cult), administrator tools, and an image-based board.
+- Simple bots, a six-chapter tutorial (82 nodes, including the Lizard Cult), administrator tools, and an image-based board.
 
 Expansion factions other than the Lizard Cult, a second Vagabond, additional maps, expansion decks, and advanced setup are not yet implemented. Complex rule interactions have not been exhaustively compared with the original digital game's runtime behavior. The bots are basic opponents rather than mature strategic AI.
 

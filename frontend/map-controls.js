@@ -222,8 +222,8 @@ export function mountMapControls({game,userId,version,gameId,tutorial,onTutorial
   mounted={board,game,userId,overlay,banner,menu,popup,entries,numericChoice,movement,tutorial,onTutorialStage};
   if(tutorial?.guide){
     board.classList.add('guided-map');
-    for(const entry of entries)if(entry.form.id==='move'){
-      const count=entry.form.elements.count;count.value='1';count.min='1';count.max='1';count.readOnly=true;
+    for(const entry of entries)if(entry.form.id==='move'&&(tutorial.lessonId==='basics'||tutorial.guide.action?.count!==undefined)){
+      const count=entry.form.elements.count,value=tutorial.guide.action?.count||1;count.value=String(value);count.min=String(value);count.max=String(value);count.readOnly=true;
     }
   }
   const minimize=element('button','map-minimize',state.minimized?'展开操作':'最小化操作');minimize.type='button';minimize.dataset.mapMinimize='true';minimize.setAttribute('aria-expanded',String(!state.minimized));

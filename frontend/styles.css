@@ -544,3 +544,22 @@ html[data-motion=off] .turmoil-leader,html[data-motion=reduced] .turmoil-leader 
 .tutorial-game .map .guide-focus .ground { stroke:#ffe293;stroke-width:5;stroke-dasharray:10 6;animation:woodland-target 1.7s ease-in-out infinite; }
 
 html[data-motion=off] .map-stage,html[data-motion=reduced] .map-stage { animation:none!important; }
+
+/* Faction lessons: dialogue, a single action, then its visible consequence. */
+.tutorial-dialogue { animation:guide-arrive .28s ease-out both; }
+.tutorial-dialogue[data-guide-faction=bird] { border-bottom-color:#517c98; }
+.tutorial-dialogue[data-guide-faction=alliance] { border-bottom-color:#5c844d; }
+.tutorial-dialogue[data-guide-faction=vagabond] { border-bottom-color:#827183; }
+.tutorial-dialogue[data-guide-mode=result] .guide-line { color:#36573b; }
+.guide-panel-focus { outline:2px solid #c7a157;outline-offset:3px;border-radius:6px; }
+.guide-panel-focus.map-action-menu::before { content:'▼ 按提示选择行动';display:block;font-size:11px;color:#f5df9b;text-shadow:0 1px 2px #1c3325;margin-bottom:5px; }
+.guided-map .map-common { display:block;top:58px;right:12px;background:#fff5deed;border-radius:6px;padding:5px; }
+.guided-map .map-common:empty { display:none; }
+.guided-map:has(.map-common:not(:empty)) .map-toolbar { min-height:128px; }
+.guided-map .map-action-menu { align-items:center; }
+.guide-panel-focus.map-action-menu::before { flex:0 0 auto; }
+.guided-map .map-context { overflow:auto; }
+.guided-map .map-context.centered { max-height:calc(100% - 100px); }
+@keyframes guide-arrive { from { opacity:.5;transform:translateY(-6px); } to { opacity:1;transform:none; } }
+html[data-motion=off] .tutorial-dialogue,html[data-motion=reduced] .tutorial-dialogue { animation:none; }
+@media(prefers-reduced-motion:reduce) { .tutorial-dialogue { animation:none; } }

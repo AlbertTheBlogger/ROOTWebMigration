@@ -39,9 +39,14 @@ test('tutorial HTTP progress, private saves, retries and restart recovery',async
  await app.close();await start();room=(await request(learner,'/api/tutorials/basics')).body.room;assert.deepEqual(room,before);
  for(const lesson of (await request(learner,'/api/tutorials')).body.lessons){
   room=(await request(learner,`/api/tutorials/${lesson.id}/start`,{})).body.room;
-  let commands=0;
+  let commands=0,journeyRestored=false;
   while(!room.tutorial.completed){
    assert.ok(commands++<150);
+   if(room.tutorial.stepId==='journey-second'&&!journeyRestored){
+    const saved=room;await app.close();await start();
+    room=(await request(learner,`/api/tutorials/${lesson.id}`)).body.room;
+    assert.deepEqual(room,saved);assert.equal(room.game.turnsCompleted,2);journeyRestored=true;
+   }
    if(lesson.id==='lizard'&&['liz-setup','liz-crusade','liz-hated','liz-fear'].includes(room.tutorial.stepId)&&!room.tutorial.ready){
     const saved=room;await app.close();await start();room=(await request(learner,'/api/tutorials/lizard')).body.room;assert.deepEqual(room,saved);
    }

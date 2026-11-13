@@ -9,6 +9,7 @@ OUTPUT=ROOT/'audit'/os.environ.get('TUTORIAL_AUDIT_DIR','tutorial-browser')
 
 def plan(room):
  g=room['game'];meta=room['tutorial'];me=next(p for p in g['players'] if p['id']==room['ownerId'])
+ if (meta.get('guide') or {}).get('action'):return meta['guide']['action']
  if g.get('choice'):
   q=g['choice'];return {'type':'choice','choiceId':q['choiceId'],'optionId':q['options'][0]['id']}
  if 'craft' in meta['actionTypes'] and g['craftOptions']:return {'type':'craft','card':g['craftOptions'][0]['card']}
@@ -128,8 +129,8 @@ def run():
      if lesson in ['eyrie','alliance','vagabond']:
       expect(page.locator('.own-resources .scoring-spaces > span')).to_have_count({'eyrie':8,'alliance':10,'vagabond':3}[lesson])
      def view():return page.evaluate("id=>fetch('/api/tutorials/'+id).then(r=>r.json()).then(r=>r.room)",lesson)
-     for count in range(150):
-      room=view();meta=room['tutorial']
+     for count in range(250):
+      room=view();meta=room['tutorial'];acted=False
       if meta['completed']:break
       if lesson=='basics' and meta['stepId']=='overview' and meta['guide']['cursor']==1 and 'back' not in basics_checks:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'guide-back'});page.locator('[data-action=tutorial-guide-back]').click()
@@ -153,12 +154,20 @@ def run():
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'guide-next'});page.locator('[data-action=tutorial-guide-next]').click()
       elif meta['ready']:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'next'});page.locator('[data-action=tutorial-next]').click()
+      elif (meta.get('guide') or {}).get('watch'):
+       trace.append({'lesson':lesson,'step':meta['stepId'],'action':'coach-next'});page.locator('[data-action=tutorial-coach-next]').click()
       else:
+       acted=True
        action=plan(room);trace.append({'lesson':lesson,'step':meta['stepId'],'action':action})
        if lesson=='basics':basics_action(page,room,action)
-       else:click_action(page,room['game'],action)
+       else:
+        try:click_action(page,room['game'],action)
+        except Exception:
+         page.screenshot(path=str(OUTPUT/'failure.png'),full_page=True)
+         (OUTPUT/'failure.html').write_text(page.content(),encoding='utf-8')
+         raise
       page.wait_for_function("v=>fetch('/api/tutorials/'+v.lesson).then(r=>r.json()).then(r=>r.room.version>v.version)",arg={'lesson':lesson,'version':room['version']},timeout=10000)
-      if motion_audit and lesson=='eyrie' and meta['stepId']=='bird-turmoil' and not meta['ready']:
+      if motion_audit and acted and lesson=='eyrie' and meta['stepId']=='bird-turmoil' and action['type']=='craft-done':
        for stage in ['0','1','2']:
         page.wait_for_function("s=>document.querySelector('.presentation-layer[data-kind=turmoil]')?.dataset.turmoilStage===s",arg=stage,timeout=15000)
         page.screenshot(path=str(OUTPUT/f'turmoil-stage-{stage}.png'))
@@ -169,6 +178,13 @@ def run():
        if meta['stepId'] in ['overview','move','battle','defenseless','basic-finish'] and (not meta.get('guide') or meta['guide']['cursor']==0):
         page.locator('.map-card').scroll_into_view_if_needed()
         page.screenshot(path=str(OUTPUT/f'basics-{meta["stepId"]}-{meta["guide"]["mode"]}.png'))
+      elif meta.get('guide'):
+       assert page.locator('.map-card > .tutorial-dialogue').count()==1
+       assert page.locator('.right-sidebar .tutorial-coach').count()==0
+       assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
+       if meta['stepId'] in ['journey-first','journey-second','journey-reply'] and meta['guide']['mode']=='dialogue':
+        page.locator('.map-card').scroll_into_view_if_needed()
+        page.screenshot(path=str(OUTPUT/f'{lesson}-{meta["stepId"]}.png'))
       if not meta['ready'] and meta['stepId'] in ['move','cat-build','bird-add','wa-revolt','vg-quest','liz-recruit','liz-crusade','liz-hated']:page.screenshot(path=str(OUTPUT/(meta['stepId']+'.png')))
      assert view()['tutorial']['completed'],lesson
      if lesson=='lizard':assert retried

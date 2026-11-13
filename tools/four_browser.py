@@ -125,11 +125,16 @@ def click_action(page, game, action):
         page.locator(f'[data-map-mode="{key}"]').click()
         army_move=kind in ('move','crusade') and 'from' in action
         if army_move:
-            page.get_by_label('移动起点',exact=True).select_option(str(action['from']))
-            page.get_by_label('移动终点',exact=True).select_option(str(action['to']))
-            page.get_by_label('移动数量',exact=True).select_option(str(action['count']))
+            if page.locator('.guided-map').count():
+                for target in [action['from'],action['to']]:
+                    selector='clearing' if target<12 else 'forest-info'
+                    page.locator(f'[data-action={selector}][data-id="{target}"]').click()
+            else:
+                page.get_by_label('移动起点',exact=True).select_option(str(action['from']))
+                page.get_by_label('移动终点',exact=True).select_option(str(action['to']))
+                page.get_by_label('移动数量',exact=True).select_option(str(action['count']))
         else:
-            for field in ['from','to','clearing']:
+            for field in (['to'] if kind=='slip' else ['from','to','clearing']):
                 if field in action:
                     target=action[field]
                     selector='clearing' if target<12 else 'forest-info'
@@ -157,10 +162,14 @@ def click_action(page, game, action):
     if kind=='build' and 'building' in action: page.locator('[data-map-building]').select_option(action['building'])
     if kind=='recruit' and 'clearings' in action: page.locator(f'[data-action=clearing][data-id="{action["clearings"][0]}"]').click()
     if kind=='move' and 'from' in action:
-        page.get_by_label('移动起点',exact=True).select_option(str(action['from']))
-        page.get_by_label('移动终点',exact=True).select_option(str(action['to']))
+        if page.locator('.guided-map').count():
+            page.locator(f'[data-action=clearing][data-id="{action["from"]}"]').click()
+            page.locator(f'[data-action=clearing][data-id="{action["to"]}"]').click()
+        else:
+            page.get_by_label('移动起点',exact=True).select_option(str(action['from']))
+            page.get_by_label('移动终点',exact=True).select_option(str(action['to']))
     else:
-        for field in ['from','to','clearing']:
+        for field in (['to'] if kind=='slip' else ['from','to','clearing']):
             if field in action:
                 target=action[field]
                 selector='clearing' if target<12 else 'forest-info'
@@ -171,9 +180,12 @@ def click_action(page, game, action):
         control = form.locator(f'[name="{key}"]')
         if not control.count(): continue
         if control.first.get_attribute('type')=='hidden' or not control.first.is_visible(): continue
+        if control.first.get_attribute('readonly') is not None:
+            assert control.first.input_value()==str(value)
+            continue
         if control.first.evaluate('element=>element.tagName')=='SELECT': control.first.select_option(str(value))
         else: control.first.fill(','.join(map(str,value)) if isinstance(value,list) else str(value))
-    if kind=='decree-add':
+    if kind=='decree-add' and not page.locator('.guided-map').count():
         before=form.locator('[name=card]').input_value()
         if not (OUTPUT/'action-expanded.png').exists(): page.screenshot(path=str(OUTPUT/'action-expanded.png'))
         page.locator('[data-map-minimize]').click()

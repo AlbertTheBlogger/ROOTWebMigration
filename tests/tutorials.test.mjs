@@ -139,3 +139,68 @@ test('fear with no optional defense resolves automatically and retry restores th
  assert.equal(after.effects.frames.length,0);
  run=advanceTutorial(run,{type:'retry-step'});assert.deepEqual(run.game,after);assert.equal(run.ready,true);
 });
+
+test('four faction journeys preserve two complete turns, resources and the opponents actual replies',()=>{
+ for(const lessonId of ['cats','eyrie','alliance','vagabond']){
+  let run=createTutorial({id:'learner',username:'Learner'},lessonId),commands=0;
+  const boundaries=new Map(),actions=[];
+  while(!run.completed){
+   assert.ok(commands++<250,lessonId);
+   const room=projectTutorial(run,commands),meta=room.tutorial;
+   if(meta.context.campaign){
+    const restored=JSON.parse(JSON.stringify(run));assert.deepEqual(projectTutorial(restored,commands),room);
+    assert.equal(room.game.players.length,2);
+    assert.equal(meta.guide.resources.score,run.game.players.find(p=>p.id===run.userId).score);
+    if(!boundaries.has(meta.stepId))boundaries.set(meta.stepId,structuredClone(run.game));
+    if(!meta.ready&&meta.guide.mode==='dialogue'){
+     assert.equal(meta.actionTypes.length,0);
+     assert.throws(()=>advanceTutorial(run,{type:'coach-next'}));
+    }
+    if(meta.guide.watch){
+     assert.ok(!meta.guide.action,'opponent cards must not leak through suggested actions');
+     assert.ok(room.game.players.filter(p=>p.id!==run.userId).every(p=>!p.hand));
+    }
+    if(meta.guide.action){
+     actions.push(meta.guide.action.type);
+     assert.throws(()=>advanceTutorial(run,{type:'action',action:{type:'end',unexpected:true}}));
+    }
+   }
+   const command=tutorialCommandFor(room),before=run;
+   run=advanceTutorial(run,command);
+   if(meta.context.campaign&&command.type==='next'){
+    assert.deepEqual(run.game,before.game,'stage transition must not rewrite the game');
+   }
+  }
+  assert.equal(run.game.turnsCompleted,4,lessonId);
+  assert.equal(run.game.round,3,lessonId);
+  assert.equal(boundaries.get('journey-first').turnsCompleted,0);
+  assert.equal(boundaries.get('journey-second').turnsCompleted,2);
+  assert.ok(run.context.history.some(e=>e.actor!==run.userId));
+  if(lessonId==='cats')assert.ok(run.game.board.flatMap(c=>c.buildings).filter(b=>b.type==='sawmill').length>=2);
+  if(lessonId==='eyrie')assert.equal(run.game.bird.decree.recruit.length,2,'both turns promises remain');
+  if(lessonId==='alliance'){
+   assert.ok(actions.includes('mobilize'));assert.ok(actions.includes('revolt'));
+   assert.ok(run.game.board.some(c=>c.buildings.some(b=>b.faction==='alliance')));
+  }
+  if(lessonId==='vagabond')assert.ok(actions.includes('refresh')&&actions.includes('explore'));
+ }
+});
+
+test('journey retry restores a real turn checkpoint and old faction progress retains its node',()=>{
+ for(const lessonId of ['cats','eyrie','alliance','vagabond']){
+  let run=createTutorial({id:'learner',username:'Learner'},lessonId);
+  // Version 3 indices remain in place: additional continuous practice is appended.
+  delete run.guideCursor;run.curriculumVersion=3;
+  const initial=projectTutorial(run,0).tutorial.stepId;
+  assert.equal(initial,{cats:'cat-setup',eyrie:'bird-leader',alliance:'wa-first',vagabond:'vg-character'}[lessonId]);
+  for(let n=0;projectTutorial(run,0).tutorial.stepId!=='journey-second';n++){
+   assert.ok(n<250);run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
+  }
+  const checkpoint=structuredClone(run.game),context=structuredClone(run.context);
+  run=advanceTutorial(run,{type:'guide-next'});
+  run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
+  run=advanceTutorial(run,{type:'retry-step'});
+  assert.deepEqual(run.game,checkpoint);assert.deepEqual(run.context,context);
+  assert.equal(run.ready,false);assert.equal(run.guideCursor,0);
+ }
+});

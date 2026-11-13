@@ -2,6 +2,8 @@
 import { readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import * as rules from './rules/versions/registry.mjs';
+import {candidates} from './bots/test-policy.mjs';
+import {RuleError} from './engine.mjs';
 
 const catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog.json',import.meta.url),'utf8'));
 const recipes=JSON.parse(readFileSync(new URL('./data/full-card-catalog.json',import.meta.url),'utf8')).cards;
@@ -65,9 +67,83 @@ function npcBattle(run,attacker,defender,clearing){
   state.bird.leader='builder';
   run.game=resolveOpponents(rules.applyAction(state,player(state,attacker).id,{type:'battle',clearing,defender,decreeCard:card.id},rng),run.userId);
 }
+const campaignStep=run=>currentStep(run).goal.startsWith('campaign-');
+function campaignStart(run){
+  const faction=lessonById(run.lessonId).faction,opponent=faction==='cat'?'bird':'cat';
+  // An explicitly introduced opening, followed by real turns with no scene rewrites.
+  let state=rules.createGame([{userId:`tutorial-${opponent}`,name:labels[opponent],faction:opponent},{userId:run.userId,name:run.playerName,faction}],rng,'root-base-four-v5');
+  while(!state.setup.complete){
+    const choice=state.effects.frames[0];
+    const option=choice.kind==='setup-character'?'thief':choice.kind==='setup-leader'?'despot':choice.options[0].id;
+    state=rules.applyAction(state,choice.playerId,{type:'choice',choiceId:choice.id,optionId:option},rng);
+  }
+  ensure(state.players[state.turn].id===run.userId,'连续演练起始顺序错误');
+  if(faction==='alliance'){
+    const hero=player(state,faction);state.deck.push(...hero.hand.splice(0),...state.alliance.supporters.splice(0));
+    supporter(state,'fox');supporter(state,'wild');
+    for(let i=0;i<3;i++)deal(state,hero,c=>c.suit==='fox');
+  }
+  run.game=state;run.context={campaign:true,startTurns:state.turnsCompleted,history:[],turnActions:[]};
+}
+function campaignActor(run){return run.game.effects.frames.find(f=>f.type==='choice')?.playerId||run.game.players[run.game.turn].id;}
+function campaignReady(run){return run.game.turnsCompleted>run.context.startTurns&&(currentStep(run).goal==='campaign-turn'||campaignActor(run)===run.userId);}
+function campaignAction(run){
+  const state=run.game,id=campaignActor(run),g=rules.projectGame(state,id),p=g.players.find(p=>p.id===id);
+  let options=candidates(g,p,{developmentRound:1});
+  const own=id===run.userId,done=run.context.turnActions||[];
+  if(g.phase==='decree-add'&&!g.bird.added){
+    const suits=g.board.filter(c=>c.buildings.some(b=>b.type==='roost')).map(c=>c.suit);
+    options=p.hand.filter(c=>c.suit==='wild'||suits.includes(c.suit)).map(c=>({type:'decree-add',card:c.id,column:'recruit'})).concat(options);
+  }
+  if(g.phase==='decree'&&g.currentDecreeColumn==='move'){
+    const preferred=g.mapActions.filter(a=>a.type==='move'&&g.board[a.to].slots>g.board[a.to].buildings.length+g.board[a.to].ruins&&!g.board[a.to].buildings.some(b=>b.type==='roost'));
+    preferred.sort((a,b)=>b.count-a.count);options=[...preferred,...options];
+  }
+  if(p.faction==='alliance'){
+    if(g.phase==='spread'&&!done.includes('spread'))options=[...g.factionActions.filter(o=>o.action.type==='spread'&&g.board[o.action.clearing].suit==='fox').map(o=>o.action),...options];
+    if(g.phase==='spread'&&done.includes('spread'))options=[{type:'spread-done'}];
+    if(g.phase==='daylight'){
+      const train=g.factionActions.filter(o=>o.action.type==='train'&&g.alliance.officers<2).map(o=>o.action);
+      options=[...train,...g.factionActions.filter(o=>o.action.type==='mobilize').map(o=>o.action),{type:'end'}];
+    }
+    if(g.phase==='military'){
+      const actions=g.factionActions.map(o=>o.action);
+      options=[...actions.filter(a=>a.type==='organize'),...actions.filter(a=>a.type==='move'&&!g.board[a.to].sympathy),...actions.filter(a=>a.type==='recruit'),{type:'military-done'}];
+    }
+  }
+  // The observer sees a bounded, visible reply, not a hidden full-turn simulation.
+  if(!own&&p.faction==='cat'&&g.phase==='daylight'){
+    options=done.includes('recruit')?[{type:'end'}]:[...g.mapActions.filter(a=>a.type==='recruit'),{type:'end'}];
+  }
+  if(p.faction==='vagabond'&&g.phase==='daylight'&&done.filter(t=>['explore','quest','aid','special','move'].includes(t)).length>=2)options=[{type:'end'}];
+  for(const action of options){
+    try{rules.applyAction(state,id,action,rng);return action;}
+    catch(error){if(!(error instanceof RuleError))throw error;}
+  }
+  throw new Error(`连续演练没有合法行动：${p.faction}/${g.phase}`);
+}
+const actionNames={choice:'完成当前选择', 'birdsong-end':'开始清晨',wood:'生产木材',craft:'锻造', 'craft-done':'结束锻造',build:'建造',recruit:'招募',move:'移动',battle:'战斗','march-end':'结束行军',end:'结束白天',discard:'弃牌', 'decree-add':'增加法令','decree-ready':'确认法令',leader:'选择新领袖', 'revolt-done':'结束起义阶段','spread-done':'结束传播阶段',spread:'传播民意',revolt:'起义',mobilize:'动员',train:'训练长官',organize:'组织','military-done':'结束军事行动',refresh:'恢复物品','refresh-done':'结束恢复',slip:'潜行','slip-done':'留在原地',explore:'探索遗迹',aid:'援助',quest:'完成任务',special:'使用角色能力','evening-continue':'继续夜晚','evening-end':'结束回合'};
+function campaignInstruction(run,action){
+  const type=action.type,where=action.clearing!==undefined?`秋林${action.clearing}`:action.to!==undefined?`${action.to>=12?'森林':'秋林'}${action.to}`:'';
+  if(type==='choice'){
+    const choice=run.game.effects.frames[0];
+    return choice.playerId===run.userId?`${choice.prompt} 这次练习选择：${choice.options.find(o=>o.id===action.optionId).label}。`:'对手正在处理战斗或救援选择。完成后，棋局按真实规则继续结算。';
+  }
+  const tips={
+    'birdsong-end':'新一天开始，先进入本阵营的清晨流程。',wood:'锯木厂在清晨产木。昨天建好的锯木厂，今天也会参加生产。',
+    'decree-add':'先检查鸟巢的花色，再给招募列增加一张能兑现的牌。旧法令仍然保留。','decree-ready':'新承诺已写下。确认法令，进入白天。','craft-done':'本次先结束锻造，把注意力放到阵营的主要行动。',
+    build:'有统治权、建筑空位和所需资源，才能建造。确认后看看建筑与声望变化。',recruit:'补充战士，观察地图与供应的变化。',
+    move:'先点起点部队，再点终点，检查数量后确认。移动会改变双方的统治力量。',battle:'在当前林地发起战斗。本教程骰子固定3/3；伤害仍受战士数量与防御能力限制。','march-end':'本次行军的第一段移动已完成。这次先结束行军，保留在此处的战士。',end:'白天的计划完成了。结束白天后还要处理夜晚，不能直接当成下一轮。',discard:'夜晚手牌超过上限。先亲自弃到五张，才能进入下一轮。',
+    spread:'用支持者在相邻、匹配花色的林地传播民意。先选亮起的目标，再确认支付。',mobilize:'把手牌动员为支持者，为下一轮起义积攒力量。',revolt:'昨天的民意和支持者还在。支付两张匹配支持者，把民意变成基地与军队。',
+    train:'用匹配基地花色的手牌训练长官，增加今晚的军事行动。',organize:'收回一名战士，放置民意并计分。把军事实力变为居民支持。',
+    refresh:'昨天耗竭的装备还在背包里。亲自恢复它，让今天重新有工具可用。',slip:'清晨潜行不耗靴子，先决定今天去哪里。',explore:'耗竭火把探索遗迹。收下物品，再考虑剩下的行动。',aid:'交付匹配林地花色的手牌、耗竭物品，并观察关系。',quest:'检查任务花色和两件所需物品，再确认报酬。',special:'盗贼用火把偷取手牌；火把耗竭后，今天不能再用它探索。'
+  };
+  return `${tips[type]||'按当前阶段完成这一步，再观察棋局变化。'}${where?` 本次目标：${where}。`:''}${action.from!==undefined?` 从${action.from>=12?'森林':'秋林'}${action.from}出发${type==='slip'?'。':`，移动${action.count}名。`}`:''}`;
+}
 function prepare(run){
   const step=currentStep(run);run.count=0;
   if(!step.scene)return;
+  if(step.scene==='campaign-start'){campaignStart(run);return;}
   run.context={};
   if(step.scene==='basic-march'){
     run.context={from:3,to:run.game.board[3].links.find(id=>id!==0)};return;
@@ -169,6 +245,10 @@ function prepareStep(run){
   else if(step.id==='wa-organize'){run.context={from:0,to:1};run.count=0;}
   else if(step.id==='vg-slip'){run.context={to:0};run.count=0;}
   else prepare(run);
+  if(campaignStep(run)){
+    run.context.startTurns=run.game.turnsCompleted;
+    run.context.turnActions=[];
+  }
   run.attempt=0;
   run.guideCursor=0;
   run.ready=step.goal==='read'||(['liz-revenge','liz-fear','base-lost'].includes(step.goal)&&achieved(run,{}));
@@ -183,6 +263,11 @@ export function createTutorial(user,lessonId){
 function guideFor(run){
   const step=currentStep(run),guide=step.guidance;
   if(!guide)return null;
+  if(campaignStep(run)&&!run.ready){
+    const action=campaignAction(run),watch=campaignActor(run)!==run.userId,instruction=campaignInstruction(run,action);
+    const text=watch?`对手正在${actionNames[action.type]||'行动'}。${instruction}`:instruction;
+    return {speaker:guide.speaker,mode:(run.guideCursor||0)===0?'dialogue':'act',cursor:run.guideCursor||0,total:1,text,focus:action.from!==undefined?'route':action.clearing!==undefined?'clearing':'map',prompts:{source:text,destination:action.to!==undefined?`沿亮起的路线前往${action.to>=12?'森林':'秋林'}${action.to}。`:text,confirm:'检查目标和支付，再确认。',choice:text},canAdvance:(run.guideCursor||0)===0,canBack:(run.guideCursor||0)>0,watch};
+  }
   const responding=run.ready&&step.goal!=='read';
   const lines=responding?guide.after:guide.before;
   const cursor=Math.max(0,Math.min(run.guideCursor||0,step.goal==='read'||responding?Math.max(0,lines.length-1):lines.length));
@@ -193,6 +278,11 @@ function guideFor(run){
 }
 function allowed(run,action){
   const step=currentStep(run),context=run.context;
+  if(campaignStep(run)){
+    if(campaignActor(run)!==run.userId)return false;
+    const expected=campaignAction(run);
+    return Object.keys(expected).every(key=>JSON.stringify(action[key])===JSON.stringify(expected[key]))&&Object.keys(action).every(key=>key in expected);
+  }
   if(!step.actions.includes(action.type))return false;
   if(action.type==='choice'){
     const choice=run.game.effects.frames[0];const option=choice?.options.find(option=>option.id===action.optionId);
@@ -259,9 +349,23 @@ export function advanceTutorial(source,command){
     if(run.step+1===lessonById(run.lessonId).steps.length){run.completed=true;run.everCompleted=true;return run;}
     run.step++;prepareStep(run);return run;
   }
+  if(command.type==='coach-next'){
+    ensure(campaignStep(run)&&campaignActor(run)!==run.userId&&!run.ready&&guide.mode==='act','请按当前教程操作');
+    const action=campaignAction(run),actor=campaignActor(run);
+    run.game=rules.applyAction(run.game,actor,action,rng);
+    run.context.turnActions.push(action.type);run.context.history.push({actor,type:action.type});
+    run.ready=campaignReady(run);
+    run.guideCursor=0;return run;
+  }
   ensure(command.type==='action'&&!run.ready,'请点击继续进入下一节');
   ensure(!guide||guide.mode==='act','请先听完当前引导');
   ensure(command.action&&allowed(run,command.action),'请按本节目标操作，可查看提示或重试本节');
+  if(campaignStep(run)){
+    run.game=rules.applyAction(run.game,run.userId,command.action,rng);
+    run.context.turnActions.push(command.action.type);run.context.history.push({actor:run.userId,type:command.action.type});
+    run.ready=campaignReady(run);
+    run.guideCursor=0;return run;
+  }
   run.game=resolveOpponents(rules.applyAction(run.game,run.userId,command.action,rng),run.userId);
   if(['twice','liz-sacrifice','liz-discard'].includes(currentStep(run).goal))run.count++;
   run.ready=achieved(run,command.action);if(run.ready)run.guideCursor=0;return run;
@@ -278,12 +382,20 @@ export function projectTutorial(run,version){
       roost:[before.board[at].buildings.filter(b=>b.type==='roost').length,run.game.board[at].buildings.filter(b=>b.type==='roost').length],
       points:player(run.game,'cat').score-player(before,'cat').score};
   }
-  const actionTypes=run.ready||run.completed||(guide&&guide.mode!=='act')?[]:step.actions;
+  const campaign=campaignStep(run);
+  const expected=campaign&&!run.ready?campaignAction(run):null;
+  const context=campaign?{campaign:true,startTurns:run.context.startTurns,...(expected?.from!==undefined?{from:expected.from}:{}),...(expected?.to!==undefined?{to:expected.to}:{}),...(expected?.clearing!==undefined?{clearing:expected.clearing}:{})}:run.context;
+  const actionTypes=run.ready||run.completed||(guide&&guide.mode!=='act')?[]:campaign?(guide.watch?[]:[expected.type]):step.actions;
   const permitted=action=>actionTypes.includes(action.type)&&allowed(run,action);
   game.mapActions=game.mapActions.filter(permitted);
   game.factionActions=game.factionActions.filter(option=>permitted(option.action));
   game.craftOptions=game.craftOptions.filter(option=>permitted({type:'craft',card:option.card}));game.effectOptions=[];
-  if(game.choice&&!game.choice.waiting)game.choice.options=game.choice.options.filter(option=>permitted({type:'choice',optionId:option.id}));
+  if(game.choice&&!game.choice.waiting)game.choice.options=game.choice.options.filter(option=>permitted({type:'choice',choiceId:game.choice.choiceId,optionId:option.id}));
+  if(run.context.campaign&&guide){
+    const own=game.players.find(p=>p.id===run.userId);
+    guide.resources={round:game.round,score:own.score,hand:own.handCount,wood:game.board.reduce((n,c)=>n+c.wood,0),officers:game.alliance?.officers||0,items:game.vagabond?.items.filter(i=>!i.exhausted&&!i.damaged).length||0};
+    if(campaign&&!guide.watch&&!run.ready)guide.action=expected;
+  }
   const goalCount=step.goal==='liz-sacrifice'?3:['twice','liz-discard'].includes(step.goal)?2:1;
-  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:4,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{guide,id:run.id,lessonId:lesson.id,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context:run.context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
+  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:game.players.length,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{guide,id:run.id,lessonId:lesson.id,faction:lesson.faction,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
 }
