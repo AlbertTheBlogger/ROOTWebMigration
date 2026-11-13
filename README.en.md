@@ -4,7 +4,9 @@
 
 [简体中文](README.md) | English
 
-Development version **v1.1.2** (package: 1.1.2-dev); the public release remains **v1.1**, and the existing v1.1.0 tag is unchanged. The four base-faction tutorials now use character dialogue inside the map and two consecutive practice rounds. Deployed on November 13, 2026; **user acceptance is pending**. The development tag `dev-v1.1.2` identifies this iteration without creating a new public release. See the [development record](docs/DEVELOPMENT-1.1.2.md) (Chinese).
+Deployed development version **v1.1.3** (package: 1.1.3-dev) adds PC hotseat play and phone seat claims: one host configures 2–4 local players, approves account claims, and hands off private views. A phone companion shows the public board and can confirm and answer its own seat's pending decisions. Unbinding, refresh and restart recovery are supported. The companion layout supports landscape and portrait, map pan/pinch zoom and collapsible information panels. Eyrie and Alliance tutorials now each follow four continuous rounds. Lizard Cult and Vagabond each have 25 connected lessons spanning four and five rounds respectively; saved older lessons remain available until explicitly restarted. This iteration is deployed at the user’s explicit request and marked by the `dev-v1.1.3` development tag. See the [development record](docs/DEVELOPMENT-1.1.3.md) (Chinese).
+
+Production runs development **v1.1.3**. The public label remains **v1.1**, the existing `v1.1.0` release tag is unchanged, and no new GitHub Release is created. See the [deployment record](docs/DEPLOYMENT-DEV-1.1.3-2026-11-13.md) (Chinese). User acceptance is still pending.
 
 A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.0**, supports the autumn map, the four base-game factions, and online games for 2–4 players. Multiplayer does not depend on Steam. The original game's installation directory has not been modified.
 
@@ -25,6 +27,7 @@ Follow-up feedback is also deployed as of November 13, 2026: restored large desk
 ## Current features
 
 - Independent accounts, public and password-protected rooms, per-game player names, ready states, and subsequent games.
+- Local development adds PC hotseat rooms, local human seats and private-view handoffs; production retains its previous online flow.
 - Marquise de Cat, Eyrie Dynasties, Woodland Alliance, and Vagabond. Available Vagabond characters: Thief, Tinker, and Ranger.
 - The base deck, crafting, combat, and interrupting decisions, with rules and random outcomes managed by the server.
 - SQLite persistence, recovery after page refreshes or server restarts, idempotent commands, and player-specific private views.

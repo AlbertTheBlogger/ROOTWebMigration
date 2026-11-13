@@ -540,3 +540,14 @@ test('three roosts announce the actual two point evening income',()=>{
   state=act(state,'bird',{type:'end'});
   assert.ok(state.scoreEvents.some(event=>event.faction==='bird'&&event.reason==='3个鸟巢'&&event.delta===2));
 });
+// The Keep forbids enemy placement even when the enemy rules the clearing.
+test('Keep blocks sympathy, bases and Eyrie building while allowing movement into it',()=>{
+ let s=setup();const c=s.board[0];c.keep=true;c.sympathy=false;c.buildings=[];c.ruins=0;c.warriors={cat:0,bird:3,alliance:2};
+ current(s,'alliance','spread');s.alliance.supporters=[card('s1',c.suit),card('s2',c.suit),card('s3','wild')];
+ assert.ok(!rules.projectGame(s,'alliance').mapActions.some(a=>a.type==='spread'&&a.clearing===0));assert.throws(()=>act(s,'alliance',{type:'spread',clearing:0}));
+ c.sympathy=true;s.phase='revolt';assert.throws(()=>act(s,'alliance',{type:'revolt',clearing:0}));c.sympathy=false;
+ current(s,'bird','decree');s.bird.remaining={recruit:[],move:[],battle:[],build:[card('order','wild')]};s.bird.decree=structuredClone(s.bird.remaining);
+ assert.ok(!rules.projectGame(s,'bird').mapActions.some(a=>a.type==='build'&&a.clearing===0));assert.throws(()=>act(s,'bird',{type:'build',clearing:0,decreeCard:'order'}));
+ current(s,'cat','daylight');s.board[1].warriors.cat=3;c.warriors.bird=0;c.warriors.alliance=0;
+ s=act(s,'cat',{type:'move',from:1,to:0,count:1});assert.equal(s.board[0].warriors.cat,1);assert.equal(s.board[0].keep,true);
+});

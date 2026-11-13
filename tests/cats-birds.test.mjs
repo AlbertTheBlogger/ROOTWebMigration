@@ -228,7 +228,7 @@ test('persistent duplicates are rejected, Command Warren and Cobbler each happen
   s=choose(s,'pass');assert.equal(s.phase,'craft');assert.equal(s.actions,3);
   s=r.applyAction(s,'a',{type:'craft-done'});s=r.applyAction(s,'a',{type:'end'});
   assert.equal(s.phase,'evening');assert.equal(s.effects.frames.length,0);
-  s=r.applyAction(s,'a',{type:'evening-continue'});assert.ok(['evening-end','discard'].includes(s.phase));
+  s=r.applyAction(s,'a',{type:'evening-continue'});assert.ok(s.phase==='discard'||s.players[s.turn].id!=='a');assert.equal(r.projectGame(s,'a').nightCobbler,false);
 });
 
 test('Brutal and Stand and Deliver stop immediately when the opposing player wins',()=>{

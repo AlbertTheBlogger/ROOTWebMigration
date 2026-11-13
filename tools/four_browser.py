@@ -246,6 +246,9 @@ def run():
                 assert pages[0].locator('#ruleset').input_value()=='root-base-four-v5'
                 pages[0].get_by_role('button',name='开始游戏',exact=True).click()
                 for page in pages: expect(page.locator('.scoreboard .score')).to_have_count(4)
+                if os.environ.get('FOUR_QUICK')=='1':
+                    for page in pages:
+                        page.locator('[data-action=preferences]').click();page.locator('.experience-dialog [name=motion]').select_option('off');page.locator('[data-close-experience]').click()
                 ids={page.evaluate("()=>fetch('/api/me').then(r=>r.json()).then(r=>r.user.id)"):page for page in pages}
                 def view(page):
                     try:
@@ -297,6 +300,7 @@ def run():
                 report={'passed':True,'round':view(pages[0])['game']['round'],'actions':counts,'steps':len(trace),
                     'checks':['four UI registrations and ready players','standard faction and character setup','Alliance and Vagabond actions through UI','one backend process restart','refresh preserves inventory and private supporters','original icons decoded','four viewers private-hand isolation','mobile no horizontal overflow'],
                     'pageErrors':errors,'fixture':'No game state was seeded. All mutations used normal UI controls.'}
+                if os.environ.get('FOUR_QUICK')=='1':report['motionSetting']='off via normal preferences for this gameplay run; defaults unchanged'
                 (OUTPUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
                 print(json.dumps(report,ensure_ascii=False),flush=True)
                 browser.close()

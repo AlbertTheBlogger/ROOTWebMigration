@@ -1,0 +1,2424 @@
+{
+  "version": 4,
+  "lessons": [
+    {
+      "id": "basics",
+      "title": "贵族崛起",
+      "faction": "cat",
+      "summary": "带领一小队猫咪战士踏入森林，开辟道路，击退飞鹰，迈出统治林地的第一步。",
+      "steps": [
+        {
+          "id": "overview",
+          "title": "森林在等待你",
+          "text": "欢迎来到《茂林源记》。四个各具特色的阵营将在这里展开战斗与冒险，争夺森林的统治权。",
+          "goal": "read",
+          "actions": [],
+          "scene": "overview",
+          "result": "",
+          "sourceKeys": [
+            "tutorial1.turn1.preintro",
+            "tutorial1.turn1.intro",
+            "tutorial1.turn1.suits"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "欢迎来到《茂林源记》。四个各具特色的阵营将在这里展开战斗与冒险，争夺森林的统治权。",
+                "focus": "map"
+              },
+              {
+                "text": "这一次，你将扮演雄心勃勃的猫咪贵族。此时的贵族还没有庞大的军队，只有一小队战士，和一座立足林间的城堡。",
+                "focus": "home"
+              },
+              {
+                "text": "看，林地边缘的图标代表这里的居民：狐狸、兔子和老鼠。沿着道路，我们就能走进他们的家园。",
+                "focus": "suits"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "move",
+          "title": "向森林进军",
+          "text": "将一名猫咪战士移动到相邻的林地，扩大我们的统治。",
+          "goal": "action",
+          "actions": [
+            "move"
+          ],
+          "scene": "basic-move",
+          "result": "很好！这片林地已经有了我们的战士。拥有最多战士与建筑的一方，就能统治这里。",
+          "sourceKeys": [
+            "tutorial1.turn1.movelesson",
+            "tutorial1.turn1.control"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "我听见远处拍动翅膀的声音。在飞鹰到来之前，先让我们的旗帜飘扬在更多林地上。",
+                "focus": "from"
+              }
+            ],
+            "after": [
+              {
+                "text": "很好！这片林地已经有了我们的战士。拥有最多战士与建筑的一方，就能统治这里。",
+                "focus": "to"
+              },
+              {
+                "text": "记住：沿路移动时，起点或终点至少有一处必须由我们统治。道路已经打通，继续前进。",
+                "focus": "route"
+              }
+            ],
+            "prompts": {
+              "source": "选中城堡旁闪光的猫咪部队。让一名战士先去探路。",
+              "destination": "沿着亮起的道路，点选前方的林地。",
+              "confirm": "就派一名战士前去。确认行军，让我们的旗帜在那里升起。"
+            }
+          }
+        },
+        {
+          "id": "march",
+          "title": "脚步不要停",
+          "text": "一次行军可以移动两次。我们的脚步还不用停下。",
+          "goal": "action",
+          "actions": [
+            "move"
+          ],
+          "scene": "basic-march",
+          "result": "做得好！两次移动，合起来只用了一次行军。我们的战士已经走进森林深处。",
+          "sourceKeys": [
+            "tutorial1.turn1.movelesson.2"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "当你使用“行军”时，可以移动两次。趁道路畅通，让刚刚出发的战士再前进一步。",
+                "focus": "from"
+              }
+            ],
+            "after": [
+              {
+                "text": "做得好！两次移动，合起来只用了一次行军。我们的战士已经走进森林深处。",
+                "focus": "to"
+              }
+            ],
+            "prompts": {
+              "source": "选中刚刚抵达的那支部队。",
+              "destination": "点选道路尽头亮起的林地，继续这次行军。",
+              "confirm": "仍然派出一名战士。确认后，这次行军就结束了。"
+            }
+          }
+        },
+        {
+          "id": "battle",
+          "title": "林间的振翅声",
+          "text": "飞鹰在附近筑起了巢。集结战士，把他们赶出这片林地。",
+          "goal": "action",
+          "actions": [
+            "battle"
+          ],
+          "scene": "basic-battle",
+          "result": "我们的进攻先击退了飞鹰战士，剩余的命中摧毁了鸟巢。战斗总是先移除战士，再移除建筑和标记。",
+          "sourceKeys": [
+            "tutorial1.EyrieAppear",
+            "tutorial1.firstbattle.intro",
+            "tutorial1.roostbattle",
+            "tutorial1.firstbattle.dice.revamp",
+            "tutorial1.firstbattle.remove.revamp"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "我担心的事情发生了：飞鹰战士守着新筑的巢。若任由他们招募援军，我们的道路就危险了。",
+                "focus": "clearing"
+              },
+              {
+                "text": "我们的战士已经集结。选择这片林地，向飞鹰发起战斗！",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "我们的进攻先击退了飞鹰战士，剩余的命中摧毁了鸟巢。战斗总是先移除战士，再移除建筑和标记。",
+                "focus": "clearing"
+              },
+              {
+                "text": "摧毁敌人的建筑或标记，每移除一个就获得一分。看，我们离胜利又近了一步。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {
+              "source": "点选有飞鹰战士与鸟巢的闪光林地。",
+              "confirm": "部队已就位。确认发起战斗，攻下这座鸟巢！",
+              "choice": "飞鹰就在眼前。选择飞鹰王朝，再确认进攻。"
+            }
+          }
+        },
+        {
+          "id": "defenseless",
+          "title": "趁鸟巢空虚",
+          "text": "还有一座鸟巢无人看守。派出一名战士，把它拆掉！",
+          "goal": "action",
+          "actions": [
+            "battle"
+          ],
+          "scene": "basic-defenseless",
+          "result": "鸟巢倒下了！敌人没有战士防守，我们就会额外造成一次命中。",
+          "sourceKeys": [
+            "tutorial1.roostintroduction",
+            "tutorial1.roostbattle"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "看，那座鸟巢已经没有守卫。别给飞鹰重整旗鼓的机会，派出一名战士进攻！",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "鸟巢倒下了！敌人没有战士防守，我们就会额外造成一次命中。",
+                "focus": "clearing"
+              },
+              {
+                "text": "骰子的命中最多等于自己的战士数量。这次只有一名战士，所以骰子只提供一次命中；无人防守的额外命中另算。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "点选只剩鸟巢的闪光林地。",
+              "confirm": "只有一名战士也足够。确认进攻，拆掉这座无人防守的巢！",
+              "choice": "选定飞鹰王朝，确认这次进攻。"
+            }
+          }
+        },
+        {
+          "id": "basic-finish",
+          "title": "森林中的第一步",
+          "text": "漂亮！你摧毁了鸟巢。森林暂时安静了下来，是休息的时候了。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial1.destroyroost"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "漂亮！你摧毁了鸟巢。森林暂时安静了下来，是休息的时候了。",
+                "focus": "clearing"
+              },
+              {
+                "text": "今天，我们沿道路扩张，也用战斗为贵族赢得了声望。真正的争夺中，率先达到三十分的阵营将获胜。",
+                "focus": "score"
+              },
+              {
+                "text": "但统治森林还需要木材、工坊和更多战士。接下来，前往“猫咪贵族”一章，建立我们的林间领地吧。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "cats",
+      "title": "猫咪贵族",
+      "faction": "cat",
+      "summary": "从城堡起步，建立工业与军队；逐步学习后，连续两轮经营森林。",
+      "steps": [
+        {
+          "id": "cat-setup",
+          "title": "建立城堡和初始工业",
+          "text": "在高亮角落选择城堡，再依次放置锯木厂、工坊、征兵所。建筑必须位于城堡或相邻领地。每次点选后，在地块旁确认。",
+          "goal": "setup",
+          "actions": [
+            "choice"
+          ],
+          "scene": "cat-setup",
+          "result": "城堡限制敌方放置，三类建筑分别承担木材生产、锻造和招募。",
+          "sourceKeys": [
+            "tutorial2.setup.keep",
+            "tutorial2.setup.buildings"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "陛下，森林需要一座真正的城市。先选一个角落安置城堡，再把三种产业建在城堡或相邻林地。",
+                "focus": "map"
+              },
+              {
+                "text": "在高亮角落选择城堡，再依次放置锯木厂、工坊、征兵所。建筑必须位于城堡或相邻领地。每次点选后，在地块旁确认。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "城堡限制其他阵营在此放置配件，却不能阻止敌军沿道路走进来。守好它，医院才能接回伤兵。",
+                "focus": "map"
+              }
+            ],
+            "prompts": {
+              "source": "在高亮角落选择城堡，再依次放置锯木厂、工坊、征兵所。建筑必须位于城堡或相邻领地。每次点选后，在地块旁确认。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "在高亮角落选择城堡，再依次放置锯木厂、工坊、征兵所。建筑必须位于城堡或相邻领地。每次点选后，在地块旁确认。"
+            }
+          }
+        },
+        {
+          "id": "cat-wood",
+          "title": "清晨生产木材",
+          "text": "本节已摆好锯木厂。点击秋林1生产一枚木材。木材是建造费用，必须由你控制的领地连通到建造地点。",
+          "goal": "action",
+          "actions": [
+            "wood"
+          ],
+          "scene": "cat-wood",
+          "result": "生产木材后会进入白天的锻造阶段。",
+          "sourceKeys": [
+            "tutorial1.turn2.wood"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "清晨，锯木厂开工了。点亮起的锯木厂，让第一枚木材落在地图上。",
+                "focus": "clearing"
+              },
+              {
+                "text": "本节已摆好锯木厂。点击秋林1生产一枚木材。木材是建造费用，必须由你控制的领地连通到建造地点。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "木材留在产地。建造时，必须通过我们统治的连通林地把它运到工地；木材并不是全图通用的金币。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "本节已摆好锯木厂。点击秋林1生产一枚木材。木材是建造费用，必须由你控制的领地连通到建造地点。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本节已摆好锯木厂。点击秋林1生产一枚木材。木材是建造费用，必须由你控制的领地连通到建造地点。"
+            }
+          }
+        },
+        {
+          "id": "cat-craft",
+          "title": "用工坊锻造手牌",
+          "text": "这张手牌需要一个兔子锻造点，秋林1的工坊正好提供。选择锻造并确认。卡牌花色与锻造费用是两种信息，要分别查看。",
+          "goal": "action",
+          "actions": [
+            "craft"
+          ],
+          "scene": "cat-craft",
+          "result": "锻造消耗本回合可用的锻造点，拿取公共物品并按牌面得分。",
+          "sourceKeys": [
+            "tutorial2.turn1.craftcost.a",
+            "tutorial2.turn1.suit"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "工坊传来锤声。先查看手牌：牌角的居民花色，与牌面下方的锻造费用，是两回事。",
+                "focus": "clearing"
+              },
+              {
+                "text": "这张手牌需要一个兔子锻造点，秋林1的工坊正好提供。选择锻造并确认。卡牌花色与锻造费用是两种信息，要分别查看。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "锻造激活的是相应花色的工坊，本次没有花掉木材，也没有占用白天的三次行动。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "这张手牌需要一个兔子锻造点，秋林1的工坊正好提供。选择锻造并确认。卡牌花色与锻造费用是两种信息，要分别查看。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "这张手牌需要一个兔子锻造点，秋林1的工坊正好提供。选择锻造并确认。卡牌花色与锻造费用是两种信息，要分别查看。"
+            }
+          }
+        },
+        {
+          "id": "cat-build",
+          "title": "把木材变成建筑和分数",
+          "text": "选择建造，把建筑类型切换为工坊，在秋林1确认。这里有控制权、建筑空位和可用木材。",
+          "goal": "action",
+          "actions": [
+            "build"
+          ],
+          "scene": "cat-build",
+          "result": "建筑越造越多，后续费用和分数会变化。失去木材运输通路会影响扩张。",
+          "sourceKeys": [
+            "tutorial2.turn1.buildslot",
+            "tutorial2.turn2.prebuildingincrease"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "现在把木材变成建筑。选择工坊，再点有空位、由我们统治的秋林1。",
+                "focus": "clearing"
+              },
+              {
+                "text": "选择建造，把建筑类型切换为工坊，在秋林1确认。这里有控制权、建筑空位和可用木材。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "工坊落成了！建造立即带来分数，也扩充锻造能力。下一座同类建筑的木材成本可能更高。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "选择建造，把建筑类型切换为工坊，在秋林1确认。这里有控制权、建筑空位和可用木材。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "选择建造，把建筑类型切换为工坊，在秋林1确认。这里有控制权、建筑空位和可用木材。"
+            }
+          }
+        },
+        {
+          "id": "cat-recruit",
+          "title": "同时使用多个征兵所",
+          "text": "本节有两座征兵所。选择招募，按面板列出的两个领地各放一名士兵，再确认。一个招募行动会同时使用可用的征兵所。",
+          "goal": "action",
+          "actions": [
+            "recruit"
+          ],
+          "scene": "cat-recruit",
+          "result": "招募有士兵供应限制，同一回合通常只能招募一次。",
+          "sourceKeys": [
+            "tutorial1.turn2.daylight"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "城市需要守军。两处征兵所都准备好了，使用一次招募，把两处林地一起勾选。",
+                "focus": "clearing"
+              },
+              {
+                "text": "本节有两座征兵所。选择招募，按面板列出的两个领地各放一名士兵，再确认。一个招募行动会同时使用可用的征兵所。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "一次行动让两个征兵所各招募一名战士。每轮通常只能招募一次，先规划好征兵所的位置。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "本节有两座征兵所。选择招募，按面板列出的两个领地各放一名士兵，再确认。一个招募行动会同时使用可用的征兵所。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本节有两座征兵所。选择招募，按面板列出的两个领地各放一名士兵，再确认。一个招募行动会同时使用可用的征兵所。"
+            }
+          }
+        },
+        {
+          "id": "cat-extra",
+          "title": "用飞鸟牌争取额外行动",
+          "text": "本节的三个行动已经用完，但你还有一张飞鸟牌。使用额外行动并支付这张牌。",
+          "goal": "action",
+          "actions": [
+            "extra"
+          ],
+          "scene": "cat-extra",
+          "result": "飞鸟牌既灵活又稀缺，额外行动也有机会成本。",
+          "sourceKeys": [
+            "tutorial2.turn1.actions"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "白天的三次行动已经用完，计划却还差一步？手里这张飞鸟牌可以帮忙。",
+                "focus": "clearing"
+              },
+              {
+                "text": "本节的三个行动已经用完，但你还有一张飞鸟牌。使用额外行动并支付这张牌。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "弃掉一张飞鸟牌，换来一次额外行动。它也能代替其他花色支付，别在不需要时把它花光。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "本节的三个行动已经用完，但你还有一张飞鸟牌。使用额外行动并支付这张牌。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本节的三个行动已经用完，但你还有一张飞鸟牌。使用额外行动并支付这张牌。"
+            }
+          }
+        },
+        {
+          "id": "cat-hospital",
+          "title": "在防守后使用野战医院",
+          "text": "飞鹰正在攻击秋林3。先处理防守选择，然后在野战医院中支付匹配花色的手牌，将损失士兵救回城堡。练习骰子固定为3/3。",
+          "goal": "hospital",
+          "actions": [
+            "choice"
+          ],
+          "scene": "cat-hospital",
+          "result": "野战医院支付的是手牌，救回地点是城堡所在领地。",
+          "sourceKeys": [
+            "tutorial2.turn2.fhdiscard"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "飞鹰突袭了秋林3。演练骰子固定3/3，伤兵正在等待命令：支付与战场匹配的手牌，启用野战医院。",
+                "focus": "clearing"
+              },
+              {
+                "text": "飞鹰正在攻击秋林3。先处理防守选择，然后在野战医院中支付匹配花色的手牌，将损失士兵救回城堡。练习骰子固定为3/3。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "伤兵回到了城堡。医院把本次移除的战士集中救回，不是在原战场复活；失去城堡就无法这样救援。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "飞鹰正在攻击秋林3。先处理防守选择，然后在野战医院中支付匹配花色的手牌，将损失士兵救回城堡。练习骰子固定为3/3。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "飞鹰正在攻击秋林3。先处理防守选择，然后在野战医院中支付匹配花色的手牌，将损失士兵救回城堡。练习骰子固定为3/3。"
+            }
+          }
+        },
+        {
+          "id": "cat-finish",
+          "title": "形成贵族的发展循环",
+          "text": "清晨生产木材，白天先锻造再使用三个行动，靠控制领地和木材通路持续建造。夜晚抽牌补充选择。军队负责保护工业和运输。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial2.faction.info"
+          ],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "记住这条工业链：锯木厂产木，工坊锻造，征兵所补兵，建筑让声望增长。",
+                "focus": "map"
+              },
+              {
+                "text": "接下来会进入连续两轮演练，亲手从清晨走到夜晚，并观察对手的回应。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {
+              "source": "清晨生产木材，白天先锻造再使用三个行动，靠控制领地和木材通路持续建造。夜晚抽牌补充选择。军队负责保护工业和运输。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "清晨生产木材，白天先锻造再使用三个行动，靠控制领地和木材通路持续建造。夜晚抽牌补充选择。军队负责保护工业和运输。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。"
+            }
+          }
+        },
+        {
+          "id": "journey-intro",
+          "title": "把所学串成两天",
+          "goal": "read",
+          "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+                "focus": "map"
+              },
+              {
+                "text": "演练中的战斗骰子固定为3/3，实际伤害仍按兵力和能力结算；正式对局使用服务器随机结果。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          },
+          "scene": "campaign-start"
+        },
+        {
+          "id": "journey-first",
+          "title": "第一天 · 建立节奏",
+          "goal": "campaign-turn",
+          "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply",
+          "title": "林间的回应",
+          "goal": "campaign-opponent",
+          "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-second",
+          "title": "第二天 · 昨日的选择",
+          "goal": "campaign-turn",
+          "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply-two",
+          "title": "第二夜 · 森林在变化",
+          "goal": "campaign-opponent",
+          "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-finish",
+          "title": "带着经验踏入森林",
+          "goal": "read",
+          "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "猫咪贵族",
+            "before": [
+              {
+                "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "eyrie",
+      "title": "飞鹰王朝",
+      "faction": "bird",
+      "summary": "追随领袖、兑现法令，在连续两轮扩张中体会承诺与动乱的代价。",
+      "steps": [
+        {
+          "id": "bird-leader",
+          "title": "选择制裁者作为初始领袖",
+          "text": "本章先使用制裁者。选择他的领袖牌并确认，查看移动和建造列中的大臣。领袖决定初始法令，也有独特能力。",
+          "goal": "leader",
+          "actions": [
+            "choice"
+          ],
+          "scene": "bird-setup",
+          "result": "法令里的飞鸟可以匹配任意花色，给扩张留下空间。",
+          "sourceKeys": [
+            "tutorial3.opening.3",
+            "tutorial3.opening.5"
+          ],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "森林曾属于我们。先选择制裁者，看看领袖为移动和建造两列放入的忠臣。",
+                "focus": "map"
+              },
+              {
+                "text": "本章先使用制裁者。选择他的领袖牌并确认，查看移动和建造列中的大臣。领袖决定初始法令，也有独特能力。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "忠臣就是初始法令。它们每轮都要执行，领袖能力还会影响我们的得分方式。",
+                "focus": "map"
+              }
+            ],
+            "prompts": {
+              "source": "本章先使用制裁者。选择他的领袖牌并确认，查看移动和建造列中的大臣。领袖决定初始法令，也有独特能力。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本章先使用制裁者。选择他的领袖牌并确认，查看移动和建造列中的大臣。领袖决定初始法令，也有独特能力。"
+            }
+          }
+        },
+        {
+          "id": "bird-add",
+          "title": "添加一张能执行的招募法令",
+          "text": "你在兔子领地秋林1有鸟巢。把兔子手牌加入招募列，确认后继续。可以先最小化操作面板，查看地图，再展开填写。",
+          "goal": "action",
+          "actions": [
+            "decree-add"
+          ],
+          "scene": "bird-cycle",
+          "result": "加入法令只使用卡牌花色，不会发动这张牌的锻造效果。",
+          "sourceKeys": [
+            "tutorial3.Birdsong.2.b",
+            "tutorial3.turn4.hint.1"
+          ],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "臣民期待新的承诺。秋林1有兔子鸟巢，把兔子牌加入招募列，就能在那里履行它。",
+                "focus": "clearing"
+              },
+              {
+                "text": "你在兔子领地秋林1有鸟巢。把兔子手牌加入招募列，确认后继续。可以先最小化操作面板，查看地图，再展开填写。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "法令会留下，不会在执行后消失。下轮还得再次招募，新增承诺前先想想下一天。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "你在兔子领地秋林1有鸟巢。把兔子手牌加入招募列，确认后继续。可以先最小化操作面板，查看地图，再展开填写。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "你在兔子领地秋林1有鸟巢。把兔子手牌加入招募列，确认后继续。可以先最小化操作面板，查看地图，再展开填写。"
+            }
+          }
+        },
+        {
+          "id": "bird-execute",
+          "title": "依次完成法令",
+          "text": "开始执行法令，结束本节空的锻造阶段。先在秋林1招募，再从秋林1移动到秋林0，最后在秋林0建造鸟巢。注意当前待执行列。",
+          "goal": "two-roosts",
+          "actions": [
+            "decree-ready",
+            "craft-done",
+            "recruit",
+            "move",
+            "build"
+          ],
+          "scene": null,
+          "result": "你按招募、移动、战斗、建造的顺序完成了法令。空列会跳过。",
+          "sourceKeys": [
+            "tutorial3.recruit.1",
+            "tutorial3.move.1",
+            "tutorial3.build.1"
+          ],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "现在依次履行法令。先确定法令，再结束锻造；招募之后，才能移动，最后建造。",
+                "focus": "route"
+              },
+              {
+                "text": "开始执行法令，结束本节空的锻造阶段。先在秋林1招募，再从秋林1移动到秋林0，最后在秋林0建造鸟巢。注意当前待执行列。",
+                "focus": "route"
+              }
+            ],
+            "after": [
+              {
+                "text": "第二座鸟巢矗立起来了。不是任意花费行动点，而是逐列兑现牌上的承诺；花色约束行动地点。",
+                "focus": "route"
+              }
+            ],
+            "prompts": {
+              "source": "开始执行法令，结束本节空的锻造阶段。先在秋林1招募，再从秋林1移动到秋林0，最后在秋林0建造鸟巢。注意当前待执行列。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "开始执行法令，结束本节空的锻造阶段。先在秋林1招募，再从秋林1移动到秋林0，最后在秋林0建造鸟巢。注意当前待执行列。"
+            }
+          }
+        },
+        {
+          "id": "bird-score",
+          "title": "进入夜晚查看鸟巢得分",
+          "text": "结束法令阶段。两座鸟巢会在夜晚带来分数，更多鸟巢会提高后续收益和抽牌能力。",
+          "goal": "action",
+          "actions": [
+            "end"
+          ],
+          "scene": null,
+          "result": "飞鹰主要依靠每个夜晚的鸟巢收入得分。",
+          "sourceKeys": [
+            "tutorial3.score.2",
+            "tutorial3.score.1"
+          ],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "承诺兑现，夜幕降临。结束白天，看看两座鸟巢带来的夜晚收入。",
+                "focus": "clearing"
+              },
+              {
+                "text": "结束法令阶段。两座鸟巢会在夜晚带来分数，更多鸟巢会提高后续收益和抽牌能力。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "鸟巢会在每个夜晚持续计分。守住旧巢、建立新巢，就能让后面的夜晚更有价值。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "结束法令阶段。两座鸟巢会在夜晚带来分数，更多鸟巢会提高后续收益和抽牌能力。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "结束法令阶段。两座鸟巢会在夜晚带来分数，更多鸟巢会提高后续收益和抽牌能力。"
+            }
+          }
+        },
+        {
+          "id": "bird-turmoil",
+          "title": "亲眼看一次无法完成的法令",
+          "text": "本节招募列有一张狐狸牌，但地图上没有狐狸鸟巢。结束锻造，观察动乱及日志指出的失败法令。",
+          "goal": "turmoil",
+          "actions": [
+            "craft-done"
+          ],
+          "scene": "bird-turmoil",
+          "result": "法令有行动承诺。无法完整执行时会动乱，并按飞鸟牌失分。",
+          "sourceKeys": [
+            "tutorial3.turnthree.turmoil.1.cats",
+            "tutorial3.Turmoil.2"
+          ],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "这是一段危机演练：招募列里有狐狸牌，却没有狐狸鸟巢。结束锻造，看看无法兑现承诺的后果。",
+                "focus": "clearing"
+              },
+              {
+                "text": "本节招募列有一张狐狸牌，但地图上没有狐狸鸟巢。结束锻造，观察动乱及日志指出的失败法令。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "法令受阻，引发动乱。先按法令里的飞鸟牌扣分，再清空旧法令、撤换领袖；两位忠臣也计入飞鸟牌。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "本节招募列有一张狐狸牌，但地图上没有狐狸鸟巢。结束锻造，观察动乱及日志指出的失败法令。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本节招募列有一张狐狸牌，但地图上没有狐狸鸟巢。结束锻造，观察动乱及日志指出的失败法令。"
+            }
+          }
+        },
+        {
+          "id": "bird-recover",
+          "title": "更换领袖重新开始",
+          "text": "选择一位仍可用的新领袖。旧法令会被清理，新领袖带来新的大臣，随后度过夜晚。",
+          "goal": "action",
+          "actions": [
+            "leader"
+          ],
+          "scene": null,
+          "result": "安排法令时要同时考虑当前地图与未来回合。飞鸟增加灵活性，也增加动乱时的失分。",
+          "sourceKeys": [
+            "tutorial3.Turmoil.3",
+            "tutorial3.Turmoil.4"
+          ],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "王朝仍能重整。选择一位尚可用的新领袖，接受他带来的新忠臣。",
+                "focus": "clearing"
+              },
+              {
+                "text": "选择一位仍可用的新领袖。旧法令会被清理，新领袖带来新的大臣，随后度过夜晚。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "换帅结束了这个白天。下面的连续演练会让你看到：成功执行过的法令，在第二轮仍要执行。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "选择一位仍可用的新领袖。旧法令会被清理，新领袖带来新的大臣，随后度过夜晚。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "选择一位仍可用的新领袖。旧法令会被清理，新领袖带来新的大臣，随后度过夜晚。"
+            }
+          }
+        },
+        {
+          "id": "journey-intro",
+          "title": "把所学串成两天",
+          "goal": "read",
+          "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+                "focus": "map"
+              },
+              {
+                "text": "演练中的战斗骰子固定为3/3，实际伤害仍按兵力和能力结算；正式对局使用服务器随机结果。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          },
+          "scene": "campaign-start"
+        },
+        {
+          "id": "journey-first",
+          "title": "第一天 · 建立节奏",
+          "goal": "campaign-turn",
+          "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply",
+          "title": "林间的回应",
+          "goal": "campaign-opponent",
+          "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-second",
+          "title": "第二天 · 昨日的选择",
+          "goal": "campaign-turn",
+          "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply-two",
+          "title": "第二夜 · 森林在变化",
+          "goal": "campaign-opponent",
+          "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-finish",
+          "title": "带着经验踏入森林",
+          "goal": "read",
+          "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "飞鹰王朝",
+            "before": [
+              {
+                "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "alliance",
+      "title": "森林联盟",
+      "faction": "alliance",
+      "summary": "从居民支持到起义建军，把传播、动员和夜晚军事行动串成两轮革命。",
+      "steps": [
+        {
+          "id": "wa-first",
+          "title": "用支持者传播第一枚民意",
+          "text": "你暂时没有军队。选择传播民意，在秋林0放置第一枚标记，自动支付匹配的支持者。支持者与手牌放在不同区域。",
+          "goal": "action",
+          "actions": [
+            "spread"
+          ],
+          "scene": "wa-spread",
+          "result": "第一枚民意不一定得分，后续分数和费用由民意条决定。",
+          "sourceKeys": [
+            "tutorial4.opening.2",
+            "tutorial4.sympathy.1"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "森林里的居民不再沉默。我们暂时没有军队，先用支持者，在秋林0点燃第一簇民意。",
+                "focus": "clearing"
+              },
+              {
+                "text": "你暂时没有军队。选择传播民意，在秋林0放置第一枚标记，自动支付匹配的支持者。支持者与手牌放在不同区域。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "第一枚民意已经放下。支持者与手牌是两个独立区域；传播消耗支持者，不是直接花手牌。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "你暂时没有军队。选择传播民意，在秋林0放置第一枚标记，自动支付匹配的支持者。支持者与手牌放在不同区域。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "你暂时没有军队。选择传播民意，在秋林0放置第一枚标记，自动支付匹配的支持者。支持者与手牌放在不同区域。"
+            }
+          }
+        },
+        {
+          "id": "wa-wild",
+          "title": "沿相邻领地继续传播",
+          "text": "在相邻的秋林1传播民意。本节剩余支持者是飞鸟牌，它可以作为兔子牌支付。留意地块旁显示的实际支付花色。",
+          "goal": "action",
+          "actions": [
+            "spread"
+          ],
+          "scene": "wa-next",
+          "result": "有至少三名同一敌方士兵的领地会增加一张支持者费用，这就是戒严。",
+          "sourceKeys": [
+            "tutorial4.sympathy.2",
+            "tutorial4.law.1"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "消息沿道路传播。把第二枚民意放到相邻的秋林1，这次用剩下的飞鸟支持者支付。",
+                "focus": "clearing"
+              },
+              {
+                "text": "在相邻的秋林1传播民意。本节剩余支持者是飞鸟牌，它可以作为兔子牌支付。留意地块旁显示的实际支付花色。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "飞鸟可以匹配任何居民花色。随着民意增多，传播的支持者费用和得分也会改变。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "在相邻的秋林1传播民意。本节剩余支持者是飞鸟牌，它可以作为兔子牌支付。留意地块旁显示的实际支付花色。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "在相邻的秋林1传播民意。本节剩余支持者是飞鸟牌，它可以作为兔子牌支付。留意地块旁显示的实际支付花色。"
+            }
+          }
+        },
+        {
+          "id": "wa-mobilize",
+          "title": "把两张手牌动员为支持者",
+          "text": "使用动员两次。手牌变成支持者后，便能用于之后的起义或传播。没有基地时，支持者上限为五张。",
+          "goal": "twice",
+          "actions": [
+            "mobilize"
+          ],
+          "scene": "wa-mobilize",
+          "result": "公开日志只写动员数量，其他玩家看不到你的支持者内容。",
+          "sourceKeys": [
+            "tutorial4.mobilize.1"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "白天，把手中两张牌依次动员为支持者，为下一次清晨积蓄力量。",
+                "focus": "clearing"
+              },
+              {
+                "text": "使用动员两次。手牌变成支持者后，便能用于之后的起义或传播。没有基地时，支持者上限为五张。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "两次动员已完成。没有基地时，支持者最多五张；手牌变成支持者后，就不能再拿来训练或锻造。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "使用动员两次。手牌变成支持者后，便能用于之后的起义或传播。没有基地时，支持者上限为五张。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "使用动员两次。手牌变成支持者后，便能用于之后的起义或传播。没有基地时，支持者上限为五张。"
+            }
+          }
+        },
+        {
+          "id": "wa-revolt",
+          "title": "花费两张支持者发动起义",
+          "text": "在有民意的秋林0发动起义，支付两张狐狸或飞鸟支持者。观察敌方棋子被移除、基地建立、士兵与长官出现。",
+          "goal": "action",
+          "actions": [
+            "revolt"
+          ],
+          "scene": "wa-revolt",
+          "result": "基地每种花色只能有一座，起义产生的士兵数量取决于该花色民意。",
+          "sourceKeys": [
+            "tutorial4.turn2.revolt.2",
+            "tutorial4.turn2.revolt.3"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "现在是起义演练。秋林0已有民意，也有压迫者；花两张匹配的支持者，让狐狸基地出现。",
+                "focus": "clearing"
+              },
+              {
+                "text": "在有民意的秋林0发动起义，支付两张狐狸或飞鸟支持者。观察敌方棋子被移除、基地建立、士兵与长官出现。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "敌人的配件被清除，基地、战士与长官出现了。长官决定每晚军事行动次数，和战士共享十枚供应。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "在有民意的秋林0发动起义，支付两张狐狸或飞鸟支持者。观察敌方棋子被移除、基地建立、士兵与长官出现。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "在有民意的秋林0发动起义，支付两张狐狸或飞鸟支持者。观察敌方棋子被移除、基地建立、士兵与长官出现。"
+            }
+          }
+        },
+        {
+          "id": "wa-train",
+          "title": "训练第二名长官",
+          "text": "完成起义阶段和传播阶段，进入白天。用一张匹配基地花色的手牌训练长官。这里的士兵和长官共享十个供应。",
+          "goal": "two-officers",
+          "actions": [
+            "revolt-done",
+            "spread-done",
+            "train"
+          ],
+          "scene": null,
+          "result": "长官数量决定夜晚可进行多少次军事行动。",
+          "sourceKeys": [
+            "tutorial4.organize.training",
+            "tutorial4.organize.training.supply"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "跳过本次剩余的清晨步骤，来到白天。用匹配基地花色的手牌，再训练一名长官。",
+                "focus": "clearing"
+              },
+              {
+                "text": "完成起义阶段和传播阶段，进入白天。用一张匹配基地花色的手牌训练长官。这里的士兵和长官共享十个供应。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "现在有两名长官，下一次夜晚就有两次军事行动。训练花的是手牌，不是支持者。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "完成起义阶段和传播阶段，进入白天。用一张匹配基地花色的手牌训练长官。这里的士兵和长官共享十个供应。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "完成起义阶段和传播阶段，进入白天。用一张匹配基地花色的手牌训练长官。这里的士兵和长官共享十个供应。"
+            }
+          }
+        },
+        {
+          "id": "wa-organize",
+          "title": "移动后组织一枚民意",
+          "text": "结束白天，进入夜晚。先从秋林0移动一名士兵到秋林1，再在那里组织，把这名士兵收回供应并放置民意。",
+          "goal": "organized",
+          "actions": [
+            "end",
+            "move",
+            "organize"
+          ],
+          "scene": null,
+          "result": "移动和组织分别花一次军事行动。士兵回到供应，可以留给未来招募或训练。",
+          "sourceKeys": [
+            "tutorial4.turn2.evening.1",
+            "tutorial4.organize.goal"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "结束白天。先用第一次军事行动把一名战士从秋林0移到秋林1，再用第二次行动组织。",
+                "focus": "route"
+              },
+              {
+                "text": "结束白天，进入夜晚。先从秋林0移动一名士兵到秋林1，再在那里组织，把这名士兵收回供应并放置民意。",
+                "focus": "route"
+              }
+            ],
+            "after": [
+              {
+                "text": "战士回到供应，民意留在林地并立即计分。两名长官让“移动→组织”能在同一个夜晚完成。",
+                "focus": "route"
+              }
+            ],
+            "prompts": {
+              "source": "结束白天，进入夜晚。先从秋林0移动一名士兵到秋林1，再在那里组织，把这名士兵收回供应并放置民意。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "结束白天，进入夜晚。先从秋林0移动一名士兵到秋林1，再在那里组织，把这名士兵收回供应并放置民意。"
+            }
+          }
+        },
+        {
+          "id": "wa-recruit",
+          "title": "在基地招募士兵",
+          "text": "这个夜晚练习保留一名长官和一座基地。在秋林0招募一名士兵，观察军事行动次数减少。",
+          "goal": "action",
+          "actions": [
+            "recruit"
+          ],
+          "scene": "wa-recruit",
+          "result": "联盟不能随处招募，基地和供应都很重要。",
+          "sourceKeys": [
+            "tutorial4.turn2.evening.2"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "单独练习一次夜晚招募。点基地所在的秋林0，观察军事行动数。",
+                "focus": "clearing"
+              },
+              {
+                "text": "这个夜晚练习保留一名长官和一座基地。在秋林0招募一名士兵，观察军事行动次数减少。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "战士从供应进入基地，军事行动减少一次。联盟招募发生在夜晚，而且需要基地。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "这个夜晚练习保留一名长官和一座基地。在秋林0招募一名士兵，观察军事行动次数减少。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "这个夜晚练习保留一名长官和一座基地。在秋林0招募一名士兵，观察军事行动次数减少。"
+            }
+          }
+        },
+        {
+          "id": "wa-outrage",
+          "title": "读懂一次民愤补偿",
+          "text": "本节已让猫咪进入民意领地。它没有匹配手牌，联盟会从牌堆获得补偿。本节特意安排没有基地且已有五张支持者，查看日志如何说明补偿牌因上限被弃置。",
+          "goal": "read",
+          "actions": [],
+          "scene": "wa-outrage",
+          "result": "",
+          "sourceKeys": [
+            "tutorial4.fivesupporters"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "看看刚发生的事：猫咪走进了有民意的林地，触发民愤。对手没有匹配手牌，只能从牌堆补偿支持者。",
+                "focus": "map"
+              },
+              {
+                "text": "这个情境里没有基地、已有五张支持者，所以补偿受到容量限制。民愤既可能发生于敌军移动，也可能发生于移除民意。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {
+              "source": "本节已让猫咪进入民意领地。它没有匹配手牌，联盟会从牌堆获得补偿。本节特意安排没有基地且已有五张支持者，查看日志如何说明补偿牌因上限被弃置。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本节已让猫咪进入民意领地。它没有匹配手牌，联盟会从牌堆获得补偿。本节特意安排没有基地且已有五张支持者，查看日志如何说明补偿牌因上限被弃置。"
+            }
+          }
+        },
+        {
+          "id": "wa-base-loss",
+          "title": "观察基地被摧毁的后果",
+          "text": "飞鹰正在攻击只有基地的秋林0。处理防守选择后查看支持者和长官。该花色及飞鸟支持者会弃置，长官失去一半并向上取整。练习骰子固定为3/3。",
+          "goal": "base-lost",
+          "actions": [
+            "choice"
+          ],
+          "scene": "wa-base-loss",
+          "result": "基地也是支持者容量和军事行动的支点，需要保护。",
+          "sourceKeys": [
+            "tutorial4.baseremoved1"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "危险演练：飞鹰攻击只有基地的秋林0，骰子固定3/3。若有真实防御选择，先完成它，再查看损失。",
+                "focus": "clearing"
+              },
+              {
+                "text": "飞鹰正在攻击只有基地的秋林0。处理防守选择后查看支持者和长官。该花色及飞鸟支持者会弃置，长官失去一半并向上取整。练习骰子固定为3/3。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "基地被毁会失去该花色及飞鸟支持者，并失去一半长官、向上取整；无基地后还要遵守五张支持者上限。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "飞鹰正在攻击只有基地的秋林0。处理防守选择后查看支持者和长官。该花色及飞鸟支持者会弃置，长官失去一半并向上取整。练习骰子固定为3/3。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "飞鹰正在攻击只有基地的秋林0。处理防守选择后查看支持者和长官。该花色及飞鸟支持者会弃置，长官失去一半并向上取整。练习骰子固定为3/3。"
+            }
+          }
+        },
+        {
+          "id": "wa-finish",
+          "title": "把联盟的两种资源连起来",
+          "text": "清晨用支持者传播或起义，白天锻造、动员和训练，夜晚由长官指挥移动、招募、战斗与组织。传播民意是主要得分来源。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial4.goal.2"
+          ],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "我们的循环是：清晨花支持者，白天动员与训练，夜晚由长官指挥军事行动。",
+                "focus": "map"
+              },
+              {
+                "text": "下面从传播和动员开始，连续经历两轮。看看第一轮积蓄的支持者怎样帮助第二轮起义。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {
+              "source": "清晨用支持者传播或起义，白天锻造、动员和训练，夜晚由长官指挥移动、招募、战斗与组织。传播民意是主要得分来源。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "清晨用支持者传播或起义，白天锻造、动员和训练，夜晚由长官指挥移动、招募、战斗与组织。传播民意是主要得分来源。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。"
+            }
+          }
+        },
+        {
+          "id": "journey-intro",
+          "title": "把所学串成两天",
+          "goal": "read",
+          "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+                "focus": "map"
+              },
+              {
+                "text": "演练中的战斗骰子固定为3/3，实际伤害仍按兵力和能力结算；正式对局使用服务器随机结果。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          },
+          "scene": "campaign-start"
+        },
+        {
+          "id": "journey-first",
+          "title": "第一天 · 建立节奏",
+          "goal": "campaign-turn",
+          "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply",
+          "title": "林间的回应",
+          "goal": "campaign-opponent",
+          "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-second",
+          "title": "第二天 · 昨日的选择",
+          "goal": "campaign-turn",
+          "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply-two",
+          "title": "第二夜 · 森林在变化",
+          "goal": "campaign-opponent",
+          "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-finish",
+          "title": "带着经验踏入森林",
+          "goal": "read",
+          "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "森林联盟",
+            "before": [
+              {
+                "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "vagabond",
+      "title": "神秘游侠",
+      "faction": "vagabond",
+      "summary": "以盗贼身份踏入森林，在连续两天的旅行中学会管理装备与机会。",
+      "steps": [
+        {
+          "id": "vg-character",
+          "title": "以盗贼开始练习",
+          "text": "本章使用盗贼，先确认角色牌，再选择起始森林。盗贼能偷窃手牌。普通对局还可选工匠（拿取匹配弃牌）或猎人（修复物品并结束白天），三种特殊能力都需要火把。",
+          "goal": "setup",
+          "actions": [
+            "choice"
+          ],
+          "scene": "vg-setup",
+          "result": "游侠只有一个棋子，物品承担行动能力，不能像其他阵营那样建造和招募。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "一个人，也能改变森林的命运。这次选择盗贼，再选择起始森林；我们靠物品行动，不靠一支军队。",
+                "focus": "map"
+              },
+              {
+                "text": "本章使用盗贼，先确认角色牌，再选择起始森林。盗贼能偷窃手牌。普通对局还可选工匠（拿取匹配弃牌）或猎人（修复物品并结束白天），三种特殊能力都需要火把。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "火把赋予盗贼偷窃能力。普通对局还有工匠和猎人，角色决定起始物品与特殊行动。",
+                "focus": "map"
+              }
+            ],
+            "prompts": {
+              "source": "本章使用盗贼，先确认角色牌，再选择起始森林。盗贼能偷窃手牌。普通对局还可选工匠（拿取匹配弃牌）或猎人（修复物品并结束白天），三种特殊能力都需要火把。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本章使用盗贼，先确认角色牌，再选择起始森林。盗贼能偷窃手牌。普通对局还可选工匠（拿取匹配弃牌）或猎人（修复物品并结束白天），三种特殊能力都需要火把。"
+            }
+          }
+        },
+        {
+          "id": "vg-refresh",
+          "title": "恢复耗竭物品",
+          "text": "查看物品的可用、耗竭和损坏状态。先恢复本节耗竭的靴子和火把。茶壶会增加清晨可恢复的数量，损坏物品还需要修复。",
+          "goal": "refreshed",
+          "actions": [
+            "refresh"
+          ],
+          "scene": "vg-refresh",
+          "result": "恢复与修复处理的是不同状态。做动作前要检查所需物品。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "晨光落在背包上。依次恢复耗竭的靴子和火把，留意物品的状态标记。",
+                "focus": "clearing"
+              },
+              {
+                "text": "查看物品的可用、耗竭和损坏状态。先恢复本节耗竭的靴子和火把。茶壶会增加清晨可恢复的数量，损坏物品还需要修复。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "耗竭的物品可以在清晨恢复；受损物品需要修理。茶壶增加恢复额度，不会自动修好损坏的装备。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "查看物品的可用、耗竭和损坏状态。先恢复本节耗竭的靴子和火把。茶壶会增加清晨可恢复的数量，损坏物品还需要修复。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "查看物品的可用、耗竭和损坏状态。先恢复本节耗竭的靴子和火把。茶壶会增加清晨可恢复的数量，损坏物品还需要修复。"
+            }
+          }
+        },
+        {
+          "id": "vg-slip",
+          "title": "清晨免费潜行",
+          "text": "完成恢复，然后从森林12潜行到秋林0。潜行不消耗靴子，普通白天移动会消耗靴子。游侠自身移动不受领地控制限制。",
+          "goal": "slipped",
+          "actions": [
+            "refresh-done",
+            "slip"
+          ],
+          "scene": null,
+          "result": "潜行是清晨的机会，结束后进入白天。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "结束恢复，从森林12潜行到秋林0。清晨这一步不需要耗竭靴子。",
+                "focus": "route"
+              },
+              {
+                "text": "完成恢复，然后从森林12潜行到秋林0。潜行不消耗靴子，普通白天移动会消耗靴子。游侠自身移动不受领地控制限制。",
+                "focus": "route"
+              }
+            ],
+            "after": [
+              {
+                "text": "潜行完成。白天的普通移动需要靴子；进入敌对阵营所在林地还可能增加靴子费用。",
+                "focus": "route"
+              }
+            ],
+            "prompts": {
+              "source": "完成恢复，然后从森林12潜行到秋林0。潜行不消耗靴子，普通白天移动会消耗靴子。游侠自身移动不受领地控制限制。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "完成恢复，然后从森林12潜行到秋林0。潜行不消耗靴子，普通白天移动会消耗靴子。游侠自身移动不受领地控制限制。"
+            }
+          }
+        },
+        {
+          "id": "vg-explore",
+          "title": "用火把探索遗迹",
+          "text": "在当前领地探索遗迹。消耗火把，取得预置的遗迹物品并得分，同时腾出一个建筑空位。",
+          "goal": "action",
+          "actions": [
+            "explore"
+          ],
+          "scene": "vg-explore",
+          "result": "探索会扩展你的物品组合，让之后能做的事更多。",
+          "sourceKeys": [
+            "tutorial5.goal.2"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "遗迹在等着你。点当前林地，耗竭火把，探索其中的物品。",
+                "focus": "clearing"
+              },
+              {
+                "text": "在当前领地探索遗迹。消耗火把，取得预置的遗迹物品并得分，同时腾出一个建筑空位。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "遗迹被移除，新物品进入背包，同时获得探索分数；腾出的建筑空位也可能被其他阵营利用。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "在当前领地探索遗迹。消耗火把，取得预置的遗迹物品并得分，同时腾出一个建筑空位。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "在当前领地探索遗迹。消耗火把，取得预置的遗迹物品并得分，同时腾出一个建筑空位。"
+            }
+          }
+        },
+        {
+          "id": "vg-aid",
+          "title": "同一回合援助联盟两次",
+          "text": "用匹配领地的手牌援助森林联盟两次，每次再耗竭一件可用物品。选项中也可以拿取对方已有的锻造物品。留意手牌和关系变化。",
+          "goal": "twice",
+          "actions": [
+            "aid"
+          ],
+          "scene": "vg-aid",
+          "result": "关系提升有本回合援助次数要求，盟友和敌对关系会影响后续得分与互动。",
+          "sourceKeys": [
+            "tutorial5.goal.1"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "联盟需要帮助。用匹配林地花色的手牌援助两次，每次耗竭一个可用物品。",
+                "focus": "clearing"
+              },
+              {
+                "text": "用匹配领地的手牌援助森林联盟两次，每次再耗竭一件可用物品。选项中也可以拿取对方已有的锻造物品。留意手牌和关系变化。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "你交付了两张牌，关系随援助提升。关系决定援助收益，交换物品时还要看对方有没有可交易物品。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "用匹配领地的手牌援助森林联盟两次，每次再耗竭一件可用物品。选项中也可以拿取对方已有的锻造物品。留意手牌和关系变化。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "用匹配领地的手牌援助森林联盟两次，每次再耗竭一件可用物品。选项中也可以拿取对方已有的锻造物品。留意手牌和关系变化。"
+            }
+          }
+        },
+        {
+          "id": "vg-quest",
+          "title": "为任务支付两件物品",
+          "text": "查看公开任务，在秋林0完成当前可做的任务。需要耗竭两件指定物品，再选择抽牌或得分。可以先点击任务牌查看要求。",
+          "goal": "action",
+          "actions": [
+            "quest"
+          ],
+          "scene": "vg-quest",
+          "result": "任务按花色累计，重复完成同花色任务时要比较得分和补牌的价值。",
+          "sourceKeys": [
+            "tutorial5.goal.3"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "查看任务牌，确认居民花色和所需的两个物品，再选择抽牌或得分作为报酬。",
+                "focus": "clearing"
+              },
+              {
+                "text": "查看公开任务，在秋林0完成当前可做的任务。需要耗竭两件指定物品，再选择抽牌或得分。可以先点击任务牌查看要求。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "任务耗竭两件指定装备。物品没有消失，但这一天就少了能拿来移动、探索或援助的工具。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "查看公开任务，在秋林0完成当前可做的任务。需要耗竭两件指定物品，再选择抽牌或得分。可以先点击任务牌查看要求。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "查看公开任务，在秋林0完成当前可做的任务。需要耗竭两件指定物品，再选择抽牌或得分。可以先点击任务牌查看要求。"
+            }
+          }
+        },
+        {
+          "id": "vg-steal",
+          "title": "使用盗贼的偷窃",
+          "text": "在当前领地对猫咪使用偷窃，消耗火把，随机拿取它的一张手牌。对手手牌内容事先仍然保密。",
+          "goal": "action",
+          "actions": [
+            "special"
+          ],
+          "scene": "vg-steal",
+          "result": "角色能力也占用物品资源，火把还要用于探索，不能同时无限使用。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "盗贼还有另一种谋生办法。点当前林地的偷窃行动，耗竭火把，从猫咪手中随机取一张牌。",
+                "focus": "clearing"
+              },
+              {
+                "text": "在当前领地对猫咪使用偷窃，消耗火把，随机拿取它的一张手牌。对手手牌内容事先仍然保密。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "偷窃已完成。火把既能探索也能发动角色能力，要在一天开始前想好把它用在哪里。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "在当前领地对猫咪使用偷窃，消耗火把，随机拿取它的一张手牌。对手手牌内容事先仍然保密。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "在当前领地对猫咪使用偷窃，消耗火把，随机拿取它的一张手牌。对手手牌内容事先仍然保密。"
+            }
+          }
+        },
+        {
+          "id": "vg-rest",
+          "title": "在森林里过夜",
+          "text": "本节游侠位于森林，部分物品损坏或耗竭。结束白天，在夜晚观察森林休整恢复物品，再抽牌。",
+          "goal": "rested",
+          "actions": [
+            "end"
+          ],
+          "scene": "vg-rest",
+          "result": "进入森林休整能恢复行动能力，但也暂时离开了任务和其他阵营。",
+          "sourceKeys": [
+            "tutorial5.intro"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "这次回到森林休整。结束白天，看看受损与耗竭物品如何变化。",
+                "focus": "clearing"
+              },
+              {
+                "text": "本节游侠位于森林，部分物品损坏或耗竭。结束白天，在夜晚观察森林休整恢复物品，再抽牌。",
+                "focus": "clearing"
+              }
+            ],
+            "after": [
+              {
+                "text": "森林夜晚休整修复并恢复物品。代价是停下林地里的活动；受损严重时，它能让你重新上路。",
+                "focus": "clearing"
+              }
+            ],
+            "prompts": {
+              "source": "本节游侠位于森林，部分物品损坏或耗竭。结束白天，在夜晚观察森林休整恢复物品，再抽牌。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "本节游侠位于森林，部分物品损坏或耗竭。结束白天，在夜晚观察森林休整恢复物品，再抽牌。"
+            }
+          }
+        },
+        {
+          "id": "vg-finish",
+          "title": "为下一回合保留物品",
+          "text": "把潜行、探索、援助、任务和特殊能力串起来。背包影响容量，茶壶影响恢复，钱币影响夜晚抽牌，剑影响战斗。正式对局里按照可用物品规划行动。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "tutorial5.goal.4"
+          ],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "你的节奏由背包决定：靴子走路，火把探索，工具做任务，物品也能用来援助。",
+                "focus": "map"
+              },
+              {
+                "text": "下面连续走过两天。第一天耗竭的工具会留下，第二天要亲自恢复，再规划新行动。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {
+              "source": "把潜行、探索、援助、任务和特殊能力串起来。背包影响容量，茶壶影响恢复，钱币影响夜晚抽牌，剑影响战斗。正式对局里按照可用物品规划行动。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。",
+              "destination": "点选道路尽头亮起的目标林地。",
+              "confirm": "检查目标、数量与支付内容，再确认这次行动。",
+              "choice": "把潜行、探索、援助、任务和特殊能力串起来。背包影响容量，茶壶影响恢复，钱币影响夜晚抽牌，剑影响战斗。正式对局里按照可用物品规划行动。 完成本章后，可返回房间大厅添加人机，把这些动作连成完整对局。"
+            }
+          }
+        },
+        {
+          "id": "journey-intro",
+          "title": "把所学串成两天",
+          "goal": "read",
+          "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "我们进入一场独立的连续演练。这里重新准备开局，接下来的两轮不会重置地图、手牌或资源。",
+                "focus": "map"
+              },
+              {
+                "text": "演练中的战斗骰子固定为3/3，实际伤害仍按兵力和能力结算；正式对局使用服务器随机结果。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          },
+          "scene": "campaign-start"
+        },
+        {
+          "id": "journey-first",
+          "title": "第一天 · 建立节奏",
+          "goal": "campaign-turn",
+          "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "从清晨到夜晚，按教练提示亲手执行每一步。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply",
+          "title": "林间的回应",
+          "goal": "campaign-opponent",
+          "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "轮到对手了。逐步观看其真实行动，动画结束后再继续。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-second",
+          "title": "第二天 · 昨日的选择",
+          "goal": "campaign-turn",
+          "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "昨天的棋子、资源和承诺还在。把同样的回合流程再走一遍。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-reply-two",
+          "title": "第二夜 · 森林在变化",
+          "goal": "campaign-opponent",
+          "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "再观察一次对手回应，把自己的发展与森林的变化联系起来。",
+                "focus": "map"
+              }
+            ],
+            "after": [
+              {
+                "text": "看看此刻的地图与资源：这些变化会保留到下一轮。",
+                "focus": "score"
+              }
+            ],
+            "prompts": {}
+          }
+        },
+        {
+          "id": "journey-finish",
+          "title": "带着经验踏入森林",
+          "goal": "read",
+          "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+          "actions": [],
+          "result": "这一轮已经完成。棋局将原样延续到下一步。",
+          "sourceKeys": [],
+          "guidance": {
+            "speaker": "神秘游侠",
+            "before": [
+              {
+                "text": "你已经亲手完成两个连续回合。回顾地图上的变化、声望和资源，再从大厅开始自己的对局。",
+                "focus": "map"
+              }
+            ],
+            "after": [],
+            "prompts": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "lizard",
+      "title": "蜥蜴神教",
+      "faction": "lizard",
+      "summary": "神圣的鳞片：学会展示仪式、花园、失魂与被逐者，以及侍僧密谋。",
+      "steps": [
+        {
+          "id": "liz-intro",
+          "title": "神圣的鳞片：认识神教",
+          "text": "蜥蜴通过展示手牌执行仪式，靠花园和得分仪式发展；清晨用侍僧发动密谋。原版称花园为庭院、侍僧为仆从、被逐者为遭弃类型，本章沿用网页版术语。点击玩家卡可查看三色花园轨道、失魂堆和公开展示牌。",
+          "goal": "read",
+          "actions": [],
+          "scene": "liz-overview",
+          "result": "",
+          "sourceKeys": [
+            "lct.intro",
+            "lct.garden",
+            "lct.strategy"
+          ]
+        },
+        {
+          "id": "liz-setup",
+          "title": "选择起始花园与被逐者",
+          "text": "先在地图高亮角落放置4名士兵和1座匹配花园，邻接领地会各放1名士兵；随后选择初始被逐者花色。角落由当前规则决定，不能占用其他玩家的起始角落。这是整章唯一的自由选择被逐者步骤。",
+          "goal": "setup",
+          "actions": [
+            "choice"
+          ],
+          "scene": "liz-setup",
+          "result": "开局完成。之后的被逐者由失魂堆决定，而不是每回合任意选择。",
+          "sourceKeys": [
+            "lct.place.warriors",
+            "lct.adjacent.warriors",
+            "lct.pick.outcast",
+            "lct.pick.outcast.2"
+          ]
+        },
+        {
+          "id": "liz-recruit",
+          "title": "展示手牌招募",
+          "text": "练习中已在秋林2放有老鼠花园。选择“仪式招募”，点秋林4，展示一张老鼠牌招募1名士兵。展示牌会离开手牌进入公开区，本回合不能再次支付。鸟牌不能代替老鼠牌。",
+          "goal": "action",
+          "actions": [
+            "ritual-recruit"
+          ],
+          "scene": "liz-rituals",
+          "result": "你没有弃掉这张牌，而是将它公开展示；它将在夜晚回手。",
+          "sourceKeys": [
+            "lct.explain.reveal",
+            "lct.recruit.intro",
+            "lct.reveal.icon",
+            "lct.hatred.birds"
+          ]
+        },
+        {
+          "id": "liz-build",
+          "title": "用另一张牌建造花园",
+          "text": "秋林4刚招募的士兵让你控制了这块老鼠领地。选择“仪式建造”，点秋林4，展示另一张老鼠牌放置第二座老鼠花园。建造需要控制权、空建筑格和该色花园供应；有花园后，蜥蜴优先控制该领地。",
+          "goal": "action",
+          "actions": [
+            "ritual-build"
+          ],
+          "scene": null,
+          "result": "第二座老鼠花园已建成。花园使你拥有控制权，但建造本身不会自动得到花园仪式分。",
+          "sourceKeys": [
+            "lct.first.build",
+            "lct.pilgrims"
+          ]
+        },
+        {
+          "id": "liz-score",
+          "title": "花费手牌举行得分仪式",
+          "text": "你现在有两座老鼠花园。选择“仪式得分”，花费剩下的老鼠牌获得2分。这张牌进入失魂堆，不会像展示牌那样在夜晚收回。每个花色每回合只能得分一次，没有该色花园时不能得分。",
+          "goal": "action",
+          "actions": [
+            "ritual-score"
+          ],
+          "scene": null,
+          "result": "获得2分。建造、展示和花费是不同操作；得分仪式会真正消耗卡牌。",
+          "sourceKeys": [
+            "lct.garden.track",
+            "lct.score",
+            "lct.score.2"
+          ]
+        },
+        {
+          "id": "liz-return",
+          "title": "进入夜晚，收回展示牌",
+          "text": "点击“进入夜晚”。刚才招募和建造展示的两张牌会先返回手牌，然后进入夜晚锻造阶段。原版提示它们不能再用于本回合的仪式，并不表示它们要一直留在公开区。",
+          "goal": "action",
+          "actions": [
+            "end"
+          ],
+          "scene": null,
+          "result": "两张展示牌已返回手牌，失魂堆中的得分牌不会返回。",
+          "sourceKeys": [
+            "lct.return",
+            "lct.reveal.icon"
+          ]
+        },
+        {
+          "id": "liz-craft",
+          "title": "用被逐者花园锻造草根茶",
+          "text": "本节被逐者是老鼠，夜晚只能激活老鼠花园锻造。选择锻造“草根茶”，支付一个老鼠锻造点。牌面自己的花色不等于锻造所需花色；看卡牌费用。展示牌回手后也能按正常锻造规则使用。",
+          "goal": "action",
+          "actions": [
+            "craft"
+          ],
+          "scene": null,
+          "result": "已锻造草根茶，获得物品和2分。每座花园每回合只能作为锻造点使用一次。",
+          "sourceKeys": [
+            "lct.t2.craft.2"
+          ]
+        },
+        {
+          "id": "liz-draw",
+          "title": "结束夜晚锻造并抽牌",
+          "text": "点击“结束夜晚锻造，抽牌”。基础抽1张，再加花园轨道已经揭开的奖励：本练习有两座老鼠花园，因此多抽1张。这里的奖励是同色第二座花园揭开1个标记，不是每两座都再奖励一次。",
+          "goal": "action",
+          "actions": [
+            "lizard-craft-done"
+          ],
+          "scene": null,
+          "result": "本次共抽2张牌。正式对局夜晚若超过5张，还需选择弃牌。",
+          "sourceKeys": [
+            "lct.garden.draw"
+          ]
+        },
+        {
+          "id": "liz-revenge",
+          "title": "防守损失如何成为侍僧",
+          "text": "教练已向秋林2的3名蜥蜴发动战斗，敌军有2名。本节骰子固定为3/3，且没有伏击牌；确认“不发动伏击”，观察命中上限和复仇。只有防守战斗损失的蜥蜴才会成为侍僧。",
+          "goal": "liz-revenge",
+          "actions": [
+            "choice"
+          ],
+          "scene": "liz-revenge",
+          "result": "防守损失2名蜥蜴，获得2名侍僧；1名蜥蜴和花园仍留在秋林2。",
+          "sourceKeys": [
+            "lct.marquise.dialog.attack",
+            "lct.revenge"
+          ]
+        },
+        {
+          "id": "liz-outcast",
+          "title": "让失魂决定被逐者",
+          "text": "失魂堆预置了2张老鼠、1张兔子和1张鸟牌；原被逐者为狐狸。点击“结束清晨牌效果”。统计时忽略鸟牌，唯一最多的老鼠成为新被逐者；失魂随后移入弃牌堆。本次换了花色，因此不是憎恨。",
+          "goal": "liz-outcast",
+          "actions": [
+            "birdsong-end"
+          ],
+          "scene": "liz-outcast",
+          "result": "新被逐者是老鼠。对手的花费和弃牌同样会影响下一次统计；相同最多或平票的处理按当前规则执行。",
+          "sourceKeys": [
+            "lct.lost.souls",
+            "lct.enemy.lost.souls",
+            "lct.t3.outcast"
+          ]
+        },
+        {
+          "id": "liz-crusade",
+          "title": "圣战：移动后再战斗",
+          "text": "本节有2名侍僧，未憎恨的老鼠被逐者。选择“圣战移动”，从秋林2沿道路向高亮邻地移动2名蜥蜴；移动后选择与飞鹰战斗。移动仍需控制起点或终点，追加战斗不再花侍僧。本节骰子固定3/3。",
+          "goal": "liz-crusade",
+          "actions": [
+            "crusade",
+            "choice"
+          ],
+          "scene": "liz-crusade",
+          "result": "2名侍僧已消耗。圣战可以从被逐者领地移入其他花色领地，再在目的地战斗。",
+          "sourceKeys": [
+            "lct.intro.conspiracy",
+            "lct.crusade"
+          ]
+        },
+        {
+          "id": "liz-battle",
+          "title": "圣战：直接在原地战斗",
+          "text": "圣战也可以不移动，直接在被逐者领地战斗。选择“圣战”，点秋林2向飞鹰发起战斗，花费2名侍僧。本节2名蜥蜴对1名飞鹰，骰子固定3/3；留意进攻方损失不会补充侍僧。",
+          "goal": "liz-attack",
+          "actions": [
+            "crusade",
+            "choice"
+          ],
+          "scene": "liz-battle",
+          "result": "你移除了飞鹰，也损失1名进攻蜥蜴。侍僧仍为0，复仇只适用于防守战斗损失。",
+          "sourceKeys": [
+            "lct.t3.crusade.battle",
+            "lct.t3.crusade.battle.2"
+          ]
+        },
+        {
+          "id": "liz-sacrifice",
+          "title": "连续三次献祭",
+          "text": "用手中的3张鸟牌分别执行“献祭”。每次展示一张鸟牌，把储备中的1名蜥蜴放入侍僧区。鸟牌不能当作花色仪式的万能牌，但每张都能用于一次献祭。",
+          "goal": "liz-sacrifice",
+          "actions": [
+            "sacrifice"
+          ],
+          "scene": "liz-sacrifice",
+          "result": "3张鸟牌均已公开展示，侍僧增加到3名。夜晚仍会收回这些鸟牌。",
+          "sourceKeys": [
+            "lct.hatred.birds",
+            "lct.intro.sacrifice",
+            "lct.t3.sacrifice"
+          ]
+        },
+        {
+          "id": "liz-discard",
+          "title": "弃牌影响下次被逐者",
+          "text": "本节直接预置到夜晚弃牌：你有7张手牌，原被逐者为兔子，并保留3名侍僧。选择并弃掉2张兔子牌，把手牌减到5张。它们会进入公开失魂堆；对手后续仍可能改变多数花色。",
+          "goal": "liz-discard",
+          "actions": [
+            "discard"
+          ],
+          "scene": "liz-discard",
+          "result": "两张兔子牌进入失魂堆。下一节将直接预置到你的下一次清晨，保留这两张弃牌和当前棋盘。",
+          "sourceKeys": [
+            "lct.t3.discard",
+            "lct.t3.discard.2"
+          ]
+        },
+        {
+          "id": "liz-hated",
+          "title": "相同花色成为憎恨",
+          "text": "现在已来到下次清晨，沿用刚才的两张兔子失魂牌。点击“结束清晨牌效果”。最多花色与当前兔子被逐者相同，因此转为憎恨：圣战和转化成本从2降至1，圣化从3降至2。",
+          "goal": "liz-hated",
+          "actions": [
+            "birdsong-end"
+          ],
+          "scene": "liz-next-birdsong",
+          "result": "兔子被逐者已成为憎恨。本轮剩下的3名侍僧足够完成一次转化和一次圣化。",
+          "sourceKeys": [
+            "lct.t4.hated.outcast"
+          ]
+        },
+        {
+          "id": "liz-convert",
+          "title": "用一名侍僧转化敌兵",
+          "text": "选择“转化”，点秋林11，把其中1名飞鹰战士替换为蜥蜴。该领地是兔子花色，符合被逐者限制；憎恨状态让本次只花1名侍僧。转化战士不直接得分。",
+          "goal": "action",
+          "actions": [
+            "convert"
+          ],
+          "scene": null,
+          "result": "敌方战士已被替换，剩余2名侍僧。飞鹰鸟巢还在，可以继续圣化。",
+          "sourceKeys": [
+            "lct.t4.convert"
+          ]
+        },
+        {
+          "id": "liz-sanctify",
+          "title": "用两名侍僧圣化建筑",
+          "text": "选择“圣化”，点秋林11，把飞鹰鸟巢替换为兔子花园。憎恨状态下花费2名侍僧；替换利用被移除建筑腾出的格子，并要求有兔子花园供应。移除敌方建筑获得1分。",
+          "goal": "action",
+          "actions": [
+            "sanctify"
+          ],
+          "scene": null,
+          "result": "鸟巢已变为兔子花园，侍僧用完，并因移除建筑获得1分。原版称此行动为“净化”，网页版称“圣化”。",
+          "sourceKeys": [
+            "lct.t4.sanctify"
+          ]
+        },
+        {
+          "id": "liz-fear",
+          "title": "花园被拆与随机弃牌",
+          "text": "本节飞鹰正在进攻秋林2中无人防守的花园。确认“不发动伏击”，观察花园返回供应，以及信徒恐惧造成的随机弃牌。骰子固定3/3；随机结果由服务器决定并保存，不能靠刷新重掷。",
+          "goal": "liz-fear",
+          "actions": [
+            "choice"
+          ],
+          "scene": "liz-fear",
+          "result": "花园被拆，随机失去1张手牌并进入失魂堆。没有防守战士损失，因此不会获得侍僧。",
+          "sourceKeys": [
+            "lct.ftt.garden.removed"
+          ]
+        },
+        {
+          "id": "liz-summary",
+          "title": "把仪式与密谋串成一局",
+          "text": "原版教程以累计12分作为收尾；本章将其拆为已完成的短练习，不要求再打一整局。正式游戏中，先用手牌维持仪式与花园，再观察失魂多数和憎恨，准备侍僧发动密谋。可以返回大厅创建蜥蜴扩展局，添加人机继续练习。",
+          "goal": "read",
+          "actions": [],
+          "scene": null,
+          "result": "",
+          "sourceKeys": [
+            "lct.t4.off.rails",
+            "lct.goal.12vp",
+            "lct.strategy"
+          ]
+        }
+      ]
+    }
+  ]
+}

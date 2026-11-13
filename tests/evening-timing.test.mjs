@@ -14,15 +14,15 @@ function fixture(rules,factions){
 }
 for(const [name,rules,factions] of [['v4',v4,['cat','bird']],['v5',v5,['cat','bird','alliance','vagabond']],['v6',v6,['cat','bird','alliance','lizard']]]){
  const act=(s,id,a)=>rules.applyAction(s,id,a,()=>0);
- test(`${name}: Cobbler remains available before drawing, after discarding, and until Evening ends`,()=>{
+ test(`${name}: Cobbler is optional before drawing, unavailable after drawing and discarding`,()=>{
   let s=fixture(rules,factions);s=act(s,'cat',{type:'end'});assert.equal(s.phase,'evening');assert.equal(s.effects.frames.length,0);
-  const before=structuredClone(s);s=act(s,'cat',{type:'evening-continue'});assert.deepEqual(before.phase,'evening');assert.equal(s.phase,'evening-end');
-  let view=rules.projectGame(s,'cat');const option=view.factionActions.find(o=>o.action.cobbler);assert.ok(option);s=act(s,'cat',option.action);
-  assert.equal(s.phase,'evening-end');assert.equal(rules.projectGame(s,'cat').nightCobbler,false);assert.throws(()=>act(s,'cat',option.action),/夜晚使用一次/);
-  s=act(s,'cat',{type:'evening-end'});assert.notEqual(s.players[s.turn].id,'cat');
+  const option=rules.projectGame(s,'cat').factionActions.find(o=>o.action.cobbler);assert.ok(option);
+  const before=structuredClone(s);s=act(s,'cat',option.action);assert.equal(s.phase,'evening');assert.equal(rules.projectGame(s,'cat').nightCobbler,false);assert.throws(()=>act(s,'cat',option.action),/夜晚使用一次/);
+  s=act(s,'cat',{type:'evening-continue'});assert.notEqual(s.players[s.turn].id,'cat');
+  s=act(before,'cat',{type:'evening-continue'});assert.notEqual(s.players[s.turn].id,'cat');
   s=fixture(rules,factions);s.phase='discard';s.players.find(p=>p.id==='cat').hand=Array.from({length:6},(_,i)=>({id:'d'+i,kind:'ambush',suit:'fox',name:'discard'}));
-  s=act(s,'cat',{type:'discard',card:'d0'});assert.equal(s.phase,'evening-end');assert.ok(rules.projectGame(s,'cat').nightCobbler);
-  s=act(s,'cat',{type:'evening-end'});assert.notEqual(s.players[s.turn].id,'cat');
+  assert.equal(rules.projectGame(s,'cat').nightCobbler,false);assert.throws(()=>act(s,'cat',option.action),/夜晚使用一次/);
+  s=act(s,'cat',{type:'discard',card:'d0'});assert.notEqual(s.players[s.turn].id,'cat');
  });
  test(`${name}: no-ambush-only-pass is automatic; actual ambush and hospital decisions remain`,()=>{
   let s=fixture(rules,factions);s.players.find(p=>p.id==='cat').crafted=[];
@@ -52,11 +52,18 @@ for(const rules of [v5,v6])test(`${rules.RULESET}: a saved old beginning-of-Even
  s=rules.applyAction(JSON.parse(JSON.stringify(s)),'alliance',{type:'choice',choiceId:s.effects.frames[0].id,optionId:'pass'},()=>0);
  assert.equal(s.phase,'military');assert.ok(rules.projectGame(s,'alliance').nightCobbler);
 });
-test('Vagabond can use Cobbler after forest repair and drawing, without exhausting a boot',()=>{
+test('Vagabond uses Cobbler before drawing without exhausting a boot; then repairs in the forest',()=>{
  let s=fixture(v5,['cat','bird','alliance','vagabond']);s.turn=s.players.findIndex(p=>p.id==='vagabond');s.phase='daylight';s.vagabond.position=12;s.usedEffects=[];
- s.players.find(p=>p.id==='vagabond').crafted=[{id:'v-shoe',kind:'cobbler',name:'补鞋匠'}];s.vagabond.items.forEach(i=>{i.damaged=true;i.exhausted=true;});
- s=v5.applyAction(s,'vagabond',{type:'end'},()=>0);assert.equal(s.phase,'evening');s=v5.applyAction(s,'vagabond',{type:'evening-continue'},()=>0);
- assert.equal(s.phase,'evening-end');assert.ok(s.vagabond.items.every(i=>!i.damaged&&!i.exhausted));
+ s.players.find(p=>p.id==='vagabond').crafted=[{id:'v-shoe',kind:'cobbler',name:'补鞋匠'}];s.vagabond.items.forEach(i=>{i.damaged=false;i.exhausted=false;});
+ s=v5.applyAction(s,'vagabond',{type:'end'},()=>0);assert.equal(s.phase,'evening');
  const move=v5.projectGame(s,'vagabond').factionActions.find(o=>o.action.cobbler).action;s=v5.applyAction(s,'vagabond',move,()=>0);
  assert.ok(s.vagabond.items.every(i=>!i.exhausted));assert.equal(s.vagabond.position,move.to);
+ s=fixture(v5,['cat','bird','alliance','vagabond']);s.turn=s.players.findIndex(p=>p.id==='vagabond');s.phase='daylight';s.vagabond.position=12;s.players[s.turn].crafted=[{id:'v-shoe',kind:'cobbler',name:'补鞋匠'}];s.vagabond.items.forEach(i=>{i.damaged=true;i.exhausted=true;});
+ s=v5.applyAction(s,'vagabond',{type:'end'},()=>0);s=v5.applyAction(s,'vagabond',{type:'evening-continue'},()=>0);assert.ok(s.vagabond.items.every(i=>!i.damaged&&!i.exhausted));assert.notEqual(s.players[s.turn].id,'vagabond');
+});
+for(const [name,rules,factions] of [['v4',v4,['cat','bird']],['v5',v5,['cat','bird','alliance','vagabond']],['v6',v6,['cat','bird','alliance','lizard']]])test(`${name}: wood is automatic with sufficient supply and remains a choice when scarce`,()=>{
+ let s=fixture(rules,factions);s.phase='birdsong';s.players[s.turn].crafted=[];s.board.forEach(c=>{c.wood=0;c.buildings=[];});for(const id of [0,1])s.board[id].buildings=[{faction:'cat',type:'sawmill'}];
+ s=rules.applyAction(s,'cat',{type:'birdsong-end'},()=>0);assert.equal(s.phase,'craft');assert.equal(s.board[0].wood,1);assert.equal(s.board[1].wood,1);
+ if(name!=='v4')assert.equal(s.presentationEvents.filter(e=>e.batch===s.presentationBatch&&e.kind==='wood').length,2);
+ s.phase='birdsong';s.board[0].wood=7;s.board[1].wood=0;s=rules.applyAction(s,'cat',{type:'birdsong-end'},()=>0);assert.equal(s.phase,'wood');assert.deepEqual(s.woodPending,[0,1]);s=rules.applyAction(s,'cat',{type:'wood',clearing:1},()=>0);assert.equal(s.board[1].wood,1);assert.equal(s.phase,'craft');
 });

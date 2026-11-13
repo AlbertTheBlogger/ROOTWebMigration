@@ -141,9 +141,9 @@ function beginTurn(s,rng) {
 function nextTurn(s,rng) { s.turn=(s.turn+1)%s.players.length; s.turnsCompleted++; s.round=1+Math.floor(s.turnsCompleted/s.players.length); beginTurn(s,rng); }
 function daylight(s) { record(s,`${current(s).name} 进入白天`); s.phase='daylight-start'; front(s,[frame('commandwarren'),frame('craft-phase')]); }
 function evening(s) { record(s,`${current(s).name} 进入夜晚`); s.phase='evening-start'; if(crafted(current(s),'cobbler')&&!s.usedEffects.includes(crafted(current(s),'cobbler').id))s.phase='evening';else front(s,[frame('evening-score')]); }
-const eveningPhases=['evening','military','lizard-craft','discard','capacity','evening-end'];
+const eveningPhases=['evening','military','lizard-craft'];
 function availableCobbler(s,p=current(s)) { return eveningPhases.includes(s.phase) && p.crafted.find(card=>card.kind==='cobbler'&&!s.usedEffects.includes(card.id)); }
-function finishEvening(s,rng) { if(availableCobbler(s))s.phase='evening-end';else nextTurn(s,rng); }
+function finishEvening(s,rng) { nextTurn(s,rng); }
 function cobblerOptions(s,p) { return availableCobbler(s,p)?moveOptions(s,p.faction).map(action=>({category:'补鞋匠',label:`${action.from} → ${action.to} · ${action.count} 名`,action:{...action,cobbler:true}})):[]; }
 
 function move(s,p,a) {
@@ -421,7 +421,7 @@ function execute(s,p,a,rng) {
     if(p.faction==='alliance'){s.phase='revolt';return;}
     if(p.faction==='vagabond'){s.phase='refresh';return;}
     if (p.faction==='bird') { if (!p.hand.length) draw(s,p,1,rng); s.phase='decree-add'; }
-    else { s.woodPending=s.board.flatMap(c => c.buildings.filter(b => b.faction==='cat' && b.type==='sawmill').map(() => c.id)); s.phase='wood'; if (!s.woodPending.length || woodCount(s)===8) daylight(s); }
+    else { s.woodPending=s.board.flatMap(c => c.buildings.filter(b => b.faction==='cat' && b.type==='sawmill').map(() => c.id)); s.phase='wood'; if (!s.woodPending.length || woodCount(s)===8) daylight(s); else if(s.woodPending.length<=8-woodCount(s)){for(const id of s.woodPending)areaOf(s,id).wood++;s.woodPending=[];daylight(s);} }
     return;
   }
   if (a.type==='wood') {
@@ -1057,6 +1057,7 @@ function pumpFactionEffect(s, kind, data, rng) {
     const payer = ownerOf(s, data.faction), suit = areaOf(s, data.clearing).suit;
     const cards = payer.hand.filter(card => matches(card, suit));
     record(s,`${payer.name} 在${areaOf(s,data.clearing).name}触发民愤`);
+    emitPresentation(s,{kind:'outrage',faction:'alliance',clearing:data.clearing});
     if (cards.length) ask(s, 'outrage', payer, `民愤：交一张${LABELS[suit]}或鸟牌给联盟`, cards.map(card => ({ id: card.id, label: card.name, value: card.id })));
     else {
       s.privateOutrage = { viewer: ownerOf(s, 'alliance').id, owner: payer.id, cards: structuredClone(payer.hand) };

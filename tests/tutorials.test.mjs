@@ -6,7 +6,7 @@ import {createTutorial,advanceTutorial,projectTutorial,tutorialCatalog} from '..
 import {tutorialAction,tutorialCommandFor} from './helpers/tutorial-actions.mjs';
 
 function lizardStep(id){
- let run=createTutorial({id:'learner',username:'Learner'},'lizard');
+ let run=createTutorial({id:'learner',username:'Learner'},'lizard',{curriculumVersion:6});
  for(let n=0;projectTutorial(run,0).tutorial.stepId!==id;n++){
   assert.ok(n<100);const room=projectTutorial(run,n);
   run=advanceTutorial(run,tutorialCommandFor(room));
@@ -18,7 +18,7 @@ test('all six tutorial chapters complete through real rules and checked goals',(
  for(const lesson of tutorialCatalog()){
   let run=createTutorial({id:'learner',username:'Learner'},lesson.id);let actions=0;const seen=new Set();
   while(!run.completed){
-   assert.ok(actions++<150,lesson.id);const room=projectTutorial(run,actions);seen.add(room.tutorial.stepId);
+   assert.ok(actions++<250,lesson.id);const room=projectTutorial(run,actions);seen.add(room.tutorial.stepId);
    if(room.tutorial.guide?.outcome){
     assert.deepEqual(room.tutorial.guide.outcome.dice,[3,3]);assert.equal(room.tutorial.guide.outcome.points,1);
     assert.equal(room.tutorial.guide.outcome.bird[1],0);assert.equal(room.tutorial.guide.outcome.roost[1],0);
@@ -77,7 +77,7 @@ test('basics dialogue persists line by line, gates actions and resets cleanly on
 });
 
 test('Lizard chapter uses v6 and preserves real cards through all 19 checked scenes',()=>{
- let run=createTutorial({id:'learner',username:'Learner'},'lizard');let commands=0;const seen=new Set();
+ let run=createTutorial({id:'learner',username:'Learner'},'lizard',{curriculumVersion:6});let commands=0;const seen=new Set();
  while(!run.completed){
   const room=projectTutorial(run,commands);seen.add(room.tutorial.stepId);
   assert.equal(room.game.ruleset,'root-lizard-cult-v6');assert.equal(room.game.stateSchemaVersion,6);
@@ -142,12 +142,12 @@ test('fear with no optional defense resolves automatically and retry restores th
 
 test('four faction journeys preserve two complete turns, resources and the opponents actual replies',()=>{
  for(const lessonId of ['cats','eyrie','alliance','vagabond']){
-  let run=createTutorial({id:'learner',username:'Learner'},lessonId),commands=0;
+  let run=createTutorial({id:'learner',username:'Learner'},lessonId,{curriculumVersion:5}),commands=0;
   const boundaries=new Map(),actions=[];
   while(!run.completed){
    assert.ok(commands++<250,lessonId);
    const room=projectTutorial(run,commands),meta=room.tutorial;
-   if(meta.context.campaign){
+   if(meta.context.campaign&&meta.stepId.startsWith('journey-')){
     const restored=JSON.parse(JSON.stringify(run));assert.deepEqual(projectTutorial(restored,commands),room);
     assert.equal(room.game.players.length,2);
     assert.equal(meta.guide.resources.score,run.game.players.find(p=>p.id===run.userId).score);
@@ -167,7 +167,7 @@ test('four faction journeys preserve two complete turns, resources and the oppon
    }
    const command=tutorialCommandFor(room),before=run;
    run=advanceTutorial(run,command);
-   if(meta.context.campaign&&command.type==='next'){
+   if(meta.context.campaign&&meta.stepId.startsWith('journey-')&&command.type==='next'){
     assert.deepEqual(run.game,before.game,'stage transition must not rewrite the game');
    }
   }
@@ -188,7 +188,7 @@ test('four faction journeys preserve two complete turns, resources and the oppon
 
 test('journey retry restores a real turn checkpoint and old faction progress retains its node',()=>{
  for(const lessonId of ['cats','eyrie','alliance','vagabond']){
-  let run=createTutorial({id:'learner',username:'Learner'},lessonId);
+  let run=createTutorial({id:'learner',username:'Learner'},lessonId,{curriculumVersion:4});
   // Version 3 indices remain in place: additional continuous practice is appended.
   delete run.guideCursor;run.curriculumVersion=3;
   const initial=projectTutorial(run,0).tutorial.stepId;
@@ -203,4 +203,20 @@ test('journey retry restores a real turn checkpoint and old faction progress ret
   assert.deepEqual(run.game,checkpoint);assert.deepEqual(run.context,context);
   assert.equal(run.ready,false);assert.equal(run.guideCursor,0);
  }
+});
+test('new cats curriculum teaches actions before crafting and retains the actual first-day board into day two',()=>{
+ let run=createTutorial({id:'learner',username:'Learner'},'cats'),sawFirst=false,sawCraft=false,firstBoard=null,firstHand=null,firstTurn=[];
+ for(let n=0;n<250&&!run.completed;n++){
+  const room=projectTutorial(run,n),m=room.tutorial;
+  if(m.stepId==='cat-setup')assert.equal(room.game.players.length,2);
+  if(m.stepId==='cat-first-day'&&m.ready&&!sawFirst){sawFirst=true;firstBoard=structuredClone(run.game.board);firstHand=run.game.players.find(p=>p.id==='learner').hand.map(c=>c.id);assert.ok(!firstTurn.includes('craft'));assert.equal(firstTurn.filter(t=>['build','recruit','move','battle'].includes(t)).length,3);}
+  if(m.stepId==='cat-second-morning'&&!m.ready){assert.ok(sawFirst);assert.ok(run.game.board.some((c,i)=>c.buildings.some(b=>b.faction==='cat'&&firstBoard[i].buildings.some(old=>old.type===b.type))));assert.ok(firstHand.every(id=>run.game.players.find(p=>p.id==='learner').hand.some(c=>c.id===id)));}
+  if(m.stepId==='cat-craft'&&!sawCraft){sawCraft=true;assert.ok(sawFirst);assert.equal(run.game.turnsCompleted,2);assert.ok(m.guide.previewCard);assert.ok(run.game.players.find(p=>p.id==='learner').hand.some(c=>c.id===m.guide.previewCard.id));assert.equal(run.game.actions,3);}
+  const command=tutorialCommandFor(room);if(m.stepId==='cat-first-day'&&command.type==='action')firstTurn.push(command.action.type);run=advanceTutorial(run,command);
+ }
+ assert.ok(run.completed&&sawCraft);
+});
+test('v4 saved tutorial indices remain stable and restarting opts into the new curriculum',()=>{
+ let run=createTutorial({id:'learner',username:'Learner'},'cats');run.curriculumVersion=4;run.step=2;assert.equal(projectTutorial(run,0).tutorial.stepId,'cat-craft');
+ run=advanceTutorial(run,{type:'restart'});assert.equal(run.curriculumVersion,7);assert.equal(projectTutorial(run,0).tutorial.stepId,'cat-setup');assert.equal(run.game.players.length,2);
 });

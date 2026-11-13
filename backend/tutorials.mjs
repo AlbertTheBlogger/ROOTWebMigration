@@ -4,8 +4,13 @@ import { randomUUID } from 'node:crypto';
 import * as rules from './rules/versions/registry.mjs';
 import {candidates} from './bots/test-policy.mjs';
 import {RuleError} from './engine.mjs';
+import {isStory,startStory,advanceStory,projectStory} from './tutorial-stories.mjs';
 
 const catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog.json',import.meta.url),'utf8'));
+const legacyCatalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v4.json',import.meta.url),'utf8'));
+const version5Catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v5.json',import.meta.url),'utf8'));
+const version6Catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v6.json',import.meta.url),'utf8'));
+const lessonFor=run=>(run.curriculumVersion||1)<5?legacyCatalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<6?version5Catalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<7?version6Catalog.lessons.find(l=>l.id===run.lessonId):lessonById(run.lessonId);
 const recipes=JSON.parse(readFileSync(new URL('./data/full-card-catalog.json',import.meta.url),'utf8')).cards;
 const quests=JSON.parse(readFileSync(new URL('./data/four-faction-catalog.json',import.meta.url),'utf8')).quests;
 const factions=['cat','bird','alliance','vagabond'];
@@ -13,7 +18,7 @@ const labels={cat:'猫咪教练',bird:'飞鹰教练',alliance:'联盟教练',vag
 const ensure=(ok,message)=>{if(!ok)throw Object.assign(new Error(message),{status:422});};
 const rng=maximum=>maximum-1;
 const player=(state,faction)=>state.players.find(p=>p.faction===faction);
-const currentStep=run=>lessonById(run.lessonId).steps[run.step];
+const currentStep=run=>lessonFor(run).steps[run.step];
 
 export function lessonById(id){const lesson=catalog.lessons.find(lesson=>lesson.id===id);ensure(lesson,'教程不存在');return lesson;}
 export function tutorialCatalog(){return catalog.lessons.map(({id,title,faction,summary,steps})=>({id,title,faction,summary,stepCount:steps.length}));}
@@ -28,8 +33,8 @@ function resolveOpponents(state,userId){
   return state;
 }
 function setupState(run){
-  const lesson=lessonById(run.lessonId);
-  const selected=lesson.faction==='lizard'?['cat','bird','alliance','lizard']:factions;
+  const lesson=lessonFor(run);
+  const selected=run.lessonId==='cats'&&run.curriculumVersion>=5?['bird','cat']:lesson.faction==='lizard'?['cat','bird','alliance','lizard']:factions;
   const members=selected.map(faction=>({userId:faction===lesson.faction?run.userId:`tutorial-${faction}`,name:faction===lesson.faction?run.playerName:labels[faction],faction}));
   return resolveOpponents(rules.createGame(members,()=>0,lesson.faction==='lizard'?'root-lizard-cult-v6':'root-base-four-v5'),run.userId);
 }
@@ -44,6 +49,7 @@ function baseline(run){
   for(const area of state.board){area.warriors=Object.fromEntries(Object.keys(area.warriors).map(faction=>[faction,0]));area.buildings=[];area.wood=0;area.keep=false;area.sympathy=false;area.ruins=0;}
   state.turn=state.players.findIndex(p=>p.id===run.userId);state.turnsCompleted=0;state.round=1;
   state.phase='daylight';state.actions=3;state.march=0;state.effects.frames=[];state.combat=null;state.winner=null;
+  if(run.lessonId==='cats'&&run.curriculumVersion>=5){state.board[0].keep=true;state.board[0].warriors.cat=1;}
   state.log=['已载入本节练习局面'];state.logTurns=[1];
   state.alliance.officers=0;state.alliance.operations=0;state.alliance.operationsUsed=0;
   return state;
@@ -69,12 +75,12 @@ function npcBattle(run,attacker,defender,clearing){
 }
 const campaignStep=run=>currentStep(run).goal.startsWith('campaign-');
 function campaignStart(run){
-  const faction=lessonById(run.lessonId).faction,opponent=faction==='cat'?'bird':'cat';
+  const faction=lessonFor(run).faction,opponent=faction==='cat'?'bird':'cat';
   // An explicitly introduced opening, followed by real turns with no scene rewrites.
   let state=rules.createGame([{userId:`tutorial-${opponent}`,name:labels[opponent],faction:opponent},{userId:run.userId,name:run.playerName,faction}],rng,'root-base-four-v5');
   while(!state.setup.complete){
     const choice=state.effects.frames[0];
-    const option=choice.kind==='setup-character'?'thief':choice.kind==='setup-leader'?'despot':choice.options[0].id;
+    const option=faction==='cat'&&run.curriculumVersion>=5&&choice.kind==='setup-keep'?'0':faction==='cat'&&run.curriculumVersion>=5&&choice.kind==='setup-building'?String({sawmill:0,workshop:1,recruiter:3}[choice.resume.type]):choice.kind==='setup-character'?'thief':choice.kind==='setup-leader'?'despot':choice.options[0].id;
     state=rules.applyAction(state,choice.playerId,{type:'choice',choiceId:choice.id,optionId:option},rng);
   }
   ensure(state.players[state.turn].id===run.userId,'连续演练起始顺序错误');
@@ -83,6 +89,7 @@ function campaignStart(run){
     supporter(state,'fox');supporter(state,'wild');
     for(let i=0;i<3;i++)deal(state,hero,c=>c.suit==='fox');
   }
+  if(faction==='cat'&&run.curriculumVersion>=5){const hero=player(state,'cat');const card=deal(state,hero,(c,r)=>c.kind==='item'&&r.cost.length===1&&r.cost[0]==='rabbit');run.craftCard=card.id;}
   run.game=state;run.context={campaign:true,startTurns:state.turnsCompleted,history:[],turnActions:[]};
 }
 function campaignActor(run){return run.game.effects.frames.find(f=>f.type==='choice')?.playerId||run.game.players[run.game.turn].id;}
@@ -115,6 +122,7 @@ function campaignAction(run){
   if(!own&&p.faction==='cat'&&g.phase==='daylight'){
     options=done.includes('recruit')?[{type:'end'}]:[...g.mapActions.filter(a=>a.type==='recruit'),{type:'end'}];
   }
+  if(own&&run.lessonId==='cats'&&run.curriculumVersion>=5&&currentStep(run).id==='cat-first-day'&&g.phase==='craft')options=[{type:'craft-done'}];
   if(p.faction==='vagabond'&&g.phase==='daylight'&&done.filter(t=>['explore','quest','aid','special','move'].includes(t)).length>=2)options=[{type:'end'}];
   for(const action of options){
     try{rules.applyAction(state,id,action,rng);return action;}
@@ -144,11 +152,12 @@ function prepare(run){
   const step=currentStep(run);run.count=0;
   if(!step.scene)return;
   if(step.scene==='campaign-start'){campaignStart(run);return;}
+  if(run.lessonId==='cats'&&run.curriculumVersion>=5&&step.scene==='cat-wood'){run.context={clearing:0};return;}
   run.context={};
   if(step.scene==='basic-march'){
     run.context={from:3,to:run.game.board[3].links.find(id=>id!==0)};return;
   }
-  if(['cat-setup','bird-setup','vg-setup','liz-setup'].includes(step.scene)){run.game=setupState(run);return;}
+  if(['cat-setup','bird-setup','vg-setup','liz-setup'].includes(step.scene)){run.game=setupState(run);if(step.scene==='cat-setup'&&run.curriculumVersion>=5)run.context={clearing:0};return;}
   if(step.scene==='liz-next-birdsong'){
     // Explicit tutorial time jump: retain the learner's two discards and board.
     run.game.turn=run.game.players.findIndex(p=>p.id===run.userId);run.game.phase='birdsong';run.game.effects.frames=[];
@@ -241,12 +250,14 @@ function prepare(run){
 }
 function prepareStep(run){
   const step=currentStep(run);
-  if(step.id==='wa-wild'){run.context={clearing:1};run.count=0;}
+  if(run.curriculumVersion>=5&&run.lessonId==='cats'&&['cat-sawmill','cat-workshop','cat-recruiter','cat-eyrie'].includes(step.id)){run.context={clearing:{'cat-sawmill':0,'cat-workshop':1,'cat-recruiter':3,'cat-eyrie':8}[step.id]};run.count=0;}
+  else if(run.curriculumVersion>=5&&run.lessonId==='cats'&&step.id==='cat-craft'){run.context={card:run.craftCard,clearing:1};run.count=0;}
+  else if(step.id==='wa-wild'){run.context={clearing:1};run.count=0;}
   else if(step.id==='wa-organize'){run.context={from:0,to:1};run.count=0;}
   else if(step.id==='vg-slip'){run.context={to:0};run.count=0;}
   else prepare(run);
   if(campaignStep(run)){
-    run.context.startTurns=run.game.turnsCompleted;
+    run.context.campaign=true;run.context.history ||= [];run.context.startTurns=run.game.turnsCompleted;
     run.context.turnActions=[];
   }
   run.attempt=0;
@@ -254,15 +265,16 @@ function prepareStep(run){
   run.ready=step.goal==='read'||(['liz-revenge','liz-fear','base-lost'].includes(step.goal)&&achieved(run,{}));
   run.checkpoint={game:structuredClone(run.game),context:structuredClone(run.context)};
 }
-export function createTutorial(user,lessonId){
+export function createTutorial(user,lessonId,{curriculumVersion=catalog.version}={}){
   lessonById(lessonId);
-  const run={schemaVersion:1,curriculumVersion:catalog.version,id:randomUUID(),userId:user.id,playerName:user.username,lessonId,step:0,ready:false,completed:false,count:0,context:{},receipts:[]};
-  prepareStep(run);return run;
+  const run={schemaVersion:1,curriculumVersion,id:randomUUID(),userId:user.id,playerName:user.username,lessonId,step:0,ready:false,completed:false,count:0,context:{},receipts:[]};
+  if(isStory(run))startStory(run,lessonFor(run));else prepareStep(run);return run;
 }
 
 function guideFor(run){
   const step=currentStep(run),guide=step.guidance;
   if(!guide)return null;
+  if(step.goal==='auto-wood'&&!run.ready)return {speaker:guide.speaker,mode:run.guideCursor?'act':'dialogue',cursor:run.guideCursor||0,total:1,text:step.text,focus:'clearing',prompts:guide.prompts,canAdvance:!run.guideCursor,canBack:false,watch:!!run.guideCursor,auto:true};
   if(campaignStep(run)&&!run.ready){
     const action=campaignAction(run),watch=campaignActor(run)!==run.userId,instruction=campaignInstruction(run,action);
     const text=watch?`对手正在${actionNames[action.type]||'行动'}。${instruction}`:instruction;
@@ -287,6 +299,7 @@ function allowed(run,action){
   if(action.type==='choice'){
     const choice=run.game.effects.frames[0];const option=choice?.options.find(option=>option.id===action.optionId);
     if(!option)return false;
+    if(run.curriculumVersion>=5&&run.lessonId==='cats'&&['setup-keep','setup-building'].includes(choice.kind))return Number(option.id)===run.context.clearing;
     if(choice.kind==='setup-character')return option.id==='thief';
     if(step.id==='liz-crusade'&&choice.kind==='lizard-crusade-battle')return option.id===context.target;
     if(step.id==='bird-leader'&&choice.kind==='setup-leader')return option.id==='despot';
@@ -319,6 +332,8 @@ function achieved(run,action){
     case 'liz-fear':return player(state,'lizard').hand.length===1&&state.lizard.lostSouls.length===1&&!state.board[2].buildings.some(b=>b.faction==='lizard')&&!state.combat;
     case 'action':return action.type===step.actions[0]&&!state.combat&&!state.effects.frames.some(frame=>frame.type==='choice');
     case 'setup':return state.setup.complete;
+    case 'setup-keep':return state.setup.catCorner===0;
+    case 'setup-building':return state.board[run.context.clearing].buildings.some(b=>b.type===({'cat-sawmill':'sawmill','cat-workshop':'workshop','cat-recruiter':'recruiter'})[step.id]);
     case 'leader':return state.bird.leader==='despot'&&state.setup.complete;
     case 'hospital':return state.board.some(area=>area.keep&&area.warriors.cat>0)&&!state.combat;
     case 'two-roosts':return state.board.flatMap(area=>area.buildings).filter(building=>building.type==='roost').length>=2;
@@ -337,6 +352,7 @@ export function advanceTutorial(source,command){
   const run=structuredClone(source);
   ensure(!run.completed||command.type==='restart','本章已完成，可返回目录或重新练习');
   if(command.type==='restart'){const fresh=createTutorial({id:run.userId,username:run.playerName},run.lessonId);fresh.everCompleted=!!(run.everCompleted||run.completed);return fresh;}
+  if(isStory(run))return advanceStory(run,command,lessonFor(run));
   if(command.type==='retry-step'){run.game=structuredClone(run.checkpoint.game);run.context=structuredClone(run.checkpoint.context);run.count=0;run.guideCursor=0;run.attempt=(run.attempt||0)+1;const goal=currentStep(run).goal;run.ready=goal==='read'||(['liz-revenge','liz-fear','base-lost'].includes(goal)&&achieved(run,{}));return run;}
   const guide=guideFor(run);
   if(command.type==='guide-next'||command.type==='guide-back'){
@@ -346,9 +362,10 @@ export function advanceTutorial(source,command){
   if(command.type==='next'){
     ensure(run.ready,'请先完成当前教学目标');
     ensure(!guide||!guide.canAdvance,'请先听完当前引导');
-    if(run.step+1===lessonById(run.lessonId).steps.length){run.completed=true;run.everCompleted=true;return run;}
+    if(run.step+1===lessonFor(run).steps.length){run.completed=true;run.everCompleted=true;return run;}
     run.step++;prepareStep(run);return run;
   }
+  if(command.type==='coach-next'&&currentStep(run).goal==='auto-wood'){ensure(guide.mode==='act'&&!run.ready,'请先听完当前引导');if(run.game.phase==='birdsong')run.game=rules.applyAction(run.game,run.userId,{type:'birdsong-end'},rng);for(const clearing of [...(run.game.woodPending||[])]){if(run.game.phase!=='wood')break;run.game=rules.applyAction(run.game,run.userId,{type:'wood',clearing},rng);}run.ready=true;run.guideCursor=0;return run;}
   if(command.type==='coach-next'){
     ensure(campaignStep(run)&&campaignActor(run)!==run.userId&&!run.ready&&guide.mode==='act','请按当前教程操作');
     const action=campaignAction(run),actor=campaignActor(run);
@@ -371,7 +388,8 @@ export function advanceTutorial(source,command){
   run.ready=achieved(run,command.action);if(run.ready)run.guideCursor=0;return run;
 }
 export function projectTutorial(run,version){
-  const lesson=lessonById(run.lessonId),step=currentStep(run);
+  if(isStory(run))return projectStory(run,version,lessonFor(run));
+  const lesson=lessonFor(run),step=currentStep(run);
   const game=rules.projectGame(run.game,run.userId);
   const guide=guideFor(run);
   if(guide&&run.ready&&['battle','defenseless'].includes(step.id)){
@@ -396,6 +414,7 @@ export function projectTutorial(run,version){
     guide.resources={round:game.round,score:own.score,hand:own.handCount,wood:game.board.reduce((n,c)=>n+c.wood,0),officers:game.alliance?.officers||0,items:game.vagabond?.items.filter(i=>!i.exhausted&&!i.damaged).length||0};
     if(campaign&&!guide.watch&&!run.ready)guide.action=expected;
   }
+  if(guide&&run.curriculumVersion>=5&&step.id==='cat-craft')guide.previewCard=structuredClone(player(run.checkpoint.game,'cat').hand.find(c=>c.id===run.context.card));
   const goalCount=step.goal==='liz-sacrifice'?3:['twice','liz-discard'].includes(step.goal)?2:1;
-  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:game.players.length,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{guide,id:run.id,lessonId:lesson.id,faction:lesson.faction,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,actionTypes,context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
+  return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:game.players.length,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{guide,id:run.id,lessonId:lesson.id,faction:lesson.faction,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,legacy:(['eyrie','alliance'].includes(run.lessonId)&&(run.curriculumVersion||1)<6)||(['vagabond','lizard'].includes(run.lessonId)&&(run.curriculumVersion||1)<7),actionTypes,context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
 }

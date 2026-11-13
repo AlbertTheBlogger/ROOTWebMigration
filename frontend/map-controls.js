@@ -2,6 +2,11 @@
 let mounted=null;
 let state={context:null,version:null,activeKey:null,picked:null,from:null,drafts:new Map()};
 let announced='';
+export function resetMapControls(){
+  mounted?.observer?.disconnect();
+  if(mounted?.cameraListener)mounted.board.removeEventListener('map-camera-frame',mounted.cameraListener);
+  mounted=null;state={context:null,version:null,activeKey:null,picked:null,from:null,drafts:new Map()};announced='';
+}
 const numeric=value=>/^\d+$/.test(String(value));
 const element=(tag,className,text)=>{const node=document.createElement(tag);node.className=className;if(text!==undefined)node.textContent=text;return node;};
 
@@ -99,7 +104,9 @@ function syncMinimize(){
 function refresh(){renderControls();syncMinimize();reportTutorialStage();}
 function reportTutorialStage(){
   if(!mounted?.tutorial?.guide)return;
-  mounted.onTutorialStage?.({from:state.from,picked:state.picked,choice:!!mounted.game.choice});
+  const entry=mounted.entries.find(e=>e.key===state.activeKey),actions=actionsFor(entry,mounted.game);
+  const action=actions.find(a=>(state.picked===null||targetOf(a,mounted.game)===state.picked)&&(state.from===null||a.from===state.from))||actions[0];
+  mounted.onTutorialStage?.({from:state.from,picked:state.picked,choice:!!mounted.game.choice,action});
 }
 function movementControls(entry,actions){
   const host=mounted.movement;
@@ -118,13 +125,14 @@ function movementControls(entry,actions){
   const matches=actions.filter(a=>a.from===state.from&&a.to===state.picked);
   if(!matches.length)return;
   const form=entry.form;
+  form.querySelector('.map-move-quantity')?.remove();
   if(form.dataset.type==='faction-action'){
-    const label=element('label','','移动数量');const count=element('select','');count.setAttribute('aria-label','移动数量');
+    const label=element('label','map-move-quantity','移动数量');const count=element('select','');count.setAttribute('aria-label','移动数量');
     const selected=mounted.game.factionActions[Number(form.elements.option.value)]?.action;
     for(const n of [...new Set(matches.map(a=>a.count))]){const option=element('option','',String(n));option.value=String(n);count.append(option);}
     count.value=String(selected?.count||matches[0].count);
     count.addEventListener('change',()=>{const action=matches.find(a=>a.count===Number(count.value));form.elements.option.value=String(mounted.game.factionActions.findIndex(option=>option.action===action));saveDrafts();});
-    label.append(count);host.append(label);
+    label.append(count);form.append(label);
   }
 }
 function renderControls(){
@@ -222,7 +230,7 @@ export function mountMapControls({game,userId,version,gameId,tutorial,onTutorial
   mounted={board,game,userId,overlay,banner,menu,popup,entries,numericChoice,movement,tutorial,onTutorialStage};
   if(tutorial?.guide){
     board.classList.add('guided-map');
-    for(const entry of entries)if(entry.form.id==='move'&&(tutorial.lessonId==='basics'||tutorial.guide.action?.count!==undefined)){
+    for(const entry of entries)if(entry.form.id==='move'&&!tutorial.guide.allowAlternatives&&(tutorial.lessonId==='basics'||tutorial.guide.action?.count!==undefined)){
       const count=entry.form.elements.count,value=tutorial.guide.action?.count||1;count.value=String(value);count.min=String(value);count.max=String(value);count.readOnly=true;
     }
   }
@@ -277,7 +285,7 @@ export function mountMapControls({game,userId,version,gameId,tutorial,onTutorial
       }
       else menu.append(button);
     }
-    if(game.choice){popup.hidden=game.choice.waiting;title(game.choice.waiting?'等待其他玩家选择':game.choice.prompt);}
+    if(game.choice){popup.hidden=game.choice.waiting||popup.childElementCount===0;title(game.choice.waiting?'等待其他玩家选择':game.choice.prompt);}
     else{
       const forced=entries.find(e=>e.form.id===game.phase||e.form.id===game.currentDecreeColumn)|| (entries.length===1?entries[0]:null);
       if(!entries.some(e=>e.key===state.activeKey))state.activeKey=forced?.key||null;

@@ -3,7 +3,7 @@ import {unseenEvents,presentationPlan} from './presentation-model.js';
 import {motionDuration,playSound,stopSounds} from './sound.js';
 const names={cat:'猫咪贵族',bird:'飞鹰王朝',alliance:'森林联盟',vagabond:'神秘游侠',lizard:'蜥蜴神教'};
 const columns={recruit:'招募',move:'移动',battle:'战斗',build:'建造'};
-const majors=new Set(['battle','dice','score','draw','craft','aid','supporter','turmoil','revolt']);
+const majors=new Set(['battle','dice','score','draw','craft','aid','outrage','supporter','turmoil','revolt']);
 let contextKey=null,previous=null,queue=[],active=null,frame=null,art={};
 const node=(tag,cls,text)=>{const el=document.createElement(tag);el.className=cls;if(text!==undefined)el.textContent=text;return el;};
 function board(){return document.querySelector('.map-card');}
@@ -15,13 +15,19 @@ function anchor(id){
 }
 function busy(value){
   const host=board();if(host)host.dataset.presentationBusy=String(value);
-  for(const button of document.querySelectorAll('.tutorial-buttons [data-action=tutorial-next],.tutorial-buttons [data-action=tutorial-guide-next],.tutorial-buttons [data-action=tutorial-coach-next]')){
+  for(const button of document.querySelectorAll('.tutorial-buttons [data-action=tutorial-next],.tutorial-buttons [data-action=tutorial-guide-next],.tutorial-buttons [data-action=tutorial-coach-next],[data-action=hotseat-confirm],[data-action=mobile-confirm]')){
     if(value){if(!('motionDisabled' in button.dataset))button.dataset.motionDisabled=button.dataset.busyDisabled??String(button.disabled);button.disabled=true;}
     else if('motionDisabled' in button.dataset){button.disabled=button.dataset.motionDisabled==='true'||'busyDisabled' in button.dataset;delete button.dataset.motionDisabled;}
   }
 }
 function clearFocus(){document.querySelectorAll('.presentation-focus').forEach(el=>el.classList.remove('presentation-focus'));}
-function reset(){cancelAnimationFrame(frame);frame=null;queue=[];for(const slot of active?.slots||[])slot.layer?.remove();active=null;clearFocus();busy(false);stopSounds();}
+function restoreArrivals(){for(const unit of document.querySelectorAll('[data-arrival-total]')){unit.querySelector('.unit-number').textContent=unit.dataset.arrivalTotal;unit.style.removeProperty('visibility');delete unit.dataset.arrivalTotal;}}
+function syncArrivals(){
+  restoreArrivals();const pending=[...(active?.slots||[]).filter(s=>!s.done).map(s=>s.event),...queue],counts=new Map();
+  for(const event of pending)if(event.kind==='move'&&event.faction!=='vagabond'){const key=event.to+'|'+event.faction;counts.set(key,(counts.get(key)||0)+(event.count||1));}
+  for(const [key,count] of counts){const [id,faction]=key.split('|'),unit=board()?.querySelector(`.clearing[data-id="${id}"] .clearing-unit.${faction}`),number=unit?.querySelector('.unit-number');if(!number)continue;unit.dataset.arrivalTotal=number.textContent;const shown=Math.max(0,Number(number.textContent)-count);number.textContent=String(shown);if(!shown)unit.style.visibility='hidden';}
+}
+function reset(){cancelAnimationFrame(frame);frame=null;queue=[];for(const slot of active?.slots||[])slot.layer?.remove();active=null;restoreArrivals();clearFocus();busy(false);stopSounds();}
 function label(event){
   const who=names[event.faction]||'林间旅伴';
   return {move:`${who} · 移动 ${event.count||1} 名`,battle:`${who} · 发起战斗`,dice:'战斗掷骰',build:`${who} · 建筑落成`,pieces:`${who} · 战士 +${event.count}`,score:`${who} · ${event.delta>0?'+':''}${event.delta} 分`,draw:`${who} · 抽取 ${event.count} 张牌`,craft:`${who} · 锻造完成`,aid:'援助 · 交付一张手牌',supporter:'森林联盟 · 支持者 +1',turmoil:'飞鹰王朝倒台',revolt:`森林联盟起义 · 秋林 ${event.clearing}`,catchup:'棋局已更新'}[event.kind]||'林间动态';
@@ -31,6 +37,8 @@ function createLayer(slot){
   layer.dataset.kind=event.kind;layer.dataset.eventSeq=String(event.seq??'legacy');layer.setAttribute('aria-live','polite');
   layer.style.setProperty('--duration',motionDuration(duration)+'ms');layer.style.setProperty('--major-slot',slot.majorSlot||0);
   const banner=node('div','presentation-announcement',label(event));layer.append(banner);Object.assign(slot,{layer,banner,steps:0});
+  if(event.kind==='outrage')banner.textContent='民愤！';
+  if(event.kind==='wood'){banner.textContent=`锯木厂自动生产 · 木材 +${event.count}`;if(art.symbols?.wood){const token=node('img','presentation-pop');token.src=art.symbols.wood;token.alt='木材生产';layer.append(token);slot.pop=token;}}
   if(event.kind==='move'){
     const token=node('div','presentation-moving-unit'),src=art.units?.[event.faction]||art.symbols?.[event.faction];
     if(src){const img=node('img','');img.src=src;img.alt=names[event.faction]||'战士';token.append(img);}
@@ -60,7 +68,7 @@ function start(){
   if(first.batch!==undefined)while(queue.length&&queue[0].batch===first.batch)events.push(queue.shift());
   const slots=presentationPlan(events);let majorSlot=0;
   for(const slot of slots)if(majors.has(slot.event.kind)&&slot.delay===0)slot.majorSlot=majorSlot++;
-  active={slots,start:performance.now()};busy(true);frame=requestAnimationFrame(tick);
+  active={slots,start:performance.now()};syncArrivals();busy(true);frame=requestAnimationFrame(tick);
 }
 function renderSlot(slot,p,host){
   const {event,layer}=slot;layer.style.setProperty('--progress',p);const point=anchor(event.clearing);
@@ -89,7 +97,7 @@ function tick(now){
     const duration=motionDuration(slot.duration),p=duration?Math.min(1,elapsed/duration):1;renderSlot(slot,p,host);
     if(p<1)pending=true;else{slot.layer.dataset.completed='true';slot.layer.remove();slot.done=true;}
   }
-  if(pending){frame=requestAnimationFrame(tick);return;}
+  syncArrivals();if(pending){frame=requestAnimationFrame(tick);return;}
   active=null;frame=null;clearFocus();if(queue.length)start();else busy(false);
 }
 export function observePresentation(game,assets,options={}){
@@ -99,6 +107,6 @@ export function observePresentation(game,assets,options={}){
   if(contextKey!==key){reset();contextKey=key;previous=structuredClone(game);return;}
   const fresh=unseenEvents(previous,game);previous=structuredClone(game);queue.push(...fresh);
   while(queue.length>64){const batch=queue[0].batch;if(batch===undefined)queue.shift();else queue=queue.filter(event=>event.batch!==batch);}
-  if(active){for(const slot of active.slots)if(slot.layer&&!slot.done)board()?.append(slot.layer);busy(true);}else start();
+  if(active){for(const slot of active.slots)if(slot.layer&&!slot.done)board()?.append(slot.layer);syncArrivals();busy(true);}else start();
 }
 if(typeof document!=='undefined')document.addEventListener('visibilitychange',()=>{if(document.hidden)reset();});

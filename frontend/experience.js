@@ -19,8 +19,8 @@ const effects = {
  dominance:'达到10分后可在白昼激活，停止通过胜利分获胜。匹配花色统治牌要求在清晨开始时统治三个匹配林地，鸟类要求统治一对对角林地。四人局游侠可与符合条件的最低分玩家结盟。',
 };
 const leaderAbilities={despot:'大臣位于移动、建造。每场战斗中移除至少一个敌方建筑或标记时，额外获得1分。',commander:'大臣位于移动、战斗。进攻时额外造成1点伤害。',charismatic:'大臣位于招募、战斗。每次法令招募放置2名战士。',builder:'大臣位于招募、移动。锻造物品获得完整分数。'};
-export function previewLeader(leader,art,names){
-  previewCard({name:names[leader]||leader,image:art.leaders[leader],description:leaderAbilities[leader]},art,names);
+export function previewLeader(leader,art,names,options={}){
+  previewCard({name:names[leader]||leader,image:art.leaders[leader],description:leaderAbilities[leader]},art,names,options);
 }
 function show(title, body) {
   const parent=[...document.querySelectorAll('dialog.card-preview[open]')].at(-1);
@@ -41,16 +41,18 @@ function show(title, body) {
   },{once:true});
   document.body.append(dialog);
   dialog.showModal();
+  return dialog;
 }
-export function previewCard(card, art, names) {
+export function previewCard(card, art, names, options={}) {
   const definition=(art.catalog||[]).find(value=>value.type===card.archetype)||{};
   const value={...definition,...card};
   const source=art.cards[value.archetype]||art.dominance?.[value.archetype]||art.quests?.[value.id]||value.image;
   const suit=art.suits[value.suit];
   const cost=(value.cost||[]).map(s=>names[s]||'任意').join(' + ');
   const item=value.item?`锻造获得${names[value.item]}，获得 ${value.points} 分。`:'';
-  const quest=value.items?`消耗 ${value.items.map(type=>names[type]).join(' + ')}。选择抽两张牌，或按已完成的同花色任务数量得分。`:'';
-  show(value.name||'牌面',`<article class="full-card"><div>${suit?`<img class="faction-icon" src="${escape(suit)}" alt="${escape(names[value.suit])}">`:''}<strong>${escape(names[value.suit]||'')}</strong></div>${source?`<img class="full-card-art" src="${escape(source)}" alt="${escape(value.name)}">`:''}${cost?`<p>锻造要求　${escape(cost)}</p>`:''}<p>${escape(item||quest||value.description||effects[value.kind]||'')}</p></article>`);
+  const quest=value.items?`耗竭 ${value.items.map(type=>names[type]).join(' + ')}。选择抽两张牌，或按已完成的同花色任务数量得分。`:'';
+  const dialog=show(value.name||'牌面',`<article class="full-card"><div>${suit?`<img class="faction-icon" src="${escape(suit)}" alt="${escape(names[value.suit])}">`:''}<strong>${escape(names[value.suit]||'')}</strong></div>${source?`<img class="full-card-art" src="${escape(source)}" alt="${escape(value.name)}">`:''}${cost?`<p>锻造要求　${escape(cost)}</p>`:''}<p>${escape(item||quest||value.description||effects[value.kind]||'')}</p></article>`);
+  if(options.minimizable){const button=dialog.querySelector('[data-close-preview]');button.textContent='最小化';button.setAttribute('aria-label','最小化手牌详情');dialog.classList.add('tutorial-card-preview');}
 }
 export function paymentSupporters(supporters, suit, cost) {
   return supporters.filter(card=>card.suit===suit||card.suit==='wild')

@@ -7,7 +7,7 @@ import {tutorialCommandFor,tutorialAction} from './helpers/tutorial-actions.mjs'
 import {interpolateBox,unseenEvents,presentationTimes,presentationPlan,presentationLength,botStepDelay,botThinkDelay} from '../frontend/presentation-model.js';
 
 function at(lesson,id){
- let run=createTutorial({id:'viewer',username:'Learner'},lesson);
+ let run=createTutorial({id:'viewer',username:'Learner'},lesson,lesson==='lizard'?{curriculumVersion:6}:undefined);
  for(let n=0;n<160;n++){
   const room=projectTutorial(run,n);
   if(room.tutorial.stepId===id&&!room.tutorial.guide?.canAdvance)return run;
@@ -62,11 +62,11 @@ test('turmoil and revolt publish a faction-wide announcement with the actual aff
  const event=turmoil.find(event=>event.kind==='turmoil');assert.ok(['recruit','move','battle','build'].includes(event.column));assert.ok(event.birdCards>=2);assert.equal(event.viziers,2);assert.ok(event.leader);assert.ok(event.discarded>=0);
  assert.equal(new Set(turmoil.map(e=>e.batch)).size,1);
  const revolt=act(at('alliance','wa-revolt')).events;
- assert.ok(revolt.some(event=>event.kind==='revolt'&&event.clearing===0));assert.ok(revolt.some(event=>event.kind==='build'&&event.building==='base-fox'));
+ assert.ok(revolt.some(event=>event.kind==='revolt'&&event.clearing===5));assert.ok(revolt.some(event=>event.kind==='build'&&event.building==='base-fox'));
 });
 
 test('bot pacing includes the complete batch, without serializing every recruited warrior',()=>{
- assert.ok(Object.values(presentationTimes).every(duration=>duration>=1500));
+ assert.ok(Object.values(presentationTimes).every(duration=>duration>=1000));
  const events=[{kind:'build',batch:1},{kind:'score',batch:1},...Array.from({length:12},()=>({kind:'pieces',batch:1}))];
  assert.equal(presentationLength(events),3600);
  assert.ok(presentationPlan(events).find(slot=>slot.event.kind==='score').delay>=1800);
@@ -86,4 +86,10 @@ test('bot thought intervals follow the requested 70/20/10 weighted uniform distr
   assert.ok(ms>=ranges[group][0]&&ms<=ranges[group][1]);counts[group]++;
  }
  assert.deepEqual(counts,[7000,2000,1000]);
+});
+
+test('outrage announces for one second, followed by a one-second supporter flight after arrival',()=>{
+ const plan=presentationPlan([{kind:'move'},{kind:'outrage'},{kind:'supporter'}]);
+ assert.deepEqual(plan.map(s=>[s.event.kind,s.delay,s.duration]),[['move',0,1800],['outrage',1800,1000],['supporter',2800,1000]]);
+ assert.equal(presentationLength(plan.map(s=>s.event)),3800);
 });

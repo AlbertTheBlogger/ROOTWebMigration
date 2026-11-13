@@ -1,6 +1,6 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 // Presentation metadata is public, bounded, and never participates in legality.
-const kinds=new Set(['move','battle','dice','draw','score','build','pieces','turmoil','revolt','craft','aid','supporter']);
+const kinds=new Set(['move','battle','dice','draw','score','build','pieces','turmoil','revolt','craft','aid','supporter','outrage','wood']);
 const fields=['playerId','faction','clearing','from','to','count','building','delta','total','reason','target','batch'];
 export function present(state,event){
   if(!kinds.has(event.kind))throw new Error('Unknown presentation event');
@@ -20,6 +20,7 @@ export function finishPresentation(before,after){
   for(const area of after.board||[]){
     const old=before.board.find(value=>value.id===area.id);if(!old)continue;
     const count=(buildings,b)=>buildings.filter(value=>value.faction===b.faction&&value.type===b.type).length;
+    if(area.wood>old.wood)present(after,{kind:'wood',faction:'cat',clearing:area.id,count:area.wood-old.wood});
     const added=new Set();
     for(const building of area.buildings){
       const key=building.faction+'|'+building.type;
@@ -34,7 +35,7 @@ export function finishPresentation(before,after){
   }
   // Put a newly placed building before its score feedback, even if scoring was
   // emitted inside the rules routine. Keep IDs increasing after reordering.
-  const order={move:0,battle:1,dice:2,turmoil:3,revolt:3,build:4,pieces:5,craft:6,aid:6,supporter:7,draw:7,score:8};
+  const order={move:0,battle:1,dice:2,turmoil:3,revolt:3,build:4,pieces:5,craft:6,aid:6,wood:6,outrage:6,supporter:7,draw:7,score:8};
   const fresh=(after.presentationEvents||[]).filter(event=>event.seq>cutoff).sort((a,b)=>order[a.kind]-order[b.kind]);
   after.presentationSeq=cutoff;
   after.presentationEvents=(before.presentationEvents||[]).slice(-64);

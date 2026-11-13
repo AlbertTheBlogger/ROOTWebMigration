@@ -12,6 +12,7 @@ import { RULESET, LIMITATIONS } from './engine.mjs';
 import { createGame, applyAction, projectGame, supportedRulesets } from './rules/versions/registry.mjs';
 import { candidates as botCandidates } from './bots/test-policy.mjs';
 import { botStepDelay } from '../frontend/presentation-model.js';
+import {hotseatActor,hotseatStamp,updateHotseatControl,publicGame} from './hotseat.mjs';
 
 const scrypt=promisify(scryptCb);
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
@@ -31,7 +32,7 @@ function assignSeats(payload){
   return payload;
 }
 const sceneResources=new Map();
-for(const path of ['/clearing-ui.js','/experience.js','/map-controls.js','/log-ui.js','/motion.js','/map-camera.js','/presentation-model.js','/sound.js','/audio-manifest.json']){
+for(const path of ['/clearing-ui.js','/experience.js','/map-controls.js','/log-ui.js','/motion.js','/map-camera.js','/companion-map.js','/presentation-model.js','/sound.js','/audio-manifest.json']){
   const content=readFileSync(resolve(root,'frontend','.'+path));
   const type=path.endsWith('.js')?'text/javascript; charset=utf-8':path.endsWith('.json')?'application/json; charset=utf-8':path.endsWith('.webp')?'image/webp':path.endsWith('.bin')?'application/octet-stream':'text/plain; charset=utf-8';
   const compress=!path.endsWith('.webp');
@@ -68,14 +69,30 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
   configureAccounts(db);
   const clients=new Set(),buckets=new Map();let closing=false;
   const botTimers = new Map();
+  const hotseatGrants=new Map();
+  function controllerKey(req,code){
+    const id=req?.headers['x-woodland-controller']||new URL(req?.url||'/','http://local').searchParams.get('controller');
+    return typeof id==='string'&&/^[a-zA-Z0-9-]{16,80}$/.test(id)?`${code}:${sha(token(req)||'')}:${id}`:null;
+  }
   const dummyHashPromise=hashPassword(randomBytes(24).toString('hex'));
   function getRoom(code){const row=db.prepare('SELECT * FROM rooms WHERE code=?').get(code);requireThat(row,404,'房间不存在');return {...row,payload:assignSeats(JSON.parse(row.payload))};}
-  const member=(room,uid)=>room.payload.members.find(m=>m.userId===uid);
-  function roomView(room,uid){requireThat(member(room,uid),403,'你不在这个房间');return {code:room.code,title:room.title,ownerId:room.owner_id,version:room.version,status:room.status,capacity:room.payload.capacity||2,ruleset:room.payload.ruleset||'root-base-four-v5',availableFactions:roomFactions(room.payload),locked:!!(room.password_hash||room.payload.adminPrivate),updatedAt:room.updated_at,members:clone(room.payload.members),botError:room.payload.botError||null,gameId:room.payload.gameId||null,game:room.payload.game?projectGame(room.payload.game,uid):null};}
+  const member=(room,uid)=>room.payload.members.find(m=>m.userId===uid)||(room.payload.playMode==='hotseat'&&room.payload.companions?.some(m=>m.userId===uid)?{userId:uid,companion:true}:null);
+  const companionRequest=req=>req?.headers['x-woodland-companion']==='1'||new URL(req?.url||'/','http://local').searchParams.get('companion')==='1';
+  const claimedSeat=(p,uid)=>p.members.find(m=>p.claims?.[m.userId]?.accountId===uid)||null;
+  function roomView(room,uid,req){
+    requireThat(member(room,uid),403,'你不在这个房间');
+    const p=room.payload,local=p.playMode==='hotseat',actor=local?hotseatActor(p.game):uid;
+    const companion=local&&(uid!==room.owner_id||companionRequest(req)),seat=companion?claimedSeat(p,uid):null;
+    const choice=p.game?.effects?.frames[0],canDecide=!!(companion&&seat&&choice?.type==='choice'&&choice.playerId===seat.userId&&!p.game.winner);
+    const grant=local?hotseatGrants.get(controllerKey(req,room.code)):null;
+    const viewerId=local?(grant?.stamp===hotseatStamp(p)&&grant.actor===actor&&(companion?grant.role==='companion'&&canDecide:grant.role!=='companion')?actor:null):uid;
+    const target=p.members.find(m=>m.userId===actor),previous=p.members.find(m=>m.userId===p.previousActor);
+    return {code:room.code,title:room.title,ownerId:room.owner_id,version:room.version,status:room.status,capacity:p.capacity||2,ruleset:p.ruleset||'root-base-four-v5',playMode:p.playMode||'online',viewerId:local?viewerId:(p.game?uid:null),companion:companion?{seatId:seat?.userId||null,canDecide,pending:(p.claimRequests||[]).find(r=>r.accountId===uid)?{seatId:p.claimRequests.find(r=>r.accountId===uid).seatId}:null}:null,claimRequests:local&&uid===room.owner_id&&!companion?(p.claimRequests||[]).map(({id,seatId,username})=>({id,seatId,username})):[],hotseat:local?{locked:!!p.game&&!viewerId&&!p.game.winner,actor:target?{id:actor,name:target.name,faction:target.faction}:null,previous:previous?{name:previous.name,faction:previous.faction}:null,epoch:p.controlEpoch||0,interruption:!!p.game?.effects?.frames.some(f=>f.type==='choice')}:null,availableFactions:roomFactions(p),locked:!!(room.password_hash||p.adminPrivate),updatedAt:room.updated_at,members:p.members.map(m=>({...clone(m),claimed:!!p.claims?.[m.userId],claimedBy:uid===room.owner_id?p.claims?.[m.userId]?.username:undefined})),botError:p.botError||null,gameId:p.gameId||null,game:p.game?(viewerId?projectGame(p.game,viewerId):publicGame(p.game)):null};
+  }
   function allRooms(uid){return db.prepare('SELECT * FROM rooms ORDER BY updated_at DESC LIMIT 500').all().flatMap(row=>{
-    const p=JSON.parse(row.payload),mine=p.members.some(m=>m.userId===uid),canDelete=row.owner_id===uid;
-    if((row.status==='closed'&&!canDelete)||((row.password_hash||p.adminPrivate)&&!mine&&!canDelete))return [];
-    return [{code:row.code,title:row.title,locked:!!(row.password_hash||p.adminPrivate),status:row.status,count:p.members.length,capacity:p.capacity||2,mine,canDelete,version:row.version,updatedAt:row.updated_at}];
+    const p=JSON.parse(row.payload),mine=p.members.some(m=>m.userId===uid)||!!p.companions?.some(m=>m.userId===uid),canDelete=row.owner_id===uid;
+    if((p.playMode==='hotseat'&&!canDelete&&!mine)||(row.status==='closed'&&!canDelete)||((row.password_hash||p.adminPrivate)&&!mine&&!canDelete))return [];
+    return [{code:row.code,title:row.title,playMode:p.playMode||'online',locked:!!(row.password_hash||p.adminPrivate),status:row.status,count:p.members.length,capacity:p.capacity||2,mine,canDelete,version:row.version,updatedAt:row.updated_at}];
   });}
   function token(req){const match=(req.headers.cookie||'').match(/(?:^|;\s*)woodland_session=([a-f0-9]{64})(?:;|$)/);return match?match[1]:null;}
   function session(req){const t=token(req);if(!t)return null;return db.prepare("SELECT u.id,u.username,s.expires_at,COALESCE(a.role,'player') role FROM sessions s JOIN users u ON u.id=s.user_id LEFT JOIN account_access a ON a.user_id=u.id WHERE s.token_hash=? AND s.expires_at>? AND COALESCE(a.disabled,0)=0").get(sha(t),Date.now())||null;}
@@ -90,7 +107,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
   }
   function throttle(key,limit,window=60000){if(!rateLimit)return;const now=Date.now(),old=buckets.get(key);const b=old&&old.until>now?old:{count:0,until:now+window};b.count++;buckets.set(key,b);requireThat(b.count<=limit,429,'操作太频繁，请稍后重试');}
   async function body(req){requireThat((req.headers['content-type']||'').startsWith('application/json'),415,'请求必须为 JSON');let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;requireThat(size<=16384,413,'请求体过大');chunks.push(chunk);}let result;try{result=JSON.parse(Buffer.concat(chunks).toString('utf8'));}catch{throw error(400,'JSON 格式错误');}requireThat(result&&typeof result==='object'&&!Array.isArray(result),400,'请求应为 JSON 对象');return result;}
-  function notify(code){for(const client of clients){if(client.code!==code)continue;try{const u=session(client.req);if(!u){client.res.end();continue;}const room=getRoom(code);if(!member(room,u.id)){client.res.write('event: removed\ndata: {}\n\n');client.res.end();continue;}client.res.write(`data: ${JSON.stringify(roomView(room,u.id))}\n\n`);}catch{client.res.end();}}}
+  function notify(code){for(const client of clients){if(client.code!==code)continue;try{const u=session(client.req);if(!u){client.res.end();continue;}const room=getRoom(code);if(!member(room,u.id)){client.res.write('event: removed\ndata: {}\n\n');client.res.end();continue;}client.res.write(`data: ${JSON.stringify(roomView(room,u.id,client.req))}\n\n`);}catch{client.res.end();}}}
   function transaction(fn){db.exec('BEGIN IMMEDIATE');try{const value=fn();db.exec('COMMIT');return value;}catch(e){db.exec('ROLLBACK');throw e;}}
   function vacantSeat(room,requested){
     const capacity=room.payload.capacity||2;
@@ -105,6 +122,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
     if(reserve)requireThat(!room.payload.members.some(player=>player.userId!==target.userId&&player.ready&&player.faction===faction),409,'该阵营已有玩家准备，请选择其他阵营');
   }
   function persist(room,command,actor){
+    updateHotseatControl(room.payload);
     const version=room.version+1,now=Date.now();
     const result=db.prepare('UPDATE rooms SET owner_id=?,version=?,status=?,payload=?,updated_at=? WHERE code=? AND version=?').run(room.owner_id,version,room.status,JSON.stringify(room.payload),now,room.code,room.version);
     requireThat(result.changes===1,409,'房间状态已经更新，请刷新后重试');room.version=version;room.updated_at=now;
@@ -121,6 +139,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
     db.prepare('DELETE FROM rooms WHERE code=?').run(code);
   }
   function finishRoomDeletion(code){
+    for(const key of hotseatGrants.keys())if(key.startsWith(code+':'))hotseatGrants.delete(key);
     clearTimeout(botTimers.get(code));botTimers.delete(code);
     for(const client of clients)if(client.code===code){client.res.write('event: deleted\ndata: {}\n\n');client.res.end();}
     try{db.exec('PRAGMA incremental_vacuum; PRAGMA wal_checkpoint(TRUNCATE);');}
@@ -213,7 +232,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
       }
       if(artFiles.has(path)){
         const content=readFileSync(resolve(root,'frontend','.'+path));
-        res.writeHead(200,{'Content-Type':'image/webp','Content-Length':content.length,'Cache-Control':'public, max-age=31536000, immutable'});
+        res.writeHead(200,{'Content-Type':path.endsWith('.png')?'image/png':'image/webp','Content-Length':content.length,'Cache-Control':'public, max-age=31536000, immutable'});
         return res.end(content);
       }
       const assets={'/':['index.html','text/html; charset=utf-8'],'/app.js':['app.js','text/javascript; charset=utf-8'],'/styles.css':['styles.css','text/css; charset=utf-8'],'/asset-manifest.json':['asset-manifest.json','application/json; charset=utf-8']};
@@ -330,17 +349,29 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
       const games=db.prepare('SELECT id,room_code,state,updated_at FROM games ORDER BY updated_at DESC LIMIT 500').all().flatMap(g=>{const s=JSON.parse(g.state);if(!s.players.some(p=>p.id===u.id))return [];return [{id:g.id,roomCode:g.room_code,updatedAt:g.updated_at,round:s.round,winner:s.winner,players:s.players.map(p=>({id:p.id,name:p.name,score:p.score})),ruleset:s.ruleset}];});return json(res,200,{games});
     }
     const gameMatch=path.match(/^\/api\/games\/([a-f0-9-]+)$/);
-    if(method==='GET'&&gameMatch){const row=db.prepare('SELECT state FROM games WHERE id=?').get(gameMatch[1]);requireThat(row,404,'对局不存在');const g=JSON.parse(row.state);requireThat(g.players.some(p=>p.id===u.id),403,'无权读取该对局');return json(res,200,{game:projectGame(g,u.id)});}
+    if(method==='GET'&&gameMatch){const row=db.prepare('SELECT state FROM games WHERE id=?').get(gameMatch[1]);requireThat(row,404,'对局不存在');const g=JSON.parse(row.state);requireThat(g.players.some(p=>p.id===u.id),403,'无权读取该对局');const owner=getRoom(row.room_code||db.prepare('SELECT room_code FROM games WHERE id=?').get(gameMatch[1]).room_code);return json(res,200,{game:owner.payload.playMode==='hotseat'?publicGame(g):projectGame(g,u.id)});}
     if(method==='POST'&&path==='/api/rooms'){
       throttle(`create:${u.id}`,10);const b=await body(req),name=nameOf(b.name),title=nameOf(b.title||'林间小聚'),pw=password(b.password??'',true);
       const ruleset=b.ruleset||LIZARD_RULESET;requireThat(supportedRulesets().includes(ruleset),422,'不支持所选游戏模式');
       const capacity=b.capacity??4;requireThat([2,3,4].includes(capacity),422,'房间人数应为二至四人');
+      const playMode=b.playMode||'online';requireThat(['online','hotseat'].includes(playMode),422,'不支持所选游玩方式');requireThat(playMode!=='hotseat'||['root-base-four-v5',LIZARD_RULESET].includes(ruleset),422,'同屏游玩请选择标准规则');
       const hash=pw?await hashPassword(pw):null;
       const room=transaction(()=>{requireCurrentSession(req,u);requireThat(db.prepare("SELECT count(*) n FROM rooms WHERE owner_id=? AND status!='closed'").get(u.id).n<10,422,'最多同时拥有 10 个房间');let code;do{code=String(randomInt(100000,1000000));}while(db.prepare('SELECT 1 FROM rooms WHERE code=?').get(code));
-        const payload={capacity,ruleset,members:[{userId:u.id,name,faction:'cat',ready:false,seat:0}],game:null,gameId:null};db.prepare('INSERT INTO rooms VALUES(?,?,?,?,?,?,?,?)').run(code,u.id,title,hash,0,'waiting',JSON.stringify(payload),Date.now());return getRoom(code);});
-      return json(res,201,{room:roomView(room,u.id)});
+        const payload={capacity,ruleset,playMode,members:[{userId:u.id,name,faction:'cat',ready:false,seat:0}],game:null,gameId:null};db.prepare('INSERT INTO rooms VALUES(?,?,?,?,?,?,?,?)').run(code,u.id,title,hash,0,'waiting',JSON.stringify(payload),Date.now());return getRoom(code);});
+      return json(res,201,{room:roomView(room,u.id,req)});
     }
-    const m=path.match(/^\/api\/rooms\/(\d{6})(?:\/(join|events|command|delete))?$/);requireThat(m,404,'接口不存在');const [,code,operation]=m;
+    const m=path.match(/^\/api\/rooms\/(\d{6})(?:\/(join|events|command|delete|companion))?$/);requireThat(m,404,'接口不存在');const [,code,operation]=m;
+    if(method==='POST'&&operation==='companion'){
+      throttle(`companion:${u.id}`,20);const b=await body(req),initial=getRoom(code);
+      requireThat(initial.payload.playMode==='hotseat'&&initial.status!=='closed',409,'请选择可用的同屏房间');
+      if(!member(initial,u.id)){
+        requireThat(!initial.payload.adminPrivate||initial.password_hash,403,'该私密房间仅限现有成员');
+        if(initial.password_hash)requireThat(await verifyPassword(password(b.password??'',true),initial.password_hash),403,'房间密码错误');
+      }
+      const room=transaction(()=>{requireCurrentSession(req,u);const r=getRoom(code);requireThat(r.status!=='closed'&&r.password_hash===initial.password_hash&&!!r.payload.adminPrivate===!!initial.payload.adminPrivate,409,'房间访问设置已变化，请重试');r.payload.companions||=[];
+        if(!r.payload.companions.some(m=>m.userId===u.id)){requireThat(r.payload.companions.length<12,409,'辅助端人数已满');r.payload.companions.push({userId:u.id,username:u.username});persist(r,{type:'companion-join'},u.id);}return r;});
+      notify(code);return json(res,200,{room:roomView(room,u.id,{...req,headers:{...req.headers,'x-woodland-companion':'1'}})});
+    }
     if(method==='POST'&&operation==='delete'){
       const b=await body(req);
       requireThat(Number.isInteger(b.version)&&b.version>=0,422,'缺少状态版本');
@@ -354,27 +385,91 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
       return json(res,200,{deleted:true});
     }
     if(method==='POST'&&operation==='join'){
-      throttle(`join:${u.id}`,20);const b=await body(req),name=nameOf(b.name),pw=password(b.password??'',true);const initial=getRoom(code);
+      throttle(`join:${u.id}`,20);const b=await body(req),name=nameOf(b.name),pw=password(b.password??'',true);const initial=getRoom(code);requireThat(initial.payload.playMode!=='hotseat'||initial.owner_id===u.id,403,'同屏房间由房主配置本地玩家');
       if(!member(initial,u.id)){
         requireThat(!initial.payload.adminPrivate||initial.password_hash,403,'该私密房间仅限现有成员');
         if(initial.password_hash)requireThat(await verifyPassword(pw,initial.password_hash),403,'房间密码错误');
       }
       const room=transaction(()=>{const r=getRoom(code);requireCurrentSession(req,u);requireThat(r.password_hash===initial.password_hash&&!!r.payload.adminPrivate===!!initial.payload.adminPrivate,409,'房间访问设置已更新，请重试');if(member(r,u.id))return r;requireThat(r.status==='waiting'&&r.payload.members.length<(r.payload.capacity||2),409,'房间已满或对局已经开始');requireThat(!r.payload.members.some(p=>p.name===name),409,'本房间已有同名玩家');
-        const factions=roomFactions(r.payload);const faction=factions.find(faction=>!r.payload.members.some(player=>player.faction===faction))||factions[0];r.payload.members.push({userId:u.id,name,faction,ready:false,seat:vacantSeat(r,b.seat)});persist(r,{type:'join'},u.id);return r;});notify(code);return json(res,200,{room:roomView(room,u.id)});
+        const factions=roomFactions(r.payload);const faction=factions.find(faction=>!r.payload.members.some(player=>player.faction===faction))||factions[0];r.payload.members.push({userId:u.id,name,faction,ready:false,seat:vacantSeat(r,b.seat)});persist(r,{type:'join'},u.id);return r;});notify(code);return json(res,200,{room:roomView(room,u.id,req)});
     }
     const r=getRoom(code);requireThat(member(r,u.id),403,'你不在这个房间');
-    if(method==='GET'&&!operation)return json(res,200,{room:roomView(r,u.id)});
+    if(method==='GET'&&!operation)return json(res,200,{room:roomView(r,u.id,req)});
     if(method==='GET'&&operation==='events'){
-      requireThat([...clients].filter(c=>c.userId===u.id).length<8,429,'已打开过多房间连接');res.writeHead(200,{'Content-Type':'text/event-stream; charset=utf-8','Cache-Control':'no-store','Connection':'keep-alive','X-Accel-Buffering':'no'});res.write(`retry: 2500\ndata: ${JSON.stringify(roomView(r,u.id))}\n\n`);
+      requireThat([...clients].filter(c=>c.userId===u.id).length<8,429,'已打开过多房间连接');res.writeHead(200,{'Content-Type':'text/event-stream; charset=utf-8','Cache-Control':'no-store','Connection':'keep-alive','X-Accel-Buffering':'no'});res.write(`retry: 2500\ndata: ${JSON.stringify(roomView(r,u.id,req))}\n\n`);
       const client={req,res,userId:u.id,code};clients.add(client);res.on('close',()=>clients.delete(client));return;
     }
     if(method==='POST'&&operation==='command'){
       const b=await body(req);requireThat(typeof b.commandId==='string'&&/^[a-zA-Z0-9-]{8,80}$/.test(b.commandId),422,'操作必须带有唯一标识');requireThat(Number.isInteger(b.version)&&b.version>=0,422,'缺少状态版本');
       requireThat(b.command&&typeof b.command==='object'&&!Array.isArray(b.command),422,'缺少操作');const hash=sha(JSON.stringify(b.command));
+      let confirmed=null,lockController=false,actedAs=u.id;
       const room=transaction(()=>{requireCurrentSession(req,u);const r=getRoom(code);const me=member(r,u.id);requireThat(me,403,'你不在这个房间');const previous=db.prepare('SELECT body_hash FROM commands WHERE room_code=? AND user_id=? AND command_id=?').get(code,u.id,b.commandId);
         if(previous){requireThat(previous.body_hash===hash,409,'同一操作标识不能用于不同操作');return r;}
         requireThat(r.version===b.version,409,'房间状态已改变，已刷新，请重新操作');const c=b.command;
-        if(c.type==='ruleset'){
+        const local=r.payload.playMode==='hotseat';
+        const phone=local&&(u.id!==r.owner_id||companionRequest(req));
+        if(phone)requireThat(['claim-request','claim-cancel','mobile-confirm','companion-hide','companion-leave','action'].includes(c.type),403,'手机辅助端不能管理房间或接管其他席位');
+        if(local)requireThat(!['profile','ready','bot-add','bot-profile','bot-remove','resign'].includes(c.type),422,'请使用同屏席位设置或交接操作');
+        if(c.type==='claim-request'){
+          requireThat(local&&phone,403,'请从手机认领入口申请');requireThat(r.status!=='closed',409,'房间已关闭');
+          requireThat(r.payload.members.some(m=>m.userId===c.seatId),422,'席位不存在');
+          requireThat(!claimedSeat(r.payload,u.id),409,'你已认领一个席位，请先解除绑定');
+          requireThat(!r.payload.claims?.[c.seatId],409,'该席位已经被认领');
+          r.payload.claimRequests=(r.payload.claimRequests||[]).filter(q=>q.accountId!==u.id);
+          r.payload.claimRequests.push({id:randomUUID(),accountId:u.id,username:u.username,seatId:c.seatId});
+        }else if(['claim-approve','claim-reject','claim-release'].includes(c.type)){
+          requireThat(local&&r.owner_id===u.id&&!phone,403,'只有PC房主可以确认或解除认领');
+          if(c.type==='claim-release'){
+            requireThat(r.payload.claims?.[c.seatId],422,'席位尚未绑定');delete r.payload.claims[c.seatId];
+            for(const [key,value] of hotseatGrants)if(key.startsWith(code+':')&&value.actor===c.seatId)hotseatGrants.delete(key);
+          }else{
+            const q=r.payload.claimRequests?.find(q=>q.id===c.requestId);requireThat(q,409,'申请已失效');
+            if(c.type==='claim-approve'){
+              requireThat(r.payload.members.some(m=>m.userId===q.seatId)&&!r.payload.claims?.[q.seatId]&&!claimedSeat(r.payload,q.accountId),409,'该账号或席位已绑定');
+              r.payload.claims||={};r.payload.claims[q.seatId]={accountId:q.accountId,username:q.username};
+              r.payload.claimRequests=r.payload.claimRequests.filter(other=>other.seatId!==q.seatId&&other.accountId!==q.accountId);
+            }else r.payload.claimRequests=r.payload.claimRequests.filter(other=>other!==q);
+          }
+        }else if(c.type==='claim-cancel'){
+          requireThat(phone,403,'请使用辅助端');r.payload.claimRequests=(r.payload.claimRequests||[]).filter(q=>q.accountId!==u.id);
+        }else if(c.type==='companion-leave'){
+          requireThat(phone,403,'请使用辅助端');
+          const seat=claimedSeat(r.payload,u.id);if(seat){delete r.payload.claims[seat.userId];for(const [key,value] of hotseatGrants)if(key.startsWith(code+':')&&value.actor===seat.userId)hotseatGrants.delete(key);}
+          r.payload.companions=(r.payload.companions||[]).filter(m=>m.userId!==u.id);r.payload.claimRequests=(r.payload.claimRequests||[]).filter(q=>q.accountId!==u.id);
+        }else if(c.type==='companion-hide'){
+          requireThat(phone,403,'请使用辅助端');const seat=claimedSeat(r.payload,u.id);for(const [key,value] of hotseatGrants)if(key.startsWith(code+':')&&value.role==='companion'&&value.actor===seat?.userId)hotseatGrants.delete(key);
+        }else if(c.type==='mobile-confirm'){
+          const seat=claimedSeat(r.payload,u.id),q=r.payload.game?.effects?.frames[0];
+          requireThat(phone&&seat&&r.status==='playing'&&q?.type==='choice'&&q.playerId===seat.userId,403,'当前没有属于你的临时决策');
+          requireThat(c.actorId===seat.userId&&c.epoch===(r.payload.controlEpoch||0),409,'决策已变化，请刷新');
+          const key=controllerKey(req,code);requireThat(key,422,'请刷新辅助端');confirmed={key,actor:seat.userId,stamp:hotseatStamp(r.payload),role:'companion'};
+        }else if(c.type==='hotseat-confirm'||c.type==='hotseat-lock'){
+          requireThat(local&&r.owner_id===u.id&&r.status==='playing'&&!r.payload.game.winner,403,'当前不能接管同屏席位');
+          const key=controllerKey(req,code);requireThat(key,422,'缺少本机交接标识，请刷新');
+          if(c.type==='hotseat-confirm'){
+            const actor=hotseatActor(r.payload.game);requireThat(c.actorId===actor&&c.epoch===(r.payload.controlEpoch||0),409,'操作玩家已变化，请重新确认');
+            confirmed={key,actor,stamp:hotseatStamp(r.payload),role:'pc'};
+          }else lockController=true;
+        }else if(['local-add','local-profile','local-remove'].includes(c.type)){
+          requireThat(local&&r.owner_id===u.id&&r.status==='waiting',403,'仅同屏房主可在开局前配置本地玩家');
+          if(c.type==='local-add'){
+            requireThat(r.payload.members.length<(r.payload.capacity||2),409,'房间已满');
+            const factions=roomFactions(r.payload),seat=vacantSeat(r,c.seat);
+            const faction=factions.find(f=>!r.payload.members.some(m=>m.faction===f))||factions.find(f=>!r.payload.members.some(m=>m.ready&&m.faction===f));requireThat(faction,409,'没有可用阵营');
+            const entry={userId:`local-${randomUUID()}`,name:nameOf(c.name||`本地玩家 ${seat+1}`),faction,ready:false,local:true,seat};
+            validateIdentity(r,entry,entry.name,faction,false);r.payload.members.push(entry);
+          }else{
+            const entry=r.payload.members.find(m=>m.userId===c.userId);requireThat(entry,422,'席位不存在');
+            if(c.type==='local-remove'){
+              requireThat(entry.userId!==r.owner_id,422,'房主席位不能移除');r.payload.members=r.payload.members.filter(m=>m!==entry);
+              if(r.payload.claims)delete r.payload.claims[entry.userId];r.payload.claimRequests=(r.payload.claimRequests||[]).filter(q=>q.seatId!==entry.userId);
+            }else{
+              requireThat(typeof c.ready==='boolean',422,'准备状态错误');const name=nameOf(c.name);validateIdentity(r,entry,name,c.faction,c.ready);
+              entry.name=name;entry.faction=c.faction;entry.ready=c.ready;
+            }
+          }
+        }else if(c.type==='ruleset'){
+          requireThat(!local||['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset),422,'同屏游玩请选择标准规则');
           requireThat(r.owner_id===u.id,403,'只有房主可以更改规则');requireThat(r.status==='waiting',409,'开始后不能更改规则');
           requireThat(supportedRulesets().includes(c.ruleset),422,'不支持所选游戏模式');
           const proposed={...r.payload,ruleset:c.ruleset};
@@ -417,13 +512,19 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
           me.ready=c.ready;
         }
         else if(c.type==='start'){
+          requireThat(!local||['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset),422,'同屏游玩请选择标准规则');
           requireThat(r.owner_id===u.id,403,'只有房主可以开始');requireThat(r.status==='waiting'&&r.payload.members.length>=2&&r.payload.members.every(m=>m.ready),409,'至少两位玩家，且全部准备');
           requireThat(new Set(r.payload.members.map(player=>player.faction)).size===r.payload.members.length,409,'阵营重复，请重新选择并准备');
           requireThat(['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset)||r.payload.members.length===2,422,'三至四人请选择基础四阵营规则');
           requireThat(!r.payload.members.some(player=>player.bot)||['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset),422,'人机对局请选择基础四阵营模式');
           requireThat(supportedRulesets().includes(c.ruleset),422,'不支持所选游戏模式');r.payload.ruleset=c.ruleset;r.payload.game=createGame(r.payload.members,undefined,c.ruleset);r.payload.gameId=randomUUID();r.status='playing';
         }else if(c.type==='action'){
-          requireThat(r.status==='playing'&&r.payload.game,409,'没有进行中的对局');r.payload.game=applyAction(r.payload.game,u.id,c.action);if(r.payload.game.winner)r.status='finished';
+          requireThat(r.status==='playing'&&r.payload.game,409,'没有进行中的对局');let actor=u.id;
+          if(local){const grant=hotseatGrants.get(controllerKey(req,code));actor=hotseatActor(r.payload.game);requireThat(grant?.stamp===hotseatStamp(r.payload)&&grant.actor===actor,403,'请先由当前玩家确认接管');
+            if(phone){const seat=claimedSeat(r.payload,u.id),q=r.payload.game.effects?.frames[0];requireThat(grant.role==='companion'&&seat?.userId===actor&&q?.type==='choice'&&q.playerId===actor,403,'辅助端只能处理本席位的临时决策');}
+            else requireThat(grant.role!=='companion',403,'请在PC确认接管');
+          }
+          actedAs=actor;r.payload.game=applyAction(r.payload.game,actor,c.action);if(r.payload.game.winner)r.status='finished';
         }else if(c.type==='new-game'){
           requireThat(r.owner_id===u.id,403,'只有房主可以新建下一局');requireThat(r.status==='finished',409,'请先完成当前对局');r.payload.game=null;r.payload.gameId=null;r.payload.botError=null;r.payload.members.forEach(m=>m.ready=!!m.bot);r.status='waiting';
         }else if(c.type==='resign'){
@@ -431,11 +532,16 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
           // Resignation is a state-changing game action and receives a snapshot.
           persist(r,{type:'action',action:{type:'resign'}},u.id);
         }else if(c.type==='leave'){
-          requireThat(r.status!=='playing',409,'请先完成对局或认输，再离开房间');r.payload.members=r.payload.members.filter(m=>m.userId!==u.id);const humans=r.payload.members.filter(player=>!player.bot);if(!humans.length)r.status='closed';else if(r.owner_id===u.id)r.owner_id=humans[0].userId;
+          requireThat(r.status!=='playing',409,'请先完成对局或认输，再离开房间');
+          if(local){r.payload.members=[];r.payload.companions=[];r.payload.claims={};r.payload.claimRequests=[];r.status='closed';}
+          else{r.payload.members=r.payload.members.filter(m=>m.userId!==u.id);const humans=r.payload.members.filter(player=>!player.bot);if(!humans.length)r.status='closed';else if(r.owner_id===u.id)r.owner_id=humans[0].userId;}
         }else throw error(422,'未知房间操作');
-        if(c.type!=='resign')persist(r,c,u.id);
-        db.prepare('INSERT INTO commands VALUES(?,?,?,?,?,?)').run(code,u.id,b.commandId,hash,r.version,Date.now());return r;});notify(code);scheduleBot(code);
-      return json(res,200,{room:member(room,u.id)?roomView(room,u.id):null});
+        if(c.type!=='resign')persist(r,c,actedAs);
+        db.prepare('INSERT INTO commands VALUES(?,?,?,?,?,?)').run(code,u.id,b.commandId,hash,r.version,Date.now());return r;});
+      if(confirmed){for(const key of hotseatGrants.keys())if(key.startsWith(code+':'))hotseatGrants.delete(key);if(hotseatGrants.size>=1024)hotseatGrants.delete(hotseatGrants.keys().next().value);hotseatGrants.set(confirmed.key,confirmed);}
+      if(lockController)for(const key of hotseatGrants.keys())if(key.startsWith(code+':'))hotseatGrants.delete(key);
+      notify(code);scheduleBot(code);
+      return json(res,200,{room:member(room,u.id)?roomView(room,u.id,req):null});
     }
     throw error(404,'接口不存在');
   }

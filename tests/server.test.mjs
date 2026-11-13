@@ -36,8 +36,15 @@ test('HTTP accounts, room isolation, concurrency, snapshots and restart recovery
     assert.ok(Object.values(art.symbols).every(Boolean));
     for(const path of art.files){
       const image=await fetch(base+path);assert.equal(image.status,200,path);
-      assert.equal(image.headers.get('content-type'),'image/webp');
-      const bytes=Buffer.from(await image.arrayBuffer());assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
+      const bytes=Buffer.from(await image.arrayBuffer());
+      if(path.endsWith('.png')){
+        assert.equal(image.headers.get('content-type'),'image/png');
+        assert.deepEqual([...bytes.subarray(0,8)],[137,80,78,71,13,10,26,10]);
+        assert.equal(bytes.toString('ascii',12,16),'IHDR');assert.equal(bytes[25],6,'Transparent icons retain RGBA pixels');
+      }else{
+        assert.equal(image.headers.get('content-type'),'image/webp');
+        assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
+      }
     }
     assert.equal((await fetch(base+'/assets/original/unlisted.webp')).status,404);
     assert.equal((await fetch(base+'/assets/original/../../backend/server.mjs')).status,404);

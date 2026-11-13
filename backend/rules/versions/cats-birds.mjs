@@ -112,9 +112,9 @@ function beginTurn(s,rng) {
 function nextTurn(s,rng) { s.turn=1-s.turn; s.turnsCompleted++; s.round=1+Math.floor(s.turnsCompleted/2); beginTurn(s,rng); }
 function daylight(s) { s.phase='daylight-start'; front(s,[frame('commandwarren'),frame('craft-phase')]); }
 function evening(s) { s.phase='evening-start'; if(crafted(current(s),'cobbler')&&!s.usedEffects.includes(crafted(current(s),'cobbler').id))s.phase='evening';else front(s,[frame('evening-score')]); }
-const eveningPhases=['evening','military','lizard-craft','discard','capacity','evening-end'];
+const eveningPhases=['evening','military','lizard-craft'];
 function availableCobbler(s,p=current(s)) { return eveningPhases.includes(s.phase) && p.crafted.find(card=>card.kind==='cobbler'&&!s.usedEffects.includes(card.id)); }
-function finishEvening(s,rng) { if(availableCobbler(s))s.phase='evening-end';else nextTurn(s,rng); }
+function finishEvening(s,rng) { nextTurn(s,rng); }
 function cobblerOptions(s,p) { return availableCobbler(s,p)?moveOptions(s,p.faction).map(action=>({category:'补鞋匠',label:`${action.from} → ${action.to} · ${action.count} 名`,action:{...action,cobbler:true}})):[]; }
 
 function move(s,p,a) {
@@ -358,7 +358,7 @@ function execute(s,p,a,rng) {
   if (a.type==='birdsong-end') {
     ensure(s.phase==='birdsong','当前不在清晨');
     if (p.faction==='bird') { if (!p.hand.length) draw(s,p,1,rng); s.phase='decree-add'; }
-    else { s.woodPending=s.board.flatMap(c => c.buildings.filter(b => b.faction==='cat' && b.type==='sawmill').map(() => c.id)); s.phase='wood'; if (!s.woodPending.length || woodCount(s)===8) daylight(s); }
+    else { s.woodPending=s.board.flatMap(c => c.buildings.filter(b => b.faction==='cat' && b.type==='sawmill').map(() => c.id)); s.phase='wood'; if (!s.woodPending.length || woodCount(s)===8) daylight(s); else if(s.woodPending.length<=8-woodCount(s)){for(const id of s.woodPending)areaOf(s,id).wood++;s.woodPending=[];daylight(s);} }
     return;
   }
   if (a.type==='wood') {

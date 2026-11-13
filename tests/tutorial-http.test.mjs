@@ -39,9 +39,12 @@ test('tutorial HTTP progress, private saves, retries and restart recovery',async
  await app.close();await start();room=(await request(learner,'/api/tutorials/basics')).body.room;assert.deepEqual(room,before);
  for(const lesson of (await request(learner,'/api/tutorials')).body.lessons){
   room=(await request(learner,`/api/tutorials/${lesson.id}/start`,{})).body.room;
-  let commands=0,journeyRestored=false;
+  let commands=0,journeyRestored=false,storyRestored=false;
   while(!room.tutorial.completed){
-   assert.ok(commands++<150);
+   assert.ok(commands++<250);
+   if(!storyRestored&&(room.tutorial.stepId==='bird-defense'&&room.game.choice?.kind==='battle-effects'||room.tutorial.stepId==='wa-guerrilla'&&room.game.choice?.kind==='outrage'||room.tutorial.stepId==='vg-injury'&&room.game.choice?.kind==='vagabond-damage'||room.tutorial.stepId==='liz-third-night'&&room.game.phase==='discard')){
+    const saved=room;await app.close();await start();room=(await request(learner,`/api/tutorials/${lesson.id}`)).body.room;assert.deepEqual(room,saved);storyRestored=true;
+   }
    if(room.tutorial.stepId==='journey-second'&&!journeyRestored){
     const saved=room;await app.close();await start();
     room=(await request(learner,`/api/tutorials/${lesson.id}`)).body.room;

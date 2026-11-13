@@ -108,6 +108,8 @@ def run():
      chapter_trace_start=len(trace)
      basics_checks=set()
      page.locator(f'[data-action=tutorial-start][data-lesson={lesson}]').click();expect(page.locator('.tutorial-coach')).to_be_visible()
+     if os.environ.get('TUTORIAL_QUICK')=='1' and lesson==selected[0]:
+      page.locator('[data-action=preferences]').click();page.locator('.experience-dialog [name=motion]').select_option('off');page.locator('[data-close-experience]').click()
      if motion_audit and lesson==selected[0]:
       page.locator('[data-action=preferences]').click();expect(page.locator('.experience-dialog')).to_be_visible()
       page.locator('.experience-dialog [name=volume]').fill('0.15')
@@ -123,7 +125,7 @@ def run():
        page.locator('[data-action=tutorial-guide-next]').click();trace.append({'lesson':lesson,'step':'overview','action':'guide-next','motionOff':True})
        expect(page.locator('.guide-line')).to_contain_text('雄心勃勃');expect(page.locator('svg.map')).to_have_attribute('data-camera-moving','false')
       page.locator('[data-action=preferences]').click();page.locator('.experience-dialog [name=motion]').select_option('full');page.locator('[data-close-experience]').click()
-     expect(page.locator('.scoreboard .victory-track progress')).to_have_count(4)
+     expect(page.locator('.scoreboard .victory-track progress')).to_have_count(4 if lesson=='basics' else 2)
      expect(page.locator('.own-resources .victory-track progress')).to_have_count(1)
      if lesson=='cats':expect(page.locator('.own-resources .building-track')).to_have_count(3)
      if lesson in ['eyrie','alliance','vagabond']:
@@ -131,6 +133,12 @@ def run():
      def view():return page.evaluate("id=>fetch('/api/tutorials/'+id).then(r=>r.json()).then(r=>r.room)",lesson)
      for count in range(250):
       room=view();meta=room['tutorial'];acted=False
+      # The API save may finish before the current UI and its deferred preview render.
+      expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-tutorial-version',str(room['version']))
+      page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
+      if lesson=='lizard':assert page.locator('.clearing-unit.lizard').evaluate_all("els=>els.every(e=>getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)')"),'Solid CSS backing around transparent Lizard soldier'
+      if page.locator('dialog.tutorial-card-preview[open]').count():
+       expect(page.locator('dialog[open] .full-card-art')).to_be_visible();page.locator('dialog[open] [data-close-preview]').click();page.locator('[data-action=tutorial-craft-preview]').click();expect(page.locator('dialog.tutorial-card-preview[open]')).to_be_visible();page.locator('dialog[open] [data-close-preview]').click()
       if meta['completed']:break
       if lesson=='basics' and meta['stepId']=='overview' and meta['guide']['cursor']==1 and 'back' not in basics_checks:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'guide-back'});page.locator('[data-action=tutorial-guide-back]').click()
@@ -150,15 +158,31 @@ def run():
        page.reload();expect(page.locator('.tutorial-coach')).to_be_visible();assert view()['version']==reset['version'];retried=True;continue
       if count==2:
        page.reload();expect(page.locator('.tutorial-coach')).to_be_visible();assert view()['version']==room['version']
+       expect(page.locator('.tutorial-dialogue')).to_have_attribute('data-tutorial-version',str(room['version']))
+       page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
+       if page.locator('dialog.tutorial-card-preview[open]').count():page.locator('dialog[open] [data-close-preview]').click()
       if meta.get('guide',{} ) and meta['guide']['canAdvance']:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'guide-next'});page.locator('[data-action=tutorial-guide-next]').click()
       elif meta['ready']:
        trace.append({'lesson':lesson,'step':meta['stepId'],'action':'next'});page.locator('[data-action=tutorial-next]').click()
       elif (meta.get('guide') or {}).get('watch'):
-       trace.append({'lesson':lesson,'step':meta['stepId'],'action':'coach-next'});page.locator('[data-action=tutorial-coach-next]').click()
+       trace.append({'lesson':lesson,'step':meta['stepId'],'action':'auto-observe' if meta['guide'].get('auto') else 'coach-next'})
+       if not meta['guide'].get('auto'):page.locator('[data-action=tutorial-coach-next]').click()
       else:
        acted=True
-       action=plan(room);trace.append({'lesson':lesson,'step':meta['stepId'],'action':action})
+       action=plan(room)
+       if os.environ.get('TUTORIAL_BRANCHES')=='1' and meta.get('context',{}).get('story'):
+        choices=meta['guide'].get('alternatives',[])
+        if meta['stepId']=='bird-day4-execute' and action['type']=='move':action=max(choices,key=lambda a:a.get('count',0))
+        if meta['stepId']=='wa-development':action=next(a for a in choices if a['type']=='train')
+        if meta['stepId']=='liz-own-conspiracy':action={'type':'conspiracies-done'}
+        if meta['stepId']=='liz-own-ritual':action=choices[-1]
+        if meta['stepId']=='vg-own-plan':action=next(a for a in choices if a.get('reward')=='cards') if os.environ.get('TUTORIAL_VG_REWARD')=='cards' else next(a for a in choices if a['type']=='special')
+        if meta['stepId']=='wa-own-night' and room['game']['phase']=='military':
+         action=next((a for a in choices if a['type']=='recruit'),{'type':'military-done'})
+         if action['type']=='recruit':
+          page.locator('[data-map-mode]').filter(has_text='招募').first.click();assert page.locator('.guide-route').count()==0,'Recruit must not retain the suggested movement route'
+       trace.append({'lesson':lesson,'step':meta['stepId'],'action':action})
        if lesson=='basics':basics_action(page,room,action)
        else:
         try:click_action(page,room['game'],action)
@@ -199,8 +223,10 @@ def run():
      expected={'move','dice','score','camera'} if selected==['basics'] else {'move','build','dice','draw','score','turmoil','revolt','camera'}
      assert expected.issubset(set(motion_events)),(expected,set(motion_events))
     report={'passed':True,'chapters':len(selected),'nodes':sum(l['stepCount'] for l in catalog if l['id'] in selected),'commands':len(trace),'pageErrors':errors,'checks':['normal signup and tutorial entry','all actions through existing map UI','reload restores every chapter','completion progress saved','mobile no overflow']+(['basics dialogue back and reload','basics checkpoint retry and reload','map-only move without dropdowns','disabled target is inert','cancel and reselect move','keyboard map source selection','map confirmation hit testing'] if 'basics' in selected else []),'fixture':'No browser-injected game states. Scenes are prepared by the tutorial server.'}
+    if os.environ.get('TUTORIAL_BRANCHES')=='1':report['checks']+=([ 'Eyrie alternative move count','Alliance training alternative','autonomous recruitment without stale movement route'] if 'eyrie' in selected else [])+(['Lizard retains acolytes and chooses alternative recruitment','Vagabond chooses quest cards over points' if os.environ.get('TUTORIAL_VG_REWARD')=='cards' else 'Vagabond chooses theft over a competing quest'] if 'lizard' in selected else [])
+    if os.environ.get('TUTORIAL_QUICK')=='1':report['motionSetting']='off via normal preferences controls for this targeted run; production defaults unchanged'
     if motion_audit:
-     assert playbacks and all(sample['milliseconds']>=1450 for sample in playbacks),playbacks
+     assert playbacks and all(sample['milliseconds']>=(900 if sample['kind'] in ['outrage','supporter'] else 1450) for sample in playbacks),playbacks
      if 'eyrie' in selected:assert any(sample['kind']=='turmoil' and set(sample['stages'])=={'0','1','2'} and sample['milliseconds']>=5900 for sample in playbacks),playbacks
      report.update(motionKinds=sorted(set(motion_events)),audioStarts=len(audio_starts),playbacks=playbacks,settingsChecks=['explicit audio playback','mute suppresses playback','sound/motion preferences persist across reload']+(['motion-off snaps camera'] if 'basics' in selected else []))
     (OUTPUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(report),flush=True);browser.close()

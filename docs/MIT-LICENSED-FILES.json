@@ -103,7 +103,20 @@
     "tools/improvements_browser.py",
     "tools/lizard_browser.py",
     "tools/room_seats_browser.py",
-    "tools/tutorial_browser.py"
+    "tools/tutorial_browser.py",
+    "backend/hotseat.mjs",
+    "tests/hotseat.test.mjs",
+    "tools/hotseat_browser.py",
+    "docs/DEVELOPMENT-1.1.3.md",
+    "tests/hotseat-claims.test.mjs",
+    "tools/hotseat_claims_browser.py",
+    "frontend/companion-map.js",
+    "tests/companion-map.test.mjs",
+    "tools/feedback_browser.py",
+    "backend/tutorial-stories.mjs",
+    "tests/tutorial-stories.test.mjs",
+    "tests/tutorial-resource-stories.test.mjs",
+    "docs/DEPLOYMENT-DEV-1.1.3-2026-11-13.md"
   ],
   "updates": [
     {
@@ -147,6 +160,12 @@
       "feature": "Development v1.1.1 Evening timing regression tests and engineering record",
       "addedFiles": 2,
       "excluded": "All original game artwork, text, audio, extraction evidence and user data remain excluded."
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "Development v1.1.3 deployment engineering record",
+      "addedFiles": 1,
+      "excluded": "Original/adapted game resources, tutorial text and local credentials/data remain outside MIT."
     }
   ]
 }

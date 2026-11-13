@@ -140,6 +140,8 @@ test('one human seat and three room bots complete games with each human faction'
       assert.equal(room.botError, null, `${faction}: ${room.botError}`);
       const raw = h.app.db.prepare('SELECT payload,version FROM rooms WHERE code=?').get(room.code);
       const state = JSON.parse(raw.payload).game;
+      // A bot can finish after the preceding room response and before this read.
+      if(state.winner){room=(await h.request(host, `/api/rooms/${room.code}`)).room;assert.equal(room.status,'finished');break;}
       const actor = state.effects.frames[0]?.playerId || state.players[state.turn].id;
       if (actor === host.id) {
         room.version = raw.version;

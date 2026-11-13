@@ -11,12 +11,12 @@ function client({failFirst=true,storageFails=false}={}) {
   const requests=[];
   const indicator={hidden:true};
   const api=runInNewContext(apiSource+';api',{
-    performance,AbortController,TypeError,Error,JSON,Object,
+    performance,AbortController,TypeError,Error,JSON,Object,controllerId:'test-controller-identity',companionMode:false,
     document:{querySelector:()=>indicator},
     sessionStorage:{getItem:()=>{if(storageFails)throw new Error('Storage unavailable');return '[]';},setItem:()=>{}},
     setTimeout:(callback,ms)=>setTimeout(callback,Math.min(ms,10)),clearTimeout,
     fetch:(path,options)=>{
-      requests.push({path,body:options.body});
+      requests.push({path,body:options.body,controller:options.headers['X-Woodland-Controller']});
       if(failFirst&&requests.length===1)return new Promise((resolve,reject)=>{
         options.signal.addEventListener('abort',()=>reject(new DOMException('Aborted','AbortError')),{once:true});
       });
@@ -34,6 +34,7 @@ test('room command retry preserves the unique ID and exact payload',async()=>{
   const c=client();const body={commandId:'same-command-123',version:7,command:{type:'ready',ready:true}};
   assert.equal((await c.api('/api/rooms/123456/command',body)).ok,true);
   assert.equal(c.requests.length,2);assert.equal(c.requests[0].body,c.requests[1].body);
+  assert.equal(c.requests[0].controller,c.requests[1].controller);
   assert.equal(c.indicator.hidden,true);
 });
 test('account creation is not automatically replayed after an ambiguous timeout',async()=>{
