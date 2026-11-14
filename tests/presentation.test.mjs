@@ -42,7 +42,7 @@ test('real tutorial move emits one public route, without a duplicate arrival spa
 });
 test('tutorial dice and scoring use authoritative results and retry does not replay a prior future',()=>{
  const run=at('basics','battle'),{next,events}=act(run);
- assert.deepEqual(events.find(event=>event.kind==='dice').values,[3,3]);
+ assert.deepEqual(events.find(event=>event.kind==='dice').values,[3,1]);
  assert.equal(events.find(event=>event.kind==='score').delta,1);
  assert.ok(events.findIndex(e=>e.kind==='dice')<events.findIndex(e=>e.kind==='score'));
  const projected=projectTutorial(next,1).game;
@@ -92,4 +92,12 @@ test('outrage announces for one second, followed by a one-second supporter fligh
  const plan=presentationPlan([{kind:'move'},{kind:'outrage'},{kind:'supporter'}]);
  assert.deepEqual(plan.map(s=>[s.event.kind,s.delay,s.duration]),[['move',0,1800],['outrage',1800,1000],['supporter',2800,1000]]);
  assert.equal(presentationLength(plan.map(s=>s.event)),3800);
+});
+test('battle feedback shows unequal dice before casualties, then scoring',()=>{
+ const run=at('basics','battle'),{next,events}=act(run),plan=presentationPlan(events),dice=plan.find(s=>s.event.kind==='dice'),losses=plan.filter(s=>s.event.kind==='loss');
+ assert.deepEqual(dice.event.values,[3,1]);assert.ok(losses.length>=2);assert.ok(losses.every(s=>s.delay>=dice.delay+dice.duration));assert.ok(plan.filter(s=>s.event.kind==='score').every(s=>s.delay>=Math.max(...losses.map(l=>l.delay+l.duration))));
+ const outcome=projectTutorial(next,1).tutorial.guide.outcome;assert.deepEqual(outcome.cat,[2,1]);assert.deepEqual(outcome.bird,[1,0]);assert.deepEqual(outcome.roost,[1,0]);
+});
+test('undefended basic lesson removes a building on zero dice through the additional hit',()=>{
+ const {next,events}=act(at('basics','defenseless'));assert.deepEqual(events.find(e=>e.kind==='dice').values,[0,0]);assert.ok(events.some(e=>e.kind==='loss'&&e.faction==='bird'&&e.pieces.includes('roost')));const outcome=projectTutorial(next,1).tutorial.guide.outcome;assert.deepEqual(outcome.cat,[1,1]);assert.deepEqual(outcome.roost,[1,0]);assert.equal(outcome.points,1);
 });

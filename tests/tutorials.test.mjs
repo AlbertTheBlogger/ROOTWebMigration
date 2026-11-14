@@ -14,13 +14,15 @@ function lizardStep(id){
  return run;
 }
 
-test('all six tutorial chapters complete through real rules and checked goals',()=>{
+test('all seven tutorial chapters complete through real rules and checked goals',()=>{
  for(const lesson of tutorialCatalog()){
   let run=createTutorial({id:'learner',username:'Learner'},lesson.id);let actions=0;const seen=new Set();
   while(!run.completed){
    assert.ok(actions++<250,lesson.id);const room=projectTutorial(run,actions);seen.add(room.tutorial.stepId);
+   if(!run.ready){assert.equal(room.tutorial.guide.mode,'act',lesson.id+': operation prompt must open its controls immediately');assert.equal(room.tutorial.guide.canAdvance,false);}
+   if(!run.ready&&room.tutorial.guide.watch&&!room.tutorial.guide.auto){const guide=room.tutorial.guide;assert.equal(guide.speakerFaction||lesson.faction,lesson.faction,'observing opponents must retain learner perspective');if(lesson.id==='cats'){assert.ok(guide.text.includes('阁下'));assert.ok(!guide.text.includes('陛下'));assert.ok(!guide.text.includes('请下令'));}}
    if(room.tutorial.guide?.outcome){
-    assert.deepEqual(room.tutorial.guide.outcome.dice,[3,3]);assert.equal(room.tutorial.guide.outcome.points,1);
+    assert.deepEqual(room.tutorial.guide.outcome.dice,room.tutorial.stepId==='battle'?[3,1]:[0,0]);assert.equal(room.tutorial.guide.outcome.points,1);
     assert.equal(room.tutorial.guide.outcome.bird[1],0);assert.equal(room.tutorial.guide.outcome.roost[1],0);
    }
    run=advanceTutorial(run,tutorialCommandFor(room));
@@ -59,9 +61,8 @@ test('basics dialogue persists line by line, gates actions and resets cleanly on
  const saved=JSON.parse(JSON.stringify(run));assert.deepEqual(projectTutorial(saved,2),projectTutorial(run,2));
  run=advanceTutorial(saved,{type:'guide-back'});assert.equal(run.guideCursor,0);
  while(run.step===0)run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
- assert.equal(projectTutorial(run,0).game.mapActions.length,0);
- assert.throws(()=>advanceTutorial(run,{type:'action',action:{type:'move',from:0,to:3,count:1}}),/听完/);
- run=advanceTutorial(run,{type:'guide-next'});
+ assert.ok(projectTutorial(run,0).game.mapActions.length>0,'the movement prompt and its controls appear together');
+ assert.equal(projectTutorial(run,0).tutorial.guide.canAdvance,false);
  const room=projectTutorial(run,0);assert.equal(room.tutorial.guide.mode,'act');
  assert.ok(room.game.mapActions.every(a=>a.type==='move'&&a.count===1&&a.from===0&&a.to===3));
  assert.throws(()=>advanceTutorial(run,{type:'action',action:{type:'move',from:0,to:3,count:3}}),/本节目标/);
@@ -142,7 +143,7 @@ test('fear with no optional defense resolves automatically and retry restores th
 
 test('four faction journeys preserve two complete turns, resources and the opponents actual replies',()=>{
  for(const lessonId of ['cats','eyrie','alliance','vagabond']){
-  let run=createTutorial({id:'learner',username:'Learner'},lessonId,{curriculumVersion:5}),commands=0;
+  let run=createTutorial({id:'learner',username:'Learner'},lessonId,{curriculumVersion:lessonId==='cats'?4:5}),commands=0;
   const boundaries=new Map(),actions=[];
   while(!run.completed){
    assert.ok(commands++<250,lessonId);
@@ -197,7 +198,7 @@ test('journey retry restores a real turn checkpoint and old faction progress ret
    assert.ok(n<250);run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
   }
   const checkpoint=structuredClone(run.game),context=structuredClone(run.context);
-  run=advanceTutorial(run,{type:'guide-next'});
+  if(projectTutorial(run,0).tutorial.guide.canAdvance)run=advanceTutorial(run,{type:'guide-next'});
   run=advanceTutorial(run,tutorialCommandFor(projectTutorial(run,0)));
   run=advanceTutorial(run,{type:'retry-step'});
   assert.deepEqual(run.game,checkpoint);assert.deepEqual(run.context,context);
@@ -218,5 +219,20 @@ test('new cats curriculum teaches actions before crafting and retains the actual
 });
 test('v4 saved tutorial indices remain stable and restarting opts into the new curriculum',()=>{
  let run=createTutorial({id:'learner',username:'Learner'},'cats');run.curriculumVersion=4;run.step=2;assert.equal(projectTutorial(run,0).tutorial.stepId,'cat-craft');
- run=advanceTutorial(run,{type:'restart'});assert.equal(run.curriculumVersion,7);assert.equal(projectTutorial(run,0).tutorial.stepId,'cat-setup');assert.equal(run.game.players.length,2);
+ run=advanceTutorial(run,{type:'restart'});assert.equal(run.curriculumVersion,9);assert.equal(projectTutorial(run,0).tutorial.stepId,'cat-setup');assert.equal(run.game.players.length,2);
+});
+
+
+test('cats removes the six duplicated tail lessons and retains old core progress without resetting the board',()=>{
+ const user={id:'learner',username:'Learner'},fresh=createTutorial(user,'cats');
+ assert.equal(tutorialCatalog().find(l=>l.id==='cats').stepCount,18);
+ const old=createTutorial(user,'cats',{curriculumVersion:8}),before=structuredClone(old);
+ const room=projectTutorial(old,0);assert.equal(room.tutorial.total,18);assert.equal(room.tutorial.stepId,'cat-setup');assert.deepEqual(old,before);
+ const next=advanceTutorial(old,tutorialCommandFor(room));assert.equal(next.curriculumVersion,9);assert.equal(next.game.setup.catCorner,0);
+ for(let step=18;step<24;step++){
+  const tail={...structuredClone(old),step,ready:false,completed:false};const view=projectTutorial(tail,3);
+  assert.equal(view.tutorial.completed,true);assert.equal(view.tutorial.stepId,'cat-finish');assert.equal(view.tutorial.total,18);
+  assert.deepEqual(tail.game,before.game,'migration never redeals or rewrites the board');
+  assert.equal(advanceTutorial(tail,{type:'restart'}).curriculumVersion,9);
+ }
 });

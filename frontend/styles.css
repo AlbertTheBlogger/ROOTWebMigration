@@ -617,3 +617,8 @@ html[data-motion=off] .tutorial-dialogue,html[data-motion=reduced] .tutorial-dia
 .presentation-layer[data-kind=revolt] .presentation-announcement { top:auto;bottom:14px;height:max-content; }
 @media(min-width:761px) { .presentation-layer[data-kind=revolt] .presentation-announcement { top:20vh;bottom:auto; } }
 .tutorial-card-preview .preview-close { width:auto;min-width:70px;font-size:14px; }
+
+/* Riverfolk public market and funds ledger. */
+.rf-ledger{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.rf-ledger>div{padding:10px;border:1px solid #bda777;border-radius:8px}.rf-token{display:inline-flex;margin:2px;padding:3px;border-radius:50%;background:#e4d4a7}.rf-market{display:flex;gap:8px;overflow:auto}.rf-market button{display:flex;flex-direction:column;flex:0 0 100px}.rf-market img{width:90px;height:130px;object-fit:contain}.rf-funds label{display:flex;align-items:center}.rf-tracks{display:flex;flex-wrap:wrap;gap:12px}.riverfolk-panel .faction-icon{width:28px;height:28px;object-fit:contain}
+
+.rf-motion-tokens{display:flex;gap:7px;justify-content:center;margin-top:14px;animation:rf-money-flow 1.8s ease-in-out both}.rf-motion-tokens img{width:34px;height:34px;object-fit:contain}@keyframes rf-money-flow{0%{opacity:0;transform:translateX(-80px)}25%{opacity:1}80%{opacity:1}100%{opacity:0;transform:translateX(80px)}}.otter{--faction:#57a8b0}

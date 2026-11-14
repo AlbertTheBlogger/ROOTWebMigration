@@ -1,4 +1,6 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party resources excluded. See LICENSE-SCOPE.md.
+import {observeOpponent} from './tutorial-observer.mjs';
+import {riverfolkStory} from './tutorial-riverfolk.mjs';
 import * as rules from './rules/versions/registry.mjs';
 
 const requireThat=(ok,message)=>{if(!ok)throw Object.assign(new Error(message),{status:422});};
@@ -7,14 +9,15 @@ const ownFaction=run=>hero(run).faction;
 const actor=run=>run.game.effects.frames[0]?.playerId||run.game.players[run.game.turn].id;
 const stepOf=(run,lesson)=>lesson.steps[run.step];
 const equal=(a,b)=>!!a&&!!b&&Object.keys(a).length===Object.keys(b).length&&Object.keys(a).every(k=>JSON.stringify(a[k])===JSON.stringify(b[k]));
-export const isStory=run=>run.curriculumVersion>=6&&['eyrie','alliance'].includes(run.lessonId)||run.curriculumVersion>=7&&['vagabond','lizard'].includes(run.lessonId);
+export const isStory=run=>run.curriculumVersion>=8&&run.lessonId==='riverfolk'||run.curriculumVersion>=6&&['eyrie','alliance'].includes(run.lessonId)||run.curriculumVersion>=7&&['vagabond','lizard','riverfolk'].includes(run.lessonId);
 function apply(run,id,action){
   let roll=0;
   // Fixed, unequal tutorial dice; random results are still recorded by real rules.
-  run.game=rules.applyAction(run.game,id,action,n=>n===4?[3,1][roll++%2]:n-1);
+  run.game=rules.applyAction(run.game,id,action,n=>n===4?(run.lessonId==='riverfolk'?3:[3,1][roll++%2]):n-1);
 }
 export function startStory(run,lesson){
   const faction=lesson.faction;
+  if(faction==='otter'){riverfolkStory(run);prepareStoryStep(run,lesson);return;}
   run.game=rules.createGame([{userId:'tutorial-cat',name:'猫咪指挥官',faction:'cat'},{userId:run.userId,name:run.playerName,faction}],n=>n-1,faction==='lizard'?'root-lizard-cult-v6':'root-base-four-v5');
   // Standard setup placements, decided once; no mid-course board rewrites.
   while(!run.game.setup.complete){
@@ -66,6 +69,7 @@ export function prepareStoryStep(run,lesson){
 function options(run,lesson){
   const g=run.game,q=g.effects.frames[0],step=stepOf(run,lesson),spec=step.sequence?.[run.context.cursor],refs=run.context.refs;
   if(q?.type==='choice'){
+    if(q.kind==='rf-disruption'&&q.playerId===run.userId)return {actions:q.options.map(o=>({type:'choice',choiceId:q.id,optionId:o.id})),interrupt:true,spec,q};
     let selected;
     if(spec?.type==='choice')selected=q.options.find(o=>o.id===spec.option);
     else if(q.playerId===run.userId&&q.kind==='vagabond-damage')selected=(step.damageItems||['boot','torch']).map(type=>q.options.find(o=>g.vagabond.items.find(i=>i.id===o.id)?.type===type)).find(Boolean);
@@ -78,10 +82,10 @@ function options(run,lesson){
     const p=g.players[g.turn],reserved=[refs.rebuildRabbit,refs.tea,refs.training,refs.wild1,refs.wild2,refs.mouseScore];
     const preferred=(step.discard||[]).map(key=>p.hand.find(c=>c.id===refs[key])).filter(Boolean);
     const cards=preferred.length?preferred:p.hand.filter(c=>!reserved.includes(c.id));
-    return {spec,interrupt:true,notice:'夜晚抽牌后手牌超过五张，先弃至五张，再轮到下一位。教学保留后续需要展示的牌。',actions:(cards.length?cards:p.hand).map(c=>({type:'discard',card:c.id}))};
+    return {spec,interrupt:true,notice:'手里的牌有些多了。先留下五张，把指定的多余手牌放下，再迎接明天。',actions:(cards.length?cards:p.hand).map(c=>({type:'discard',card:c.id}))};
   }
   if(!spec)return {actions:[],spec};
-  const id=spec.actor==='cat'?'tutorial-cat':run.userId;
+  const id=spec.actor==='cat'?'tutorial-cat':spec.actor==='bird'?'tutorial-bird':run.userId;
   requireThat(actor(run)===id,'教学操作者与回合不符：'+step.id);
   const view=rules.projectGame(g,id),p=g.players.find(p=>p.id===id);
   if(spec.type==='military-plan')return {spec,actions:[...view.mapActions.filter(a=>['move','recruit','organize'].includes(a.type)),{type:'military-done'}]};
@@ -92,33 +96,38 @@ function options(run,lesson){
   if(spec.choose&&spec.type==='recruit')return {spec,actions:view.mapActions.filter(a=>a.type==='recruit')};
   if(spec.choose&&spec.type==='decree-add')return {spec,actions:p.hand.filter(c=>c.suit==='rabbit'||c.suit==='wild').map(c=>({type:'decree-add',column:'build',card:c.id}))};
   const action={};
-  for(const [key,value] of Object.entries(spec))if(!['actor','text','focus','preview','previewQuest','decree','choose','repeat'].includes(key))action[key]=value;
+  for(const [key,value] of Object.entries(spec))if(!['actor','text','focus','preview','previewQuest','decree','choose','repeat','currency','speaker'].includes(key))action[key]=value;
   if(action.card)action.card=refs[action.card];
+  if(ownFaction(run)==='otter'&&id===run.userId&&['move','battle','rf-draw','recruit','trade-post','craft','export','forge-or-export'].includes(action.type)){const cost=action.type==='trade-post'?2:1;action.funds=g.riverfolk.funds.filter(f=>!spec.currency||f.faction===spec.currency).slice(0,cost).map(f=>f.id);if(action.type==='forge-or-export')return {spec,actions:[{...action,type:'craft'},{...action,type:'export'}]};}
   if(action.decreeCard)action.decreeCard=refs[action.decreeCard];
   if(action.item)action.item=g.vagabond.items.find(i=>i.type===action.item)?.id||action.item;
   if(action.type==='battle'&&id===run.userId&&ownFaction(run)==='bird')delete action.defender;
+  if(id==='tutorial-bird'&&['move','recruit','battle','build'].includes(action.type)&&g.phase==='decree'&&!spec.decree)action.decreeCard=g.bird.remaining[action.type][0]?.id;
   if(spec.decree){const cards=g.bird.remaining[action.type];const card=spec.decree==='any'?cards[0]:spec.decree==='vizier'?cards.find(c=>c.vizier):cards.find(c=>c.id===refs[spec.decree]);requireThat(card,'待执行法令不存在');action.decreeCard=card.id;}
   if(spec.choose&&spec.type==='move')return {spec,actions:view.mapActions.filter(a=>a.type==='move'&&a.from===action.from&&a.to===action.to)};
   return {actions:[action],spec};
 }
 function instruction(run,lesson,detail){
   const {q,spec}=detail,g=run.game;
+  if(detail.actions?.length){const observation=observeOpponent(g,run.userId,detail.actions[0]);if(observation)return observation;}
   if(detail.notice)return detail.notice;
   if(q){
-    if(q.kind==='outrage')return '敌军进入了民意领地，激起民愤。观察猫咪交出一张匹配手牌：它会成为我们的支持者，不是手牌。';
+    if(q.kind==='outrage')return '同志，猫咪闯进了有民意的林地，居民们不满了。看，它们得交出一张匹配的手牌，放进我们的支持者区。';
     if(q.kind==='battle-effects')return '陛下，昨日锻造的铠甲兵现在派上用场。弃置它，忽略对手骰子造成的伤害，保护这座支撑狐狸招募令的鸟巢。';
-    if(q.kind==='hospital')return '猫咪正在决定是否救回伤兵。此处按教学安排不发动医院，随后继续这场真实结算。';
+    if(q.kind==='hospital')return '猫咪正在决定是否救回伤兵。它们这次放弃了医院救援，伤兵不会回到城堡。';
     if(q.kind==='vagabond-damage'){const item=g.vagabond.items.find(i=>i.id===detail.actions?.[0]?.optionId);return `这次命中必须由物品承受。本次先选择${item?.type==='boot'?'靴子':'火把'}受损，保留锤子供明日修理。损坏与耗竭是两种状态：清晨恢复不会修复损坏。`;}
-    return spec?.text||q.prompt;
+    if(q.kind==='rf-disruption')return `会长，贸易站被拆了，资金栏里还得退还${q.resume.remaining}点。看看各种颜色的资金，选一枚退回它原来的供应吧。`;
+    return spec?.type==='choice'?spec.text||q.prompt:q.prompt;
   }
   if(spec?.type==='military-plan')return `今晚还剩${g.alliance.operations}次军事行动。可以招募、移动或组织；也可以提前结束。留意基地守卫，并比较每次行动留下的棋盘。`;
   return spec?.text||stepOf(run,lesson).text;
 }
+const condensedSteps=new Set(['bird-recovery-reply','bird-final-reply','wa-third-reply','wa-final-reply','rf-quiet']);
 export function advanceStory(source,command,lesson){
   const run=structuredClone(source),step=stepOf(run,lesson);
   if(command.type==='retry-step'){run.game=structuredClone(run.checkpoint.game);run.context=structuredClone(run.checkpoint.context);run.guideCursor=0;run.ready=step.goal==='read';run.count=0;run.attempt=(run.attempt||0)+1;return run;}
   if(command.type==='guide-next'||command.type==='guide-back'){
-    const guide=storyGuide(run,lesson);requireThat(command.type==='guide-next'?guide.canAdvance:guide.canBack,'请跟随当前引导');run.guideCursor+=command.type==='guide-next'?1:-1;return run;
+    const guide=storyGuide(run,lesson);requireThat(command.type==='guide-next'?guide.canAdvance:guide.canBack,'请跟随当前引导');run.guideCursor=guide.cursor+(command.type==='guide-next'?1:-1);return run;
   }
   if(command.type==='next'){
     requireThat(run.ready&&!storyGuide(run,lesson).canAdvance,'请先完成本节并听完引导');
@@ -127,7 +136,7 @@ export function advanceStory(source,command,lesson){
   requireThat(!run.ready&&storyGuide(run,lesson).mode==='act','请先听完当前引导');
   const detail=options(run,lesson),id=actor(run),watch=id!==run.userId;
   requireThat(watch?command.type==='coach-next':command.type==='action','请由当前操作者完成');
-  const action=watch?detail.actions[0]:command.action;
+  const action=watch?detail.actions[0]:command.action,previousPresentation=run.game.presentationSeq||0;
   requireThat(detail.actions.some(a=>equal(a,action)),'请按本节目标操作');
   // Legality and real costs remain the rule engine's responsibility.
   apply(run,id,action);
@@ -136,22 +145,28 @@ export function advanceStory(source,command,lesson){
   run.count++;run.guideCursor=0;
   run.ready=run.context.cursor>=step.sequence.length&&!run.game.effects.frames.some(f=>f.type==='choice')&&run.game.phase!=='discard';
   // The introduction is heard once. Subsequent actions use their own current instruction.
-  if(!run.ready&&['vagabond','lizard'].includes(run.lessonId))run.guideCursor=step.guidance.before.length;
+  if(!run.ready)run.guideCursor=step.guidance.before.length;
+  // Fold bookkeeping without visible feedback into the next real change.
+  // Stop at every animation or pending choice; never resolve a learner's choice.
+  if(watch&&condensedSteps.has(step.id)&&!run.ready&&actor(run)!==run.userId&&(run.game.presentationSeq||0)===previousPresentation&&!run.game.effects.frames.some(f=>f.type==='choice'))return advanceStory(run,{type:'coach-next'},lesson);
   return run;
 }
 export function storyGuide(run,lesson){
   const step=stepOf(run,lesson),reading=step.goal==='read',responding=run.ready&&!reading;
-  const lines=responding?step.guidance.after:step.guidance.before;
-  const cursor=Math.min(run.guideCursor||0,Math.max(0,lines.length-(reading||responding?1:0)));
-  const acting=!run.ready&&cursor===lines.length;
+  const lines=responding?(run.automaticMorningStep===step.id?step.guidance.automaticAfter||step.guidance.after:step.guidance.after):step.guidance.before;
+  const cursor=Math.min(run.guideCursor||0,Math.max(0,lines.length-1));
+  const acting=!run.ready;
   const detail=!run.ready?options(run,lesson):null;
   const me=hero(run),g=run.game,watch=!!detail&&actor(run)!==run.userId;
-  const guide={speaker:step.guidance.speaker,mode:run.completed?'complete':acting?'act':responding?'result':'dialogue',cursor,total:lines.length,
-    text:acting?instruction(run,lesson,detail):!responding&&run.context.cursor>0?instruction(run,lesson,detail||{}):lines[cursor]?.text||step.text,focus:acting?(detail.actions[0]?.from!==undefined?'route':'clearing'):lines[cursor]?.focus||'map',
-    prompts:{source:instruction(run,lesson,detail||{}),choice:instruction(run,lesson,detail||{}),destination:ownFaction(run)==='bird'?'沿高亮道路选择目标；移动法令检查出发地的花色。':ownFaction(run)==='alliance'?'沿高亮道路选择终点；移动和组织各使用一次军事行动。':ownFaction(run)==='lizard'?'圣战检查出发地的被逐者花色，再按统治条件移动。':'潜行免费；白天移动耗竭靴子，进入有敌对士兵的林地需要两只靴子。',confirm:'核对目标、人数与支付，再确认。'},
-    canAdvance:!run.completed&&!acting&&(cursor<lines.length-1||!run.ready),canBack:!run.completed&&cursor>0,watch,
+  const speaker=step.guidance.speaker,speakerFaction=me.faction;
+  const guide={speaker,speakerFaction,mode:run.completed?'complete':acting?'act':responding?'result':'dialogue',cursor,total:lines.length,
+    text:acting?(run.context.cursor>0||detail?.interrupt?instruction(run,lesson,detail):lines.map(line=>line.text).join('\n')||instruction(run,lesson,detail)):lines[cursor]?.text||step.text,focus:acting?(detail.actions[0]?.from!==undefined?'route':'clearing'):lines[cursor]?.focus||'map',
+    prompts:{source:instruction(run,lesson,detail||{}),choice:instruction(run,lesson,detail||{}),destination:ownFaction(run)==='otter'?'选择高亮起点和终点；沿河移动不要求统治，普通道路仍需统治。':ownFaction(run)==='bird'?'沿高亮道路选择目标；移动法令检查出发地的花色。':ownFaction(run)==='alliance'?'沿高亮道路选择终点；移动和组织各使用一次军事行动。':ownFaction(run)==='lizard'?'圣战检查出发地的被逐者花色，再按统治条件移动。':'潜行免费；白天移动耗竭靴子，进入有敌对士兵的林地需要两只靴子。',confirm:'核对目标、人数与支付，再确认。'},
+    condensed:condensedSteps.has(step.id),auto:acting&&watch&&condensedSteps.has(step.id)&&run.context.cursor>0,
+    canAdvance:!run.completed&&!acting&&(cursor<lines.length-1||!run.ready),canBack:!run.completed&&!acting&&cursor>0,watch,
     resources:{round:g.round,score:me.score,hand:me.hand.length,officers:g.alliance.officers,items:g.vagabond.items.filter(i=>!i.exhausted&&!i.damaged).length},
     evidence:ownFaction(run)==='bird'?[`鸟巢 ${g.board.reduce((n,c)=>n+c.buildings.filter(b=>b.type==='roost').length,0)}`,`法令 ${Object.values(g.bird.decree).flat().length} 项`]:[`支持者 ${g.alliance.supporters.length}`,`本晚军事行动 ${g.alliance.operations}`]};
+  if(ownFaction(run)==='otter')guide.evidence=[`资金 ${g.riverfolk.funds.length}`,`收入 ${g.riverfolk.payments.length}`,`承诺 ${g.riverfolk.committed.length+g.riverfolk.crafting.length}`,`贸易站 ${g.board.filter(c=>c.tradePost).length}`];
   if(ownFaction(run)==='lizard')guide.evidence=[`侍僧 ${g.lizard.acolytes}`,`失魂 ${g.lizard.lostSouls.length}`,`被逐者 ${ {fox:'狐狸',mouse:'老鼠',rabbit:'兔子'}[g.lizard.outcast]||'待选择'}${g.lizard.hated?' · 憎恨':''}`,`展示 ${g.lizard.revealed.length}`];
   if(ownFaction(run)==='vagabond')guide.evidence=[`耗竭物品 ${g.vagabond.items.filter(i=>i.exhausted).length}`,`损坏 ${g.vagabond.items.filter(i=>i.damaged).length}`,`猫咪关系 ${g.vagabond.relations.cat===-1?'敌对':g.vagabond.relations.cat}`,`完成任务 ${g.vagabond.completedQuests.length}`];
   if(detail&&!watch){guide.action=detail.actions[0];guide.alternatives=detail.actions;guide.allowAlternatives=detail.actions.length>1;}
@@ -161,14 +176,14 @@ export function storyGuide(run,lesson){
   if(step.previewCharacter){guide.previewCharacter=step.previewCharacter;guide.focus=acting?'card':guide.focus;}
   const quest=detail?.spec?.previewQuest||step.previewQuest;
   if(quest){guide.previewCard=structuredClone(g.quests.find(q=>q.id===quest)||g.vagabond.completedQuests.find(q=>q.id===quest));guide.previewLabel='查看本次任务';}
-  if(acting&&guide.previewCard&&['vagabond','lizard'].includes(run.lessonId))guide.focus='card';
+  if(acting&&guide.previewCard&&['vagabond','lizard','riverfolk'].includes(run.lessonId))guide.focus='card';
   return guide;
 }
 export function projectStory(run,version,lesson){
   const step=stepOf(run,lesson),game=rules.projectGame(run.game,run.userId),guide=storyGuide(run,lesson);
   const available=!run.ready&&guide.mode==='act'&&!guide.watch?options(run,lesson).actions:[];
   const permitted=a=>available.some(b=>equal(a,b));
-  game.mapActions=game.mapActions.filter(permitted);game.factionActions=game.factionActions.filter(o=>permitted(o.action));
+  if(run.lessonId==='riverfolk'){const matching=a=>available.find(b=>{const x={...a},y={...b};delete x.funds;delete y.funds;return equal(x,y);});game.mapActions=game.mapActions.flatMap(a=>matching(a)?[matching(a)]:[]);game.factionActions=game.factionActions.flatMap(o=>matching(o.action)?[{...o,action:matching(o.action)}]:[]);}else{game.mapActions=game.mapActions.filter(permitted);game.factionActions=game.factionActions.filter(o=>permitted(o.action));}
   game.craftOptions=game.craftOptions.filter(o=>permitted({type:'craft',card:o.card}));game.effectOptions=[];
   if(game.choice&&!game.choice.waiting)game.choice.options=game.choice.options.filter(o=>permitted({type:'choice',choiceId:game.choice.choiceId,optionId:o.id}));
   const detail=!run.ready?options(run,lesson):null,action=detail?.actions[0]||{},where=detail?.q?.resume?.clearing;

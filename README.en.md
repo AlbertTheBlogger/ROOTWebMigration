@@ -4,9 +4,9 @@
 
 [简体中文](README.md) | English
 
-Deployed development version **v1.1.3** (package: 1.1.3-dev) adds PC hotseat play and phone seat claims: one host configures 2–4 local players, approves account claims, and hands off private views. A phone companion shows the public board and can confirm and answer its own seat's pending decisions. Unbinding, refresh and restart recovery are supported. The companion layout supports landscape and portrait, map pan/pinch zoom and collapsible information panels. Eyrie and Alliance tutorials now each follow four continuous rounds. Lizard Cult and Vagabond each have 25 connected lessons spanning four and five rounds respectively; saved older lessons remain available until explicitly restarted. This iteration is deployed at the user’s explicit request and marked by the `dev-v1.1.3` development tag. See the [development record](docs/DEVELOPMENT-1.1.3.md) (Chinese).
+Deployed development version **v1.1.4** (package `1.1.4-dev`) adds Riverfolk rules, the trading interface, and a 26-node tutorial spanning four connected rounds. Rooms support 2–4 players choosing from six factions. All seven tutorials now total 143 nodes, with revised dialogue, viewpoints and pacing, clearer battle teaching, delayed casualty visuals, and automatic empty Birdsong windows. Hotseat play, phone companions and old saves remain supported. See the [development record](docs/DEVELOPMENT-1.1.4.md).
 
-Production runs development **v1.1.3**. The public label remains **v1.1**, the existing `v1.1.0` release tag is unchanged, and no new GitHub Release is created. See the [deployment record](docs/DEPLOYMENT-DEV-1.1.3-2026-11-13.md) (Chinese). User acceptance is still pending.
+The public label remains **v1.1**. The development tag is `dev-v1.1.4`; the existing `v1.1.0` release tag remains unchanged and no GitHub Release is created. Deployment and Git synchronization are explicitly authorized; user acceptance remains pending. See the [deployment and rollback record](docs/DEPLOYMENT-DEV-1.1.4-2026-11-14.md).
 
 A self-hosted web reimplementation of ROOT's rules. The current release, **v1.1.0**, supports the autumn map, the four base-game factions, and online games for 2–4 players. Multiplayer does not depend on Steam. The original game's installation directory has not been modified.
 

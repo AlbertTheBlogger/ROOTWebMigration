@@ -116,7 +116,22 @@
     "backend/tutorial-stories.mjs",
     "tests/tutorial-stories.test.mjs",
     "tests/tutorial-resource-stories.test.mjs",
-    "docs/DEPLOYMENT-DEV-1.1.3-2026-11-13.md"
+    "docs/DEPLOYMENT-DEV-1.1.3-2026-11-13.md",
+    "backend/rules/versions/riverfolk.mjs",
+    "backend/rules/versions/riverfolk-actions.mjs",
+    "backend/tutorial-riverfolk.mjs",
+    "tests/riverfolk.test.mjs",
+    "tests/riverfolk-stories.test.mjs",
+    "docs/DEVELOPMENT-1.1.4.md",
+    "backend/tutorial-observer.mjs",
+    "tests/automatic-morning.test.mjs",
+    "docs/TEST-PLAN-1.1.4.md",
+    "docs/TEST-CASES-RIVERFOLK-COMPLEX-1.1.4.md",
+    "docs/REGRESSION-1.1.4-FINAL.md",
+    "tests/riverfolk-complex.test.mjs",
+    "tests/riverfolk-complex-http.test.mjs",
+    "docs/REGRESSION-RIVERFOLK-COMPLEX-1.1.4.md",
+    "docs/DEPLOYMENT-DEV-1.1.4-2026-11-14.md"
   ],
   "updates": [
     {
@@ -166,6 +181,54 @@
       "feature": "Development v1.1.3 deployment engineering record",
       "addedFiles": 1,
       "excluded": "Original/adapted game resources, tutorial text and local credentials/data remain outside MIT."
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "Local development v1.1.4 Riverfolk engine, tutorial orchestration, tests and engineering record",
+      "addedFiles": 6,
+      "excluded": "Original/adapted tutorial catalogs, extracted game art/text, evidence and player data remain excluded."
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "Tutorial opponent observation from learner perspective",
+      "addedFiles": 1,
+      "excluded": "Original/adapted tutorial prose and game assets remain excluded."
+    },
+    {
+      "date": "2026-11-14",
+      "feature": "Automatic empty morning and persistent resume regression tests",
+      "addedFiles": 1,
+      "excluded": "Original/adapted tutorial text, assets and local player data remain outside MIT."
+    },
+    {
+      "date": "2026-11-14",
+      "feature": "Development v1.1.4 remaining validation checklist",
+      "addedFiles": 1,
+      "excluded": "Original game content and resources remain excluded."
+    },
+    {
+      "date": "2026-11-14",
+      "feature": "Deferred Riverfolk complex rule test design",
+      "addedFiles": 1,
+      "excluded": "Third-party game rules, original assets and user data remain excluded."
+    },
+    {
+      "date": "2026-11-14",
+      "feature": "Final v1.1.4 regression and browser blackbox report",
+      "addedFiles": 1,
+      "excluded": "Game assets, original/adapted game content, user data and temporary test evidence remain excluded."
+    },
+    {
+      "date": "2026-11-14",
+      "feature": "Executed Riverfolk complex combinations and Alliance hired-only battle fix",
+      "addedFiles": 3,
+      "excluded": "Third-party rules and assets, user data and temporary browser evidence remain excluded."
+    },
+    {
+      "date": "2026-11-14",
+      "feature": "Development v1.1.4 deployment and handoff maintenance (public v1.1)",
+      "addedFiles": 1,
+      "excluded": "Third-party rules and assets, credentials, user data and temporary deployment evidence remain excluded."
     }
   ]
 }

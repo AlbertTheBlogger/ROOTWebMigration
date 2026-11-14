@@ -108,6 +108,6 @@ test('retry restores actual pending damage and random fear; old v6 saves upgrade
   });assert.ok(checkpointSeen);
   let old=createTutorial(user,id,{curriculumVersion:6});for(let n=0;n<9;n++)old=advanceTutorial(old,tutorialCommandFor(projectTutorial(old,n)));
   const room=projectTutorial(old,3);assert.equal(room.tutorial.legacy,true);assert.deepEqual(projectTutorial(JSON.parse(JSON.stringify(old)),3),room);
-  const restart=advanceTutorial(old,{type:'restart'});assert.equal(restart.curriculumVersion,7);assert.equal(projectTutorial(restart,0).tutorial.stepId,id==='lizard'?'liz-intro':'vg-intro');
+  const restart=advanceTutorial(old,{type:'restart'});assert.equal(restart.curriculumVersion,9);assert.equal(projectTutorial(restart,0).tutorial.stepId,id==='lizard'?'liz-intro':'vg-intro');
  }
 });

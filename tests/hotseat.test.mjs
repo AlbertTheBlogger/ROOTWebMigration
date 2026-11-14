@@ -115,3 +115,18 @@ test('isolated ambush and counter-ambush require A to B to A handoffs without re
  assert.equal(room.viewerId,host.id);assert.equal(room.game.choice.kind,'counter-ambush');
  assert.ok(room.game.players.filter(p=>p.id!==host.id).every(p=>!p.hand));
 });
+test('v7 Riverfolk hotseat and phone show public market while keeping all other hands private',async t=>{
+ const h=await harness(t),{host,other,request}=h;let room=(await request(host,'/api/rooms',{name:'猫',playMode:'hotseat',ruleset:'root-riverfolk-v7'})).body.room;
+ const cmd=async(command)=>{const r=await request(host,`/api/rooms/${room.code}/command`,{version:room.version,commandId:randomUUID(),command});assert.equal(r.status,200,JSON.stringify(r.body));room=r.body.room;};
+ await cmd({type:'local-add',seat:1});const otter=room.members[1].userId;
+ for(const m of room.members)await cmd({type:'local-profile',userId:m.userId,name:m.userId===otter?'掌柜':'客户',faction:m.userId===otter?'otter':'cat',ready:true});
+ await cmd({type:'start',ruleset:'root-riverfolk-v7'});assert.equal(room.game.ruleset,'root-riverfolk-v7');
+ const check=view=>{assert.ok(view.game.players.find(p=>p.faction==='otter').hand);assert.ok(!view.game.players.find(p=>p.faction==='cat').hand);assert.equal(view.game.mapActions.length,0);};check(room);
+ const joined=await request(other,`/api/rooms/${room.code}/companion`,{});assert.equal(joined.status,200);check(joined.body.room);room=(await request(host,`/api/rooms/${room.code}`)).body.room;
+ let handoffs=0;
+ for(let n=0;!room.game.winner;n++){assert.ok(n<1800);if(room.hotseat.locked){check(room);await cmd({type:'hotseat-confirm',actorId:room.hotseat.actor.id,epoch:room.hotseat.epoch});handoffs++;}
+ const p=room.game.players.find(p=>p.id===room.viewerId),g=JSON.parse(h.app.db.prepare('SELECT state FROM games WHERE id=?').get(room.gameId).state);const a=candidates(room.game,p,{developmentRound:1}).find(a=>{try{applyAction(g,p.id,a,()=>0);return true;}catch{return false;}});assert.ok(a,p.faction+'/'+room.game.phase);await cmd({type:'action',action:a});
+ if(n===30){await h.restart();room=(await request(host,`/api/rooms/${room.code}`)).body.room;check(room);}
+ }
+ assert.ok(handoffs>6);const saved=await request(host,`/api/games/${room.gameId}`);assert.equal(saved.status,200);assert.ok(saved.body.game.players.find(p=>p.faction==='otter').hand);assert.ok(!saved.body.game.players.find(p=>p.faction==='cat').hand);
+});

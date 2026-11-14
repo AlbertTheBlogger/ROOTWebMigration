@@ -54,6 +54,18 @@ export function candidates(game, player, policyOptions = {}) {
     const options = [...game.choice.options].sort((a,b) => Number(b.id === 'pass')-Number(a.id === 'pass'));
     return options.map(option => ({ type: 'choice', choiceId: game.choice.choiceId, optionId: option.id }));
   }
+  if(game.phase==='services'){
+    const choices=(game.factionActions||[]).filter(o=>o.action.type==='buy-service'),cheap=choices.filter(o=>game.riverfolk.prices[o.action.service]<=2);
+    const card=cheap.filter(o=>o.action.service==='cards'&&player.hand.length<4),merc=cheap.filter(o=>o.action.service==='mercenaries'&&game.board.some(c=>c.warriors.otter&&c.warriors[player.faction]));
+    return [...card,...merc].map(o=>o.action).concat({type:'services-done'});
+  }
+  if(player.faction==='otter'){
+    if(game.phase==='rf-prices')return [{type:'set-prices',prices:{cards:2,boats:1,mercenaries:2}}];
+    if(game.phase==='daylight'){
+      const options=game.factionActions||[],develop=options.filter(o=>['trade-post','craft'].includes(o.action.type)),draw=options.filter(o=>o.action.type==='rf-draw'&&player.hand.length<3&&game.riverfolk.funds.length>2);
+      return [...develop,...draw].map(o=>o.action).concat({type:'end'});
+    }
+  }
   if (game.phase === 'birdsong') return [{ type: 'birdsong-end' }];
   if (game.phase === 'discard') return player.hand.map(card => ({ type: 'discard', card: card.id }));
   const options = game.factionActions || [];

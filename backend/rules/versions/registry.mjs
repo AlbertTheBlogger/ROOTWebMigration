@@ -5,6 +5,7 @@ import * as cardLab from './card-lab.mjs';
 import * as catsBirds from './cats-birds.mjs';
 import * as baseFour from './base-four.mjs';
 import * as lizardCult from './lizard-cult.mjs';
+import * as riverfolk from './riverfolk.mjs';
 
 // Ruleset and state schema versions are separate from package/database versions.
 const implementations = new Map([
@@ -14,6 +15,7 @@ const implementations = new Map([
   [catsBirds.RULESET, { ...catsBirds, stateSchemaVersion: 4 }],
   [baseFour.RULESET, { ...baseFour, stateSchemaVersion: 5 }],
   [lizardCult.RULESET, { ...lizardCult, stateSchemaVersion: 6 }],
+  [riverfolk.RULESET, { ...riverfolk, stateSchemaVersion: 7 }],
 ]);
 function implementation(id) {
   const value = implementations.get(id);
@@ -39,3 +41,14 @@ export function projectGame(state, userId) {
   return forState(state).projectGame(state, userId);
 }
 export const supportedRulesets = () => [...implementations.keys()];
+// Automatically leave the optional morning card window only when no choice is available.
+export function settleAutomaticMorning(source,rng){
+ let state=source;
+ for(let n=0;n<8;n++){
+  if((state.stateSchemaVersion||1)<4||state.winner||state.phase!=='birdsong'||!state.setup?.complete||state.effects?.frames.length||state.combat)break;
+  const p=state.players[state.turn],rules=forState(state),view=rules.projectGame(state,p.id);
+  if(view.effectOptions?.length)break;
+  state=rules.applyAction(state,p.id,{type:'birdsong-end'},rng);
+ }
+ return state;
+}

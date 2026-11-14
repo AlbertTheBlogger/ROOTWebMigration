@@ -1,5 +1,5 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
-import { tutorialCatalog, lessonById, createTutorial, advanceTutorial, projectTutorial } from './tutorials.mjs';
+import { tutorialCatalog, lessonById, createTutorial as createTutorialRaw, advanceTutorial as advanceTutorialRaw, projectTutorial, normalizeTutorial, settleTutorialMorning } from './tutorials.mjs';
 import http from 'node:http';
 import { DatabaseSync } from 'node:sqlite';
 import { randomBytes, randomInt, randomUUID, scrypt as scryptCb, timingSafeEqual, createHash } from 'node:crypto';
@@ -9,11 +9,15 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
 import { RULESET, LIMITATIONS } from './engine.mjs';
-import { createGame, applyAction, projectGame, supportedRulesets } from './rules/versions/registry.mjs';
+import { createGame as createGameRaw, applyAction as applyActionRaw, projectGame, supportedRulesets, settleAutomaticMorning } from './rules/versions/registry.mjs';
 import { candidates as botCandidates } from './bots/test-policy.mjs';
 import { botStepDelay } from '../frontend/presentation-model.js';
 import {hotseatActor,hotseatStamp,updateHotseatControl,publicGame} from './hotseat.mjs';
 
+const createGame=(players,rng,ruleset)=>settleAutomaticMorning(createGameRaw(players,rng,ruleset),rng);
+const applyAction=(state,id,action,rng)=>settleAutomaticMorning(applyActionRaw(state,id,action,rng),rng);
+const createTutorial=(...args)=>settleTutorialMorning(createTutorialRaw(...args));
+const advanceTutorial=(...args)=>settleTutorialMorning(advanceTutorialRaw(...args));
 const scrypt=promisify(scryptCb);
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const artManifest=JSON.parse(readFileSync(resolve(root,'frontend/asset-manifest.json'),'utf8'));
@@ -21,7 +25,8 @@ const artFiles=new Set(artManifest.files);
 const audioManifest=JSON.parse(readFileSync(resolve(root,'frontend/audio-manifest.json'),'utf8'));
 const audioFiles=new Set(audioManifest.files);
 const LIZARD_RULESET='root-lizard-cult-v6';
-const roomFactions=payload=>payload.ruleset===LIZARD_RULESET?['cat','bird','alliance','vagabond','lizard']:(payload.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird'];
+const RIVERFOLK_RULESET='root-riverfolk-v7';
+const roomFactions=payload=>payload.ruleset===RIVERFOLK_RULESET?['cat','bird','alliance','vagabond','lizard','otter']:payload.ruleset===LIZARD_RULESET?['cat','bird','alliance','vagabond','lizard']:(payload.capacity||2)>2?['cat','bird','alliance','vagabond']:['cat','bird'];
 function assignSeats(payload){
   const used=new Set(),pending=[];
   for(const player of payload.members){
@@ -126,7 +131,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
     const version=room.version+1,now=Date.now();
     const result=db.prepare('UPDATE rooms SET owner_id=?,version=?,status=?,payload=?,updated_at=? WHERE code=? AND version=?').run(room.owner_id,version,room.status,JSON.stringify(room.payload),now,room.code,room.version);
     requireThat(result.changes===1,409,'房间状态已经更新，请刷新后重试');room.version=version;room.updated_at=now;
-    if(room.payload.game&&(command.type==='start'||command.type==='action')){
+    if(room.payload.game&&(command.type==='start'||command.type==='action'||command.type==='automatic-morning')){
       const state=JSON.stringify(room.payload.game),id=room.payload.gameId;
       db.prepare('INSERT INTO games(id,room_code,state,created_at,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET state=excluded.state,updated_at=excluded.updated_at').run(id,room.code,state,now,now);
       db.prepare('INSERT INTO snapshots(game_id,room_version,state,command,created_at) VALUES(?,?,?,?,?)').run(id,version,state,JSON.stringify({actor,...command}),now);
@@ -313,7 +318,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
     }
     requireThat(u.role!=='admin',403,'管理员账号仅可进行管理操作');
     if(method==='GET'&&path==='/api/tutorials'){
-      const runs=new Map(db.prepare('SELECT lesson_id,version,payload FROM tutorial_runs WHERE user_id=?').all(u.id).map(row=>[row.lesson_id,JSON.parse(row.payload)]));
+      const runs=new Map(db.prepare('SELECT lesson_id,version,payload FROM tutorial_runs WHERE user_id=?').all(u.id).map(row=>[row.lesson_id,normalizeTutorial(JSON.parse(row.payload))]));
       return json(res,200,{lessons:tutorialCatalog().map(lesson=>{const run=runs.get(lesson.id);return {...lesson,started:!!run,step:run?.step??0,completed:!!(run?.completed||run?.everCompleted)};})});
     }
     const tutorialPath=path.match(/^\/api\/tutorials\/([a-z-]+)(?:\/(start|command))?$/);
@@ -323,7 +328,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
       if(method==='GET'&&!operation){const row=read();requireThat(row,404,'尚未开始本章教程');return json(res,200,{room:projectTutorial(JSON.parse(row.payload),row.version)});}
       if(method==='POST'&&operation==='start'){
         await body(req);
-        const row=transaction(()=>{requireCurrentSession(req,u);const existing=read();if(existing)return existing;
+        const row=transaction(()=>{requireCurrentSession(req,u);const existing=read();if(existing){const source=JSON.parse(existing.payload),next=settleTutorialMorning(source);if(next!==source){db.prepare('UPDATE tutorial_runs SET version=?,payload=?,updated_at=? WHERE user_id=? AND lesson_id=?').run(existing.version+1,JSON.stringify(next),Date.now(),u.id,lessonId);return read();}return existing;}
           const run=createTutorial(u,lessonId);db.prepare('INSERT INTO tutorial_runs VALUES(?,?,?,?,?)').run(u.id,lessonId,0,JSON.stringify(run),Date.now());return read();});
         return json(res,200,{room:projectTutorial(JSON.parse(row.payload),row.version)});
       }
@@ -354,7 +359,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
       throttle(`create:${u.id}`,10);const b=await body(req),name=nameOf(b.name),title=nameOf(b.title||'林间小聚'),pw=password(b.password??'',true);
       const ruleset=b.ruleset||LIZARD_RULESET;requireThat(supportedRulesets().includes(ruleset),422,'不支持所选游戏模式');
       const capacity=b.capacity??4;requireThat([2,3,4].includes(capacity),422,'房间人数应为二至四人');
-      const playMode=b.playMode||'online';requireThat(['online','hotseat'].includes(playMode),422,'不支持所选游玩方式');requireThat(playMode!=='hotseat'||['root-base-four-v5',LIZARD_RULESET].includes(ruleset),422,'同屏游玩请选择标准规则');
+      const playMode=b.playMode||'online';requireThat(['online','hotseat'].includes(playMode),422,'不支持所选游玩方式');requireThat(playMode!=='hotseat'||['root-base-four-v5',LIZARD_RULESET,RIVERFOLK_RULESET].includes(ruleset),422,'同屏游玩请选择标准规则');
       const hash=pw?await hashPassword(pw):null;
       const room=transaction(()=>{requireCurrentSession(req,u);requireThat(db.prepare("SELECT count(*) n FROM rooms WHERE owner_id=? AND status!='closed'").get(u.id).n<10,422,'最多同时拥有 10 个房间');let code;do{code=String(randomInt(100000,1000000));}while(db.prepare('SELECT 1 FROM rooms WHERE code=?').get(code));
         const payload={capacity,ruleset,playMode,members:[{userId:u.id,name,faction:'cat',ready:false,seat:0}],game:null,gameId:null};db.prepare('INSERT INTO rooms VALUES(?,?,?,?,?,?,?,?)').run(code,u.id,title,hash,0,'waiting',JSON.stringify(payload),Date.now());return getRoom(code);});
@@ -469,7 +474,7 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
             }
           }
         }else if(c.type==='ruleset'){
-          requireThat(!local||['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset),422,'同屏游玩请选择标准规则');
+          requireThat(!local||['root-base-four-v5',LIZARD_RULESET,RIVERFOLK_RULESET].includes(c.ruleset),422,'同屏游玩请选择标准规则');
           requireThat(r.owner_id===u.id,403,'只有房主可以更改规则');requireThat(r.status==='waiting',409,'开始后不能更改规则');
           requireThat(supportedRulesets().includes(c.ruleset),422,'不支持所选游戏模式');
           const proposed={...r.payload,ruleset:c.ruleset};
@@ -512,11 +517,11 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
           me.ready=c.ready;
         }
         else if(c.type==='start'){
-          requireThat(!local||['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset),422,'同屏游玩请选择标准规则');
+          requireThat(!local||['root-base-four-v5',LIZARD_RULESET,RIVERFOLK_RULESET].includes(c.ruleset),422,'同屏游玩请选择标准规则');
           requireThat(r.owner_id===u.id,403,'只有房主可以开始');requireThat(r.status==='waiting'&&r.payload.members.length>=2&&r.payload.members.every(m=>m.ready),409,'至少两位玩家，且全部准备');
           requireThat(new Set(r.payload.members.map(player=>player.faction)).size===r.payload.members.length,409,'阵营重复，请重新选择并准备');
-          requireThat(['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset)||r.payload.members.length===2,422,'三至四人请选择基础四阵营规则');
-          requireThat(!r.payload.members.some(player=>player.bot)||['root-base-four-v5',LIZARD_RULESET].includes(c.ruleset),422,'人机对局请选择基础四阵营模式');
+          requireThat(['root-base-four-v5',LIZARD_RULESET,RIVERFOLK_RULESET].includes(c.ruleset)||r.payload.members.length===2,422,'三至四人请选择基础四阵营规则');
+          requireThat(!r.payload.members.some(player=>player.bot)||['root-base-four-v5',LIZARD_RULESET,RIVERFOLK_RULESET].includes(c.ruleset),422,'人机对局请选择基础四阵营模式');
           requireThat(supportedRulesets().includes(c.ruleset),422,'不支持所选游戏模式');r.payload.ruleset=c.ruleset;r.payload.game=createGame(r.payload.members,undefined,c.ruleset);r.payload.gameId=randomUUID();r.status='playing';
         }else if(c.type==='action'){
           requireThat(r.status==='playing'&&r.payload.game,409,'没有进行中的对局');let actor=u.id;
@@ -548,7 +553,10 @@ export function createApp({dbPath=process.env.DB_PATH||resolve(root,'data/root.s
   const server=http.createServer((req,res)=>route(req,res).catch(e=>{if(res.headersSent){res.end();return;}if(!e.status)console.error(e);json(res,e.status||500,{error:e.status?e.message:'服务器内部错误'});}));
   server.requestTimeout=15000;server.headersTimeout=10000;
   const interval=setInterval(()=>{if(closing)return;const now=Date.now();for(const [k,b] of buckets)if(b.until<now)buckets.delete(k);db.prepare('DELETE FROM sessions WHERE expires_at<=?').run(now);for(const c of clients){if(!session(c.req))c.res.end();else c.res.write(': heartbeat\n\n');}},15000);interval.unref();
-  for(const room of db.prepare("SELECT code FROM rooms WHERE status='playing'").all())scheduleBot(room.code);
+  for(const row of db.prepare("SELECT code FROM rooms WHERE status='playing'").all()){
+    transaction(()=>{const room=getRoom(row.code);if(!room.payload.game)return;const next=settleAutomaticMorning(room.payload.game);if(next===room.payload.game)return;room.payload.game=next;if(next.winner)room.status='finished';persist(room,{type:'automatic-morning'},next.players[next.turn].id);});
+    scheduleBot(row.code);
+  }
   return {server,db,close:async()=>{closing=true;clearInterval(interval);for(const timer of botTimers.values())clearTimeout(timer);botTimers.clear();for(const c of clients)c.res.end();await new Promise(resolve=>server.close(resolve));db.close();}};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){

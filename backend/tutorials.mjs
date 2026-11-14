@@ -4,17 +4,31 @@ import { randomUUID } from 'node:crypto';
 import * as rules from './rules/versions/registry.mjs';
 import {candidates} from './bots/test-policy.mjs';
 import {RuleError} from './engine.mjs';
+import {observeOpponent} from './tutorial-observer.mjs';
 import {isStory,startStory,advanceStory,projectStory} from './tutorial-stories.mjs';
 
 const catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog.json',import.meta.url),'utf8'));
 const legacyCatalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v4.json',import.meta.url),'utf8'));
 const version5Catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v5.json',import.meta.url),'utf8'));
 const version6Catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v6.json',import.meta.url),'utf8'));
-const lessonFor=run=>(run.curriculumVersion||1)<5?legacyCatalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<6?version5Catalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<7?version6Catalog.lessons.find(l=>l.id===run.lessonId):lessonById(run.lessonId);
+const version7Catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v7.json',import.meta.url),'utf8'));
+const version8Catalog=JSON.parse(readFileSync(new URL('./data/tutorial-catalog-v8.json',import.meta.url),'utf8'));
+const lessonFor=run=>(run.curriculumVersion||1)<5?legacyCatalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<6?version5Catalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<7?version6Catalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<8?version7Catalog.lessons.find(l=>l.id===run.lessonId):run.curriculumVersion<9?version8Catalog.lessons.find(l=>l.id===run.lessonId):lessonById(run.lessonId);
+// Preserve the completed core journey when removing the redundant tail.
+export function normalizeTutorial(source){
+  if(source.lessonId!=='cats'||(source.curriculumVersion||1)<5||source.curriculumVersion>=9)return source;
+  const oldStep=lessonFor(source).steps[source.step];
+  const lesson=lessonById('cats'),index=lesson.steps.findIndex(step=>step.id===oldStep?.id);
+  const run=structuredClone(source);run.curriculumVersion=9;
+  if(index>=0){run.step=index;return run;}
+  ensure(oldStep?.id.startsWith('journey-'),'旧教程进度无法对应');
+  run.step=lesson.steps.length-1;run.ready=true;run.completed=true;run.everCompleted=true;run.guideCursor=0;
+  return run;
+}
 const recipes=JSON.parse(readFileSync(new URL('./data/full-card-catalog.json',import.meta.url),'utf8')).cards;
 const quests=JSON.parse(readFileSync(new URL('./data/four-faction-catalog.json',import.meta.url),'utf8')).quests;
 const factions=['cat','bird','alliance','vagabond'];
-const labels={cat:'猫咪教练',bird:'飞鹰教练',alliance:'联盟教练',vagabond:'游侠教练'};
+const labels={cat:'猫咪侍从',bird:'王朝顾问',alliance:'联盟联络员',vagabond:'林间旅伴'};
 const ensure=(ok,message)=>{if(!ok)throw Object.assign(new Error(message),{status:422});};
 const rng=maximum=>maximum-1;
 const player=(state,faction)=>state.players.find(p=>p.faction===faction);
@@ -132,21 +146,23 @@ function campaignAction(run){
 }
 const actionNames={choice:'完成当前选择', 'birdsong-end':'开始清晨',wood:'生产木材',craft:'锻造', 'craft-done':'结束锻造',build:'建造',recruit:'招募',move:'移动',battle:'战斗','march-end':'结束行军',end:'结束白天',discard:'弃牌', 'decree-add':'增加法令','decree-ready':'确认法令',leader:'选择新领袖', 'revolt-done':'结束起义阶段','spread-done':'结束传播阶段',spread:'传播民意',revolt:'起义',mobilize:'动员',train:'训练长官',organize:'组织','military-done':'结束军事行动',refresh:'恢复物品','refresh-done':'结束恢复',slip:'潜行','slip-done':'留在原地',explore:'探索遗迹',aid:'援助',quest:'完成任务',special:'使用角色能力','evening-continue':'继续夜晚','evening-end':'结束回合'};
 function campaignInstruction(run,action){
+  const observation=observeOpponent(run.game,run.userId,action);if(observation)return observation;
   const type=action.type,where=action.clearing!==undefined?`秋林${action.clearing}`:action.to!==undefined?`${action.to>=12?'森林':'秋林'}${action.to}`:'';
   if(type==='choice'){
     const choice=run.game.effects.frames[0];
-    return choice.playerId===run.userId?`${choice.prompt} 这次练习选择：${choice.options.find(o=>o.id===action.optionId).label}。`:'对手正在处理战斗或救援选择。完成后，棋局按真实规则继续结算。';
+    return choice.playerId===run.userId?`${choice.prompt} 先选：${choice.options.find(o=>o.id===action.optionId).label}。`:'敌军正在决定怎样应战。先看看它们的打算，再接着下令。';
   }
   const tips={
-    'birdsong-end':'新一天开始，先进入本阵营的清晨流程。',wood:'锯木厂在清晨产木。昨天建好的锯木厂，今天也会参加生产。',
-    'decree-add':'先检查鸟巢的花色，再给招募列增加一张能兑现的牌。旧法令仍然保留。','decree-ready':'新承诺已写下。确认法令，进入白天。','craft-done':'本次先结束锻造，把注意力放到阵营的主要行动。',
-    build:'有统治权、建筑空位和所需资源，才能建造。确认后看看建筑与声望变化。',recruit:'补充战士，观察地图与供应的变化。',
-    move:'先点起点部队，再点终点，检查数量后确认。移动会改变双方的统治力量。',battle:'在当前林地发起战斗。本教程骰子固定3/3；伤害仍受战士数量与防御能力限制。','march-end':'本次行军的第一段移动已完成。这次先结束行军，保留在此处的战士。',end:'白天的计划完成了。结束白天后还要处理夜晚，不能直接当成下一轮。',discard:'夜晚手牌超过上限。先亲自弃到五张，才能进入下一轮。',
+    'birdsong-end':'天亮了，陛下。先让各处产业准备起来。',wood:'锯木厂在清晨产木。昨天建好的锯木厂，今天也会参加生产。',
+    'decree-add':'先检查鸟巢的花色，再给招募列增加一张能兑现的牌。旧法令仍然保留。','decree-ready':'新承诺已写下。确认法令，进入白天。','craft-done':'陛下，今天先把牌收好，让军队与工人们动起来。',
+    build:'陛下，工地有空位、道路由我们掌控，木材也备好了。下令建造吧。',recruit:'陛下，发出招募命令，让征兵所补充守军。',
+    move:'陛下，先选部队，再沿路选目的地。决定派多少战士过去，也别忘了身后的守卫。',battle:'在当前林地发起战斗。这次骰子为3与3，能打出多少命中，还得看双方兵力与能力。','march-end':'陛下，队伍已经抵达。先结束行军，让战士们在这里站稳脚跟。',end:'今天的事务先办到这里。结束白天，收好今晚的新牌吧。',discard:'手里的牌太多了，先挑些放下，只留下五张迎接明天。',
     spread:'用支持者在相邻、匹配花色的林地传播民意。先选亮起的目标，再确认支付。',mobilize:'把手牌动员为支持者，为下一轮起义积攒力量。',revolt:'昨天的民意和支持者还在。支付两张匹配支持者，把民意变成基地与军队。',
     train:'用匹配基地花色的手牌训练长官，增加今晚的军事行动。',organize:'收回一名战士，放置民意并计分。把军事实力变为居民支持。',
     refresh:'昨天耗竭的装备还在背包里。亲自恢复它，让今天重新有工具可用。',slip:'清晨潜行不耗靴子，先决定今天去哪里。',explore:'耗竭火把探索遗迹。收下物品，再考虑剩下的行动。',aid:'交付匹配林地花色的手牌、耗竭物品，并观察关系。',quest:'检查任务花色和两件所需物品，再确认报酬。',special:'盗贼用火把偷取手牌；火把耗竭后，今天不能再用它探索。'
   };
-  return `${tips[type]||'按当前阶段完成这一步，再观察棋局变化。'}${where?` 本次目标：${where}。`:''}${action.from!==undefined?` 从${action.from>=12?'森林':'秋林'}${action.from}出发${type==='slip'?'。':`，移动${action.count}名。`}`:''}`;
+  const address=run.game.players[run.game.turn].faction==='cat'?'阁下':'陛下';
+  return `${(tips[type]||'眼前的事务还没办完，先把这一步安排好吧。').replaceAll('陛下',address)}${where?` 就去${where}。`:''}${action.from!==undefined?` 从${action.from>=12?'森林':'秋林'}${action.from}出发${type==='slip'?'。':`，移动${action.count}名。`}`:''}`;
 }
 function prepare(run){
   const step=currentStep(run);run.count=0;
@@ -203,7 +219,7 @@ function prepare(run){
     case 'overview':area(0).warriors.cat=3;area(0).keep=true;deal(state,hero,card=>card.kind==='item');break;
     case 'basic-move':area(0).warriors.cat=3;area(0).keep=true;run.context={from:0,to:3};break;
     case 'basic-defenseless':area(3).warriors.cat=1;area(3).buildings=[{faction:'bird',type:'roost'}];run.context={clearing:3,target:'bird'};break;
-    case 'basic-battle':area(3).warriors.cat=3;area(3).warriors.bird=1;area(3).buildings=[{faction:'bird',type:'roost'}];run.context={clearing:3,target:'bird'};break;
+    case 'basic-battle':area(3).warriors.cat=2;area(3).warriors.bird=1;area(3).buildings=[{faction:'bird',type:'roost'}];run.context={clearing:3,target:'bird'};break;
     case 'cat-wood':state.phase='wood';state.woodPending=[1];area(1).buildings=[{faction:'cat',type:'sawmill'}];area(1).warriors.cat=1;run.context={clearing:1};break;
     case 'cat-craft':{
       state.phase='craft';area(1).buildings=[{faction:'cat',type:'workshop'}];
@@ -274,19 +290,19 @@ export function createTutorial(user,lessonId,{curriculumVersion=catalog.version}
 function guideFor(run){
   const step=currentStep(run),guide=step.guidance;
   if(!guide)return null;
-  if(step.goal==='auto-wood'&&!run.ready)return {speaker:guide.speaker,mode:run.guideCursor?'act':'dialogue',cursor:run.guideCursor||0,total:1,text:step.text,focus:'clearing',prompts:guide.prompts,canAdvance:!run.guideCursor,canBack:false,watch:!!run.guideCursor,auto:true};
+  if(step.goal==='auto-wood'&&!run.ready)return {speaker:guide.speaker,mode:'act',cursor:0,total:1,text:step.text,focus:'clearing',prompts:guide.prompts,canAdvance:false,canBack:false,watch:true,auto:true};
   if(campaignStep(run)&&!run.ready){
     const action=campaignAction(run),watch=campaignActor(run)!==run.userId,instruction=campaignInstruction(run,action);
-    const text=watch?`对手正在${actionNames[action.type]||'行动'}。${instruction}`:instruction;
-    return {speaker:guide.speaker,mode:(run.guideCursor||0)===0?'dialogue':'act',cursor:run.guideCursor||0,total:1,text,focus:action.from!==undefined?'route':action.clearing!==undefined?'clearing':'map',prompts:{source:text,destination:action.to!==undefined?`沿亮起的路线前往${action.to>=12?'森林':'秋林'}${action.to}。`:text,confirm:'检查目标和支付，再确认。',choice:text},canAdvance:(run.guideCursor||0)===0,canBack:(run.guideCursor||0)>0,watch};
+    const text=instruction;
+    return {speaker:guide.speaker,mode:'act',cursor:0,total:1,text,focus:action.from!==undefined?'route':action.clearing!==undefined?'clearing':'map',prompts:{source:text,destination:action.to!==undefined?`沿亮起的路线前往${action.to>=12?'森林':'秋林'}${action.to}。`:text,confirm:'检查目标和支付，再确认。',choice:text},canAdvance:false,canBack:false,watch};
   }
   const responding=run.ready&&step.goal!=='read';
   const lines=responding?guide.after:guide.before;
-  const cursor=Math.max(0,Math.min(run.guideCursor||0,step.goal==='read'||responding?Math.max(0,lines.length-1):lines.length));
-  const acting=!run.ready&&cursor===lines.length;
+  const cursor=Math.max(0,Math.min(run.guideCursor||0,Math.max(0,lines.length-1)));
+  const acting=!run.ready;
   return {speaker:guide.speaker,mode:run.completed?'complete':acting?'act':responding?'result':'dialogue',cursor,total:lines.length,
-    text:lines[cursor]?.text||step.text,focus:lines[cursor]?.focus||'map',prompts:guide.prompts,
-    canAdvance:!run.completed&&!acting&&(cursor<lines.length-1||!run.ready),canBack:!run.completed&&cursor>0};
+    text:acting?lines.map(line=>line.text).join('\n')||step.text:lines[cursor]?.text||step.text,focus:lines[cursor]?.focus||'map',prompts:guide.prompts,
+    canAdvance:!run.completed&&!acting&&(cursor<lines.length-1||!run.ready),canBack:!run.completed&&!acting&&cursor>0};
 }
 function allowed(run,action){
   const step=currentStep(run),context=run.context;
@@ -349,7 +365,7 @@ function achieved(run,action){
   }
 }
 export function advanceTutorial(source,command){
-  const run=structuredClone(source);
+  const run=structuredClone(normalizeTutorial(source));
   ensure(!run.completed||command.type==='restart','本章已完成，可返回目录或重新练习');
   if(command.type==='restart'){const fresh=createTutorial({id:run.userId,username:run.playerName},run.lessonId);fresh.everCompleted=!!(run.everCompleted||run.completed);return fresh;}
   if(isStory(run))return advanceStory(run,command,lessonFor(run));
@@ -383,11 +399,13 @@ export function advanceTutorial(source,command){
     run.ready=campaignReady(run);
     run.guideCursor=0;return run;
   }
-  run.game=resolveOpponents(rules.applyAction(run.game,run.userId,command.action,rng),run.userId);
+  let diceIndex=0;const battleRng=run.lessonId==='basics'&&currentStep(run).id==='battle'?n=>n===4?[3,1][diceIndex++%2]:rng(n):run.lessonId==='basics'&&currentStep(run).id==='defenseless'?n=>n===4?0:rng(n):rng;
+  run.game=resolveOpponents(rules.applyAction(run.game,run.userId,command.action,battleRng),run.userId);
   if(['twice','liz-sacrifice','liz-discard'].includes(currentStep(run).goal))run.count++;
   run.ready=achieved(run,command.action);if(run.ready)run.guideCursor=0;return run;
 }
-export function projectTutorial(run,version){
+export function projectTutorial(source,version){
+  const run=normalizeTutorial(source);
   if(isStory(run))return projectStory(run,version,lessonFor(run));
   const lesson=lessonFor(run),step=currentStep(run);
   const game=rules.projectGame(run.game,run.userId);
@@ -400,6 +418,12 @@ export function projectTutorial(run,version){
       roost:[before.board[at].buildings.filter(b=>b.type==='roost').length,run.game.board[at].buildings.filter(b=>b.type==='roost').length],
       points:player(run.game,'cat').score-player(before,'cat').score};
   }
+  // Explain saved results from their actual dice and army, including older saves.
+  if(guide&&run.lessonId==='basics'&&step.id==='battle'){
+    if(run.ready&&guide.outcome?.dice&&guide.cursor===0){const o=guide.outcome,[high,low]=o.dice;guide.text=`骰子是${high}与${low}。进攻方取${high}，但我们有${o.cat[0]}名战士，所以造成${Math.min(high,o.cat[0])}点骰子命中；飞鹰取${low}，有${o.bird[0]}名守军，造成${Math.min(low,o.bird[0])}点。双方同时承受伤害。`;}
+    if(!run.ready){const n=run.checkpoint.game.board[run.context.clearing].warriors.cat;guide.text=guide.text.replace('我们派出两名战士',`我们派出${n}名战士`).replace('我们的两名战士最多打出2点',`我们的${n}名战士最多打出${Math.min(3,n)}点`);}
+  }
+  if(guide&&run.lessonId==='basics'&&step.id==='defenseless'&&run.ready&&guide.outcome?.dice&&guide.cursor===0){const o=guide.outcome;guide.text=`骰子是${o.dice.join('与')}，骰子命中受我方${o.cat[0]}名战士限制；敌方没有战士防守，因此额外再加1点命中，鸟巢被拆掉了。额外命中不受骰子兵力上限约束。`;}
   const campaign=campaignStep(run);
   const expected=campaign&&!run.ready?campaignAction(run):null;
   const context=campaign?{campaign:true,startTurns:run.context.startTurns,...(expected?.from!==undefined?{from:expected.from}:{}),...(expected?.to!==undefined?{to:expected.to}:{}),...(expected?.clearing!==undefined?{clearing:expected.clearing}:{})}:run.context;
@@ -417,4 +441,25 @@ export function projectTutorial(run,version){
   if(guide&&run.curriculumVersion>=5&&step.id==='cat-craft')guide.previewCard=structuredClone(player(run.checkpoint.game,'cat').hand.find(c=>c.id===run.context.card));
   const goalCount=step.goal==='liz-sacrifice'?3:['twice','liz-discard'].includes(step.goal)?2:1;
   return {code:`tutorial-${run.lessonId}`,title:`阵营教程 · ${lesson.title}`,ownerId:run.userId,version,status:'playing',capacity:game.players.length,locked:true,members:game.players.map(p=>({userId:p.id,name:p.name,faction:p.faction,ready:true})),gameId:run.id,game,tutorial:{guide,id:run.id,lessonId:lesson.id,faction:lesson.faction,title:lesson.title,index:run.step,attempt:run.attempt||0,total:lesson.steps.length,stepId:step.id,heading:step.title,text:step.text,result:run.ready?step.result:'',ready:run.ready,completed:run.completed,legacy:(['eyrie','alliance'].includes(run.lessonId)&&(run.curriculumVersion||1)<6)||(['vagabond','lizard'].includes(run.lessonId)&&(run.curriculumVersion||1)<7),actionTypes,context,count:run.count,goalCount,reading:step.goal==='read',newScene:!!step.scene&&!['basic-march','wa-next'].includes(step.scene)}};
+}
+// Resolve authored, choice-free morning transitions on the server without an extra click.
+export function settleTutorialMorning(source){
+ let run=normalizeTutorial(source);
+ for(let n=0;n<32;n++){
+  if(run.ready||run.completed||run.game.phase!=='birdsong'||run.game.effects.frames.length||run.game.combat)break;
+  const p=run.game.players[run.game.turn];if(rules.projectGame(run.game,p.id).effectOptions.length)break;
+  let command;
+  if(isStory(run)){
+   const spec=currentStep(run).sequence?.[run.context.cursor];if(spec?.type!=='birdsong-end')break;
+   command=p.id===run.userId?{type:'action',action:{type:'birdsong-end'}}:{type:'coach-next'};
+  }else if(campaignStep(run)){
+   const action=campaignAction(run);if(action.type!=='birdsong-end')break;
+   command=p.id===run.userId?{type:'action',action}:{type:'coach-next'};
+  }else if(currentStep(run).goal==='auto-wood')command={type:'coach-next'};
+  else if(currentStep(run).actions.includes('birdsong-end'))command={type:'action',action:{type:'birdsong-end'}};
+  else break;
+  run=advanceTutorial(run,command);
+  if(run.ready)run.automaticMorningStep=currentStep(run).id;
+ }
+ return run;
 }

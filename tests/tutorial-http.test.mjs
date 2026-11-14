@@ -28,7 +28,7 @@ test('tutorial HTTP progress, private saves, retries and restart recovery',async
  assert.deepEqual(JSON.parse(bytes).room,room);
  assert.equal((await request(other,'/api/tutorials/basics')).status,404);
  assert.equal((await request({},'/api/tutorials')).status,401);
- assert.equal((await request(learner,'/api/tutorials')).body.lessons.length,6);
+ assert.equal((await request(learner,'/api/tutorials')).body.lessons.length,7);
  const first={runId:room.tutorial.id,version:room.version,commandId:randomUUID(),command:{type:'guide-next'}};
  const next=await request(learner,'/api/tutorials/basics/command',first);room=next.body.room;
  assert.equal((await request(learner,'/api/tutorials/basics/command',first)).body.room.version,room.version);
@@ -60,7 +60,7 @@ test('tutorial HTTP progress, private saves, retries and restart recovery',async
  }
  assert.ok((await request(learner,'/api/tutorials')).body.lessons.every(lesson=>lesson.completed));
  assert.ok((await request(other,'/api/tutorials')).body.lessons.every(lesson=>!lesson.started));
- assert.equal(app.db.prepare('SELECT count(*) n FROM rooms').get().n,0);assert.equal(app.db.prepare('SELECT count(*) n FROM games').get().n,0);assert.equal(app.db.prepare('SELECT count(*) n FROM tutorial_runs').get().n,6);
+ assert.equal(app.db.prepare('SELECT count(*) n FROM rooms').get().n,0);assert.equal(app.db.prepare('SELECT count(*) n FROM games').get().n,0);assert.equal(app.db.prepare('SELECT count(*) n FROM tutorial_runs').get().n,7);
  room=(await request(learner,'/api/tutorials/vagabond/start',{})).body.room;
  const restart={runId:room.tutorial.id,version:room.version,commandId:randomUUID(),command:{type:'restart'}};
  const fresh=(await request(learner,'/api/tutorials/vagabond/command',restart)).body.room;

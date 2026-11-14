@@ -1,14 +1,18 @@
 // Copyright (c) 2026 AlbertTheBlogger. Project-authored code: MIT; third-party artwork/text excluded. See LICENSE-SCOPE.md.
 // Pure timing shared by browser playback and the server's production bot scheduler.
-export const presentationTimes={move:1800,battle:1800,dice:1800,build:1800,pieces:1600,score:1800,draw:1800,craft:1800,aid:1800,outrage:1000,supporter:1000,wood:1800,turmoil:6000,revolt:2400,catchup:1500};
+export const presentationTimes={funds:1800,loss:1000,move:1800,battle:1800,dice:1800,build:1800,pieces:1600,score:1800,draw:1800,craft:1800,aid:1800,outrage:1000,supporter:1000,wood:1800,turmoil:6000,revolt:2400,catchup:1500};
 export function presentationPlan(events){
   const turmoil=events.some(event=>event.kind==='turmoil');
   const visible=events.filter(event=>!(event.kind==='battle'&&events.some(other=>other.kind==='dice'))&&!(turmoil&&event.kind==='score'&&event.faction==='bird'&&event.reason==='王朝倒台'));
+  if(visible.some(e=>e.kind==='funds'&&e.reason==='gather')){let delay=0;const result=[];for(const e of visible.filter(e=>e.kind==='funds'&&e.reason==='protectionism')){result.push({event:e,delay,duration:1800});delay+=1800;}for(const e of visible.filter(e=>e.kind==='score'&&e.reason?.startsWith('清晨分红'))){result.push({event:e,delay,duration:1800});delay+=1800;}for(const e of visible.filter(e=>e.kind==='funds'&&e.reason==='gather')){result.push({event:e,delay,duration:1800});delay+=1800;}for(const e of visible.filter(e=>!result.some(x=>x.event===e)))result.push({event:e,delay,duration:presentationTimes[e.kind]||1800});return result;}
   const first=visible.filter(event=>!['score','turmoil'].includes(event.kind));
   const firstLength=Math.max(0,...first.map(event=>presentationTimes[event.kind]||1800));
   const delay=turmoil?Math.min(1800,firstLength):firstLength;
+  const casualties=events.some(e=>e.kind==='loss')?1000:0;
+  const dice=events.some(e=>e.kind==='dice')?presentationTimes.dice:0;
+  const financial=events.some(e=>e.kind==='funds')?presentationTimes.funds:0;
   const travel=events.some(e=>e.kind==='move')?presentationTimes.move:0;
-  return visible.map(event=>({event,delay:event.kind==='outrage'?travel:event.kind==='supporter'&&events.some(e=>e.kind==='outrage')?travel+1000:['score','turmoil'].includes(event.kind)?delay:0,duration:presentationTimes[event.kind]||1800}));
+  return visible.map(event=>({event,delay:(event.kind==='funds'?0:financial)+(event.kind==='loss'?dice:event.kind==='outrage'?travel:event.kind==='supporter'&&events.some(e=>e.kind==='outrage')?travel+1000:['score','turmoil'].includes(event.kind)?Math.max(delay,dice+casualties):0),duration:presentationTimes[event.kind]||1800}));
 }
 export function presentationLength(events){return Math.max(0,...presentationPlan(events).map(slot=>slot.delay+slot.duration));}
 export function botThinkDelay(random=Math.random){

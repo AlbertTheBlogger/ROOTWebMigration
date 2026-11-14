@@ -79,6 +79,26 @@ test('retry restores authored battle checkpoint and old v5 chapters only upgrade
  for(const id of ['eyrie','alliance']){
   let old=createTutorial(user,id,{curriculumVersion:5});for(let n=0;n<8;n++)old=advanceTutorial(old,tutorialCommandFor(projectTutorial(old,n)));
   const restored=JSON.parse(JSON.stringify(old));assert.deepEqual(projectTutorial(restored,2),projectTutorial(old,2));assert.equal(projectTutorial(old,2).tutorial.total,id==='eyrie'?12:16);
-  const fresh=advanceTutorial(old,{type:'restart'});assert.equal(fresh.curriculumVersion,7);assert.equal(projectTutorial(fresh,0).tutorial.stepId,id==='eyrie'?'bird-intro':'wa-intro');
+  const fresh=advanceTutorial(old,{type:'restart'});assert.equal(fresh.curriculumVersion,9);assert.equal(projectTutorial(fresh,0).tutorial.stepId,id==='eyrie'?'bird-intro':'wa-intro');
+ }
+});
+test('condensed opponent passages fold bookkeeping, retain real actions and stop at their result',()=>{
+ for(const [id,targets] of [['eyrie',['bird-recovery-reply','bird-final-reply']],['alliance',['wa-third-reply','wa-final-reply']],['riverfolk',['rf-quiet']]]){
+  let run=createTutorial(user,id),seen=new Set();
+  for(let n=0;!run.completed;n++){
+   assert.ok(n<260);const room=projectTutorial(run,n),meta=room.tutorial;
+   if(!targets.includes(meta.stepId))assert.equal(!!meta.guide.auto,false,'new mechanics and player decisions retain manual pacing');
+   if(targets.includes(meta.stepId)&&!run.ready){
+    const start=run.context.history.length;let commands=0;
+    assert.equal(meta.guide.condensed,true);assert.equal(meta.guide.auto,false);
+    do{const source=run,before=structuredClone(run);run=advanceTutorial(run,{type:'coach-next'});assert.deepEqual(source,before);commands++;const next=projectTutorial(run,n);assert.equal(next.tutorial.stepId,meta.stepId);if(!run.ready)assert.equal(next.tutorial.guide.auto,true);}while(!run.ready);
+    const performed=run.context.history.slice(start);assert.equal(performed.filter(e=>e.action.type!=='discard').length,id==='riverfolk'?17:3,'every authored rules action still executes');assert.ok(commands<performed.length,'no-animation transitions should not require individual commands');
+    assert.equal(projectTutorial(run,n).tutorial.guide.auto,false,'reading the result is manual');
+    if(id==='riverfolk'){assert.equal(run.game.riverfolk.payments.length,0);assert.equal(run.game.riverfolk.funds.length,5);assert.equal(run.game.turnsCompleted,11);}
+    seen.add(meta.stepId);continue;
+   }
+   run=advanceTutorial(run,tutorialCommandFor(room));
+  }
+  assert.equal(seen.size,targets.length);
  }
 });
